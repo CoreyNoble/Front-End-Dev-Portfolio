@@ -4,6 +4,10 @@
   padding: 0;
 }
 
+.hide-mobile{
+  display: block;
+}
+
 .section{
 	width: 100%;
 	padding: 2em 0;
@@ -16,6 +20,10 @@
 }
 
 @media only screen and (max-width: 40em) { /* max-width 640px, mobile-only styles, use when QAing mobile issues */
+  .hide-mobile{
+    display: none!important;
+  }
+
   .row{
     padding-top: 0;
     padding-bottom: 0;

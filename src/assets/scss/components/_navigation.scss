@@ -43,6 +43,10 @@ footer{
     }
   }
 
+  .profession{
+    border-right: 3px solid $grey!important;
+  }
+
   .footnote-position{
     margin-top: .5em;
 
@@ -56,12 +60,74 @@ footer{
     display: block;
   }
 
-  .footnote-ctas-mobile{
+  .footnote-ctas-tablet{
     display: none;
   }
 
   .footnote-contact{
     margin-top: 2.75em;
+  }
+
+  .footnote-contact, .social-media, .footnote-ctas{
+    h5, p{
+      a{
+        color: $white!important;
+
+        &:hover{
+          color: $blue!important;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+
+  .social-media{
+    margin-top: 1em;
+    display: block;
+
+    img{
+      max-width: 35px;
+    }
+
+    .github{
+      margin-top: 1em;
+    }
+
+    .social-icon{
+      -webkit-filter: grayscale(100%);
+      -webkit-transition: .33s ease-in-out;
+      -moz-filter: grayscale(100%);
+      -moz-transition: .33s ease-in-out;
+      -o-filter: grayscale(100%);
+    -o-transition: .33s ease-in-out;
+
+    &:hover{
+      -webkit-filter: grayscale(0%);
+      -webkit-transition: .33s ease-in-out;
+      -moz-filter: grayscale(0%);
+      -moz-transition: .33s ease-in-out;
+      -o-filter: grayscale(0%);
+      -o-transition: .33s ease-in-out;
+    }
+    }
+
+    .social-text{
+      h5{
+        font-size: 1em;
+        font-weight: bold;
+        line-height: 1;
+
+        a{
+          font-size: .9em;
+          font-weight: bold;
+        }
+      }
+
+      p{
+        font-size: .75em;
+        font-weight: bold;
+      }
+    }
   }
 
   .footnote-ctas{
@@ -70,22 +136,42 @@ footer{
 
     h5{
       a{
-        color: $grey!important;
+        color: $white!important;
         float: right;
       }
     }
   }
 }
 
-@media only screen and (max-width: 40em) { /* max-width 640px, mobile-only styles, use when QAing mobile issues */
+@media only screen and (min-width: 40.063em) and (max-width: 64em) { /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
+  .social-media{
+    margin-top: 3em!important;
+    margin-left: 1em;
+  }
+
+  .footnote-ctas{
+    float: left!important;
+    margin-right: 0em;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    margin-top: 2em;
+    margin-left: .5em;
+
+    h5{
+      padding: 0em 0.5em;
+    }
+  }
+
   .footnote-ctas-desktop{
     display: none!important;
   }
 
-  .footnote-ctas-mobile{
+  .footnote-ctas-tablet{
     display: block!important;
   }
+}
 
+@media only screen and (max-width: 40em) { /* max-width 640px, mobile-only styles, use when QAing mobile issues */
   .footnote-ctas{
     float: left!important;
     margin-right: 0em;
@@ -103,6 +189,14 @@ footer{
 
   .footnote-contact{
     margin-top: .75em!important;
+  }
+
+  .footnote-ctas-desktop{
+    display: none!important;
+  }
+
+  .footnote-ctas-tablet{
+    display: block!important;
   }
 }
 
