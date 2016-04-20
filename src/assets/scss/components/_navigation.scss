@@ -1,0 +1,154 @@
+/*Top Navigation */
+ul.topnav{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+
+    li{
+      float: left;
+
+      a{
+        display: inline-block;
+        color: $white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        transition: 0.3s;
+        font-size: 17px;
+      }
+
+      a:hover{
+        background-color: $grey;
+      }
+    }
+
+    li.icon {
+      display: none;
+    }
+}
+
+/* Footer */
+footer{
+  h5{
+    font-size: 1em;
+    color: $grey!important;
+    float: left;
+    display: block;
+    padding: 0;
+
+    a:hover{
+      text-decoration: underline;
+    }
+  }
+
+  .footnote-position{
+    margin-top: .5em;
+
+    .name{
+      padding: 0;
+      margin: 0;
+    }
+  }
+
+  .footnote-ctas-desktop{
+    display: block;
+  }
+
+  .footnote-ctas-mobile{
+    display: none;
+  }
+
+  .footnote-contact{
+    margin-top: 2.75em;
+  }
+
+  .footnote-ctas{
+    float: right;
+    margin-right: 7vw;
+
+    h5{
+      a{
+        color: $grey!important;
+        float: right;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 40em) { /* max-width 640px, mobile-only styles, use when QAing mobile issues */
+  .footnote-ctas-desktop{
+    display: none!important;
+  }
+
+  .footnote-ctas-mobile{
+    display: block!important;
+  }
+
+  .footnote-ctas{
+    float: left!important;
+    margin-right: 0em;
+    margin-bottom: 0;
+    padding-bottom: 0;
+
+    h5{
+      padding: 0em 0.5em;
+    }
+  }
+
+  .footnote-position{
+    margin-top: 0!important;
+  }
+
+  .footnote-contact{
+    margin-top: .75em!important;
+  }
+}
+
+/*Back to Top*/
+a.back-to-top {
+	display: none;
+	width: 60px;
+	height: 60px;
+	text-indent: -9999px;
+	position: fixed;
+	z-index: 999;
+	right: 1em;
+	bottom: 1em;
+  background: url("/assets/img/back-to-top.png") no-repeat center 43%;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 40em) { /* max-width 640px, mobile-only styles, use when QAing mobile issues */
+  ul.topnav{
+    li:not(:first-child){
+      display: none;
+    }
+
+    li.icon{
+      float: right;
+      display: inline-block;
+    }
+  }
+
+  ul.topnav.responsive{
+    position: relative;
+
+    li{
+      float: none;
+      display: inline;
+
+      a{
+        display: block;
+        text-align: left;
+      }
+    }
+
+    li.icon{
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+  }
+}

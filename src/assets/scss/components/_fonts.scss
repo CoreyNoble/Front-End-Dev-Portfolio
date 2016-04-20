@@ -1,0 +1,61 @@
+// FONTS
+// ARVO
+@import url(https://fonts.googleapis.com/css?family=Arvo:400,400italic,700,700italic);
+// font-family: 'Arvo', serif;
+
+// LATO
+@import url(https://fonts.googleapis.com/css?family=Lato:400,100,300,100italic,300italic,400italic,700,700italic,900,900italic);
+// font-family: 'Lato', sans-serif;
+
+// OPEN SANS
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic);
+// font-family: 'Open Sans', sans-serif;
+
+// FONT + TEXT STYLES
+h1,h2,h3,h4,h5,h6{
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+  padding: 0 0 0.33em 0;
+  margin: 0;
+
+  a {
+    color: $blue!important;
+  }
+
+  a:hover{
+    color: $grey!important;
+  }
+}
+
+p,ul,ol,li,a,a:hover{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: lighter;
+  margin: 0;
+  padding: 0;
+}
+
+p, ul, ol{
+  padding: 0 0 0.33em 0;
+}
+
+ul{
+  list-style-type: square;
+}
+
+li{
+  margin-left: 1em;
+}
+
+@media only screen and (max-width: 40em) { /* max-width 640px, mobile-only styles, use when QAing mobile issues */
+  h1{
+    font-size: 2em;
+  }
+
+  h2{
+    font-size: 1.66em;
+  }
+
+  h3{
+    font-size: 1.45em;
+  }
+}

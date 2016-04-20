@@ -1,0 +1,187 @@
+// PARALLAX CONTAINERS
+.parallax {
+    height: 40em;
+    width: 100%;
+    z-index: 1;
+    display: table;
+    -moz-box-shadow:    inset  0  2.5em 2.5em -2.5em #000000,
+                        inset  0 -2.5em 2.5em -2.5em #000000;
+    -webkit-box-shadow: inset  0  2.5em 2.5em -2.5em #000000,
+                        inset  0 -2.5em 2.5em -2.5em #000000;
+     box-shadow:        inset  0  2.5em 2.5em -2.5em #000000,
+                        inset  0 -2.5em 2.5em -2.5em #000000;
+
+    h1{
+      display: table-cell;
+      vertical-align: middle;
+      text-align:center;
+      color: #ffffff;
+      text-align: center;
+      padding: 4em;
+      margin: 0;
+      font-size: 4em;
+      text-shadow: 0.1em 0.1em 0.1em rgba(0, 0, 0, 0.66);
+
+      small{
+        color: #ffffff;
+        font-size: .5em;
+      }
+
+      hr{
+       border: 0;
+       height: 4px;
+       background: #ffffff;
+       box-shadow: 3px 3px 3px rgba(0,0,0,0.6);
+       width: 15em;
+      }
+    }
+  }
+
+#parallax-hero-1 {
+  padding-bottom: 2em;
+  background: url(../img/highlighted-blue-fabric-tile.jpg) repeat;
+  background-attachment: fixed;
+}
+
+#parallax-hero-2 {
+  padding-bottom: 2em;
+  background: url(../img/blue-fabric-tile.jpg) repeat;
+  background-attachment: fixed;
+}
+
+#parallax-hero-3 {
+  padding-bottom: 2em;
+  background: url(../img/leather-tile.jpg) repeat;
+  background-attachment: fixed;
+}
+
+#parallax-index {
+  background: url(../img/desktop-development.jpg);
+}
+
+#parallax-portfolio {
+  background: url(../img/planning.jpg);
+}
+
+#parallax-frameworks-portfolio {
+  background: url(../img/responsive-development-1.jpg);
+}
+
+#parallax-framework-example-1 {
+  background: url(../img/mobile-development.jpg);
+}
+
+#parallax-framework-example-2 {
+  background: url(../img/scss-sass-framework-development.jpg);
+}
+
+#parallax-cms-portfolio {
+  background: url(../img/responsive-development-2.jpg);
+}
+
+#parallax-cms-skillset {
+  background: url(../img/tablet-development.jpg);
+}
+
+#parallax-wordpress-example-1 {
+  background: url(../img/dynamic-user-experience.jpg);
+}
+
+#parallax-wordpress-example-2 {
+  background: url(../img/explore-creativity.jpg);
+}
+
+#parallax-about {
+  background: url(../img/aesthetic-structure.jpg);
+}
+
+#parallax-services {
+  background: url(../img/aesthetic-geometry.jpg);
+}
+
+#parallax-contact {
+  background: url(../img/toronto-city-scape.jpg);
+}
+
+#parallax-site-index {
+  background: url(../img/aesthetic-aurora.jpg);
+}
+
+#parallax-404 {
+  background: url(../img/aesthetic-mountains.jpg);
+}
+
+#parallax-index, #parallax-portfolio, #parallax-frameworks-portfolio, #parallax-framework-example-1, #parallax-framework-example-2, #parallax-cms-portfolio, #parallax-cms-skillset, #parallax-wordpress-example-1, #parallax-wordpress-example-2, #parallax-about, #parallax-services, #parallax-contact, #parallax-site-index, #parallax-404 {
+    background-attachment: fixed;
+    background-size: 100%;
+}
+
+@media only screen and (max-width: 40em) { /* max-width 640px, mobile-only styles, use when QAing mobile issues */
+  .parallax{
+    height: 20em;
+  }
+
+  #parallax-hero, #parallax-body1, #parallax-body2, #parallax-body3, #parallax-body4, #parallax-body5, #parallax-body6, #parallax-body7, #parallax-body8{
+    h1{
+      font-size: 2em;
+      padding: 1em;
+    }
+  }
+}
+
+
+/* Animations */
+#showcase1, #showcase2, #showcase3{
+  img{
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+#showcase1.bounceIn {
+  -webkit-animation-delay: 0.25s;
+  -moz-animation-delay: 0.25s;
+  -o-animation-delay: 0.25s;
+  -ms-animation-delay: 0.25s;
+  animation-delay: 0.25s;
+}
+
+#showcase2.bounceIn {
+  -webkit-animation-delay: 1.25s;
+  -moz-animation-delay: 1.25s;
+  -o-animation-delay: 1.25s;
+  -ms-animation-delay: 1.25s;
+  animation-delay: 1.25s;
+}
+
+#showcase3.bounceIn {
+  -webkit-animation-delay: 2.25s;
+  -moz-animation-delay: 2.25s;
+  -o-animation-delay: 2.25s;
+  -ms-animation-delay: 2.25s;
+  animation-delay: 2.25s;
+}
+
+#showcase1.pulse, #showcase2.pulse, #showcase3.pulse {
+  -webkit-animation-duration: 5s;
+  -moz-animation-duration: 5s;
+  -o-animation-duration: 5s;
+  -ms-animation-duration: 5s;
+  animation-duration: 5s;
+
+  -webkit-animation-timing-function:linear;
+  -moz-animation-timing-function:linear;
+  -o-animation-timing-function:linear;
+  -ms-animation-timing-function:linear;
+  animation-timing-function:linear;
+}
+
+@media only screen and (max-width: 40em) { /* max-width 640px, mobile-only styles, use when QAing mobile issues */
+  #showcase1.bounceIn, #showcase2.bounceIn, #showcase3.bounceIn {
+    -webkit-animation-delay: 0.5s;
+    -moz-animation-delay: 0.5s;
+    -o-animation-delay: 0.5s;
+    -ms-animation-delay: 0.5s;
+    animation-delay: 0.5s;
+  }
+}
