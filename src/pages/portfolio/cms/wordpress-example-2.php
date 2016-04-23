@@ -12,23 +12,10 @@
   <body>
 
     <!-- Navigation Menu -->
-    <header>
-        <nav>
-          <ul class="topnav">
-           <li><a href="../../index.html">Home</a></li>
-           <li><a href="../../portfolio.html">Portfolio</a></li>
-           <li><a href="../../about.html">About</a></li>
-           <li><a href="../../services.html">Services</a></li>
-           <li><a href="../../contact.html">Contact</a></li>
-           <li class="icon">
-             <a href="../..javascript:void(0);" onclick="navToggle()">&#9776;</a>
-           </li>
-         </ul>
-       </nav>
-    </header>
+    <?php include("../partials/navigation.html"); ?>
 
     <div id="parallax-hero-3" class="parallax" data-stellar-background-ratio="0.4" >
-      <h1 class="zoomInDown wow">Framework Example 2<br><hr><small>Corey Noble | 2016</small></h1>
+      <h1 class="zoomInDown wow">WordPress Example 2<br><hr><small>Corey Noble | 2016</small></h1>
     </div>
 
     <div class="section black">
@@ -235,87 +222,10 @@
     </div>
   </div>
 
-    <div id="parallax-framework-example-2" class="parallax" data-stellar-background-ratio="0.8" ></div>
+    <div id="parallax-wordpress-example-2" class="parallax" data-stellar-background-ratio="0.8" ></div>
 
     <!-- Footer -->
-    <footer>
-      <div class="section black">
-        <div class="row">
-          <!-- Profession Showcase -->
-          <div class="large-5 medium-12 small-12 columns">
-            <div class="large-4 medium-3 small-4 columns">
-              <img src="../assets/img/Corey-Noble-Footnote-Profile.png" />
-            </div>
-            <div class="large-8 medium-9 small-8 columns">
-              <div class="footnote-position">
-                <h4 class="blue-text name">Corey Noble</h4>
-                <h5>Front-End Web Developer</h5>
-              </div>
-              <div class="footnote-contact">
-                <h5><a href="../../resume.pdf">My Resume</a></h5>
-                <h5>&nbsp;&nbsp;|&nbsp;&nbsp;</h5>
-                <h5><a href="../../site-index.html">Site Index</a></h5>
-              </div>
-            </div>
-          </div>
-
-          <!-- Social Media -->
-          <div class="large-4 medium-12 small-12 columns">
-            <div class="social-media">
-              <div class="row linkedin">
-                <div class="social-icon large-2 medium-1 small-1 columns">
-                  <a href="https://ca.linkedin.com/in/corey-noble-79442376" target="_blank"><img src="../assets/img/linkedin-icon.png" alt="LinkedIn Icon" /></a>
-                </div>
-                <div class="social-text large-10 medium-11 small-11 columns">
-                  <h5>View my <a href="https://ca.linkedin.com/in/corey-noble-79442376" target="_blank">LinkedIn</a> profile</h5><br>
-                  <p class=""><a href="https://ca.linkedin.com/in/corey-noble-79442376" target="_blank">/in/corey-noble-79442376</a></p>
-                </div>
-              </div>
-              <div class="row github">
-                <div class="social-icon large-2 medium-1 small-1 columns">
-                  <a href="https://github.com/CoreyNoble" target="_blank"><img src="../assets/img/github-icon.png" alt="GitHub Icon" /></a>
-                </div>
-                <div class="social-text large-10 medium-11 small-11 columns">
-                  <h5>View my <a href="https://github.com/CoreyNoble" target="_blank">GitHub</a> projects</h5><br>
-                  <p class=""> <a href="https://github.com/CoreyNoble" target="_blank">/CoreyNoble</a></p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Footnote Navigation -->
-          <div class="large-3 medium-3 small-12 columns footnote-ctas-desktop">
-            <div class="footnote-ctas">
-              <h5><a href="../../index.html">Home</a></h5><br>
-              <h5><a href="../../portfolio.html">Portfolio</a></h5><br>
-              <h5><a href="../../about.html">About</a></h5><br>
-              <h5><a href="../../services.html">Services</a></h5><br>
-              <h5><a href="../../contact.html">Contact</a></h5><br><hr>
-              <h5><a href="../../site-index.html">Site Index</a></h5>
-            </div>
-          </div>
-
-          <div class="large-3 medium-12 small-12 columns footnote-ctas-tablet">
-            <div class="footnote-ctas">
-              <h5><a href="../../index.html">Home</a></h5>
-              <h5>&nbsp;&nbsp;|&nbsp;&nbsp;</h5>
-              <h5><a href="../../portfolio.html">Portfolio</a></h5>
-              <h5>&nbsp;&nbsp;|&nbsp;&nbsp;</h5>
-              <h5><a href="../../about.html">About</a></h5>
-              <h5>&nbsp;&nbsp;|&nbsp;&nbsp;</h5>
-              <h5><a href="../../services.html">Services</a></h5>
-              <h5>&nbsp;&nbsp;|&nbsp;&nbsp;</h5>
-              <h5><a href="../../contact.html">Contact</a></h5>
-              <h5>&nbsp;&nbsp;|&nbsp;&nbsp;</h5>
-              <h5><a href="../../site-index.html">Site Index</a></h5>
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
-
-    <!-- Back to Top -->
-    <a href="../..#" class="back-to-top">Back to Top</a>
+    <?php include("../partials/navigation.html"); ?>
 
     <!-- Scripts -->
     <script src="bower_components/jquery/dist/jquery.min.js"></script>

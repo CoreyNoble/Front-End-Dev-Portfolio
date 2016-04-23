@@ -12,23 +12,10 @@
   <body>
 
     <!-- Navigation Menu -->
-    <header>
-        <nav>
-          <ul class="topnav">
-           <li><a href="../../index.html">Home</a></li>
-           <li><a href="../../portfolio.html">Portfolio</a></li>
-           <li><a href="../../about.html">About</a></li>
-           <li><a href="../../services.html">Services</a></li>
-           <li><a href="../../contact.html">Contact</a></li>
-           <li class="icon">
-             <a href="../..javascript:void(0);" onclick="navToggle()">&#9776;</a>
-           </li>
-         </ul>
-       </nav>
-    </header>
-
+    <?php include("../partials/navigation.html"); ?>
+    
     <div id="parallax-hero-3" class="parallax" data-stellar-background-ratio="0.4" >
-      <h1 class="zoomInDown wow">WordPress Example 2<br><hr><small>Corey Noble | 2016</small></h1>
+      <h1 class="zoomInDown wow">WordPress Example 1<br><hr><small>Corey Noble | 2016</small></h1>
     </div>
 
     <div class="section black">
@@ -235,7 +222,7 @@
     </div>
   </div>
 
-    <div id="parallax-wordpress-example-2" class="parallax" data-stellar-background-ratio="0.8" ></div>
+    <div id="parallax-wordpress-example-1" class="parallax" data-stellar-background-ratio="0.8" ></div>
 
     <!-- Footer -->
     <footer>
@@ -290,8 +277,7 @@
               <h5><a href="../../portfolio.html">Portfolio</a></h5><br>
               <h5><a href="../../about.html">About</a></h5><br>
               <h5><a href="../../services.html">Services</a></h5><br>
-              <h5><a href="../../contact.html">Contact</a></h5><br><hr>
-              <h5><a href="../../site-index.html">Site Index</a></h5>
+              <h5><a href="../../contact.html">Contact</a></h5>
             </div>
           </div>
 
@@ -306,8 +292,6 @@
               <h5><a href="../../services.html">Services</a></h5>
               <h5>&nbsp;&nbsp;|&nbsp;&nbsp;</h5>
               <h5><a href="../../contact.html">Contact</a></h5>
-              <h5>&nbsp;&nbsp;|&nbsp;&nbsp;</h5>
-              <h5><a href="../../site-index.html">Site Index</a></h5>
             </div>
           </div>
         </div>
