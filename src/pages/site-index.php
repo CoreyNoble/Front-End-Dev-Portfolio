@@ -12,7 +12,7 @@
   <body>
 
     <!-- Navigation Menu -->
-    <?php include("../partials/navigation.html"); ?>
+    <?php include("partials/navigation.html"); ?>
 
   <div class="section blue">
     <div class="row">
@@ -59,7 +59,7 @@
     <div id="parallax-site-index" class="parallax" data-stellar-background-ratio="0.8" ></div>
 
     <!-- Footer -->
-    <?php include("../partials/navigation.html"); ?>
+    <?php include("partials/footer.html"); ?>
 
     <!-- Scripts -->
     <script src="bower_components/jquery/dist/jquery.min.js"></script>

@@ -12,22 +12,7 @@
   <body>
 
     <!-- Navigation Menu -->
-    <?php include("../partials/navigation.html"); ?>
-
-    <header>
-        <nav>
-          <ul class="topnav">
-           <li><a href="../../index.html">Home</a></li>
-           <li><a href="../../portfolio.html">Portfolio</a></li>
-           <li><a href="../../about.html">About</a></li>
-           <li><a href="../../services.html">Services</a></li>
-           <li><a href="../../contact.html">Contact</a></li>
-           <li class="icon">
-             <a href="../..javascript:void(0);" onclick="navToggle()">&#9776;</a>
-           </li>
-         </ul>
-       </nav>
-    </header>
+    <?php include("partials/navigation.html"); ?>
 
     <div id="parallax-hero-1" class="parallax" data-stellar-background-ratio="0.4" >
       <h1 class="zoomInDown wow">Corey Noble<br><hr><small>2016</small></h1>
@@ -240,7 +225,7 @@
   <div id="parallax-index" class="parallax" data-stellar-background-ratio="0.8" ></div>
 
   <!-- Footer -->
-  <?php include("../partials/navigation.html"); ?>
+  <?php include("partials/footer.html"); ?>
 
     <!-- Scripts -->
     <script src="bower_components/jquery/dist/jquery.min.js"></script>

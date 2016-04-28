@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Foundation</title>
+    <title>About</title>
 
     <!-- Relative CSS / Javascript -->
     <link rel="stylesheet" href="assets/css/app.css" />
@@ -12,35 +12,93 @@
   <body>
 
     <!-- Navigation Menu -->
-    <?php include("../partials/navigation.html"); ?>
+    <?php include("partials/navigation.html"); ?>
 
-    <div id="parallax-hero-3" class="parallax" data-stellar-background-ratio="0.4" >
+    <div id="parallax-hero-3" class="parallax" data-stellar-background-ratio="0.2" >
       <h1 class="zoomInDown wow">About<br><hr><small>Corey Noble | 2016</small></h1>
     </div>
 
     <div class="section black">
       <div class="row">
-        <div class="large-12 columns">
-          <h2>Welcome to Foundation</h2>
-        </div>
-      </div>
+        <h2>Corey Noble</h2>
+        <h4>Front-End Web Developer</h4>
 
-      <div class="row">
-        <div class="large-4 columns">
-          <h3>Welcome to Foundation</h3>
-          <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          <a href="../..#" class="small radius button right">Radius Button</a>
+        <div id="portrait-suit" class="large-4 medium-6 small-6 columns">
+          <img src="../assets/img/Corey-Noble-Portrait-Suit.png"/>
         </div>
-        <div class="large-4 columns">
-          <h3>Welcome to Foundation</h3>
-          <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          <a href="../..#" class="small radius button right">Radius Button</a>
-        </div>
-        <div class="large-4 columns">
-          <div class="white inline-accent">
-            <h3 style="color:#000000;">Welcome to Foundation</h3>
-            <img src="http://placehold.it/2000x2000" style="float: left; height: 11em; width: 100%;"/>
-            <a href="../..#" class="small radius button right">Radius Button</a>
+
+        <div id="icon-container" class="icon-container large-8 medium-6 small-6 columns">
+          <div class="icon fadeInRight large-3 medium-6 small-6 columns"  data-wow-delay="0.1s">
+            <img src="../assets/img/icons/foundation.png"/>
+          </div>
+          <div class="icon fadeInRight large-3 medium-6 small-6 columns"  data-wow-delay="0.2s">
+            <img src="../assets/img/icons/sass.png"/>
+          </div>
+          <div class="icon fadeInRight wow large-3 medium-6 small-6 columns"  data-wow-delay="0.3s">
+            <img src="../assets/img/icons/bootstrap.png"/>
+          </div>
+          <div class="icon fadeInRight wow large-3 medium-6 small-6 columns"  data-wow-delay="0.4s">
+            <img src="../assets/img/icons/less.png"/>
+          </div>
+          <div class="icon fadeInRight wow large-3 medium-6 small-6 columns"  data-wow-delay="0.1s">
+            <img src="../assets/img/icons/html-5.png"/>
+          </div>
+          <div class="icon fadeInRight wow large-3 medium-6 small-6 columns" data-wow-delay="0.2s">
+            <img src="../assets/img/icons/css-3.png"/>
+          </div>
+          <div class="icon fadeInRight wow large-3 medium-6 small-6 columns" data-wow-delay="0.3s">
+            <img src="../assets/img/icons/javascript.png"/>
+          </div>
+          <div class="icon fadeInRight wow large-3 medium-6 small-6 columns" data-wow-delay="0.4s">
+            <img src="../assets/img/icons/photoshop.png"/>
+          </div>
+          <div class="icon fadeInRight wow large-3 medium-6 small-6 columns" data-wow-delay="0.1s">
+            <img src="../assets/img/icons/git.png"/>
+          </div>
+          <div class="icon fadeInRight wow large-3 medium-6 small-6 columns" data-wow-delay="0.2s">
+            <img src="../assets/img/icons/bit-bucket.png"/>
+          </div>
+          <div class="icon fadeInRight wow large-3 medium-6 small-6 columns" data-wow-delay="0.3s">
+            <img src="../assets/img/icons/source-tree.png"/>
+          </div>
+          <div class="icon fadeInRight wow large-3 medium-6 small-6 columns" data-wow-delay="0.4s">
+            <img src="../assets/img/icons/jira.png"/>
+          </div>
+          <div class="icon fadeInRight wow large-3 medium-6 small-6 columns" data-wow-delay="0.1s">
+            <img src="../assets/img/icons/aem.png"/>
+          </div>
+          <div class="icon fadeInRight wow large-3 medium-6 small-6 columns" data-wow-delay="0.2s">
+            <img src="../assets/img/icons/reddot.png"/>
+          </div>
+          <div class="icon fadeInRight wow large-3 medium-6 small-6 columns" data-wow-delay="0.3s">
+            <img src="../assets/img/icons/wordpress.png"/>
+          </div>
+          <div class="icon fadeInRight wow large-3 medium-6 small-6 columns" data-wow-delay="0.4s">
+            <img src="../assets/img/icons/magento.png"/>
+          </div>
+          <div class="icon fadeInRight wow large-3 medium-6 small-6 columns" data-wow-delay="0.1s">
+            <img src="../assets/img/icons/joomla.png"/>
+          </div>
+          <div class="icon fadeInRight wow large-3 medium-6 small-6 columns" data-wow-delay="0.2s">
+            <img src="../assets/img/icons/atom.png"/>
+          </div>
+          <div class="icon fadeInRight wow large-3 medium-6 small-6 columns" data-wow-delay="0.3s">
+            <img src="../assets/img/icons/sublime-text.png"/>
+          </div>
+          <div class="icon fadeInRight wow large-3 medium-6 small-6 columns" data-wow-delay="0.4s">
+            <img src="../assets/img/icons/file-zilla.png"/>
+          </div>
+          <div class="icon fadeInRight wow large-3 medium-6 small-6 columns" data-wow-delay="0.1s">
+            <img src="../assets/img/icons/illustraitor.png"/>
+          </div>
+          <div class="icon fadeInRight wow large-3 medium-6 small-6 columns" data-wow-delay="0.2s">
+            <img src="../assets/img/icons/in-design.png"/>
+          </div>
+          <div class="icon fadeInRight wow large-3 medium-6 small-6 columns" data-wow-delay="0.3s">
+            <img src="../assets/img/icons/firefox.png"/>
+          </div>
+          <div class="icon fadeInRight wow large-3 medium-6 small-6 columns" data-wow-delay="0.4s">
+            <img src="../assets/img/icons/jquery.png"/>
           </div>
         </div>
       </div>
@@ -225,7 +283,7 @@
     <div id="parallax-about" class="parallax" data-stellar-background-ratio="0.8" ></div>
 
     <!-- Footer -->
-    <?php include("../partials/navigation.html"); ?>
+    <?php include("partials/footer.html"); ?>
 
     <!-- Scripts -->
     <script src="bower_components/jquery/dist/jquery.min.js"></script>

@@ -12,7 +12,7 @@
   <body>
 
     <!-- Navigation Menu -->
-    <?php include("../partials/navigation.html"); ?>
+    <?php include("partials/navigation.html"); ?>
 
     <div id="parallax-hero-3" class="parallax" data-stellar-background-ratio="0.4" >
       <h1 class="zoomInDown wow">Framework Example 2<br><hr><small>Corey Noble | 2016</small></h1>
@@ -225,7 +225,7 @@
     <div id="parallax-framework-example-2" class="parallax" data-stellar-background-ratio="0.8" ></div>
 
     <!-- Footer -->
-    <?php include("../partials/navigation.html"); ?>
+    <?php include(".partials/footer.html"); ?>
 
     <!-- Scripts -->
     <script src="bower_components/jquery/dist/jquery.min.js"></script>

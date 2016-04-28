@@ -6,13 +6,13 @@
     <title>Foundation</title>
 
     <!-- Relative CSS / Javascript -->
-    <link rel="stylesheet" href="assets/css/app.css" />
-    <link rel="stylesheet" href="assets/css/animate.css" />
+    <link rel="stylesheet" href="../../assets/css/app.css" />
+    <link rel="stylesheet" href="../../assets/css/animate.css" />
   </head>
   <body>
 
     <!-- Navigation Menu -->
-    <?php include("../partials/navigation.html"); ?>
+    <?php include("../../partials/navigation.html"); ?>
 
     <div id="parallax-hero-3" class="parallax" data-stellar-background-ratio="0.4" >
       <h1 class="zoomInDown wow">CMS Skillset<br><hr><small>Corey Noble | 2016</small></h1>
@@ -21,6 +21,8 @@
     <div class="section black">
       <div class="row">
         <div class="large-12 columns">
+          <?php include("../../partials/crumbs.php"); ?>
+
           <h2>Welcome to Foundation</h2>
         </div>
       </div>
@@ -225,7 +227,7 @@
     <div id="parallax-cms-skillset" class="parallax" data-stellar-background-ratio="0.8" ></div>
 
     <!-- Footer -->
-    <?php include("../partials/navigation.html"); ?>
+    <?php include("../../partials/footer.html"); ?>
 
     <!-- Scripts -->
     <script src="bower_components/jquery/dist/jquery.min.js"></script>

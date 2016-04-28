@@ -6,8 +6,8 @@
     <title>Foundation</title>
 
     <!-- Relative CSS / Javascript -->
-    <link rel="stylesheet" href="assets/css/app.css" />
-    <link rel="stylesheet" href="assets/css/animate.css" />
+    <link rel="stylesheet" href="../assets/css/app.css" />
+    <link rel="stylesheet" href="../assets/css/animate.css" />
   </head>
   <body>
 
@@ -225,7 +225,7 @@
     <div id="parallax-cms-portfolio" class="parallax" data-stellar-background-ratio="0.8" ></div>
 
     <!-- Footer -->
-    <?php include("../partials/navigation.html"); ?>
+    <?php include("../partials/footer.html"); ?>
 
     <!-- Scripts -->
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
