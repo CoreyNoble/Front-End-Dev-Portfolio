@@ -3,7 +3,8 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About</title>
+    <title>About | Corey Noble</title>
+    <link rel="icon" type="image/jepg" href="http://www.corey-noble.com/favicon.jpg">
 
     <!-- Relative CSS / Javascript -->
     <link rel="stylesheet" href="assets/css/app.css" />
@@ -29,76 +30,76 @@
 
         <div id="icon-container" class="icon-container large-8 medium-6 small-6 columns">
           <div class="icon fadeInRight large-3 medium-6 small-6 columns"  data-wow-delay="0.1s">
-            <img src="../assets/img/icons/foundation.png"/>
+            <img src="../assets/img/icons/foundation.png" alt="Foundation Framework"/>
           </div>
           <div class="icon fadeInRight large-3 medium-6 small-6 columns"  data-wow-delay="0.2s">
-            <img src="../assets/img/icons/sass.png"/>
+            <img src="../assets/img/icons/sass.png" alt="SASS / SCSS Code Skills"/>
           </div>
           <div class="icon fadeInRight wow large-3 medium-6 small-6 columns"  data-wow-delay="0.3s">
-            <img src="../assets/img/icons/bootstrap.png"/>
+            <img src="../assets/img/icons/bootstrap.png" alt="Twitter Bootstrap Framework"/>
           </div>
           <div class="icon fadeInRight wow large-3 medium-6 small-6 columns"  data-wow-delay="0.4s">
-            <img src="../assets/img/icons/less.png"/>
+            <img src="../assets/img/icons/less.png" alt="LESS Code Skills"/>
           </div>
           <div class="icon fadeInRight wow large-3 medium-6 small-6 columns"  data-wow-delay="0.1s">
-            <img src="../assets/img/icons/html-5.png"/>
+            <img src="../assets/img/icons/html-5.png" alt="HTML5 Compliance"/>
           </div>
           <div class="icon fadeInRight wow large-3 medium-6 small-6 columns" data-wow-delay="0.2s">
-            <img src="../assets/img/icons/css-3.png"/>
+            <img src="../assets/img/icons/css-3.png" alt="CSS3 Code Skills"/>
           </div>
           <div class="icon fadeInRight wow large-3 medium-6 small-6 columns" data-wow-delay="0.3s">
-            <img src="../assets/img/icons/javascript.png"/>
+            <img src="../assets/img/icons/javascript.png" alt="Javascript Code Skills"/>
           </div>
           <div class="icon fadeInRight wow large-3 medium-6 small-6 columns" data-wow-delay="0.4s">
-            <img src="../assets/img/icons/photoshop.png"/>
+            <img src="../assets/img/icons/photoshop.png" alt="Photoshop Skills"/>
           </div>
           <div class="icon fadeInRight wow large-3 medium-6 small-6 columns" data-wow-delay="0.1s">
-            <img src="../assets/img/icons/git.png"/>
+            <img src="../assets/img/icons/git.png" alt="GIT Repositories"/>
           </div>
           <div class="icon fadeInRight wow large-3 medium-6 small-6 columns" data-wow-delay="0.2s">
-            <img src="../assets/img/icons/bit-bucket.png"/>
+            <img src="../assets/img/icons/bit-bucket.png" alt="BitBucket Repositories"/>
           </div>
           <div class="icon fadeInRight wow large-3 medium-6 small-6 columns" data-wow-delay="0.3s">
-            <img src="../assets/img/icons/source-tree.png"/>
+            <img src="../assets/img/icons/source-tree.png" alt="Source Tree Version Control"/>
           </div>
           <div class="icon fadeInRight wow large-3 medium-6 small-6 columns" data-wow-delay="0.4s">
-            <img src="../assets/img/icons/jira.png"/>
+            <img src="../assets/img/icons/jira.png" alt="JIRA Ticket Tracking"/>
           </div>
           <div class="icon fadeInRight wow large-3 medium-6 small-6 columns" data-wow-delay="0.1s">
-            <img src="../assets/img/icons/aem.png"/>
+            <img src="../assets/img/icons/aem.png" alt="Adobe Experience Manager Skills"/>
           </div>
           <div class="icon fadeInRight wow large-3 medium-6 small-6 columns" data-wow-delay="0.2s">
-            <img src="../assets/img/icons/reddot.png"/>
+            <img src="../assets/img/icons/reddot.png" alt="Open Text RedDot Skills"/>
           </div>
           <div class="icon fadeInRight wow large-3 medium-6 small-6 columns" data-wow-delay="0.3s">
-            <img src="../assets/img/icons/wordpress.png"/>
+            <img src="../assets/img/icons/wordpress.png" alt="WordPress Skills"/>
           </div>
           <div class="icon fadeInRight wow large-3 medium-6 small-6 columns" data-wow-delay="0.4s">
-            <img src="../assets/img/icons/magento.png"/>
+            <img src="../assets/img/icons/magento.png" alt="Magento Skills"/>
           </div>
           <div class="icon fadeInRight wow large-3 medium-6 small-6 columns" data-wow-delay="0.1s">
-            <img src="../assets/img/icons/joomla.png"/>
+            <img src="../assets/img/icons/joomla.png" alt="Joomla Skills"/>
           </div>
           <div class="icon fadeInRight wow large-3 medium-6 small-6 columns" data-wow-delay="0.2s">
-            <img src="../assets/img/icons/atom.png"/>
+            <img src="../assets/img/icons/atom.png" alt="Atom - Project Code Editor of Choice"/>
           </div>
           <div class="icon fadeInRight wow large-3 medium-6 small-6 columns" data-wow-delay="0.3s">
-            <img src="../assets/img/icons/sublime-text.png"/>
+            <img src="../assets/img/icons/sublime-text.png" alt="Sublime Text - Code Editor of Choice"/>
           </div>
           <div class="icon fadeInRight wow large-3 medium-6 small-6 columns" data-wow-delay="0.4s">
-            <img src="../assets/img/icons/file-zilla.png"/>
+            <img src="../assets/img/icons/file-zilla.png" alt="File Transfer Protocol Skills"/>
           </div>
           <div class="icon fadeInRight wow large-3 medium-6 small-6 columns" data-wow-delay="0.1s">
-            <img src="../assets/img/icons/illustraitor.png"/>
+            <img src="../assets/img/icons/illustraitor.png" alt="Illustraitor Skills"/>
           </div>
           <div class="icon fadeInRight wow large-3 medium-6 small-6 columns" data-wow-delay="0.2s">
-            <img src="../assets/img/icons/in-design.png"/>
+            <img src="../assets/img/icons/in-design.png" alt="In-Design Skills"/>
           </div>
           <div class="icon fadeInRight wow large-3 medium-6 small-6 columns" data-wow-delay="0.3s">
-            <img src="../assets/img/icons/firefox.png"/>
+            <img src="../assets/img/icons/firefox.png" alt="Firefox Developer - Browser of Choice"/>
           </div>
           <div class="icon fadeInRight wow large-3 medium-6 small-6 columns" data-wow-delay="0.4s">
-            <img src="../assets/img/icons/jquery.png"/>
+            <img src="../assets/img/icons/jquery.png" alt="jQuery Skills"/>
           </div>
         </div>
       </div>

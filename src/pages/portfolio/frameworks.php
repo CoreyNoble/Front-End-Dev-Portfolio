@@ -3,7 +3,8 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Foundation</title>
+    <title>Frameworks | Portfolio | Corey Noble</title>
+    <link rel="icon" type="image/jepg" href="http://www.corey-noble.com/favicon.jpg">
 
     <!-- Relative CSS / Javascript -->
     <link rel="stylesheet" href="assets/css/app.css" />

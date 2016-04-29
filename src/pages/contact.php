@@ -3,11 +3,13 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact</title>
+    <title>Contact | Corey Noble</title>
+    <link rel="icon" type="image/jepg" href="http://www.corey-noble.com/favicon.jpg">
 
     <!-- Relative CSS / Javascript -->
     <link rel="stylesheet" href="assets/css/app.css" />
     <link rel="stylesheet" href="assets/css/animate.css" />
+    <script src='https://www.google.com/recaptcha/api.js'></script>
   </head>
   <body>
 
@@ -40,8 +42,9 @@
               <h5>Company</h5>
               <input type="text" name="company" required />
               <h5>Inquiry</h5>
-              <textarea class="last" name="inquiry" required></textarea>
-              <input type="submit" class="button submit-cta" href="#" value="Sign me up" rows="5" cols="35"/>
+              <textarea class="last" name="inquiry" rows="5" cols="35" required></textarea>
+              <div class="g-recaptcha" data-sitekey="6Leroh4TAAAAADw3rEA7sZZRliomxJuRNFq4xFtV"></div>
+              <input type="submit" class="button submit-cta" value="Sign me up"/>
             </div>
           </form>
         </div>
