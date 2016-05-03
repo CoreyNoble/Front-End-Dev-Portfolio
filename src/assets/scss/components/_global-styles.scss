@@ -9,13 +9,17 @@
 	padding: 4em 1em;
 }
 
-p{
+div, p{
   padding: 1em 0;
 }
 
 hr{
   height: 2px;
   color: $grey;
+}
+
+.no-padding.columns{
+  padding: 0!important;
 }
 
 .hide-mobile{
@@ -450,6 +454,7 @@ textarea{
     }
 
     input[type=submit]{
+      display: block;
       float: right;
       font-family: arial;
       color: #000000!important;
@@ -476,5 +481,28 @@ textarea{
           background: -moz-linear-gradient(to top,  #7FC7C7,  #5FA6A6);
       }
     }
+
+    .g-recaptcha{
+      display: block;
+      width: 100%;
+      padding: 0;
+      float: left;
+    }
+  }
+}
+
+@media only screen and (max-width: 40em) { /* max-width 640px, mobile-only styles, use when QAing mobile issues */
+  .g-recaptcha{
+    margin: 0 auto;
+    float: none;
+    transform:scale(0.77);
+    transform-origin:0 0;
+  }
+
+  input[type=submit]{
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    float: none!important;
   }
 }

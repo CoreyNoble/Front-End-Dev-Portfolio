@@ -45,11 +45,11 @@
               <h5 class="fadeIn wow">Inquiry</h5>
               <textarea class="fadeIn wow" class="last" name="inquiry" rows="5" cols="35" required></textarea>
 
-              <div class="large=6 medium-6 small-12 columns">
+              <div class="no-padding large=8 medium-8 small-12 columns">
                 <div class="g-recaptcha fadeIn wow" data-sitekey="6Leroh4TAAAAADw3rEA7sZZRliomxJuRNFq4xFtV"></div>
               </div>
 
-              <div class="large=6 medium-6 small-12 columns">
+              <div class="no-padding large=4 medium-4 small-12 columns">
                 <input class="fadeIn wow" type="submit" class="button submit-cta" value="Submit"/>
               </div>
             </div>

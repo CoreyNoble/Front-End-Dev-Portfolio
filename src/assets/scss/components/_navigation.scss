@@ -35,6 +35,10 @@ ul.topnav{
 
 /* Footer */
 footer{
+  .section{
+    padding: 0 1em;  
+  }
+
   h5{
     font-size: 1em;
     color: $grey!important;
