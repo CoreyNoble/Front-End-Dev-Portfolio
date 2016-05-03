@@ -22,6 +22,10 @@ hr{
   display: block;
 }
 
+.hide-tablet{
+  display: block;
+}
+
 .inline-accent{
   display: block;
   margin: 0 auto;
@@ -53,6 +57,12 @@ textarea{
     display: block;
     margin: 0 auto;
     padding: 1em;
+  }
+}
+
+@media only screen and (min-width: 40.063em) { /* min-width 641px, medium screens */
+  .hide-tablet{
+    display: none!important;
   }
 }
 
@@ -361,7 +371,8 @@ textarea{
 
   img{
     display: block;
-    margin: 2em 0 0 0;
+    margin: 0 auto;
+    margin-top: 1em;
   }
 }
 
@@ -374,32 +385,41 @@ textarea{
   h3{
     display: block;
     text-align: center;
+    margin-top: 2em;
 
     #resume{
       font-family: arial;
-      color: $black !important;
+      color: #000000!important;
       font-size: 24px;
-      box-shadow: 1px 1px 1px #BEE2F9;
-      padding: 24px 40px;
+      padding: 1em 2em;
       -moz-border-radius: 4px;
       -webkit-border-radius: 4px;
       border-radius: 4px;
-      border: 2px solid $black;
-      background: #63B8EE;
-      background: linear-gradient(top,  #7FC7C7,  #5FA6A6);
-      background: -ms-linear-gradient(top,  #7FC7C7,  #5FA6A6);
-      background: -webkit-gradient(linear, left top, left bottom, from(#7FC7C7), to(#5FA6A6));
-      background: -moz-linear-gradient(top,  #7FC7C7,  #5FA6A6);
+      border: 2px solid #000000;
+      background: #468CCF;
+      background: linear-gradient(to top,  #5FA6A6,  #7FC7C7);
+      background: -ms-linear-gradient(to top,  #5FA6A6,  #7FC7C7);
+      background: -webkit-gradient(linear, to left top, to left bottom, from(#5FA6A6), to(#7FC7C7));
+      background: -moz-linear-gradient(to top,  #5FA6A6,  #7FC7C7);
 
-      &:hover {
-          color: $black !important;
-          background: #468CCF;
-          background: linear-gradient(top,  #5FA6A6,  #7FC7C7);
-          background: -ms-linear-gradient(top,  #5FA6A6,  #7FC7C7);
-          background: -webkit-gradient(linear, left top, left bottom, from(#5FA6A6), to(#7FC7C7));
-          background: -moz-linear-gradient(top,  #5FA6A6,  #7FC7C7);
-        }
+      &:hover, &:active {
+          color: $white!important;
+          border-color: $white;
+          background: #63B8EE;
+          background: linear-gradient(to top,  #7FC7C7,  #5FA6A6);
+          background: -ms-linear-gradient(to top,  #7FC7C7,  #5FA6A6);
+          background: -webkit-gradient(linear, to left top, tp left bottom, from(#7FC7C7), to(#5FA6A6));
+          background: -moz-linear-gradient(to top,  #7FC7C7,  #5FA6A6);
       }
     }
+  }
+}
+
+@media only screen and (max-width: 40em) { /* max-width 640px, mobile-only styles, use when QAing mobile issues */
+  #about-me{
+    padding-bottom: 1em;
+  }
+  #portrait-suit{
+    top: 2em;
   }
 }

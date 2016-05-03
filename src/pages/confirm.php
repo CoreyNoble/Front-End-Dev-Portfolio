@@ -26,12 +26,9 @@
     <!-- Footer -->
     <?php include("partials/footer.html"); ?>
 
-    <div id="parallax-contact" class="parallax" data-stellar-background-ratio="0.8" ></div>
+    <div id="parallax-contact" class="parallax hide-tablet hide-mobile" data-stellar-background-ratio="0.8" ></div>
 
     <!-- Scripts -->
-    <script src="bower_components/jquery/dist/jquery.min.js"></script>
-    <script src="bower_components/foundation/js/foundation.min.js"></script>
-    <script src="assets/js/app.js"></script>
-    <script src="assets/js/wow.js"></script>
+    <?php include("partials/scripts.html"); ?>
   </body>
 </html>
