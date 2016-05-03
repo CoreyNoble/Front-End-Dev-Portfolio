@@ -20,31 +20,38 @@
       <h1 class="zoomInDown wow">Contact<br><hr><small>Corey Noble | 2016</small></h1>
     </div>
 
-    <div class="section black">
+    <div class="section white">
       <div class="row">
-        <div class="large-7 medium-7 small-12 columns">
+        <div id="contact-intro" class="large-12 medium-12 small-12 columns">
           <h2>I look forward to hearing from you!</h2>
           <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h5>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-          <a href="../..#" class="small radius button right">Radius Button</a>
         </div>
 
-        <div class="large-5 medium-5 small-12 columns">
+        <div id="contact-form" class="large-12 medium-12 small-12 columns">
           <form method="post" action="mailsend.php">
             <div class="row">
-              <h5>First Name</h5>
-              <input type="text" name="firstName" required />
-              <h5>Last Name</h5>
-              <input type="text" name="lastName" required />
-              <h5>Email Address</h5>
-              <input type="text" name="email" required />
-              <h5>Company</h5>
-              <input type="text" name="company" required />
-              <h5>Inquiry</h5>
-              <textarea class="last" name="inquiry" rows="5" cols="35" required></textarea>
-              <div class="g-recaptcha" data-sitekey="6Leroh4TAAAAADw3rEA7sZZRliomxJuRNFq4xFtV"></div>
-              <input type="submit" class="button submit-cta" value="Sign me up"/>
+              <h5 class="fadeIn wow">First Name</h5>
+              <input class="fadeIn wow" type="text" name="firstName" required />
+
+              <h5 class="fadeIn wow">Last Name</h5>
+              <input class="fadeIn wow" type="text" name="lastName" required />
+
+              <h5 class="fadeIn wow">Email Address</h5>
+              <input class="fadeIn wow" type="text" name="email" required />
+
+              <h5 class="fadeIn wow">Company</h5>
+              <input class="fadeIn wow" type="text" name="company" required />
+
+              <h5 class="fadeIn wow">Inquiry</h5>
+              <textarea class="fadeIn wow" class="last" name="inquiry" rows="5" cols="35" required></textarea>
+
+              <div class="large=6 medium-6 small-12 columns">
+                <div class="g-recaptcha fadeIn wow" data-sitekey="6Leroh4TAAAAADw3rEA7sZZRliomxJuRNFq4xFtV"></div>
+              </div>
+
+              <div class="large=6 medium-6 small-12 columns">
+                <input class="fadeIn wow" type="submit" class="button submit-cta" value="Submit"/>
+              </div>
             </div>
           </form>
         </div>
