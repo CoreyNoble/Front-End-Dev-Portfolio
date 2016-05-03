@@ -9,7 +9,11 @@
 	padding: 4em 1em;
 }
 
-div, p{
+div{
+  padding: 0;
+}
+
+p{
   padding: 1em 0;
 }
 
@@ -504,5 +508,23 @@ textarea{
     margin: 0 auto;
     padding: 0;
     float: none!important;
+  }
+}
+
+
+/* Portfolio */
+#showcase-options{
+  .showcase-toggle{
+    h3{
+      color: $black;
+    }
+  }
+}
+
+.showcase{
+  .showcase-example{
+    h3{
+      color: $black;
+    }
   }
 }

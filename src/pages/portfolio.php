@@ -24,6 +24,62 @@
         <div class="large-12 columns">
           <?php include("../../partials/crumbs.php"); ?>
 
+          <!-- Showcase Options -->
+          <div id="showcase-options">
+            <div class="large-6 medium-6 small-12 columns">
+              <div class="showcase-toggle blue">
+                <h3 class="white">Development Showcase</h3>
+              </div>
+            </div>
+
+            <div class="large-6 medium-6 small-12 columns">
+              <div class="showcase-toggle blue">
+                <h3 class="white">CMS Showcase</h3>
+              </div>
+            </div>
+          </div>
+
+          <!-- Development Options -->
+          <div class="showcase">
+            <div class="large-4 medium-4 small-12 columns">
+              <div class="showcase-example blue">
+                <h3 class="white">Example 1</h3>
+              </div>
+            </div>
+
+            <div class="large-4 medium-4 small-12 columns">
+              <div class="showcase-example blue">
+                <h3 class="white">Example 2</h3>
+              </div>
+            </div>
+
+            <div class="large-4 medium-4 small-12 columns">
+              <div class="showcase-example blue">
+                <h3 class="white">Example 3</h3>
+              </div>
+            </div>
+          </div>
+
+          <!-- CMS Options -->
+          <div class="showcase">
+            <div class="large-4 medium-4 small-12 columns">
+              <div class="showcase-example blue">
+                <h3 class="white">My CMS Skills</h3>
+              </div>
+            </div>
+
+            <div class="large-4 medium-4 small-12 columns">
+              <div class="showcase-example blue">
+                <h3 class="white">Right Choice</h3>
+              </div>
+            </div>
+
+            <div class="large-4 medium-4 small-12 columns">
+              <div class="showcase-example blue">
+                <h3 class="white">CTKR Music</h3>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
