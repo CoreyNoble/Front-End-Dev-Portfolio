@@ -17,6 +17,10 @@ ul.topnav{
         text-decoration: none;
         transition: 0.3s;
         font-size: 17px;
+
+        .site-title{
+          font-weight: bold;
+        }
       }
 
       a:hover{

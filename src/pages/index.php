@@ -4,8 +4,8 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Corey Noble | Web Developer</title>
-    <link rel="icon" type="image/jepg" href="http://www.corey-noble.com/favicon.jpg">
-
+    <link rel="icon" type="image/jpeg" href="http://www.corey-noble.com/favicon.jpg" />
+    <link rel="canonical" href="http://corey-noble.com/" />
     <!-- Relative CSS / Javascript -->
     <link rel="stylesheet" href="assets/css/app.css" />
     <link rel="stylesheet" href="assets/css/animate.css" />
