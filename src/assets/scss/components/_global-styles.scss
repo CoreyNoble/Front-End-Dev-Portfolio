@@ -113,14 +113,14 @@ textarea{
 }
 
 .blue-gradient{
-  background: rgba(4,119,151,1);
-  background: -moz-linear-gradient(left, rgba(4,119,151,1) 0%, rgba(6,218,251,1) 100%);
-  background: -webkit-gradient(left top, right top, color-stop(0%, rgba(4,119,151,1)), color-stop(100%, rgba(6,218,251,1)));
-  background: -webkit-linear-gradient(left, rgba(4,119,151,1) 0%, rgba(6,218,251,1) 100%);
-  background: -o-linear-gradient(left, rgba(4,119,151,1) 0%, rgba(6,218,251,1) 100%);
-  background: -ms-linear-gradient(left, rgba(4,119,151,1) 0%, rgba(6,218,251,1) 100%);
-  background: linear-gradient(to right, rgba(4,119,151,1) 0%, rgba(6,218,251,1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#047797', endColorstr='#06dafb', GradientType=1 );
+  background: rgba(109,170,170,1);
+  background: -moz-linear-gradient(45deg, rgba(109,170,170,1) 0%, rgba(150,233,233,1) 100%);
+  background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(109,170,170,1)), color-stop(100%, rgba(150,233,233,1)));
+  background: -webkit-linear-gradient(45deg, rgba(109,170,170,1) 0%, rgba(150,233,233,1) 100%);
+  background: -o-linear-gradient(45deg, rgba(109,170,170,1) 0%, rgba(150,233,233,1) 100%);
+  background: -ms-linear-gradient(45deg, rgba(109,170,170,1) 0%, rgba(150,233,233,1) 100%);
+  background: linear-gradient(45deg, rgba(109,170,170,1) 0%, rgba(150,233,233,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6daaaa', endColorstr='#96e9e9', GradientType=1 );
 }
 
 .light-blue{
@@ -515,7 +515,13 @@ textarea{
 /* Portfolio */
 #showcase-options{
   .showcase-toggle{
+    display: inline-block;
+    height: 20em;
+    margin-bottom: 2em;
+
     h3{
+      vertical-align: bottom;
+      text-align: center;
       color: $black;
     }
   }
@@ -523,8 +529,18 @@ textarea{
 
 .showcase{
   .showcase-example{
+    display: inline-block;
+    height: 20em;
+    width: 100%;
+    margin-bottom: 3em;
+    -moz-box-shadow: 0  0.75em 0.75em -0.75em #000000, 0 -0.75em 0.75em -0.75em #000000;
+    -webkit-box-shadow:  0  0.75em 0.75em -0.75em #000000, 0 -0.75em 0.75em -0.75em #000000;
+     box-shadow: 0  0.75em 0.75em -0.75em #000000, 0 -0.75em 0.75em -0.75em #000000;
+
     h3{
-      color: $black;
+      vertical-align: bottom;
+      text-align: center;
+      color: $white;
     }
   }
 }
