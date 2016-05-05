@@ -17,7 +17,7 @@
     <?php include("partials/navigation.html"); ?>
 
     <div id="parallax-hero" class="parallax" data-stellar-background-ratio="0.4" >
-      <h1 class="zoomInDown wow">Development&nbsp;Testing<br><hr><small>Corey Noble | 2016</small></h1>
+      <h1 class="zoomInDown wow">Development&nbsp;Testing</h1>
     </div>
 
     <div class="section black">

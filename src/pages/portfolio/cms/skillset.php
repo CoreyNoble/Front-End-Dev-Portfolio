@@ -29,22 +29,6 @@
       </div>
     </div>
 
-    <div class="section blue">
-      <div class="row">
-        <div class="large-12 columns">
-
-        </div>
-      </div>
-  </div>
-
-  <div class="section white">
-    <div class="row">
-      <div class="large-12 columns">
-
-      </div>
-    </div>
-  </div>
-
   <div id="parallax-cms-skillset" class="parallax hide-tablet hide-mobile" data-stellar-background-ratio="0.8" ></div>
 
   <!-- Footer -->
