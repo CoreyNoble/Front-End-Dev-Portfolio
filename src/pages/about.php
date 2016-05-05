@@ -110,14 +110,12 @@
     <div class="row">
       <div id="about-intro" class="large-12 columns">
         <h2 class="fadeInDown wow">My Story</h2>
-        <p class="fadeInDown wow">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        <p class="fadeInDown wow">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p class="fadeInDown wow">My name is Corey Noble, I am a Front-End Web Developer currently working for Thrillworks Inc. in the beautiful city of Burlington, ON - Canada.</p>
+        <p class="fadeInDown wow">I have a lot of passion for digital media, I love discovering new technologies as they emerge. I began working in digital media in highschool, taking as many media classes as possible. At the time I wanted to create environments in videogames. This lead me to take a two year Multi-Media Design and Production prerequisite program at Fanshawe College.</p>
+        <p class="fadeInDown wow">It was in this program that I was introducted to website development. I fell in love with the complex and creative role that web development provides. I enjoyed learing about the many parts of digital media that contributed to a completed web project. To me, graduating from this course was the beginning of my career as a Web Developer.</p>
+        <p class="fadeInDown wow">After I graduated from Multi-Media Design and Production, I followed through with my original goal and entered the proceeding 3D Animation and Character Design program. The 3D program was immensly difficult, but amazing. I had an industry veteran as my primary teacher for 80% of the classes I took. Due to the shorter than average timespan of this 3D course (1 year opposed to the average 3 years), our teacher pushed us to the very edge of our potential in a very condensed timeline.</p>
+        <p class="fadeInDown wow">Many people that work with me are amazed at the amount of dedication, concentration and the general attitude I have towards my profession. I concider the 3D program to be the reason for this. If I had any bad habits before the 3D course, they were broken by the time I graduated from 3D Animation and Character Design.</p>
+        <p class="fadeInDown wow">While I loved both of my fields of study, post-graduation I chose to enter Web Development. Since then I started a freelance web development company with a close college friend, then moved on to work at Thrillworks Inc. as a Web Production Specialist. Want to know my history? Keep scrolling.</p>
       </div>
         <div id="education" class="large-12 columns">
           <h2 class="fadeInDown wow" >Education</h2>
@@ -130,10 +128,7 @@ proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         <div class="about-experience large-10 medium-9 small-12 columns">
           <h2 class="fadeInDown wow" >Multi-Media Design and Production</h2>
           <p class="fadeInDown wow" ><b>2010 - 2012 (Diploma):</b></p>
-          <p class="fadeInDown wow" >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <p class="fadeInDown wow" >In Multi-Media Design and Production I learned a broad horizon of media related skills. We spent most of our time learning programs in the Adobe Master Suite; Photoshop, After Effects, Dreamweaver, In-Design, Flash and more. We then used these skills to create many different projects. We learned about design for print and for web, front and back-end coding for websites and applications, 3D modelling, animation, video effects, video processing and more.</p>
         </div>
         <div class="about-experience large-2 medium-3 small-12 columns">
           <img class="rollIn wow" src="../assets/img/icons/graduate.png" alt="Graduate"/>
@@ -141,10 +136,8 @@ proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         <div class="about-experience large-10 medium-9 small-12 columns">
           <h2 class="fadeInDown wow" >3D Animation and Character Design</h2>
           <p class="fadeInDown wow" ><b>2012 - 2013 (Certificate):</b></p>
-          <p class="fadeInDown wow" >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <p class="fadeInDown wow" >In 3D Animation and Character Design I was taught all about 3D. I learned how to model, sculpt, texture, rig and animate characters and environments. I also learned a lot about game development in Unity and due to my previous coding knowledge, I excelled at it.</p>
+          <p class="fadeInDown">A lot of emphasis in this course was efficiency and time management so I also learned a lot about optimizing 3D objects and planning through expansive projects down to the fine details. These skills have proved to be crucial in my field since finishing the program.</p>
         </div>
         <div id="experience" class="large-12 columns">
           <h2 class="fadeInDown wow" >Job Experience</h2>
@@ -156,10 +149,7 @@ proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         <div class="about-experience large-10 medium-9 small-12 columns">
           <h2 class="fadeInDown wow" >3D Artist and Unity Developer</h2>
           <p class="fadeInDown wow" ><b>May 2013 - August 2013 (4 months):</b></p>
-          <p class="fadeInDown wow" >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <p class="fadeInDown wow" >I was the lead developer and lead 3D artist for a few games. I was responsible for using the code base provided and adding art to the games. I added features to the code base, cooperated with the UI and Sound developers and implemented their assets.</p>
         </div>
         <div class="about-experience large-2 medium-3 small-12 columns">
           <img class="rollIn wow" src="../assets/img/logos/right-choice.png" alt="Right Choice Web Development"/>
@@ -167,10 +157,7 @@ proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         <div class="about-experience large-10 medium-9 small-12 columns">
           <h2 class="fadeInDown wow" >Co-Owner, Website Developer and Graphic Artist</h2>
           <p class="fadeInDown wow" ><b>September 2013 - May 2014</b></p>
-          <p class="fadeInDown wow" >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <p class="fadeInDown wow" >Building mobile responsive and aesthetically pleasing websites. I did everything from explaining business packages and the development process to clients, to graphic design and website development.</p>
         </div>
         <div class="about-experience large-2 medium-3 small-12 columns">
           <img class="rollIn wow" src="../assets/img/logos/thrillworks.png" alt="Thrillworks Inc."/>
@@ -178,10 +165,7 @@ proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         <div class="about-experience large-10 medium-9 small-12 columns">
           <h2 class="fadeInDown wow" >Web Production Specialist</h2>
           <p class="fadeInDown wow" ><b>May 2014 - Present</b></p>
-          <p class="fadeInDown wow" >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-          dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br><br>
+          <p class="fadeInDown wow" >My responsibilities include: Content entry within a variety of content management systems, Coordinating with designers, developers and project managers, Photo manipulation, Fixing bugs, Creating internal and external documentation.<br><br>
           <b class="fadeInDown wow" >Training:</b></p>
           <div class="large-3 medium-6 small-6 columns">
             <img class="rollIn wow" src="../assets/img/logos/foundation.png" alt="Zurb Foundation"/>
