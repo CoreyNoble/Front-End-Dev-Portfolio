@@ -1,36 +1,46 @@
 /*Top Navigation */
-ul.topnav{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
+nav{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 3;
+  -moz-box-shadow: 0  0.75em 0.75em -0.75em #000000, 0 -0.75em 0.75em -0.75em #000000;
+  -webkit-box-shadow:  0  0.75em 0.75em -0.75em #000000, 0 -0.75em 0.75em -0.75em #000000;
+   box-shadow: 0  0.75em 0.75em -0.75em #000000, 0 -0.75em 0.75em -0.75em #000000;
 
-    li{
-      float: left;
+  ul.topnav{
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #333;
 
-      a{
-        display: inline-block;
-        color: $white;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-        transition: 0.3s;
-        font-size: 17px;
+      li{
+        float: left;
 
-        .site-title{
-          font-weight: bold;
+        a{
+          display: inline-block;
+          color: $white;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+          transition: 0.3s;
+          font-size: 17px;
+
+          .site-title{
+            font-weight: bold;
+          }
+        }
+
+        a:hover{
+          background-color: $grey;
         }
       }
 
-      a:hover{
-        background-color: $grey;
+      li.icon {
+        display: none;
       }
-    }
-
-    li.icon {
-      display: none;
-    }
+  }
 }
 
 /* Footer */

@@ -9,6 +9,7 @@
     <!-- Relative CSS / Javascript -->
     <link rel="stylesheet" href="assets/css/app.css" />
     <link rel="stylesheet" href="assets/css/animate.css" />
+    <script src="bower_components/modernizr/modernizr.js"></script>
   </head>
   <body>
 

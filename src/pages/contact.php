@@ -9,6 +9,7 @@
     <!-- Relative CSS / Javascript -->
     <link rel="stylesheet" href="assets/css/app.css" />
     <link rel="stylesheet" href="assets/css/animate.css" />
+    <script src="bower_components/modernizr/modernizr.js"></script>
     <script src='https://www.google.com/recaptcha/api.js'></script>
   </head>
   <body>

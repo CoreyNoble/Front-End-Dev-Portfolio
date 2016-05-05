@@ -9,6 +9,7 @@
     <!-- Relative CSS / Javascript -->
     <link rel="stylesheet" href="assets/css/app.css" />
     <link rel="stylesheet" href="assets/css/animate.css" />
+    <script src="bower_components/modernizr/modernizr.js"></script>
   </head>
   <body>
 
@@ -23,7 +24,7 @@
       <div class="row">
         <div class="large-12 columns">
           <?php include("../../partials/crumbs.php"); ?>
-          
+
           <!-- Development Showcase -->
           <div class="large-12 medium-12 small-12 columns">
                 <h3>Development Showcase</h3>

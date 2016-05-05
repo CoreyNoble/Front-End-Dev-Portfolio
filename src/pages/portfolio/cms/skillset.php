@@ -7,8 +7,9 @@
     <link rel="icon" type="image/jpeg" href="http://www.corey-noble.com/favicon.jpg">
 
     <!-- Relative CSS / Javascript -->
-    <link rel="stylesheet" href="../../assets/css/app.css" />
-    <link rel="stylesheet" href="../../assets/css/animate.css" />
+    <link rel="stylesheet" href="assets/css/app.css" />
+    <link rel="stylesheet" href="assets/css/animate.css" />
+    <script src="bower_components/modernizr/modernizr.js"></script>
   </head>
   <body>
 
