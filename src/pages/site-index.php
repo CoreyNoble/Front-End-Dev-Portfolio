@@ -41,9 +41,9 @@
           <h4><a title="About Me" href="/about.html">About</a></h4>
           <h4><a title="My Services" href="/services.html">Services</a></h4>
           <h4><a title="Contact Me" href="/contact.html">Contact</a></h4>
-          <!-- Turn into a Button -->
-          <h4><a title="Corey Noble | Resume" href="/corey-noble-resume.pdf">My Resume (PDF)</a></h4>
-
+          <div class="resume-cta">
+            <h3 class="slideInRight wow"><a id="resume" href="../../resume.pdf" target="_blank">VIEW MY CV / RESUME</a></h3>
+          </div>
       </div>
     </div>
   </div>

@@ -201,7 +201,7 @@
 
   <div class="section black">
     <div class="row">
-      <div id="about-more-info" class="large-12 columns">
+      <div id="about-more-info" class="resume-cta large-12 columns">
         <h2>Want to Know More About Me?</h2>
         <h3 class="tada wow"><a id="resume" href="../../resume.pdf" target="_blank">VIEW MY CV / RESUME</a></h3>
       </div>
