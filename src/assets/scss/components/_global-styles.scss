@@ -437,21 +437,11 @@ textarea{
 
 
 /* Portfolio */
-#showcase-options{
-  .showcase-toggle{
-    display: inline-block;
-    height: 20em;
-    margin-bottom: 2em;
-
-    h3{
-      vertical-align: bottom;
-      text-align: center;
-      color: $black;
-    }
-  }
+.showcase-head{
+  margin-bottom: 1em;
 }
 
-.showcase{
+.showcase-1, .showcase-2{
   .showcase-example{
     display: inline-block;
     height: 20em;
@@ -464,11 +454,26 @@ textarea{
     h3{
       vertical-align: bottom;
       text-align: center;
-      color: $white;
     }
 
     p{
       margin-bottom: 3em;
+    }
+  }
+}
+
+.showcase-1{
+  .showcase-example{
+    h3{
+      color: $black;
+    }
+  }
+}
+
+.showcase-2{
+  .showcase-example{
+    h3{
+      color: $white;
     }
   }
 }

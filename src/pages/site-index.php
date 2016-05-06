@@ -32,21 +32,11 @@
           <h4><a href="../../index.html">Home</a></h4>
           <h4><a href="../../portfolio.html">Portfolio</a></h4>
           <ul class="slideInRight wow">
-            <li>
-              <h4><a title="Front-End Developer Portfolio" href="/portfolio/frameworks.html">Front-End Developer Portfolio</a></h4>
-              <ul>
-                <li><h4><a title="Framework Example 1" href="/portfolio/frameworks/example-1.html">Framework Example 1</a></h4></li>
-                <li><h4><a title="Framework Example 2" href="/portfolio/frameworks/example-2.html">Framework Example 2</a></h4></li>
-              </ul>
-            </li>
-            <li>
-              <h4><a title="CMS Portfolio" href="/portfolio/cms.html">CMS Portfolio</a></h4>
-                <ul>
-                  <li><h4><a title="CMS Skillset" href="/portfolio/cms/skillset.html">CMS Skillset</a></h4></li>
-                  <li><h4><a title="WordPress Example 2" href="/portfolio/cms/wordpress-example-1.html">WordPress Example 1</a></h4></li>
-                  <li><h4><a title="WordPress Example 1" href="/portfolio/cms/wordpress-example-2.html">WordPress Example 2</a></h4></li>
-                </ul>
-            </li>
+            <li><h4><a title="Framework Example 1" href="/portfolio/frameworks/example-1.html">Framework Example 1</a></h4></li>
+            <li><h4><a title="Framework Example 2" href="/portfolio/frameworks/example-2.html">Framework Example 2</a></h4></li>
+            <li><h4><a title="CMS Skillset" href="/portfolio/cms/skillset.html">CMS Skillset</a></h4></li>
+            <li><h4><a title="WordPress Example 2" href="/portfolio/cms/wordpress-example-1.html">WordPress Example 1</a></h4></li>
+            <li><h4><a title="WordPress Example 1" href="/portfolio/cms/wordpress-example-2.html">WordPress Example 2</a></h4></li>
           </ul>
           <h4><a title="About Me" href="/about.html">About</a></h4>
           <h4><a title="My Services" href="/services.html">Services</a></h4>

@@ -110,9 +110,9 @@
     <div class="row">
       <div id="about-intro" class="large-12 columns">
         <h2 class="fadeInDown wow">My Story</h2>
-        <p class="fadeInDown wow">My name is Corey Noble, I am a Front-End Web Developer currently working for Thrillworks Inc. in the beautiful city of Burlington, ON - Canada.</p>
-        <p class="fadeInDown wow">I have a lot of passion for digital media, I love discovering new technologies as they emerge. I began working in digital media in highschool, taking as many media classes as possible. At the time I wanted to create environments in videogames. This lead me to take a two year Multi-Media Design and Production prerequisite program at Fanshawe College.</p>
-        <p class="fadeInDown wow">It was in this program that I was introducted to website development. I fell in love with the complex and creative role that web development provides. I enjoyed learing about the many parts of digital media that contributed to a completed web project. To me, graduating from this course was the beginning of my career as a Web Developer.</p>
+        <p class="fadeInDown wow">My name is <b>Corey Noble</b>, I am a <b>Front-End Web Developer</b> currently working for <a href="http://www.thrillworks.com/" target="_blank" style="color: #fb7638;"><b>Thrillworks Inc.</b></a> in the beautiful city of <u>Burlington, ON - Canada</u>.<br>
+          I have a lot of passion for digital media and love discovering new technologies as they emerge.</p>
+        <p class="fadeInDown wow">I began working in digital media in highschool, taking as many media classes as possible. At the time I wanted to create environments in videogames. This lead me to take a two year Multi-Media Design and Production pre-requisite program at Fanshawe College. It was in this program that I was introducted to website development. I fell in love with the complex and creative role that web development provides. I enjoyed learing about the many parts of digital media that contributed to a completed web project. To me, graduating from this course was the beginning of my career as a Web Developer.</p>
         <p class="fadeInDown wow">After I graduated from Multi-Media Design and Production, I followed through with my original goal and entered the proceeding 3D Animation and Character Design program. The 3D program was immensly difficult, but amazing. I had an industry veteran as my primary teacher for 80% of the classes I took. Due to the shorter than average timespan of this 3D course (1 year opposed to the average 3 years), our teacher pushed us to the very edge of our potential in a very condensed timeline.</p>
         <p class="fadeInDown wow">Many people that work with me are amazed at the amount of dedication, concentration and the general attitude I have towards my profession. I concider the 3D program to be the reason for this. If I had any bad habits before the 3D course, they were broken by the time I graduated from 3D Animation and Character Design.</p>
         <p class="fadeInDown wow">While I loved both of my fields of study, post-graduation I chose to enter Web Development. Since then I started a freelance web development company with a close college friend, then moved on to work at Thrillworks Inc. as a Web Production Specialist. Want to know my history? Keep scrolling.</p>
@@ -128,7 +128,15 @@
         <div class="about-experience large-10 medium-9 small-12 columns">
           <h2 class="fadeInDown wow" >Multi-Media Design and Production</h2>
           <p class="fadeInDown wow" ><b>2010 - 2012 (Diploma):</b></p>
-          <p class="fadeInDown wow" >In Multi-Media Design and Production I learned a broad horizon of media related skills. We spent most of our time learning programs in the Adobe Master Suite; Photoshop, After Effects, Dreamweaver, In-Design, Flash and more. We then used these skills to create many different projects. We learned about design for print and for web, front and back-end coding for websites and applications, 3D modelling, animation, video effects, video processing and more.</p>
+          <p class="fadeInDown wow" >In Multi-Media Design and Production I gained a broad horizon of media related skills. Most of the time was spent learning how to utilize the Adobe Master Suite to build various types of media related, mock-client projects. The primary focus of this program was to incorperate new technologies into websites built from scratch. The skills we learned include:</p>
+          <ul>
+            <li class="fadeInDown wow"><u>Photoshop</u> – Website Production Graphics</li>
+            <li class="fadeInDown wow"><u>Illustraitor</u> – Vector art for Scalable Media and Print</li>
+            <li class="fadeInDown wow"><u>HTML, XML, CSS, JavaScript, PHP</u> – Website Development</li>
+            <li class="fadeInDown wow"><u>In-Design</u> – Creating Print-Ready Documentation</li>
+            <li class="fadeInDown wow"><u>ActionScript, Flash, Flash-Builder</u> – Web App Development</li>
+            <li class="fadeInDown wow"><u>After Effects, Media Encoder</u> – Video Production, VFX, Video Output</li>
+          </ul>
         </div>
         <div class="about-experience large-2 medium-3 small-12 columns">
           <img class="rollIn wow" src="../assets/img/icons/graduate.png" alt="Graduate"/>
@@ -136,8 +144,14 @@
         <div class="about-experience large-10 medium-9 small-12 columns">
           <h2 class="fadeInDown wow" >3D Animation and Character Design</h2>
           <p class="fadeInDown wow" ><b>2012 - 2013 (Certificate):</b></p>
-          <p class="fadeInDown wow" >In 3D Animation and Character Design I was taught all about 3D. I learned how to model, sculpt, texture, rig and animate characters and environments. I also learned a lot about game development in Unity and due to my previous coding knowledge, I excelled at it.</p>
-          <p class="fadeInDown">A lot of emphasis in this course was efficiency and time management so I also learned a lot about optimizing 3D objects and planning through expansive projects down to the fine details. These skills have proved to be crucial in my field since finishing the program.</p>
+          <p class="fadeInDown wow">In 3D Animation and Character design I honed the skills that are used in all aspects of Game Development and Computer Graphics. This was the toughest year of my educated life. This program was designed with two years of material packed into one. I believe the most important skills I learned from this course are Time Management, Project Management and Team Collaboration skills.</p>
+          <ul>
+            <li class="fadeInDown wow"><u>Time Management</u> – Our assignments were always under very strict timelines and Time Managment was the key to passing the course. Today, I concider this the most valuable skill I have.</li>
+            <li class="fadeInDown wow"><u>Project Management</u> – We often had multiple projects on-the-go with competing deadlines. Dedicated focus on project management was nessesary.</li>
+            <li class="fadeInDown wow"><u>Team Collaboration</u> – We created platformer and isometric shooter style games in groups ranging from 5-6 people. I learned all about the tensions that build in a team under strict deadlines and how to deal with the stress of team members that aren't getting along or performing at their role. </li>
+            <li class="fadeInDown wow"><u>Constructive Criticism</u> – Our teacher was an industry veteran who was very critical about feedback. He was our client and if something wasn`t up to spec, we had to rectify it. I learned very quickly the importance of listening and adhering to the feedback and critisisms of my work.</li>
+            <li class="fadeInDown wow"><u>Technical Skills</u> – The Technical skills I honed in this program are: <i>Sculpting, Retopology + Mesh-Optimization, Upwrapping + Texturing, Rigging + Animation, Lighting + Rendering, Game Development</i>.
+          </ul>
         </div>
         <div id="experience" class="large-12 columns">
           <h2 class="fadeInDown wow" >Job Experience</h2>
@@ -189,7 +203,7 @@
     <div class="row">
       <div id="about-more-info" class="large-12 columns">
         <h2>Want to Know More About Me?</h2>
-        <h3 class="tada wow"><a id="resume" href="../../resume.pdf">VIEW MY CV / RESUME</a></h3>
+        <h3 class="tada wow"><a id="resume" href="../../resume.pdf" target="_blank">VIEW MY CV / RESUME</a></h3>
       </div>
     </div>
   </div>

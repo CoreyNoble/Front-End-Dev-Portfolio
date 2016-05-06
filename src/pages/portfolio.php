@@ -20,21 +20,21 @@
       <h1 class="zoomInDown wow">My Portfolio</h1>
     </div>
 
-    <div class="section blue">
+    <div class="section black">
       <div class="row">
         <div class="large-12 columns">
           <?php include("../../partials/crumbs.php"); ?>
 
           <!-- Development Showcase -->
           <div class="large-12 medium-12 small-12 columns">
-                <h3>Development Showcase</h3>
+                <h2 class="showcase-head">Development Showcase</h2>
           </div>
 
-          <div class="showcase">
+          <div class="showcase-1">
             <div class="fadeIn wow large-12 medium-12 small-12 columns">
               <a href="/portfolio/frameworks/example-1.php">
                 <div class="showcase-example blue-gradient">
-                  <h3 class="black">Example 1</h3>
+                  <h3 class="light-blue">Example 1</h3>
                 </div>
               </a>
             </div>
@@ -42,41 +42,46 @@
             <div class="fadeIn wow large-12 medium-12 small-12 columns">
               <a href="/portfolio/frameworks/example-2.php">
                 <div class="showcase-example blue-gradient">
-                  <h3 class="black">Example 2</h3>
+                  <h3 class="light-blue">Example 2</h3>
                 </div>
               </a>
             </div>
           </div>
 
-          <!-- CMS Showcase -->
-          <div class="large-12 medium-12 small-12 columns">
-                <h3>CMS Showcase</h3>
+        </div>
+      </div>
+    </div>
+
+    <div class="section white">
+      <div class="row">
+        <!-- CMS Showcase -->
+        <div class="large-12 medium-12 small-12 columns">
+              <h2 class="showcase-head">CMS Showcase</h2>
+        </div>
+
+        <div class="showcase-2">
+          <div class="fadeIn wow large-12 medium-12 small-12 columns">
+            <a href="/portfolio/cms/skillset.php">
+              <div class="showcase-example blue-gradient">
+                <h3 class="black">My CMS Skills</h3>
+              </div>
+            </a>
           </div>
 
-          <div class="showcase">
-            <div class="fadeIn wow large-12 medium-12 small-12 columns">
-              <a href="/portfolio/cms/skillset.php">
-                <div class="showcase-example blue-gradient">
-                  <h3 class="black">My CMS Skills</h3>
-                </div>
-              </a>
-            </div>
+          <div class="fadeIn wow large-6 medium-6 small-12 columns">
+            <a href="/portfolio/cms/right-choice.php">
+              <div class="showcase-example blue-gradient">
+                <h3 class="black">Right Choice</h3>
+              </div>
+            </a>
+          </div>
 
-            <div class="fadeIn wow large-6 medium-6 small-12 columns">
-              <a href="/portfolio/cms/right-choice.php">
-                <div class="showcase-example blue-gradient">
-                  <h3 class="black">Right Choice</h3>
-                </div>
-              </a>
-            </div>
-
-            <div class="fadeIn wow large-6 medium-6 small-12 columns">
-              <a href="/portfolio/cms/ctkr-music.php">
-                <div class="showcase-example blue-gradient">
-                  <h3 class="black">CTKR Music</h3>
-                </div>
-              </a>
-            </div>
+          <div class="fadeIn wow large-6 medium-6 small-12 columns">
+            <a href="/portfolio/cms/ctkr-music.php">
+              <div class="showcase-example blue-gradient">
+                <h3 class="black">CTKR Music</h3>
+              </div>
+            </a>
           </div>
         </div>
       </div>

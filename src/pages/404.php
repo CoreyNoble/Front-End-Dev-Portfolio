@@ -31,10 +31,6 @@
         <h2 class="slideInLeft wow">Please visit one of the pages below: <h2>
           <h4 class="slideInRight wow"><a href="../../index.html">Home</a></h4>
           <h4 class="slideInRight wow"><a href="../../portfolio.html">Portfolio</a></h4>
-          <ul class="slideInRight wow">
-            <li><h4><a title="Front-End Developer Portfolio" href="/portfolio/frameworks.html">Front-End Developer Portfolio</a></h4></li>
-            <li><h4><a title="CMS Author Portfolio" href="/portfolio/cms.html">CMS Portfolio</a></h4></li>
-          </ul>
           <h4 class="slideInRight wow"><a title="About Me" href="/about.html">About</a></h4>
           <h4 class="slideInRight wow"><a title="My Services" href="/services.html">Services</a></h4>
           <h4 class="slideInRight wow"><a title="Contact Me" href="/contact.html">Contact</a></h4>
