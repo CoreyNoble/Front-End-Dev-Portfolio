@@ -115,7 +115,7 @@
         <p class="fadeInDown wow">I began working in digital media in highschool, taking as many media classes as possible. At the time I wanted to create environments in videogames. This lead me to take a two year Multi-Media Design and Production pre-requisite program at Fanshawe College. It was in this program that I was introducted to website development. I fell in love with the complex and creative role that web development provides. I enjoyed learing about the many parts of digital media that contributed to a completed web project. To me, graduating from this course was the beginning of my career as a Web Developer.</p>
         <p class="fadeInDown wow">After I graduated from Multi-Media Design and Production, I followed through with my original goal and entered the proceeding 3D Animation and Character Design program. The 3D program was immensly difficult, but amazing. I had an industry veteran as my primary teacher for 80% of the classes I took. Due to the shorter than average timespan of this 3D course (1 year opposed to the average 3 years), our teacher pushed us to the very edge of our potential in a very condensed timeline.</p>
         <p class="fadeInDown wow">Many people that work with me are amazed at the amount of dedication, concentration and the general attitude I have towards my profession. I concider the 3D program to be the reason for this. If I had any bad habits before the 3D course, they were broken by the time I graduated from 3D Animation and Character Design.</p>
-        <p class="fadeInDown wow">While I loved both of my fields of study, post-graduation I chose to enter Web Development. Since then I started a freelance web development company with a close college friend, then moved on to work at Thrillworks Inc. as a Web Production Specialist. Want to know my history? Keep scrolling.</p>
+        <p class="fadeInDown wow">While I loved both of my fields of study, post-graduation I chose to enter Web Development. Since then I started a freelance web development company with a college friend, then moved on to work at Thrillworks Inc. as a Web Production Specialist. Want to know my history? Keep scrolling.</p>
       </div>
         <div id="education" class="large-12 columns">
           <h2 class="fadeInDown wow" >Education</h2>
@@ -144,13 +144,13 @@
         <div class="about-experience large-10 medium-9 small-12 columns">
           <h2 class="fadeInDown wow" >3D Animation and Character Design</h2>
           <p class="fadeInDown wow" ><b>2012 - 2013 (Certificate):</b></p>
-          <p class="fadeInDown wow">In 3D Animation and Character design I honed the skills that are used in all aspects of Game Development and Computer Graphics. This was the toughest year of my educated life. This program was designed with two years of material packed into one. I believe the most important skills I learned from this course are Time Management, Project Management and Team Collaboration skills.</p>
+          <p class="fadeInDown wow">In 3D Animation and Character design I honed the skills that are used in all aspects of Game Development and Computer Graphics. However, I believe the most valuable skills I learned from this program are Time Management, Project Management and Team Collaboration skills.</p>
           <ul>
             <li class="fadeInDown wow"><u>Time Management</u> – Our assignments were always under very strict timelines and Time Managment was the key to passing the course. Today, I concider this the most valuable skill I have.</li>
             <li class="fadeInDown wow"><u>Project Management</u> – We often had multiple projects on-the-go with competing deadlines. Dedicated focus on project management was nessesary.</li>
-            <li class="fadeInDown wow"><u>Team Collaboration</u> – We created platformer and isometric shooter style games in groups ranging from 5-6 people. I learned all about the tensions that build in a team under strict deadlines and how to deal with the stress of team members that aren't getting along or performing at their role. </li>
-            <li class="fadeInDown wow"><u>Constructive Criticism</u> – Our teacher was an industry veteran who was very critical about feedback. He was our client and if something wasn`t up to spec, we had to rectify it. I learned very quickly the importance of listening and adhering to the feedback and critisisms of my work.</li>
-            <li class="fadeInDown wow"><u>Technical Skills</u> – The Technical skills I honed in this program are: <i>Sculpting, Retopology + Mesh-Optimization, Upwrapping + Texturing, Rigging + Animation, Lighting + Rendering, Game Development</i>.
+            <li class="fadeInDown wow"><u>Team Collaboration</u> – We created platformer and isometric shooter games in groups ranging from 5-6 people. I learned all about the tensions that build in a team under strict deadlines and how to deal with the stress of team members that aren't getting along or performing at their role. </li>
+            <li class="fadeInDown wow"><u>Constructive Criticism</u> – Our teacher was an industry veteran who was very critical about feedback. He was our client and if something wasn't up to spec, we had to rectify it. I learned very quickly the importance of listening and adhering to the feedback and critisisms of my work.</li>
+            <li class="fadeInDown wow"><u>Technical Skills</u> – The Technical skills I honed in this program are: <i>Concept Art, Sculpting, Retopology + Mesh-Optimization, Upwrapping + Texturing, Rigging + Animation, Lighting + Rendering, Game Development</i>.</li>
           </ul>
         </div>
         <div id="experience" class="large-12 columns">
@@ -163,7 +163,11 @@
         <div class="about-experience large-10 medium-9 small-12 columns">
           <h2 class="fadeInDown wow" >3D Artist and Unity Developer</h2>
           <p class="fadeInDown wow" ><b>May 2013 - August 2013 (4 months):</b></p>
-          <p class="fadeInDown wow" >I was the lead developer and lead 3D artist for a few games. I was responsible for using the code base provided and adding art to the games. I added features to the code base, cooperated with the UI and Sound developers and implemented their assets.</p>
+          <p class="fadeInDown wow" >I was the Lead Developer / 3D Artist for a few mobile games. I was provided a code base and was responsible for creating all of the in-game art and get it working in Unity in parallel with the provided code. I added features to the code base, collaborated with the UI and Sound developers and implemented their assets.</p>
+          <ul>
+            <li class="fadeInDown wow"><u>Project Management</u> – The priority of each game was low development cost. Each project had to be carefully managed to ensure success.</li>
+            <li class="fadeInDown wow"><u>Technical Skills</u> –  <i>GIT + Version Control, Unity Game Development, 3DS Max (Modelling + Animation), Photoshop (Texturing + Concept Art).</i></li>
+          </ul>
         </div>
         <div class="about-experience large-2 medium-3 small-12 columns">
           <img class="rollIn wow" src="../assets/img/logos/right-choice.png" alt="Right Choice Web Development"/>
@@ -171,7 +175,14 @@
         <div class="about-experience large-10 medium-9 small-12 columns">
           <h2 class="fadeInDown wow" >Co-Owner, Website Developer and Graphic Artist</h2>
           <p class="fadeInDown wow" ><b>September 2013 - May 2014</b></p>
-          <p class="fadeInDown wow" >Building mobile responsive and aesthetically pleasing websites. I did everything from explaining business packages and the development process to clients, to graphic design and website development.</p>
+          <p class="fadeInDown wow" >A college friend and I created a Web Development company called Right Choice. I was responsible for building mobile responsive and aesthetically pleasing websites with WordPress and Joomla. I did everything from explaining business packages and the development process to clients, to graphic design, website development and creating training documentation.</p>
+          <ul>
+            <li class="fadeInDown wow"><u>WordPress + Joomla</u> – We used WordPress and Joomla as the primary means of web development.</li>
+            <li class="fadeInDown wow"><u>Photoshop + Illustraitor</u> – Used to create the media we produced. Including: Branding, Website Compositions, Website Graphics and Print Graphics.</li>
+            <li class="fadeInDown wow"><u>Trello</u> –  This was our way of tracking the work that was to be done, in-progress and completed. When we weren't working together, we would split up pre-defined project work in Trello.</li>
+            <li class="fadeInDown wow"><u>Mind Mapping</u> –  We would create mind maps to map out project needs, determine the importance of tasks, and sort tasks by relevance. </li>
+            <li class="fadeInDown wow"><u>InDesign</u> –  When creating the branding for Right Choice, aswell as any client documentation, I used In-Design to create print ready PDFs.</li>
+          </ul>
         </div>
         <div class="about-experience large-2 medium-3 small-12 columns">
           <img class="rollIn wow" src="../assets/img/logos/thrillworks.png" alt="Thrillworks Inc."/>
@@ -179,7 +190,23 @@
         <div class="about-experience large-10 medium-9 small-12 columns">
           <h2 class="fadeInDown wow" >Web Production Specialist</h2>
           <p class="fadeInDown wow" ><b>May 2014 - Present</b></p>
-          <p class="fadeInDown wow" >My responsibilities include: Content entry within a variety of content management systems, Coordinating with designers, developers and project managers, Photo manipulation, Fixing bugs, Creating internal and external documentation.<br><br>
+          <p class="fadeInDown wow" >Thrillworks is my current employer. As a Web Production Specialist I get to work with a wide variety of web technologies. Working at Thrillworks has given me experience with:</p>
+          <ul>
+            <li class="fadeInDown wow"><u>ExactTarget / SalesForce</u> – Creating, editing and testing email campaigns and monthy emails.  Incorperating dynamically generated content, Including; qr codes, company variables and user data. Creating and updating email templates, Sending and scheduling emails for a large subscriber base. Sending batches of emails per hour to large audiences and sending specific emails to region filtered users.</li>
+            <li class="fadeInDown wow"><u>WordPress</u> –  Development of the re-designs of websites, updating page content, media assets and data.</li>
+            <li class="fadeInDown wow"><u>RedDot / OpenText</u> – Creating Product items and incorperating them and their promotions throughout websites. Creating web pages and components. Updating microsites, templates and banners in 3 language variations.</li>
+            <li class="fadeInDown wow"><u>Photoshop + Illustraitor</u> –  Used to create website graphics, for photo manipulation and photo optimization.</li>
+            <li class="fadeInDown wow"><u>InDesign</u> – Creating training documentation and manuals.</li>
+            <li class="fadeInDown wow"><u>SiteCore</u> – Updating documentation and page content in 2 language variations</li>
+            <li class="fadeInDown wow"><u>Magento</u> –  Creating hundreds of products and packages with unique identifies that worked in conjunction with an e-commerce database. Creating web pages that dynamically loaded corresponding products.</li>
+            <li class="fadeInDown wow"><u>AEM - Adobe Experience Manager</u> –  Page development, component development, website maintenance, asset manipulation, version control and quality assurance for 12+ languages.</li>
+            <li class="fadeInDown wow"><u>Foundation + SCSS</u> – Website development using the Foundation framework. Using SCSS variables + mixins to create websites under strict branding guidelines.</li>
+            <li class="fadeInDown wow"><u>GIT + Source Control</u> –  Using BitBucket to store project repositories and their branches, accessed via Source Tree for easy version control.</li>
+            <li class="fadeInDown wow"><u>JIRA + Confluence</u> – Ticket tracking for website tasks and maintenance. Creating internal Wiki documentation.</li>
+            <li class="fadeInDown wow"><u>Agile Methodology</u> –  Professional training on Agile Methodology. Creating and managing team Kanban boards, daily Scrums and frequent retrospective meetings. Evaluating the scope of projects, breaking them into managable tasks and tracking team velocity.</li>
+            <li class="fadeInDown wow"><u>SEO + WCAG Guidelines</u> –  Thorough research and training on Search Engine Optimization best practices and the Web Content Accessibility Guidelines. </li>
+          </ul>
+          <br><br>
           <b class="fadeInDown wow" >Training:</b></p>
           <div class="large-2 medium-3 small-3 columns">
             <img class="rollIn wow" src="../assets/img/logos/foundation.png" alt="Zurb Foundation"/>
