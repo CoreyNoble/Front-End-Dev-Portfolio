@@ -20,7 +20,7 @@
       <h1 class="zoomInDown wow">Services</h1>
     </div>
 
-    <div class="section white">
+    <div class="section blue">
       <div class="row" data-equalizer>
         <div class= "services-promotion large-4 medium-4 small-12 columns" data-equalizer-watch>
           <img class="zoomIn wow" src="assets/img/icons/design-icon.png" alt="Design Icon" />
@@ -62,7 +62,7 @@
           <h4 class="zoomIn wow">Email Campaigns</h4>
           <p class="zoomIn wow">Do you want to promote campaigns via. email? I have a lot of experience building, testing and deploying email campaigns to large audiences. I can even track click-through anylitics and show you the user data.</p>
         </div>
-        <div class="services-promotion large-4 medium-4 small-12 columns" data-equalizer-watch>
+        <div class="services-promotion large-4 medium-4 small-12 columns end" data-equalizer-watch>
           <img class="zoomIn wow" src="assets/img/icons/optimized-code-icon.png" alt="Code Icon" />
           <h4 class="zoomIn wow">Clean and Efficient Code</h4>
           <p class="zoomIn wow">I always optimize the the code I write to ensure minimal load times. My code is written in an understandabe, programatic format so it is easy for any web developer to read and manipulate.</p>

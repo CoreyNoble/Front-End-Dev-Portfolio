@@ -72,6 +72,12 @@ footer{
   .footnote-position{
     margin-top: .5em;
 
+    .name, .title, .footnote-contact{
+      display: block;
+      width: 100%;
+      float: left;
+    }
+
     .name{
       padding: 0;
       margin: 0;
@@ -87,7 +93,7 @@ footer{
   }
 
   .footnote-contact{
-    margin-top: 2.75em;
+    margin-top: 1em;
   }
 
   .footnote-contact, .social-media, .footnote-ctas{
@@ -111,8 +117,17 @@ footer{
       max-width: 35px;
     }
 
+    .linkedin{
+      display: block;
+      width: 100%;
+      float: left;
+    }
+
     .github{
-      margin-top: 1em;
+      display: block;
+      width: 100%;
+      float: left;
+      margin-top: 1.5em;
     }
 
     .social-icon{
@@ -169,18 +184,17 @@ footer{
 
 @media only screen and (min-width: 40.063em) and (max-width: 64em) { /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
   footer{
-    .footnote-profile{
-      display: block!important;
-
-      img{
-        display: block;
-        margin: 0 auto!important;
-      }
-    }
-
     .social-media{
-      margin-top: 3em!important;
+      margin-top: 1em!important;
       margin-left: 1em;
+
+      .linkedin{
+        margin-top: 1em!important;
+      }
+
+      .github{
+        margin-top: 1em!important;
+      }
     }
 
     .footnote-ctas{
@@ -207,6 +221,11 @@ footer{
 }
 
 @media only screen and (max-width: 40em) { /* max-width 640px, mobile-only styles, use when QAing mobile issues */
+footer{
+  .footnote-position .name{
+    margin-top: .75em!important;
+  }
+
   .footnote-ctas{
     float: left!important;
     margin-right: 0em;
@@ -215,6 +234,15 @@ footer{
 
     h5{
       padding: 0em 0.5em;
+    }
+  }
+
+  .social-media{
+    margin-top: 3em!important;
+
+    .github{
+      display: block;
+      margin-top: 2em!important;
     }
   }
 
@@ -233,6 +261,7 @@ footer{
   .footnote-ctas-tablet{
     display: block!important;
   }
+}
 }
 
 /*Back to Top*/

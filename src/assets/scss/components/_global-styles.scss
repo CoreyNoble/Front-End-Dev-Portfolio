@@ -55,12 +55,6 @@ textarea{
     margin: 0;
   }
 
-  div{
-    display: block;
-    margin: 0 auto;
-    padding: 1em .5em;
-  }
-
   .inline-accent{
     display: block;
     margin: 0 auto;
@@ -360,6 +354,13 @@ textarea{
   #portrait-suit{
     top: 2em;
   }
+  .resume-cta{
+    h3{
+      #resume{
+        font-size: 16px;
+      }
+    }
+  }
 }
 
 
@@ -369,7 +370,11 @@ textarea{
 }
 
 #contact-form{
-  background: url(../img/aesthetic-geometry.jpg) no-repeat;
+  background: url(../img/aesthetic-geometry-tablet.jpg) no-repeat;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
   padding: 1em 2em;
   -moz-box-shadow: 0  0.75em 0.75em -0.75em #000000, 0 -0.75em 0.75em -0.75em #000000;
   -webkit-box-shadow:  0  0.75em 0.75em -0.75em #000000, 0 -0.75em 0.75em -0.75em #000000;

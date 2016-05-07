@@ -19,7 +19,7 @@
   <div class="section blue">
     <div class="row">
       <div class="large-12 columns">
-        <h1 class="slideInLeft wow">Site Index | Corey Noble</h1>
+        <h1 class="header-no-parallax slideInLeft wow">Site Index</h1>
         <h3 class="slideInLeft wow">Below is my full website heirarchy:</h3>
       </div>
     </div>

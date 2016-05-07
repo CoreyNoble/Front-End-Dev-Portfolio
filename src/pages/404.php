@@ -19,7 +19,7 @@
   <div class="section blue">
     <div class="row">
       <div class="large-12 columns">
-        <h1 class="slideInLeft wow">404</h1>
+        <h1 class="header-no-parallax slideInLeft wow">404</h1>
         <h3 class="slideInLeft wow">Sorry, that page does not exist.</h3>
       </div>
     </div>

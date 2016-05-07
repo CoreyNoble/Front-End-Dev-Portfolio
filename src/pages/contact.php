@@ -17,11 +17,11 @@
     <!-- Navigation Menu -->
     <?php include("partials/navigation.html"); ?>
 
-    <div id="parallax-hero-1" class="parallax" data-stellar-background-ratio="0.4" >
+    <div id="parallax-hero-2" class="parallax" data-stellar-background-ratio="0.4" >
       <h1 class="zoomInDown wow">Contact Me</h1>
     </div>
 
-    <div class="section white">
+    <div class="section black">
       <div class="row">
         <div id="contact-intro" class="large-12 medium-12 small-12 columns">
           <h2>I look forward to hearing from you!</h2>

@@ -16,7 +16,7 @@
     <!-- Navigation Menu -->
     <?php include("partials/navigation.html"); ?>
 
-    <div id="parallax-hero-3" class="parallax" data-stellar-background-ratio="0.4" >
+    <div id="parallax-hero-1" class="parallax" data-stellar-background-ratio="0.4" >
       <h1 class="zoomInDown wow">< COREY-NOBLE /></h1>
     </div>
 

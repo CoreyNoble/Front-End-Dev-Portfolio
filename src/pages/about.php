@@ -181,16 +181,16 @@
           <p class="fadeInDown wow" ><b>May 2014 - Present</b></p>
           <p class="fadeInDown wow" >My responsibilities include: Content entry within a variety of content management systems, Coordinating with designers, developers and project managers, Photo manipulation, Fixing bugs, Creating internal and external documentation.<br><br>
           <b class="fadeInDown wow" >Training:</b></p>
-          <div class="large-3 medium-6 small-6 columns">
+          <div class="large-2 medium-3 small-3 columns">
             <img class="rollIn wow" src="../assets/img/logos/foundation.png" alt="Zurb Foundation"/>
           </div>
-          <div class="large-3 medium-6 small-6 columns">
+          <div class="large-2 medium-3 small-3 columns">
             <img class="rollIn wow" src="../assets/img/icons/agile-methodology.png" alt="Agile Methodology"/>
           </div>
-          <div class="large-3 medium-6 small-6 columns">
+          <div class="large-2 medium-3 small-3 columns">
             <img class="rollIn wow" src="../assets/img/logos/web-content-accessibility-guidelines.png" alt="Web Content Accessibility Guidelines"/>
           </div>
-          <div class="large-3 medium-6 small-6 columns">
+          <div class="large-2 medium-3 small-3 columns end">
             <img class="rollIn wow" src="../assets/img/icons/search-engine-optimization.png" alt="Search Engine Optimization"/>
           </div>
         </div>

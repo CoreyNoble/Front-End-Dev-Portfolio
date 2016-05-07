@@ -38,13 +38,21 @@
   }
 
 #parallax-hero-1 {
-  background: url(../img/highlighted-blue-fabric-tile.jpg) repeat;
+  background: url(../img/aesthetic-geometry.jpg);
   background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
 }
 
 #parallax-hero-2 {
-  background: url(../img/blue-fabric-tile.jpg) repeat;
+  background: url(/assets/img/toronto-city-scape.jpg);
   background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
 }
 
 #parallax-hero-3 {
@@ -113,13 +121,36 @@
     background-size: 100%;
 }
 
+.header-no-parallax{
+  margin-top: 1.5em;
+}
+
 @media only screen and (max-width: 40em) { /* max-width 640px, mobile-only styles, use when QAing mobile issues */
   .parallax{
     height: 20em;
 
     h1{
-      font-size: 3em;
+      font-size: 2em;
       padding-top: 0.5em!important;
     }
+  }
+
+  #parallax-hero-1 {
+    background: url(../img/aesthetic-geometry-mobile.jpg);
+  }
+
+  #parallax-hero-2 {
+    background: url(/assets/img/toronto-city-scape-mobile.jpg);
+  }
+}
+
+
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+  #parallax-hero-1 {
+    background: url(../img/aesthetic-geometry-tablet.jpg);
+  }
+
+  #parallax-hero-2 {
+    background: url(/assets/img/toronto-city-scape-tablet.jpg);
   }
 }

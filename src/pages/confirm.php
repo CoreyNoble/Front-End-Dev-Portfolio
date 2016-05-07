@@ -16,9 +16,13 @@
     <!-- Navigation Menu -->
     <?php include("partials/navigation.html"); ?>
 
+    <div id="parallax-hero-2" class="parallax" data-stellar-background-ratio="0.4" >
+      <h1 class="zoomInDown wow">Success!</h1>
+    </div>
+
     <div class="section black">
       <div class="row">
-        <h2 class="slideInLeft wow">Thank you for your inquiry!</h2>
+        <h2 class="slideInLeft wow">Thank you for your inquiry.</h2>
         <h4 class="slideInLeft wow">Your form submission was successful.</h4>
         <p>I have recieved your message and will get back to you within 2 business days.</p>
       </div>
