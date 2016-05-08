@@ -206,7 +206,6 @@
             <li class="fadeInDown wow"><u>Agile Methodology</u> –  Professional training on Agile Methodology. Creating and managing team Kanban boards, daily Scrums and frequent retrospective meetings. Evaluating the scope of projects, breaking them into managable tasks and tracking team velocity.</li>
             <li class="fadeInDown wow"><u>SEO + WCAG Guidelines</u> –  Thorough research and training on Search Engine Optimization best practices and the Web Content Accessibility Guidelines. </li>
           </ul>
-          <br><br>
           <b class="fadeInDown wow" >Training:</b></p>
           <div class="large-2 medium-3 small-3 columns">
             <img class="rollIn wow" src="../assets/img/logos/foundation.png" alt="Zurb Foundation"/>

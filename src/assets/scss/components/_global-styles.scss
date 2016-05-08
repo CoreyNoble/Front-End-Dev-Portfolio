@@ -215,6 +215,11 @@ textarea{
 }
 
 
+/* Index Page */
+.index-header{
+  margin-bottom: 2em;
+}
+
 /* About Page */
 .icon-container{
   display: block;
@@ -493,14 +498,32 @@ textarea{
 /* Services */
 .services-promotion{
   margin-bottom: 2em;
+  min-height: 21em;
 
   h4{
     text-align: center;
+  }
+
+  p{
+    text-align: justify;
   }
 
   img{
     display: block;
     margin: 0 auto;
     margin-bottom: 0.5em;
+  }
+}
+
+
+@media only screen and (max-width: 40em) { /* max-width 640px, mobile-only styles, use when QAing mobile issues */
+  .services-promotion{
+    min-height: 12em!important;
+  }
+}
+
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+  .services-promotion{
+    min-height: 22em!important;
   }
 }
