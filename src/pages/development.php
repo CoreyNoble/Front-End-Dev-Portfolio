@@ -7,14 +7,14 @@
     <link rel="icon" type="image/jpeg" href="http://www.corey-noble.com/favicon.jpg" />
 
     <!-- Relative CSS / Javascript -->
-    <link rel="stylesheet" href="assets/css/app.css" />
-    <link rel="stylesheet" href="assets/css/animate.css" />
-    <script src="bower_components/modernizr/modernizr.js"></script>
+    <link rel="stylesheet" href="http://www.corey-noble.com/assets/css/app.css" />
+    <link rel="stylesheet" href="http://www.corey-noble.com/assets/css/animate.css" />
+    <script src="http://www.corey-noble.com/bower_components/modernizr/modernizr.js"></script>
   </head>
   <body>
 
     <!-- Navigation Menu -->
-    <?php include("partials/navigation.html"); ?>
+    <?php include("http://www.corey-noble.com/partials/navigation.html"); ?>
 
     <div id="parallax-hero" class="parallax" data-stellar-background-ratio="0.4" >
       <h1 class="zoomInDown wow">Development&nbsp;Testing</h1>
@@ -73,13 +73,13 @@
 
     <div class="row">
       <div class="large-4 medium-4 centered columns">
-        <div id="showcase1" class="bounceIn wow"><a href="../..#"><img src="../assets/img/motion-ui-test-1.png" /></a></div>
+        <div id="showcase1" class="bounceIn wow"><a href="../..#"><img src="http://www.corey-noble.com/assets/img/motion-ui-test-1.png" /></a></div>
       </div>
       <div class="large-4 medium-4 columns">
-        <div id="showcase2" class="bounceIn wow"><a href="../..#"><img src="../assets/img/motion-ui-test-1.png" /></a></div>
+        <div id="showcase2" class="bounceIn wow"><a href="../..#"><img src="http://www.corey-noble.com/assets/img/motion-ui-test-1.png" /></a></div>
       </div>
       <div class="large-4 medium-4 columns">
-        <div id="showcase3" class="bounceIn wow"><a href="../..#"><img src="../assets/img/motion-ui-test-1.png" /></a></div>
+        <div id="showcase3" class="bounceIn wow"><a href="../..#"><img src="http://www.corey-noble.com/assets/img/motion-ui-test-1.png" /></a></div>
       </div>
     </div>
   </div>
@@ -227,9 +227,9 @@
   <div id="parallax-index" class="parallax hide-tablet hide-mobile" data-stellar-background-ratio="0.8" ></div>
 
   <!-- Footer -->
-  <?php include("partials/footer.html"); ?>
+  <?php include("http://www.corey-noble.com/partials/footer.html"); ?>
 
     <!-- Scripts -->
-    <?php include("partials/scripts.html"); ?>
+    <?php include("http://www.corey-noble.com/partials/scripts.html"); ?>
   </body>
 </html>

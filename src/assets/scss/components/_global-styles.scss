@@ -527,3 +527,21 @@ textarea{
     min-height: 22em!important;
   }
 }
+
+/* CMS Skills */
+.cms-skillset{
+  h5{
+    margin-bottom: 3em;
+  }
+  
+  .cms-skill{
+    display: block;
+    margin-bottom: 3em;
+
+    img{
+      display: block;
+      margin: 0 auto;
+      margin-bottom: 1em;
+    }
+  }
+}

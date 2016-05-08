@@ -7,28 +7,28 @@
     <link rel="icon" type="image/jpeg" href="http://www.corey-noble.com/favicon.jpg">
 
     <!-- Relative CSS / Javascript -->
-    <link rel="stylesheet" href="assets/css/app.css" />
-    <link rel="stylesheet" href="assets/css/animate.css" />
-    <script src="bower_components/modernizr/modernizr.js"></script>
+    <link rel="stylesheet" href="http://www.corey-noble.com/assets/css/app.css" />
+    <link rel="stylesheet" href="http://www.corey-noble.com/assets/css/animate.css" />
+    <script src="http://www.corey-noble.com/bower_components/modernizr/modernizr.js"></script>
   </head>
   <body>
 
     <!-- Navigation Menu -->
-    <?php include("partials/navigation.html"); ?>
+    <?php include("http://www.corey-noble.com/partials/navigation.html"); ?>
 
     <div class="section black">
       <div class="row">
         <div class="large-12 columns">
-          <?php include("../../partials/crumbs.php"); ?>
+          <?php include("http://www.corey-noble.com/partials/crumbs.php"); ?>
 
         </div>
       </div>
     </div>
 
   <!-- Footer -->
-  <?php include("partials/footer.html"); ?>
+  <?php include("http://www.corey-noble.com/partials/footer.html"); ?>
 
   <!-- Scripts -->
-  <?php include("partials/scripts.html"); ?>
+  <?php include("http://www.corey-noble.com/partials/scripts.html"); ?>
   </body>
 </html>

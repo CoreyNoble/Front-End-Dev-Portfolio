@@ -7,14 +7,14 @@
     <link rel="icon" type="image/jpeg" href="http://www.corey-noble.com/favicon.jpg" />
 
     <!-- Relative CSS / Javascript -->
-    <link rel="stylesheet" href="assets/css/app.css" />
-    <link rel="stylesheet" href="assets/css/animate.css" />
-    <script src="bower_components/modernizr/modernizr.js"></script>
+    <link rel="stylesheet" href="http://www.corey-noble.com/assets/css/app.css" />
+    <link rel="stylesheet" href="http://www.corey-noble.com/assets/css/animate.css" />
+    <script src="http://www.corey-noble.com/bower_components/modernizr/modernizr.js"></script>
   </head>
   <body>
 
     <!-- Navigation Menu -->
-    <?php include("partials/navigation.html"); ?>
+    <?php include("http://www.corey-noble.com/partials/navigation.html"); ?>
 
     <div id="parallax-hero-3" class="parallax" data-stellar-background-ratio="0.4" >
       <h1 class="zoomInDown wow">My Portfolio</h1>
@@ -23,7 +23,7 @@
     <div class="section black">
       <div class="row">
         <div class="large-12 columns">
-          <?php include("../../partials/crumbs.php"); ?>
+          <?php include("http://www.corey-noble.com/partials/crumbs.php"); ?>
 
           <!-- Development Showcase -->
           <div class="large-12 medium-12 small-12 columns">
@@ -32,7 +32,7 @@
 
           <div class="showcase-1">
             <div class="fadeIn wow large-12 medium-12 small-12 columns">
-              <a href="/portfolio/frameworks/example-1.php">
+              <a href="http://www.corey-noble.com/portfolio/frameworks/example-1.php">
                 <div class="showcase-example blue-gradient">
                   <h3 class="light-blue">Example 1</h3>
                 </div>
@@ -40,7 +40,7 @@
             </div>
 
             <div class="fadeIn wow large-12 medium-12 small-12 columns">
-              <a href="/portfolio/frameworks/example-2.php">
+              <a href="http://www.corey-noble.com/portfolio/frameworks/example-2.php">
                 <div class="showcase-example blue-gradient">
                   <h3 class="light-blue">Example 2</h3>
                 </div>
@@ -61,15 +61,30 @@
 
         <div class="showcase-2">
           <div class="fadeIn wow large-12 medium-12 small-12 columns">
-            <a href="/portfolio/cms/skillset.php">
+            <a href="http://www.corey-noble.com/portfolio/cms/skillset.php">
               <div class="showcase-example blue-gradient">
                 <h3 class="black">My CMS Skills</h3>
+                <div class="large-2 medium-2 small-2 columns">
+                  <img class="rollIn wow" src="http://www.corey-noble.com/assets/img/icons/reddot.png" alt="Open Text RedDot Skills"/>
+                </div>
+                <div class="large-2 medium-2 small-2 columns">
+                  <img class="rollIn wow" src="http://www.corey-noble.com/assets/img/icons/wordpress.png" alt="WordPress Skills"/>
+                </div>
+                <div class="large-2 medium-2 small-2 columns">
+                  <img class="rollIn wow" src="http://www.corey-noble.com/assets/img/icons/joomla.png" alt="Joomla Skills"/>
+                </div>
+                <div class="large-2 medium-2 small-2 columns">
+                  <img class="rollIn wow" src="http://www.corey-noble.com/assets/img/icons/magento.png" alt="Magento Skills"/>
+                </div>
+                <div class="large-2 medium-2 small-2 columns">
+                  <img class="rollIn wow" src="http://www.corey-noble.com/assets/img/icons/sitecore.png" alt="SiteCore Skills"/>
+                </div>
               </div>
             </a>
           </div>
 
           <div class="fadeIn wow large-6 medium-6 small-12 columns">
-            <a href="/portfolio/cms/right-choice.php">
+            <a href="http://www.corey-noble.com/portfolio/cms/right-choice">
               <div class="showcase-example blue-gradient">
                 <h3 class="black">Right Choice</h3>
               </div>
@@ -77,7 +92,7 @@
           </div>
 
           <div class="fadeIn wow large-6 medium-6 small-12 columns">
-            <a href="/portfolio/cms/ctkr-music.php">
+            <a href="http://www.corey-noble.com/portfolio/cms/ctkr-music.php">
               <div class="showcase-example blue-gradient">
                 <h3 class="black">CTKR Music</h3>
               </div>
@@ -90,9 +105,9 @@
   <div id="parallax-cms-skillset" class="parallax hide-tablet hide-mobile" data-stellar-background-ratio="0.8" ></div>
 
   <!-- Footer -->
-  <?php include("partials/footer.html"); ?>
+  <?php include("http://www.corey-noble.com/partials/footer.html"); ?>
 
   <!-- Scripts -->
-  <?php include("partials/scripts.html"); ?>
+  <?php include("http://www.corey-noble.com/partials/scripts.html"); ?>
   </body>
 </html>

@@ -1,0 +1,129 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: New Simple Gallery\n"
+"POT-Creation-Date: 2015-10-18 21:00+0800\n"
+"PO-Revision-Date: 2015-10-18 21:00+0800\n"
+"Last-Translator: \n"
+"Language-Team: www.gopiplus.com\n"
+"Language: pl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.7\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../new-simple-gallery.php:202 ../new-simple-gallery.php:294
+#: ../new-simple-gallery.php:304 ../new-simple-gallery.php:308
+#: ../new-simple-gallery.php:319 ../new-simple-gallery.php:320
+msgid "New Simple Gallery"
+msgstr "Nowy Prosty Galeria"
+
+#: ../new-simple-gallery.php:238
+msgid "Gallery setting"
+msgstr "Galeria Otoczenie:"
+
+#: ../new-simple-gallery.php:240
+msgid "XML File (For widget)"
+msgstr "Pliku XML (Dla widget)"
+
+#: ../new-simple-gallery.php:242
+msgid ""
+"Enter name of the XML file. XML file should available in the plugin "
+"directory."
+msgstr "Wpisz nazwę pliku XML. Plik XML powinien dostępne w katalogu wtyczek."
+
+#: ../new-simple-gallery.php:244
+msgid "Random"
+msgstr "Losowo"
+
+#: ../new-simple-gallery.php:249
+msgid "Random image display."
+msgstr "Losowe wyświetlanie obrazu."
+
+#: ../new-simple-gallery.php:251
+msgid "Title (For widget)"
+msgstr "Tytuł (Dla widget)"
+
+#: ../new-simple-gallery.php:253
+msgid "Enter enter widget title, Only for widget."
+msgstr "Wprowadź wprowadzić widget tytuł, tylko dla widgetu."
+
+#: ../new-simple-gallery.php:255
+msgid "Width (For widget)"
+msgstr "Szerokość (Dla widget)"
+
+#: ../new-simple-gallery.php:257
+msgid "Enter width of the gallery, Only for width. (Example: 200)"
+msgstr "Wprowadź szerokość galerii, tylko dla szerokości. (Przykład: 200)"
+
+#: ../new-simple-gallery.php:259
+msgid "Height (For widget)"
+msgstr "Wysokość (Dla widget)"
+
+#: ../new-simple-gallery.php:261
+msgid "Enter height of the gallery, Only for height. (Example: 200)"
+msgstr "Wprowadź wysokość galerii, tylko do wysokości. (Przykład: 200)"
+
+#: ../new-simple-gallery.php:263
+msgid "Pause (Global setting)"
+msgstr "Pauza (ustawienie globalne)"
+
+#: ../new-simple-gallery.php:265
+msgid "Pause between slides. (Example: 2500)"
+msgstr "Pauza między slajdami. (Przykład: 2500)"
+
+#: ../new-simple-gallery.php:267
+msgid "Fade duration (Global setting)"
+msgstr "Fade czas (ustawienie globalne)"
+
+#: ../new-simple-gallery.php:269
+msgid ""
+"The duration of the fade effect when transitioning from one image to the "
+"next, in milliseconds. (Example: 500)"
+msgstr ""
+"Czas trwania efektu zanikania przy przechodzeniu z jednego obrazu do "
+"drugiego, w milisekundach. (Przykład: 500)"
+
+#: ../new-simple-gallery.php:271
+msgid "Cycles (Global setting)"
+msgstr "Cykle (ustawienie globalne)"
+
+#: ../new-simple-gallery.php:273
+msgid ""
+"The cycles option when set to 0 will cause the slideshow to rotate "
+"perpetually,<br />while any number larger than 0 means it will stop after N "
+"cycles. (Example: 2)"
+msgstr ""
+"Opcja cykle, gdy ustawiony na 0 spowoduje, że pokaz slajdów, aby obrócić "
+"wiecznie, <br /> podczas gdy każda liczba większa od 0 oznacza zatrzyma po N "
+"cykli. (Przykład: 2)"
+
+#: ../new-simple-gallery.php:275
+msgid "Submit"
+msgstr "Wyślij"
+
+#: ../new-simple-gallery.php:279
+msgid "Plugin configuration option"
+msgstr "Opcja konfiguracji plugin"
+
+#: ../new-simple-gallery.php:281
+msgid "Add the plugin in the posts or pages using short code."
+msgstr "Dodaj wtyczki na stanowiskach lub stron za pomocą krótkiego kodu."
+
+#: ../new-simple-gallery.php:282
+msgid "Add directly in to the theme using PHP code."
+msgstr "Dodaj bezpośrednio do tematu z wykorzystaniem kodu PHP."
+
+#: ../new-simple-gallery.php:283
+msgid "Drag and drop the widget to your sidebar."
+msgstr "Przeciągnij i upuść widget do paska bocznego."
+
+#: ../new-simple-gallery.php:285 ../new-simple-gallery.php:296
+msgid "Check official website for more information"
+msgstr "Sprawdzić oficjalną stronę internetową, aby uzyskać więcej informacji"
+
+#: ../new-simple-gallery.php:286 ../new-simple-gallery.php:297
+msgid "click here"
+msgstr "kliknij tutaj"

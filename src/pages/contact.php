@@ -7,15 +7,15 @@
     <link rel="icon" type="image/jpeg" href="http://www.corey-noble.com/favicon.jpg" />
 
     <!-- Relative CSS / Javascript -->
-    <link rel="stylesheet" href="assets/css/app.css" />
-    <link rel="stylesheet" href="assets/css/animate.css" />
-    <script src="bower_components/modernizr/modernizr.js"></script>
+    <link rel="stylesheet" href="http://www.corey-noble.com/assets/css/app.css" />
+    <link rel="stylesheet" href="http://www.corey-noble.com/assets/css/animate.css" />
+    <script src="http://www.corey-noble.com/bower_components/modernizr/modernizr.js"></script>
     <script src='https://www.google.com/recaptcha/api.js'></script>
   </head>
   <body>
 
     <!-- Navigation Menu -->
-    <?php include("partials/navigation.html"); ?>
+    <?php include("http://www.corey-noble.com/partials/navigation.html"); ?>
 
     <div id="parallax-hero-2" class="parallax" data-stellar-background-ratio="0.4" >
       <h1 class="zoomInDown wow">Contact Me</h1>
@@ -29,7 +29,7 @@
         </div>
 
         <div id="contact-form" class="large-12 medium-12 small-12 columns">
-          <form method="post" action="mailsend.php">
+          <form method="post" action="http://www.corey-noble.com/mailsend.php">
             <div class="row">
               <h5 class="fadeIn wow">First Name</h5>
               <input class="fadeIn wow" type="text" name="firstName" required />
@@ -60,9 +60,9 @@
     </div>
 
     <!-- Footer -->
-    <?php include("partials/footer.html"); ?>
+    <?php include("http://www.corey-noble.com/partials/footer.html"); ?>
 
     <!-- Scripts -->
-    <?php include("partials/scripts.html"); ?>
+    <?php include("http://www.corey-noble.com/partials/scripts.html"); ?>
   </body>
 </html>

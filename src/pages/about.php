@@ -7,14 +7,14 @@
     <link rel="icon" type="image/jpeg" href="http://www.corey-noble.com/favicon.jpg" />
 
     <!-- Relative CSS / Javascript -->
-    <link rel="stylesheet" href="assets/css/app.css" />
-    <link rel="stylesheet" href="assets/css/animate.css" />
-    <script src="bower_components/modernizr/modernizr.js"></script>
+    <link rel="stylesheet" href="http://www.corey-noble.com/assets/css/app.css" />
+    <link rel="stylesheet" href="http://www.corey-noble.com/assets/css/animate.css" />
+    <script src="http://www.corey-noble.com/bower_components/modernizr/modernizr.js"></script>
   </head>
   <body>
 
     <!-- Navigation Menu -->
-    <?php include("partials/navigation.html"); ?>
+    <?php include("http://www.corey-noble.com/partials/navigation.html"); ?>
 
     <div id="parallax-hero-3" class="parallax" data-stellar-background-ratio="0.2" >
       <h1 class="zoomInDown wow">About Me</h1>
@@ -26,81 +26,81 @@
         <h2>Front-End Web Developer</h2>
 
         <div id="portrait-suit" class="large-5 medium-6 small-12 columns">
-          <img src="../assets/img/Corey-Noble-Portrait-Suit.png"/>
+          <img src="http://www.corey-noble.com/assets/img/Corey-Noble-Portrait-Suit.png"/>
         </div>
 
         <div id="icon-container" class="hide-mobile icon-container large-7 medium-6 small-12 columns">
           <div class="icon fadeInRight large-3 medium-6 small-6 columns">
-            <img src="../assets/img/icons/foundation.png" alt="Foundation Framework"/>
+            <img src="http://www.corey-noble.com/assets/img/icons/foundation.png" alt="Foundation Framework"/>
           </div>
           <div class="icon fadeInRight large-3 medium-6 small-6 columns">
-            <img src="../assets/img/icons/sass.png" alt="SASS / SCSS Code Skills"/>
+            <img src="http://www.corey-noble.com/assets/img/icons/sass.png" alt="SASS / SCSS Code Skills"/>
           </div>
           <div class="icon fadeInRight large-3 medium-6 small-6 columns">
-            <img src="../assets/img/icons/bootstrap.png" alt="Twitter Bootstrap Framework"/>
+            <img src="http://www.corey-noble.com/assets/img/icons/bootstrap.png" alt="Twitter Bootstrap Framework"/>
           </div>
           <div class="icon fadeInRight large-3 medium-6 small-6 columns">
-            <img src="../assets/img/icons/less.png" alt="LESS Code Skills"/>
+            <img src="http://www.corey-noble.com/assets/img/icons/less.png" alt="LESS Code Skills"/>
           </div>
           <div class="icon fadeInRight large-3 medium-6 small-6 columns" >
-            <img src="../assets/img/icons/html-5.png" alt="HTML5 Compliance"/>
+            <img src="http://www.corey-noble.com/assets/img/icons/html-5.png" alt="HTML5 Compliance"/>
           </div>
           <div class="icon fadeInRight large-3 medium-6 small-6 columns">
-            <img src="../assets/img/icons/css-3.png" alt="CSS3 Code Skills"/>
+            <img src="http://www.corey-noble.com/assets/img/icons/css-3.png" alt="CSS3 Code Skills"/>
           </div>
           <div class="icon fadeInRight large-3 medium-6 small-6 columns">
-            <img src="../assets/img/icons/javascript.png" alt="Javascript Code Skills"/>
+            <img src="http://www.corey-noble.com/assets/img/icons/javascript.png" alt="Javascript Code Skills"/>
           </div>
           <div class="icon fadeInRight large-3 medium-6 small-6 columns">
-            <img src="../assets/img/icons/photoshop.png" alt="Photoshop Skills"/>
+            <img src="http://www.corey-noble.com/assets/img/icons/photoshop.png" alt="Photoshop Skills"/>
           </div>
           <div class="icon fadeInRight large-3 medium-6 small-6 columns">
-            <img src="../assets/img/icons/git.png" alt="GIT Repositories"/>
+            <img src="http://www.corey-noble.com/assets/img/icons/git.png" alt="GIT Repositories"/>
           </div>
           <div class="icon fadeInRight large-3 medium-6 small-6 columns">
-            <img src="../assets/img/icons/bit-bucket.png" alt="BitBucket Repositories"/>
+            <img src="http://www.corey-noble.com/assets/img/icons/bit-bucket.png" alt="BitBucket Repositories"/>
           </div>
           <div class="icon fadeInRight large-3 medium-6 small-6 columns">
-            <img src="../assets/img/icons/source-tree.png" alt="Source Tree Version Control"/>
+            <img src="http://www.corey-noble.com/assets/img/icons/source-tree.png" alt="Source Tree Version Control"/>
           </div>
           <div class="icon fadeInRight large-3 medium-6 small-6 columns">
-            <img src="../assets/img/icons/jira.png" alt="JIRA Ticket Tracking"/>
+            <img src="http://www.corey-noble.com/assets/img/icons/jira.png" alt="JIRA Ticket Tracking"/>
           </div>
           <div class="icon fadeInRight large-3 medium-6 small-6 columns">
-            <img src="../assets/img/icons/aem.png" alt="Adobe Experience Manager Skills"/>
+            <img src="http://www.corey-noble.com/assets/img/icons/aem.png" alt="Adobe Experience Manager Skills"/>
           </div>
           <div class="icon fadeInRight large-3 medium-6 small-6 columns">
-            <img src="../assets/img/icons/reddot.png" alt="Open Text RedDot Skills"/>
+            <img src="http://www.corey-noble.com/assets/img/icons/reddot.png" alt="Open Text RedDot Skills"/>
           </div>
           <div class="icon fadeInRight large-3 medium-6 small-6 columns">
-            <img src="../assets/img/icons/wordpress.png" alt="WordPress Skills"/>
+            <img src="http://www.corey-noble.com/assets/img/icons/wordpress.png" alt="WordPress Skills"/>
           </div>
           <div class="icon fadeInRight large-3 medium-6 small-6 columns">
-            <img src="../assets/img/icons/magento.png" alt="Magento Skills"/>
+            <img src="http://www.corey-noble.com/assets/img/icons/magento.png" alt="Magento Skills"/>
           </div>
           <div class="icon fadeInRight large-3 medium-6 small-6 columns">
-            <img src="../assets/img/icons/joomla.png" alt="Joomla Skills"/>
+            <img src="http://www.corey-noble.com/assets/img/icons/joomla.png" alt="Joomla Skills"/>
           </div>
           <div class="icon fadeInRight large-3 medium-6 small-6 columns">
-            <img src="../assets/img/icons/atom.png" alt="Atom - Project Code Editor of Choice"/>
+            <img src="http://www.corey-noble.com/assets/img/icons/atom.png" alt="Atom - Project Code Editor of Choice"/>
           </div>
           <div class="icon fadeInRight large-3 medium-6 small-6 columns">
-            <img src="../assets/img/icons/sublime-text.png" alt="Sublime Text - Code Editor of Choice"/>
+            <img src="http://www.corey-noble.com/assets/img/icons/sublime-text.png" alt="Sublime Text - Code Editor of Choice"/>
           </div>
           <div class="icon fadeInRight large-3 medium-6 small-6 columns">
-            <img src="../assets/img/icons/file-zilla.png" alt="File Transfer Protocol Skills"/>
+            <img src="http://www.corey-noble.com/assets/img/icons/file-zilla.png" alt="File Transfer Protocol Skills"/>
           </div>
           <div class="icon fadeInRight large-3 medium-6 small-6 columns">
-            <img src="../assets/img/icons/illustraitor.png" alt="Illustraitor Skills"/>
+            <img src="http://www.corey-noble.com/assets/img/icons/illustraitor.png" alt="Illustraitor Skills"/>
           </div>
           <div class="icon fadeInRight large-3 medium-6 small-6 columns">
-            <img src="../assets/img/icons/in-design.png" alt="In-Design Skills"/>
+            <img src="http://www.corey-noble.com/assets/img/icons/in-design.png" alt="In-Design Skills"/>
           </div>
           <div class="icon fadeInRight large-3 medium-6 small-6 columns">
-            <img src="../assets/img/icons/firefox.png" alt="Firefox Developer - Browser of Choice"/>
+            <img src="http://www.corey-noble.com/assets/img/icons/firefox.png" alt="Firefox Developer - Browser of Choice"/>
           </div>
           <div class="icon fadeInRight large-3 medium-6 small-6 columns">
-            <img src="../assets/img/icons/jquery.png" alt="jQuery Skills"/>
+            <img src="http://www.corey-noble.com/assets/img/icons/jquery.png" alt="jQuery Skills"/>
           </div>
         </div>
       </div>
@@ -120,10 +120,10 @@
         <div id="education" class="large-12 columns">
           <h2 class="fadeInDown wow" >Education</h2>
           <hr class="fadeInDown wow">
-          <img class="fadeInDown wow" src="../assets/img/logos/fanshawe-college.png" alt="Fanshawe College"/>
+          <img class="fadeInDown wow" src="http://www.corey-noble.com/assets/img/logos/fanshawe-college.png" alt="Fanshawe College"/>
         </div>
         <div class="about-experience large-2 medium-3 small-12 columns">
-          <img class="rollIn wow" src="../assets/img/icons/graduate.png" alt="Graduate"/>
+          <img class="rollIn wow" src="http://www.corey-noble.com/assets/img/icons/graduate.png" alt="Graduate"/>
         </div>
         <div class="about-experience large-10 medium-9 small-12 columns">
           <h2 class="fadeInDown wow" >Multi-Media Design and Production</h2>
@@ -139,7 +139,7 @@
           </ul>
         </div>
         <div class="about-experience large-2 medium-3 small-12 columns">
-          <img class="rollIn wow" src="../assets/img/icons/graduate.png" alt="Graduate"/>
+          <img class="rollIn wow" src="http://www.corey-noble.com/assets/img/icons/graduate.png" alt="Graduate"/>
         </div>
         <div class="about-experience large-10 medium-9 small-12 columns">
           <h2 class="fadeInDown wow" >3D Animation and Character Design</h2>
@@ -158,7 +158,7 @@
           <hr class="fadeInDown wow">
         </div>
         <div class="about-experience large-2 medium-3 small-12 columns">
-          <img class="rollIn wow" src="../assets/img/logos/slightly-social.png" alt="Slightly Social"/>
+          <img class="rollIn wow" src="http://www.corey-noble.com/assets/img/logos/slightly-social.png" alt="Slightly Social"/>
         </div>
         <div class="about-experience large-10 medium-9 small-12 columns">
           <h2 class="fadeInDown wow" >3D Artist and Unity Developer</h2>
@@ -170,7 +170,7 @@
           </ul>
         </div>
         <div class="about-experience large-2 medium-3 small-12 columns">
-          <img class="rollIn wow" src="../assets/img/logos/right-choice.png" alt="Right Choice Web Development"/>
+          <img class="rollIn wow" src="http://www.corey-noble.com/assets/img/logos/right-choice.png" alt="Right Choice Web Development"/>
         </div>
         <div class="about-experience large-10 medium-9 small-12 columns">
           <h2 class="fadeInDown wow" >Co-Owner, Website Developer and Graphic Artist</h2>
@@ -185,7 +185,7 @@
           </ul>
         </div>
         <div class="about-experience large-2 medium-3 small-12 columns">
-          <img class="rollIn wow" src="../assets/img/logos/thrillworks.png" alt="Thrillworks Inc."/>
+          <img class="rollIn wow" src="http://www.corey-noble.com/assets/img/logos/thrillworks.png" alt="Thrillworks Inc."/>
         </div>
         <div class="about-experience large-10 medium-9 small-12 columns">
           <h2 class="fadeInDown wow" >Web Production Specialist</h2>
@@ -197,7 +197,7 @@
             <li class="fadeInDown wow"><u>RedDot / OpenText</u> – Creating Product items and incorperating them and their promotions throughout websites. Creating web pages and components. Updating microsites, templates and banners in 3 language variations.</li>
             <li class="fadeInDown wow"><u>Photoshop + Illustraitor</u> –  Used to create website graphics, for photo manipulation and photo optimization.</li>
             <li class="fadeInDown wow"><u>InDesign</u> – Creating training documentation and manuals.</li>
-            <li class="fadeInDown wow"><u>SiteCore</u> – Updating documentation and page content in 2 language variations</li>
+            <li class="fadeInDown wow"><u>SiteCore</u> – Updating documentation and page content in 2 language variations.</li>
             <li class="fadeInDown wow"><u>Magento</u> –  Creating hundreds of products and packages with unique identifies that worked in conjunction with an e-commerce database. Creating web pages that dynamically loaded corresponding products.</li>
             <li class="fadeInDown wow"><u>AEM - Adobe Experience Manager</u> –  Page development, component development, website maintenance, asset manipulation, version control and quality assurance for 12+ languages.</li>
             <li class="fadeInDown wow"><u>Foundation + SCSS</u> – Website development using the Foundation framework. Using SCSS variables + mixins to create websites under strict branding guidelines.</li>
@@ -208,16 +208,16 @@
           </ul>
           <b class="fadeInDown wow" >Training:</b></p>
           <div class="large-2 medium-3 small-3 columns">
-            <img class="rollIn wow" src="../assets/img/logos/foundation.png" alt="Zurb Foundation"/>
+            <img class="rollIn wow" src="http://www.corey-noble.com/assets/img/logos/foundation.png" alt="Zurb Foundation"/>
           </div>
           <div class="large-2 medium-3 small-3 columns">
-            <img class="rollIn wow" src="../assets/img/icons/agile-methodology.png" alt="Agile Methodology"/>
+            <img class="rollIn wow" src="http://www.corey-noble.com/assets/img/icons/agile-methodology.png" alt="Agile Methodology"/>
           </div>
           <div class="large-2 medium-3 small-3 columns">
-            <img class="rollIn wow" src="../assets/img/logos/web-content-accessibility-guidelines.png" alt="Web Content Accessibility Guidelines"/>
+            <img class="rollIn wow" src="http://www.corey-noble.com/assets/img/logos/web-content-accessibility-guidelines.png" alt="Web Content Accessibility Guidelines"/>
           </div>
           <div class="large-2 medium-3 small-3 columns end">
-            <img class="rollIn wow" src="../assets/img/icons/search-engine-optimization.png" alt="Search Engine Optimization"/>
+            <img class="rollIn wow" src="http://www.corey-noble.com/assets/img/icons/search-engine-optimization.png" alt="Search Engine Optimization"/>
           </div>
         </div>
       </div>
