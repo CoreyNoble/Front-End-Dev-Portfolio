@@ -462,6 +462,7 @@ textarea{
     display: inline-block;
     height: 20em;
     width: 100%;
+    margin: 0 auto;
     margin-bottom: 3em;
     -moz-box-shadow: 0  0.75em 0.75em -0.75em #000000, 0 -0.75em 0.75em -0.75em #000000;
     -webkit-box-shadow:  0  0.75em 0.75em -0.75em #000000, 0 -0.75em 0.75em -0.75em #000000;
@@ -533,7 +534,7 @@ textarea{
   h5{
     margin-bottom: 3em;
   }
-  
+
   .cms-skill{
     display: block;
     margin-bottom: 3em;

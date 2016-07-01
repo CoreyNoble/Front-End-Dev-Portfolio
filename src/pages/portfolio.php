@@ -61,6 +61,23 @@
 
         <div class="showcase-2">
           <div class="fadeIn wow large-12 medium-12 small-12 columns">
+            <a href="http://www.corey-noble.com/portfolio/cms/right-choice">
+              <div class="showcase-example blue-gradient">
+                <h3 class="black">Right Choice</h3>
+                <img src="http://corey-noble.com/portfolio/cms/right-choice/wp-content/uploads/2014/03/Slide29.png" />
+              </div>
+            </a>
+          </div>
+
+          <div class="fadeIn wow large-6 medium-6 small-12 columns">
+            <a href="http://www.corey-noble.com/portfolio/cms/ctkr-music.php">
+              <div class="showcase-example blue-gradient">
+                <h3 class="black">CTKR Music</h3>
+              </div>
+            </a>
+          </div>
+
+          <div class="fadeIn wow large-6 medium-6 small-12 columns">
             <a href="http://www.corey-noble.com/portfolio/cms/skillset.php">
               <div class="showcase-example blue-gradient">
                 <h3 class="black">My CMS Skills</h3>
@@ -76,25 +93,9 @@
                 <div class="large-2 medium-2 small-2 columns">
                   <img class="rollIn wow" src="http://www.corey-noble.com/assets/img/icons/magento.png" alt="Magento Skills"/>
                 </div>
-                <div class="large-2 medium-2 small-2 columns">
+                <div class="large-2 medium-2 small-2 columns end">
                   <img class="rollIn wow" src="http://www.corey-noble.com/assets/img/icons/sitecore.png" alt="SiteCore Skills"/>
                 </div>
-              </div>
-            </a>
-          </div>
-
-          <div class="fadeIn wow large-6 medium-6 small-12 columns">
-            <a href="http://www.corey-noble.com/portfolio/cms/right-choice">
-              <div class="showcase-example blue-gradient">
-                <h3 class="black">Right Choice</h3>
-              </div>
-            </a>
-          </div>
-
-          <div class="fadeIn wow large-6 medium-6 small-12 columns">
-            <a href="http://www.corey-noble.com/portfolio/cms/ctkr-music.php">
-              <div class="showcase-example blue-gradient">
-                <h3 class="black">CTKR Music</h3>
               </div>
             </a>
           </div>
