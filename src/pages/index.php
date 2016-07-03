@@ -16,10 +16,20 @@
     <!-- Navigation Menu -->
     <?php include("partials/navigation.html"); ?>
 
+
+
+
+
+<!-- INDEX TITLE -->
     <div id="parallax-hero-1" class="parallax" data-stellar-background-ratio="0.4" >
       <h1 class="zoomInDown wow">< COREY-NOBLE /></h1>
     </div>
 
+
+
+
+
+<!-- INDEX INTRO -->
     <div id="about-me" class="section black">
       <div class="row">
         <h1>Corey Noble</h1>
@@ -108,6 +118,11 @@
       </div>
     </div>
 
+
+
+
+
+<!-- INDEX SKILL OVERVIEW -->
     <div class="section blue">
       <div class="skill-overview row" data-equalizer>
         <h2>Skill Overview</h2>
@@ -160,9 +175,13 @@
       </div>
     </div>
 
+
+
+
+
+<!-- INDEX PORTFOLIO -->
     <div class="section white">
       <div class="row">
-        <!-- CMS Showcase -->
         <div class="large-12 medium-12 small-12 columns">
             <h2>My Work</h2>
             <h4 class="index-header">Want to see what I can do? check out my <a href="http://www.corey-noble.com/portfolio.php">Portfolio</a> page</h4>
@@ -180,6 +199,11 @@
       </div>
     </div>
 
+
+
+
+
+<!-- INDEX RESUME CALLOUT -->
     <div class="section black">
       <div class="row">
         <div id="about-more-info" class="resume-cta large-12 columns">
@@ -189,7 +213,9 @@
       </div>
     </div>
 
-  <div id="parallax-cms-skillset" class="parallax hide-tablet hide-mobile" data-stellar-background-ratio="0.8" ></div>
+
+
+
 
   <!-- Footer -->
   <?php include("http://www.corey-noble.com/partials/footer.html"); ?>

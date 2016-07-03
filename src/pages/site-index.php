@@ -16,6 +16,11 @@
     <!-- Navigation Menu -->
     <?php include("http://www.corey-noble.com/partials/navigation.html"); ?>
 
+
+
+
+
+<!-- SITE INDEX TITLE -->
   <div class="section blue">
     <div class="row">
       <div class="large-12 columns">
@@ -25,6 +30,11 @@
     </div>
   </div>
 
+
+
+
+
+<!-- SITE INDEX INFORMATION -->
   <div class="section black">
     <div class="row">
       <h2 class="slideInLeft wow">Site Index</h2>
@@ -48,7 +58,10 @@
     </div>
   </div>
 
-    <div id="parallax-site-index" class="parallax hide-tablet hide-mobile" data-stellar-background-ratio="0.8" ></div>
+
+
+
+
 
     <!-- Footer -->
     <?php include("http://www.corey-noble.com/partials/footer.html"); ?>

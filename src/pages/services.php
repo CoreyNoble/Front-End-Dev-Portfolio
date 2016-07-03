@@ -16,10 +16,20 @@
     <!-- Navigation Menu -->
     <?php include("http://www.corey-noble.com/partials/navigation.html"); ?>
 
+
+
+
+
+<!-- SERVICES TITLE -->
     <div id="parallax-hero-3" class="parallax" data-stellar-background-ratio="0.4" >
       <h1 class="zoomInDown wow">Services</h1>
     </div>
 
+
+
+
+
+<!-- SERVICES INFORMATION -->
     <div class="section blue">
       <div class="row" data-equalizer>
         <div class= "services-promotion large-4 medium-6 small-12 columns" data-equalizer-watch>
@@ -70,6 +80,11 @@
       </div>
     </div>
 
+
+
+
+
+<!-- RESUME CALLOUT -->
     <div class="section black">
       <div class="row">
         <div id="about-more-info" class="resume-cta large-12 columns">
@@ -78,8 +93,6 @@
         </div>
       </div>
     </div>
-
-  <div id="parallax-cms-skillset" class="parallax hide-tablet hide-mobile" data-stellar-background-ratio="0.8" ></div>
 
   <!-- Footer -->
   <?php include("http://www.corey-noble.com/partials/footer.html"); ?>

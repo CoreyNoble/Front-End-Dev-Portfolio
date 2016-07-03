@@ -16,6 +16,11 @@
     <!-- Navigation Menu -->
     <?php include("http://www.corey-noble.com/partials/navigation.html"); ?>
 
+
+
+
+
+<!-- 404 HEADER -->
   <div class="section blue">
     <div class="row">
       <div class="large-12 columns">
@@ -25,6 +30,11 @@
     </div>
   </div>
 
+
+
+
+
+<!-- 404 LINKS -->
   <div class="section black">
     <div class="row">
       <div class="large-12 columns">
@@ -41,7 +51,9 @@
     </div>
   </div>
 
-    <div id="parallax-404" class="parallax hide-tablet hide-mobile" data-stellar-background-ratio="0.8" ></div>
+
+
+
 
     <!-- Footer -->
     <?php include("http://www.corey-noble.com/partials/footer.html"); ?>

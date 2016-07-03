@@ -16,10 +16,20 @@
     <!-- Navigation Menu -->
     <?php include("partials/navigation.html"); ?>
 
+
+
+
+
+<!-- CONFIRM HEADER -->
     <div id="parallax-hero-2" class="parallax" data-stellar-background-ratio="0.4" >
       <h1 class="zoomInDown wow">Success!</h1>
     </div>
 
+
+
+
+
+<!-- CONFIRM MESSAGE -->
     <div class="section black">
       <div class="row">
         <h2 class="slideInLeft wow">Thank you for your inquiry.</h2>
@@ -28,10 +38,12 @@
       </div>
     </div>
 
+
+
+
+
     <!-- Footer -->
     <?php include("http://www.corey-noble.com/partials/footer.html"); ?>
-
-    <div id="parallax-contact" class="parallax hide-tablet hide-mobile" data-stellar-background-ratio="0.8" ></div>
 
     <!-- Scripts -->
     <?php include("http://www.corey-noble.com/partials/scripts.html"); ?>
