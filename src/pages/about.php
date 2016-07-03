@@ -16,10 +16,20 @@
     <!-- Navigation Menu -->
     <?php include("http://www.corey-noble.com/partials/navigation.html"); ?>
 
+
+
+
+
+<!-- ABOUT TITLE -->
     <div id="parallax-hero-3" class="parallax" data-stellar-background-ratio="0.2" >
       <h1 class="zoomInDown wow">About Me</h1>
     </div>
 
+
+
+
+
+    <!-- ABOUT SKILLS -->
     <div id="about-me" class="section black">
       <div class="row">
         <h1>Corey Noble</h1>
@@ -106,6 +116,11 @@
       </div>
     </div>
 
+
+
+
+
+  <!-- INTRODUCTION (MY STORY) -->
   <div class="section white">
     <div class="row">
       <div id="about-intro" class="large-12 columns">
@@ -117,7 +132,12 @@
         <p class="fadeInDown wow">Many people that work with me are amazed at the amount of dedication, concentration and the general attitude I have towards my profession. I concider the 3D program to be the reason for this. If I had any bad habits before the 3D course, they were broken by the time I graduated from 3D Animation and Character Design.</p>
         <p class="fadeInDown wow">While I loved both of my fields of study, post-graduation I chose to enter Web Development. Since then I started a freelance web development company with a college friend, then moved on to work at Thrillworks Inc. as a Web Production Specialist. Want to know my history? Keep scrolling.</p>
       </div>
-      <!-- Job Experience -->
+
+
+
+
+
+      <!-- JOB EXPERIENCE -->
       <div id="experience" class="large-12 columns">
         <h2 class="fadeInDown wow" >Job Experience</h2>
         <hr class="fadeInDown wow">
@@ -185,10 +205,31 @@
           <li class="fadeInDown wow"><u>Technical Skills</u> –  <i>GIT + Version Control, Unity Game Development, 3DS Max (Modelling + Animation), Photoshop (Texturing + Concept Art).</i></li>
         </ul>
       </div>
+
+
+
+
+
+      <!-- EDUCATION -->
         <div id="education" class="large-12 columns">
           <h2 class="fadeInDown wow" >Education</h2>
           <hr class="fadeInDown wow">
           <img class="fadeInDown wow" src="http://www.corey-noble.com/assets/img/logos/fanshawe-college.png" alt="Fanshawe College"/>
+        </div>
+        <div class="about-experience large-2 medium-3 small-12 columns">
+          <img class="rollIn wow" src="http://www.corey-noble.com/assets/img/icons/graduate.png" alt="Graduate"/>
+        </div>
+        <div class="about-experience large-10 medium-9 small-12 columns">
+          <h2 class="fadeInDown wow" >3D Animation and Character Design</h2>
+          <p class="fadeInDown wow" ><b>2012 - 2013 (Certificate):</b></p>
+          <p class="fadeInDown wow">In 3D Animation and Character design I honed the skills that are used in all aspects of Game Development and Computer Graphics. However, I believe the most valuable skills I learned from this program are Time Management, Project Management and Team Collaboration skills.</p>
+          <ul>
+            <li class="fadeInDown wow"><u>Time Management</u> – Our assignments were always under very strict timelines and Time Managment was the key to passing the course. Today, I concider this the most valuable skill I have.</li>
+            <li class="fadeInDown wow"><u>Project Management</u> – We often had multiple projects on-the-go with competing deadlines. Dedicated focus on project management was nessesary.</li>
+            <li class="fadeInDown wow"><u>Team Collaboration</u> – We created platformer and isometric shooter games in groups ranging from 5-6 people. I learned all about the tensions that build in a team under strict deadlines and how to deal with the stress of team members that aren't getting along or performing at their role. </li>
+            <li class="fadeInDown wow"><u>Constructive Criticism</u> – Our teacher was an industry veteran who was very critical about feedback. He was our client and if something wasn't up to spec, we had to rectify it. I learned very quickly the importance of listening and adhering to the feedback and critisisms of my work.</li>
+            <li class="fadeInDown wow"><u>Technical Skills</u> – The Technical skills I honed in this program are: <i>Concept Art, Sculpting, Retopology + Mesh-Optimization, Upwrapping + Texturing, Rigging + Animation, Lighting + Rendering, Game Development</i>.</li>
+          </ul>
         </div>
         <div class="about-experience large-2 medium-3 small-12 columns">
           <img class="rollIn wow" src="http://www.corey-noble.com/assets/img/icons/graduate.png" alt="Graduate"/>
@@ -206,27 +247,16 @@
             <li class="fadeInDown wow"><u>After Effects, Media Encoder</u> – Video Production, VFX, Video Output</li>
           </ul>
         </div>
-        <div class="about-experience large-2 medium-3 small-12 columns">
-          <img class="rollIn wow" src="http://www.corey-noble.com/assets/img/icons/graduate.png" alt="Graduate"/>
-        </div>
-        <div class="about-experience large-10 medium-9 small-12 columns">
-          <h2 class="fadeInDown wow" >3D Animation and Character Design</h2>
-          <p class="fadeInDown wow" ><b>2012 - 2013 (Certificate):</b></p>
-          <p class="fadeInDown wow">In 3D Animation and Character design I honed the skills that are used in all aspects of Game Development and Computer Graphics. However, I believe the most valuable skills I learned from this program are Time Management, Project Management and Team Collaboration skills.</p>
-          <ul>
-            <li class="fadeInDown wow"><u>Time Management</u> – Our assignments were always under very strict timelines and Time Managment was the key to passing the course. Today, I concider this the most valuable skill I have.</li>
-            <li class="fadeInDown wow"><u>Project Management</u> – We often had multiple projects on-the-go with competing deadlines. Dedicated focus on project management was nessesary.</li>
-            <li class="fadeInDown wow"><u>Team Collaboration</u> – We created platformer and isometric shooter games in groups ranging from 5-6 people. I learned all about the tensions that build in a team under strict deadlines and how to deal with the stress of team members that aren't getting along or performing at their role. </li>
-            <li class="fadeInDown wow"><u>Constructive Criticism</u> – Our teacher was an industry veteran who was very critical about feedback. He was our client and if something wasn't up to spec, we had to rectify it. I learned very quickly the importance of listening and adhering to the feedback and critisisms of my work.</li>
-            <li class="fadeInDown wow"><u>Technical Skills</u> – The Technical skills I honed in this program are: <i>Concept Art, Sculpting, Retopology + Mesh-Optimization, Upwrapping + Texturing, Rigging + Animation, Lighting + Rendering, Game Development</i>.</li>
-          </ul>
-        </div>
         </div>
       </div>
     </div>
   </div>
 
 
+
+
+
+<!-- RESUME CALLOUT -->
   <div class="section black">
     <div class="row">
       <div id="about-more-info" class="resume-cta large-12 columns">
@@ -237,9 +267,10 @@
   </div>
 
 
-    <div id="parallax-about" class="parallax hide-tablet hide-mobile" data-stellar-background-ratio="0.8" ></div>
 
-    <!-- Footer -->
+
+
+<!-- Footer -->
     <?php include("partials/footer.html"); ?>
 
     <!-- Scripts -->

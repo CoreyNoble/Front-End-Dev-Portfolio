@@ -16,16 +16,24 @@
     <!-- Navigation Menu -->
     <?php include("http://www.corey-noble.com/partials/navigation.html"); ?>
 
+
+
+
+
+<!-- PORTFOLIO TITLE -->
     <div id="parallax-hero-3" class="parallax" data-stellar-background-ratio="0.4" >
       <h1 class="zoomInDown wow">My Portfolio</h1>
     </div>
 
+
+
+
+
+<!-- PORTFOLIO DEVELOPMENT SHOWCASE -->
     <div class="section black">
       <div class="row">
         <div class="large-12 columns">
-          <?php include("http://www.corey-noble.com/partials/crumbs.php"); ?>
 
-          <!-- Development Showcase -->
           <div class="large-12 medium-12 small-12 columns">
                 <h2 class="showcase-head">Development Showcase</h2>
           </div>
@@ -52,9 +60,14 @@
       </div>
     </div>
 
+
+
+
+
+<!-- CMS SHOWCASE -->
     <div class="section white">
       <div class="row">
-        <!-- CMS Showcase -->
+
         <div class="large-12 medium-12 small-12 columns">
               <h2 class="showcase-head">CMS Showcase</h2>
         </div>
@@ -103,7 +116,9 @@
       </div>
     </div>
 
-  <div id="parallax-cms-skillset" class="parallax hide-tablet hide-mobile" data-stellar-background-ratio="0.8" ></div>
+
+
+
 
   <!-- Footer -->
   <?php include("http://www.corey-noble.com/partials/footer.html"); ?>

@@ -17,10 +17,20 @@
     <!-- Navigation Menu -->
     <?php include("http://www.corey-noble.com/partials/navigation.html"); ?>
 
+
+
+
+
+<!-- CONTACT HEADER -->
     <div id="parallax-hero-2" class="parallax" data-stellar-background-ratio="0.4" >
       <h1 class="zoomInDown wow">Contact Me</h1>
     </div>
 
+
+
+
+
+<!-- CONTACT MESSAGE -->
     <div class="section black">
       <div class="row">
         <div id="contact-intro" class="large-12 medium-12 small-12 columns">
@@ -28,6 +38,11 @@
           <h5>Thank you for showing interest in me as a developer. I am excited to start working with you! Please fill out the form below so we can begin a conversation.</h5>
         </div>
 
+
+
+
+
+<!-- CONTACT FORM -->
         <div id="contact-form" class="large-12 medium-12 small-12 columns">
           <form method="post" action="http://www.corey-noble.com/mailsend.php">
             <div class="row">
@@ -58,6 +73,10 @@
         </div>
       </div>
     </div>
+
+
+
+
 
     <!-- Footer -->
     <?php include("http://www.corey-noble.com/partials/footer.html"); ?>

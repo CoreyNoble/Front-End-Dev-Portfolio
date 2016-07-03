@@ -1,21 +1,24 @@
 <?php
 
+  // FORM VALIDATION
   if(isset($_POST['g-recaptcha-response'])&& $_POST['g-recaptcha-response']){
     var_dump($_POST);
+    // CATCHA KEY
     $secret = "6Leroh4TAAAAAM10LbxOhcsR3zNEiKWiO8Xab9Ev";
+
     $ip = $_SERVER['REMOTE_ADDR'];
     $captcha = $_POST['g-recaptcha-response'];
     $rsp  = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=$secret&response=$captcha&remoteip$ip");
     var_dump($rsp);
     $arr = json_decode($rsp,TRUE);
+
+    // CAPTCHA SUCCESS
     if($arr['success']){
-      // things to configure:
-      // set the to address
+      // MESSAGE PROPERTIES
       $to = 'coreynoble@hotmail.ca, corey@corey-noble.com';
-      // set the subject
       $subject = 'Contact Inquiry - Web Development Portfolio';
 
-      // get the post data
+      // USER DATA VARIABLES
       $firstName = $_REQUEST['firstName'];
       $lastName = $_REQUEST['lastName'];
       $email = $_REQUEST['email'];
@@ -23,7 +26,7 @@
       $inquiry = $_REQUEST['inquiry'];
 
 
-      // build the message
+      // MESSAGE STRING
       $message = "
       First Name: " . $firstName .
       "\n" . "Last Name: " . $lastName .
@@ -31,23 +34,18 @@
       "\n" . "Company: " . $company .
       "\n" . $inquiry;
 
-      // send
+      // SEND
       $sendrtn =  mail($to, $subject, $message, "From:" . $email);
 
-      //redirect
+      // REDIRECT TO CONFIRM
       header('Location:confirm.php');
-    }else{
-      header('Location: contact.php?CaptchaFail=True');
+    }
 
+    // CAPTCHA FAILED
+    else{
+      header('Location: contact.php?CaptchaFail=True');
       exit();
     }
-  }﻿
-
-
-  }else{
-    header('Location: contact.php?CaptchaFail=True');
-    exit();
   }
 }
-
 ?>
