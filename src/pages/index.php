@@ -47,85 +47,15 @@
 <!-- INDEX INTRO -->
     <div id="about-me" class="section black">
       <div class="row">
-        <div id="portrait-suit" class="large-5 medium-6 small-12 columns">
-          <img src="http://www.corey-noble.com/assets/img/Corey-Noble-Portrait-Suit.png"/>
+        <div class="hide-mobile large-7 medium-6 small-12 columns">
+          <h3>Hi! my name is <b>Corey Noble</b>,</h3><br>
+          <h5>I am a <b>Front-End Web Developer</b> currently working for <a href="http://www.thrillworks.com/" target="_blank" style="color: #fb7638!important;"><b>Thrillworks Inc.</b><br>
+          </a>and I live in the beautiful city of Burlington, ON - Canada.</h5><br>
+          <h5>I have a lot of passion for digital media and love discovering new technologies as they emerge. Check out the skills I have on my belt today:</h5><br>
         </div>
 
-        <div id="icon-container" class="hide-mobile icon-container large-7 medium-6 small-12 columns">
-          <h5>Hi! my name is <b>Corey Noble</b>, I am a <b>Front-End Web Developer</b> currently working for <a href="http://www.thrillworks.com/" target="_blank" style="color: #fb7638!important;"><b>Thrillworks Inc.</b></a> I live in the beautiful city of <u>Burlington, ON - Canada</u>.</h5><br>
-          <h5>I have a lot of passion for digital media and love discovering new technologies as they emerge. Check out the skills I have on my belt today:</h5><br>
-          <div class="icon fadeInRight large-3 medium-6 small-6 columns">
-            <img src="http://www.corey-noble.com/assets/img/icons/foundation.png" alt="Foundation Framework"/>
-          </div>
-          <div class="icon fadeInRight large-3 medium-6 small-6 columns">
-            <img src="http://www.corey-noble.com/assets/img/icons/sass.png" alt="SASS / SCSS Code Skills"/>
-          </div>
-          <div class="icon fadeInRight large-3 medium-6 small-6 columns">
-            <img src="http://www.corey-noble.com/assets/img/icons/bootstrap.png" alt="Twitter Bootstrap Framework"/>
-          </div>
-          <div class="icon fadeInRight large-3 medium-6 small-6 columns">
-            <img src="http://www.corey-noble.com/assets/img/icons/less.png" alt="LESS Code Skills"/>
-          </div>
-          <div class="icon fadeInRight large-3 medium-6 small-6 columns" >
-            <img src="http://www.corey-noble.com/assets/img/icons/html-5.png" alt="HTML5 Compliance"/>
-          </div>
-          <div class="icon fadeInRight large-3 medium-6 small-6 columns">
-            <img src="http://www.corey-noble.com/assets/img/icons/css-3.png" alt="CSS3 Code Skills"/>
-          </div>
-          <div class="icon fadeInRight large-3 medium-6 small-6 columns">
-            <img src="http://www.corey-noble.com/assets/img/icons/javascript.png" alt="Javascript Code Skills"/>
-          </div>
-          <div class="icon fadeInRight large-3 medium-6 small-6 columns">
-            <img src="http://www.corey-noble.com/assets/img/icons/photoshop.png" alt="Photoshop Skills"/>
-          </div>
-          <div class="icon fadeInRight large-3 medium-6 small-6 columns">
-            <img src="http://www.corey-noble.com/assets/img/icons/git.png" alt="GIT Repositories"/>
-          </div>
-          <div class="icon fadeInRight large-3 medium-6 small-6 columns">
-            <img src="http://www.corey-noble.com/assets/img/icons/bit-bucket.png" alt="BitBucket Repositories"/>
-          </div>
-          <div class="icon fadeInRight large-3 medium-6 small-6 columns">
-            <img src="http://www.corey-noble.com/assets/img/icons/source-tree.png" alt="Source Tree Version Control"/>
-          </div>
-          <div class="icon fadeInRight large-3 medium-6 small-6 columns">
-            <img src="http://www.corey-noble.com/assets/img/icons/jira.png" alt="JIRA Ticket Tracking"/>
-          </div>
-          <div class="icon fadeInRight large-3 medium-6 small-6 columns">
-            <img src="http://www.corey-noble.com/assets/img/icons/aem.png" alt="Adobe Experience Manager Skills"/>
-          </div>
-          <div class="icon fadeInRight large-3 medium-6 small-6 columns">
-            <img src="http://www.corey-noble.com/assets/img/icons/reddot.png" alt="Open Text RedDot Skills"/>
-          </div>
-          <div class="icon fadeInRight large-3 medium-6 small-6 columns">
-            <img src="http://www.corey-noble.com/assets/img/icons/wordpress.png" alt="WordPress Skills"/>
-          </div>
-          <div class="icon fadeInRight large-3 medium-6 small-6 columns">
-            <img src="http://www.corey-noble.com/assets/img/icons/magento.png" alt="Magento Skills"/>
-          </div>
-          <div class="icon fadeInRight large-3 medium-6 small-6 columns">
-            <img src="http://www.corey-noble.com/assets/img/icons/joomla.png" alt="Joomla Skills"/>
-          </div>
-          <div class="icon fadeInRight large-3 medium-6 small-6 columns">
-            <img src="http://www.corey-noble.com/assets/img/icons/atom.png" alt="Atom - Project Code Editor of Choice"/>
-          </div>
-          <div class="icon fadeInRight large-3 medium-6 small-6 columns">
-            <img src="http://www.corey-noble.com/assets/img/icons/sublime-text.png" alt="Sublime Text - Code Editor of Choice"/>
-          </div>
-          <div class="icon fadeInRight large-3 medium-6 small-6 columns">
-            <img src="http://www.corey-noble.com/assets/img/icons/file-zilla.png" alt="File Transfer Protocol Skills"/>
-          </div>
-          <div class="icon fadeInRight large-3 medium-6 small-6 columns">
-            <img src="http://www.corey-noble.com/assets/img/icons/illustraitor.png" alt="Illustraitor Skills"/>
-          </div>
-          <div class="icon fadeInRight large-3 medium-6 small-6 columns">
-            <img src="http://www.corey-noble.com/assets/img/icons/in-design.png" alt="In-Design Skills"/>
-          </div>
-          <div class="icon fadeInRight large-3 medium-6 small-6 columns">
-            <img src="http://www.corey-noble.com/assets/img/icons/firefox.png" alt="Firefox Developer - Browser of Choice"/>
-          </div>
-          <div class="icon fadeInRight large-3 medium-6 small-6 columns">
-            <img src="http://www.corey-noble.com/assets/img/icons/jquery.png" alt="jQuery Skills"/>
-          </div>
+        <div id="portrait-suit" class="large-5 medium-6 small-12 columns">
+          <img src="http://www.corey-noble.com/assets/img/Corey-Noble-Portrait-Suit.png"/>
         </div>
       </div>
     </div>
