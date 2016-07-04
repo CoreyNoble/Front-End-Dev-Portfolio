@@ -22,7 +22,7 @@
 
 
 <!-- CONTACT HEADER -->
-    <div id="parallax-hero-2" class="parallax" data-stellar-background-ratio="0.4" >
+    <div id="parallax-hero-2" class="parallax-large" data-stellar-background-ratio="0.4" >
       <h1 class="zoomInDown wow">Contact Me</h1>
     </div>
 

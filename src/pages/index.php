@@ -22,7 +22,22 @@
 
 <!-- INDEX TITLE -->
     <div id="parallax-hero-1" class="parallax" data-stellar-background-ratio="0.4" >
-      <h1 class="zoomInDown wow">< COREY-NOBLE /></h1>
+      <div id="index-hero-panel-1" class="slideInDown wow">
+        <div id="index-hero-panel-2" class="slideInDown wow">
+          <div id="index-hero-panel-3" class="slideInDown wow">
+            <div id="index-hero-panel-4" class="slideInDown wow">
+              <div id="index-hero-panel-5" class="slideInDown wow">
+                <div class="row">
+                  <div class="small-12">
+                    <h1 class="slideInUp wow">< COREY-NOBLE /></h1>
+                    <h2 class="slideInUp wow">Web Developer</h2>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
 
@@ -32,9 +47,6 @@
 <!-- INDEX INTRO -->
     <div id="about-me" class="section black">
       <div class="row">
-        <h1>Corey Noble</h1>
-        <h2>Front-End Web Developer</h2>
-
         <div id="portrait-suit" class="large-5 medium-6 small-12 columns">
           <img src="http://www.corey-noble.com/assets/img/Corey-Noble-Portrait-Suit.png"/>
         </div>
