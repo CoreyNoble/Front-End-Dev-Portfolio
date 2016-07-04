@@ -84,16 +84,6 @@
 
 
 
-<!-- RESUME CALLOUT -->
-    <div class="section black">
-      <div class="row">
-        <div id="about-more-info" class="resume-cta large-12 columns">
-          <h2>Want to Know More About Me?</h2>
-          <h3 class="tada wow"><a id="resume" href="http://www.corey-noble.com/resume.pdf" target="_blank">VIEW MY CV / RESUME</a></h3>
-        </div>
-      </div>
-    </div>
-
   <!-- Footer -->
   <?php include("http://www.corey-noble.com/partials/footer.html"); ?>
 
