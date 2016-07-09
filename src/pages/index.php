@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="assets/css/app.css" />
     <link rel="stylesheet" href="assets/css/animate.css" />
     <script src="bower_components/modernizr/modernizr.js"></script>
+    <script src="http://corey-noble.com/assets/js/modernizr.js"></script>
   </head>
   <body>
 
