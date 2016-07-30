@@ -6,7 +6,7 @@
     <title>Corey Noble | Web Developer</title>
     <link rel="icon" type="image/jpeg" href="http://www.corey-noble.com/favicon.jpg" />
     <link rel="canonical" href="http://corey-noble.com/" />
-    
+
     <!-- Relative CSS / Javascript -->
     <?php include("http://www.corey-noble.com/partials/head.html"); ?>
   </head>
@@ -28,8 +28,8 @@
               <div id="index-hero-panel-5" class="slideInDown wow">
                 <div class="row">
                   <div class="small-12">
-                    <h1 class="slideInUp wow">< COREY-NOBLE /></h1>
-                    <h2 class="slideInUp wow">Web Developer</h2>
+                    <h1 class="slideInUp wow">Corey Noble</h1>
+                    <h2 class="slideInUp wow">< Web Developer /></h2>
                   </div>
                 </div>
               </div>
@@ -46,11 +46,9 @@
 <!-- INDEX INTRO -->
     <div id="about-me" class="section black">
       <div class="row">
-        <div class="hide-mobile large-7 medium-6 small-12 columns">
+        <div class="large-7 medium-6 small-12 columns">
           <h3>Hi! my name is <b>Corey Noble</b>,</h3><br>
-          <h5>I am a <b>Front-End Web Developer</b> currently working for <a href="http://www.thrillworks.com/" target="_blank" style="color: #fb7638!important;"><b>Thrillworks Inc.</b><br>
-          </a>and I live in the beautiful city of Burlington, ON - Canada.</h5><br>
-          <h5>I have a lot of passion for digital media and love discovering new technologies as they emerge. Check out the skills I have on my belt today:</h5><br>
+          <h5>I am a <b>Front-End Web Developer</b> currently working for <a href="http://www.thrillworks.com/" target="_blank" style="color: #fb7638!important;"><b>Thrillworks&nbsp;Inc.</b> </a>In the beautiful city of Burlington, ON - Canada.</h5><br>
         </div>
 
         <div id="portrait-suit" class="large-5 medium-6 small-12 columns">
