@@ -293,18 +293,18 @@ body {
   padding: 0;
   border: 0;
   outline: none;
-  background: #333333 url("/assets/img/close-btn.svg") left center no-repeat;
+  background: #333333 url("/assets/img/icons/cancel-icon.png") left center no-repeat;
   background-size: 1.875em 1.875em;
   overflow: hidden;
   white-space: nowrap;
   text-indent: 100%;
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=85);
   opacity: 1;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  color: #fff;
+  fill: currentColor;
 }
-.no-svg .close-btn {
-  background-image: url("/assets/img/close-btn.png");
-}
+
 .close-btn:focus, .close-btn:hover {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   opacity: 1;
@@ -317,18 +317,16 @@ body {
   padding: 0;
   border: 0;
   outline: none;
-  background: #333333 url("/assets/img/nav-icon.svg") left center no-repeat;
+  background: #333333 url("/assets/img/icons/menu-icon.png") left center no-repeat;
   background-size: 1.875em 1.5em;
   overflow: hidden;
   white-space: nowrap;
   text-indent: 100%;
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=85);
   opacity: 0.7;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
-.no-svg .nav-btn {
-  background-image: url("/assets/img/nav-icon.png");
-}
+
 .nav-btn:hover, .nav-btn:focus {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   opacity: 1;

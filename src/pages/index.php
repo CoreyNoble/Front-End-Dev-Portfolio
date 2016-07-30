@@ -6,11 +6,9 @@
     <title>Corey Noble | Web Developer</title>
     <link rel="icon" type="image/jpeg" href="http://www.corey-noble.com/favicon.jpg" />
     <link rel="canonical" href="http://corey-noble.com/" />
+    
     <!-- Relative CSS / Javascript -->
-    <link rel="stylesheet" href="assets/css/app.css" />
-    <link rel="stylesheet" href="assets/css/animate.css" />
-    <script src="bower_components/modernizr/modernizr.js"></script>
-    <script src="http://corey-noble.com/assets/js/modernizr.js"></script>
+    <?php include("http://www.corey-noble.com/partials/head.html"); ?>
   </head>
   <body>
 

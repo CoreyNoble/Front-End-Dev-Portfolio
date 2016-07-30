@@ -5,11 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Web Technologies | Corey Noble</title>
     <link rel="icon" type="image/jpeg" href="http://www.corey-noble.com/favicon.jpg" />
+    <link rel="canonical" href="http://corey-noble.com/blog/web-technologies-i-use" />
 
     <!-- Relative CSS / Javascript -->
-    <link rel="stylesheet" href="http://www.corey-noble.com/assets/css/app.css" />
-    <link rel="stylesheet" href="http://www.corey-noble.com/assets/css/animate.css" />
-    <script src="http://www.corey-noble.com/bower_components/modernizr/modernizr.js"></script>
+    <?php include("http://www.corey-noble.com/partials/head.html"); ?>
   </head>
   <body>
 
