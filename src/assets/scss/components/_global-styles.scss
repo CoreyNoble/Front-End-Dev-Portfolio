@@ -218,6 +218,10 @@ textarea{
   margin-bottom: 2em;
 }
 
+#about-me .row{
+  border-bottom: solid 3px #fff;
+}
+
 /* About Page */
 .icon-container{
   display: block;
@@ -253,7 +257,7 @@ textarea{
 
 #portrait-suit{
   position: relative;
-  top: 4em;
+  top: 0em;
 
   img{
     display: block;
