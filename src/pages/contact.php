@@ -8,10 +8,7 @@
     <link rel="canonical" href="http://corey-noble.com/contact" />
 
     <!-- Relative CSS / Javascript -->
-    <link rel="stylesheet" href="http://www.corey-noble.com/assets/css/app.css" />
-    <link rel="stylesheet" href="http://www.corey-noble.com/assets/css/animate.css" />
-    <script src="http://www.corey-noble.com/bower_components/modernizr/modernizr.js"></script>
-    <script src="http://corey-noble.com/assets/js/modernizr.js"></script>
+    <?php include("http://www.corey-noble.com/partials/head.html"); ?>
     <script src='https://www.google.com/recaptcha/api.js'></script>
   </head>
   <body>

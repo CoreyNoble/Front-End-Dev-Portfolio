@@ -7,11 +7,8 @@
     <link rel="icon" type="image/jpeg" href="http://www.corey-noble.com/favicon.jpg" />
     <link rel="canonical" href="http://corey-noble.com/blog/agile-methodoligy" />
 
-    <!-- Relative CSS / Javascript -->
-    <link rel="stylesheet" href="http://www.corey-noble.com/assets/css/app.css" />
-    <link rel="stylesheet" href="http://www.corey-noble.com/assets/css/animate.css" />
-    <script src="http://www.corey-noble.com/bower_components/modernizr/modernizr.js"></script>
-    <script src="http://corey-noble.com/assets/js/modernizr.js"></script>
+    <!-- Head CSS / Javascript -->
+    <?php include("http://www.corey-noble.com/partials/head.html"); ?>
   </head>
   <body>
 
