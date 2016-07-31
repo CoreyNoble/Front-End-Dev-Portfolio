@@ -353,7 +353,7 @@ body {
 #nav .close-btn {
   display: none;
 }
-#nav .block-title {
+#nav h1.block-title {
   border: 0;
   clip: rect(0 0 0 0);
   height: 1px;
@@ -362,6 +362,12 @@ body {
   padding: 0;
   position: absolute;
   width: 1px;
+  font-family: 'Lato', sans-serif!important;
+  font-size: 22px!important;
+
+  a{
+    color: #fff!important;
+  }
 }
 #nav .block {
   z-index: 2;
@@ -414,8 +420,8 @@ body {
 }
 #top .nav-btn {
   position: absolute;
-  top: 1.5em;
-  left: 1.875em;
+  top: 1.33em;
+  left: 1em;
 }
 
 #main {
@@ -467,7 +473,6 @@ footer[role="contentinfo"] {
   }
   #nav li {
     display: inline-block;
-    border-right: 1px solid rgba(255, 255, 255, 0.1);
   }
   #nav li:last-child {
     border-right: none;
@@ -498,12 +503,18 @@ footer[role="contentinfo"] {
     position: relative;
     padding: 0;
   }
+  #top .block-title{
+    font-size: 24px;
+  }
   #nav li {
     position: relative;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 0.5em 0 0.5em 0;
+    margin: 0;
   }
   #nav li:last-child {
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding-bottom: 0.5em;
   }
   #nav li.is-active:after {
     z-index: 50;
@@ -622,59 +633,6 @@ footer[role="contentinfo"] {
     transform: translate3d(0, 0, 0);
   }
 }
-
-
-
-
-
-
-// nav{
-//   position: fixed;
-//   top: 0;
-//   width: 100%;
-//   z-index: 3;
-//   -moz-box-shadow: 0  0.75em 0.75em -0.75em #000000, 0 -0.75em 0.75em -0.75em #000000;
-//   -webkit-box-shadow:  0  0.75em 0.75em -0.75em #000000, 0 -0.75em 0.75em -0.75em #000000;
-//    box-shadow: 0  0.75em 0.75em -0.75em #000000, 0 -0.75em 0.75em -0.75em #000000;
-//
-//   ul.topnav{
-//       list-style-type: none;
-//       margin: 0;
-//       padding: 0;
-//       overflow: hidden;
-//       background-color: #333;
-//
-//       li{
-//         float: left;
-//         margin: 0;
-//         padding: 0;
-//
-//         a{
-//           display: inline-block;
-//           color: $white;
-//           text-align: center;
-//           padding: 14px 16px;
-//           text-decoration: none;
-//           transition: 0.3s;
-//           font-size: 17px;
-//
-//           .site-title{
-//             font-weight: bold;
-//           }
-//         }
-//
-//         a:hover{
-//           background-color: $grey;
-//         }
-//       }
-//
-//       li.icon {
-//         display: none;
-//       }
-//   }
-// }
-
-
 
 
 
