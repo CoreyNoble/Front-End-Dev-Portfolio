@@ -47,43 +47,12 @@
 
       <!-- BLOG ENTRY 1 -->
       <div class="blog-entry fadeInUp wow large-12 columns">
-        <a href="/blog/blog-introduction-3-7-16.php">
-          <h3>Test Blog</h3>
-          <p>This is the short description explaining breifly the blog entry topic and contents within.</p>
+        <a href="http://www.corey-noble.com/blog/blog-introduction.php">
+          <h3>Blog Introduction</h3>
+          <p>The purpose of this blog is to create a space to share the <b>ideas</b> and discuss the <b>topics</b> that are on my mind.</p>
         </a>
       </div>
 
-      <!-- BLOG ENTRY 2 -->
-      <div class="blog-entry fadeInUp wow large-12 columns">
-        <a href="/blog/blog-introduction-3-7-16.php">
-          <h3>Test Blog</h3>
-          <p>This is the short description explaining breifly the blog entry topic and contents within.</p>
-        </a>
-      </div>
-
-      <!-- BLOG ENTRY 3 -->
-      <div class="blog-entry fadeInUp wow large-12 columns">
-        <a href="/blog/blog-introduction-3-7-16.php">
-          <h3>Test Blog</h3>
-          <p>This is the short description explaining breifly the blog entry topic and contents within.</p>
-        </a>
-      </div>
-
-      <!-- BLOG ENTRY 4 -->
-      <div class="blog-entry fadeInUp wow large-12 columns">
-        <a href="/blog/blog-introduction-3-7-16.php">
-          <h3>Test Blog</h3>
-          <p>This is the short description explaining breifly the blog entry topic and contents within.</p>
-        </a>
-      </div>
-
-      <!-- BLOG ENTRY 5 -->
-      <div class="blog-entry fadeInUp wow large-12 columns">
-        <a href="/blog/blog-introduction-3-7-16.php">
-          <h3>Test Blog</h3>
-          <p>This is the short description explaining breifly the blog entry topic and contents within.</p>
-        </a>
-      </div>
     </div>
   </div>
 
