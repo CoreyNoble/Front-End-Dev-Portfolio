@@ -42,6 +42,7 @@
           <h4 class="slideInRight wow"><a href="http://www.corey-noble.com/portfolio.php">Portfolio</a></h4>
           <h4 class="slideInRight wow"><a title="About Me" href="http://www.corey-noble.com/about.php">About</a></h4>
           <h4 class="slideInRight wow"><a title="My Services" href="http://www.corey-noble.com/services.php">Services</a></h4>
+          <h4 class="slideInRight wow"><a title="My Blog" href="http://www.corey-noble.com/blog.php">Blog</a></h4>
           <h4 class="slideInRight wow"><a title="Contact Me" href="http://www.corey-noble.com/contact.php">Contact</a></h4>
           <div class="resume-cta">
             <h3 class="slideInRight wow"><a id="resume" href="http://www.corey-noble.com/resume.pdf" target="_blank">VIEW MY CV / RESUME</a></h3>
