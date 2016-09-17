@@ -19,23 +19,26 @@
 
 
 
-<!-- CONFIRM HEADER -->
-    <div id="parallax-hero-2" class="parallax-large" data-stellar-background-ratio="0.4" >
-      <h1 class="zoomInDown wow">Success!</h1>
-    </div>
+    <!-- CONFIRMATION MESSAGE -->
+        <div class="section black">
+          <div class="row">
+            <div id="contact-intro" class="large-12 medium-12 small-12 columns">
+              <h1 class="text-center" style="font-size: 3.5em;">Success!</h1>
+            </div>
 
 
 
 
 
-<!-- CONFIRM MESSAGE -->
-    <div class="section black">
-      <div class="row">
-        <h2 class="slideInLeft wow">Thank you for your inquiry.</h2>
-        <h4 class="slideInLeft wow">Your form submission was successful.</h4>
-        <p>I have recieved your message and will get back to you within 2 business days.</p>
-      </div>
-    </div>
+            <!-- CONFIRMATION MESSAGE -->
+                    <div id="contact-form" class="large-12 medium-12 small-12 columns">
+                      <h2 style="color: white;">Thank you for your inquiry.</h2>
+                      <h5  style="color: white;">Your form submission was successful.</h5>
+                      <p  style="color: white;">I have recieved your message and will get back to you within 2 business days.</p>
+                    </div>
+                  </div>
+                  <br><br><br><br><br>
+                </div>
 
 
 

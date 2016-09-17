@@ -33,8 +33,16 @@
     <div class="section black">
       <div class="row">
         <div id="contact-intro" class="large-12 medium-12 small-12 columns">
-          <h2>I look forward to hearing from you!</h2>
+          <h2 id="no-captcha">I look forward to hearing from you!</h2>
           <h5>Thank you for showing interest in me as a developer. I am excited to start working with you! Please fill out the form below so we can begin a conversation.</h5>
+          <?php
+            if (strpos($_SERVER['REQUEST_URI'], "captcha=none") !== false){ ?>
+              <h3 style="color: red; font-weight: bold; margin-top: 1em; text-decoration: underline;">Please validate yourself with Google ReCaptcha.</h3>
+          <?php } ?>
+          <?php
+            if (strpos($_SERVER['REQUEST_URI'], "captcha=failed") !== false){ ?>
+              <h3 style="color: red; font-weight: bold; margin-top: 1em; text-decoration: underline;">You have failed Google ReCaptcha validation. Please try again.</h3>
+          <?php } ?>
         </div>
 
 
@@ -43,7 +51,7 @@
 
 <!-- CONTACT FORM -->
         <div id="contact-form" class="large-12 medium-12 small-12 columns">
-          <form method="post" action="http://www.corey-noble.com/mailsend.php">
+          <form method="post" action="mailsend.php" method="post">
             <div class="row">
               <h5 class="fadeIn wow">First Name</h5>
               <input class="fadeIn wow" type="text" name="firstName" required />
@@ -60,11 +68,11 @@
               <h5 class="fadeIn wow">Inquiry</h5>
               <textarea class="fadeIn wow" class="last" name="inquiry" rows="5" cols="35" required></textarea>
 
-              <div class="no-padding large=8 medium-8 small-12 columns">
-                <div class="g-recaptcha fadeIn wow" data-sitekey="6Leroh4TAAAAADw3rEA7sZZRliomxJuRNFq4xFtV"></div>
+              <div class="no-padding large=8 medium-8 small-12 columns" style="margin-top: 1.5em">
+                <div class="g-recaptcha fadeIn wow" data-sitekey="6Lcj8wYUAAAAAG9fl2DtDnsqTjfyNFwhL38TwGao"></div>
               </div>
 
-              <div class="no-padding large=4 medium-4 small-12 columns">
+              <div class="no-padding large=4 medium-4 small-12 columns" style="margin-top: 1.5em;">
                 <input class="fadeIn wow" type="submit" class="button submit-cta" value="Submit"/>
               </div>
             </div>
