@@ -52,28 +52,28 @@
 <!-- CONTACT FORM -->
         <div id="contact-form" class="large-12 medium-12 small-12 columns">
           <form method="post" action="mailsend.php" method="post">
-            <div class="row">
-              <h5 class="fadeIn wow">First Name</h5>
-              <input class="fadeIn wow" type="text" name="firstName" required />
+            <div class="row fadeIn wow">
+              <h5>First Name</h5>
+              <input type="text" name="firstName" required />
 
-              <h5 class="fadeIn wow">Last Name</h5>
-              <input class="fadeIn wow" type="text" name="lastName" required />
+              <h5>Last Name</h5>
+              <input type="text" name="lastName" required />
 
-              <h5 class="fadeIn wow">Email Address</h5>
-              <input class="fadeIn wow" type="text" name="email" required />
+              <h5>Email Address</h5>
+              <input type="text" name="email" required />
 
-              <h5 class="fadeIn wow">Company</h5>
-              <input class="fadeIn wow" type="text" name="company" required />
+              <h5>Company</h5>
+              <input type="text" name="company" required />
 
-              <h5 class="fadeIn wow">Inquiry</h5>
-              <textarea class="fadeIn wow" class="last" name="inquiry" rows="5" cols="35" required></textarea>
+              <h5>Inquiry</h5>
+              <textarea class="last" name="inquiry" rows="5" cols="35" required></textarea>
 
               <div class="no-padding large=8 medium-8 small-12 columns" style="margin-top: 1.5em">
-                <div class="g-recaptcha fadeIn wow" data-sitekey="6Lcj8wYUAAAAAG9fl2DtDnsqTjfyNFwhL38TwGao"></div>
+                <div class="g-recaptcha" data-sitekey="6Lcj8wYUAAAAAG9fl2DtDnsqTjfyNFwhL38TwGao"></div>
               </div>
 
               <div class="no-padding large=4 medium-4 small-12 columns" style="margin-top: 1.5em;">
-                <input class="fadeIn wow" type="submit" class="button submit-cta" value="Submit"/>
+                <input type="submit" class="button submit-cta" value="Submit"/>
               </div>
             </div>
           </form>
