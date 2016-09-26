@@ -44,8 +44,17 @@
 
 
 
+        
+      <!-- BLOG Introduction -->
+      <div class="blog-entry fadeInUp wow large-12 columns">
+        <a href="http://www.corey-noble.com/blog/web-production-specialist.php">
+          <h3>Web Production Specialist</h3>
+          <p>My Role as a Web Production Specialist.</p>
+        </a>
+      </div>
+        
 
-      <!-- BLOG ENTRY 1 -->
+      <!-- BLOG Introduction -->
       <div class="blog-entry fadeInUp wow large-12 columns">
         <a href="http://www.corey-noble.com/blog/blog-introduction.php">
           <h3>Blog Introduction</h3>
