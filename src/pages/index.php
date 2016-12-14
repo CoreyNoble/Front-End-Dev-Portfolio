@@ -127,7 +127,7 @@
 
         <div class="showcase-2">
           <div class="fadeIn wow large-12 medium-12 small-12 columns">
-            <a href="http://www.corey-noble.com/portfolio/cms/skillset.php">
+            <a href="http://www.corey-noble.com/portfolio.php">
               <div class="showcase-example blue-gradient">
                 <h3 class="black">My Portfolio</h3>
               </div>

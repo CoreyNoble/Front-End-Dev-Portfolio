@@ -82,7 +82,7 @@
           </div>
 
           <div class="fadeIn wow large-6 medium-6 small-12 columns">
-            <a href="http://www.corey-noble.com/portfolio/cms/ctkr-music.php">
+            <a href="http://www.ctkrmusic.com/">
               <div class="showcase-example blue-gradient">
                 <h3 class="black">CTKR Music</h3>
               </div>
