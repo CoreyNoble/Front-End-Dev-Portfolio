@@ -36,6 +36,7 @@
   <div class="section white">
     <div class="row">
       <div class="large-12 columns">
+        <p class="fadeInDown wow" ><small><u><a href="http://www.corey-noble.com/blog.php">Back to Blog</a></u></small></p>
         <h3 class="fadeInDown wow" >Welcome to my blog</h3>
         <p class="fadeInDown wow" >This is going to be a space for me to; talk about the work I do, communicate ideas that I have, discuss topics that are on my mind, and share the processes I use to create beautiful websites and graphics.</p>
         <p class="fadeInDown wow" >As I learn throughout my career and continue to post to this archive, I hope that this blog will turn into a resource for me to look back on, reflect, and grow.</p>

@@ -42,14 +42,20 @@
       </div>
 
 
-
+      <!-- My Aspirations -->
+      <div class="blog-entry fadeInUp wow large-12 columns">
+        <a href="http://www.corey-noble.com/blog/aspirations.php">
+          <h3>My Aspirations</h3>
+          <p>Who I aspire to be throughout my life. My goals.</p>
+        </a>
+      </div>
 
         
-      <!-- BLOG Introduction -->
+      <!-- Web Production Specialist -->
       <div class="blog-entry fadeInUp wow large-12 columns">
         <a href="http://www.corey-noble.com/blog/web-production-specialist.php">
           <h3>Web Production Specialist</h3>
-          <p>My Role as a Web Production Specialist.</p>
+          <p>Detailing my role as a Web Production Specialist at Thrillworks.</p>
         </a>
       </div>
         
@@ -58,7 +64,7 @@
       <div class="blog-entry fadeInUp wow large-12 columns">
         <a href="http://www.corey-noble.com/blog/blog-introduction.php">
           <h3>Blog Introduction</h3>
-          <p>The purpose of this blog is to create a space to share the <b>ideas</b> and discuss the <b>topics</b> that are on my mind.</p>
+          <p>An introduction to my blog. A bit about me, and my intentions for this&nbsp;space.</p>
         </a>
       </div>
 
