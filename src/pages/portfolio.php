@@ -73,18 +73,18 @@
 
         <div class="showcase-2">
           <div class="fadeIn wow large-12 medium-12 small-12 columns">
-            <a href="http://www.corey-noble.com/portfolio/cms/right-choice">
+            <a href="http://www.corey-noble.com/portfolio/cms/right-choice" target="_blank" title="Right Choice Web Development">
               <div class="showcase-example blue-gradient">
-                <h3 class="black">Right Choice</h3>
+                <h3 class="black">Right Choice Web Development</h3>
                 <img src="http://corey-noble.com/portfolio/cms/right-choice/wp-content/uploads/2014/03/Slide29.png" />
               </div>
             </a>
           </div>
 
           <div class="fadeIn wow large-6 medium-6 small-12 columns">
-            <a href="http://www.ctkrmusic.com/">
+            <a href="http://www.ctkrmusic.com/" target="_blank" title="CTKR Music Instruction and Incubation">
               <div class="showcase-example blue-gradient">
-                <h3 class="black">CTKR Music</h3>
+                <h3 class="black">CTKR Music Instruction and Incubation</h3>
               </div>
             </a>
           </div>

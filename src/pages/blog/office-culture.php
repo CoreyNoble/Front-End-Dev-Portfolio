@@ -3,11 +3,11 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Agile Methodoligy | Corey Noble</title>
+    <title>Office Culture | Corey Noble</title>
     <link rel="icon" type="image/jpeg" href="http://www.corey-noble.com/favicon.jpg" />
-    <link rel="canonical" href="http://corey-noble.com/blog/agile-methodoligy" />
+    <link rel="canonical" href="http://corey-noble.com/blog/office-culture" />
 
-    <!-- Head CSS / Javascript -->
+    <!-- Relative CSS / Javascript -->
     <?php include("http://www.corey-noble.com/partials/head.html"); ?>
   </head>
   <body>
@@ -23,7 +23,7 @@
   <div class="section blue">
     <div class="row">
       <div class="large-12 columns">
-        <h1 class="header-no-parallax fadeInDown wow">Agile Methodoligy</h1>
+        <h1 class="header-no-parallax fadeInDown wow">Office Culture</h1>
       </div>
     </div>
   </div>

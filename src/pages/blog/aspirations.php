@@ -38,7 +38,7 @@
         <div class="large-12 columns">
           <p class="fadeInDown wow" ><small><u><a href="http://www.corey-noble.com/blog.php">Back to Blog</a></u></small></p>
           <h3 class="fadeInDown wow" >Who I Aspire to become</h3>
-          <p class="fadeInDown wow" >In life, I aspire to become an expert at my craft. I aspire to be healthy, and I aspire to maintain a strong connection to those who matter most.</p>
+          <p class="fadeInDown wow" >In life, I aspire to become an expert at my craft. I aspire to be healthy and I aspire to maintain a strong connection to those who matter most.</p>
           <p class="fadeInDown wow" >I want to become a Full-Stack Web Developer. To me, that means I would be good at Web Graphics and Design, and an expert at Front-End Web Development and Back-End Web Development.</p>
           <p class="fadeInDown wow" >I want to be healthy. I want to work out at a martial arts club as a hobby and maintain a good balance of diet and exercise. I want to ensure I live a long life so I can produce more for the world. I want to be relied upon. I want to work on big projects that mean something to people.</p>
           <p class="fadeInDown wow" >I want to have a family and raise my kids to be intelligent, caring and passionate individuals.</p>

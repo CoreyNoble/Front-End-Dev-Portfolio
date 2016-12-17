@@ -24,7 +24,7 @@
     <div class="row">
       <div class="large-12 columns">
         <h1 class="header-no-parallax slideInLeft wow">Welcome to My Blog</h1>
-        <h4 class="slideInLeft wow">The purpose of this blog is to create a space to share the <b>ideas</b> and discuss the <b>topics</b> that are on my mind.</h4>
+        <h4 class="slideInLeft wow">The purpose of this blog is to create a space to share my knowledge about web development, showcase the work I do and discuss the topics that are on my mind.</h4>
       </div>
     </div>
   </div>
@@ -42,11 +42,19 @@
       </div>
 
 
+      <!-- Web Content Accessibility Guidelines -->
+      <div class="blog-entry fadeInUp wow large-12 columns">
+        <a href="http://www.corey-noble.com/blog/web-content-accessibility-guidelines.php">
+          <h3>Web Content Accessibility Guidelines (WCAG)</h3>
+          <p>Discussing the accessibility requirements that websites need to adhere to.</p>
+        </a>
+      </div>    
+        
       <!-- My Aspirations -->
       <div class="blog-entry fadeInUp wow large-12 columns">
         <a href="http://www.corey-noble.com/blog/aspirations.php">
           <h3>My Aspirations</h3>
-          <p>Who I aspire to be throughout my life. My goals.</p>
+          <p>Who I aspire to become. My goals.</p>
         </a>
       </div>
 
