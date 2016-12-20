@@ -47,7 +47,7 @@
       <div class="row">
         <div class="large-7 medium-6 small-12 columns">
           <h3>Hi! my name is <b>Corey Noble</b>,</h3><br>
-          <h5>I am a <b>Front-End Web Developer</b> currently working for <a href="http://www.thrillworks.com/" target="_blank" style="color: #fb7638!important;"><b>Thrillworks&nbsp;Inc.</b> </a>In the beautiful city of Burlington, ON - Canada.</h5><br>
+            <h5>I am a <b>Front-End Web Developer</b> currently working for <a href="http://www.thrillworks.com/" target="_blank" style="color: #fb7638!important;"><b><u>Thrillworks&nbsp;Inc.</u></b> </a>In the beautiful city of Burlington, ON - Canada.</h5><br>
         </div>
 
         <div id="portrait-suit" class="large-5 medium-6 small-12 columns">
@@ -122,14 +122,16 @@
       <div class="row">
         <div class="large-12 medium-12 small-12 columns">
             <h2>My Work</h2>
-            <h4 class="index-header">Want to see what I can do? check out my <a href="http://www.corey-noble.com/portfolio.php">Portfolio</a> page</h4>
+            <h4 class="index-header">Want to see what I can do? check out my <a href="http://www.corey-noble.com/portfolio.php"><b><u>Portfolio</u></b></a> page</h4>
+            
         </div>
 
         <div class="showcase-2">
           <div class="fadeIn wow large-12 medium-12 small-12 columns">
             <a href="http://www.corey-noble.com/portfolio.php">
-              <div class="showcase-example blue-gradient">
+              <div class="showcase-example">
                 <h3 class="black">My Portfolio</h3>
+                <img src="http://corey-noble.com/assets/img/showcase/coming-soon-showcase.png" alt="Coming Soon."/>
               </div>
             </a>
           </div>
@@ -146,7 +148,7 @@
       <div class="row">
         <div id="about-more-info" class="resume-cta large-12 columns">
           <h2>Want to Know More About Me?</h2>
-          <h3 class="tada wow"><a id="resume" href="http://www.corey-noble.com/resume.pdf" target="_blank">VIEW MY CV / RESUME</a></h3>
+          <h3 class="tada wow"><a id="resume" href="http://www.corey-noble.com/assets/pdf/CoreyNoble-Resume.pdf" target="_blank">VIEW MY CV / RESUME</a></h3>
         </div>
       </div>
     </div>

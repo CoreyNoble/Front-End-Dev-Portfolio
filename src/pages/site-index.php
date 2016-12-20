@@ -52,7 +52,7 @@
           <h4><a title="My Blog" href="http://www.corey-noble.com/blog.php">Blog</a></h4>
           <h4><a title="Contact Me" href="http://www.corey-noble.com/contact.php">Contact</a></h4>
           <div class="resume-cta">
-            <h3 class="slideInRight wow"><a id="resume" href="http://www.corey-noble.com/resume.pdf" target="_blank">VIEW MY CV / RESUME</a></h3>
+            <h3 class="slideInRight wow"><a id="resume" href="http://www.corey-noble.com/assets/pdf/CoreyNoble-Resume.pdf" target="_blank">VIEW MY CV / RESUME</a></h3>
           </div>
       </div>
     </div>

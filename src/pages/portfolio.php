@@ -40,16 +40,27 @@
           <div class="showcase-1">
             <div class="fadeIn wow large-12 medium-12 small-12 columns">
               <a href="http://www.corey-noble.com/portfolio/frameworks/example-1.php">
-                <div class="showcase-example blue-gradient">
-                  <h3 class="light-blue">Example 1</h3>
+                <div class="showcase-example">
+                  <h3 class="light-blue">Foundation Website Example</h3>
+                  <img src="http://corey-noble.com/assets/img/showcase/coming-soon-showcase.png" alt="Coming Soon."/>
                 </div>
               </a>
             </div>
 
-            <div class="fadeIn wow large-12 medium-12 small-12 columns">
+            <div class="fadeIn wow large-6 medium-12 small-12 columns">
               <a href="http://www.corey-noble.com/portfolio/frameworks/example-2.php">
-                <div class="showcase-example blue-gradient">
-                  <h3 class="light-blue">Example 2</h3>
+                <div class="showcase-example">
+                  <h3 class="light-blue">Foundation Website Example</h3>
+                  <img src="http://corey-noble.com/assets/img/showcase/coming-soon-showcase.png" alt="Coming Soon."/>
+                </div>
+              </a>
+            </div>
+            
+            <div class="fadeIn wow large-6 medium-12 small-12 columns">
+              <a href="http://www.corey-noble.com/portfolio/frameworks/responsive-email-template.html" target="_blank" title="Foundation for Emails">
+                <div class="showcase-example">
+                  <h3 class="light-blue">Responsive Email Template</h3>
+                  <img src="http://corey-noble.com/assets/img/showcase/coming-soon-showcase.png" alt="Coming Soon."/>
                 </div>
               </a>
             </div>
@@ -74,40 +85,27 @@
         <div class="showcase-2">
           <div class="fadeIn wow large-12 medium-12 small-12 columns">
             <a href="http://www.corey-noble.com/portfolio/cms/right-choice" target="_blank" title="Right Choice Web Development">
-              <div class="showcase-example blue-gradient">
-                <h3 class="black">Right Choice Web Development</h3>
-                <img src="http://corey-noble.com/portfolio/cms/right-choice/wp-content/uploads/2014/03/Slide29.png" />
+              <div class="showcase-example">
+                <h3 class="black">Right Choice Web&nbsp;Development</h3>
+                <img src="http://corey-noble.com/assets/img/showcase/Right-Choice-showcase.jpg" alt="Corey Noble and Manann Him. Graphic and web creators."/>
               </div>
             </a>
           </div>
 
-          <div class="fadeIn wow large-6 medium-6 small-12 columns">
+          <div class="fadeIn wow large-6 medium-12 small-12 columns">
             <a href="http://www.ctkrmusic.com/" target="_blank" title="CTKR Music Instruction and Incubation">
-              <div class="showcase-example blue-gradient">
-                <h3 class="black">CTKR Music Instruction and Incubation</h3>
+              <div class="showcase-example">
+                <h3 class="black">CTKR Music Instruction</h3>
+                <img src="http://corey-noble.com/assets/img/showcase/CTKR-showcase.jpg" />
               </div>
             </a>
           </div>
 
-          <div class="fadeIn wow large-6 medium-6 small-12 columns">
-            <a href="http://www.corey-noble.com/portfolio/cms/skillset.php">
-              <div class="showcase-example blue-gradient">
+          <div class="fadeIn wow large-6 medium-12 small-12 columns">
+            <a href="http://www.corey-noble.com/portfolio/cms/skillset.php" title="My CMS Skills">
+              <div class="showcase-example">
                 <h3 class="black">My CMS Skills</h3>
-                <div class="large-2 medium-2 small-2 columns">
-                  <img class="rollIn wow" src="http://www.corey-noble.com/assets/img/icons/reddot.png" alt="Open Text RedDot Skills"/>
-                </div>
-                <div class="large-2 medium-2 small-2 columns">
-                  <img class="rollIn wow" src="http://www.corey-noble.com/assets/img/icons/wordpress.png" alt="WordPress Skills"/>
-                </div>
-                <div class="large-2 medium-2 small-2 columns">
-                  <img class="rollIn wow" src="http://www.corey-noble.com/assets/img/icons/joomla.png" alt="Joomla Skills"/>
-                </div>
-                <div class="large-2 medium-2 small-2 columns">
-                  <img class="rollIn wow" src="http://www.corey-noble.com/assets/img/icons/magento.png" alt="Magento Skills"/>
-                </div>
-                <div class="large-2 medium-2 small-2 columns end">
-                  <img class="rollIn wow" src="http://www.corey-noble.com/assets/img/icons/sitecore.png" alt="SiteCore Skills"/>
-                </div>
+                <img src="http://corey-noble.com/assets/img/showcase/CMS-showcase.jpg" alt="Adobe Experience Manager. Open Text's RedDot. Magento. WordPress. Joomla. SiteCore."/>
               </div>
             </a>
           </div>
