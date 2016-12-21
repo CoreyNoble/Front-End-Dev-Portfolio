@@ -213,7 +213,7 @@
         <div id="education" class="large-12 columns">
           <h2 class="fadeInDown wow" >Education</h2>
           <hr class="fadeInDown wow">
-          <img class="fadeInDown wow" src="http://www.corey-noble.com/assets/img/logos/fanshawe-college.png" alt="Fanshawe College"/>
+          <img class="fadeInDown wow" src="http://www.corey-noble.com/assets/img/logos/fanshawe-college-logo.png" alt="Fanshawe College"/>
         </div>
         <div class="about-experience large-2 medium-3 small-12 columns">
           <img class="rollIn wow" src="http://www.corey-noble.com/assets/img/icons/graduate.png" alt="Graduate"/>
@@ -225,7 +225,7 @@
           <ul>
             <li class="fadeInDown wow"><u>Time Management</u> – Our assignments were always under very strict timelines and Time Managment was the key to passing the course. Today, I concider this the most valuable skill I have.</li>
             <li class="fadeInDown wow"><u>Project Management</u> – We often had multiple projects on-the-go with competing deadlines. Dedicated focus on project management was nessesary.</li>
-            <li class="fadeInDown wow"><u>Team Collaboration</u> – We created platformer and isometric shooter games in groups ranging from 5-6 people. I learned all about the tensions that build in a team under strict deadlines and how to deal with the stress of team members that aren't getting along or performing at their role. </li>
+            <li class="fadeInDown wow"><u>Team Collaboration</u> – We created platformer and isometric shooter games in groups ranging from 5-6 people. I learned all about the tensions that build in a team under strict deadlines and how to deal with the stress of team members that aren't getting along or performing at their role.</li>
             <li class="fadeInDown wow"><u>Constructive Criticism</u> – Our teacher was an industry veteran who was very critical about feedback. He was our client and if something wasn't up to spec, we had to rectify it. I learned very quickly the importance of listening and adhering to the feedback and critisisms of my work.</li>
             <li class="fadeInDown wow"><u>Technical Skills</u> – The Technical skills I honed in this program are: <i>Concept Art, Sculpting, Retopology + Mesh-Optimization, Upwrapping + Texturing, Rigging + Animation, Lighting + Rendering, Game Development</i>.</li>
           </ul>

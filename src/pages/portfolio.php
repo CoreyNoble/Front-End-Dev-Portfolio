@@ -41,7 +41,7 @@
             <div class="fadeIn wow large-12 medium-12 small-12 columns">
               <a href="http://www.corey-noble.com/portfolio/frameworks/example-1.php">
                 <div class="showcase-example">
-                  <h3 class="light-blue">Foundation Website Example</h3>
+                  <h3 class="white">Foundation Website Example</h3>
                   <img src="http://corey-noble.com/assets/img/showcase/coming-soon-showcase.png" alt="Coming Soon."/>
                 </div>
               </a>
@@ -50,7 +50,7 @@
             <div class="fadeIn wow large-6 medium-12 small-12 columns">
               <a href="http://www.corey-noble.com/portfolio/frameworks/example-2.php">
                 <div class="showcase-example">
-                  <h3 class="light-blue">Foundation Website Example</h3>
+                  <h3 class="white">Foundation Website Example</h3>
                   <img src="http://corey-noble.com/assets/img/showcase/coming-soon-showcase.png" alt="Coming Soon."/>
                 </div>
               </a>
@@ -59,8 +59,8 @@
             <div class="fadeIn wow large-6 medium-12 small-12 columns">
               <a href="http://www.corey-noble.com/portfolio/frameworks/responsive-email-template.html" target="_blank" title="Foundation for Emails">
                 <div class="showcase-example">
-                  <h3 class="light-blue">Responsive Email Template</h3>
-                  <img src="http://corey-noble.com/assets/img/showcase/coming-soon-showcase.png" alt="Coming Soon."/>
+                  <h3 class="white">Responsive Email</h3>
+                  <img src="http://corey-noble.com/assets/img/showcase/responsive-email-showcase.jpg" alt="Responsive Email Component Development. Using Foundation for Emails."/>
                 </div>
               </a>
             </div>
@@ -87,7 +87,7 @@
             <a href="http://www.corey-noble.com/portfolio/cms/right-choice" target="_blank" title="Right Choice Web Development">
               <div class="showcase-example">
                 <h3 class="black">Right Choice Web&nbsp;Development</h3>
-                <img src="http://corey-noble.com/assets/img/showcase/Right-Choice-showcase.jpg" alt="Corey Noble and Manann Him. Graphic and web creators."/>
+                <img src="http://corey-noble.com/assets/img/showcase/Right-Choice-showcase.jpg" alt="Corey Noble and Manann Him. Graphic and Web Creators."/>
               </div>
             </a>
           </div>
