@@ -44,8 +44,8 @@
         
       <!-- Search Engine Optimization Techniques -->
       <div class="blog-entry large-12 columns">
-        <a href="http://www.corey-noble.com/blog/search-engine-optimization-techniques.php">
-          <h3>Search Engine Optimization Techniques</h3>
+        <a href="http://www.corey-noble.com/blog/search-engine-optimization.php">
+          <h3>Search Engine Optimization</h3>
           <p>Discussing the importance of search engine ranking and how to optimize a website to rank higher in a search index.</p>
         </a>
       </div>
