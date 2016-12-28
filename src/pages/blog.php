@@ -24,7 +24,7 @@
     <div class="row">
       <div class="large-12 columns">
         <h1 class="header-no-parallax slideInLeft wow">Welcome to My Blog</h1>
-        <h4 class="slideInLeft wow">The purpose of this blog is to create a space to share my knowledge about web development; to showcase the work I do and discuss the topics that are on my mind.</h4>
+        <h4 class="slideInLeft wow">The purpose of this blog is to create a space to share my knowledge about web development; to showcase the work I do, the processes I use, and to discuss the topics that are on my mind.</h4>
       </div>
     </div>
   </div>
@@ -40,15 +40,24 @@
         <h2 class="fadeInDown wow" >Posts:</h2>
         <hr class="fadeInDown wow">
       </div>
+        
+        
+      <!-- Search Engine Optimization Techniques -->
+      <div class="blog-entry large-12 columns">
+        <a href="http://www.corey-noble.com/blog/search-engine-optimization-techniques.php">
+          <h3>Search Engine Optimization Techniques</h3>
+          <p>Discussing the importance of search engine ranking and how to optimize a website to rank higher in a search index.</p>
+        </a>
+      </div>
 
 
       <!-- Web Content Accessibility Guidelines -->
       <div class="blog-entry large-12 columns">
         <a href="http://www.corey-noble.com/blog/web-content-accessibility-guidelines.php">
-          <h3>Web Content Accessibility Guidelines (WCAG)</h3>
-          <p>Discussing the accessibility requirements that websites need to adhere to.</p>
+          <h3>Web Content Accessibility Guidelines (WCAG 2.0)</h3>
+          <p>Outlining the accessibility requirements that websites need to adhere to.</p>
         </a>
-      </div>    
+      </div>
         
       <!-- My Aspirations -->
       <div class="blog-entry large-12 columns">
