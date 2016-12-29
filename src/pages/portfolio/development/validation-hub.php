@@ -40,7 +40,7 @@
           <div class="showcase-1">
             <div class="large-12 medium-12 small-12 columns">
                 <div class="showcase-example">
-                  <h3 class="white">Validation Hub Landing&nbsp;Page</h3>
+                  <h3 class="white">Hub Landing&nbsp;Page</h3>
                   <img src="http://corey-noble.com/assets/img/development/Validation-Hub-Landing-Page.jpg" alt="Navigation at the top of the page points to the most important client QA tools. A carousel under the navigation filters through the various types of promotions you can test. The body of the page contains a description of the site and quick-links to additional client QA tools."/>
                 </div>
             </div>

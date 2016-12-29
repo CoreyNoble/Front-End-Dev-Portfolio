@@ -26,6 +26,21 @@ hr{
   color: $grey;
 }
 
+.frame{
+    width: 100%;
+	padding: 0.5em;
+    padding-top: 4em;
+    
+    iframe{
+        display: block;
+        float: left;
+        border: 3px solid $black;
+        width: 100%;
+        margin: 0 auto;
+        height: 90.5vh;
+    }
+}
+
 .no-padding.columns{
   padding: 0!important;
 }
@@ -64,6 +79,16 @@ textarea{
     margin: 0 auto;
     padding: 1em;
   }
+    
+  .frame{
+    width: 100%;
+	padding: 0.5em;
+    padding-top: 3em;
+    
+    iframe{
+        height: 90vh;
+    }
+}
 }
 
 @media only screen and (min-width: 40.063em) { /* min-width 641px, medium screens */
@@ -194,19 +219,19 @@ textarea{
   animation-delay: 2.25s;
 }
 
-#showcase1.pulse, #showcase2.pulse, #showcase3.pulse {
-  -webkit-animation-duration: 5s;
-  -moz-animation-duration: 5s;
-  -o-animation-duration: 5s;
-  -ms-animation-duration: 5s;
-  animation-duration: 5s;
-
-  -webkit-animation-timing-function:linear;
-  -moz-animation-timing-function:linear;
-  -o-animation-timing-function:linear;
-  -ms-animation-timing-function:linear;
-  animation-timing-function:linear;
-}
+//#showcase1.pulse, #showcase2.pulse, #showcase3.pulse {
+//  -webkit-animation-duration: 5s;
+//  -moz-animation-duration: 5s;
+//  -o-animation-duration: 5s;
+//  -ms-animation-duration: 5s;
+//  animation-duration: 5s;
+//
+//  -webkit-animation-timing-function:linear;
+//  -moz-animation-timing-function:linear;
+//  -o-animation-timing-function:linear;
+//  -ms-animation-timing-function:linear;
+//  animation-timing-function:linear;
+//}
 
 @media only screen and (max-width: 40em) { /* max-width 640px, mobile-only styles, use when QAing mobile issues */
   #showcase1.bounceIn, #showcase2.bounceIn, #showcase3.bounceIn {
@@ -311,6 +336,7 @@ textarea{
     display: block;
     margin: 3em auto;
     max-width: 424px;
+    width: 100%;
   }
 }
 
@@ -384,6 +410,7 @@ textarea{
     h3{
       #resume{
         font-size: 16px;
+        font-weight: bold;
       }
     }
   }

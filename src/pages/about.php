@@ -89,7 +89,7 @@
             <img src="http://www.corey-noble.com/assets/img/icons/magento.png" alt="Magento Skills"/>
           </div>
           <div class="icon fadeInRight large-3 medium-3 small-4 columns">
-            <img src="http://www.corey-noble.com/assets/img/icons/joomla.png" alt="Joomla Skills"/>
+            <img src="http://www.corey-noble.com/assets/img/icons/sitecore.png" alt="SiteCore Skills"/>
           </div>
           <div class="icon fadeInRight large-3 medium-3 small-4 columns">
             <img src="http://www.corey-noble.com/assets/img/icons/adobe-brackets.png" alt="Adobe Brackets - Project Code Editor of Choice"/>
@@ -248,8 +248,6 @@
         </div>
         </div>
       </div>
-    </div>
-  </div>
 
 
 

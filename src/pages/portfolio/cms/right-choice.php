@@ -3,8 +3,9 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Foundation Example 2 | Corey Noble</title>
+    <title>Right Choice Web Development | Corey Noble</title>
     <link rel="icon" type="image/jpeg" href="http://www.corey-noble.com/favicon.jpg">
+    <link rel="canonical" href="http://corey-noble.com/cms/right-choice" />
 
     <!-- Relative CSS / Javascript -->
     <?php include("http://www.corey-noble.com/partials/head.html"); ?>
@@ -14,17 +15,9 @@
     <!-- Navigation Menu -->
     <?php include("http://www.corey-noble.com/partials/navigation.html"); ?>
 
-    <div class="section black">
-      <div class="row">
-        <div class="large-12 columns">
-          <?php include("http://www.corey-noble.com/partials/crumbs.php"); ?>
-
-        </div>
-      </div>
+    <div class="frame white">
+        <iframe src="http://www.corey-noble.com/portfolio/cms/right-choice"></iframe>
     </div>
-
-  <!-- Footer -->
-  <?php include("http://www.corey-noble.com/partials/footer.html"); ?>
 
   <!-- Scripts -->
   <?php include("http://www.corey-noble.com/partials/scripts.html"); ?>

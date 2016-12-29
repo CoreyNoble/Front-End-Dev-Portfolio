@@ -57,7 +57,7 @@
             </div>
             
             <div class="fadeIn wow large-6 medium-12 small-12 columns">
-              <a href="http://www.corey-noble.com/portfolio/development/responsive-email-template.html" target="_blank" title="Foundation for Emails">
+              <a href="http://www.corey-noble.com/portfolio/development/responsive-email-template.php" title="Foundation for Emails">
                 <div class="showcase-example">
                   <h3 class="white">Responsive Email Template</h3>
                   <img src="http://corey-noble.com/assets/img/showcase/responsive-email-showcase.jpg" alt="Responsive Email Component Development. Using Foundation for Emails."/>
@@ -84,7 +84,7 @@
 
         <div class="showcase-2">
           <div class="fadeIn wow large-12 medium-12 small-12 columns">
-            <a href="http://www.corey-noble.com/portfolio/cms/right-choice" target="_blank" title="Right Choice Web Development">
+            <a href="http://www.corey-noble.com/portfolio/cms/right-choice.php" title="Right Choice Web Development">
               <div class="showcase-example">
                 <h3 class="black">Right Choice Web&nbsp;Development</h3>
                 <img src="http://corey-noble.com/assets/img/showcase/Right-Choice-showcase.jpg" alt="Corey Noble and Manann Him. Graphic and Web Creators."/>
@@ -93,7 +93,7 @@
           </div>
 
           <div class="fadeIn wow large-6 medium-12 small-12 columns">
-            <a href="http://www.ctkrmusic.com/" target="_blank" title="CTKR Music Instruction and Incubation">
+            <a href="http://www.corey-noble.com/portfolio/cms/ctkr-music.php" title="CTKR Music Instruction and Incubation">
               <div class="showcase-example">
                 <h3 class="black">CTKR Music Instruction</h3>
                 <img src="http://corey-noble.com/assets/img/showcase/CTKR-showcase.jpg" />
