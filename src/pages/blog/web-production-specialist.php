@@ -36,7 +36,7 @@
     <div class="section white">
       <div class="row">
         <div class="large-12 columns">
-          <p class="fadeInDown wow" ><small><u><a href="http://www.corey-noble.com/blog.php">Back to Blog</a></u></small></p>
+          <p class="fadeInDown wow" ><small><a href="http://www.corey-noble.com/blog.php">Back to Blog</a></small></p>
           <h3 class="fadeInDown wow">What is Web Production Specialist?</h3>
           <p class="fadeInDown wow">In short, a Web Production Specialist at Thrillworks is a 'Jack of all trades' role with focus on: Content authoring, email campaigns, web production graphics, and front-end web development.</p>
           <!-- Finish Intro -->
@@ -146,7 +146,7 @@
             <li class="fadeInDown wow">Develop a learning initiative on the Web Content Accessibility Guidelines (WCAG). This involved creating learning material based on the WCAG guidelines; Creating testing material and working labs. This initiative ensures all staff are aware of the legal accessibility requirements that all websites need to meet.</li>
             <li class="fadeInDown wow">Collaborate with a team of 7 people to introduce and standardize the company-wide use of a digital Kanban board software.</li>
            </ul>
-           <p class="fadeInDown wow" ><small><u><a href="http://www.corey-noble.com/blog.php">Back to Blog</a></u></small></p>
+           <p class="fadeInDown wow" ><small><a href="http://www.corey-noble.com/blog.php">Back to Blog</a></small></p>
         </div>
       </div>
     </div>

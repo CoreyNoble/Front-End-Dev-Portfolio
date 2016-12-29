@@ -49,6 +49,10 @@ nav {
                 box-sizing:border-box;
 	            -moz-box-sizing:border-box;
 	            -webkit-box-sizing:border-box;
+                
+                &:hover{
+                    color: $black!important;
+                }
             }
             
             &:last-child{
@@ -62,7 +66,8 @@ nav {
             a{
                 &:hover{
                     background: $black;
-                    color: $white;
+                    color: $white!important;
+                    text-decoration: underline;
                 }
             }
         }
@@ -118,6 +123,10 @@ nav {
 
                 a{
                     font-weight: 500;
+                    &:hover{
+                        color: $black!important;
+                        background: $white;
+                    }
                 }
             }
             
@@ -126,9 +135,8 @@ nav {
                 a{
                     text-align: center;
                     text-indent: 0px;
-                    
                     &:hover{
-                        color: $black;
+                        color: $black!important;
                         background: $white;
                     }
                 }
@@ -145,7 +153,7 @@ nav {
             font-weight: bold;
             
             &:hover, &:visited{
-                color: #fff;
+                color: $white!important;
             }
             
             &:after{

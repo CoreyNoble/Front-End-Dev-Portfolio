@@ -36,7 +36,7 @@
     <div class="section white">
       <div class="row">
         <div class="large-12 columns">
-          <p class="fadeInDown wow" ><small><u><a href="http://www.corey-noble.com/blog.php">Back to Blog</a></u></small></p>
+          <p class="fadeInDown wow" ><small><a href="http://www.corey-noble.com/blog.php">Back to Blog</a></small></p>
           <h3 class="fadeInDown wow" >Who I Aspire to become</h3>
           <p class="fadeInDown wow" >In life, I aspire to become an expert at my craft. I aspire to be healthy and I aspire to maintain a strong connection to those who matter most.</p>
           <p class="fadeInDown wow" >I want to become a Full-Stack Web Developer. To me, that means I would be good at Web Graphics and Design, and an expert at Front-End Web Development and Back-End Web Development.</p>
@@ -68,7 +68,7 @@
             
           <h3 class="fadeInDown wow" >Where do I see myself in 25 years</h3>
           <p class="fadeInDown wow" >An expert at my craft, aswell as maintaining a balanced Work/Health/Family lifestyle.</p>
-          <p class="fadeInDown wow" ><small><u><a href="http://www.corey-noble.com/blog.php">Back to Blog</a></u></small></p>
+          <p class="fadeInDown wow" ><small><a href="http://www.corey-noble.com/blog.php">Back to Blog</a></small></p>
         </div>
       </div>
     </div>

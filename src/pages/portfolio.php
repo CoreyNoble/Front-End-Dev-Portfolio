@@ -21,7 +21,7 @@
 
 <!-- PORTFOLIO TITLE -->
     <div id="parallax-hero-3" class="parallax" data-stellar-background-ratio="0.4" >
-      <h1 class="zoomInDown wow">My Portfolio</h1>
+      <h1>My Portfolio</h1>
     </div>
 
 
@@ -38,28 +38,28 @@
           </div>
 
           <div class="showcase-1">
-            <div class="fadeIn wow large-12 medium-12 small-12 columns">
-              <a href="http://www.corey-noble.com/portfolio/frameworks/example-1.php">
+            <div class="large-12 medium-12 small-12 columns">
+              <a href="#">
                 <div class="showcase-example">
-                  <h3 class="white">Foundation Website Example</h3>
+                  <h3 class="white">Development in Progress</h3>
                   <img src="http://corey-noble.com/assets/img/showcase/coming-soon-showcase.png" alt="Coming Soon."/>
                 </div>
               </a>
             </div>
 
             <div class="fadeIn wow large-6 medium-12 small-12 columns">
-              <a href="http://www.corey-noble.com/portfolio/frameworks/example-2.php">
+              <a href="http://www.corey-noble.com/portfolio/development/validation-hub.php">
                 <div class="showcase-example">
-                  <h3 class="white">Foundation Website Example</h3>
-                  <img src="http://corey-noble.com/assets/img/showcase/coming-soon-showcase.png" alt="Coming Soon."/>
+                  <h3 class="white">Validation Hub</h3>
+                  <img src="http://corey-noble.com/assets/img/showcase/validation-hub-showcase.jpg" alt="A micro-site that helps QA the various promotions on a client website."/>
                 </div>
               </a>
             </div>
             
             <div class="fadeIn wow large-6 medium-12 small-12 columns">
-              <a href="http://www.corey-noble.com/portfolio/frameworks/responsive-email-template.html" target="_blank" title="Foundation for Emails">
+              <a href="http://www.corey-noble.com/portfolio/development/responsive-email-template.html" target="_blank" title="Foundation for Emails">
                 <div class="showcase-example">
-                  <h3 class="white">Responsive Email</h3>
+                  <h3 class="white">Responsive Email Template</h3>
                   <img src="http://corey-noble.com/assets/img/showcase/responsive-email-showcase.jpg" alt="Responsive Email Component Development. Using Foundation for Emails."/>
                 </div>
               </a>

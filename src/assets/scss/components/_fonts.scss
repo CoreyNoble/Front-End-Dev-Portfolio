@@ -17,15 +17,16 @@ h1,h2,h3,h4,h5,h6{
   font-weight: normal;
   padding: 0;
   margin: 0;
-
-  a {
-    color: $blue!important;
-  }
-
-  a:hover{
-    color: $grey!important;
-  }
 }
+
+a {
+    text-decoration: underline;
+    
+    &:hover{
+        color: $grey!important;
+        text-decoration: none; 
+    }
+  }
 
 p,ul,ol,li,a,a:hover{
   font-family: 'Open Sans', sans-serif;

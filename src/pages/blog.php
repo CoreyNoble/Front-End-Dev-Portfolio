@@ -23,8 +23,8 @@
   <div class="section blue">
     <div class="row">
       <div class="large-12 columns">
-        <h1 class="header-no-parallax slideInLeft wow">Welcome to My Blog</h1>
-        <h4 class="slideInLeft wow">The purpose of this blog is to create a space to share my knowledge about web development; to showcase the work I do, the processes I use, and to discuss the topics that are on my mind.</h4>
+        <h1 class="header-no-parallax">Welcome to My Blog</h1>
+        <h5>The purpose of this blog is to create a space to share my knowledge about web development. Below I will showcase some of my work, share the processes I use, and to discuss the topics that are on my mind.</h5>
       </div>
     </div>
   </div>
@@ -34,7 +34,7 @@
 
 
 <!-- BLOG ENTRIES -->
-  <div class="section white">
+  <div id="blog" class="section white">
     <div class="row fadeInUp wow">
       <div class="large-12 columns">
         <h2 class="fadeInDown wow" >Posts:</h2>
@@ -44,9 +44,9 @@
         
       <!-- Search Engine Optimization Techniques -->
       <div class="blog-entry large-12 columns">
-        <a href="http://www.corey-noble.com/blog/search-engine-optimization.php">
-          <h3>Search Engine Optimization</h3>
-          <p>Discussing the importance of search engine ranking and how to optimize a website to rank higher in a search index.</p>
+        <a href="http://www.corey-noble.com/blog/search-engine-optimisation.php">
+          <h3>Search Engine Optimisation</h3>
+          <p>Discussing the importance of search engine ranking and how to optimise a website to rank higher in a search index.</p>
         </a>
       </div>
 

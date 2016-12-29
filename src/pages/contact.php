@@ -22,7 +22,7 @@
 
 <!-- CONTACT HEADER -->
     <div id="parallax-hero-2" class="parallax-large" data-stellar-background-ratio="0.4" >
-      <h1 class="zoomInDown wow">Contact Me</h1>
+      <h1>Contact Me</h1>
     </div>
 
 
@@ -33,15 +33,15 @@
     <div class="section black">
       <div class="row">
         <div id="contact-intro" class="large-12 medium-12 small-12 columns">
-          <h2 id="no-captcha">I look forward to hearing from you!</h2>
-          <h5>Thank you for showing interest in me as a developer. I am excited to start working with you! Please fill out the form below so we can begin a conversation.</h5>
+          <h2 id="no-captcha">I look forward to hearing from&nbsp;you!</h2>
+          <h5>Thank you for showing interest in me as a developer. I am excited to start working with you! Please fill out the form below so we can begin a&nbsp;conversation.</h5>
           <?php
             if (strpos($_SERVER['REQUEST_URI'], "captcha=none") !== false){ ?>
-              <h3 style="color: red; font-weight: bold; margin-top: 1em; text-decoration: underline;">Please validate yourself with Google ReCaptcha.</h3>
+              <h3 style="color: red; font-weight: bold; margin-top: 1em; text-decoration: underline;">Please validate yourself with Google&nbsp;ReCaptcha.</h3>
           <?php } ?>
           <?php
             if (strpos($_SERVER['REQUEST_URI'], "captcha=failed") !== false){ ?>
-              <h3 style="color: red; font-weight: bold; margin-top: 1em; text-decoration: underline;">You have failed Google ReCaptcha validation. Please try again.</h3>
+              <h3 style="color: red; font-weight: bold; margin-top: 1em; text-decoration: underline;">You have failed Google ReCaptcha validation. Please try&nbsp;again.</h3>
           <?php } ?>
         </div>
 
