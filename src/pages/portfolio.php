@@ -5,9 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio | Corey Noble</title>
     <meta name="description" content="My Portfolio. A showcase of my web development and CMS skills.">
-    <link rel="icon" type="image/jpeg" href="http://www.corey-noble.com/favicon
-                                             .jpg" />
-    <link rel="canonical" href="http://corey-noble.com/portfolio" />
+    <link rel="icon" type="image/jpeg" href="http://www.corey-noble.com/favicon.jpg" />
+    <link rel="canonical" href="http://corey-noble.com/portfolio.php" />
 
     <!-- Relative CSS / Javascript -->
     <?php include("http://www.corey-noble.com/partials/head.html"); ?>

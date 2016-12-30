@@ -6,7 +6,7 @@
     <title>CTKR Music | Corey Noble</title>
     <meta name="description" content="CTKR Music Instruction and Incubation. A website I built for a local business in London, ON. This website was built using WordPress and has user friendly content management tools that allow the client to make updates themselves.">
     <link rel="icon" type="image/jpeg" href="http://www.corey-noble.com/favicon.jpg">
-    <link rel="canonical" href="http://corey-noble.com/cms/ctkr-music" />
+    <link rel="canonical" href="http://corey-noble.com/cms/ctkr-music.php" />
 
     <!-- Relative CSS / Javascript -->
     <?php include("http://www.corey-noble.com/partials/head.html"); ?>

@@ -6,7 +6,7 @@
     <title>Blog Introduction | Corey Noble</title>
     <meta name="description" content="An introduction to my blog. A bit about me, and my intentions for this space.">
     <link rel="icon" type="image/jpeg" href="http://www.corey-noble.com/favicon.jpg" />
-    <link rel="canonical" href="http://corey-noble.com/blog/introduction" />
+    <link rel="canonical" href="http://corey-noble.com/blog/introduction.php" />
 
     <!-- Relative CSS / Javascript -->
     <?php include("http://www.corey-noble.com/partials/head.html"); ?>

@@ -6,7 +6,7 @@
     <title>Right Choice Web Development | Corey Noble</title>
     <meta name="description" content="Right Choice was a freelance web development company that a former colleague and I created. We developed responsive websites using WordPress and Joomla.">
     <link rel="icon" type="image/jpeg" href="http://www.corey-noble.com/favicon.jpg">
-    <link rel="canonical" href="http://corey-noble.com/cms/right-choice" />
+    <link rel="canonical" href="http://corey-noble.com/cms/right-choice.php" />
 
     <!-- Relative CSS / Javascript -->
     <?php include("http://www.corey-noble.com/partials/head.html"); ?>

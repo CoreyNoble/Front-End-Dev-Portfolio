@@ -6,7 +6,7 @@
     <title>Contact | Corey Noble</title>
     <meta name="description" content="Contact Me. I look forward to hearing from you!">
     <link rel="icon" type="image/jpeg" href="http://www.corey-noble.com/favicon.jpg" />
-    <link rel="canonical" href="http://corey-noble.com/contact" />
+    <link rel="canonical" href="http://corey-noble.com/contact.php" />
 
     <!-- Relative CSS / Javascript -->
     <?php include("http://www.corey-noble.com/partials/head.html"); ?>

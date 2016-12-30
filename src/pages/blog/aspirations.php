@@ -6,7 +6,7 @@
     <title>My Aspirations | Corey Noble</title>
     <meta name="description" content="Who I aspire to become.">
     <link rel="icon" type="image/jpeg" href="http://www.corey-noble.com/favicon.jpg" />
-    <link rel="canonical" href="http://corey-noble.com/blog/aspirations" />
+    <link rel="canonical" href="http://corey-noble.com/blog/aspirations.php" />
 
     <!-- Relative CSS / Javascript -->
     <?php include("http://www.corey-noble.com/partials/head.html"); ?>

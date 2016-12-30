@@ -6,7 +6,7 @@
     <title>Search Engine Optimisation (SEO) | Corey Noble</title>
     <meta name="description" content="Discussing the importance of search engine ranking and how to optimise a website to rank higher in a search index.">
     <link rel="icon" type="image/jpeg" href="http://www.corey-noble.com/favicon.jpg" />
-    <link rel="canonical" href="http://corey-noble.com/blog/search-engine-optimisation-techniques" />
+    <link rel="canonical" href="http://corey-noble.com/blog/search-engine-optimisation-techniques.php" />
 
     <!-- Relative CSS / Javascript -->
     <?php include("http://www.corey-noble.com/partials/head.html"); ?>

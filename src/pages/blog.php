@@ -6,7 +6,7 @@
     <title>Blog | Corey Noble</title>
     <meta name="description" content="My Blog. The purpose of this blog is to create a space to share my knowledge about web development. Here I will showcase some of my work, share the processes I use, and to discuss the topics that are on my mind.">
     <link rel="icon" type="image/jpeg" href="http://www.corey-noble.com/favicon.jpg" />
-    <link rel="canonical" href="http://corey-noble.com/blog" />
+    <link rel="canonical" href="http://corey-noble.com/blog.php" />
 
     <!-- Relative CSS / Javascript -->
     <?php include("http://www.corey-noble.com/partials/head.html"); ?>

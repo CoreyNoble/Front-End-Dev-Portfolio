@@ -6,7 +6,7 @@
     <title>Web Content Accessibility Guidelines (WCAG 2.0) | Corey Noble</title>
     <meta name="description" content="Outlining the accessibility requirements that websites need to adhere to.">
     <link rel="icon" type="image/jpeg" href="http://www.corey-noble.com/favicon.jpg" />
-    <link rel="canonical" href="http://corey-noble.com/blog/web-content-accessibility-guidelines" />
+    <link rel="canonical" href="http://corey-noble.com/blog/web-content-accessibility-guidelines.php" />
 
     <!-- Relative CSS / Javascript -->
     <?php include("http://www.corey-noble.com/partials/head.html"); ?>

@@ -6,7 +6,7 @@
     <title>Site Index | Corey Noble</title>
     <meta name="description" content="Site Index. View the list of pages on my website.">
     <link rel="icon" type="image/jpeg" href="http://www.corey-noble.com/favicon.jpg" />
-    <link rel="canonical" href="http://corey-noble.com/site-index" />
+    <link rel="canonical" href="http://corey-noble.com/site-index.php" />
 
     <!-- Relative CSS / Javascript -->
     <?php include("http://www.corey-noble.com/partials/head.html"); ?>

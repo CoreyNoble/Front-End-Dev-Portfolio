@@ -6,7 +6,7 @@
     <title>CMS Skills | Corey Noble</title>
     <meta name="description" content="A list of the Content Management Systems I have used, with descriptions of my knowledge and history with each software. Including: Adobe Experience Manager, RedDot, WordPress, Joomla, Magento and SiteCore.">
     <link rel="icon" type="image/jpeg" href="http://www.corey-noble.com/favicon.jpg">
-    <link rel="canonical" href="http://corey-noble.com/cms/skillset" />
+    <link rel="canonical" href="http://corey-noble.com/cms/skillset.php" />
 
     <!-- Relative CSS / Javascript -->
     <?php include("http://www.corey-noble.com/partials/head.html"); ?>

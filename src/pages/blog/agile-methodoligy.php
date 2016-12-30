@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Agile Methodoligy | Corey Noble</title>
     <link rel="icon" type="image/jpeg" href="http://www.corey-noble.com/favicon.jpg" />
-    <link rel="canonical" href="http://corey-noble.com/blog/agile-methodoligy" />
+    <link rel="canonical" href="http://corey-noble.com/blog/agile-methodoligy.php" />
 
     <!-- Head CSS / Javascript -->
     <?php include("http://www.corey-noble.com/partials/head.html"); ?>

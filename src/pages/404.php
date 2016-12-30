@@ -6,7 +6,7 @@
     <title>404</title>
     <meta name="description" content="Sorry, that page does not exist.">
     <link rel="icon" type="image/jpeg" href="http://www.corey-noble.com/favicon.jpg" />
-    <link rel="canonical" href="http://corey-noble.com/404" />
+    <link rel="canonical" href="http://corey-noble.com/404.php" />
 
     <!-- Relative CSS / Javascript -->
     <?php include("http://www.corey-noble.com/partials/head.html"); ?>

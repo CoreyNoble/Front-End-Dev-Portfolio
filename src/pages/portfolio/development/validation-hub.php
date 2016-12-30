@@ -6,7 +6,7 @@
     <title>Validation Hub | Corey Noble</title>
     <meta name="description" content="An online tool that was built to assist in quality assurance testing of promotional banners on a client website; aswell as to act as a hub containing quick-links to important and frequently used technologies.">
     <link rel="icon" type="image/jpeg" href="http://www.corey-noble.com/favicon.jpg" />
-    <link rel="canonical" href="http://corey-noble.com/portfolio/development/validation-hub" />
+    <link rel="canonical" href="http://corey-noble.com/portfolio/development/validation-hub.php" />
 
     <!-- Relative CSS / Javascript -->
     <?php include("http://www.corey-noble.com/partials/head.html"); ?>

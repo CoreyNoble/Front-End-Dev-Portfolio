@@ -6,7 +6,7 @@
     <title>Responsive Email Template | Corey Noble</title>
     <meta name="description" content="A template made up of rows of components, used for responsive email development. Built using Zurb's 'Foundation for Emails' framework.">
     <link rel="icon" type="image/jpeg" href="http://www.corey-noble.com/favicon.jpg">
-    <link rel="canonical" href="http://corey-noble.com/development/responsive-email-template" />
+    <link rel="canonical" href="http://corey-noble.com/development/responsive-email-template.php" />
 
     <!-- Relative CSS / Javascript -->
     <?php include("http://www.corey-noble.com/partials/head.html"); ?>
