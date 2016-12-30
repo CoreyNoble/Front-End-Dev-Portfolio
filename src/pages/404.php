@@ -4,6 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>404</title>
+    <meta name="description" content="Sorry, that page does not exist.">
     <link rel="icon" type="image/jpeg" href="http://www.corey-noble.com/favicon.jpg" />
     <link rel="canonical" href="http://corey-noble.com/404" />
 
@@ -23,8 +24,8 @@
   <div class="section blue">
     <div class="row">
       <div class="large-12 columns">
-        <h1 class="header-no-parallax slideInLeft wow">404</h1>
-        <h3 class="slideInLeft wow">Sorry, that page does not exist.</h3>
+        <h1 class="header-no-parallax">404</h1>
+        <h3>Sorry, that page does not exist.</h3>
       </div>
     </div>
   </div>
@@ -37,16 +38,15 @@
   <div class="section black">
     <div class="row">
       <div class="large-12 columns">
-        <h2 class="slideInLeft wow">Please visit one of the pages below: <h2>
-          <h4 class="slideInRight wow"><a href="http://www.corey-noble.com/">Home</a></h4>
-          <h4 class="slideInRight wow"><a href="http://www.corey-noble.com/portfolio.php">Portfolio</a></h4>
-          <h4 class="slideInRight wow"><a title="About Me" href="http://www.corey-noble.com/about.php">About</a></h4>
-          <h4 class="slideInRight wow"><a title="My Services" href="http://www.corey-noble.com/services.php">Services</a></h4>
-          <h4 class="slideInRight wow"><a title="My Blog" href="http://www.corey-noble.com/blog.php">Blog</a></h4>
-          <h4 class="slideInRight wow"><a title="Contact Me" href="http://www.corey-noble.com/contact.php">Contact</a></h4>
-          <div class="resume-cta">
-            <h3 class="slideInRight wow"><a id="resume" href="http://www.corey-noble.com/assets/pdf/CoreyNoble-Resume.pdf" target="_blank">VIEW MY CV / RESUME</a></h3>
-          </div>
+        <h2>Please visit one of the pages below:<h2>
+        <h4><a href="http://www.corey-noble.com/">Home</a></h4>
+        <h4><a href="http://www.corey-noble.com/portfolio.php">Portfolio</a></h4>
+        <h4><a title="About Me" href="http://www.corey-noble.com/about.php">About</a></h4>
+        <h4><a title="My Blog" href="http://www.corey-noble.com/blog.php">Blog</a></h4>
+        <h4><a title="Contact Me" href="http://www.corey-noble.com/contact.php">Contact</a></h4>
+        <div class="resume-cta" style="margin-top: 1.25em;">
+            <h3><a id="resume" href="http://www.corey-noble.com/assets/pdf/CoreyNoble-Resume.pdf" target="_blank">MY CV / RESUME</a></h3>
+        </div>
       </div>
     </div>
   </div>

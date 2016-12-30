@@ -4,7 +4,9 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio | Corey Noble</title>
-    <link rel="icon" type="image/jpeg" href="http://www.corey-noble.com/favicon.jpg" />
+    <meta name="description" content="My Portfolio. A showcase of my web development and CMS skills.">
+    <link rel="icon" type="image/jpeg" href="http://www.corey-noble.com/favicon
+                                             .jpg" />
     <link rel="canonical" href="http://corey-noble.com/portfolio" />
 
     <!-- Relative CSS / Javascript -->
@@ -38,15 +40,6 @@
           </div>
 
           <div class="showcase-1">
-            <div class="large-12 medium-12 small-12 columns">
-              <a href="#">
-                <div class="showcase-example">
-                  <h3 class="white">Development in Progress</h3>
-                  <img src="http://corey-noble.com/assets/img/showcase/coming-soon-showcase.png" alt="Coming Soon."/>
-                </div>
-              </a>
-            </div>
-
             <div class="fadeIn wow large-6 medium-12 small-12 columns">
               <a href="http://www.corey-noble.com/portfolio/development/validation-hub.php">
                 <div class="showcase-example">
@@ -86,7 +79,7 @@
           <div class="fadeIn wow large-12 medium-12 small-12 columns">
             <a href="http://www.corey-noble.com/portfolio/cms/right-choice.php" title="Right Choice Web Development">
               <div class="showcase-example">
-                <h3 class="black">Right Choice Web&nbsp;Development</h3>
+                <h3 class="black">Right Choice Websites</h3>
                 <img src="http://corey-noble.com/assets/img/showcase/Right-Choice-showcase.jpg" alt="Corey Noble and Manann Him. Graphic and Web Creators."/>
               </div>
             </a>

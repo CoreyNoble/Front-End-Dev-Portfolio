@@ -3,9 +3,10 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio | Corey Noble</title>
+    <title>Validation Hub | Corey Noble</title>
+    <meta name="description" content="An online tool that was built to assist in quality assurance testing of promotional banners on a client website; aswell as to act as a hub containing quick-links to important and frequently used technologies.">
     <link rel="icon" type="image/jpeg" href="http://www.corey-noble.com/favicon.jpg" />
-    <link rel="canonical" href="http://corey-noble.com/portfolio" />
+    <link rel="canonical" href="http://corey-noble.com/portfolio/development/validation-hub" />
 
     <!-- Relative CSS / Javascript -->
     <?php include("http://www.corey-noble.com/partials/head.html"); ?>
@@ -26,7 +27,7 @@
 
           <div class="large-12 medium-12 small-12 columns">
           <h1 class="header-no-parallax">Validation Hub</h1>
-          <h6>While working at Thrillworks, I built a responsive mirco-site that served as a QA tool for the testing of various promotions on a client website. The site quickly grew into a hub, including quick-links to other frequently used client technologies and documents. This hub gave everyone easier access to the tools they needed, and improved the QA process, giving greater visibility across all localized regions and their staging/production&nbsp;environments.<br><br></h6>
+          <h6>While working at Thrillworks, I built a responsive mirco-site that served as a QA tool for the testing of various promotions on a client website. The site quickly grew into a hub, including quick-links to other frequently used client technologies and documents. This hub gave everyone easier access to the tools they needed, and improved the QA process, giving greater visibility across all localized regions and their staging/production environments.<br><br></h6>
           <h6>Below are screenshots that show how the site looks and works, however, the images have been heavily redacted to maintain privacy&nbsp;rights.</h6>
           </div>
         </div>

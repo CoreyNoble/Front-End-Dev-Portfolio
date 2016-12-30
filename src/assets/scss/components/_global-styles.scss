@@ -29,6 +29,7 @@ hr{
 .frame{
     width: 100%;
 	padding: 0.5em;
+	padding: 0.5em;
     padding-top: 4em;
     
     iframe{
@@ -248,7 +249,7 @@ textarea{
 }
 
 #about-me .row{
-  border-bottom: solid 3px #fff;
+  border-bottom: solid 3px $white;
 }
 
 /* About Page */
@@ -273,6 +274,7 @@ textarea{
   margin: 0 auto;
   max-height: 31em;
   overflow: auto;
+  border: 3px solid #000000;
   background: rgba(92,162,162,1);
   background: -moz-linear-gradient(top, rgba(92,162,162,1) 0%, rgba(27,47,47,1) 100%);
   background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(92,162,162,1)), color-stop(100%, rgba(27,47,47,1)));
@@ -281,8 +283,10 @@ textarea{
   background: -ms-linear-gradient(top, rgba(92,162,162,1) 0%, rgba(27,47,47,1) 100%);
   background: linear-gradient(to bottom, rgba(92,162,162,1) 0%, rgba(27,47,47,1) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5ca2a2', endColorstr='#1b2f2f', GradientType=0 );
-  border: 2px solid $black;
   padding: 1em;
+  -webkit-box-shadow: 0.15em 0.15em 0.15em 0 rgba(0,0,0,0.4);
+  -moz-box-shadow: 0.15em 0.15em 0.15em 0 rgba(0,0,0,0.4);
+  box-shadow: 0.15em 0.15em 0.15em 0 rgba(0,0,0,0.4);
 }
 
 .icon {
@@ -367,10 +371,9 @@ textarea{
 }
 
 .resume-cta{
-
-  h3{
-    margin-top: 1em;
-
+    a{
+        margin-top: 1em;
+    }
     #resume{
       display: inline-block;
       font-family: arial;
@@ -399,7 +402,6 @@ textarea{
           text-decoration: underline;
       }
     }
-  }
 }
 
 @media only screen and (max-width: 40em) { /* max-width 640px, mobile-only styles, use when QAing mobile issues */
@@ -414,12 +416,20 @@ textarea{
       }
     }
   }
+    
+  .icon-container{
+    max-height: 18.5em;
+  }
 }
 
 
 /* Contact Page */
 #contact-intro{
   padding-bottom: 2em;
+    
+    h5{
+        margin-top: 1em!important;
+    }
 }
 
 #contact-form{
@@ -587,32 +597,32 @@ textarea{
             h3, p{
                 color: $white!important;
                 
-                -moz-transition: all 0.1s linear;
-                -webkit-transition: all 0.1s linear;
-                -o-transition: all 0.1s linear;
-                transition: all 0.1s linear;
+                -moz-transition: all 0.33s linear;
+                -webkit-transition: all 0.33s linear;
+                -o-transition: all 0.33s linear;
+                transition: all 0.33s linear;
             }
             background: $black;
-            -webkit-transform: translate(-1em, 0);
-            -moz-transform: translate(-1em, 0);
-            -ms-transform: translate(-1em, 0);
-            -o-transform: translate(-1em, 0);
-            transform: translate(-1em, 0);
+//            -webkit-transform: translate(-1em, 0);
+//            -moz-transform: translate(-1em, 0);
+//            -ms-transform: translate(-1em, 0);
+//            -o-transform: translate(-1em, 0);
+//            transform: translate(-1em, 0);
 
-            -moz-transition: all 0.1s linear;
-            -webkit-transition: all 0.1s linear;
-            -o-transition: all 0.1s linear;
-            transition: all 0.1s linear;
+            -moz-transition: all 0.33s linear;
+            -webkit-transition: all 0.33s linear;
+            -o-transition: all 0.33s linear;
+            transition: all 0.33s linear;
         }
         
         &:not(:hover){
             h3, p{
                 color: $black!important;
                 
-                -moz-transition: all 0.1s linear;
-                -webkit-transition: all 0.1s linear;
-                -o-transition: all 0.1s linear;
-                transition: all 0.1s linear;
+                -moz-transition: all 0.25s linear;
+                -webkit-transition: all 0.25s linear;
+                -o-transition: all 0.25s linear;
+                transition: all 0.25s linear;
             }
             background: $white;
             -webkit-transform: translate(0, 0);
@@ -621,10 +631,10 @@ textarea{
             -o-transform: translate(0, 0);
             transform: translate(0, 0);
 
-            -moz-transition: all 0.1s linear;
-            -webkit-transition: all 0.1s linear;
-            -o-transition: all 0.1s linear;
-            transition: all 0.1s linear;   
+            -moz-transition: all 0.25s linear;
+            -webkit-transition: all 0.25s linear;
+            -o-transition: all 0.25s linear;
+            transition: all 0.25s linear;   
         }
     }
 }

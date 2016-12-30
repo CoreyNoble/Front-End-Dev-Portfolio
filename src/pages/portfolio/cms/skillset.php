@@ -3,7 +3,8 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Skillset | Corey Noble</title>
+    <title>CMS Skills | Corey Noble</title>
+    <meta name="description" content="A list of the Content Management Systems I have used, with descriptions of my knowledge and history with each software. Including: Adobe Experience Manager, RedDot, WordPress, Joomla, Magento and SiteCore.">
     <link rel="icon" type="image/jpeg" href="http://www.corey-noble.com/favicon.jpg">
     <link rel="canonical" href="http://corey-noble.com/cms/skillset" />
 
@@ -16,7 +17,7 @@
     <?php include("http://www.corey-noble.com/partials/navigation.html"); ?>
 
     <div id="parallax-hero-3" class="parallax" data-stellar-background-ratio="0.4" >
-      <h1 class="zoomInDown wow">CMS Skillset</h1>
+      <h1>CMS Skillset</h1>
     </div>
 
     <div class="section white">
@@ -30,8 +31,8 @@
               <img class="rollIn wow" src="http://www.corey-noble.com/assets/img/icons/aem.png" alt="Adobe Experience Manager Skills"/>
             </div>
             <div class="large-10 medium-9 small-12 columns">
-              <h3 class="fadeInDown wow">Adobe Experience Manager</h3>
-              <p class="fadeInDown wow">Page development, component development, website maintenance, asset manipulation, version control and quality assurance for 12+ languages.</p>
+              <h3 class="fadeIn wow">Adobe Experience Manager</h3>
+              <p class="fadeIn wow">Page development, component development, website maintenance, asset manipulation, version control and quality assurance for 12+ languages.</p>
             </div>
           </div>
           <div class="cms-skill large-12 medium-12 small-12 columns">
@@ -39,8 +40,8 @@
               <img class="rollIn wow" src="http://www.corey-noble.com/assets/img/icons/reddot.png" alt="Open Text RedDot Skills"/>
             </div>
             <div class="large-10 medium-9 small-12 columns">
-              <h3 class="fadeInDown wow">RedDot by OpenText</h3>
-              <p class="fadeInDown wow">Creating Product items and incorperating them and their promotions throughout websites. Creating web pages and components. Updating microsites, templates and banners in 3 language variations.</p>
+              <h3 class="fadeIn wow">RedDot by OpenText</h3>
+              <p class="fadeIn wow">Creating Product items and incorperating them and their promotions throughout websites. Creating web pages and components. Updating microsites, templates and banners in 3 language variations.</p>
             </div>
           </div>
           <div class="cms-skill large-12 medium-12 small-12 columns">
@@ -48,8 +49,8 @@
               <img class="rollIn wow" src="http://www.corey-noble.com/assets/img/icons/wordpress.png" alt="WordPress Skills"/>
             </div>
             <div class="large-10 medium-9 small-12 columns">
-              <h3 class="fadeInDown wow">WordPress</h3>
-              <p class="fadeInDown wow">Website development, updating page content, posts, media assets and data.</p>
+              <h3 class="fadeIn wow">WordPress</h3>
+              <p class="fadeIn wow">Website development, updating page content, posts, media assets and data.</p>
             </div>
           </div>
           <div class="cms-skill large-12 medium-12 small-12 columns">
@@ -57,8 +58,8 @@
               <img class="rollIn wow" src="http://www.corey-noble.com/assets/img/icons/joomla.png" alt="Joomla Skills"/>
             </div>
             <div class="large-10 medium-9 small-12 columns">
-              <h3 class="fadeInDown wow">Joomla</h3>
-              <p class="fadeInDown wow">Website development, updating page content, media assets and data.</p>
+              <h3 class="fadeIn wow">Joomla</h3>
+              <p class="fadeIn wow">Website development, updating page content, media assets and data.</p>
             </div>
           </div>
           <div class="cms-skill large-12 medium-12 small-12 columns">
@@ -66,8 +67,8 @@
               <img class="rollIn wow" src="http://www.corey-noble.com/assets/img/icons/magento.png" alt="Magento Skills"/>
             </div>
             <div class="large-10 medium-9 small-12 columns">
-              <h3 class="fadeInDown wow">Magento</h3>
-              <p class="fadeInDown wow">Creating hundreds of products and packages with unique identifies that worked in conjunction with an e-commerce database. Creating web pages that dynamically loaded corresponding products.</p>
+              <h3 class="fadeIn wow">Magento</h3>
+              <p class="fadeIn wow">Creating hundreds of products and packages with unique identities that worked in conjunction with an e-commerce database. Creating web pages that dynamically loaded corresponding products.</p>
             </div>
           </div>
           <div class="cms-skill large-12 medium-12 small-12 columns">
@@ -75,8 +76,8 @@
               <img class="rollIn wow" src="http://www.corey-noble.com/assets/img/icons/sitecore.png" alt="SiteCore Skills"/>
             </div>
             <div class="large-10 medium-9 small-12 columns">
-              <h3 class="fadeInDown wow">SiteCore</h3>
-              <p class="fadeInDown wow">Updating documentation and page content in 2 language variations.</p>
+              <h3 class="fadeIn wow">SiteCore</h3>
+              <p class="fadeIn wow">Updating documentation and page content in 2 language variations.</p>
             </div>
           </div>
         </div>

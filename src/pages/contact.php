@@ -4,6 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact | Corey Noble</title>
+    <meta name="description" content="Contact Me. I look forward to hearing from you!">
     <link rel="icon" type="image/jpeg" href="http://www.corey-noble.com/favicon.jpg" />
     <link rel="canonical" href="http://corey-noble.com/contact" />
 
