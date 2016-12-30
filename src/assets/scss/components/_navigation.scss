@@ -50,7 +50,7 @@ nav {
 	            -moz-box-sizing:border-box;
 	            -webkit-box-sizing:border-box;
                 
-                &:hover{
+                &:hover, &:focus{
                     color: $black!important;
                 }
             }
@@ -64,7 +64,7 @@ nav {
         
         #nav-index{
             a{
-                &:hover{
+                &:hover, &:focus{
                     background: $black;
                     color: $white!important;
                     text-decoration: underline;
@@ -81,7 +81,7 @@ nav {
         text-decoration: none;
         line-height: 50px;
         
-        &:hover, &:active{
+        &:hover, &:active, &:focus{
             background-color: $white;
             color: $black;
             font-weight: 500;
@@ -123,7 +123,7 @@ nav {
 
                 a{
                     font-weight: 500;
-                    &:hover{
+                    &:hover, &:focus{
                         color: $black!important;
                         background: $white;
                     }
@@ -135,7 +135,7 @@ nav {
                 a{
                     text-align: center;
                     text-indent: 0px;
-                    &:hover{
+                    &:hover, &:focus{
                         color: $black!important;
                         background: $white;
                     }
@@ -152,7 +152,7 @@ nav {
             padding: 0; margin: 0;
             font-weight: bold;
             
-            &:hover, &:visited{
+            &:hover, &:visited, &:focus{
                 color: $white!important;
             }
             
@@ -210,7 +210,7 @@ footer{
     display: block;
     padding: 0;
 
-    a:hover{
+    a:hover, a:focus{
       text-decoration: underline;
     }
   }
@@ -255,7 +255,7 @@ footer{
       a{
         color: $white!important;
 
-        &:hover{
+        &:hover, &:focus{
           color: $blue!important;
           text-decoration: none;
         }
@@ -294,7 +294,7 @@ footer{
         -o-filter: grayscale(100%)!important;
         -o-transition: .33s ease-in-out!important;
 
-        &:hover{
+        &:hover, &:focus{
           -webkit-filter: grayscale(0%) !important;
           -webkit-transition: .33s ease-in-out !important;
           -moz-filter: grayscale(0%) !important;
