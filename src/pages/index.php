@@ -28,7 +28,7 @@
             <div id="index-hero-panel-4" class="slideInDown wow">
               <div id="index-hero-panel-5" class="slideInDown wow">
                 <div class="row">
-                  <div class="small-12">
+                  <div id="index-title" class="small-12">
                       <!--                    
                       <img src="http://www.corey-noble.com/assets/img/Characature.png" alt="Corey Noble sitting at a computer desk looking at code." style="display: block; margin: 0 auto; margin-top: 6em; max-width: 50%;"/>
                       -->
