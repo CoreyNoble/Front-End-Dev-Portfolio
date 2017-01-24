@@ -41,7 +41,7 @@
           <div class="showcase-1">
             <div class="fadeIn wow large-6 medium-12 small-12 columns">
               <a href="http://www.corey-noble.com/portfolio/development/validation-hub.php">
-                <div class="showcase-example">
+                <div class="showcase-example no-bottom-space-desktop">
                   <h3 class="white">Validation Hub</h3>
                   <img src="http://corey-noble.com/assets/img/showcase/validation-hub-showcase.jpg" alt="A micro-site that helps QA the various promotions on a client website."/>
                 </div>
@@ -50,7 +50,7 @@
             
             <div class="fadeIn wow large-6 medium-12 small-12 columns">
               <a href="http://www.corey-noble.com/portfolio/development/responsive-email-template.php" title="Foundation for Emails">
-                <div class="showcase-example">
+                <div class="showcase-example no-bottom-space">
                   <h3 class="white">Responsive Email Template</h3>
                   <img src="http://corey-noble.com/assets/img/showcase/responsive-email-showcase.jpg" alt="Responsive Email Component Development. Using Foundation for Emails."/>
                 </div>
@@ -86,7 +86,7 @@
 
           <div class="fadeIn wow large-6 medium-12 small-12 columns">
             <a href="http://www.corey-noble.com/portfolio/cms/ctkr-music.php" title="CTKR Music Instruction and Incubation">
-              <div class="showcase-example">
+              <div class="showcase-example no-bottom-space-desktop">
                 <h3 class="black">CTKR Music Instruction</h3>
                 <img src="http://corey-noble.com/assets/img/showcase/CTKR-showcase.jpg" />
               </div>
@@ -95,7 +95,7 @@
 
           <div class="fadeIn wow large-6 medium-12 small-12 columns">
             <a href="http://www.corey-noble.com/portfolio/cms/skillset.php" title="My CMS Skills">
-              <div class="showcase-example">
+              <div class="showcase-example no-bottom-space">
                 <h3 class="black">My CMS Skills</h3>
                 <img src="http://corey-noble.com/assets/img/showcase/CMS-showcase.jpg" alt="Adobe Experience Manager. Open Text's RedDot. Magento. WordPress. Joomla. SiteCore."/>
               </div>

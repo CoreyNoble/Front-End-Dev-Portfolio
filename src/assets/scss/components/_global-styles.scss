@@ -46,6 +46,14 @@ hr{
   padding: 0!important;
 }
 
+.no-bottom-space{
+    margin-bottom: 0!important;
+}
+
+.no-bottom-space-desktop{
+    margin-bottom: 0!important;
+}
+
 .hide-mobile{
   display: block;
 }
@@ -65,6 +73,10 @@ textarea{
 }
 
 @media only screen and (max-width: 40em) { /* max-width 640px, mobile-only styles, use when QAing mobile issues */
+  .no-bottom-space-desktop{
+    margin-bottom: 3em!important;
+  }    
+    
   .hide-mobile{
     display: none!important;
   }
@@ -323,7 +335,8 @@ textarea{
 }
 
 #education, #experience{
-  margin-bottom: 3em;
+  margin-bottom: 1em;
+    
   h2{
     padding: 0;
     margin: 0;
@@ -346,6 +359,8 @@ textarea{
 
 .about-experience{
   margin-bottom: 3em;
+  margin-top: 2em;
+    
   p{
     margin: 0;
     padding: 0 0 1em 0;
@@ -523,7 +538,25 @@ textarea{
     margin-bottom: 3em;
     -moz-box-shadow: 0  0.75em 0.75em -0.75em #000000, 0 -0.75em 0.75em -0.75em #000000;
     -webkit-box-shadow:  0  0.75em 0.75em -0.75em #000000, 0 -0.75em 0.75em -0.75em #000000;
-     box-shadow: 0  0.75em 0.75em -0.75em #000000, 0 -0.75em 0.75em -0.75em #000000;
+    box-shadow: 0  0.75em 0.75em -0.75em #000000, 0 -0.75em 0.75em -0.75em #000000;
+      
+    -moz-transition: all 0.15s linear;
+    -webkit-transition: all 0.15s linear;
+    -o-transition: all 0.15s linear;
+    transition: all 0.15s linear;
+      
+      &:hover{
+        -moz-box-shadow: 0  1.0em 1.0em -0.5em rgba(0,0,0,0.6), 0 -0.5em 1.0em -0.5em rgba(0,0,0,0.6);
+        -webkit-box-shadow:  0  1.0em 1.0em -0.5em rgba(0,0,0,0.6), 0 -0.5em 1.0em -0.5em rgba(0,0,0,0.6);
+        box-shadow: 0  1.0em 1em -0.5em rgba(0,0,0,0.6), 0 -0.5em 1.0em -0.5em rgba(0,0,0,0.6);
+          
+        transform: scale(1.025);
+          
+        -moz-transition: all 0.15s linear;
+        -webkit-transition: all 0.15s linear;
+        -o-transition: all 0.15s linear;
+        transition: all 0.15s linear;
+      }
       
     img{
         display: block;
@@ -561,7 +594,7 @@ textarea{
 
 /* Services */
 .services-promotion{
-  margin-bottom: 2em;
+  margin-bottom: 3em;
 
   h4{
     text-align: center;

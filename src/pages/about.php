@@ -194,7 +194,7 @@
           <li class="fadeIn wow"><b>Photoshop + Illustraitor</b> – Used to create the media we produced. Including: Branding, Website Compositions, Website Graphics and Print&nbsp;Graphics.</li>
           <li class="fadeIn wow"><b>Trello</b> –  This was our way of tracking the work that was to be done, in-progress and completed. When we weren't working together, we would split up pre-defined project work in&nbsp;Trello.</li>
           <li class="fadeIn wow"><b>Mind Mapping</b> –  We would create mind maps to map out project needs, determine the importance of tasks, and sort tasks by&nbsp;relevance.</li>
-          <li class="fadeIn wow"><b>InDesign</b> –  When creating the branding for Right Choice, aswell as any client documentation, I used In-Design to create print ready&nbsp;PDFs.</li>
+          <li class="no-bottom-space fadeIn wow"><b>InDesign</b> –  When creating the branding for Right Choice, aswell as any client documentation, I used In-Design to create print ready&nbsp;PDFs.</li>
         </ul>
       </div>
       
@@ -209,7 +209,7 @@
         <p class="fadeIn wow" >I was the Lead Developer / 3D Artist for a few mobile games. I was provided a code base and was responsible for creating all of the in-game art and get it working in Unity in parallel with the provided code. I added features to the code base, collaborated with the UI and Sound developers and implemented their&nbsp;assets.</p>
         <ul>
           <li class="fadeIn wow"><b>Project Management</b> – The priority of each game was low development cost. Each project had to be carefully managed to ensure&nbsp;success.</li>
-          <li class="fadeIn wow"><b>Technical Skills</b> –  <i>GIT + Version Control, Unity Game Development, 3DS Max (Modelling + Animation), Photoshop (Texturing + Concept&nbsp;Art).</i></li>
+          <li class="no-bottom-space fadeIn wow"><b>Technical Skills</b> –  <i>GIT + Version Control, Unity Game Development, 3DS Max (Modelling + Animation), Photoshop (Texturing + Concept&nbsp;Art).</i></li>
         </ul>
       </div>
 
@@ -235,7 +235,7 @@
             <li class="fadeIn wow"><b>Project Management</b> – We often had multiple projects on-the-go with competing deadlines. Dedicated focus on project management was&nbsp;nessesary.</li>
             <li class="fadeIn wow"><b>Team Collaboration</b> – We created platformer and isometric shooter games in groups ranging from 5-6 people. I learned all about the tensions that build in a team under strict deadlines and how to deal with the stress of team members that aren't getting along or performing at their&nbsp;role.</li>
             <li class="fadeIn wow"><b>Constructive Criticism</b> – Our teacher was an industry veteran who was very critical about feedback. He was our client and if something wasn't up to spec, we had to rectify it. I learned very quickly the importance of listening and adhering to the feedback and critisisms of my&nbsp;work.</li>
-            <li class="fadeIn wow"><b>Technical Skills</b> – The Technical skills I honed in this program are: <i>Concept Art, Sculpting, Retopology + Mesh-Optimization, Upwrapping + Texturing, Rigging + Animation, Lighting + Rendering, Game&nbsp;Development</i>.</li>
+            <li class="no-bottom-space fadeIn wow"><b>Technical Skills</b> – The Technical skills I honed in this program are: <i>Concept Art, Sculpting, Retopology + Mesh-Optimization, Upwrapping + Texturing, Rigging + Animation, Lighting + Rendering, Game&nbsp;Development</i>.</li>
           </ul>
         </div>
       
@@ -244,7 +244,7 @@
         <div class="about-experience large-2 medium-3 small-12 columns">
           <img class="rollIn wow" src="http://www.corey-noble.com/assets/img/icons/graduate.png" alt="Graduate"/>
         </div>
-        <div class="about-experience large-10 medium-9 small-12 columns">
+        <div class="about-experience no-bottom-space large-10 medium-9 small-12 columns">
           <h3 class="fadeIn wow" >Multi-Media Design and&nbsp;Production</h3>
           <p class="fadeIn wow" ><b>2010 - 2012 (Diploma):</b></p>
           <p class="fadeIn wow" >In Multi-Media Design and Production I gained a broad horizon of media related skills. Most of the time was spent learning how to utilize the Adobe Master Suite to build various types of media related, mock-client projects. The primary focus of this program was to incorperate new technologies into websites built from scratch. The skills we learned&nbsp;include:</p>
@@ -254,7 +254,7 @@
             <li class="fadeIn wow"><b>HTML, XML, CSS, JavaScript, PHP</b> – Website&nbsp;Development</li>
             <li class="fadeIn wow"><b>In-Design</b> – Creating Print-Ready Documentation</li>
             <li class="fadeIn wow"><b>ActionScript, Flash, Flash-Builder</b> – Web App Development</li>
-            <li class="fadeIn wow"><b>After Effects, Media Encoder</b> – Video Production, VFX, Video&nbsp;Output</li>
+            <li class="no-bottom-space fadeIn wow"><b>After Effects, Media Encoder</b> – Video Production, VFX, Video&nbsp;Output</li>
           </ul>
         </div>
         </div>
