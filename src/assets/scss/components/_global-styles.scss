@@ -13,6 +13,10 @@ div{
   padding: 0;
 }
 
+h1{
+    margin-top: .75em;
+}
+
 p{
   padding: 1em 0;
 }
@@ -22,8 +26,32 @@ hr{
   color: $grey;
 }
 
+.frame{
+    width: 100%;
+	padding: 0.5em;
+	padding: 0.5em;
+    padding-top: 4em;
+    
+    iframe{
+        display: block;
+        float: left;
+        border: 3px solid $black;
+        width: 100%;
+        margin: 0 auto;
+        height: 90.5vh;
+    }
+}
+
 .no-padding.columns{
   padding: 0!important;
+}
+
+.no-bottom-space{
+    margin-bottom: 0!important;
+}
+
+.no-bottom-space-desktop{
+    margin-bottom: 0!important;
 }
 
 .hide-mobile{
@@ -45,6 +73,10 @@ textarea{
 }
 
 @media only screen and (max-width: 40em) { /* max-width 640px, mobile-only styles, use when QAing mobile issues */
+  .no-bottom-space-desktop{
+    margin-bottom: 3em!important;
+  }    
+    
   .hide-mobile{
     display: none!important;
   }
@@ -60,6 +92,16 @@ textarea{
     margin: 0 auto;
     padding: 1em;
   }
+    
+  .frame{
+    width: 100%;
+	padding: 0.5em;
+    padding-top: 3em;
+    
+    iframe{
+        height: 90vh;
+    }
+}
 }
 
 @media only screen and (min-width: 40.063em) { /* min-width 641px, medium screens */
@@ -190,19 +232,19 @@ textarea{
   animation-delay: 2.25s;
 }
 
-#showcase1.pulse, #showcase2.pulse, #showcase3.pulse {
-  -webkit-animation-duration: 5s;
-  -moz-animation-duration: 5s;
-  -o-animation-duration: 5s;
-  -ms-animation-duration: 5s;
-  animation-duration: 5s;
-
-  -webkit-animation-timing-function:linear;
-  -moz-animation-timing-function:linear;
-  -o-animation-timing-function:linear;
-  -ms-animation-timing-function:linear;
-  animation-timing-function:linear;
-}
+//#showcase1.pulse, #showcase2.pulse, #showcase3.pulse {
+//  -webkit-animation-duration: 5s;
+//  -moz-animation-duration: 5s;
+//  -o-animation-duration: 5s;
+//  -ms-animation-duration: 5s;
+//  animation-duration: 5s;
+//
+//  -webkit-animation-timing-function:linear;
+//  -moz-animation-timing-function:linear;
+//  -o-animation-timing-function:linear;
+//  -ms-animation-timing-function:linear;
+//  animation-timing-function:linear;
+//}
 
 @media only screen and (max-width: 40em) { /* max-width 640px, mobile-only styles, use when QAing mobile issues */
   #showcase1.bounceIn, #showcase2.bounceIn, #showcase3.bounceIn {
@@ -219,16 +261,32 @@ textarea{
 }
 
 #about-me .row{
-  border-bottom: solid 3px #fff;
+  border-bottom: solid 3px $white;
 }
 
 /* About Page */
+#about-me{
+    .introduction{
+        h1{
+            margin-top: 0;
+        }
+        
+        h2{
+            margin-bottom: 1em;
+        }
+    }
+    
+    h5{
+        margin-bottom: 1em;
+    }
+}
+
 .icon-container{
   display: block;
   margin: 0 auto;
-  margin-top: 3em;
-  max-height: 29.5em;
+  max-height: 31em;
   overflow: auto;
+  border: 3px solid #000000;
   background: rgba(92,162,162,1);
   background: -moz-linear-gradient(top, rgba(92,162,162,1) 0%, rgba(27,47,47,1) 100%);
   background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(92,162,162,1)), color-stop(100%, rgba(27,47,47,1)));
@@ -237,8 +295,10 @@ textarea{
   background: -ms-linear-gradient(top, rgba(92,162,162,1) 0%, rgba(27,47,47,1) 100%);
   background: linear-gradient(to bottom, rgba(92,162,162,1) 0%, rgba(27,47,47,1) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5ca2a2', endColorstr='#1b2f2f', GradientType=0 );
-  border: 2px solid $black;
   padding: 1em;
+  -webkit-box-shadow: 0.15em 0.15em 0.15em 0 rgba(0,0,0,0.4);
+  -moz-box-shadow: 0.15em 0.15em 0.15em 0 rgba(0,0,0,0.4);
+  box-shadow: 0.15em 0.15em 0.15em 0 rgba(0,0,0,0.4);
 }
 
 .icon {
@@ -275,7 +335,8 @@ textarea{
 }
 
 #education, #experience{
-  margin-bottom: 3em;
+  margin-bottom: 1em;
+    
   h2{
     padding: 0;
     margin: 0;
@@ -291,12 +352,15 @@ textarea{
   img{
     display: block;
     margin: 3em auto;
-    max-width: 260px;
+    max-width: 424px;
+    width: 100%;
   }
 }
 
 .about-experience{
   margin-bottom: 3em;
+  margin-top: 2em;
+    
   p{
     margin: 0;
     padding: 0 0 1em 0;
@@ -322,11 +386,11 @@ textarea{
 }
 
 .resume-cta{
-
-  h3{
-    margin-top: 2em;
-
+    a{
+        margin-top: 1em;
+    }
     #resume{
+      display: inline-block;
       font-family: arial;
       color: #000000!important;
       font-size: 24px;
@@ -340,6 +404,7 @@ textarea{
       background: -ms-linear-gradient(to top,  #5FA6A6,  #7FC7C7);
       background: -webkit-gradient(linear, to left top, to left bottom, from(#5FA6A6), to(#7FC7C7));
       background: -moz-linear-gradient(to top,  #5FA6A6,  #7FC7C7);
+      text-decoration: none;
 
       &:hover, &:active {
           color: $white!important;
@@ -349,24 +414,26 @@ textarea{
           background: -ms-linear-gradient(to top,  #7FC7C7,  #5FA6A6);
           background: -webkit-gradient(linear, to left top, tp left bottom, from(#7FC7C7), to(#5FA6A6));
           background: -moz-linear-gradient(to top,  #7FC7C7,  #5FA6A6);
+          text-decoration: underline;
       }
     }
-  }
 }
 
 @media only screen and (max-width: 40em) { /* max-width 640px, mobile-only styles, use when QAing mobile issues */
   #about-me{
     padding-bottom: 1em;
   }
-  #portrait-suit{
-    top: 2em;
-  }
   .resume-cta{
     h3{
       #resume{
         font-size: 16px;
+        font-weight: bold;
       }
     }
+  }
+    
+  .icon-container{
+    max-height: 18.5em;
   }
 }
 
@@ -374,6 +441,10 @@ textarea{
 /* Contact Page */
 #contact-intro{
   padding-bottom: 2em;
+    
+    h5{
+        margin-top: 1em!important;
+    }
 }
 
 #contact-form{
@@ -462,13 +533,36 @@ textarea{
 .showcase-1, .showcase-2{
   .showcase-example{
     display: inline-block;
-    height: 20em;
     width: 100%;
     margin: 0 auto;
     margin-bottom: 3em;
     -moz-box-shadow: 0  0.75em 0.75em -0.75em #000000, 0 -0.75em 0.75em -0.75em #000000;
     -webkit-box-shadow:  0  0.75em 0.75em -0.75em #000000, 0 -0.75em 0.75em -0.75em #000000;
-     box-shadow: 0  0.75em 0.75em -0.75em #000000, 0 -0.75em 0.75em -0.75em #000000;
+    box-shadow: 0  0.75em 0.75em -0.75em #000000, 0 -0.75em 0.75em -0.75em #000000;
+      
+    -moz-transition: all 0.15s linear;
+    -webkit-transition: all 0.15s linear;
+    -o-transition: all 0.15s linear;
+    transition: all 0.15s linear;
+      
+      &:hover{
+        -moz-box-shadow: 0  1.0em 1.0em -0.5em rgba(0,0,0,0.6), 0 -0.5em 1.0em -0.5em rgba(0,0,0,0.6);
+        -webkit-box-shadow:  0  1.0em 1.0em -0.5em rgba(0,0,0,0.6), 0 -0.5em 1.0em -0.5em rgba(0,0,0,0.6);
+        box-shadow: 0  1.0em 1em -0.5em rgba(0,0,0,0.6), 0 -0.5em 1.0em -0.5em rgba(0,0,0,0.6);
+          
+        transform: scale(1.025);
+          
+        -moz-transition: all 0.15s linear;
+        -webkit-transition: all 0.15s linear;
+        -o-transition: all 0.15s linear;
+        transition: all 0.15s linear;
+      }
+      
+    img{
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+    }
 
     h3{
       vertical-align: bottom;
@@ -500,15 +594,15 @@ textarea{
 
 /* Services */
 .services-promotion{
-  margin-bottom: 2em;
-  min-height: 21em;
+  margin-bottom: 3em;
 
   h4{
     text-align: center;
   }
 
   p{
-    text-align: justify;
+    text-align: center;
+    padding: 0 .5em;
   }
 
   img{
@@ -518,16 +612,69 @@ textarea{
   }
 }
 
+/* Blog */
+#blog{
+    position: relative;
+    
+    a{
+        text-decoration: none;
+    }
+    
+    .blog-entry{
+        position: relative;
+        float: left;
+        display: block;
+        width: 100%;
+        
+        &:hover{
+            h3, p{
+                color: $white!important;
+                
+                -moz-transition: all 0.33s linear;
+                -webkit-transition: all 0.33s linear;
+                -o-transition: all 0.33s linear;
+                transition: all 0.33s linear;
+            }
+            background: $black;
+//            -webkit-transform: translate(-1em, 0);
+//            -moz-transform: translate(-1em, 0);
+//            -ms-transform: translate(-1em, 0);
+//            -o-transform: translate(-1em, 0);
+//            transform: translate(-1em, 0);
+
+            -moz-transition: all 0.33s linear;
+            -webkit-transition: all 0.33s linear;
+            -o-transition: all 0.33s linear;
+            transition: all 0.33s linear;
+        }
+        
+        &:not(:hover){
+            h3, p{
+                color: $black!important;
+                
+                -moz-transition: all 0.25s linear;
+                -webkit-transition: all 0.25s linear;
+                -o-transition: all 0.25s linear;
+                transition: all 0.25s linear;
+            }
+            background: $white;
+            -webkit-transform: translate(0, 0);
+            -moz-transform: translate(0, 0);
+            -ms-transform: translate(0, 0);
+            -o-transform: translate(0, 0);
+            transform: translate(0, 0);
+
+            -moz-transition: all 0.25s linear;
+            -webkit-transition: all 0.25s linear;
+            -o-transition: all 0.25s linear;
+            transition: all 0.25s linear;   
+        }
+    }
+}
 
 @media only screen and (max-width: 40em) { /* max-width 640px, mobile-only styles, use when QAing mobile issues */
   .services-promotion{
     min-height: 12em!important;
-  }
-}
-
-@media only screen and (min-width: 40.063em) and (max-width: 64em) {
-  .services-promotion{
-    min-height: 22em!important;
   }
 }
 

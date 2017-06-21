@@ -17,15 +17,16 @@ h1,h2,h3,h4,h5,h6{
   font-weight: normal;
   padding: 0;
   margin: 0;
-
-  a {
-    color: $blue!important;
-  }
-
-  a:hover{
-    color: $grey!important;
-  }
 }
+
+a {
+    text-decoration: underline;
+    
+    &:hover{
+        color: $grey!important;
+        text-decoration: none; 
+    }
+  }
 
 p,ul,ol,li,a,a:hover{
   font-family: 'Open Sans', sans-serif;
@@ -34,8 +35,18 @@ p,ul,ol,li,a,a:hover{
   padding: 0;
 }
 
+ol {
+    margin-left: 1.25rem;
+}
+
 p, ul, ol{
   padding: 0 0 0.33em 0;
+}
+
+.black{
+    ul{
+        color: $white!important;
+    }
 }
 
 ul{

@@ -3,9 +3,10 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Thank You!</title>
+    <title>Contact Me - Success | Corey Noble</title>
+    <meta name="description" content="Contact Me. Thank you for your inquiry.">
     <link rel="icon" type="image/jpeg" href="http://www.corey-noble.com/favicon.jpg" />
-    <link rel="canonical" href="http://corey-noble.com/confirm" />
+    <link rel="canonical" href="http://corey-noble.com/contact.php" />
 
     <!-- Relative CSS / Javascript -->
     <?php include("http://www.corey-noble.com/partials/head.html"); ?>
@@ -19,23 +20,26 @@
 
 
 
-<!-- CONFIRM HEADER -->
-    <div id="parallax-hero-2" class="parallax-large" data-stellar-background-ratio="0.4" >
-      <h1 class="zoomInDown wow">Success!</h1>
-    </div>
+    <!-- CONFIRMATION MESSAGE -->
+        <div class="section black">
+          <div class="row">
+            <div id="contact-intro" class="large-12 medium-12 small-12 columns">
+              <h1 class="text-center" style="font-size: 3.5em;">Success!</h1>
+            </div>
 
 
 
 
 
-<!-- CONFIRM MESSAGE -->
-    <div class="section black">
-      <div class="row">
-        <h2 class="slideInLeft wow">Thank you for your inquiry.</h2>
-        <h4 class="slideInLeft wow">Your form submission was successful.</h4>
-        <p>I have recieved your message and will get back to you within 2 business days.</p>
-      </div>
-    </div>
+            <!-- CONFIRMATION MESSAGE -->
+                    <div id="contact-form" class="large-12 medium-12 small-12 columns">
+                      <h2 style="color: white;">Thank you for your inquiry.</h2>
+                      <h5  style="color: white;">Your form submission was successful.</h5>
+                      <p  style="color: white;">I have recieved your message and will get back to you within 2 business days.</p>
+                    </div>
+                  </div>
+                  <br><br><br><br><br>
+                </div>
 
 
 

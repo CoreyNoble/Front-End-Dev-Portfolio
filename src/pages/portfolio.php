@@ -4,8 +4,9 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio | Corey Noble</title>
+    <meta name="description" content="My Portfolio. A showcase of my web development and CMS skills.">
     <link rel="icon" type="image/jpeg" href="http://www.corey-noble.com/favicon.jpg" />
-    <link rel="canonical" href="http://corey-noble.com/portfolio" />
+    <link rel="canonical" href="http://corey-noble.com/portfolio.php" />
 
     <!-- Relative CSS / Javascript -->
     <?php include("http://www.corey-noble.com/partials/head.html"); ?>
@@ -21,7 +22,7 @@
 
 <!-- PORTFOLIO TITLE -->
     <div id="parallax-hero-3" class="parallax" data-stellar-background-ratio="0.4" >
-      <h1 class="zoomInDown wow">My Portfolio</h1>
+      <h1>My Portfolio</h1>
     </div>
 
 
@@ -38,18 +39,20 @@
           </div>
 
           <div class="showcase-1">
-            <div class="fadeIn wow large-12 medium-12 small-12 columns">
-              <a href="http://www.corey-noble.com/portfolio/frameworks/example-1.php">
-                <div class="showcase-example blue-gradient">
-                  <h3 class="light-blue">Example 1</h3>
+            <div class="fadeIn wow large-6 medium-12 small-12 columns">
+              <a href="http://www.corey-noble.com/portfolio/development/validation-hub.php">
+                <div class="showcase-example no-bottom-space-desktop">
+                  <h3 class="white">Validation Hub</h3>
+                  <img src="http://corey-noble.com/assets/img/showcase/validation-hub-showcase.jpg" alt="A micro-site that helps QA the various promotions on a client website."/>
                 </div>
               </a>
             </div>
-
-            <div class="fadeIn wow large-12 medium-12 small-12 columns">
-              <a href="http://www.corey-noble.com/portfolio/frameworks/example-2.php">
-                <div class="showcase-example blue-gradient">
-                  <h3 class="light-blue">Example 2</h3>
+            
+            <div class="fadeIn wow large-6 medium-12 small-12 columns">
+              <a href="http://www.corey-noble.com/portfolio/development/responsive-email-template.php" title="Foundation for Emails">
+                <div class="showcase-example no-bottom-space">
+                  <h3 class="white">Responsive Email Template</h3>
+                  <img src="http://corey-noble.com/assets/img/showcase/responsive-email-showcase.jpg" alt="Responsive Email Component Development. Using Foundation for Emails."/>
                 </div>
               </a>
             </div>
@@ -73,41 +76,28 @@
 
         <div class="showcase-2">
           <div class="fadeIn wow large-12 medium-12 small-12 columns">
-            <a href="http://www.corey-noble.com/portfolio/cms/right-choice">
-              <div class="showcase-example blue-gradient">
-                <h3 class="black">Right Choice</h3>
-                <img src="http://corey-noble.com/portfolio/cms/right-choice/wp-content/uploads/2014/03/Slide29.png" />
+            <a href="http://www.corey-noble.com/portfolio/cms/right-choice.php" title="Right Choice Web Development">
+              <div class="showcase-example">
+                <h3 class="black">Right Choice Websites</h3>
+                <img src="http://corey-noble.com/assets/img/showcase/Right-Choice-showcase.jpg" alt="Corey Noble and Manann Him. Graphic and Web Creators."/>
               </div>
             </a>
           </div>
 
-          <div class="fadeIn wow large-6 medium-6 small-12 columns">
-            <a href="http://www.corey-noble.com/portfolio/cms/ctkr-music.php">
-              <div class="showcase-example blue-gradient">
-                <h3 class="black">CTKR Music</h3>
+          <div class="fadeIn wow large-6 medium-12 small-12 columns">
+            <a href="http://www.corey-noble.com/portfolio/cms/ctkr-music.php" title="CTKR Music Instruction and Incubation">
+              <div class="showcase-example no-bottom-space-desktop">
+                <h3 class="black">CTKR Music Instruction</h3>
+                <img src="http://corey-noble.com/assets/img/showcase/CTKR-showcase.jpg" />
               </div>
             </a>
           </div>
 
-          <div class="fadeIn wow large-6 medium-6 small-12 columns">
-            <a href="http://www.corey-noble.com/portfolio/cms/skillset.php">
-              <div class="showcase-example blue-gradient">
+          <div class="fadeIn wow large-6 medium-12 small-12 columns">
+            <a href="http://www.corey-noble.com/portfolio/cms/skillset.php" title="My CMS Skills">
+              <div class="showcase-example no-bottom-space">
                 <h3 class="black">My CMS Skills</h3>
-                <div class="large-2 medium-2 small-2 columns">
-                  <img class="rollIn wow" src="http://www.corey-noble.com/assets/img/icons/reddot.png" alt="Open Text RedDot Skills"/>
-                </div>
-                <div class="large-2 medium-2 small-2 columns">
-                  <img class="rollIn wow" src="http://www.corey-noble.com/assets/img/icons/wordpress.png" alt="WordPress Skills"/>
-                </div>
-                <div class="large-2 medium-2 small-2 columns">
-                  <img class="rollIn wow" src="http://www.corey-noble.com/assets/img/icons/joomla.png" alt="Joomla Skills"/>
-                </div>
-                <div class="large-2 medium-2 small-2 columns">
-                  <img class="rollIn wow" src="http://www.corey-noble.com/assets/img/icons/magento.png" alt="Magento Skills"/>
-                </div>
-                <div class="large-2 medium-2 small-2 columns end">
-                  <img class="rollIn wow" src="http://www.corey-noble.com/assets/img/icons/sitecore.png" alt="SiteCore Skills"/>
-                </div>
+                <img src="http://corey-noble.com/assets/img/showcase/CMS-showcase.jpg" alt="Adobe Experience Manager. Open Text's RedDot. Magento. WordPress. Joomla. SiteCore."/>
               </div>
             </a>
           </div>

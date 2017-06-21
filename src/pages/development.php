@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Development | Corey Noble</title>
     <link rel="icon" type="image/jpeg" href="http://www.corey-noble.com/favicon.jpg" />
-    <link rel="canonical" href="http://corey-noble.com/development" />
+    <link rel="canonical" href="http://corey-noble.com/development.php" />
 
     <!-- Relative CSS / Javascript -->
     <?php include("http://www.corey-noble.com/partials/head.html"); ?>
