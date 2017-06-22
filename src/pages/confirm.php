@@ -24,7 +24,7 @@
         <div class="section black">
           <div class="row">
             <div id="contact-intro" class="large-12 medium-12 small-12 columns">
-              <h1 class="text-center" style="font-size: 3.5em;">Success!</h1>
+              <h1 class="text-center success">Success!</h1>
             </div>
 
 
@@ -32,13 +32,12 @@
 
 
             <!-- CONFIRMATION MESSAGE -->
-                    <div id="contact-form" class="large-12 medium-12 small-12 columns">
-                      <h2 style="color: white;">Thank you for your inquiry.</h2>
-                      <h5  style="color: white;">Your form submission was successful.</h5>
-                      <p  style="color: white;">I have recieved your message and will get back to you within 2 business days.</p>
+                    <div class="contact-form confirmation large-12 medium-12 small-12 columns">
+                      <h2>Thank you for your&nbsp;inquiry.</h2>
+                      <h4>Your form submission was&nbsp;successful.</h4>
+                      <p>I have recieved your message and will get back to you within 2 business&nbsp;days.</p>
                     </div>
                   </div>
-                  <br><br><br><br><br>
                 </div>
 
 

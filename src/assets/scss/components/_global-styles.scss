@@ -191,6 +191,10 @@ textarea{
 	color: $dark-blue!important;
 }
 
+.thrillworks-text{
+    color: $thrillworks!important;
+}
+
 .button{
   margin-top: 2em;
 }
@@ -389,6 +393,7 @@ textarea{
     a{
         margin-top: 1em;
     }
+    
     #resume{
       display: inline-block;
       font-family: arial;
@@ -416,6 +421,10 @@ textarea{
           background: -moz-linear-gradient(to top,  #7FC7C7,  #5FA6A6);
           text-decoration: underline;
       }
+    }
+    
+    &.redirect-resume-cta{
+      margin-top: 1.75em;
     }
 }
 
@@ -445,9 +454,20 @@ textarea{
     h5{
         margin-top: 1em!important;
     }
+    
+    .form-validation-error{
+        color: red;
+        font-weight: bold;
+        margin-top: 1em;
+        text-decoration: underline;
+    }
+    
+    .success{
+        font-size: 3.5em;
+    }
 }
 
-#contact-form{
+.contact-form{
   background: url(../img/aesthetic-geometry-tablet.jpg) no-repeat;
   background-repeat: no-repeat;
   background-position: center;
@@ -487,6 +507,7 @@ textarea{
       background: -ms-linear-gradient(to top,  #5FA6A6,  #7FC7C7);
       background: -webkit-gradient(linear, to left top, to left bottom, from(#5FA6A6), to(#7FC7C7));
       background: -moz-linear-gradient(to top,  #5FA6A6,  #7FC7C7);
+      margin: 1.5em 0 0 0;
 
       &:hover, &:active {
           color: $white!important;
@@ -498,6 +519,10 @@ textarea{
           background: -moz-linear-gradient(to top,  #7FC7C7,  #5FA6A6);
       }
     }
+      
+    .contact-ctas{
+      margin-top: 1.5em!important;      
+    }
 
     .g-recaptcha{
       display: block;
@@ -506,6 +531,19 @@ textarea{
       float: left;
     }
   }
+    
+    &.confirmation{
+      padding-bottom: 17em;
+        
+      h2, h4, p{
+        color: $white;
+      }
+        
+      h2{
+        padding-bottom: 1em;
+        padding-top: 0.2em;
+      }
+    }
 }
 
 @media only screen and (max-width: 40em) { /* max-width 640px, mobile-only styles, use when QAing mobile issues */
@@ -521,6 +559,13 @@ textarea{
     margin: 0 auto;
     padding: 0;
     float: none!important;
+  }
+    
+  .contact-form{
+    &.confirmation{
+      padding-bottom: 13.25em;
+      margin-bottom: 5.5em;
+    }
   }
 }
 
