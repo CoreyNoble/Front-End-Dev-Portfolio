@@ -236,20 +236,6 @@ textarea{
   animation-delay: 2.25s;
 }
 
-//#showcase1.pulse, #showcase2.pulse, #showcase3.pulse {
-//  -webkit-animation-duration: 5s;
-//  -moz-animation-duration: 5s;
-//  -o-animation-duration: 5s;
-//  -ms-animation-duration: 5s;
-//  animation-duration: 5s;
-//
-//  -webkit-animation-timing-function:linear;
-//  -moz-animation-timing-function:linear;
-//  -o-animation-timing-function:linear;
-//  -ms-animation-timing-function:linear;
-//  animation-timing-function:linear;
-//}
-
 @media only screen and (max-width: 40em) { /* max-width 640px, mobile-only styles, use when QAing mobile issues */
   #showcase1.bounceIn, #showcase2.bounceIn, #showcase3.bounceIn {
     -webkit-animation-delay: 0.5s;
@@ -488,6 +474,10 @@ textarea{
     input, textarea{
       background: rgba(0,0,0,0.22);
       color: $white;
+        
+        &:focus{
+            background: rgba(0,0,0,0.22);
+        }
     }
 
     input[type=submit]{
@@ -521,7 +511,7 @@ textarea{
     }
       
     .contact-ctas{
-      margin-top: 1.5em!important;      
+      margin-top: 1.5em;      
     }
 
     .g-recaptcha{
@@ -556,7 +546,7 @@ textarea{
 
   input[type=submit]{
     width: 100%;
-    margin: 0 auto;
+    margin: 0 auto!important;
     padding: 0;
     float: none!important;
   }
@@ -567,6 +557,11 @@ textarea{
       margin-bottom: 5.5em;
     }
   }
+    form{
+        .contact-ctas{
+            margin-top: 0em!important;      
+        }
+    }
 }
 
 
@@ -681,11 +676,6 @@ textarea{
                 transition: all 0.33s linear;
             }
             background: $black;
-//            -webkit-transform: translate(-1em, 0);
-//            -moz-transform: translate(-1em, 0);
-//            -ms-transform: translate(-1em, 0);
-//            -o-transform: translate(-1em, 0);
-//            transform: translate(-1em, 0);
 
             -moz-transition: all 0.33s linear;
             -webkit-transition: all 0.33s linear;
