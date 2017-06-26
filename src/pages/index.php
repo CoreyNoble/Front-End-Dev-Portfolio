@@ -66,9 +66,13 @@
 
 <!-- INDEX SKILL OVERVIEW -->
     <div class="section blue">
+      <div class="row">
+        <div class="small-12 columns">
+          <h2>Skill Overview</h2>
+          <h4 class="index-header">A breif overview of what I bring to the&nbsp;table.</h4>
+        </div>
+      </div>
       <div class="skill-overview row" data-equalizer>
-        <h2>Skill Overview</h2>
-        <h4 class="index-header">A breif overview of what I bring to the&nbsp;table.</h4>
         <div class= "services-promotion large-4 medium-12 small-12 columns" data-equalizer-watch>
           <img class="zoomIn wow" src="http://www.corey-noble.com/assets/img/icons/design-icon.png" alt="Design Icon" />
           <h4 class="zoomIn wow">Website Design and Branding</h4>
