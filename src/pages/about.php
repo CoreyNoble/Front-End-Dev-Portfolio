@@ -36,7 +36,7 @@
         <h2>Front-End Web Developer</h2>
 
         <div id="portrait-suit" class="large-5 medium-12 small-12 columns">
-          <img src="http://www.corey-noble.com/assets/img/Corey-Noble-Portrait-Suit.png"/>
+          <img src="http://www.corey-noble.com/assets/img/Corey-Noble-About-Portrait.png"/>
         </div>
 
         <div id="icon-container" class="icon-container large-7 medium-12 small-12 columns">

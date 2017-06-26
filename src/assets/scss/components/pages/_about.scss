@@ -1,0 +1,181 @@
+#about-me .row{
+  border-bottom: solid 3px $white;
+}
+
+/* About Page */
+#about-me{
+    .introduction{
+        h1{
+            margin-top: 0;
+        }
+        
+        h2{
+            margin-bottom: 1em;
+        }
+    }
+    
+    h5{
+        margin-bottom: 1em;
+    }
+}
+
+.icon-container{
+  display: block;
+  margin: 0 auto;
+  max-height: 31em;
+  overflow: auto;
+  border: 3px solid #000000;
+  background: rgba(92,162,162,1);
+  background: -moz-linear-gradient(top, rgba(92,162,162,1) 0%, rgba(27,47,47,1) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(92,162,162,1)), color-stop(100%, rgba(27,47,47,1)));
+  background: -webkit-linear-gradient(top, rgba(92,162,162,1) 0%, rgba(27,47,47,1) 100%);
+  background: -o-linear-gradient(top, rgba(92,162,162,1) 0%, rgba(27,47,47,1) 100%);
+  background: -ms-linear-gradient(top, rgba(92,162,162,1) 0%, rgba(27,47,47,1) 100%);
+  background: linear-gradient(to bottom, rgba(92,162,162,1) 0%, rgba(27,47,47,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5ca2a2', endColorstr='#1b2f2f', GradientType=0 );
+  padding: 1em;
+  -webkit-box-shadow: 0.15em 0.15em 0.15em 0 rgba(0,0,0,0.4);
+  -moz-box-shadow: 0.15em 0.15em 0.15em 0 rgba(0,0,0,0.4);
+  box-shadow: 0.15em 0.15em 0.15em 0 rgba(0,0,0,0.4);
+}
+
+.icon {
+  display: block;
+  margin: 1em auto;
+
+  img{
+    padding: 1em;
+    border: 1px solid $dark-blue;
+    background: $blue;
+    -webkit-box-shadow: 0.33em 0.33em 0.33em 0 rgba(0,0,0,0.4);
+    -moz-box-shadow: 0.33em 0.33em 0.33em 0 rgba(0,0,0,0.4);
+    box-shadow: 0.33em 0.33em 0.33em 0 rgba(0,0,0,0.4);
+  }
+}
+
+#portrait-suit{
+  position: relative;
+  top: 0em;
+
+  img{
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+#about-intro{
+  display: block;
+
+  h2{
+    margin-bottom: 1em;
+    text-align: center;
+  }
+}
+
+#education, #experience{
+  margin-bottom: 1em;
+    
+  h2{
+    padding: 0;
+    margin: 0;
+    margin-top: 2em!important;
+  }
+
+  hr{
+    padding: 0;
+    margin: 0;
+    height: 0.1em;
+  }
+
+  img{
+    display: block;
+    margin: 3em auto;
+    max-width: 424px;
+    width: 100%;
+  }
+}
+
+.about-experience{
+  margin-bottom: 3em;
+  margin-top: 2em;
+    
+  p{
+    margin: 0;
+    padding: 0 0 1em 0;
+  }
+
+  img{
+    display: block;
+    margin: 0 auto;
+    margin-top: 1em;
+  }
+}
+
+#about-more-info{
+  h2{
+    display: block;
+    text-align: center;
+  }
+
+  h3{
+    display: block;
+    text-align: center;
+  }
+}
+
+.resume-cta{
+    a{
+        margin-top: 1em;
+    }
+    
+    #resume{
+      display: inline-block;
+      font-family: arial;
+      color: #000000!important;
+      font-size: 24px;
+      padding: 1em 2em;
+      -moz-border-radius: 4px;
+      -webkit-border-radius: 4px;
+      border-radius: 4px;
+      border: 2px solid #000000;
+      background: #468CCF;
+      background: linear-gradient(to top,  #5FA6A6,  #7FC7C7);
+      background: -ms-linear-gradient(to top,  #5FA6A6,  #7FC7C7);
+      background: -webkit-gradient(linear, to left top, to left bottom, from(#5FA6A6), to(#7FC7C7));
+      background: -moz-linear-gradient(to top,  #5FA6A6,  #7FC7C7);
+      text-decoration: none;
+
+      &:hover, &:active {
+          color: $white!important;
+          border-color: $white;
+          background: #63B8EE;
+          background: linear-gradient(to top,  #7FC7C7,  #5FA6A6);
+          background: -ms-linear-gradient(to top,  #7FC7C7,  #5FA6A6);
+          background: -webkit-gradient(linear, to left top, tp left bottom, from(#7FC7C7), to(#5FA6A6));
+          background: -moz-linear-gradient(to top,  #7FC7C7,  #5FA6A6);
+          text-decoration: underline;
+      }
+    }
+    
+    &.redirect-resume-cta{
+      margin-top: 1.75em;
+    }
+}
+
+@media only screen and (max-width: 40em) { /* max-width 640px, mobile-only styles, use when QAing mobile issues */
+  #about-me{
+    padding-bottom: 1em;
+  }
+  .resume-cta{
+    h3{
+      #resume{
+        font-size: 16px;
+        font-weight: bold;
+      }
+    }
+  }
+    
+  .icon-container{
+    max-height: 18.5em;
+  }
+}

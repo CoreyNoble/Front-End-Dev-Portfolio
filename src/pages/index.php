@@ -55,7 +55,7 @@
         </div>
 
         <div id="portrait-suit" class="large-5 medium-12 small-12 columns">
-          <img src="http://www.corey-noble.com/assets/img/Corey-Noble-Portrait-Suit.png"/>
+          <img src="http://www.corey-noble.com/assets/img/Corey-Noble-Index-Portrait.png"/>
         </div>
       </div>
     </div>

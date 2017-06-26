@@ -1,0 +1,130 @@
+/* Contact Page */
+#contact-intro{
+  padding-bottom: 2em;
+    
+    h5{
+        margin-top: 1em!important;
+    }
+    
+    .form-validation-error{
+        color: red;
+        font-weight: bold;
+        margin-top: 1em;
+        text-decoration: underline;
+    }
+    
+    .success{
+        font-size: 3.5em;
+    }
+}
+
+.contact-form{
+  background: url(../img/aesthetic-geometry-tablet.jpg) no-repeat;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  padding: 1em 2em;
+  -moz-box-shadow: 0  0.75em 0.75em -0.75em #000000, 0 -0.75em 0.75em -0.75em #000000;
+  -webkit-box-shadow:  0  0.75em 0.75em -0.75em #000000, 0 -0.75em 0.75em -0.75em #000000;
+   box-shadow: 0  0.75em 0.75em -0.75em #000000, 0 -0.75em 0.75em -0.75em #000000;
+
+  form{
+    padding: 1em;
+
+    h5{
+      color: $white;
+    }
+
+    input, textarea{
+      background: rgba(0,0,0,0.22);
+      color: $white;
+        
+        &:focus{
+            background: rgba(0,0,0,0.22);
+        }
+    }
+
+    input[type=submit]{
+      display: block;
+      float: right;
+      font-family: arial;
+      color: #000000!important;
+      font-size: 1em;
+      font-weight: bold;
+      padding: 1em 2em;
+      -moz-border-radius: 4px;
+      -webkit-border-radius: 4px;
+      border-radius: 4px;
+      border: 2px solid #000000;
+      background: #468CCF;
+      background: linear-gradient(to top,  #5FA6A6,  #7FC7C7);
+      background: -ms-linear-gradient(to top,  #5FA6A6,  #7FC7C7);
+      background: -webkit-gradient(linear, to left top, to left bottom, from(#5FA6A6), to(#7FC7C7));
+      background: -moz-linear-gradient(to top,  #5FA6A6,  #7FC7C7);
+      margin: 1.5em 0 0 0;
+
+      &:hover, &:active {
+          color: $white!important;
+          border-color: $white;
+          background: #63B8EE;
+          background: linear-gradient(to top,  #7FC7C7,  #5FA6A6);
+          background: -ms-linear-gradient(to top,  #7FC7C7,  #5FA6A6);
+          background: -webkit-gradient(linear, to left top, tp left bottom, from(#7FC7C7), to(#5FA6A6));
+          background: -moz-linear-gradient(to top,  #7FC7C7,  #5FA6A6);
+      }
+    }
+      
+    .contact-ctas{
+      margin-top: 1.5em;      
+    }
+
+    .g-recaptcha{
+      display: block;
+      width: 100%;
+      padding: 0;
+      float: left;
+    }
+  }
+    
+    &.confirmation{
+      padding-bottom: 17em;
+        
+      h2, h4, p{
+        color: $white;
+      }
+        
+      h2{
+        padding-bottom: 1em;
+        padding-top: 0.2em;
+      }
+    }
+}
+
+@media only screen and (max-width: 40em) { /* max-width 640px, mobile-only styles, use when QAing mobile issues */
+  .g-recaptcha{
+    margin: 0 auto;
+    float: none;
+    transform:scale(0.77);
+    transform-origin:0 0;
+  }
+
+  input[type=submit]{
+    width: 100%;
+    margin: 0 auto!important;
+    padding: 0;
+    float: none!important;
+  }
+    
+  .contact-form{
+    &.confirmation{
+      padding-bottom: 13.25em;
+      margin-bottom: 5.5em;
+    }
+  }
+    form{
+        .contact-ctas{
+            margin-top: 0em!important;      
+        }
+    }
+}
