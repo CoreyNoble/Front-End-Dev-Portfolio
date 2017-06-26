@@ -36,7 +36,7 @@
         <h2>Front-End Web Developer</h2>
 
         <div id="portrait-suit" class="large-5 medium-12 small-12 columns">
-          <img src="http://www.corey-noble.com/assets/img/Corey-Noble-Portrait-Suit.png"/>
+          <img src="http://www.corey-noble.com/assets/img/Corey-Noble-About-Portrait.png"/>
         </div>
 
         <div id="icon-container" class="icon-container large-7 medium-12 small-12 columns">
@@ -126,7 +126,7 @@
     <div class="row">
       <div id="about-intro" class="large-12 columns">
         <h2 class="fadeIn wow">My Story</h2>
-        <p class="fadeIn wow">My name is <b>Corey Noble</b>, I am a <b>Front-End Web&nbsp;Developer</b> currently working for <a href="http://www.thrillworks.com/" target="_blank" style="color: #fb7638;"><b>Thrillworks&nbsp;Inc.</b></a> in the beautiful city of Burlington, ON -&nbsp;Canada. I have a lot of passion for digital media and love discovering new technologies as they&nbsp;emerge.</p>
+        <p class="fadeIn wow">My name is <b>Corey Noble</b>, I am a <b>Front-End Web&nbsp;Developer</b> currently working for <a href="http://www.thrillworks.com/" class="thrillworks-text" target="_blank"><b>Thrillworks&nbsp;Inc.</b></a> in the beautiful city of Burlington, ON -&nbsp;Canada. I have a lot of passion for digital media and love discovering new technologies as they&nbsp;emerge.</p>
         <p class="fadeIn wow">I began working in digital media in highschool, taking as many media classes as possible. At the time I wanted to create environments in videogames. This lead me to take a two year Multi-Media Design and Production pre-requisite program at Fanshawe College. It was in this program that I was introducted to website development. I fell in love with the complex and creative role that web development provides. I enjoyed learing about the many parts of digital media that contributed to a completed web project. To me, graduating from this course was the beginning of my career as a Web&nbsp;Developer.</p>
         <p class="fadeIn wow">After I graduated from Multi-Media Design and Production, I followed through with my original goal and entered the proceeding 3D Animation and Character Design program. The 3D program was immensly difficult, but amazing. I had an industry veteran as my primary teacher for 80% of the classes I took. Due to the shorter than average timespan of this 3D course (1 year opposed to the average 3 years), our teacher pushed us to the very edge of our potential in a very condensed&nbsp;timeline.</p>
         <p class="fadeIn wow">Many people that work with me are amazed at the amount of dedication, concentration and the general attitude I have towards my profession. I concider the 3D program to be the reason for this. If I had any bad habits before the 3D course, they were broken by the time I graduated from 3D Animation and Character&nbsp;Design.</p>

@@ -38,11 +38,11 @@
           <h5>Thank you for showing interest in me as a developer. I am excited to start working with you! Please fill out the form below so we can begin a&nbsp;conversation.</h5>
           <?php
             if (strpos($_SERVER['REQUEST_URI'], "captcha=none") !== false){ ?>
-              <h3 style="color: red; font-weight: bold; margin-top: 1em; text-decoration: underline;">Please validate yourself with Google&nbsp;ReCaptcha.</h3>
+              <h5 class="form-validation-error">Please confirm you're not a&nbsp;robot.</h5>
           <?php } ?>
           <?php
             if (strpos($_SERVER['REQUEST_URI'], "captcha=failed") !== false){ ?>
-              <h3 style="color: red; font-weight: bold; margin-top: 1em; text-decoration: underline;">You have failed Google ReCaptcha validation. Please try&nbsp;again.</h3>
+              <h5 class="form-validation-error">You have failed ReCaptcha validation. Please try&nbsp;again.</h5>
           <?php } ?>
         </div>
 
@@ -51,7 +51,7 @@
 
 
 <!-- CONTACT FORM -->
-        <div id="contact-form" class="large-12 medium-12 small-12 columns">
+        <div class="contact-form large-12 medium-12 small-12 columns">
           <form method="post" action="mailsend.php" method="post">
             <div class="row fadeIn wow">
               <h5>First Name</h5>
@@ -69,11 +69,11 @@
               <h5>Inquiry</h5>
               <textarea class="last" name="inquiry" rows="5" cols="35" required></textarea>
 
-              <div class="no-padding large=8 medium-8 small-12 columns" style="margin-top: 1.5em">
+              <div class="contact-ctas no-padding large-8 medium-8 small-12 columns">
                 <div class="g-recaptcha" data-sitekey="6Lcj8wYUAAAAAG9fl2DtDnsqTjfyNFwhL38TwGao"></div>
               </div>
 
-              <div class="no-padding large=4 medium-4 small-12 columns" style="margin-top: 1.5em;">
+              <div class="contact-ctas no-padding large-4 medium-4 small-12 columns">
                 <input type="submit" class="button submit-cta" value="Submit"/>
               </div>
             </div>

@@ -44,7 +44,7 @@
         <h4><a title="About Me" href="http://www.corey-noble.com/about.php">About</a></h4>
         <h4><a title="My Blog" href="http://www.corey-noble.com/blog.php">Blog</a></h4>
         <h4><a title="Contact Me" href="http://www.corey-noble.com/contact.php">Contact</a></h4>
-        <div class="resume-cta" style="margin-top: 1.25em;">
+        <div class="resume-cta redirect-resume-cta">
             <h3><a id="resume" href="http://www.corey-noble.com/assets/pdf/CoreyNoble-Resume.pdf" target="_blank">MY CV / RESUME</a></h3>
         </div>
       </div>
