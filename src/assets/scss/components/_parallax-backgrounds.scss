@@ -3,12 +3,9 @@
   display: table;
   width: 100%;
   z-index: 1;
-  -moz-box-shadow:    inset  0  1.5em 1.5em -1.5em #000000,
-                      inset  0 -1.5em 1.5em -1.5em #000000;
-  -webkit-box-shadow: inset  0  1.5em 1.5em -1.5em #000000,
-                      inset  0 -1.5em 1.5em -1.5em #000000;
-   box-shadow:        inset  0  1.5em 1.5em -1.5em #000000,
-                      inset  0 -1.5em 1.5em -1.5em #000000;
+  -moz-box-shadow: inset  0 -1.5em 1.5em -1.5em #000000;
+  -webkit-box-shadow: inset  0 -1.5em 1.5em -1.5em #000000;
+  box-shadow: inset  0 -1.5em 1.5em -1.5em #000000;
 
   h1{
     display: table-cell;
@@ -38,17 +35,61 @@
 .parallax {
   height: 32em;
     
+  @media screen and (max-width: 40em) {
+    height: 16em;
+  }
+    
+  @media screen and (min-width: 40.063em) and (max-width: 64em) {
+    height: 24em;
+  }
+    
   h1{
-    padding-top: 0.75em!important;
+    padding-top: 0.75em;
+      
+    @media screen and (max-width: 40em) {
+      font-size: 2em;
+    }
+      
+    @media screen and (min-width: 40.063em) and (max-width: 64em) {
+      padding-top: 0.25em;
+    }
+  }
+    
+  h2{ 
+    @media screen and (max-width: 40em) {
+      font-size: 1em;
+    }
   }
 }
 
 .parallax-large {
   height: 40em;
     
+  @media screen and (max-width: 40em) {
+    height: 18em;
+  }
+    
+  @media screen and (min-width: 40.063em) and (max-width: 64em) {
+    height: 28em;
+  }
+    
   h1{
-        padding-top: 1.5em!important;
+    padding-top: 1.5em;
+      
+    @media screen and (max-width: 40em) {
+      font-size: 2.5em;
     }
+      
+    @media screen and (min-width: 40.063em) and (max-width: 64em) {
+      padding-top: 1.75em;
+    }
+  }
+    
+  h2{ 
+    @media screen and (max-width: 40em) {
+      font-size: 1em;
+    }
+  }
 }
 
 // GEOMETRIC HERO
@@ -59,6 +100,15 @@
   background-position: center;
   background-size: cover;
   width: 100%;
+    
+  @media screen and (max-width: 40em) {
+    height: 16em;
+  }
+    
+  @media screen and (min-width: 40.063em) and (max-width: 64em) {
+    background: url(../img/aesthetic-geometry-tablet.jpg);
+    height: 24em;
+  }
 
   #index-hero-panel-1{
     background: url(../img/index-hero-overlay-1.png);
@@ -68,7 +118,15 @@
     height: 32em;
     -webkit-animation-delay: 0.2s; /* Chrome, Safari, Opera */
     animation-delay: 0.2s;
+      
+    @media screen and (max-width: 40em) {
+      height: 16em;
+    }
 
+    @media screen and (min-width: 40.063em) and (max-width: 64em) {
+      height: 24em;
+    }
+      
     #index-hero-panel-2{
       background: url(../img/index-hero-overlay-2.png);
       background-repeat: no-repeat;
@@ -77,7 +135,15 @@
       height: 32em;
       -webkit-animation-delay: 0.4s; /* Chrome, Safari, Opera */
       animation-delay: 0.4s;
-
+      
+      @media screen and (max-width: 40em) {
+        height: 16em;
+      }
+        
+      @media screen and (min-width: 40.063em) and (max-width: 64em) {
+        height: 24em;
+      }
+        
       #index-hero-panel-3{
         background: url(../img/index-hero-overlay-3.png);
         background-repeat: no-repeat;
@@ -87,6 +153,14 @@
         -webkit-animation-delay: 0.6s; /* Chrome, Safari, Opera */
         animation-delay: 0.6s;
 
+        @media screen and (max-width: 40em) {
+          height: 16em;
+        }
+          
+        @media screen and (min-width: 40.063em) and (max-width: 64em) {
+          height: 24em;
+        }
+          
         #index-hero-panel-4{
           background: url(../img/index-hero-overlay-4.png);
           background-repeat: no-repeat;
@@ -95,6 +169,14 @@
           height: 32em;
           -webkit-animation-delay: 0.8s; /* Chrome, Safari, Opera */
           animation-delay: 0.8s;
+            
+          @media screen and (max-width: 40em) {
+            height: 16em;
+          }
+            
+          @media screen and (min-width: 40.063em) and (max-width: 64em) {
+            height: 24em;
+          }
 
           #index-hero-panel-5{
             background: url(../img/index-hero-overlay-5.png);
@@ -104,12 +186,24 @@
             height: 32em;
             -webkit-animation-delay: 1s; /* Chrome, Safari, Opera */
             animation-delay: 1s;
+              
+            @media screen and (max-width: 40em) {
+              height: 16em;
+            }
+              
+            @media screen and (min-width: 40.063em) and (max-width: 64em) {
+              height: 24em;
+            }
 
             .row{
               .small-12{
                 h1{
                   display: block;
                   text-align: center;
+                    
+                  @media screen and (max-width: 40em) {
+                    font-size: 2.5em;
+                  }
                 }
 
                 h2{
@@ -118,6 +212,10 @@
                   font-size: 2.5em;
                   color: #fff;
                   text-shadow: 0.1em 0.1em 0.1em rgba(0, 0, 0, 0.66);
+                    
+                  @media screen and (max-width: 40em) {
+                    font-size: 1.5em;
+                  }
                 }
               }
             }
@@ -128,8 +226,10 @@
   }
 }
 
-#index-title{
-    padding-top: 9.75em;
+// LEATHER HERO
+#parallax-hero-3 {
+  background: url(../img/leather-tile.jpg) repeat;
+  background-attachment: fixed;
 }
 
 // TORONTO HERO
@@ -141,148 +241,21 @@
   background-size: cover;
   width: 100%;
     
-    h1{
-        background-color: rgba(0, 0, 0, 0.5);
-        padding: 1em;
-    }
-}
-
-// LEATHER HERO
-#parallax-hero-3 {
-  background: url(../img/leather-tile.jpg) repeat;
-  background-attachment: fixed;
+  @media screen and (max-width: 40em) {
+    background: url(/assets/img/toronto-city-scape-mobile.jpg);
+  }
+    
+  @media screen and (min-width: 40.063em) and (max-width: 64em) {
+    background: url(/assets/img/toronto-city-scape-tablet.jpg);
+  }
+    
+  h1{
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 1em;
+  }
 }
 
 #parallax-index, #parallax-portfolio, #parallax-frameworks-portfolio, #parallax-framework-example-1, #parallax-framework-example-2, #parallax-cms-portfolio, #parallax-cms-skillset, #parallax-wordpress-example-1, #parallax-wordpress-example-2, #parallax-about, #parallax-services, #parallax-contact, #parallax-site-index, #parallax-404 {
     background-attachment: fixed;
     background-size: 100%;
-}
-
-// SMALL SCREENS
-@media only screen and (max-width: 40em) {
-    
-    #parallax-hero-1 {
-        height: 16em;
-
-        #index-hero-panel-1{
-          height: 16em;
-
-        #index-hero-panel-2{
-          height: 16em;
-
-          #index-hero-panel-3{
-            height: 16em;
-
-            #index-hero-panel-4{
-              height: 16em;
-
-              #index-hero-panel-5{
-                height: 16em;
-
-                h1{
-                  font-size: 2.5em;            
-                }
-
-                h2{
-                  font-size: 1.5em!important;
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-    
-    #index-title{
-        padding-top: 4.25em;
-    }
-    
-  .parallax{
-    height: 16em;
-
-    h1{
-      font-size: 2em;
-      padding-top: 1em;
-    }
-
-    h2{
-      font-size: 1em;
-    }
-  }
-    
-  .parallax-large {
-    height: 18em;
-      
-    h1{
-      font-size: 2.5em;
-      padding-top: 1.5em!important;
-    }
-
-    h2{
-      font-size: 1em;
-    }
-  }
-
-// TORONTO HERO
-  #parallax-hero-2 {
-    background: url(/assets/img/toronto-city-scape-mobile.jpg);
-  }
-}
-
-
-// MEDIUM SCREENS
-@media only screen and (min-width: 40.063em) and (max-width: 64em) {
-
-    #parallax-hero-1 {
-      height: 24em!important;
-      #index-hero-panel-1{
-        height: 24em!important;
-
-        #index-hero-panel-2{
-          height: 24em!important;
-
-          #index-hero-panel-3{
-            height: 24em!important;
-
-            #index-hero-panel-4{
-              height: 24em!important;
-
-              #index-hero-panel-5{
-                height: 24em!important;
-              }
-            }
-          }
-        }
-      }
-    }
-    
-    #index-title{
-        padding-top: 7em;
-    }
-    
-  // GEOMETRIC HERO
-  #parallax-hero-1 {
-    background: url(../img/aesthetic-geometry-tablet.jpg);
-  }
-
-  // TORONTO HERO
-  #parallax-hero-2 {
-    background: url(/assets/img/toronto-city-scape-tablet.jpg);
-  }
-    
-  .parallax-large {
-    height: 28em;
-      
-    h1{
-      padding-top: 1.75em!important;
-    }
-  }
-    
-  .parallax {
-    height: 24em;
-      
-    h1{
-      padding-top: 0.25em!important;
-    }
-  }
 }

@@ -47,7 +47,7 @@
       <div class="blog-entry large-12 columns">
         <a href="http://www.corey-noble.com/blog/search-engine-optimisation.php">
             <h4>Search Engine Optimisation</h4>
-          <p>Discussing the importance of search engine ranking and how to optimise a website to rank higher in a search index.</p>
+          <p>Discussing the importance of search engine ranking and how to optimise a website to rank higher in a search&nbsp;index.</p>
         </a>
       </div>
 
@@ -56,7 +56,7 @@
       <div class="blog-entry large-12 columns">
         <a href="http://www.corey-noble.com/blog/web-content-accessibility-guidelines.php">
           <h4>Web Content Accessibility Guidelines (WCAG 2.0)</h4>
-          <p>Outlining the accessibility requirements that websites need to adhere to.</p>
+          <p>Outlining the accessibility requirements that websites need to adhere&nbsp;to.</p>
         </a>
       </div>
         
@@ -64,7 +64,7 @@
       <div class="blog-entry large-12 columns">
         <a href="http://www.corey-noble.com/blog/aspirations.php">
           <h4>My Aspirations</h4>
-          <p>Who I aspire to become. My goals.</p>
+          <p>Who I aspire to become. My&nbsp;goals.</p>
         </a>
       </div>
 
@@ -73,7 +73,7 @@
       <div class="blog-entry large-12 columns">
         <a href="http://www.corey-noble.com/blog/web-production-specialist.php">
           <h4>Web Production Specialist</h4>
-          <p>Detailing my role as a Web Production Specialist at Thrillworks.</p>
+          <p>Detailing my role as a Web Production Specialist at&nbsp;Thrillworks.</p>
         </a>
       </div>
         

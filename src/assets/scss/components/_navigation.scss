@@ -339,7 +339,7 @@ footer{
   }
 }
 
-@media only screen and (max-width: 40em) { /* max-width 640px, mobile-only styles, use when QAing mobile issues */
+@media screen and (max-width: 40em) {
 footer{
     border-top: 1px solid white;
     
