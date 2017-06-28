@@ -23,7 +23,7 @@ a {
     text-decoration: underline;
     
     &:hover{
-        color: $grey!important;
+        color: $grey;
         text-decoration: none; 
     }
   }
@@ -45,7 +45,7 @@ p, ul, ol{
 
 .black{
     ul{
-        color: $white!important;
+        color: $white;
     }
 }
 

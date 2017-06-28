@@ -40,5 +40,9 @@
                 color: $white;
             }
         }
+        
+        &.no-bottom-space{
+          margin-bottom: 0;
+        }
     }
 }

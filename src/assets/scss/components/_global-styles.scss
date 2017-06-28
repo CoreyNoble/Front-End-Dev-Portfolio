@@ -4,6 +4,19 @@
   padding: 0;
 }
 
+.clearfix:before, .clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
 .section{
 	width: 100%;
 	padding: 4em 1em;
@@ -11,14 +24,6 @@
 
 div{
   padding: 0;
-}
-
-.row{  
-  @media screen and (max-width: 40em) {
-    //padding-top: 0;
-    //padding-bottom: 0;
-    //margin: 0;
-  }
 }
 
 h1{
@@ -65,14 +70,14 @@ hr{
 }
 
 .no-bottom-space{
-    margin-bottom: 0!important;
+    margin-bottom: 0;
 }
 
 .no-bottom-space-desktop{
-  margin-bottom: 0!important;
+  margin-bottom: 0;
 
   @media screen and (max-width: 64em) {
-    margin-bottom: 3em!important;
+    margin-bottom: 3em;
   }
 }
 
@@ -164,31 +169,31 @@ textarea{
 }
 
 .white-text{
-	color: $white!important;
+	color: $white;
 }
 
 .black-text{
-	color: $black!important;
+	color: $black;
 }
 
 .grey-text{
-	color: $grey!important;
+	color: $grey;
 }
 
 .blue-text{
-	color: $blue!important;
+	color: $blue;
 }
 
 .light-blue-text{
-	color: $light-blue!important;
+	color: $light-blue;
 }
 
 .dark-blue-text{
-	color: $dark-blue!important;
+	color: $dark-blue;
 }
 
-.thrillworks-text{
-    color: $thrillworks!important;
+#thrillworks-text{
+    color: $thrillworks;
 }
 
 .button{

@@ -32,4 +32,20 @@
     margin: 0 auto;
     margin-bottom: 0.5em;
   }
+    
+  &.no-padding.columns{
+    padding: 0;
+  }
+    
+  &.no-bottom-space{
+    margin-bottom: 0;
+  }
+    
+  &.no-bottom-space-desktop{
+    margin-bottom: 0;
+      
+    @media screen and (max-width: 64em) {
+      margin-bottom: 3em;
+    }
+  }
 }
