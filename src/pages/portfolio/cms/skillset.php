@@ -25,7 +25,7 @@
         <div class="cms-skillset large-12 columns">
           <?php include("http://www.corey-noble.com/partials/crumbs.php"); ?>
           <h2>I have worked in a wide variety of Content Management Sysems</h2>
-          <h5>Below is a list of the Content Management Systems that I have worked in, along with descriptions about my development and author eperience within these systems.</h5>
+          <h5>Below is a list of the Content Management Systems that I have worked in, along with descriptions about my development and author experience within these systems.</h5>
           <div class="cms-skill large-12 medium-12 small-12 columns">
             <div class="large-2 medium-3 small-12 columns">
               <img class="rollIn wow" src="http://www.corey-noble.com/assets/img/icons/aem.png" alt="Adobe Experience Manager Skills"/>
@@ -71,7 +71,7 @@
               <p class="fadeIn wow">Creating hundreds of products and packages with unique identities that worked in conjunction with an e-commerce database. Creating web pages that dynamically loaded corresponding products.</p>
             </div>
           </div>
-          <div class="cms-skill large-12 medium-12 small-12 columns">
+          <div class="cms-skill large-12 medium-12 small-12 columns no-bottom-space">
             <div class="large-2 medium-3 small-12 columns">
               <img class="rollIn wow" src="http://www.corey-noble.com/assets/img/icons/sitecore.png" alt="SiteCore Skills"/>
             </div>
@@ -83,8 +83,6 @@
         </div>
       </div>
     </div>
-
-  <div id="parallax-cms-skillset" class="parallax hide-tablet hide-mobile" data-stellar-background-ratio="0.8" ></div>
 
   <!-- Footer -->
   <?php include("http://www.corey-noble.com/partials/footer.html"); ?>

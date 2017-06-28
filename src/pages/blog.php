@@ -55,7 +55,7 @@
       <!-- Web Content Accessibility Guidelines -->
       <div class="blog-entry large-12 columns">
         <a href="http://www.corey-noble.com/blog/web-content-accessibility-guidelines.php">
-          <h4>Web Content Accessibility Guidelines (WCAG 2.0)</h4>
+          <h4>Web Content Accessibility Guidelines (WCAG&nbsp;2.0)</h4>
           <p>Outlining the accessibility requirements that websites need to adhere&nbsp;to.</p>
         </a>
       </div>
@@ -79,7 +79,7 @@
         
 
       <!-- BLOG Introduction -->
-      <div class="blog-entry large-12 columns">
+      <div class="blog-entry large-12 columns no-bottom-space">
         <a href="http://www.corey-noble.com/blog/blog-introduction.php">
           <h4>Blog Introduction</h4>
           <p>An introduction to my blog. A bit about me, and my intentions for this&nbsp;space.</p>

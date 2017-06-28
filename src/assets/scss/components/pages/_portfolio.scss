@@ -18,18 +18,34 @@
     -o-transition: all 0.15s linear;
     transition: all 0.15s linear;
       
-      &:hover{
-        -moz-box-shadow: 0  1.0em 1.0em -0.5em rgba(0,0,0,0.6), 0 -0.5em 1.0em -0.5em rgba(0,0,0,0.6);
-        -webkit-box-shadow:  0  1.0em 1.0em -0.5em rgba(0,0,0,0.6), 0 -0.5em 1.0em -0.5em rgba(0,0,0,0.6);
-        box-shadow: 0  1.0em 1em -0.5em rgba(0,0,0,0.6), 0 -0.5em 1.0em -0.5em rgba(0,0,0,0.6);
-          
-        transform: scale(1.025);
-          
-        -moz-transition: all 0.15s linear;
-        -webkit-transition: all 0.15s linear;
-        -o-transition: all 0.15s linear;
-        transition: all 0.15s linear;
+    &.no-padding.columns{
+      padding: 0;
+    }
+
+    &.no-bottom-space{
+      margin-bottom: 0;
+    }
+
+    &.no-bottom-space-desktop{
+      margin-bottom: 0;
+
+      @media screen and (max-width: 64em) {
+        margin-bottom: 3em;
       }
+    }
+      
+    &:hover{
+      -moz-box-shadow: 0  1.0em 1.0em -0.5em rgba(0,0,0,0.6), 0 -0.5em 1.0em -0.5em rgba(0,0,0,0.6);
+      -webkit-box-shadow:  0  1.0em 1.0em -0.5em rgba(0,0,0,0.6), 0 -0.5em 1.0em -0.5em rgba(0,0,0,0.6);
+      box-shadow: 0  1.0em 1em -0.5em rgba(0,0,0,0.6), 0 -0.5em 1.0em -0.5em rgba(0,0,0,0.6);
+      
+      transform: scale(1.025);
+
+      -moz-transition: all 0.15s linear;
+      -webkit-transition: all 0.15s linear;
+      -o-transition: all 0.15s linear;
+      transition: all 0.15s linear;
+    }
       
     img{
         display: block;
@@ -79,6 +95,10 @@
       display: block;
       margin: 0 auto;
       margin-bottom: 1em;
+    }
+
+    &.no-bottom-space{
+      margin-bottom: 0;
     }
   }
 }

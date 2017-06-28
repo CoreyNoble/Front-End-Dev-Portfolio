@@ -49,9 +49,9 @@
       <div class="row">
         <div class="large-7 medium-12 small-12 columns">
           <h3>Hi! my name is <b>Corey Noble</b>,</h3><br>
-          <h5>I am a <b>Front-End Web Developer</b> currently working for <a class="thrillworks-text" href="http://www.thrillworks.com/" target="_blank"><b>Thrillworks&nbsp;Inc.</b></a> In the beautiful city of Burlington,&nbsp;ON&nbsp;-&nbsp;Canada.</h5>
+          <h5>I am a <b>Front-End Web Developer</b> currently working for <a id="thrillworks-text" href="http://www.thrillworks.com/" target="_blank"><b>Thrillworks&nbsp;Inc.</b></a> In the beautiful city of Burlington,&nbsp;ON&nbsp;-&nbsp;Canada.</h5>
           <h5>Welcome to my website, a portfolio that showcases some of the work i've done, aswell as the skills and experience I&nbsp;have.</h5>
-          <h5>My goal is to leave you with an accurate impression as to who I am, and a good understanding of why my skills can benefit you. If you like what you see, please <a href="http://www.corey-noble.com/contact.php" title="Contact Me">contact&nbsp;me</a> so we can get in&nbsp;touch.</h5>
+          <h5>My goal is to leave you with an accurate impression as to who I am, and a good understanding of why my web skills can benefit you. If you like what you see, please <a href="http://www.corey-noble.com/contact.php" title="Contact Me">contact&nbsp;me</a> so we can get in&nbsp;touch.</h5>
         </div>
 
         <div id="portrait-suit" class="large-5 medium-12 small-12 columns">

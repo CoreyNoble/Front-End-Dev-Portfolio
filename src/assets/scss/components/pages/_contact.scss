@@ -3,7 +3,7 @@
   padding-bottom: 2em;
     
     h5{
-        margin-top: 1em!important;
+        margin-top: 1em;
     }
     
     .form-validation-error{
@@ -49,7 +49,7 @@
       display: block;
       float: right;
       font-family: arial;
-      color: #000000!important;
+      color: #000000;
       font-size: 1em;
       font-weight: bold;
       padding: 1em 2em;
@@ -65,7 +65,7 @@
       margin: 1.5em 0 0 0;
 
       &:hover, &:active {
-          color: $white!important;
+          color: $white;
           border-color: $white;
           background: #63B8EE;
           background: linear-gradient(to top,  #7FC7C7,  #5FA6A6);
@@ -73,10 +73,20 @@
           background: -webkit-gradient(linear, to left top, tp left bottom, from(#7FC7C7), to(#5FA6A6));
           background: -moz-linear-gradient(to top,  #7FC7C7,  #5FA6A6);
       }
+        
+      @media screen and (max-width: 40em) {
+        width: 100%;
+        margin: 0 auto;
+        float: none;
+      }
     }
       
     .contact-ctas{
-      margin-top: 1.5em;      
+      margin-top: 1.5em;
+    
+      @media screen and (max-width: 40em) {
+        margin-top: 0em;
+      }
     }
 
     .g-recaptcha{
@@ -84,6 +94,13 @@
       width: 100%;
       padding: 0;
       float: left;
+        
+      @media screen and (max-width: 40em) {
+        margin: 0 auto;
+        float: none;
+        transform:scale(0.77);
+        transform-origin:0 0;
+      }
     }
   }
     
@@ -98,33 +115,10 @@
         padding-bottom: 1em;
         padding-top: 0.2em;
       }
-    }
-}
-
-@media screen and (max-width: 40em) {
-  .g-recaptcha{
-    margin: 0 auto;
-    float: none;
-    transform:scale(0.77);
-    transform-origin:0 0;
-  }
-
-  input[type=submit]{
-    width: 100%;
-    margin: 0 auto!important;
-    padding: 0;
-    float: none!important;
-  }
-    
-  .contact-form{
-    &.confirmation{
-      padding-bottom: 13.25em;
-      margin-bottom: 5.5em;
-    }
-  }
-    form{
-        .contact-ctas{
-            margin-top: 0em!important;      
-        }
+        
+      @media screen and (max-width: 40em) {
+        padding-bottom: 13.25em;
+        margin-bottom: 5.5em;
+      }
     }
 }

@@ -1,0 +1,204 @@
+/* Footer */
+footer{
+    background: #181818;
+    border-top: 1px solid $white;
+    -webkit-box-shadow: 0px -10px 17px -8px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px -10px 17px -8px rgba(0,0,0,0.75);
+    box-shadow: 0px -10px 17px -8px rgba(0,0,0,0.75);
+    padding: 1em 0;
+    
+    @media screen and (max-width: 40em) {
+      border-top: 1px solid white;
+    }
+    
+    .footnote{
+        display: table;
+        
+        .footnote-profile{
+            display: table-cell;
+            vertical-align: middle;
+            text-align: center;
+        }
+    }
+    
+  .section{
+    padding: 1.5em 1em;
+  }
+
+  h5{
+    font-size: 1em;
+    color: $grey;
+    float: left;
+    display: block;
+    padding: 0;
+
+    a:hover, a:focus{
+      text-decoration: underline;
+    }
+  }
+
+  p{
+    padding: 0;
+  }
+
+  .profession{
+    border-right: 3px solid $grey;
+  }
+
+  .footnote-position{
+    margin-top: .5em;
+      
+    @media screen and (max-width: 40em) {
+      margin-top: 0;
+    }
+
+    .name, .title, .footnote-contact{
+      display: block;
+      width: 100%;
+      float: left;
+    }
+
+    .name{
+      padding: 0;
+      margin: 0;
+        
+      @media screen and (max-width: 40em) {
+        margin-top: .75em;
+      }
+    }
+  }
+
+  .footnote-ctas-desktop{
+    display: block;
+      
+    @media screen and (max-width: 40em) {
+      display: none;
+    }
+  }
+
+  .footnote-ctas-tablet{
+    display: none;
+      
+    @media screen and (max-width: 40em) {
+      display: block;
+    }
+  }
+
+  .footnote-contact{
+    margin-top: 1em;
+      
+    @media screen and (max-width: 40em) {
+      margin-top: .75em;
+    }
+  }
+
+  .footnote-contact, .social-media, .footnote-ctas{
+    h5, p{
+      a{
+        color: $white;
+
+        &:hover, &:focus{
+          color: $blue;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+
+  .social-media{
+    margin-top: 1.3em;
+    display: block;
+      
+    @media screen and (max-width: 40em) {
+      margin-top: 3em;
+    }
+      
+    img{
+      max-width: 35px;
+    }
+
+    .linkedin{
+      display: block;
+      width: 100%;
+      float: right;
+      margin-top: -10px;
+    }
+
+    .github{
+      display: block;
+      width: 100%;
+      float: right;
+      margin-top: 1.5em;
+        
+      @media screen and (max-width: 40em) {
+        display: block;
+        margin-top: 2em;
+      }
+    }
+
+    .social-icon{
+      a{
+        img{
+          -webkit-filter: grayscale(100%);
+          -webkit-transition: .15s ease-in-out;
+          -moz-filter: grayscale(100%);
+          -moz-transition: .15s ease-in-out;
+          -o-filter: grayscale(100%);
+          -o-transition: .15s ease-in-out;
+
+          &:hover, &:focus{
+            -webkit-filter: grayscale(0%);
+            -webkit-transition: .15s ease-in-out;
+            -moz-filter: grayscale(0%);
+            -moz-transition: .15s ease-in-out;
+            -o-filter: grayscale(0%);
+            -o-transition: .15s ease-in-out;
+          }
+        }
+      }
+    }
+
+    .social-text{
+      h5{
+        padding-top: 0.55em;
+        font-size: 1em;
+        font-weight: bold;
+        line-height: 1;
+        float: right;
+
+        a{
+          font-size: .9em;
+          font-weight: bold;
+        }
+      }
+
+      p{
+        font-size: .75em;
+        font-weight: bold;
+      }
+    }
+  }
+
+  .footnote-ctas{
+    float: right;
+    margin-right: 7vw;
+      
+    @media screen and (max-width: 40em) {
+      float: left;
+      margin-right: 0em;
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+
+    h5{
+      a{
+        color: $white;
+        float: right;
+      }
+        
+      @media screen and (max-width: 40em) {    
+        padding: 0em 0.5em;
+      }
+    }
+  }
+}
