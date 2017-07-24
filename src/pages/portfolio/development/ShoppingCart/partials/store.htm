@@ -1,0 +1,54 @@
+<div class="store row">
+    <div class="small-12 columns">
+        <div class="store-intro row">
+            <div class="small-9 columns">
+                <h4>Welcome to the Angular&nbsp;Store.</h4>
+                <p>Please select the products you want and add them to your shopping cart.</p>
+                <p>When you are done, click the shopping cart icon to review your order and check out.</p>
+                <br />
+            </div>
+            <div class="search small-3 columns">
+                <img src="img/search-icon.png" alt="Search Products"/><input ng-model="search">
+            </div>
+        </div>
+        
+        <!-- Table Start -->
+        <div class="row">
+            <div class="small-12 columns">
+                <div class="row">
+                    <div class="small-12 columns">
+                        <a href="default.htm#/cart" title="go to shopping cart" ng-disabled="cart.getTotalCount() < 1">
+                            <img src="img/cart-icon-large.png"/>
+                            <h4><b>{{cart.getTotalCount()}}</b> items, <b>{{cart.getTotalPrice() | currency}}</b></h4>
+                        </a>
+                    </div>
+                </div>
+                <div class="row store-item" ng-repeat="product in store.products | orderBy:'name' | filter:search">
+                    <div class="small-12 medium-2 columns">
+                        <img ng-src="img/products/{{product.sku}}.jpg" alt="{{product.name}}" />
+                    </div>
+
+                    <div class="small-12 medium-7 columns">
+                        <h4><a href="#/products/{{product.sku}}"><b>{{product.name}}</b></a></h4>
+                        <p>{{product.description}}</p>
+                    </div>
+
+                    <div class="small-12 medium-3 columns">
+                        <h4><b>{{product.price | currency}}</b></h4>
+                        <a class="cart-button add-to-cart" ng-click="cart.addItem(product.sku, product.name, product.price, 1)">
+                            <img src="img/cart-icon.png"/> Add to cart
+                        </a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="small-12 columns">
+                        <a href="default.htm#/cart" title="go to shopping cart" ng-disabled="cart.getTotalCount() < 1">
+                            <img src="img/cart-icon-large.png"/>
+                            <h4><b>{{cart.getTotalCount()}}</b> items, <b>{{cart.getTotalPrice() | currency}}</b></h4>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

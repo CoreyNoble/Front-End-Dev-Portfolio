@@ -1,0 +1,71 @@
+<!-- Product Description -->
+<div class="row">
+    <div class="small-12 column product-desc">
+        <img ng-src="img/products/{{product.sku}}.jpg" alt="{{product.name}}"/> 
+        {{product.name}}: {{product.description}}
+    </div>
+</div>
+
+<div class="row product">
+    <!-- Product Information -->
+    <div class="small-12 medium-9 columns">
+        <!-- Cart Info -->
+        <div class="row cart-total">
+            <div class="small-12 column">
+                <a href="default.htm#/cart" title="go to shopping cart" ng-disabled="cart.getTotalCount() < 1">
+                    <i class="icon-shopping-cart" />
+                    <b>{{cart.getTotalCount()}}</b> items, <b>{{cart.getTotalPrice() | currency}}</b>
+                    <span ng-show="cart.getTotalCount(product.sku) > 0"><br />this item is in the cart</span>
+                </a>
+            </div>
+        </div>
+        
+        <!-- Product Calories -->
+        <div class="row product-info">
+            <!-- Title -->
+            <div class="small-12 medium-4 columns">
+                <h3>Calories</h3>
+            </div>
+            <!-- Value -->
+            <div class="small-12 medium-4 columns product-info-column">
+                <h3>{{product.cal}}</h3>
+            </div>
+            <!-- Description -->
+            <div class="small-12 medium-4 columns product-info-column" ng-repeat="(nutrientName, nutrientValue) in product.nutrients">
+                <!-- No Description for this item -->
+            </div>
+        </div>
+        
+        <!-- Product Carotenoid -->
+        <div class="row product-info" ng-repeat="(nutrientName, nutrientValue) in product.nutrients">
+            <!-- Title -->
+            <div class="small-12 medium-4 columns">
+                <h3>{{nutrientName}}</h3>
+            </div>
+            <!-- Value -->
+            <div class="small-12 medium-4 columns product-info-column">
+                <img ng-src="img/{{nutrientValue + 1}}-stars.png" alt="{{nutrientValue}}" />
+            </div>
+            <!-- Description -->
+            <div class="small-12 medium-4 columns product-info-column">
+                <strong>{{store.dvaCaption[nutrientValue]}}</strong>:
+                {{store.dvaRange[nutrientValue]}}
+                of the recommended daily value.
+            </div>
+        </div>
+    </div>
+        
+    
+    <!-- Cart CTAs -->
+    <div class="small-12 medium-3 columns ctas">
+        <a class="cart-button add-to-cart" ng-click="cart.addItem(product.sku, product.name, product.price, 1)">
+            <img src="img/cart-icon.png"/> Add to cart
+        </a>
+        <a class="cart-button remove-from-cart" ng-click="cart.addItem(product.sku, product.name, product.price, -10000)"ng-disabled="cart.getTotalCount(product.sku) < 1">
+            <img src="img/close-icon.png"/> Remove from cart
+        </a>
+        <a class="cart-button back-to-store" onclick="window.location.href=''">
+            <img src="img/back-icon.png"/> Back to store
+        </a>
+    </div>
+</div>
