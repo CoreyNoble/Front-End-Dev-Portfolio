@@ -1,8 +1,11 @@
 <!-- Product Description -->
-<div class="row">
-    <div class="small-12 column product-desc">
-        <img ng-src="img/products/{{product.sku}}.jpg" alt="{{product.name}}"/> 
-        {{product.name}}: {{product.description}}
+<div class="row product-desc">
+    <div class="small-12 medium-3 large-2 column">
+        <img ng-src="img/products/{{product.sku}}.png" alt="{{product.name}}"/>
+    </div>
+    <div class="small-12 medium-9 large-10 column">
+        <h2>{{product.name}}</h2>
+        <p>{{product.description}}</p>
     </div>
 </div>
 

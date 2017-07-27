@@ -27,21 +27,39 @@
     
     .store-item{
         margin: 1em 0;
-        padding: 0.25em;
-        border-top: 1px solid $black;
+        padding: 1em 0.5em;
+        border: 1px solid $black;
+        border-bottom: none;
         
         &:first-child{
             margin-top: 0;
-            border-top: none;
         }
         
-        .columns{
-            border-left: 1px solid $black;
+        &:last-child{
+            border-bottom: 1px solid $black;
+        }
+        
+        &:nth-child(odd){
+            background-color: #ccc;
+        }
+        
+        .item-thumbnail{
             img{
                 display: block;
                 margin: 0 auto;
+                -webkit-filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.25));
+                filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.25)); 
             }
         }
+    }
+    
+    .cart-total{
+        text-align: right;
+        border: 1px solid $black;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        border-bottom: none;
+        padding: 0.5em;
     }
     
     .store-intro{
@@ -169,7 +187,7 @@
             margin: 0.25em 0;
             float: left;
             width: 100%;
-            text-align: center;
+            text-align: left;
             font-size: 16px;
             font-weight: bold;
             text-decoration: none;
@@ -182,7 +200,9 @@
             margin: 0.5em;
             
             img{
-                margin: 0 0.5em;    
+                margin: 0 0.5em;
+                float: left;
+                display: inline-block;
             }
 
             &:hover{
@@ -295,16 +315,46 @@
             }
         }
         
-        .product-desc{
+        .check-out-cart{
+            background: rgba(147,206,222,1);
+            background: -moz-linear-gradient(top, rgba(147,206,222,1) 0%, rgba(117,189,209,1) 41%, rgba(73,165,191,1) 100%);
+            background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(147,206,222,1)), color-stop(41%, rgba(117,189,209,1)), color-stop(100%, rgba(73,165,191,1)));
+            background: -webkit-linear-gradient(top, rgba(147,206,222,1) 0%, rgba(117,189,209,1) 41%, rgba(73,165,191,1) 100%);
+            background: -o-linear-gradient(top, rgba(147,206,222,1) 0%, rgba(117,189,209,1) 41%, rgba(73,165,191,1) 100%);
+            background: -ms-linear-gradient(top, rgba(147,206,222,1) 0%, rgba(117,189,209,1) 41%, rgba(73,165,191,1) 100%);
+            background: linear-gradient(to bottom, rgba(147,206,222,1) 0%, rgba(117,189,209,1) 41%, rgba(73,165,191,1) 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#93cede', endColorstr='#49a5bf', GradientType=0 );
+            
+            &:hover{
+                background: rgba(73,165,191,1);
+                background: -moz-linear-gradient(top, rgba(73,165,191,1) 0%, rgba(117,189,209,1) 59%, rgba(147,206,222,1) 100%);
+                background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(73,165,191,1)), color-stop(59%, rgba(117,189,209,1)), color-stop(100%, rgba(147,206,222,1)));
+                background: -webkit-linear-gradient(top, rgba(73,165,191,1) 0%, rgba(117,189,209,1) 59%, rgba(147,206,222,1) 100%);
+                background: -o-linear-gradient(top, rgba(73,165,191,1) 0%, rgba(117,189,209,1) 59%, rgba(147,206,222,1) 100%);
+                background: -ms-linear-gradient(top, rgba(73,165,191,1) 0%, rgba(117,189,209,1) 59%, rgba(147,206,222,1) 100%);
+                background: linear-gradient(to bottom, rgba(73,165,191,1) 0%, rgba(117,189,209,1) 59%, rgba(147,206,222,1) 100%);
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#49a5bf', endColorstr='#93cede', GradientType=0 );
+            }
+            
+            &:active{
+                background: rgba(147,206,222,1);
+                background: -moz-linear-gradient(top, rgba(147,206,222,1) 0%, rgba(117,189,209,1) 41%, rgba(73,165,191,1) 100%);
+                background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(147,206,222,1)), color-stop(41%, rgba(117,189,209,1)), color-stop(100%, rgba(73,165,191,1)));
+                background: -webkit-linear-gradient(top, rgba(147,206,222,1) 0%, rgba(117,189,209,1) 41%, rgba(73,165,191,1) 100%);
+                background: -o-linear-gradient(top, rgba(147,206,222,1) 0%, rgba(117,189,209,1) 41%, rgba(73,165,191,1) 100%);
+                background: -ms-linear-gradient(top, rgba(147,206,222,1) 0%, rgba(117,189,209,1) 41%, rgba(73,165,191,1) 100%);
+                background: linear-gradient(to bottom, rgba(147,206,222,1) 0%, rgba(117,189,209,1) 41%, rgba(73,165,191,1) 100%);
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#93cede', endColorstr='#49a5bf', GradientType=0 );
+            }
         }
-
-        .cart-total{
-            text-align: right;
-            border: 1px solid $black;
-            border-top-left-radius: 5px;
-            border-top-right-radius: 5px;
-            border-bottom: none;
-            padding: 0.5em;
+        
+        .product-desc{
+            margin: 1.5em auto;
+            
+            img{
+                display: block;
+                margin: 0 auto;
+            }
         }
 
         .product-info{
@@ -328,5 +378,39 @@
     
     /* STORE */
     .store{
+        a{
+            text-decoration: underline;
+            color: $black;
+
+            &:hover{
+                color: $dark-blue;
+                
+                h4{
+                    color: $dark-blue;
+                }
+            }
+            
+            &:active{
+                text-decoration: none;
+                color: $black;
+            }
+        }
+    }
+    
+    /* CART PAGE */
+    .cart-page{
+        .item-quantity{
+            .cart-button{
+                margin: 0;
+                padding: 0.25em;
+                
+                img{
+                    display: block;
+                    margin: 0 auto;
+                    padding: 0;
+                    float: none;
+                }
+            }
+        }
     }
 }
