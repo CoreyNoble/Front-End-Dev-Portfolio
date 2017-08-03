@@ -130,7 +130,7 @@
         <p class="fadeIn wow">I began working in digital media in highschool, taking as many media classes as possible. At the time I wanted to create environments in videogames. This lead me to take a two year Multi-Media Design and Production pre-requisite program at Fanshawe College. It was in this program that I was introducted to website development. I fell in love with the complex and creative role that web development provides. I enjoyed learing about the many parts of digital media that contributed to a completed web project. To me, graduating from this course was the beginning of my career as a Web&nbsp;Developer.</p>
         <p class="fadeIn wow">After I graduated from Multi-Media Design and Production, I followed through with my original goal and entered the proceeding 3D Animation and Character Design program. The 3D program was immensly difficult, but amazing. I had an industry veteran as my primary teacher for 80% of the classes I took. Due to the shorter than average timespan of this 3D course (1 year opposed to the average 3 years), our teacher pushed us to the very edge of our potential in a very condensed&nbsp;timeline.</p>
         <p class="fadeIn wow">Many people that work with me are amazed at the amount of dedication, concentration and the general attitude I have towards my profession. I concider the 3D program to be the reason for this. If I had any bad habits before the 3D course, they were broken by the time I graduated from 3D Animation and Character&nbsp;Design.</p>
-        <p class="fadeIn wow">While I loved both of my fields of study, post-graduation I chose to enter Web Development. Since then I started a freelance web development company with a college friend, then moved on to work at Thrillworks Inc. as a Web Production Specialist. Want to know my history? Keep&nbsp;scrolling.</p>
+        <p class="fadeIn wow">While I loved both of my fields of study, post-graduation I chose to enter Web Development. Since then I started a freelance web development company with a college friend, then moved on to work at Thrillworks Inc. as a Web Production Specialist. Next I was promoted to Developer and the whole time I have been working on amazing and challenging projects. I'm always learning and growing my skillset. Want to know my history? Keep&nbsp;scrolling.</p>
       </div>
 
 
@@ -142,13 +142,25 @@
         <h2 class="fadeIn wow" >Job Experience</h2>
         <hr class="fadeIn wow">
       </div>
+        
+      <div class="about-experience large-2 medium-3 small-12 columns">
+        <img class="rollIn wow" src="http://www.corey-noble.com/assets/img/logos/thrillworks.png" alt="Thrillworks Inc."/>
+      </div>
+      <div class="about-experience large-10 medium-9 small-12 columns">
+        <h3 class="fadeIn wow" >Developer</h3>
+        <p class="fadeIn wow" ><b>August 2017 - Present</b></p>
+        <p class="fadeIn wow" >As a Developer I strive to learn as much as I can about cutting edge development practices. I love to build an manage web projects, big or small. I pride myself on my attention to detail and I actively seek to build efficiencies in all aspects of my career.</p>
+      </div>
+      
+      <hr class="fadeIn wow">
+        
       <div class="about-experience large-2 medium-3 small-12 columns">
         <img class="rollIn wow" src="http://www.corey-noble.com/assets/img/logos/thrillworks.png" alt="Thrillworks Inc."/>
       </div>
       <div class="about-experience large-10 medium-9 small-12 columns">
         <h3 class="fadeIn wow" >Web Production Specialist</h3>
-        <p class="fadeIn wow" ><b>May 2014 - Present</b></p>
-        <p class="fadeIn wow" >Thrillworks is my current employer. As a Web Production Specialist I get to work with a wide variety of web technologies. Working at Thrillworks has given me&nbsp;experience with:</p>
+        <p class="fadeIn wow" ><b>May 2014 - July 2017</b></p>
+        <p class="fadeIn wow" >As a Web Production Specialist I was able to work with a wide variety of web technologies. My Web Production Specialist position at Thrillworks has given me&nbsp;experience with:</p>
         <ul>
           <li class="fadeIn wow"><b>ExactTarget / SalesForce</b> – Creating, editing and testing email campaigns and monthy emails.  Incorperating dynamically generated content, Including; qr codes, company variables and user data. Creating and updating email templates, Sending and scheduling emails for a large subscriber base. Sending batches of emails per hour to large audiences and sending specific emails to region filtered&nbsp;users.</li>
           <li class="fadeIn wow"><b>WordPress</b> –  Development of the re-designs of websites, updating page content, media assets and&nbsp;data.</li>

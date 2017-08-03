@@ -39,9 +39,9 @@
         <!-- Item Row -->
         <div class="row store-item" ng-repeat="item in cart.items | orderBy:'name'">
             <!-- Item -->
-            <div class="small-2 columns">
+            <div class="small-2 columns item-thumbnail">
                 <img ng-src="img/products/{{item.sku}}.png" alt="{{item.name}}" />
-                <p>{{item.name}}</p>
+                <h5>{{item.name}}</h5>
             </div>
             <!-- Quantity -->
             <div class="small-6 columns item-quantity">
