@@ -1,0 +1,12 @@
+C:\Users\Corey Noble\Desktop\Development\angularjs-cart\ShoppingCart\bin\ShoppingCart.dll.config
+C:\Users\Corey Noble\Desktop\Development\angularjs-cart\ShoppingCart\bin\ShoppingCart.dll
+C:\Users\Corey Noble\Desktop\Development\angularjs-cart\ShoppingCart\bin\ShoppingCart.pdb
+C:\Users\Corey Noble\Desktop\Development\angularjs-cart\ShoppingCart\obj\Debug\ShoppingCart.csprojResolveAssemblyReference.cache
+C:\Users\Corey Noble\Desktop\Development\angularjs-cart\ShoppingCart\obj\Debug\ShoppingCart.dll
+C:\Users\Corey Noble\Desktop\Development\angularjs-cart\ShoppingCart\obj\Debug\ShoppingCart.pdb
+C:\Users\Corey Noble\Desktop\Foundation\portfolio-site\src\pages\portfolio\development\ShoppingCart\bin\ShoppingCart.dll.config
+C:\Users\Corey Noble\Desktop\Foundation\portfolio-site\src\pages\portfolio\development\ShoppingCart\bin\ShoppingCart.dll
+C:\Users\Corey Noble\Desktop\Foundation\portfolio-site\src\pages\portfolio\development\ShoppingCart\bin\ShoppingCart.pdb
+C:\Users\Corey Noble\Desktop\Foundation\portfolio-site\src\pages\portfolio\development\ShoppingCart\obj\Debug\ShoppingCart.csprojResolveAssemblyReference.cache
+C:\Users\Corey Noble\Desktop\Foundation\portfolio-site\src\pages\portfolio\development\ShoppingCart\obj\Debug\ShoppingCart.dll
+C:\Users\Corey Noble\Desktop\Foundation\portfolio-site\src\pages\portfolio\development\ShoppingCart\obj\Debug\ShoppingCart.pdb
