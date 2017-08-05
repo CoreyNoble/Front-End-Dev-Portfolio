@@ -47,6 +47,8 @@
             img{
                 display: block;
                 margin: 0 auto;
+                max-width: 150px;
+                width: 100%;
                 -webkit-filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.25));
                 filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.25));
             }
@@ -56,10 +58,19 @@
     .cart-total{
         text-align: right;
         border: 1px solid $black;
-        border-top-left-radius: 5px;
-        border-top-right-radius: 5px;
-        border-bottom: none;
         padding: 0.5em;
+        background-color: $blue;
+        
+        &:first-child{
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+            border-bottom: none;   
+        }
+        
+        &:last-child{
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+        }
     }
     
     .store-intro{
@@ -156,14 +167,10 @@
         }
     }
     
-    .ng-scope{
-        display: block;
-        margin: 0 1em;
-    }
-    
     .shopping-app{
         display: block;
         float: left;
+        padding: 1em;
         border-bottom-left-radius: 15px;
         border-bottom-right-radius: 15px;
         background: rgba(255,255,255,1);
@@ -175,19 +182,27 @@
         background: linear-gradient(135deg, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
         filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed', GradientType=1 );
     
+        .row{
+            margin: 0;
+        }
+        
         .ctas{
+            @media screen and (max-width: 64em) {
+                border-top: 1px solid $black;
+                margin-top: 2em;
+                padding-top: 2em;
+            }
         }
 
         .cart-button{
+            text-align: center;
             background-color: $blue;
             padding: 0.5em 0.25em;
             border: 1px solid $black;
             border-radius: 10px;
             color: $black;
             margin: 0.25em 0;
-            float: left;
             width: 100%;
-            text-align: left;
             font-size: 16px;
             font-weight: bold;
             text-decoration: none;
@@ -196,13 +211,16 @@
             -moz-box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.33);
             box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.33);
             margin-top: 1em;
-            text-align: left;
             margin: 0.5em;
             
             img{
-                margin: 0 0.5em;
-                float: left;
+                margin: 0 auto;
+                margin-left: -0.75em;
                 display: inline-block;
+            }
+            
+            span{
+                margin-left: 0.75em;
             }
 
             &:hover{
@@ -246,6 +264,10 @@
                 background: -ms-linear-gradient(top, rgba(210,255,82,1) 0%, rgba(145,232,66,1) 100%);
                 background: linear-gradient(to bottom, rgba(210,255,82,1) 0%, rgba(145,232,66,1) 100%);
                 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d2ff52', endColorstr='#91e842', GradientType=0 );
+            }
+            
+            span{
+                line-height: 1.2;
             }
         }
 
@@ -395,6 +417,26 @@
             &:active{
                 text-decoration: none;
                 color: $black;
+            }
+        }
+        
+        .item-info{
+            @media screen and (max-width: 64em) {
+                border-top: 1px solid $black;
+                margin-top: 1em;
+                padding-top: 1em;
+            }    
+        }
+        
+        .item-sale{
+            h4{
+                text-align: right;
+            }
+            
+            @media screen and (max-width: 64em) {
+                border-top: 1px solid $black;
+                margin-top: 1em;
+                padding-top: 1em;
             }
         }
     }

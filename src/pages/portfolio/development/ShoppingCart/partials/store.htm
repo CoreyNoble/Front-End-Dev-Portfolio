@@ -24,19 +24,19 @@
                     </div>
                 </div>
                 <div class="row store-item" ng-repeat="product in store.products | orderBy:'name' | filter:search">
-                    <div class="small-12 medium-2 columns item-thumbnail">
+                    <div class="small-12 large-2 columns item-thumbnail">
                         <img ng-src="img/products/{{product.sku}}.png" alt="{{product.name}}" />
                     </div>
 
-                    <div class="small-12 medium-7 columns item-info">
+                    <div class="small-12 large-7 columns item-info">
                         <h4><a href="#/products/{{product.sku}}"><strong>{{product.name}}</strong></a></h4>
                         <p>{{product.description}}</p>
                     </div>
 
-                    <div class="small-12 medium-3 columns item-sale">
+                    <div class="small-12 large-3 columns item-sale">
                         <h4><strong>{{product.price | currency}}</strong></h4>
                         <a class="cart-button add-to-cart" ng-click="cart.addItem(product.sku, product.name, product.price, 1)">
-                            <img src="img/cart-icon.png"/> Add to cart
+                            <img src="img/cart-icon.png"/><span>Add to cart</span>
                         </a>
                     </div>
                 </div>
