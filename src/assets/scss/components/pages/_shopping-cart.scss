@@ -56,7 +56,7 @@
     }
     
     .cart-total{
-        text-align: right;
+        text-align: left;
         border: 1px solid $black;
         padding: 0.5em;
         background-color: $blue;
@@ -85,11 +85,38 @@
             float: right;
             
             img{
+                display: inline-block;
+                width: 19%;
                 float: left;
-                margin-right: 0.5em;
+                margin-right: 2%;
+                max-width: 22px;
             }
             input{
+                display: inline-block;
                 float: left;
+                width: 79%;
+                border: 1px solid $black;
+                padding: 0.25em;
+                
+                background: rgba(245,245,245,1);
+                background: -moz-linear-gradient(top, rgba(245,245,245,1) 0%, rgba(173,173,173,1) 100%);
+                background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(245,245,245,1)), color-stop(100%, rgba(173,173,173,1)));
+                background: -webkit-linear-gradient(top, rgba(245,245,245,1) 0%, rgba(173,173,173,1) 100%);
+                background: -o-linear-gradient(top, rgba(245,245,245,1) 0%, rgba(173,173,173,1) 100%);
+                background: -ms-linear-gradient(top, rgba(245,245,245,1) 0%, rgba(173,173,173,1) 100%);
+                background: linear-gradient(to bottom, rgba(245,245,245,1) 0%, rgba(173,173,173,1) 100%);
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5f5f5', endColorstr='#adadad', GradientType=0 );
+                
+                &:focus{
+                    background: rgba(173,173,173,1);
+                    background: -moz-linear-gradient(top, rgba(173,173,173,1) 0%, rgba(245,245,245,1) 100%);
+                    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(173,173,173,1)), color-stop(100%, rgba(245,245,245,1)));
+                    background: -webkit-linear-gradient(top, rgba(173,173,173,1) 0%, rgba(245,245,245,1) 100%);
+                    background: -o-linear-gradient(top, rgba(173,173,173,1) 0%, rgba(245,245,245,1) 100%);
+                    background: -ms-linear-gradient(top, rgba(173,173,173,1) 0%, rgba(245,245,245,1) 100%);
+                    background: linear-gradient(to bottom, rgba(173,173,173,1) 0%, rgba(245,245,245,1) 100%);
+                    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#adadad', endColorstr='#f5f5f5', GradientType=0 );
+                }
             }
         }
     }
@@ -170,7 +197,7 @@
     .shopping-app{
         display: block;
         float: left;
-        padding: 1em;
+        padding: 2em 1em;
         border-bottom-left-radius: 15px;
         border-bottom-right-radius: 15px;
         background: rgba(255,255,255,1);
@@ -370,9 +397,15 @@
             }
         }
         
+        .product-container{
+            .cart-total{
+                text-align: right;
+            }
+        }
+
         .product-desc{
             margin: 1.5em auto;
-            
+
             img{
                 display: block;
                 margin: 0 auto;
@@ -384,17 +417,23 @@
         .product-info{
             border: 1px solid $black;
             border-bottom: none;
-            
+
             &:nth-child{
                 background-color: #ccc;
             }
 
             &:last-child{
                 border-bottom: 1px solid $black;
+                border-bottom-left-radius: 5px;
+                border-bottom-right-radius: 5px;
             }
 
             .product-info-column{
                 border-left: 1px solid $black;
+
+                @media screen and (max-width: 64em) {
+                    border-left: none;
+                }
             }
         }
     }
@@ -417,6 +456,22 @@
             &:active{
                 text-decoration: none;
                 color: $black;
+            }
+        }
+        
+        .store-cart-total{
+            background-color: $blue;
+            
+            img{
+                float: right;
+                display: inline-block;
+                margin-left: 1em;
+                margin-top: 0.4em;
+            }
+            
+            h4{
+                float: right;
+                display: inline-block;
             }
         }
         
@@ -443,6 +498,12 @@
     
     /* CART PAGE */
     .cart-page{
+        .cart-intro{
+            border-bottom: 1px solid $black;
+            margin-bottom: 2em;
+            padding-bottom: 1em;
+        }
+        
         .item-quantity{
             .cart-button{
                 margin: 0;

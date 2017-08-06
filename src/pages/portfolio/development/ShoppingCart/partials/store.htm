@@ -1,13 +1,13 @@
 <div class="store row">
     <div class="small-12 columns">
         <div class="store-intro row">
-            <div class="small-9 columns">
-                <h4>Welcome to the Angular&nbsp;Store.</h4>
+            <div class="small-12 large-9 columns">
+                <h3>Welcome to the Angular&nbsp;Store.</h3>
                 <p>Please select the products you want and add them to your shopping cart.</p>
                 <p>When you are done, click the shopping cart icon to review your order and check out.</p>
                 <br />
             </div>
-            <div class="search small-3 columns">
+            <div class="search small-12 large-3 columns">
                 <img src="img/search-icon.png" alt="Search Products"/><input ng-model="search">
             </div>
         </div>
@@ -15,7 +15,7 @@
         <!-- Table Start -->
         <div class="row">
             <div class="small-12 columns">
-                <div class="row store-item">
+                <div class="row store-item store-cart-total">
                     <div class="small-12 columns">
                         <a href="default.htm#/cart" title="go to shopping cart" ng-disabled="cart.getTotalCount() < 1">
                             <img src="img/cart-icon-large.png"/>
@@ -40,7 +40,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="row store-item">
+                <div class="row store-item store-cart-total">
                     <div class="small-12 columns">
                         <a href="default.htm#/cart" title="go to shopping cart" ng-disabled="cart.getTotalCount() < 1">
                             <img src="img/cart-icon-large.png"/>
