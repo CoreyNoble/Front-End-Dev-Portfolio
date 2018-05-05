@@ -14,14 +14,6 @@ title: Contact | Corey Noble
       <h2 id="no-captcha">I look forward to hearing from&nbsp;you!</h2>
       <h5>Thank you for showing interest in me as a developer. I am excited to start working with you! Please fill out the form
         below so we can begin a&nbsp;conversation.</h5>
-      <?php
-            if (strpos($_SERVER['REQUEST_URI'], "captcha=none") !== false){ ?>
-        <h5 class="form-validation-error">Please confirm you're not a&nbsp;robot.</h5>
-        <?php } ?>
-        <?php
-            if (strpos($_SERVER['REQUEST_URI'], "captcha=failed") !== false){ ?>
-          <h5 class="form-validation-error">You have failed ReCaptcha validation. Please try&nbsp;again.</h5>
-          <?php } ?>
     </div>
 
     <!-- CONTACT FORM -->
