@@ -3,8 +3,6 @@ import $ from 'jquery';
 
 window.$ = $;
 
-//import './wow.js';
-//import './main.js';
 import Foundation from 'foundation-sites';
 
 // If you want to pick and choose which modules to include, comment out the above and uncomment
