@@ -1,3 +1,5 @@
+import $ from 'jquery';
+
 /*!
  *
  *  Copyright (c) David Bushell | http://dbushell.com/
