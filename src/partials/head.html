@@ -1,23 +1,23 @@
-<link rel="stylesheet" href="http://www.corey-noble.com/assets/css/app.css" />
-<link rel="stylesheet" href="http://www.corey-noble.com/assets/css/animate.css" />
-<script src="http://www.corey-noble.com/bower_components/modernizr/modernizr.js"></script>
+<link rel="stylesheet" href="{{root}}assets/css/app.css" />
+<link rel="stylesheet" href="{{root}}assets/css/animate.css" />
+<script src="{{root}}js/vendor/modernizr.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 <script>
-		$(function() {
-			var pull = $('#pull');
-				menu = $('nav ul');
-				menuHeight = menu.height();
+	$(function () {
+		var pull = $('#pull');
+		menu = $('nav ul');
+		menuHeight = menu.height();
 
-			$(pull).on('click', function(e) {
-				e.preventDefault();
-				menu.slideToggle();
-			});
-
-			$(window).resize(function(){
-        		var w = $(window).width();
-        		if(w > 320 && menu.is(':hidden')) {
-        			menu.removeAttr('style');
-        		}
-    		});
+		$(pull).on('click', function (e) {
+			e.preventDefault();
+			menu.slideToggle();
 		});
+
+		$(window).resize(function () {
+			var w = $(window).width();
+			if (w > 320 && menu.is(':hidden')) {
+				menu.removeAttr('style');
+			}
+		});
+	});
 </script>

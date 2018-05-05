@@ -44,6 +44,6 @@
           $sendrtn =  mail($to, $subject, $message, "From:" . $email);
 
           // REDIRECT TO CONFIRM
-          header('Location:confirm.php');
+          header('Location:confirm.html');
         }
 ?>
