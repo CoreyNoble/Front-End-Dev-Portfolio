@@ -18,22 +18,22 @@ title: Contact | Corey Noble
 
     <!-- CONTACT FORM -->
     <div class="contact-form large-12 medium-12 small-12 columns">
-      <form method="post" action="mailsend.php" method="post">
+      <form method="post" action="{{root}}mailsend.php" method="post">
         <div class="row fadeIn wow">
           <h5>First Name</h5>
-          <input type="text" name="firstName" required />
+          <input type="text" name="firstName" maxlength="50" required />
 
           <h5>Last Name</h5>
-          <input type="text" name="lastName" required />
+          <input type="text" name="lastName" maxlength="50" required />
 
           <h5>Email Address</h5>
-          <input type="text" name="email" required />
+          <input type="text" name="email" maxlength="80" required />
 
           <h5>Company</h5>
-          <input type="text" name="company" required />
+          <input type="text" name="company" maxlength="80" required />
 
           <h5>Inquiry</h5>
-          <textarea class="last" name="inquiry" rows="5" cols="35" required></textarea>
+          <textarea class="last" name="inquiry" rows="5" cols="35" maxlength="3000" required></textarea>
 
           <div class="contact-ctas no-padding large-8 medium-8 small-12 columns">
             <div class="g-recaptcha" data-sitekey="6Lcj8wYUAAAAAG9fl2DtDnsqTjfyNFwhL38TwGao"></div>
@@ -45,5 +45,6 @@ title: Contact | Corey Noble
         </div>
       </form>
     </div>
+    
   </div>
 </div>
