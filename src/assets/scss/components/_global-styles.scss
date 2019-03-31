@@ -117,7 +117,7 @@ textarea{
 }
 
 body{
-  background: $background; 
+  background: $background;
 }
 
 // COLOURS
@@ -126,9 +126,13 @@ body{
   h1,h2,h3,h4,h5,h6,p,a{
 		color: $black;
   }
+
+  a{
+    transition: color 0.5s ease;
+  }
   
   a:hover{
-    color: darken($black, 25%);  
+    color: darken($black, 33%);  
   }
 }
 
@@ -138,8 +142,12 @@ body{
 		color: $white;
   }
   
+  a{
+    transition: color 0.5s ease;
+  }
+
   a:hover{
-    color: darken($white, 25%);
+    color: darken($white, 33%);
   }
 }
 
@@ -148,9 +156,13 @@ body{
 	h1,h2,h3,h4,h5,h6,p,a{
 		color: $white;
   }
+
+  a{
+    transition: color 0.5s ease;
+  }
   
   a:hover{
-    color: darken($black, 25%);
+    color: darken($black, 33%);
   }
 }
 
@@ -160,8 +172,12 @@ body{
 		color: #000000;
   }
   
+  a{
+    transition: color 0.5s ease;
+  }
+
   a:hover{
-    color: darken($white, 25%);
+    color: darken($white, 33%);
   }
 }
 
@@ -216,8 +232,12 @@ body{
 	color: $dark-blue;
 }
 
-#thrillworks-text{
+a.thrillworks-text{
     color: $thrillworks;
+
+    &:hover{
+      color: darken($thrillworks, 10%);
+    }
 }
 
 .button{
