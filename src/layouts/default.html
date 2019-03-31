@@ -1,29 +1,18 @@
 {{!-- This is the base layout for your project, and will be used on every page. --}}
 
 <!doctype html>
-<html class="no-js" lang="en">
+<html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{title}}</title>
-    <meta name="description" content="{{description}}" />
-    <link rel="stylesheet" href="{{root}}assets/css/app.css">
-    <link rel="icon" href="{{root}}favicon.ico" />
-    {{#ifpage 'contact'}}
-    <script src='https://www.google.com/recaptcha/api.js'></script>
-    {{/ifpage}}
+    {{> head}}
   </head>
   <body>
-    <!-- Header -->
-    {{> head}}
-
     <!-- Navigation Menu -->
     {{> navigation}}
 
     <!-- Page Content -->
-    {{> body}}
-
+    <main>
+      {{> body}}
+    </main>
     <!-- Footer -->
     {{> footer}}
 
