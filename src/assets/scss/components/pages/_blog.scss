@@ -2,10 +2,6 @@
 #blog{
     position: relative;
     
-    a{
-        text-decoration: none;
-    }
-    
     .blog-entry{
         position: relative;
         float: left;
@@ -33,7 +29,11 @@
             padding-bottom: 0.75em;
         }
         
-        &:hover{
+        a{
+            text-decoration: none;
+        }
+        
+        &:hover, &:focus{
             background: $black;
             
             h4, p{

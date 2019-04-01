@@ -134,7 +134,7 @@
             margin: 0 auto;
             text-decoration: none;
 
-            &:hover{
+            &:hover, &:focus{
                 color: $white;
             }
 
@@ -155,7 +155,7 @@
                 background: linear-gradient(135deg, rgba(147,206,222,1) 0%, rgba(117,189,209,1) 41%, rgba(73,165,191,1) 100%);
                 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#93cede', endColorstr='#49a5bf', GradientType=1 );
 
-                &:hover{
+                &:hover, &:focus{
                     background: rgba(168,235,250,1);
                     background: -moz-linear-gradient(-45deg, rgba(168,235,250,1) 0%, rgba(119,199,219,1) 41%, rgba(62,128,143,1) 100%);
                     background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(168,235,250,1)), color-stop(41%, rgba(119,199,219,1)), color-stop(100%, rgba(62,128,143,1)));
@@ -258,7 +258,7 @@
                     margin-left: 0.75em;
                 }
 
-                &:hover{
+                &:hover, &:focus{
                     -webkit-box-shadow: 0px 0px 3px 0px rgba(0,0,0,1);
                     -moz-box-shadow: 0px 0px 3px 0px rgba(0,0,0,1);
                     box-shadow: 0px 0px 3px 0px rgba(0,0,0,1);
@@ -279,7 +279,7 @@
                 background: linear-gradient(to bottom, rgba(210,255,82,1) 0%, rgba(145,232,66,1) 100%);
                 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d2ff52', endColorstr='#91e842', GradientType=0 );
 
-                &:hover{
+                &:hover, &:focus{
                     background: rgba(145,232,66,1);
                     background: -moz-linear-gradient(top, rgba(145,232,66,1) 0%, rgba(210,255,82,1) 100%);
                     background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(145,232,66,1)), color-stop(100%, rgba(210,255,82,1)));
@@ -316,7 +316,7 @@
                 background: linear-gradient(to bottom, rgba(255,117,107,1) 0%, rgba(222,33,33,1) 100%);
                 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff756b', endColorstr='#de2121', GradientType=0 );
 
-                &:hover{
+                &:hover, &:focus{
                     background: rgba(222,33,33,1);
                     background: -moz-linear-gradient(top, rgba(222,33,33,1) 0%, rgba(255,117,107,1) 100%);
                     background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(222,33,33,1)), color-stop(100%, rgba(255,117,107,1)));
@@ -349,7 +349,7 @@
                 background: linear-gradient(to bottom, rgba(245,245,245,1) 0%, rgba(173,173,173,1) 100%);
                 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5f5f5', endColorstr='#adadad', GradientType=0 );
 
-                &:hover{
+                &:hover, &:focus{
                     background: rgba(173,173,173,1);
                     background: -moz-linear-gradient(top, rgba(173,173,173,1) 0%, rgba(245,245,245,1) 100%);
                     background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(173,173,173,1)), color-stop(100%, rgba(245,245,245,1)));
@@ -382,7 +382,7 @@
                 background: linear-gradient(to bottom, rgba(147,206,222,1) 0%, rgba(117,189,209,1) 41%, rgba(73,165,191,1) 100%);
                 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#93cede', endColorstr='#49a5bf', GradientType=0 );
 
-                &:hover{
+                &:hover, &:focus{
                     background: rgba(73,165,191,1);
                     background: -moz-linear-gradient(top, rgba(73,165,191,1) 0%, rgba(117,189,209,1) 59%, rgba(147,206,222,1) 100%);
                     background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(73,165,191,1)), color-stop(59%, rgba(117,189,209,1)), color-stop(100%, rgba(147,206,222,1)));
@@ -453,7 +453,7 @@
                 text-decoration: underline;
                 color: $black;
 
-                &:hover{
+                &:hover, &:focus{
                     color: $dark-blue;
 
                     h4{

@@ -131,7 +131,7 @@ body{
     transition: color 0.25s ease;
   }
   
-  a:hover{
+  a:hover, a:focus{
     color: darken($black, 33%);  
   }
 }
@@ -146,7 +146,7 @@ body{
     transition: color 0.25s ease;
   }
 
-  a:hover{
+  a:hover, a:focus{
     color: darken($white, 33%);
   }
 }
@@ -161,7 +161,7 @@ body{
     transition: color 0.25s ease;
   }
   
-  a:hover{
+  a:hover, a:focus{
     color: darken($black, 33%);
   }
 }
@@ -176,7 +176,7 @@ body{
     transition: color 0.25s ease;
   }
 
-  a:hover{
+  a:hover, a:focus{
     color: darken($white, 33%);
   }
 }
