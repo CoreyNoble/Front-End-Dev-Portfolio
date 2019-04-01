@@ -63,6 +63,7 @@
       background: -webkit-gradient(linear, to left top, to left bottom, from(#5FA6A6), to(#7FC7C7));
       background: -moz-linear-gradient(to top,  #5FA6A6,  #7FC7C7);
       margin: 1.5em 0 0 0;
+      transition: all 0.33s ease;
 
       &:hover, &:active {
           color: $white;
