@@ -150,7 +150,7 @@
           background: -moz-linear-gradient(to top,  #5FA6A6,  #7FC7C7);
           text-decoration: none;
 
-        &:hover, &:active {
+        &:hover, &:active, &:focus {
           color: $white;
           border-color: $white;
           background: #63B8EE;

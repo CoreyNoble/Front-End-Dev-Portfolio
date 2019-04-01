@@ -8,7 +8,7 @@ footer{
     padding: 1em 0;
     
     @media screen and (max-width: 40em) {
-      border-top: 1px solid white;
+      border-top: 1px solid $white;
     }
     
     .footnote{
@@ -96,6 +96,7 @@ footer{
     h5, p{
       a{
         color: $white;
+        transition: color 0.25s ease;
 
         &:hover, &:focus{
           color: $blue;
@@ -140,19 +141,19 @@ footer{
       a{
         img{
           -webkit-filter: grayscale(100%);
-          -webkit-transition: .15s ease-in-out;
+          -webkit-transition: .25s ease-in-out;
           -moz-filter: grayscale(100%);
-          -moz-transition: .15s ease-in-out;
+          -moz-transition: .25s ease-in-out;
           -o-filter: grayscale(100%);
-          -o-transition: .15s ease-in-out;
+          -o-transition: .25s ease-in-out;
 
           &:hover, &:focus{
             -webkit-filter: grayscale(0%);
-            -webkit-transition: .15s ease-in-out;
+            -webkit-transition: .25s ease-in-out;
             -moz-filter: grayscale(0%);
-            -moz-transition: .15s ease-in-out;
+            -moz-transition: .25s ease-in-out;
             -o-filter: grayscale(0%);
-            -o-transition: .15s ease-in-out;
+            -o-transition: .25s ease-in-out;
           }
         }
       }
