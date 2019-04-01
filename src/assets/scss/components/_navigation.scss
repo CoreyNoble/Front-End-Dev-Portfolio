@@ -32,7 +32,7 @@ nav{
     z-index: 100;
     position: fixed;
     width: 100%;
-    background: #181818;
+    background: $background;
     font-size: 18px;
     font-family: 'Open Sans', sans-serif;
     text-align: center;
@@ -90,22 +90,22 @@ nav{
             }
             
             a{
-                box-sizing:border-box;
-	            -moz-box-sizing:border-box;
-	            -webkit-box-sizing:border-box;
-                
-                @media screen and (max-width : 940px) {
-                  font-weight: 500;
-                }
-                
-                &:hover, &:focus{
+              box-sizing:border-box;
+              -moz-box-sizing:border-box;
+              -webkit-box-sizing:border-box;
+              
+              @media screen and (max-width : 940px) {
+                font-weight: 500;
+              }
+              
+              &:hover, &:focus{
+                  color: $black;
+                  
+                  @media screen and (max-width : 940px) {
                     color: $black;
-                    
-                    @media screen and (max-width : 940px) {
-                      color: $black;
-                      background: $white;
-                    }
-                }
+                    background: $white;
+                  }
+              }
             }
             
             &:last-child{
@@ -117,7 +117,7 @@ nav{
         
         #nav-index{
             @media screen and (max-width : 940px) {
-              background: #181818;
+              background: $background;
             }
             
             a{
@@ -167,7 +167,7 @@ nav{
         
         @media screen and (max-width : 940px) {
           display: block;
-          background-color: #181818;
+          background-color: $background;
           width: 100%;
           position: relative;
           line-height: 36px;
