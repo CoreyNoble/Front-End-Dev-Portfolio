@@ -23,12 +23,11 @@ a {
     text-decoration: underline;
     
     &:hover{
-        color: $grey;
-        text-decoration: none; 
+        text-decoration: none;
     }
   }
 
-p,ul,ol,li,a,a:hover{
+p,ul,ol,li{
   font-family: 'Open Sans', sans-serif;
   font-weight: lighter;
   margin: 0;
