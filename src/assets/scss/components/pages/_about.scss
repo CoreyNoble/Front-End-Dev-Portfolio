@@ -135,7 +135,6 @@
     h3{
         a#resume{
           display: inline-block;
-          font-family: arial;
           color: #000000;
           font-size: 24px;
           padding: 1em 2em;
@@ -149,8 +148,9 @@
           background: -webkit-gradient(linear, to left top, to left bottom, from(#5FA6A6), to(#7FC7C7));
           background: -moz-linear-gradient(to top,  #5FA6A6,  #7FC7C7);
           text-decoration: none;
+          transition: all 0.33s ease;
 
-        &:hover, &:active {
+        &:hover, &:active, &:focus {
           color: $white;
           border-color: $white;
           background: #63B8EE;
