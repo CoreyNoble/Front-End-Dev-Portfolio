@@ -2,10 +2,6 @@
 #blog{
     position: relative;
     
-    a{
-        text-decoration: none;
-    }
-    
     .blog-entry{
         position: relative;
         float: left;
@@ -19,10 +15,10 @@
         -moz-box-shadow: 0.33em 0.33em 0.33em 0 rgba(0,0,0,0.4);
         box-shadow: 0.33em 0.33em 0.33em 0 rgba(0,0,0,0.4);
 
-        -moz-transition: all 0.15s linear;
-        -webkit-transition: all 0.15s linear;
-        -o-transition: all 0.15s linear;
-        transition: all 0.15s linear;
+        -moz-transition: all 0.25s ease;
+        -webkit-transition: all 0.25s ease;
+        -o-transition: all 0.25s ease;
+        transition: all 0.25s ease;
         
         h4, p{
           color: $black;
@@ -33,7 +29,11 @@
             padding-bottom: 0.75em;
         }
         
-        &:hover{
+        a{
+            text-decoration: none;
+        }
+        
+        &:hover, &:focus{
             background: $black;
             
             h4, p{
