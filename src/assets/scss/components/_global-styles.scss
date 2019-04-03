@@ -134,6 +134,15 @@ body{
   a:hover, a:focus{
     color: darken($black, 33%);  
   }
+
+  
+  a.thrillworks-text{
+    color: darken($thrillworks, 17%);
+
+    &:hover{
+      color: darken($thrillworks, 20%);
+    }
+  }
 }
 
 .black{
