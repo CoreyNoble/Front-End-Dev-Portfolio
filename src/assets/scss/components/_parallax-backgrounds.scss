@@ -106,7 +106,7 @@
   }
     
   @media screen and (min-width: 40.063em) and (max-width: 64em) {
-    background: url(../img/aesthetic-geometry-tablet.jpg);
+    background: linear-gradient(rgba(0,0,0,0.15), rgba(0,0,0,0.15)), url(../img/aesthetic-geometry-tablet.jpg);
     height: 24em;
   }
 
