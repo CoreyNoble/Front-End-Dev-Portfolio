@@ -14,12 +14,12 @@
     display: none;
 
     &:hover, &:focus {
-        i{
+        span{
             top: 7px;
         }
     }
 
-    i{
+    span{
         color: $white;
         margin: 0;
         position: relative;
