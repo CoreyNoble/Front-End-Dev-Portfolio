@@ -158,58 +158,9 @@
   }
 }
 
-.resume-cta{
-    a{
-        margin-top: 1em;
-    }
-    
-    h3,.h3{
-        a#resume{
-          display: inline-block;
-          color: #000000;
-          font-size: 24px;
-          padding: 1em 2em;
-          -moz-border-radius: 4px;
-          -webkit-border-radius: 4px;
-          border-radius: 4px;
-          border: 2px solid #000000;
-          background: #468CCF;
-          background: linear-gradient(to top,  #5FA6A6,  #7FC7C7);
-          background: -ms-linear-gradient(to top,  #5FA6A6,  #7FC7C7);
-          background: -webkit-gradient(linear, to left top, to left bottom, from(#5FA6A6), to(#7FC7C7));
-          background: -moz-linear-gradient(to top,  #5FA6A6,  #7FC7C7);
-          text-decoration: none;
-          transition: all 0.15s ease;
-
-        &:hover, &:active, &:focus {
-          color: $white;
-          border-color: $white;
-          background: #63B8EE;
-          background: linear-gradient(to top,  #7FC7C7,  #5FA6A6);
-          background: -ms-linear-gradient(to top,  #7FC7C7,  #5FA6A6);
-          background: -webkit-gradient(linear, to left top, tp left bottom, from(#7FC7C7), to(#5FA6A6));
-          background: -moz-linear-gradient(to top,  #7FC7C7,  #5FA6A6);
-          text-decoration: underline;
-        }
-      }
-    }
-    
-    &.redirect-resume-cta{
-      margin-top: 1.75em;
-    }
-}
-
 @media screen and (max-width: 40em) {
   #about-me{
     padding-bottom: 1em;
-  }
-  .resume-cta{
-    h3,.h3{
-      #resume{
-        font-size: 16px;
-        font-weight: bold;
-      }
-    }
   }
     
   .icon-container{
