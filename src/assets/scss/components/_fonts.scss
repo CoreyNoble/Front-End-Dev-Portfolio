@@ -12,20 +12,60 @@
 // font-family: 'Open Sans', sans-serif;
 
 // FONT + TEXT STYLES
-h1,h2,h3,h4,h5,h6{
+h1,.h1,h2,.h2,h3,.h3,h4,.h4,h5,.h5,h6,.h6{
   font-family: 'Lato', sans-serif;
   font-weight: normal;
   padding: 0;
   margin: 0;
 }
 
-a {
-    text-decoration: underline;
-    
-    &:hover, &:focus{
-        text-decoration: none;
-    }
+h1,.h1{
+  font-size: rem-calc(24);
+
+  @include breakpoint(medium) {
+    font-size: rem-calc(48);
   }
+}
+
+h2,.h2{
+  font-size: rem-calc(20);
+
+  @include breakpoint(medium) {
+    font-size: rem-calc(40);
+  }
+}
+
+h3,.h3{
+  font-size: rem-calc(19);
+
+  @include breakpoint(medium) {
+    font-size: rem-calc(31);
+  }
+}
+
+h4,.h4{
+  font-size: rem-calc(18);
+
+  @include breakpoint(medium) {
+    font-size: rem-calc(25);
+  }
+}
+
+h5,.h5{
+  font-size: rem-calc(17);
+
+  @include breakpoint(medium) {
+    font-size: rem-calc(20);
+  }
+}
+
+h6,.h6{
+  font-size: rem-calc(16);
+
+  @include breakpoint(medium) {
+    font-size: rem-calc(16);
+  }
+}
 
 p,ul,ol,li{
   font-family: 'Open Sans', sans-serif;
@@ -34,12 +74,20 @@ p,ul,ol,li{
   padding: 0;
 }
 
-ol {
-    margin-left: 1.25rem;
+ol, ul {
+    margin-left: 2rem;
 }
 
 p, ul, ol{
-  padding: 0 0 0.33em 0;
+  padding: 0 0 0.33rem 0;
+}
+
+a {
+  text-decoration: underline;
+  
+  &:hover, &:focus{
+      text-decoration: none;
+  }
 }
 
 .black{
@@ -54,19 +102,5 @@ ul{
   li{
     margin-left: 1em;
     margin-bottom: 1em;
-  }
-}
-
-@media screen and (max-width: 40em) {
-  h1{
-    font-size: 2em;
-  }
-
-  h2{
-    font-size: 1.66em;
-  }
-
-  h3{
-    font-size: 1.45em;
   }
 }

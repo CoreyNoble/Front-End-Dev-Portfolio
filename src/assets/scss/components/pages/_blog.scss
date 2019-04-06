@@ -20,7 +20,7 @@
         -o-transition: all 0.25s ease;
         transition: all 0.25s ease;
         
-        h4, p{
+        h3, p{
           color: $black;
           padding-top: 0.33em;
         }
@@ -36,7 +36,7 @@
         &:hover, &:focus{
             background: $black;
             
-            h4, p{
+            h3, p{
                 color: $white;
             }
         }
