@@ -5,9 +5,19 @@
         menu = $('nav ul');
         menuHeight = menu.height();
 
+        var menuOpen = 1;
+
         $(pull).on('click', function (e) {
             e.preventDefault();
             menu.slideToggle();
+
+            if (menuOpen === 1){
+                document.getElementById("nav-home-link").focus();
+                menuOpen = 2;
+            } else {
+                document.getElementById("main").focus();
+                menuOpen = 1;
+            }            
         });
 
         $(window).resize(function () {
