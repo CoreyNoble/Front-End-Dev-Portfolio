@@ -25,7 +25,7 @@ footer{
     padding: 1.5em 1em;
   }
 
-  h5{
+  h5,.h5{
     font-size: 1em;
     color: $grey;
     float: left;
@@ -160,7 +160,7 @@ footer{
     }
 
     .social-text{
-      h5{
+      h5,.h5{
         padding-top: 0.55em;
         font-size: 1em;
         font-weight: bold;
@@ -191,7 +191,7 @@ footer{
       padding-bottom: 0;
     }
 
-    h5{
+    h5,.h5{
       a{
         color: $white;
         float: right;
