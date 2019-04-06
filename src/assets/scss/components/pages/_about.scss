@@ -96,8 +96,13 @@
 }
 
 .about-experience{
-  margin-bottom: 3em;
+  margin-bottom: 2em;
   margin-top: 2em;
+
+  @media screen and (max-width: 40em) {
+    margin-bottom: 1em;
+    margin-top: 1em;
+  }
 
   .job-title{
   }
@@ -122,6 +127,18 @@
     display: block;
     margin: 0 auto;
     margin-top: 1em;
+
+    &.company-logo{
+      margin-top: 0.66rem;
+      padding-right: 1rem;
+      max-width: 11rem;
+      width: 100%;
+
+      @media screen and (max-width: 40em) {
+        margin-top: 0;
+        padding-right: 0;
+      }
+    }
   }
     
   &.no-bottom-space{
@@ -162,7 +179,7 @@
           background: -webkit-gradient(linear, to left top, to left bottom, from(#5FA6A6), to(#7FC7C7));
           background: -moz-linear-gradient(to top,  #5FA6A6,  #7FC7C7);
           text-decoration: none;
-          transition: all 0.33s ease;
+          transition: all 0.15s ease;
 
         &:hover, &:active, &:focus {
           color: $white;

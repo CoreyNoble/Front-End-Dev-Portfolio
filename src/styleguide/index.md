@@ -291,17 +291,17 @@ Form elements in Foundation are styled based on their type attribute rather than
 ```html_example
 <form>
   <div class="row">
-    <div class="large-12 columns">
+    <div class="small-12 column">
       <label>Label</label>
       <input type="text" placeholder="placeholder">
     </div>
   </div>
   <div class="row">
-    <div class="large-6 columns">
+    <div class="small-6 columns">
       <label>Label</label>
       <input type="text" placeholder="placeholder">
     </div>
-    <div class="large-6 columns">
+    <div class="small-6 columns">
       <div class="row collapse">
         <label>Label</label>
         <div class="input-group">
@@ -312,7 +312,7 @@ Form elements in Foundation are styled based on their type attribute rather than
     </div>
   </div>
   <div class="row">
-    <div class="large-12 columns">
+    <div class="small-12 column">
       <label>Select Box</label>
       <select>
         <option value="good">Good</option>
@@ -322,19 +322,19 @@ Form elements in Foundation are styled based on their type attribute rather than
     </div>
   </div>
   <div class="row">
-    <div class="large-6 columns">
+    <div class="small-6 columns">
       <label>Choose Your Favorite</label>
       <input type="radio" name="radio1" value="radio1" id="radio1"><label for="radio1">Red</label>
       <input type="radio" name="radio2" value="radio2" id="radio2"><label for="radio2">Blue</label>
     </div>
-    <div class="large-6 columns">
+    <div class="small-6 columns">
       <label>Check these out</label>
       <input id="checkbox1" type="checkbox"><label for="checkbox1">Checkbox 1</label>
       <input id="checkbox2" type="checkbox"><label for="checkbox2">Checkbox 2</label>
     </div>
   </div>
   <div class="row">
-    <div class="large-12 columns">
+    <div class="small-12 column">
       <label>Textarea Label</label>
       <textarea placeholder="placeholder"></textarea>
     </div>
