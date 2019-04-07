@@ -257,6 +257,23 @@ a.thrillworks-text{
   margin-top: 2em;
 }
 
+.header-no-parallax{
+  padding-top: 0.75rem;
+
+  @media screen and (max-width : 940px) {
+    padding-top: 0;
+  }
+
+  @media screen and (max-width: 40em) {
+    padding-top: 0.75rem;
+  }
+}
+
+/* Spacing */
+.margin-top-1{
+  margin-top: 1rem;
+}
+
 /* Breadcrumbs */
 .crumbs {
   list-style: none;
@@ -265,7 +282,6 @@ a.thrillworks-text{
     display: inline;
   }
 }
-
 
 /* Animations */
 #showcase1, #showcase2, #showcase3{
