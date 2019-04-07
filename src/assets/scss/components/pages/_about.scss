@@ -5,16 +5,16 @@
 /* About Page */
 #about-me{
     .introduction{
-        h1{
+        h1,.h1{
             margin-top: 0;
         }
         
-        h2{
+        h2,.h2{
             margin-bottom: 1em;
         }
     }
     
-    h5{
+    h5,.h5{
         margin-bottom: 1em;
     }
 }
@@ -66,7 +66,7 @@
 #about-intro{
   display: block;
 
-  h2{
+  h2,.h2{
     margin-bottom: 1em;
     text-align: center;
   }
@@ -75,7 +75,7 @@
 #education, #experience{
   margin-bottom: 1em;
     
-  h2{
+  h2,.h2{
     padding: 0;
     margin: 0;
     margin-top: 2em;
@@ -96,8 +96,24 @@
 }
 
 .about-experience{
-  margin-bottom: 3em;
+  margin-bottom: 2em;
   margin-top: 2em;
+
+  @media screen and (max-width: 40em) {
+    margin-bottom: 1em;
+    margin-top: 1em;
+  }
+
+  .job-title{
+  }
+
+  .job-timeframe{
+  }
+
+  .company-name{
+    margin-top: 0.5rem;
+    margin-bottom: 2rem;
+  }
     
   p{
     margin: 0;
@@ -108,6 +124,18 @@
     display: block;
     margin: 0 auto;
     margin-top: 1em;
+
+    &.company-logo{
+      margin-top: 0.66rem;
+      padding-right: 1rem;
+      max-width: 11rem;
+      width: 100%;
+
+      @media screen and (max-width: 40em) {
+        margin-top: 0;
+        padding-right: 0;
+      }
+    }
   }
     
   &.no-bottom-space{
@@ -116,69 +144,20 @@
 }
 
 #about-more-info{
-  h2{
+  h2,.h2{
     display: block;
     text-align: center;
   }
 
-  h3{
+  h3,.h3{
     display: block;
     text-align: center;
   }
-}
-
-.resume-cta{
-    a{
-        margin-top: 1em;
-    }
-    
-    h3{
-        a#resume{
-          display: inline-block;
-          font-family: arial;
-          color: #000000;
-          font-size: 24px;
-          padding: 1em 2em;
-          -moz-border-radius: 4px;
-          -webkit-border-radius: 4px;
-          border-radius: 4px;
-          border: 2px solid #000000;
-          background: #468CCF;
-          background: linear-gradient(to top,  #5FA6A6,  #7FC7C7);
-          background: -ms-linear-gradient(to top,  #5FA6A6,  #7FC7C7);
-          background: -webkit-gradient(linear, to left top, to left bottom, from(#5FA6A6), to(#7FC7C7));
-          background: -moz-linear-gradient(to top,  #5FA6A6,  #7FC7C7);
-          text-decoration: none;
-
-        &:hover, &:active {
-          color: $white;
-          border-color: $white;
-          background: #63B8EE;
-          background: linear-gradient(to top,  #7FC7C7,  #5FA6A6);
-          background: -ms-linear-gradient(to top,  #7FC7C7,  #5FA6A6);
-          background: -webkit-gradient(linear, to left top, tp left bottom, from(#7FC7C7), to(#5FA6A6));
-          background: -moz-linear-gradient(to top,  #7FC7C7,  #5FA6A6);
-          text-decoration: underline;
-        }
-      }
-    }
-    
-    &.redirect-resume-cta{
-      margin-top: 1.75em;
-    }
 }
 
 @media screen and (max-width: 40em) {
   #about-me{
     padding-bottom: 1em;
-  }
-  .resume-cta{
-    h3{
-      #resume{
-        font-size: 16px;
-        font-weight: bold;
-      }
-    }
   }
     
   .icon-container{

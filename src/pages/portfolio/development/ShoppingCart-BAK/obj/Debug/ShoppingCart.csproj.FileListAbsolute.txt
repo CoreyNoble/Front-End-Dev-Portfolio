@@ -1,6 +1,0 @@
-C:\Users\Corey Noble\Desktop\Development\angularjs-cart\ShoppingCart\bin\ShoppingCart.dll.config
-C:\Users\Corey Noble\Desktop\Development\angularjs-cart\ShoppingCart\bin\ShoppingCart.dll
-C:\Users\Corey Noble\Desktop\Development\angularjs-cart\ShoppingCart\bin\ShoppingCart.pdb
-C:\Users\Corey Noble\Desktop\Development\angularjs-cart\ShoppingCart\obj\Debug\ShoppingCart.csprojResolveAssemblyReference.cache
-C:\Users\Corey Noble\Desktop\Development\angularjs-cart\ShoppingCart\obj\Debug\ShoppingCart.dll
-C:\Users\Corey Noble\Desktop\Development\angularjs-cart\ShoppingCart\obj\Debug\ShoppingCart.pdb

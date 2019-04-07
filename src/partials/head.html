@@ -1,23 +1,13 @@
-<link rel="stylesheet" href="http://www.corey-noble.com/assets/css/app.css" />
-<link rel="stylesheet" href="http://www.corey-noble.com/assets/css/animate.css" />
-<script src="http://www.corey-noble.com/bower_components/modernizr/modernizr.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-<script>
-		$(function() {
-			var pull = $('#pull');
-				menu = $('nav ul');
-				menuHeight = menu.height();
-
-			$(pull).on('click', function(e) {
-				e.preventDefault();
-				menu.slideToggle();
-			});
-
-			$(window).resize(function(){
-        		var w = $(window).width();
-        		if(w > 320 && menu.is(':hidden')) {
-        			menu.removeAttr('style');
-        		}
-    		});
-		});
-</script>
+<meta charset="utf-8" />
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{{title}}</title>
+<meta name="description" content="{{description}}" />
+<link rel="stylesheet" href="{{root}}assets/css/app.css">
+<link rel="stylesheet" href="{{root}}assets/css/animate.css" />
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+<link rel="icon" href="{{root}}favicon.ico" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+{{#ifpage 'contact'}}
+<script src='https://www.google.com/recaptcha/api.js'></script>
+{{/ifpage}}

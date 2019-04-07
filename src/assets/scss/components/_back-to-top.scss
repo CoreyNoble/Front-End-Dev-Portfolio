@@ -1,0 +1,35 @@
+#return-to-top {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    background: $background;
+    border: 2px solid $white;
+    width: 3rem;
+    height: 3rem;
+    display: block;
+    text-decoration: none;
+    -webkit-border-radius: 0.33rem;
+    -moz-border-radius: 0.33rem;
+    border-radius: 0.33rem;
+    display: none;
+
+    &:hover, &:focus {
+        span{
+            top: 7px;
+        }
+    }
+
+    span{
+        color: $white;
+        margin: 0;
+        position: relative;
+        left: 0.7rem;
+        top: 0.6rem;
+        font-size: 1.5rem;
+        -webkit-transition: top 0.3s ease;
+        -moz-transition: top 0.3s ease;
+        -ms-transition: top 0.3s ease;
+        -o-transition: top 0.3s ease;
+        transition: top 0.3s ease;
+    }
+}

@@ -1,6 +1,6 @@
 /* Footer */
 footer{
-    background: #181818;
+    background: $background;
     border-top: 1px solid $white;
     -webkit-box-shadow: 0px -10px 17px -8px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px -10px 17px -8px rgba(0,0,0,0.75);
@@ -8,7 +8,7 @@ footer{
     padding: 1em 0;
     
     @media screen and (max-width: 40em) {
-      border-top: 1px solid white;
+      border-top: 1px solid $white;
     }
     
     .footnote{
@@ -25,7 +25,7 @@ footer{
     padding: 1.5em 1em;
   }
 
-  h5{
+  h4,.h4, span{
     font-size: 1em;
     color: $grey;
     float: left;
@@ -93,9 +93,10 @@ footer{
   }
 
   .footnote-contact, .social-media, .footnote-ctas{
-    h5, p{
+    h4,.h4, p{
       a{
         color: $white;
+        transition: color 0.25s ease;
 
         &:hover, &:focus{
           color: $blue;
@@ -140,26 +141,26 @@ footer{
       a{
         img{
           -webkit-filter: grayscale(100%);
-          -webkit-transition: .15s ease-in-out;
+          -webkit-transition: .25s ease-in-out;
           -moz-filter: grayscale(100%);
-          -moz-transition: .15s ease-in-out;
+          -moz-transition: .25s ease-in-out;
           -o-filter: grayscale(100%);
-          -o-transition: .15s ease-in-out;
+          -o-transition: .25s ease-in-out;
 
           &:hover, &:focus{
             -webkit-filter: grayscale(0%);
-            -webkit-transition: .15s ease-in-out;
+            -webkit-transition: .25s ease-in-out;
             -moz-filter: grayscale(0%);
-            -moz-transition: .15s ease-in-out;
+            -moz-transition: .25s ease-in-out;
             -o-filter: grayscale(0%);
-            -o-transition: .15s ease-in-out;
+            -o-transition: .25s ease-in-out;
           }
         }
       }
     }
 
     .social-text{
-      h5{
+      h4,.h4{
         padding-top: 0.55em;
         font-size: 1em;
         font-weight: bold;
@@ -190,7 +191,7 @@ footer{
       padding-bottom: 0;
     }
 
-    h5{
+    h4,.h4{
       a{
         color: $white;
         float: right;

@@ -1,0 +1,60 @@
+---
+title: Contact | Corey Noble
+---
+
+<!-- CONTACT HEADER -->
+<div id="parallax-hero-2" class="parallax-large" data-stellar-background-ratio="0.4">
+  <h1>Contact Me</h1>
+</div>
+
+<!-- CONTACT MESSAGE -->
+<div class="section black">
+  <div class="row">
+    <div id="contact-intro" class="small-12 column">
+      <h2 id="no-captcha">I look forward to hearing from&nbsp;you!</h2>
+      <p class="h5">Thank you for showing interest in me as a developer. I am excited to start working with you! Please fill out the form
+        below so we can begin a&nbsp;conversation.</p>
+    </div>
+
+    <!-- CONTACT FORM -->
+    <div class="contact-form small-12 column">
+      <form method="post" action="{{root}}mailsend.php" method="post">
+        <div class="row fadeIn wow">
+          <label for="firstName">
+            <h3 class="h5">First Name</h3>
+            <input type="text" name="firstName" maxlength="50" required />
+          </label>
+
+          <label for="lastName">
+            <h3 class="h5">Last Name</h3>
+            <input type="text" name="lastName" maxlength="50" required />
+          </label>
+
+          <label for="email">
+            <h3 class="h5">Email Address</h3>
+            <input type="text" name="email" maxlength="80" required />
+          </label>
+
+          <label for="company">
+            <h3 class="h5">Company</h3>
+            <input type="text" name="company" maxlength="80" required />
+          </label>
+
+          <label for="inquiry">
+            <h3 class="h5">Inquiry</h3>
+            <textarea class="last" name="inquiry" rows="5" cols="35" maxlength="3000" required></textarea>
+          </label>
+
+          <div class="contact-ctas no-padding small-12 medium-8 columns">
+            <div class="g-recaptcha" data-sitekey="6Lcj8wYUAAAAAG9fl2DtDnsqTjfyNFwhL38TwGao"></div>
+          </div>
+
+          <div class="contact-ctas no-padding small-12 medium-4 columns">
+            <input type="submit" class="button submit-cta" value="Submit" />
+          </div>
+        </div>
+      </form>
+    </div>
+    
+  </div>
+</div>

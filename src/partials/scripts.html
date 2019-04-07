@@ -1,5 +1,32 @@
-<script src="http://www.corey-noble.com/bower_components/jquery/dist/jquery.min.js"></script>
-<script src="http://www.corey-noble.com/bower_components/foundation/js/foundation.min.js"></script>
-<script src="http://www.corey-noble.com/assets/js/app.js"></script>
-<script src="http://www.corey-noble.com/assets/js/wow.js"></script>
-<script src="http://www.corey-noble.com/assets/js/main.js"></script>
+<script>
+    // Navigation
+    $(function () {
+        var pull = $('#pull');
+        menu = $('nav ul');
+        menuHeight = menu.height();
+
+        var menuOpen = 1;
+
+        $(pull).on('click', function (e) {
+            e.preventDefault();
+            menu.slideToggle();
+
+            if (menuOpen === 1){
+                document.getElementById("nav-home-link").focus();
+                menuOpen = 2;
+            } else {
+                document.getElementById("main").focus();
+                menuOpen = 1;
+            }            
+        });
+
+        $(window).resize(function () {
+            var w = $(window).width();
+            if (w > 320 && menu.is(':hidden')) {
+                menu.removeAttr('style');
+            }
+        });
+    });
+</script>
+<script src="{{root}}assets/js/app.js"></script>
+<script src="{{root}}assets/js/wow.js"></script>

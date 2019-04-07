@@ -10,17 +10,17 @@
         }
         if(!$captcha){
           // REDIRECT TO CONFIRM
-          header('Location:contact.php?captcha=none#no-captcha');
+          header('Location:contact.html?captcha=none#no-captcha');
           exit;
         }
         $response=file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=6Lcj8wYUAAAAAJzXlZ3l8udJWF1HK9-XA-lfR0YB&response=".$captcha."&remoteip=".$_SERVER['REMOTE_ADDR']);
         if($response.success==false)
         {
-          header('Location:contact.php?captcha=failed#no-captcha');
+          header('Location:contact.html?captcha=failed#no-captcha');
         }else
         {
           // MESSAGE PROPERTIES
-          $to = 'coreynoble@hotmail.ca, corey@corey-noble.com';
+          $to = 'coreynoble@hotmail.ca';
           $subject = 'Contact Inquiry - corey-noble.com';
 
           // USER DATA VARIABLES
@@ -36,14 +36,15 @@
           "\n" . "\n" . "Contact Inquiry - corey-noble.com" .
           "\n" . "\n" . "First Name: " . "\n" . $firstName .
           "\n" . "\n" . "Last Name: " . "\n" . $lastName .
-          "\n" . "\n" . "Email: " . "\n" . $email .
+          "\n" . "\n" . "Email Address: " . "\n" . $email .
           "\n" . "\n" . "Company: " . "\n" . $company .
-          "\n" . "\n" . "Inquiry: " . "\n" . $inquiry;
+          "\n" . "\n" . "Inquiry: " . "\n" . $inquiry .
+          "\r\n". "\r\n". "\r\n";
 
           // SEND
           $sendrtn =  mail($to, $subject, $message, "From:" . $email);
 
           // REDIRECT TO CONFIRM
-          header('Location:confirm.php');
+          header('Location:confirm.html');
         }
 ?>

@@ -1,37 +1,33 @@
 <!-- Shopping Cart -->
-<div class="row">
-    <div class="small-12 columns">
-        <h2>Thanks for shopping at the Angular Store</h2>
+<div class="row cart-page">
+    <div class="small-12 columns cart-intro">
+        <h3>Thanks for shopping at the Angular Store</h3>
         <p>This is your shopping cart. Here you can edit the items, go back to the store, clear the cart, or check out.</p>
     </div>
 </div>
 
 <div class="row cart-page">
     <!-- Checkout List -->
-    <div class="small-12 medium-8 columns">
+    <div class="small-12 large-8 columns">
         <!-- Top Row -->
-        <div class="row">
+        <div class="row cart-total">
             <!-- Item -->
-            <div class="small-2 columns">
+            <div class="small-3 columns">
                 <p><strong>Item</strong></p>
             </div>
             <!-- Quantity -->
-            <div class="small-6 columns">
+            <div class="small-5 columns">
                 <p><strong>Quantity</strong></p>
             </div>
             <!-- Price -->
-            <div class="small-3 columns">
+            <div class="small-4 columns">
                 <p><strong>Price</strong></p>
-            </div>
-            <!-- Remove Item -->
-            <div class="small-2 columns">
-                <!-- Empty column -->
             </div>
         </div>
         
         <!-- No Item (Hidden) Row -->
         <div class="row store-item" ng-hide="cart.getTotalCount() > 0">
-            <div class="small-12 columns">
+            <div class="small-12 column">
                 <p>Your cart is empty.</p>
             </div>
         </div>
@@ -39,24 +35,22 @@
         <!-- Item Row -->
         <div class="row store-item" ng-repeat="item in cart.items | orderBy:'name'">
             <!-- Item -->
-            <div class="small-2 columns item-thumbnail">
+            <div class="small-3 columns item-thumbnail">
                 <img ng-src="img/products/{{item.sku}}.png" alt="{{item.name}}" />
                 <h5>{{item.name}}</h5>
             </div>
             <!-- Quantity -->
-            <div class="small-6 columns item-quantity">
+            <div class="small-5 columns item-quantity">
+                <!-- use type=tel instead of  to prevent spinners -->
                 <div class="row">
-                    <div class="small-12 medium-6 columns input-append">
-                        <!-- use type=tel instead of  to prevent spinners -->
+                    <div class="small-12 column">
                         <input class="span3 text-center" type="tel" ng-model="item.quantity" ng-change="cart.saveItems()" />
                     </div>
-                    <div class="small-12 medium-3 columns">
+                    <div class="small-12 column">
                         <a class="cart-button add-to-cart" ng-disabled="item.quantity >= 1000" ng-click="cart.addItem(item.sku, item.name, item.price, +1)"><img src="img/plus-icon.png"/></a>
-                    </div>
-                    <div class="small-12 medium-3 columns">
                         <a class="cart-button remove-from-cart" ng-disabled="item.quantity <= 1" ng-click="cart.addItem(item.sku, item.name, item.price, -1)"><img src="img/minus-icon.png"/></a>
                     </div>
-                  </div>
+                </div>
             </div>
             <!-- Price -->
             <div class="small-3 columns">
@@ -71,67 +65,49 @@
         </div>
         
         <!-- Bottom Row -->
-        <div class="row">
+        <div class="row cart-total">
             <!-- Item -->
-            <div class="small-2 columns">
+            <div class="small-3 columns">
                 <p><strong>Total</strong></p>
             </div>
             <!-- Quantity -->
-            <div class="small-6 columns">
-                <p><strong>{{cart.getTotalCount()}}</strong></p>
+            <div class="small-5 columns">
+                <p><strong>Units: <u>{{cart.getTotalCount()}}</u></strong></p>
             </div>
             <!-- Price -->
-            <div class="small-3 columns">
-                <p><strong>{{cart.getTotalPrice() | currency}}</strong></p>
-            </div>
-            <!-- Remove Item -->
-            <div class="small-2 columns">
-                <!-- Empty column -->
+            <div class="small-4 columns">
+                <p><strong>Cost: <u>{{cart.getTotalPrice() | currency}}</strong></p>
             </div>
         </div>
     </div>
     
     <!-- CTAs -->
-    <div class="small-12 medium-4 columns">
-            <a class="cart-button back-to-store" onclick="window.location.href='default.htm'">
-                <img src="img/back-icon.png"/> Back to store
-            </a>
-            <a class="cart-button remove-from-cart" ng-click="cart.clearItems()" 
+    <div class="ctas small-12 large-4 columns">
+        <!-- Bottom Row -->
+        <div class="row">
+            <!-- Item -->
+            <div class="total small-12 column">
+                <p><strong>Total: <u>{{cart.getTotalPrice() | currency}}</u></strong></p>
+            </div>
+        </div>
+        <!-- Navigation CTAs -->
+        <a class="cart-button back-to-store" onclick="window.location.href='default.htm'">
+            <img src="img/back-icon.png"/> Back to store
+        </a>
+        <a class="cart-button remove-from-cart" ng-click="cart.clearItems()" 
+            ng-disabled="cart.getTotalCount() < 1">
+            <img src="img/trash-icon.png"/> Clear cart
+        </a>
+        <hr>
+        <!-- Purchase CTAs -->
+        <a class="cart-button check-out-cart" ng-click="cart.checkout('PayPal')"
                 ng-disabled="cart.getTotalCount() < 1">
-                <img src="img/trash-icon.png"/> Clear cart
-            </a>
-            <a class="cart-button check-out-cart" ng-click="cart.checkout('PayPal')"
-                    ng-disabled="cart.getTotalCount() < 1">
-                <img src="img/checkmark-icon.png"/> Check out using PayPal
-            </a>
-            <a class="cart-button check-out-cart" ng-click="cart.checkout('Google')" 
-                    ng-disabled="cart.getTotalCount() < 1">
-                <img src="img/checkmark-icon.png"/> Check out using Google
-            </a>
-            <a class="cart-button check-out-cart" ng-click="cart.checkout('Stripe')" 
-                    ng-disabled="cart.getTotalCount() < 1">
-                <img src="img/checkmark-icon.png"/> check out using Stripe
-            </a>
-        
-            <!-- Stripe needs a form to post to -->
-            <form class="form-stripe"></form>
-
-            <br /><br />
-
-            <p class="text-info">
-                <button 
-                    class="btn btn-block btn-link"
-                    ng-click="cart.checkout('PayPal')"
-                    ng-disabled="cart.getTotalCount() < 1" >
-                    <img src="https://www.paypal.com/en_US/i/btn/btn_xpressCheckout.gif" alt="checkout PayPal"/>
-                </button>    
-                <button 
-                    class="btn btn-block btn-link" 
-                    ng-click="cart.checkout('Google')" 
-                    ng-disabled="cart.getTotalCount() < 1" >
-                    <img src="https://checkout.google.com/buttons/checkout.gif?w=168&h=44&style=white&variant=text" alt="checkoutGoogle"/>
-                </button>    
-            </p>
+            <img src="img/checkmark-icon.png"/> Check out using PayPal
+        </a>
+        <a class="cart-button check-out-cart" ng-click="cart.checkout('Google')" 
+                ng-disabled="cart.getTotalCount() < 1">
+            <img src="img/checkmark-icon.png"/> Check out using Google
+        </a>
     </div>
 </div>
 <!-- /Shopping Cart -->
