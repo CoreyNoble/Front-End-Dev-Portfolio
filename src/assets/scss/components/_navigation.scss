@@ -138,6 +138,13 @@ nav{
             background: $white; 
           }
         }
+
+        &#nav-home-link{
+          &:focus{
+            background-color: darken($background, 7%);
+            color: $white;
+          }
+        }
       }
     }
   }
@@ -167,6 +174,7 @@ nav{
   
   a#pull{
     display: none;
+    text-decoration: none;
     
     @media screen and (max-width : 940px) {
       display: block;
@@ -184,16 +192,24 @@ nav{
       }
     }
 
+    &:focus{
+      background-color: darken($background, 7%);
+      border-bottom: none;
+      text-decoration: none;
+    }
+
     &:after{
       @media screen and (max-width : 940px) {
         content:"";
         background: url('../img/nav-icon.png') no-repeat;
-        width: 30px;
-        height: 30px;
+        width: 20px;
+        height: 20px;
         display: inline-block;
         position: absolute;
         right: 15px;
         top: 8px;
+        border-bottom: none;
+        text-decoration: none;
       }
     }
   }
