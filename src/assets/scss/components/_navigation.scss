@@ -16,9 +16,9 @@ a.skip-main:focus, a.skip-main:active {
   right: -50%;
   height: auto;
   width: 100%;
-  max-width: 28rem;
+  max-width: 28em;
   display: block;
-  margin: 0.2rem auto;
+  margin: 0.2em auto;
   padding: 5px;
   border-radius: 5px;
   border: 2px solid $white;
@@ -34,7 +34,7 @@ nav{
   position: fixed;
   width: 100%;
   background: $background;
-  font-size: 18px;
+  font-size: rem-calc(18);
   font-family: 'Open Sans', sans-serif;
   text-align: center;
   -webkit-box-shadow: 0px 2px 20px 0px rgba(0,0,0,0.66);
@@ -74,11 +74,11 @@ nav{
         float: left;
         margin-left: 1em;
         font-weight: bold;
-        font-size: 22px;
+        font-size: rem-calc(22);
         
         @media screen and (max-width : 940px) {
           margin-left: 0;
-          font-size: 22px;
+          font-size: rem-calc(22);
           font-weight: bold;
         }
       }

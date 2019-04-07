@@ -20,7 +20,8 @@ h1,.h1,h2,.h2,h3,.h3,h4,.h4,h5,.h5,h6,.h6{
 }
 
 h1,.h1{
-  font-size: rem-calc(24);
+  font-size: rem-calc(32);
+  line-height: 1.2;
 
   @include breakpoint(medium) {
     font-size: rem-calc(48);
@@ -28,7 +29,8 @@ h1,.h1{
 }
 
 h2,.h2{
-  font-size: rem-calc(20);
+  font-size: rem-calc(28);
+  line-height: 1.2;
 
   @include breakpoint(medium) {
     font-size: rem-calc(40);
@@ -36,7 +38,8 @@ h2,.h2{
 }
 
 h3,.h3{
-  font-size: rem-calc(19);
+  font-size: rem-calc(24);
+  line-height: 1.2;
 
   @include breakpoint(medium) {
     font-size: rem-calc(31);
@@ -44,7 +47,7 @@ h3,.h3{
 }
 
 h4,.h4{
-  font-size: rem-calc(18);
+  font-size: rem-calc(20);
 
   @include breakpoint(medium) {
     font-size: rem-calc(25);
@@ -52,7 +55,7 @@ h4,.h4{
 }
 
 h5,.h5{
-  font-size: rem-calc(17);
+  font-size: rem-calc(18);
 
   @include breakpoint(medium) {
     font-size: rem-calc(20);
