@@ -17,6 +17,10 @@
     h5,.h5{
         margin-bottom: 1em;
     }
+
+    @media screen and (max-width: 40em) {
+      padding-bottom: 1em;
+    }
 }
 
 .icon-container{
@@ -37,6 +41,14 @@
   -webkit-box-shadow: 0.15em 0.15em 0.15em 0 rgba(0,0,0,0.4);
   -moz-box-shadow: 0.15em 0.15em 0.15em 0 rgba(0,0,0,0.4);
   box-shadow: 0.15em 0.15em 0.15em 0 rgba(0,0,0,0.4);
+
+  @media screen and (max-width: 40em) {
+    max-height: 18.5em;
+  }
+
+  h3{
+    padding: 0.5em;
+  }
 }
 
 .icon {
@@ -44,6 +56,8 @@
   margin: 1em auto;
 
   img{
+    display: block;
+    margin: 0 auto;
     padding: 1em;
     border: 1px solid $dark-blue;
     background: $blue;
@@ -111,8 +125,8 @@
   }
 
   .company-name{
-    margin-top: 0.5rem;
-    margin-bottom: 2rem;
+    margin-top: 0.5em;
+    margin-bottom: 2em;
   }
     
   p{
@@ -126,9 +140,9 @@
     margin-top: 1em;
 
     &.company-logo{
-      margin-top: 0.66rem;
-      padding-right: 1rem;
-      max-width: 11rem;
+      margin-top: 0.66em;
+      padding-right: 1em;
+      max-width: 11em;
       width: 100%;
 
       @media screen and (max-width: 40em) {
@@ -152,15 +166,5 @@
   h3,.h3{
     display: block;
     text-align: center;
-  }
-}
-
-@media screen and (max-width: 40em) {
-  #about-me{
-    padding-bottom: 1em;
-  }
-    
-  .icon-container{
-    max-height: 18.5em;
   }
 }

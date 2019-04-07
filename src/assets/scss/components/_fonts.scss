@@ -37,6 +37,7 @@ h2,.h2{
 
 h3,.h3{
   font-size: rem-calc(19);
+  line-height: 1.2;
 
   @include breakpoint(medium) {
     font-size: rem-calc(31);

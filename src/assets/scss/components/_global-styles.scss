@@ -19,7 +19,11 @@
 
 .section{
 	width: 100%;
-	padding: 4em 1em;
+  padding: 4em 1em;
+  
+  @media screen and (max-width: 40em) {
+    padding: 2.5em 1em;
+  }
 }
 
 div{
@@ -83,7 +87,7 @@ hr{
 }
 
 .bottom-space-1{
-  padding-bottom: 1rem;
+  padding-bottom: 1em;
 }
 
 .hide-mobile{
