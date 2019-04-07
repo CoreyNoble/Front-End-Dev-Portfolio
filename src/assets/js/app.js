@@ -13,7 +13,7 @@ $(document).foundation();
 
 // Back to Top
 $(window).scroll(function() {
-    if ($(this).scrollTop() >= 1200) {       // If page is scrolled more than 50px
+    if ($(this).scrollTop() >= 1200) {       // If page is scrolled more than 1200px
         $('#return-to-top').fadeIn(800);    // Fade in the arrow
     } else {
         $('#return-to-top').fadeOut(800);   // Else fade out the arrow
@@ -56,4 +56,6 @@ $(function () {
 });
 
 // Initialize AOS
-AOS.init();
+AOS.init({
+    duration: 1000
+});
