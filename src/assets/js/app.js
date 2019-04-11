@@ -29,8 +29,8 @@ $('#return-to-top').click(function() {      // When arrow is clicked
 // Navigation
 $(function () {
     var pull = $('#pull');
-    menu = $('nav ul');
-    menuHeight = menu.height();
+    var menu = $('nav ul');
+    var menuHeight = menu.height();
 
     var menuOpen = 1;
 

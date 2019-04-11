@@ -44,7 +44,7 @@
   }
     
   h1,.h1{
-    padding-top: 0.75em;
+    padding-top: 0.5em;
       
     @media screen and (max-width: 40em) {
       font-size: 2em;
@@ -99,6 +99,7 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  height: 31em;
   width: 100%;
     
   @media screen and (max-width: 40em) {
@@ -202,6 +203,7 @@
                   text-align: center;
                   -webkit-animation-delay: 1.33s; /* Chrome, Safari, Opera */
                   animation-delay: 1.33s;
+                  padding-top: 0.75em;
                     
                   @media screen and (max-width: 40em) {
                     font-size: 2.5em;
@@ -238,6 +240,15 @@
 #parallax-hero-3 {
   background: url(../img/leather-tile.jpg) repeat;
   background-attachment: fixed;
+  height: 31em;
+      
+  @media screen and (max-width: 40em) {
+    height: 15.5em;
+  }
+    
+  @media screen and (min-width: 40.063em) and (max-width: 64em) {
+    height: 22.5em;
+  }
 }
 
 // TORONTO HERO
@@ -245,21 +256,33 @@
   background: url(/assets/img/toronto-city-scape.jpg);
   background-attachment: fixed;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: 0 -18em;
+  background-position-x: center;
   background-size: cover;
   width: 100%;
-    
+  height: 31em;
+
   @media screen and (max-width: 40em) {
     background: url(/assets/img/toronto-city-scape-mobile.jpg);
+    height: 15.5em;
+    background-position: 0 -2em;
+    background-position-x: center;
   }
     
   @media screen and (min-width: 40.063em) and (max-width: 64em) {
     background: url(/assets/img/toronto-city-scape-tablet.jpg);
+    height: 22.5em;
+    background-position: 0 -6em;
+    background-position-x: center;
+  }
+
+  @media screen and (min-width: 64em) and (max-width: 98em) {
+    background-position: 0 -9.5em;
+    background-position-x: center;
   }
     
   h1,.h1{
     background-color: rgba(0, 0, 0, 0.5);
-    padding: 1em;
   }
 }
 
