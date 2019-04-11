@@ -16,9 +16,9 @@ a.skip-main:focus, a.skip-main:active {
   right: -50%;
   height: auto;
   width: 100%;
-  max-width: 28rem;
+  max-width: 28em;
   display: block;
-  margin: 0.2rem auto;
+  margin: 0.2em auto;
   padding: 5px;
   border-radius: 5px;
   border: 2px solid $white;
@@ -34,7 +34,7 @@ nav{
   position: fixed;
   width: 100%;
   background: $background;
-  font-size: 18px;
+  font-size: rem-calc(18);
   font-family: 'Open Sans', sans-serif;
   text-align: center;
   -webkit-box-shadow: 0px 2px 20px 0px rgba(0,0,0,0.66);
@@ -51,6 +51,7 @@ nav{
   }
   
   ul{
+    margin-left: 0;
     list-style: none;
     padding: 0;
       
@@ -73,11 +74,11 @@ nav{
         float: left;
         margin-left: 1em;
         font-weight: bold;
-        font-size: 22px;
+        font-size: rem-calc(22);
         
         @media screen and (max-width : 940px) {
           margin-left: 0;
-          font-size: 22px;
+          font-size: rem-calc(22);
           font-weight: bold;
         }
       }
@@ -137,6 +138,13 @@ nav{
             background: $white; 
           }
         }
+
+        &#nav-home-link{
+          &:focus{
+            background-color: darken($background, 7%);
+            color: $white;
+          }
+        }
       }
     }
   }
@@ -166,6 +174,7 @@ nav{
   
   a#pull{
     display: none;
+    text-decoration: none;
     
     @media screen and (max-width : 940px) {
       display: block;
@@ -183,16 +192,24 @@ nav{
       }
     }
 
+    &:focus{
+      background-color: darken($background, 7%);
+      border-bottom: none;
+      text-decoration: none;
+    }
+
     &:after{
       @media screen and (max-width : 940px) {
         content:"";
         background: url('../img/nav-icon.png') no-repeat;
-        width: 30px;
-        height: 30px;
+        width: 20px;
+        height: 20px;
         display: inline-block;
         position: absolute;
         right: 15px;
         top: 8px;
+        border-bottom: none;
+        text-decoration: none;
       }
     }
   }

@@ -8,14 +8,14 @@
 @include foundation-grid;
 // @include foundation-flex-grid;
 @include foundation-typography;
-@include foundation-button;
+// @include foundation-button;
 @include foundation-forms;
 // @include foundation-range-input;
 // @include foundation-accordion;
 // @include foundation-accordion-menu;
 // @include foundation-badge;
 // @include foundation-breadcrumbs;
-@include foundation-button-group;
+// @include foundation-button-group;
 // @include foundation-callout;
 // @include foundation-close-button;
 // @include foundation-menu;
@@ -46,9 +46,6 @@
 // @include foundation-float-classes;
 // @include foundation-flex-classes;
 
-@include motion-ui-transitions;
-@include motion-ui-animations;
-
 // Custom SCSS
 @import "components/variables.scss";
 @import "components/fonts.scss";
@@ -57,8 +54,8 @@
 @import "components/navigation.scss";
 @import "components/footer.scss";
 @import "components/back-to-top.scss";
-@import "components/animations.scss";
 @import "components/parallax-backgrounds.scss";
+@import "components/aos.scss";
 
 // Pages
 @import "components/pages/index.scss";
