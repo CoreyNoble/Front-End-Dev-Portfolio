@@ -19,12 +19,12 @@
             padding: 0;
 
             h3,.h3{
-                font-size: 18px;
+                font-size: rem-calc(18);
                 margin-top: 1em;
             }
 
             p{
-                font-size: 14px;
+                font-size: rem-calc(14);
             }
         }
 
@@ -238,7 +238,7 @@
                 color: $black;
                 margin: 0.25em 0;
                 width: 100%;
-                font-size: 16px;
+                font-size: rem-calc(16);
                 font-weight: bold;
                 text-decoration: none;
                 line-height: 1;
