@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /mailsend.php
+Noindex: /mailsend.php
+Disallow: /confirm.html
+Noindex: /confirm.html
+Sitemap: https://corey-noble.com/sitemap.xml
