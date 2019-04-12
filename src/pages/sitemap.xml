@@ -2,44 +2,58 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"> 
   <url>
     <loc>https://corey-noble.com</loc>
+    <priority>1</priority>
   </url>
   <url>
     <loc>https://corey-noble.com/portfolio.html</loc>
+    <priority>1</priority>
   </url>
   <url>
     <loc>https://corey-noble.com/portfolio/cms/ctkr-music.html</loc>
+    <priority>0.9</priority>
   </url>
   <url>
     <loc>https://corey-noble.com/portfolio/cms/right-choice.html</loc>
+    <priority>0.9</priority>
   </url>
   <url>
     <loc>https://corey-noble.com/portfolio/cms/skillset.html</loc>
+    <priority>0.9</priority>
   </url>
   <url>
     <loc>https://corey-noble.com/about.html</loc>
+    <priority>1</priority>
   </url>
   <url>
     <loc>https://corey-noble.com/blog.html</loc>
+    <priority>1</priority>
   </url>
   <url>
     <loc>https://corey-noble.com/blog/blog-introduction.html</loc>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://corey-noble.com/blog/aspirations.html</loc>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://corey-noble.com/blog/web-production-specialist.html</loc>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://corey-noble.com/blog/search-engine-optimisation.html</loc>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://corey-noble.com/blog/web-content-accessibility-guidelines.html</loc>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://corey-noble.com/contact.html</loc>
+    <priority>1</priority>
   </url>
   <url>
     <loc>https://corey-noble.com/site-index.html</loc>
+    <priority>0.5</priority>
   </url>
 </urlset>
