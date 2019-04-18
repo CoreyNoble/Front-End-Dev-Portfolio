@@ -1,11 +1,22 @@
 <?php
 
         $email;$comment;$captcha;
+        if(isset($_POST['firstName'])){
+          $firstName=$_POST['firstName'];
+        }
+        if(isset($_POST['lastName'])){
+          $lastName=$_POST['lastName'];
+        }
         if(isset($_POST['email'])){
           $email=$_POST['email'];
-        }if(isset($_POST['comment'])){
-          $email=$_POST['comment'];
-        }if(isset($_POST['g-recaptcha-response'])){
+        }
+        if(isset($_POST['company'])){
+          $company=$_POST['company'];
+        }
+        if(isset($_POST['inquiry'])){
+          $inquiry=$_POST['inquiry'];
+        }
+        if(isset($_POST['g-recaptcha-response'])){
           $captcha=$_POST['g-recaptcha-response'];
         }
         if(!$captcha){
@@ -30,7 +41,6 @@
           $company = $_REQUEST['company'];
           $inquiry = $_REQUEST['inquiry'];
 
-
           // MESSAGE STRING
           $message =
           "\n" . "\n" . "Contact Inquiry - corey-noble.com" .
@@ -42,7 +52,7 @@
           "\r\n". "\r\n". "\r\n";
 
           // SEND
-          $sendrtn =  mail($to, $subject, $message, "From:" . $email);
+          mail($to, $subject, $message);
 
           // REDIRECT TO CONFIRM
           header('Location:confirm.html');
