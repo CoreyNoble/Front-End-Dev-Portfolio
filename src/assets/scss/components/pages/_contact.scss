@@ -5,12 +5,13 @@
     h5,.h5{
         margin-top: 1em;
     }
-    
-    .form-validation-error{
-        color: red;
-        font-weight: bold;
-        margin-top: 1em;
-        text-decoration: underline;
+
+    .captcha-error{
+      color: $error; 
+      font-weight: bold; 
+      margin-top: 1.5em;
+      border: 2px solid $error;
+      padding: 0.5rem 1rem;
     }
 }
 
@@ -105,21 +106,21 @@
     }
   }
     
-    &.confirmation{
-      padding-bottom: 17em;
-        
-      h2,.h2, h4,.h4, p{
-        color: $white;
-      }
-        
-      h2,.h2{
-        padding-bottom: 1em;
-        padding-top: 0.2em;
-      }
-        
-      @media screen and (max-width: 40em) {
-        padding-bottom: 0.5em;
-        margin-bottom: 1em;
-      }
+  &.confirmation{
+    padding-bottom: 17em;
+      
+    h2,.h2, h4,.h4, p{
+      color: $white;
     }
+      
+    h2,.h2{
+      padding-bottom: 1em;
+      padding-top: 0.2em;
+    }
+      
+    @media screen and (max-width: 40em) {
+      padding-bottom: 0.5em;
+      margin-bottom: 1em;
+    }
+  }
 }
