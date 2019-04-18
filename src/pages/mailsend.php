@@ -21,13 +21,13 @@
         }
         if(!$captcha){
           // REDIRECT TO CONFIRM
-          header('Location:contact.html?captcha=none');
+          header('Location:contact.html?captcha=none&#no-captcha');
           exit;
         }
         $response=file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=6Lcj8wYUAAAAAJzXlZ3l8udJWF1HK9-XA-lfR0YB&response=".$captcha."&remoteip=".$_SERVER['REMOTE_ADDR']);
         if($response.success==false)
         {
-          header('Location:contact.html?captcha=failed');
+          header('Location:contact.html?captcha=failed&#no-captcha');
         }else
         {
           // MESSAGE PROPERTIES
