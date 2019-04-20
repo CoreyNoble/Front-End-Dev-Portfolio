@@ -199,7 +199,15 @@ body{
 }
 
 .blue{
-	background-color: $blue;
+  background-color: $blue;
+  
+  a{
+    transition: color 0.25s ease;
+  }
+
+  a:hover, a:focus{
+    color: darken($black, 33%);
+  }
 }
 
 .blue-gradient{
