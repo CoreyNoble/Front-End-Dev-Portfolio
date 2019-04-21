@@ -100,5 +100,18 @@
     &.no-bottom-space{
       margin-bottom: 0;
     }
+
+    ul{
+      margin-top: 1rem;
+      margin-left: 0;
+
+      li{
+        line-height: 1.2;
+
+        &:last-child{
+          margin-bottom: 0;
+        }
+      }
+    }
   }
 }
