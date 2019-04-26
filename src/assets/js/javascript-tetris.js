@@ -105,7 +105,7 @@ function drawMatrix(matrix, offset) {
 }
 
 function draw() {
-    context.fillStyle = '#000';
+    context.fillStyle = '#262626';
     context.fillRect(0, 0, canvas.width, canvas.height);
 
     drawMatrix(arena, {x: 0, y: 0});
@@ -227,13 +227,13 @@ document.addEventListener('keydown', event => {
 
 const colors = [
     null,
-    '#FF0D72',
-    '#0DC2FF',
-    '#0DFF72',
-    '#F538FF',
-    '#FF8E0D',
-    '#FFE138',
-    '#3877FF',
+    '#6A98CC',
+    '#6FBBD6',
+    '#6DBFBF',
+    '#6FD6B9',
+    '#6ACC95',
+    '#367373',
+    '#ABFFFF',
 ];
 
 const arena = createMatrix(12, 20);
