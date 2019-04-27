@@ -22,24 +22,39 @@ function arenaSweep() {
     }
 }
 
+// Checks to see if the arena and the player collide
 function collide(arena, player) {
+    // Player matrix
     const m = player.matrix;
+    // Player position
     const o = player.pos;
+    
+    // Iterating over the player
+    // Are you vertically inside the player matrix?
     for (let y = 0; y < m.length; ++y) {
+        // Are you horizontally inside the player matrix?
         for (let x = 0; x < m[y].length; ++x) {
+            // If the matrix of the players' Y row and X column is not empty AND
             if (m[y][x] !== 0 &&
+                // Does the row exist in the arena? AND
                (arena[y + o.y] &&
+                // Is it touching another piece on either X or Y?
                 arena[y + o.y][x + o.x]) !== 0) {
-                return true;
+                    // Collision detected
+                    return true;
             }
         }
     }
+    // No collision detected
     return false;
 }
 
+// Creates the matrix, takes width and height from 'arena'
 function createMatrix(w, h) {
     const matrix = [];
+    // While we have height (h != 0)
     while (h--) {
+        // push to create an array of arrays, fill with 0's | value table
         matrix.push(new Array(w).fill(0));
     }
     return matrix;
@@ -117,10 +132,15 @@ function draw() {
     drawMatrix(player.matrix, player.pos);
 }
 
+// Copy all of the values from the player into the arena table, at the correct position
 function merge(arena, player) {
+    // For each row on the Y axis
     player.matrix.forEach((row, y) => {
+        // Iterate over the row on the X axis
         row.forEach((value, x) => {
+            // If the value is not empty
             if (value !== 0) {
+                // Copy the value into the arena, with the correct offset
                 arena[y + player.pos.y][x + player.pos.x] = value;
             }
         });
@@ -255,6 +275,7 @@ const colours = [
     '#ABFFFF',  // 7
 ];
 
+// Arena table (w, h)
 const arena = createMatrix(12, 20);
 
 const player = {
