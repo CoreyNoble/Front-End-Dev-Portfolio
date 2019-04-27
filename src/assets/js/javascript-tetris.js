@@ -1,6 +1,7 @@
 const canvas = document.getElementById('tetris');
 const context = canvas.getContext('2d');
 
+// Scale up everything by 20
 context.scale(20, 20);
 
 function arenaSweep() {
@@ -44,8 +45,8 @@ function createMatrix(w, h) {
     return matrix;
 }
 
-function createPiece(type)
-{
+function createPiece(type) { 
+    // List of pieces
     if (type === 'I') {
         return [
             [0, 1, 0, 0],
@@ -55,7 +56,7 @@ function createPiece(type)
         ];
     } else if (type === 'L') {
         return [
-            [0, 2, 0],
+            [0, 2, 0], // number determines colour for the tile using the colours array
             [0, 2, 0],
             [0, 2, 2],
         ];
@@ -91,22 +92,26 @@ function createPiece(type)
     }
 }
 
+// Determines where to draw each tile using the matrix
 function drawMatrix(matrix, offset) {
+    // Check each Y axis value
     matrix.forEach((row, y) => {
+        // Check each X axis value
         row.forEach((value, x) => {
+            // If it is not empty
             if (value !== 0) {
-                context.fillStyle = colors[value];
-                context.fillRect(x + offset.x,
-                                 y + offset.y,
-                                 1, 1);
+                // Determine piece colour. The colour used is determined by mapping the value in the matrix, with the colours array.
+                context.fillStyle = colours[value];
+                // Draw the piece
+                context.fillRect(x + offset.x, y + offset.y, 1, 1);
             }
         });
     });
 }
 
 function draw() {
-    context.fillStyle = '#262626';
-    context.fillRect(0, 0, canvas.width, canvas.height);
+    context.fillStyle = '#262626'; // Canvas background colour
+    context.fillRect(0, 0, canvas.width, canvas.height); // Canvas size
 
     drawMatrix(arena, {x: 0, y: 0});
     drawMatrix(player.matrix, player.pos);
@@ -193,6 +198,8 @@ let dropCounter = 0;
 let dropInterval = 1000;
 
 let lastTime = 0;
+
+
 function update(time = 0) {
     const deltaTime = time - lastTime;
 
@@ -207,33 +214,45 @@ function update(time = 0) {
     requestAnimationFrame(update);
 }
 
+// Update the score
 function updateScore() {
     document.getElementById('score').innerText = player.score;
 }
 
+// Listening for user input via key(down)
 document.addEventListener('keydown', event => {
+    // Arrow Left
     if (event.keyCode === 37) {
-        playerMove(-1);
-    } else if (event.keyCode === 39) {
-        playerMove(1);
-    } else if (event.keyCode === 40) {
-        playerDrop();
-    } else if (event.keyCode === 81) {
-        playerRotate(-1);
-    } else if (event.keyCode === 87) {
-        playerRotate(1);
+        playerMove(-1); // Move Left
+    } 
+    // Arrow Right
+    else if (event.keyCode === 39) {
+        playerMove(1); // Move Right
+    } 
+    // Arrow Down
+    else if (event.keyCode === 40) {
+        playerDrop(); // Move Down
+    }
+    // Q
+    else if (event.keyCode === 81) {
+        playerRotate(-1); // Rotate Left
+    }
+    // W
+    else if (event.keyCode === 87) {
+        playerRotate(1); // Rotate Right
     }
 });
 
-const colors = [
-    null,
-    '#6A98CC',
-    '#6FBBD6',
-    '#6DBFBF',
-    '#6FD6B9',
-    '#6ACC95',
-    '#367373',
-    '#ABFFFF',
+// colours array for tiles
+const colours = [
+    null,       // 0
+    '#6A98CC',  // 1
+    '#6FBBD6',  // 2
+    '#6DBFBF',  // 3
+    '#6FD6B9',  // 4
+    '#6ACC95',  // 5
+    '#367373',  // 6
+    '#ABFFFF',  // 7
 ];
 
 const arena = createMatrix(12, 20);
