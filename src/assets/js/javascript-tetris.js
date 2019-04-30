@@ -1,3 +1,4 @@
+// Canvas variables
 const canvas = document.getElementById('tetris');
 const context = canvas.getContext('2d');
 
@@ -6,6 +7,7 @@ context.scale(20, 20);
 
 // Runs through the arena
 function arenaSweep() {
+    // Initialize rowCount
     let rowCount = 1;
     // Iterate from the bottom row, up
     outer: for (let y = arena.length -1; y > 0; --y) {
@@ -25,7 +27,7 @@ function arenaSweep() {
         // Offset the Y value
         ++y;
 
-        // Increment the score counter
+        // Increment the score counter with a base of 10, times the 'rowCount'
         player.score += rowCount * 10;
         // Double the score
         rowCount *= 2;
@@ -61,6 +63,7 @@ function collide(arena, player) {
 
 // Creates the matrix, takes width and height from 'arena'
 function createMatrix(w, h) {
+    // Initialize array for matrix
     const matrix = [];
     // While we have height (h != 0)
     while (h--) {
@@ -136,11 +139,15 @@ function drawMatrix(matrix, offset) {
     });
 }
 
+// Draws the canvas and the arena/matrix
 function draw() {
+    // Canvas
     context.fillStyle = '#262626'; // Canvas background colour
     context.fillRect(0, 0, canvas.width, canvas.height); // Canvas size
 
+    // Matrix using 'arena' values, filling with '0's
     drawMatrix(arena, {x: 0, y: 0});
+    // Matrix determining the player and position of the player
     drawMatrix(player.matrix, player.pos);
 }
 
@@ -200,18 +207,24 @@ function playerDrop() {
         // Update the score
         updateScore();
     }
+    // Reset the drop counter
     dropCounter = 0;
 }
 
+// Move the player along the X axis using a given 'offset' value
 function playerMove(offset) {
+    // Move the player
     player.pos.x += offset;
     // If arena and player collide
     if (collide(arena, player)) {
+        // Move the player in the opposite direction of the 'offset' value
         player.pos.x -= offset;
     }
 }
 
+// Reset the player
 function playerReset() {
+    // List of pieces
     const pieces = 'TJLOSZI';
     player.matrix = createPiece(pieces[pieces.length * Math.random() | 0]);
     player.pos.y = 0;
@@ -237,7 +250,7 @@ function playerRotate(dir) {
     while (collide(arena, player)) {
         // Move the player with the given offset value
         player.pos.x += offset;
-        // Offset now flips polarity (eg. '+' to '-'), and an increment up if '+', or down if '-'.
+        // Offset now flips polarity (eg. '+/-'), and an increases the polarity value by 1 (eg +1 for positive, -1 for negative)
         offset = -(offset + (offset > 0 ? 1 : -1));
         // Is the offset now fully inside of the matrix?
         if (offset > player.matrix[0].length) {
@@ -250,31 +263,42 @@ function playerRotate(dir) {
     }
 }
 
-let dropCounter = 0;
-let dropInterval = 1000;
+// Drop counter - Amount of time in-between a tile falling
+let dropCounter = 0; // Counter to determine when to drop
+let dropInterval = 1000; // Threshold for when to drop
 
+// Initialize 'lastTime' to calculate the difference in time
 let lastTime = 0;
 
-
+// Update the game, get the time from requestAnimationFrame
 function update(time = 0) {
+    // The delta of time between now and 'lastTime'
     const deltaTime = time - lastTime;
 
+    // Increment the drop counter using 'deltaTime'
     dropCounter += deltaTime;
+    // If it is time to drop the player
     if (dropCounter > dropInterval) {
+        // Drop the player
         playerDrop();
     }
 
+    // update 'lastTime'
     lastTime = time;
 
+    // Draw the canvas
     draw();
+    // Next frame of animation
     requestAnimationFrame(update);
 }
 
 // Update the score
 function updateScore() {
+    // Find the 'score' HTML ID and update the string to reflect the score value
     document.getElementById('score').innerText = player.score;
 }
 
+// CONTROLS
 // Listening for user input via key(down)
 document.addEventListener('keydown', event => {
     // Arrow Left
@@ -299,7 +323,7 @@ document.addEventListener('keydown', event => {
     }
 });
 
-// colours array for tiles
+// Colour array for tiles
 const colours = [
     null,       // 0
     '#6A98CC',  // 1
@@ -311,19 +335,22 @@ const colours = [
     '#ABFFFF',  // 7
 ];
 
-// Arena table (w, h)
-const arena = createMatrix(12, 20);
-
-const player = {
-    pos: {x: 0, y: 0},
-    matrix: null,
-    score: 0,
-};
 
 // Bootstrap the game
+//
+// Arena table - matrix of (w, h)
+const arena = createMatrix(12, 20);
+
+// Player and starting values
+const player = {
+    pos: {x: 0, y: 0}, // Position
+    matrix: null, // Matrix
+    score: 0, // Score
+};
 
 // Reset the player
 playerReset();
 // Update Score
 updateScore();
-update();
+// Update Time
+updateTime();
