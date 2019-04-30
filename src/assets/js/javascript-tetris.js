@@ -301,24 +301,24 @@ function updateScore() {
 // CONTROLS
 // Listening for user input via key(down)
 document.addEventListener('keydown', event => {
-    // Arrow Left
-    if (event.keyCode === 37) {
+    // 'A'
+    if (event.keyCode === 65) {
         playerMove(-1); // Move Left
     } 
-    // Arrow Right
-    else if (event.keyCode === 39) {
+    // 'D'
+    else if (event.keyCode === 68) {
         playerMove(1); // Move Right
     } 
-    // Arrow Down
-    else if (event.keyCode === 40) {
+    // 'S'
+    else if (event.keyCode === 83) {
         playerDrop(); // Move Down
     }
-    // Q
-    else if (event.keyCode === 81) {
+    // 'O'
+    else if (event.keyCode === 79) {
         playerRotate(-1); // Rotate Left
     }
-    // W
-    else if (event.keyCode === 87) {
+    // 'P'
+    else if (event.keyCode === 80) {
         playerRotate(1); // Rotate Right
     }
 });
@@ -352,5 +352,5 @@ const player = {
 playerReset();
 // Update Score
 updateScore();
-// Update Time
-updateTime();
+// Update time and counters
+update();

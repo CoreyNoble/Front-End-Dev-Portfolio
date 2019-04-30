@@ -16,17 +16,57 @@ canonical: https://corey-noble.com/portfolio/skillset.html
 
 <div class="section white">
   <div class="row">
-    <div class="small-12 large-6 columns">
+    <div class="small-12 large-5 columns">
         <!-- Tetris Game -->
         <div id="javascript-tetris">
+            <!-- Score -->
+            <h2 id="score-label" class="h3">Score: <strong><span id="score"></span></strong></h2>
+            <!-- Game board -->
             <canvas id="tetris" width="240" height="400"></canvas>
         </div>
     </div>
-    <div class="small-12 large-6 columns">
-            <!-- Tetris Score Board -->
-            <div id="javascript-tetris">
-                <h2 id="score-label" class="h3">Score: <strong><span id="score"></span></strong></h2>
+    <div class="small-12 large-7 columns">
+        <!-- Instructions -->
+        <div>
+            <h2 class="h3">How to Play</h2>
+            <hr/>
+            <h3 class="h4">Move</h3>
+            <div class="small-4 columns">
+                <h4 class="h5">
+                    <strong>Left:</strong><br>
+                    <span class="fas fa-arrow-left" alt="Left Arrow" aria-labelledby="Left arrow"></span>
+                </h4>
             </div>
+            <div class="small-4 columns">
+                <h4 class="h5">
+                    <strong>Down:</strong><br>
+                    <span class="fas fa-arrow-down" alt="Down Arrow" aria-labelledby="Down arrow"></span>
+                </h4>
+            </div>
+            <div class="small-4 columns end">
+                <h4 class="h5">
+                    <strong>Right:</strong><br>
+                    <span class="fas fa-arrow-right" alt="Right Arrow" aria-labelledby="Right arrow"></span>
+                </h4>
+            </div>
+            <hr/>
+            <br><br>
+            <h3 class="h4">Rotate</h3>
+            <div class="small-4 columns">
+                <h4 class="h5">
+                    <strong>Left:</strong><br>
+                    <strong>Q</strong>
+                </h4>
+            </div>
+            <div class="small-4 columns">
+                <h4 class="h5">
+                    <strong>Right:</strong><br>
+                    <strong>W</strong>
+                </h4>
+            </div>
+            
+            
         </div>
+    </div>
   </div>
 </div>
