@@ -4,20 +4,30 @@ const context = canvas.getContext('2d');
 // Scale up everything by 20
 context.scale(20, 20);
 
+// Runs through the arena
 function arenaSweep() {
     let rowCount = 1;
+    // Iterate from the bottom row, up
     outer: for (let y = arena.length -1; y > 0; --y) {
+        // Loop through X axis
         for (let x = 0; x < arena[y].length; ++x) {
+            // Do any values have a '0', If so, row is not full
             if (arena[y][x] === 0) {
+                // Run through the loop again, starting at the outer 'for' statement
                 continue outer;
             }
         }
 
+        // Row is full, Remove that row by filling it with '0's
         const row = arena.splice(y, 1)[0].fill(0);
+        // Put the row on top of the arena
         arena.unshift(row);
+        // Offset the Y value
         ++y;
 
+        // Increment the score counter
         player.score += rowCount * 10;
+        // Double the score
         rowCount *= 2;
     }
 }
@@ -57,21 +67,23 @@ function createMatrix(w, h) {
         // push to create an array of arrays, fill with 0's | value table
         matrix.push(new Array(w).fill(0));
     }
+    // Output
     return matrix;
 }
 
+// Create a piece, accepts string of 'type'
 function createPiece(type) { 
     // List of pieces
     if (type === 'I') {
         return [
-            [0, 1, 0, 0],
+            [0, 1, 0, 0], // '1' number determines colour for the tile using the colours array
             [0, 1, 0, 0],
             [0, 1, 0, 0],
             [0, 1, 0, 0],
         ];
     } else if (type === 'L') {
         return [
-            [0, 2, 0], // number determines colour for the tile using the colours array
+            [0, 2, 0],
             [0, 2, 0],
             [0, 2, 2],
         ];
@@ -107,17 +119,17 @@ function createPiece(type) {
     }
 }
 
-// Determines where to draw each tile using the matrix
+// Determines where to draw each tile using the matrix and offset
 function drawMatrix(matrix, offset) {
-    // Check each Y axis value
+    // Each Y axis value
     matrix.forEach((row, y) => {
-        // Check each X axis value
+        // Each X axis value
         row.forEach((value, x) => {
             // If it is not empty
             if (value !== 0) {
                 // Determine piece colour. The colour used is determined by mapping the value in the matrix, with the colours array.
                 context.fillStyle = colours[value];
-                // Draw the piece
+                // Fill the tile
                 context.fillRect(x + offset.x, y + offset.y, 1, 1);
             }
         });
@@ -147,7 +159,10 @@ function merge(arena, player) {
     });
 }
 
+// Player rotates a tile, takes the matrix and a direction
+// Transpose + Reverse(dir) = Rotation
 function rotate(matrix, dir) {
+    // Transpose - convert all rows into columns
     for (let y = 0; y < matrix.length; ++y) {
         for (let x = 0; x < y; ++x) {
             [
@@ -160,20 +175,29 @@ function rotate(matrix, dir) {
         }
     }
 
-    if (dir > 0) {
+    // Reverse - each row to get a rotated matrix
+    if (dir > 0) { // Right
         matrix.forEach(row => row.reverse());
-    } else {
+    } else { // Left
         matrix.reverse();
     }
 }
 
+// Player falls
 function playerDrop() {
+    // Move the player down
     player.pos.y++;
+    // If the arena and player collide
     if (collide(arena, player)) {
+        // Move the player back up
         player.pos.y--;
+        // Merge the arena and player
         merge(arena, player);
+        // Reset the player
         playerReset();
+        // Update the arena
         arenaSweep();
+        // Update the score
         updateScore();
     }
     dropCounter = 0;
@@ -181,6 +205,7 @@ function playerDrop() {
 
 function playerMove(offset) {
     player.pos.x += offset;
+    // If arena and player collide
     if (collide(arena, player)) {
         player.pos.x -= offset;
     }
@@ -199,15 +224,26 @@ function playerReset() {
     }
 }
 
+// Player rotates a piece
 function playerRotate(dir) {
+    // Determine where the player is on the X axis
     const pos = player.pos.x;
+    // When colliding, this offset value is used to resolve the collision
     let offset = 1;
+    
+    // Rotate the player, using the given direction
     rotate(player.matrix, dir);
+    // While the arena and the player are colliding
     while (collide(arena, player)) {
+        // Move the player with the given offset value
         player.pos.x += offset;
+        // Offset now flips polarity (eg. '+' to '-'), and an increment up if '+', or down if '-'.
         offset = -(offset + (offset > 0 ? 1 : -1));
+        // Is the offset now fully inside of the matrix?
         if (offset > player.matrix[0].length) {
+            // Rotate back
             rotate(player.matrix, -dir);
+            // Place the player
             player.pos.x = pos;
             return;
         }
@@ -284,6 +320,10 @@ const player = {
     score: 0,
 };
 
+// Bootstrap the game
+
+// Reset the player
 playerReset();
+// Update Score
 updateScore();
 update();
