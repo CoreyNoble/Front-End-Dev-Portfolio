@@ -134,6 +134,9 @@ function drawMatrix(matrix, offset) {
                 context.fillStyle = colours[value];
                 // Fill the tile
                 context.fillRect(x + offset.x, y + offset.y, 1, 1);
+                context.strokeStyle = "white";
+                context.lineWidth = 0.075;
+                context.strokeRect(x + offset.x, y + offset.y, 1, 1);
             }
         });
     });

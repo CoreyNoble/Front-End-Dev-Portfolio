@@ -1,19 +1,25 @@
 #javascript-tetris{
-    h2{
-        &#score-label{
-            text-align: center;
-            margin-bottom: 1rem;
+    background-color: $blue;
+    border: 2px solid $background;
 
-            #score{
-                padding-left: 0.5rem;
-            }
+    .tetris-ui{
+        background-color: $black;
+
+        &:first-child{
+            border-right: 2px solid $white;
+        }
+
+        h2{
+            color: $white;
+            margin-bottom: 0.25rem;
         }
     }
 
+    // Game board
     #tetris{
         display: block;
-        margin: 0 auto;
-        height: 30rem;
+        margin: 1.5rem auto;
+        height: 25rem;
         border: 0.33rem solid $grey;
         -webkit-box-shadow: 0px 2px 12px 0px rgba(0,0,0,0.5);
         -moz-box-shadow: 0px 2px 12px 0px rgba(0,0,0,0.5);
@@ -24,9 +30,11 @@
 // Instructions
 #instructions{
     margin-top: 2.5rem;
+    padding-left: 0;
 
     @include breakpoint(large){
         margin-top: 0;
+        padding-left: 2.5rem;
     }
 
     // General
@@ -64,6 +72,7 @@
         border-style: solid;
         border-radius: 4px;
         float: left;
+        transition: all ease 0.02s;
     }
     .key.pressed, .f_key.pressed {
         -webkit-transform: scale(0.95, 0.95);
@@ -71,6 +80,18 @@
         -ms-transform: scale(0.95, 0.95);
         -o-transform: scale(0.95, 0.95);
         transform: scale(0.95, 0.95);
+        color: $white;
+        background: $black;
+        border-color: $background $background $background;
+
+        .keycap{
+            background: darken(#d3cfcc, 45%);
+            background: -webkit-linear-gradient(left, $background, $background, $background);
+            background: -moz-linear-gradient(left, $background, $background, $background);
+            background: -ms-linear-gradient(left, $background, $background, $background);
+            background: -o-linear-gradient(left, $background, $background, $background);
+            background: linear-gradient(to right, $background, $background, $background);
+        }
     }
 
     .key {
