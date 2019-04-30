@@ -301,24 +301,24 @@ function updateScore() {
 // CONTROLS
 // Listening for user input via key(down)
 document.addEventListener('keydown', event => {
-    // 'A'
-    if (event.keyCode === 65) {
+    // 'A' or 'Arrow Left'
+    if (event.keyCode === 65 || event.keyCode === 37) {
         playerMove(-1); // Move Left
     } 
-    // 'D'
-    else if (event.keyCode === 68) {
+    // 'D' or 'Arrow Right'
+    else if (event.keyCode === 68 || event.keyCode === 39) {
         playerMove(1); // Move Right
     } 
-    // 'S'
-    else if (event.keyCode === 83) {
+    // 'S' or 'Space'
+    else if (event.keyCode === 83 || event.keyCode === 32) {
         playerDrop(); // Move Down
     }
-    // 'O'
-    else if (event.keyCode === 79) {
+    // 'O' or 'Arrow Up'
+    else if (event.keyCode === 79 || event.keyCode === 38) {
         playerRotate(-1); // Rotate Left
     }
-    // 'P'
-    else if (event.keyCode === 80) {
+    // 'P' or 'Arrow Down'
+    else if (event.keyCode === 80 || event.keyCode === 40) {
         playerRotate(1); // Rotate Right
     }
 });
@@ -354,3 +354,22 @@ playerReset();
 updateScore();
 // Update time and counters
 update();
+
+//
+//
+//
+
+// OUTSIDE OF GAME
+// Instructions
+// Keycaps
+// Bind keyup event, thanks @vendruscolo
+$(window).on({
+    'keydown': function(e){
+        var pressedKey = $('.k' + e.keyCode);
+        pressedKey.addClass('pressed');
+    },
+    'keyup': function(e) {
+        var pressedKey = $('.k' + e.keyCode);
+        pressedKey.removeClass('pressed');
+    }
+});

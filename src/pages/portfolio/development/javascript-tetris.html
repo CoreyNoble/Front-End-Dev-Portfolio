@@ -16,57 +16,53 @@ canonical: https://corey-noble.com/portfolio/skillset.html
 
 <div class="section white">
   <div class="row">
-    <div class="small-12 large-5 columns">
-        <!-- Tetris Game -->
-        <div id="javascript-tetris">
-            <!-- Score -->
-            <h2 id="score-label" class="h3">Score: <strong><span id="score"></span></strong></h2>
-            <!-- Game board -->
-            <canvas id="tetris" width="240" height="400"></canvas>
+    <!-- Tetris Game -->
+    <div id="javascript-tetris" class="small-12 large-6 columns">
+        <!-- Score -->
+        <div class="small-12 large-6 columns">
+            <h2 id="score-label" class="h3">Score: <strong><span id="score" aria-labelledby="Score Count"></span></strong></h2>
         </div>
+        <!-- Next Piece -->
+        <div class="small-12 large-6 columns">
+            <h2 id="score-label" class="h3">Next: <strong><span id="next-piece" aria-labelledby="Next Piece"></span></strong></h2>
+        </div>
+        <!-- Game board -->
+        <canvas id="tetris" width="240" height="400"></canvas>
     </div>
-    <div class="small-12 large-7 columns">
-        <!-- Instructions -->
-        <div>
-            <h2 class="h3">How to Play</h2>
-            <hr/>
-            <h3 class="h4">Move</h3>
-            <div class="small-4 columns">
-                <h4 class="h5">
-                    <strong>Left:</strong><br>
-                    <span class="fas fa-arrow-left" alt="Left Arrow" aria-labelledby="Left arrow"></span>
-                </h4>
-            </div>
-            <div class="small-4 columns">
-                <h4 class="h5">
-                    <strong>Down:</strong><br>
-                    <span class="fas fa-arrow-down" alt="Down Arrow" aria-labelledby="Down arrow"></span>
-                </h4>
-            </div>
-            <div class="small-4 columns end">
-                <h4 class="h5">
-                    <strong>Right:</strong><br>
-                    <span class="fas fa-arrow-right" alt="Right Arrow" aria-labelledby="Right arrow"></span>
-                </h4>
-            </div>
-            <hr/>
-            <br><br>
-            <h3 class="h4">Rotate</h3>
-            <div class="small-4 columns">
-                <h4 class="h5">
-                    <strong>Left:</strong><br>
-                    <strong>Q</strong>
-                </h4>
-            </div>
-            <div class="small-4 columns">
-                <h4 class="h5">
-                    <strong>Right:</strong><br>
-                    <strong>W</strong>
-                </h4>
-            </div>
-            
-            
+
+    <!-- Instructions -->
+    <div id="instructions" class="small-12 large-6 columns">
+        <h2 class="h3">How to Play</h2>
+        <hr/>
+        <h3 class="h4">Move</h3>
+        <div class="small-4 columns">
+            <h4 class="h5">Left:</h4>
+            <div class="k65 key"><div class="keycap">A</div></div>
+            <div class="k37 key"><div class="keycap">&#8592;</div></div>
         </div>
+        <div class="small-4 columns end">
+            <h4 class="h5">Right:</h4>
+            <div class="k68 key"><div class="keycap">D</div></div>
+            <div class="k39 key"><div class="keycap">&#8594;</div></div>
+        </div>
+        <div class="small-4 columns">
+            <h4 class="h5">Down:</h4>
+            <div class="k83 key"><div class="keycap">S</div></div>
+            <div class="k32 key"><div class="keycap">Space</div></div>
+        </div>
+        <hr/>
+        <br><br>
+        <h3 class="h4">Rotate</h3>
+        <div class="small-4 columns">
+            <h4 class="h5">Left:</h4>
+            <div class="k79 key"><div class="keycap">O</div></div>
+            <div class="k38 key"><div class="keycap">&#8593;</div></div>
+        </div>
+        <div class="small-4 columns">
+            <h4 class="h5">Right:</h4>
+            <div class="k80 key"><div class="keycap">P</div></div>
+            <div class="k40 key"><div class="keycap">&#8595;</div></div>
+        </div> 
     </div>
   </div>
 </div>
