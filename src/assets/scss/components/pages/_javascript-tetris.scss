@@ -1,17 +1,40 @@
 #javascript-tetris{
-    background-color: $blue;
-    border: 2px solid $background;
+    background: #468CCF;
+    background: linear-gradient(to top,  #5FA6A6,  #7FC7C7);
+    background: -ms-linear-gradient(to top,  #5FA6A6,  #7FC7C7);
+    background: -webkit-gradient(linear, to left top, to left bottom, from(#5FA6A6), to(#7FC7C7));
+    background: -moz-linear-gradient(to top,  #5FA6A6,  #7FC7C7);
+    border: 3px solid $background;
+
+    .tetris-title{
+        background-color: $background;
+        
+        h2{
+            color: $white;
+            text-align: center;
+            margin-top: 0.5rem;
+            margin-bottom: 0.5rem;
+        }
+    }
 
     .tetris-ui{
         background-color: $black;
+        border-top: 2px solid $white;
+        border-bottom: 2px solid $white;
 
-        &:first-child{
-            border-right: 2px solid $white;
+        &:last-child{
+            border-left: none;
+            border-top: none;
+
+            @include breakpoint (large){
+                border-left: 2px solid $white;
+                border-top: 2px solid $white;
+            }
         }
 
         h2{
             color: $white;
-            margin-bottom: 0.25rem;
+            margin: 0.25rem 0;
         }
     }
 
@@ -20,7 +43,7 @@
         display: block;
         margin: 1.5rem auto;
         height: 25rem;
-        border: 0.33rem solid $grey;
+        border: 0.33rem solid $white;
         -webkit-box-shadow: 0px 2px 12px 0px rgba(0,0,0,0.5);
         -moz-box-shadow: 0px 2px 12px 0px rgba(0,0,0,0.5);
         box-shadow: 0px 2px 12px 0px rgba(0,0,0,0.5);
