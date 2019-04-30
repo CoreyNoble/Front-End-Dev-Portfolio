@@ -22,97 +22,116 @@
 }
 
 // Instructions
-// Keycaps
-#addition {
-  overflow: hidden;
-}
+#instructions{
+    margin-top: 2.5rem;
 
-.key, .f_key {
-  width: 40px;
-  height: 45px;
-  margin: 2px;
-  border-width: 3px 7px 10px;
-  border-style: solid;
-  border-radius: 4px;
-  float: left;
-}
-.key.pressed, .f_key.pressed {
-  -webkit-transform: scale(0.95, 0.95);
-  -moz-transform: scale(0.95, 0.95);
-  -ms-transform: scale(0.95, 0.95);
-  -o-transform: scale(0.95, 0.95);
-  transform: scale(0.95, 0.95);
-}
+    @include breakpoint(large){
+        margin-top: 0;
+    }
 
-.key {
-  background: #d3cfcc;
-  border-color: #ece8e4 #dedad6 #c9c4c4;
-}
+    // General
+    .rotate{
+        margin-top: 2.5rem;
+    }
 
-.f_key {
-  background: #a8aeb8;
-  border-color: #c4c7cc #adb9cc #96a6bd;
-}
+    // Icons
+    .fas{
+        margin-right: 0.5rem;
+    }
 
-.key .keycap {
-  width: 33px;
-  height: 40px;
-  padding: 5px 0 0 7px;
-  font-size: 18px;
-  line-height: 1;
-  background: #f5f3f1;
-  background: -webkit-linear-gradient(left, #e5e2e1, #f5f3f1, #e5e2e1);
-  background: -moz-linear-gradient(left, #e5e2e1, #f5f3f1, #e5e2e1);
-  background: -ms-linear-gradient(left, #e5e2e1, #f5f3f1, #e5e2e1);
-  background: -o-linear-gradient(left, #e5e2e1, #f5f3f1, #e5e2e1);
-  background: linear-gradient(to right, #e5e2e1, #f5f3f1, #e5e2e1);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  position: relative;
-}
+    .fas.fa-expand-arrows-alt{
+        transform: rotate(45deg);
+    }
 
-.f_key .keycap {
-  width: inherit;
-  height: inherit;
-  font-size: 15px;
-  line-height: 45px;
-  text-indent: 7px;
-  background: #cdd3de;
-  background: -webkit-linear-gradient(left, #bbc3d2, #cdd3de, #bbc3d2);
-  background: -moz-linear-gradient(left, #bbc3d2, #cdd3de, #bbc3d2);
-  background: -ms-linear-gradient(left, #bbc3d2, #cdd3de, #bbc3d2);
-  background: -o-linear-gradient(left, #bbc3d2, #cdd3de, #bbc3d2);
-  background: linear-gradient(to right, #bbc3d2, #cdd3de, #bbc3d2);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  border-radius: 4px;
-  position: relative;
-}
+    // Text
+    h2{
+        margin-bottom: 1.5rem;
+    }
 
-.top {
-  padding: 3px 5px 0 0;
-  font-size: 12px;
-  font-style: italic;
-  text-align: right;
-  line-height: 1;
-  display: block;
-}
+    h3{
+        padding-bottom: 1rem;
+        margin-bottom: 1rem;
+        border-bottom: 1px solid $black;
+    }
 
-.bottom {
-  width: inherit;
-  line-height: 20px;
-  display: block;
-}
+    // Keys
+    .key, .f_key {
+        width: 40px;
+        height: 45px;
+        margin: 2px;
+        margin-top: 0.5rem;
+        border-width: 3px 7px 10px;
+        border-style: solid;
+        border-radius: 4px;
+        float: left;
+    }
+    .key.pressed, .f_key.pressed {
+        -webkit-transform: scale(0.95, 0.95);
+        -moz-transform: scale(0.95, 0.95);
+        -ms-transform: scale(0.95, 0.95);
+        -o-transform: scale(0.95, 0.95);
+        transform: scale(0.95, 0.95);
+    }
 
-.side {
-  font-size: 10px;
-  line-height: 1;
-  display: block;
-  position: absolute;
-  left: 4px;
-  bottom: -10px;
-  -webkit-transform: rotateX(50deg);
-  -moz-transform: rotateX(50deg);
-  -ms-transform: rotateX(50deg);
-  -o-transform: rotateX(50deg);
-  transform: rotateX(50deg);
+    .key {
+        background: #d3cfcc;
+        border-color: #ece8e4 #dedad6 #c9c4c4;
+    }
+
+    .f_key {
+        background: #a8aeb8;
+        border-color: #c4c7cc #adb9cc #96a6bd;
+    }
+
+    .key .keycap {
+        width: 33px;
+        height: 40px;
+        padding: 5px 0 0 7px;
+        font-size: 18px;
+        line-height: 1;
+        background: #f5f3f1;
+        background: -webkit-linear-gradient(left, #e5e2e1, #f5f3f1, #e5e2e1);
+        background: -moz-linear-gradient(left, #e5e2e1, #f5f3f1, #e5e2e1);
+        background: -ms-linear-gradient(left, #e5e2e1, #f5f3f1, #e5e2e1);
+        background: -o-linear-gradient(left, #e5e2e1, #f5f3f1, #e5e2e1);
+        background: linear-gradient(to right, #e5e2e1, #f5f3f1, #e5e2e1);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+        position: relative;
+    }
+
+    .f_key .keycap {
+        width: inherit;
+        height: inherit;
+        font-size: 15px;
+        line-height: 45px;
+        text-indent: 7px;
+        background: #cdd3de;
+        background: -webkit-linear-gradient(left, #bbc3d2, #cdd3de, #bbc3d2);
+        background: -moz-linear-gradient(left, #bbc3d2, #cdd3de, #bbc3d2);
+        background: -ms-linear-gradient(left, #bbc3d2, #cdd3de, #bbc3d2);
+        background: -o-linear-gradient(left, #bbc3d2, #cdd3de, #bbc3d2);
+        background: linear-gradient(to right, #bbc3d2, #cdd3de, #bbc3d2);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        border-radius: 4px;
+        position: relative;
+    }
+
+    // Space
+    .k32 {
+        width: 100%;
+        max-width: 6rem;
+        border-width: 3px 8px 10px;
+    }
+    .k32 .keycap {
+        width: 100%;
+        max-width: 6rem;
+    }
+    .k32.pressed {
+        -webkit-transform: scale(0.98, 0.95);
+        -moz-transform: scale(0.98, 0.95);
+        -ms-transform: scale(0.98, 0.95);
+        -o-transform: scale(0.98, 0.95);
+        transform: scale(0.98, 0.95);
+    }
 }
