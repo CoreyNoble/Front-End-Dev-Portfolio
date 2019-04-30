@@ -80,17 +80,17 @@
         -ms-transform: scale(0.95, 0.95);
         -o-transform: scale(0.95, 0.95);
         transform: scale(0.95, 0.95);
-        color: $white;
-        background: $black;
-        border-color: $background $background $background;
+        color: $black;
+        background: $blue;
+        border-color: $blue lighten($blue, 20%) $blue;
 
         .keycap{
             background: darken(#d3cfcc, 45%);
-            background: -webkit-linear-gradient(left, $background, $background, $background);
-            background: -moz-linear-gradient(left, $background, $background, $background);
-            background: -ms-linear-gradient(left, $background, $background, $background);
-            background: -o-linear-gradient(left, $background, $background, $background);
-            background: linear-gradient(to right, $background, $background, $background);
+            background: -webkit-linear-gradient(left, $blue, lighten($blue, 20%), $blue);
+            background: -moz-linear-gradient(left, $blue, lighten($blue, 20%), $blue);
+            background: -ms-linear-gradient(left, $blue, lighten($blue, 20%), $blue);
+            background: -o-linear-gradient(left, $blue, lighten($blue, 20%), $blue);
+            background: linear-gradient(to right, $blue, lighten($blue, 20%), $blue);
         }
     }
 

@@ -304,24 +304,24 @@ function updateScore() {
 // CONTROLS
 // Listening for user input via key(down)
 document.addEventListener('keydown', event => {
-    // 'A' or 'Arrow Left'
-    if (event.keyCode === 65 || event.keyCode === 37) {
+    // 'A'
+    if (event.keyCode === 65) {
         playerMove(-1); // Move Left
     } 
-    // 'D' or 'Arrow Right'
-    else if (event.keyCode === 68 || event.keyCode === 39) {
+    // 'D' or
+    else if (event.keyCode === 68) {
         playerMove(1); // Move Right
     } 
-    // 'S' or 'Space'
-    else if (event.keyCode === 83 || event.keyCode === 32) {
+    // 'S'
+    else if (event.keyCode === 83) {
         playerDrop(); // Move Down
     }
-    // 'O' or 'Arrow Up'
-    else if (event.keyCode === 79 || event.keyCode === 38) {
+    // 'O'
+    else if (event.keyCode === 79) {
         playerRotate(-1); // Rotate Left
     }
-    // 'P' or 'Arrow Down'
-    else if (event.keyCode === 80 || event.keyCode === 40) {
+    // 'P'
+    else if (event.keyCode === 80) {
         playerRotate(1); // Rotate Right
     }
 });
