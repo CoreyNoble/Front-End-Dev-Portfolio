@@ -1,0 +1,94 @@
+---
+title: JavaScript Tetris | Corey Noble
+description: The game Tetris, developed for the web using Javascript.
+canonical: https://corey-noble.com/portfolio/skillset.html
+---
+
+<!-- JavaScript Tetris Header -->
+<div class="section blue">
+    <div class="row">
+        <div class="small-12 column">
+        <h1 class="header-no-parallax">JavaScript Tetris</h1>
+        <p class="h4">A web version of the popular game Tetris. Developed using JavaScript.</p>
+        </div>
+    </div>
+</div>
+
+<div class="section white">
+  <div class="row">
+    <!-- Tetris Game -->
+    <div id="javascript-tetris" class="small-12 large-6 columns">
+        <!-- UI -->
+
+        <div class="row">
+            <div class="tetris-title small-12 columns">
+                <h2 class="h3"><em>JavaScipt Tetris</em></h2>
+            </div>
+        </div>
+
+        <div class="row" data-equalizer>
+            <!-- Score -->
+            <div class="tetris-ui small-12 columns" data-equalizer-watch>
+                <h2 id="score-label" class="h4">Score: <strong><span id="score" aria-labelledby="Score Count"></span></strong></h2>
+            </div>
+            <!-- Next Piece -->
+            <!-- <div class="tetris-ui small-12 large-6 columns" data-equalizer-watch>
+                <h2 id="score-label" class="h4">Next: <strong><span id="next-piece" aria-labelledby="Next Piece"></span></strong></h2>
+            </div> -->
+        </div>
+
+        <!-- Game board -->
+        <div class="row">
+            <div class="small-12 column">
+                <canvas id="tetris" width="240" height="400"></canvas>
+            </div>
+        </div>
+    </div>
+
+    <!-- Instructions -->
+    <div id="instructions" class="small-12 large-6 columns">
+        <div class="row">
+            <div class="small-12 column">
+                <h2 class="h3">How to Play:</h2>
+                <h3 class="h4"><span class="fas fa-expand-arrows-alt" role="presentation"></span> Move</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="small-4 columns">
+                <h4 class="h5">Left:</h4>
+                <div class="k65 key"><div class="keycap">A</div></div>
+                <!-- <div class="k37 key"><div class="keycap">&#8592;</div></div> -->
+            </div>
+            <div class="small-4 columns">
+                <h4 class="h5">Right:</h4>
+                <div class="k68 key"><div class="keycap">D</div></div>
+                <!-- <div class="k39 key"><div class="keycap">&#8594;</div></div> -->
+            </div>
+            <div class="small-4 columns">
+                <h4 class="h5">Down:</h4>
+                <div class="k83 key"><div class="keycap">S</div></div>
+                <!-- <div class="k32 key"><div class="keycap">Space</div></div> -->
+            </div>
+        </div>
+        <div class="row rotate">
+            <div class="small-12 column">
+                <h3 class="h4"><span class="fas fa-sync-alt" role="presentation"></span> Rotate</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="small-4 columns">
+                <h4 class="h5">Left:</h4>
+                <div class="k79 key"><div class="keycap">O</div></div>
+                <!-- <div class="k38 key"><div class="keycap">&#8593;</div></div> -->
+            </div>
+            <div class="small-4 columns end">
+                <h4 class="h5">Right:</h4>
+                <div class="k80 key"><div class="keycap">P</div></div>
+                <!-- <div class="k40 key"><div class="keycap">&#8595;</div></div> -->
+            </div> 
+        </div>
+    </div>
+  </div>
+</div>
+
+<script src="{{root}}assets/js/javascriptTetris.js"></script>
