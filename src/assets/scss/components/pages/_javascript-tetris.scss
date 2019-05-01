@@ -22,15 +22,15 @@
         border-top: 2px solid $white;
         border-bottom: 2px solid $white;
 
-        &:last-child{
-            border-left: none;
-            border-top: none;
+        // &:last-child{
+        //     border-left: none;
+        //     border-top: none;
 
-            @include breakpoint (large){
-                border-left: 2px solid $white;
-                border-top: 2px solid $white;
-            }
-        }
+        //     @include breakpoint (large){
+        //         border-left: 2px solid $white;
+        //         border-top: 2px solid $white;
+        //     }
+        // }
 
         h2{
             color: $white;

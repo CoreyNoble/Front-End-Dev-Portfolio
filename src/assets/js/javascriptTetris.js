@@ -75,7 +75,7 @@ function createMatrix(w, h) {
 }
 
 // Create a piece, accepts string of 'type'
-function createPiece(type) { 
+function nextPiece(type) { 
     // List of pieces
     if (type === 'I') {
         return [
@@ -229,7 +229,7 @@ function playerMove(offset) {
 function playerReset() {
     // List of pieces
     const pieces = 'TJLOSZI';
-    player.matrix = createPiece(pieces[pieces.length * Math.random() | 0]);
+    player.matrix = nextPiece(pieces[pieces.length * Math.random() | 0]);
     player.pos.y = 0;
     player.pos.x = (arena[0].length / 2 | 0) -
                    (player.matrix[0].length / 2 | 0);
