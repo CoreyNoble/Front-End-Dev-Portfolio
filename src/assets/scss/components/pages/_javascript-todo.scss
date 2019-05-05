@@ -29,24 +29,50 @@
       font-size: 1em;
       transition: 0.2s;
       margin-left: 0;
+      border: 2px solid $blue;
 
-      /* make the list items unselectable */
-      -webkit-user-select: none;
-      -moz-user-select: none;
-      -ms-user-select: none;
-      user-select: none;
-  
-      &:hover {
-        background: darken($blue, 14%);
+      &:nth-child(even) {
+        &:hover, &:focus{
+          background: darken($blue, 14%);
+          border: 2px solid darken($white, 14%);
+
+          .close {
+            border: 2px solid darken($white, 14%);
+
+            &:hover, &:focus{
+              border: 2px solid darken($grey, 14%);
+            }
+          }
+        }
+
+        .close {
+          background-color: $blue;
+          border: 2px solid $blue;
+        }
       }
   
       &:nth-child(odd) {
         background: $white;
+        border: 2px solid $white;
   
-        &:hover{
-            background: darken($white, 14%)
+        &:hover, &:focus{
+            background: darken($white, 14%);
+            border: 2px solid darken($grey, 14%);
+
+            .close {
+              border: 2px solid darken($grey, 14%);
+
+              &:hover, &:focus{
+                border: 2px solid darken($grey, 14%);
+              }
+            }
         }
-      }   
+
+        .close {
+          background-color: $white;
+          border: 2px solid $white;
+        }
+      }
       
       &.checked {
         background: $background;
@@ -63,33 +89,39 @@
           top: 1.2em;
           left: 1em;
           transform: rotate(45deg);
-          height: 15px;
+          height: rem-calc(15);
           width: 7px;
         }
 
-        &:hover {
+        &:hover, &:focus {
           background-color: lighten($background, 15%);
+          border: 2px solid $white;
+
+          .close {
+            background-color: $background;
+            border: 2px solid $white;
+
+            &:hover, &:focus{ 
+              background-color: $error;
+            }
+          }
+        }
+
+        .close {
+          background-color: $background;
         }
       }
-    }   
 
-    .close {
-      position: absolute;
-      right: 0;
-      top: 0;
-      padding: 1em;
-    }
-    
-    .close:hover {
-      background-color: $error;
-      color: white;
-    }
-  }
+      .close {
+        position: absolute;
+        right: -2px;
+        top: -2px;
+        padding: 1em;
   
-  /* Clear floats after the header */
-  .header:after {
-    content: "";
-    display: table;
-    clear: both;
+        &:hover, &:focus{
+          background-color: $error;
+        }
+      }
+    }
   }
 }
