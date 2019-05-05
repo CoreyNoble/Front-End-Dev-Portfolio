@@ -45,14 +45,14 @@ hr{
 
 .frame{
   width: 100%;
-  padding: 0.5rem;
-  padding-top: 1.5rem;
-  height: 39rem;
+  padding: 0.5em;
+  padding-top: 1.5em;
+  height: 39em;
   overflow: hidden;
 
   /* Large Devices, Wide Screens */
   @media only screen and (min-width : 1200px) {
-    height: 32rem;
+    height: 32em;
   }
   
   iframe{
@@ -61,12 +61,12 @@ hr{
     border: none;
     width: 100%;
     margin: 0 auto;
-    height: 37rem;
+    height: 37em;
     overflow: auto;
 
     /* Large Devices, Wide Screens */
     @media only screen and (min-width : 1200px) {
-      height: 30rem;
+      height: 30em;
     }
   }
 }
@@ -267,24 +267,24 @@ a.thrillworks-text{
 }
 
 .header-no-parallax{
-  padding-top: 0.75rem;
+  padding-top: 0.75em;
 
   @media screen and (max-width : 940px) {
     padding-top: 0;
   }
 
   @media screen and (max-width: 40em) {
-    padding-top: 0.75rem;
+    padding-top: 0.75em;
   }
 }
 
 /* Spacing */
 .margin-top{
-  margin-top: 2.5rem;
+  margin-top: 2.5em;
 }
 
 .margin-top-1{
-  margin-top: 1rem;
+  margin-top: 1em;
 }
 
 /* Breadcrumbs */
