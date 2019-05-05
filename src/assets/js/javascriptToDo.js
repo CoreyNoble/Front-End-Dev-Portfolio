@@ -15,17 +15,37 @@ var list = document.getElementById("todoOutput");
 var close = document.getElementsByClassName("close");
 var i;
 for (i = 0; i < close.length; i++) {
+  // If Close is Clicked
   close[i].onclick = function() {
     var li = this.parentElement;
     li.remove();
   }
+  // If 'Enter' on Close Focus
+  close[i].addEventListener("keyup", function(event) {
+    if (event.keyCode === 13) { // Enter
+      // Cancel the default action, if needed
+      event.preventDefault();
+      var li = this.parentElement;
+      li.remove();
+    }
+  }, false);
 }
 
 // Add a "checked" symbol when clicking on a list item
 var list = document.getElementById('todoOutput');
-list.addEventListener('click', function(ev) {
-  if (ev.target.tagName === 'LI') {
-    ev.target.classList.toggle('checked');
+// Checked Item (CLICK)
+list.addEventListener('click', function(event) {
+  if (event.target.tagName === 'LI') {
+    event.target.classList.toggle('checked');
+  }
+}, false);
+// Checked Item (ENTER)
+list.addEventListener("keyup", function(event) {
+  if (event.keyCode === 13) { // Enter
+    // Cancel the default action, if needed
+    event.preventDefault();
+    // Trigger the button element with a click
+    event.target.classList.toggle('checked');
   }
 }, false);
 
