@@ -1,45 +1,59 @@
 ---
 title: Contact | Corey Noble
+description: Contact me. Corey Noble, Web Developer.
+canonical: https://corey-noble.com/contact.html
 ---
 
 <!-- CONTACT HEADER -->
-<div id="parallax-hero-2" class="parallax-large" data-stellar-background-ratio="0.4">
+<div id="parallax-hero-2" class="parallax" data-stellar-background-ratio="0.4">
   <h1>Contact Me</h1>
 </div>
 
 <!-- CONTACT MESSAGE -->
-<div class="section black">
+<div id="no-captcha" class="section black">
   <div class="row">
-    <div id="contact-intro" class="large-12 medium-12 small-12 columns">
-      <h2 id="no-captcha">I look forward to hearing from&nbsp;you!</h2>
-      <h5>Thank you for showing interest in me as a developer. I am excited to start working with you! Please fill out the form
-        below so we can begin a&nbsp;conversation.</h5>
+    <div id="contact-intro" class="small-12 column">
+      <h2 data-aos="fade" data-aos-delay="100">I look forward to hearing from&nbsp;you!</h2>
+      <p class="h5" data-aos="fade" data-aos-delay="100">Thank you for showing interest in me as a developer. I am excited to start working with you! Please fill out the form
+        below so we can begin a&nbsp;conversation.</p>
+      <p id="captcha-none" class="captcha-error h5 hide" aria-hidden="true"><em>Please validate your submission with Google ReCaptcha.</em></p>
+      <p id="captcha-failed" class="captcha-error h5 hide" aria-hidden="true"><em>You have failed Google ReCaptcha validation. Please try&nbsp;again.</em></p>
     </div>
 
     <!-- CONTACT FORM -->
-    <div class="contact-form large-12 medium-12 small-12 columns">
+    <div class="contact-form small-12 column">
       <form method="post" action="{{root}}mailsend.php" method="post">
-        <div class="row fadeIn wow">
-          <h5>First Name</h5>
-          <input type="text" name="firstName" maxlength="50" required />
+        <div class="row" data-aos="fade" data-aos-delay="100">
+          <label for="firstName">
+            <h3 class="h5">First Name</h3>
+            <input type="text" name="firstName" maxlength="50" required />
+          </label>
 
-          <h5>Last Name</h5>
-          <input type="text" name="lastName" maxlength="50" required />
+          <label for="lastName">
+            <h3 class="h5">Last Name</h3>
+            <input type="text" name="lastName" maxlength="50" required />
+          </label>
 
-          <h5>Email Address</h5>
-          <input type="text" name="email" maxlength="80" required />
+          <label for="email">
+            <h3 class="h5">Email Address</h3>
+            <input type="text" name="email" maxlength="80" required />
+          </label>
 
-          <h5>Company</h5>
-          <input type="text" name="company" maxlength="80" required />
+          <label for="company">
+            <h3 class="h5">Company</h3>
+            <input type="text" name="company" maxlength="80" required />
+          </label>
 
-          <h5>Inquiry</h5>
-          <textarea class="last" name="inquiry" rows="5" cols="35" maxlength="3000" required></textarea>
+          <label for="inquiry">
+            <h3 class="h5">Inquiry</h3>
+            <textarea class="last" name="inquiry" rows="5" cols="35" maxlength="3000" required></textarea>
+          </label>
 
-          <div class="contact-ctas no-padding large-8 medium-8 small-12 columns">
+          <div class="contact-ctas no-padding small-12 medium-8 columns">
             <div class="g-recaptcha" data-sitekey="6Lcj8wYUAAAAAG9fl2DtDnsqTjfyNFwhL38TwGao"></div>
           </div>
 
-          <div class="contact-ctas no-padding large-4 medium-4 small-12 columns">
+          <div class="contact-ctas no-padding small-12 medium-4 columns">
             <input type="submit" class="button submit-cta" value="Submit" />
           </div>
         </div>

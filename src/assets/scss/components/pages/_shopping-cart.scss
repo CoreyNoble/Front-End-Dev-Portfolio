@@ -14,17 +14,17 @@
             float: left;
         }
 
-        h1,h2,h3,h4,h5,h6,p{
+        h1,.h1,h2,.h2,h3,.h3,h4,.h4,h5,.h5,h6,.h6,p{
             margin: 0;
             padding: 0;
 
-            h3{
-                font-size: 18px;
+            h3,.h3{
+                font-size: rem-calc(18);
                 margin-top: 1em;
             }
 
             p{
-                font-size: 14px;
+                font-size: rem-calc(14);
             }
         }
 
@@ -56,7 +56,7 @@
                     filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.25));
                 }
 
-                h5{
+                h5,.h5{
                     text-align: center;
                     margin-top: 1em;
                 }
@@ -134,7 +134,7 @@
             margin: 0 auto;
             text-decoration: none;
 
-            &:hover{
+            &:hover, &:focus{
                 color: $white;
             }
 
@@ -155,7 +155,7 @@
                 background: linear-gradient(135deg, rgba(147,206,222,1) 0%, rgba(117,189,209,1) 41%, rgba(73,165,191,1) 100%);
                 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#93cede', endColorstr='#49a5bf', GradientType=1 );
 
-                &:hover{
+                &:hover, &:focus{
                     background: rgba(168,235,250,1);
                     background: -moz-linear-gradient(-45deg, rgba(168,235,250,1) 0%, rgba(119,199,219,1) 41%, rgba(62,128,143,1) 100%);
                     background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(168,235,250,1)), color-stop(41%, rgba(119,199,219,1)), color-stop(100%, rgba(62,128,143,1)));
@@ -170,7 +170,7 @@
                         filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.75)); 
                     }
 
-                    h2{
+                    h2,.h2{
                         color: $white;
                         text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.75);
                     }
@@ -185,7 +185,7 @@
                 }
 
                 .shopping-title{            
-                    h2{
+                    h2,.h2{
                         display: block;
                         margin: 0;
                         margin-top: 0.1em;
@@ -238,7 +238,7 @@
                 color: $black;
                 margin: 0.25em 0;
                 width: 100%;
-                font-size: 16px;
+                font-size: rem-calc(16);
                 font-weight: bold;
                 text-decoration: none;
                 line-height: 1;
@@ -258,7 +258,7 @@
                     margin-left: 0.75em;
                 }
 
-                &:hover{
+                &:hover, &:focus{
                     -webkit-box-shadow: 0px 0px 3px 0px rgba(0,0,0,1);
                     -moz-box-shadow: 0px 0px 3px 0px rgba(0,0,0,1);
                     box-shadow: 0px 0px 3px 0px rgba(0,0,0,1);
@@ -279,7 +279,7 @@
                 background: linear-gradient(to bottom, rgba(210,255,82,1) 0%, rgba(145,232,66,1) 100%);
                 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d2ff52', endColorstr='#91e842', GradientType=0 );
 
-                &:hover{
+                &:hover, &:focus{
                     background: rgba(145,232,66,1);
                     background: -moz-linear-gradient(top, rgba(145,232,66,1) 0%, rgba(210,255,82,1) 100%);
                     background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(145,232,66,1)), color-stop(100%, rgba(210,255,82,1)));
@@ -316,7 +316,7 @@
                 background: linear-gradient(to bottom, rgba(255,117,107,1) 0%, rgba(222,33,33,1) 100%);
                 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff756b', endColorstr='#de2121', GradientType=0 );
 
-                &:hover{
+                &:hover, &:focus{
                     background: rgba(222,33,33,1);
                     background: -moz-linear-gradient(top, rgba(222,33,33,1) 0%, rgba(255,117,107,1) 100%);
                     background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(222,33,33,1)), color-stop(100%, rgba(255,117,107,1)));
@@ -349,7 +349,7 @@
                 background: linear-gradient(to bottom, rgba(245,245,245,1) 0%, rgba(173,173,173,1) 100%);
                 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5f5f5', endColorstr='#adadad', GradientType=0 );
 
-                &:hover{
+                &:hover, &:focus{
                     background: rgba(173,173,173,1);
                     background: -moz-linear-gradient(top, rgba(173,173,173,1) 0%, rgba(245,245,245,1) 100%);
                     background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(173,173,173,1)), color-stop(100%, rgba(245,245,245,1)));
@@ -382,7 +382,7 @@
                 background: linear-gradient(to bottom, rgba(147,206,222,1) 0%, rgba(117,189,209,1) 41%, rgba(73,165,191,1) 100%);
                 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#93cede', endColorstr='#49a5bf', GradientType=0 );
 
-                &:hover{
+                &:hover, &:focus{
                     background: rgba(73,165,191,1);
                     background: -moz-linear-gradient(top, rgba(73,165,191,1) 0%, rgba(117,189,209,1) 59%, rgba(147,206,222,1) 100%);
                     background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(73,165,191,1)), color-stop(59%, rgba(117,189,209,1)), color-stop(100%, rgba(147,206,222,1)));
@@ -453,10 +453,10 @@
                 text-decoration: underline;
                 color: $black;
 
-                &:hover{
+                &:hover, &:focus{
                     color: $dark-blue;
 
-                    h4{
+                    h4,.h4{
                         color: $dark-blue;
                     }
                 }
@@ -477,7 +477,7 @@
                     margin-top: 0.4em;
                 }
 
-                h4{
+                h4,.h4{
                     float: right;
                     display: inline-block;
                 }
@@ -492,7 +492,7 @@
             }
 
             .item-sale{
-                h4{
+                h4,.h4{
                     text-align: right;
                 }
 

@@ -2,24 +2,21 @@
 #contact-intro{
   padding-bottom: 2em;
     
-    h5{
+    h5,.h5{
         margin-top: 1em;
     }
-    
-    .form-validation-error{
-        color: red;
-        font-weight: bold;
-        margin-top: 1em;
-        text-decoration: underline;
-    }
-    
-    .success{
-        font-size: 3.5em;
+
+    .captcha-error{
+      color: $error; 
+      font-weight: bold; 
+      margin-top: 1.5em;
+      border: 2px solid $error;
+      padding: 0.5rem 1rem;
     }
 }
 
 .contact-form{
-  background: url(../img/aesthetic-geometry-tablet.jpg) no-repeat;
+  background: linear-gradient(rgba(0,0,0,0.33), rgba(0,0,0,0.33)), url(../img/aesthetic-geometry.jpg) no-repeat;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -29,10 +26,14 @@
   -webkit-box-shadow:  0  0.75em 0.75em -0.75em #000000, 0 -0.75em 0.75em -0.75em #000000;
    box-shadow: 0  0.75em 0.75em -0.75em #000000, 0 -0.75em 0.75em -0.75em #000000;
 
+   @media screen and (max-width: 40em) {
+    padding: 1em;
+   }
+
   form{
     padding: 1em;
 
-    h5{
+    h5,.h5{
       color: $white;
     }
 
@@ -63,8 +64,9 @@
       background: -webkit-gradient(linear, to left top, to left bottom, from(#5FA6A6), to(#7FC7C7));
       background: -moz-linear-gradient(to top,  #5FA6A6,  #7FC7C7);
       margin: 1.5em 0 0 0;
+      transition: all 0.33s ease;
 
-      &:hover, &:active {
+      &:hover, &:active, &:focus {
           color: $white;
           border-color: $white;
           background: #63B8EE;
@@ -104,21 +106,21 @@
     }
   }
     
-    &.confirmation{
-      padding-bottom: 17em;
-        
-      h2, h4, p{
-        color: $white;
-      }
-        
-      h2{
-        padding-bottom: 1em;
-        padding-top: 0.2em;
-      }
-        
-      @media screen and (max-width: 40em) {
-        padding-bottom: 13.25em;
-        margin-bottom: 5.5em;
-      }
+  &.confirmation{
+    padding-bottom: 17em;
+      
+    h2,.h2, h4,.h4, p{
+      color: $white;
     }
+      
+    h2,.h2{
+      padding-bottom: 1em;
+      padding-top: 0.2em;
+    }
+      
+    @media screen and (max-width: 40em) {
+      padding-bottom: 0.5em;
+      margin-bottom: 1em;
+    }
+  }
 }

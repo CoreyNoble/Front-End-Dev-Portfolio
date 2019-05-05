@@ -7,7 +7,7 @@
   -webkit-box-shadow: inset  0 -1.5em 1.5em -1.5em #000000;
   box-shadow: inset  0 -1.5em 1.5em -1.5em #000000;
 
-  h1{
+  h1,.h1{
     display: table-cell;
     vertical-align: middle;
     text-align:center;
@@ -33,18 +33,18 @@
 }
 
 .parallax {
-  height: 32em;
+  height: 31em;
     
   @media screen and (max-width: 40em) {
-    height: 16em;
+    height: 15em;
   }
     
   @media screen and (min-width: 40.063em) and (max-width: 64em) {
     height: 24em;
   }
     
-  h1{
-    padding-top: 0.75em;
+  h1,.h1{
+    padding-top: 0.5em;
       
     @media screen and (max-width: 40em) {
       font-size: 2em;
@@ -55,7 +55,7 @@
     }
   }
     
-  h2{ 
+  h2,.h2{ 
     @media screen and (max-width: 40em) {
       font-size: 1em;
     }
@@ -73,7 +73,7 @@
     height: 28em;
   }
     
-  h1{
+  h1,.h1{
     padding-top: 1.5em;
       
     @media screen and (max-width: 40em) {
@@ -85,7 +85,7 @@
     }
   }
     
-  h2{ 
+  h2,.h2{ 
     @media screen and (max-width: 40em) {
       font-size: 1em;
     }
@@ -94,20 +94,21 @@
 
 // GEOMETRIC HERO
 #parallax-hero-1 {
-  background: url(../img/aesthetic-geometry.jpg);
+  background: linear-gradient(rgba(0,0,0,0.15), rgba(0,0,0,0.15)), url(../img/aesthetic-geometry.jpg) no-repeat;
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  height: 31em;
   width: 100%;
     
   @media screen and (max-width: 40em) {
-    height: 16em;
+    height: 15.5em;
   }
     
   @media screen and (min-width: 40.063em) and (max-width: 64em) {
-    background: url(../img/aesthetic-geometry-tablet.jpg);
-    height: 24em;
+    background: linear-gradient(rgba(0,0,0,0.15), rgba(0,0,0,0.15)), url(../img/aesthetic-geometry-tablet.jpg);
+    height: 22.5em;
   }
 
   #index-hero-panel-1{
@@ -115,16 +116,16 @@
     background-repeat: no-repeat;
     background-size: cover;
     z-index: 1;
-    height: 32em;
-    -webkit-animation-delay: 0.2s; /* Chrome, Safari, Opera */
-    animation-delay: 0.2s;
+    height: 31em;
+    -webkit-animation-delay: 0.3s; /* Chrome, Safari, Opera */
+    animation-delay: 0.3s;
       
     @media screen and (max-width: 40em) {
-      height: 16em;
+      height: 15.5em;
     }
 
     @media screen and (min-width: 40.063em) and (max-width: 64em) {
-      height: 24em;
+      height: 22.5em;
     }
       
     #index-hero-panel-2{
@@ -132,16 +133,16 @@
       background-repeat: no-repeat;
       background-size: cover;
       z-index: 2;
-      height: 32em;
-      -webkit-animation-delay: 0.4s; /* Chrome, Safari, Opera */
+      height: 31em;
+      -webkit-animation-delay: 0.4; /* Chrome, Safari, Opera */
       animation-delay: 0.4s;
       
       @media screen and (max-width: 40em) {
-        height: 16em;
+        height: 15.5em;
       }
         
       @media screen and (min-width: 40.063em) and (max-width: 64em) {
-        height: 24em;
+        height: 22.5em;
       }
         
       #index-hero-panel-3{
@@ -149,16 +150,16 @@
         background-repeat: no-repeat;
         background-size: cover;
         z-index: 3;
-        height: 32em;
-        -webkit-animation-delay: 0.6s; /* Chrome, Safari, Opera */
-        animation-delay: 0.6s;
+        height: 31em;
+        -webkit-animation-delay: 0.5s; /* Chrome, Safari, Opera */
+        animation-delay: 0.5s;
 
         @media screen and (max-width: 40em) {
-          height: 16em;
+          height: 15.5em;
         }
           
         @media screen and (min-width: 40.063em) and (max-width: 64em) {
-          height: 24em;
+          height: 22.5em;
         }
           
         #index-hero-panel-4{
@@ -166,16 +167,16 @@
           background-repeat: no-repeat;
           background-size: cover;
           z-index: 4;
-          height: 32em;
-          -webkit-animation-delay: 0.8s; /* Chrome, Safari, Opera */
-          animation-delay: 0.8s;
+          height: 31em;
+          -webkit-animation-delay: 0.6s; /* Chrome, Safari, Opera */
+          animation-delay: 0.6s;
             
           @media screen and (max-width: 40em) {
-            height: 16em;
+            height: 15.5em;
           }
             
           @media screen and (min-width: 40.063em) and (max-width: 64em) {
-            height: 24em;
+            height: 22.5em;
           }
 
           #index-hero-panel-5{
@@ -183,37 +184,46 @@
             background-repeat: no-repeat;
             background-size: cover;
             z-index: 5;
-            height: 32em;
-            -webkit-animation-delay: 1s; /* Chrome, Safari, Opera */
-            animation-delay: 1s;
+            height: 31em;
+            -webkit-animation-delay: 0.7s; /* Chrome, Safari, Opera */
+            animation-delay: 0.7s;
               
             @media screen and (max-width: 40em) {
-              height: 16em;
+              height: 15.5em;
             }
               
             @media screen and (min-width: 40.063em) and (max-width: 64em) {
-              height: 24em;
+              height: 22.5em;
             }
 
             .row{
               .small-12{
-                h1{
+                h1,.h1{
                   display: block;
                   text-align: center;
+                  -webkit-animation-delay: 1.33s; /* Chrome, Safari, Opera */
+                  animation-delay: 1.33s;
+                  padding-top: 0.75em;
                     
                   @media screen and (max-width: 40em) {
                     font-size: 2.5em;
                   }
                 }
 
-                h2{
+                h2,.h2{
                   display: block;
                   text-align: center;
                   font-size: 2.5em;
                   color: #fff;
+                  margin-left: 2.33em;
                   text-shadow: 0.1em 0.1em 0.1em rgba(0, 0, 0, 0.66);
+                  line-height: 1;
+
+                  -webkit-animation-delay: 2.15s; /* Chrome, Safari, Opera */
+                  animation-delay: 2.15s;
                     
                   @media screen and (max-width: 40em) {
+                    margin-left: 2.75em;
                     font-size: 1.5em;
                   }
                 }
@@ -230,6 +240,15 @@
 #parallax-hero-3 {
   background: url(../img/leather-tile.jpg) repeat;
   background-attachment: fixed;
+  height: 31em;
+      
+  @media screen and (max-width: 40em) {
+    height: 15.5em;
+  }
+    
+  @media screen and (min-width: 40.063em) and (max-width: 64em) {
+    height: 22.5em;
+  }
 }
 
 // TORONTO HERO
@@ -237,21 +256,33 @@
   background: url(/assets/img/toronto-city-scape.jpg);
   background-attachment: fixed;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: 0 -18em;
+  background-position-x: center;
   background-size: cover;
   width: 100%;
-    
+  height: 31em;
+
   @media screen and (max-width: 40em) {
     background: url(/assets/img/toronto-city-scape-mobile.jpg);
+    height: 15.5em;
+    background-position: 0 -2em;
+    background-position-x: center;
   }
     
   @media screen and (min-width: 40.063em) and (max-width: 64em) {
     background: url(/assets/img/toronto-city-scape-tablet.jpg);
+    height: 22.5em;
+    background-position: 0 -6em;
+    background-position-x: center;
+  }
+
+  @media screen and (min-width: 64em) and (max-width: 98em) {
+    background-position: 0 -9.5em;
+    background-position-x: center;
   }
     
-  h1{
+  h1,.h1{
     background-color: rgba(0, 0, 0, 0.5);
-    padding: 1em;
   }
 }
 
