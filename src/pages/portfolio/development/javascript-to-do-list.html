@@ -8,31 +8,30 @@ canonical: https://corey-noble.com/portfolio/development/javascript-to-do-list.h
 <div class="section blue">
   <div class="row">
     <div class="large-12 columns">
-      <h1 class="header-no-parallax">To-do List - JavaScript Example</h1>
-      <p class="h5">Below is a to-do list created with JavaScript.</p>
+      <h1 class="header-no-parallax">JavaScript To-do List</h1>
+      <p class="h5">Below is a to-do list created using JavaScript.</p>
     </div>
   </div>
 </div>
 
 <!-- To-do -->
-<div class="section white">
+<div class="section black">
   <div id="javaScriptToDo" class="row">
-    <div id="myDIV" class="header">
-      <h2>To-do:</h2>
+    <div class="header">
       <div class="row">
         <div class="small-7 medium-9 column">
-          <input type="text" id="myInput" placeholder="Title...">
+          <input type="text" id="todoInput" placeholder="Title...">
         </div>
         <div class="small-5 medium-3 column">
-          <span onclick="newElement()" class="addBtn">Add</span>
+          <button onclick="newElement()" class="addToDoItem">Add Item</button>
         </div>
       </div>
       <hr />
     </div>
     
-    <ul id="myUL">
+    <ul id="todoOutput">
       <li>Hit the gym</li>
-      <li class="checked">Pay bills</li>
+      <li>Pay bills</li>
       <li>Meet George</li>
       <li>Buy eggs</li>
       <li>Read a book</li>

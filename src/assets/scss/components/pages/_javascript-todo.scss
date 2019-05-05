@@ -1,10 +1,37 @@
 #javaScriptToDo{ 
+  #todoInput{
+    margin-bottom: 0;
+    margin-top: 0.15em;
+    background: rgba(0,0,0,0.22);
+    color: $white;
+        
+    &:focus{
+        background: rgba(0,0,0,0.22);
+    }
+  }
+
+  button{
+      width: 100%;
+      padding: 0.75em 1em;
+  }
+
+  #todoOutput{
+      margin-left: 0;
+
+      li{
+          list-style-type: none;
+          margin-left: 0;
+          color: $black;
+          font-weight: bold;
+      }
+  }
+
   /* Style the list items */
   ul li {
     cursor: pointer;
     position: relative;
     padding: 12px 8px 12px 40px;
-    background: #eee;
+    background: $blue;
     font-size: 18px;
     transition: 0.2s;
   
@@ -13,16 +40,18 @@
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-  }
-  
-  /* Set all odd list items to a different color (zebra-stripes) */
-  ul li:nth-child(odd) {
-    background: #f9f9f9;
-  }
-  
-  /* Darker background-color on hover */
-  ul li:hover {
-    background: #ddd;
+
+    &:hover {
+        background: darken($blue, 14%);
+    }
+
+    &:nth-child(odd) {
+        background: $white;
+
+        &:hover{
+            background: darken($white, 14%)
+        }
+    }
   }
   
   /* When clicked on, add a background color and strike out text */
@@ -55,7 +84,7 @@
   }
   
   .close:hover {
-    background-color: #f44336;
+    background-color: $error;
     color: white;
   }
   
@@ -64,23 +93,5 @@
     content: "";
     display: table;
     clear: both;
-  }
-  
-  /* Style the "Add" button */
-  .addBtn {
-    padding: 10px;
-    width: 25%;
-    background: #d9d9d9;
-    color: #555;
-    float: left;
-    text-align: center;
-    font-size: 16px;
-    cursor: pointer;
-    transition: 0.3s;
-    border-radius: 0;
-  }
-  
-  .addBtn:hover {
-    background-color: #bbb;
   }
 }
