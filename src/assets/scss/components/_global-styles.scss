@@ -46,14 +46,8 @@ hr{
 .frame{
   width: 100%;
   padding: 0.5rem;
-  padding-top: 1.5rem;
-  height: 39rem;
+  height: 70vh;
   overflow: hidden;
-
-  /* Large Devices, Wide Screens */
-  @media only screen and (min-width : 1200px) {
-    height: 32rem;
-  }
   
   iframe{
     display: block;
@@ -61,13 +55,8 @@ hr{
     border: none;
     width: 100%;
     margin: 0 auto;
-    height: 37rem;
+    height: 68vh;
     overflow: auto;
-
-    /* Large Devices, Wide Screens */
-    @media only screen and (min-width : 1200px) {
-      height: 30rem;
-    }
   }
 }
 
