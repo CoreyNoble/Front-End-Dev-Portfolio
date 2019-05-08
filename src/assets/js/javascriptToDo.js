@@ -1,6 +1,6 @@
 var close = document.getElementsByClassName("close");
 var list = document.getElementById("todoOutput");
-var myNodelist = document.getElementsByTagName("LI");
+var myNodelist = document.getElementsByClassName("todoItem");
 
 var cols = document.querySelectorAll('#todoOutput .todoItem');
 
@@ -73,15 +73,22 @@ function newItem() {
   var p = document.createElement('p');
   var inputValue = document.getElementById("todoInput").value;
   var t = document.createTextNode(inputValue);
+
+  // LI attributes
   li.setAttribute("tabindex", "0");
   li.setAttribute("class", "todoItem");
   li.setAttribute("draggable", "true");
   li.appendChild(p).appendChild(t);
+  
+  // If input is empty
   if (inputValue === '') {
+    // Error, Need to add text
     alert("You must write something!");
-  } else {
+  } else { // Otherwise
+    // Add Entry
     document.getElementById("todoOutput").appendChild(li);
   }
+  // Empty Input
   document.getElementById("todoInput").value = "";
 
   var span = document.createElement("SPAN");
