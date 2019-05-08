@@ -114,6 +114,8 @@
           border-width: 0 2px 2px 0;
           top: 1.2em;
           right: 4em;
+          width: 0.5em;
+          height: 1em;
           transform: rotate(45deg);
         }
 
@@ -142,9 +144,18 @@
         }
 
         p{
-          width: 73%;
           color: $white;
+          width: 72%;
+  
+          @include breakpoint(medium){
+            width: 86%;
+          }
+  
+          @include breakpoint(large){
+            width: 92.5%;
+          }
         }
+  
       }
 
       .close {
