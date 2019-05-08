@@ -22,35 +22,32 @@
       cursor: pointer;
       position: relative;
       padding: 1em;
-      list-style-type: none;
-      background: $blue;
-      margin-left: 0;
       padding-left: 2.5em;
-      border: 2px solid $blue;
+      margin-left: 0;
+      margin-bottom: 0;
+      list-style-type: none;
+      background: lighten($blue, 24%);
+      border: 2px solid lighten($blue, 24%);
       transition: all ease 0.2s;
 
       &::before{
         cursor: move;
-        width: 1.5em;
-        height: 100%;
+        width: 1.25em;
+        height: 3.25em;
         content: "";
         display: block;
         position: absolute;
-        top: 0;
-        left: 0;
-        background:
-        radial-gradient($black 15%, transparent 16%) 0 0,
-        radial-gradient($black 15%, transparent 16%) 8px 8px,
-        radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
-        radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
+        top: 0.175em;
+        left: 0.15em;
         background-color: $black;
-        background-size: 16px 16px;
-        opacity: 0.95;
+        background-image: linear-gradient(transparent 50%, rgb(0,0,0) 50%);
+        background-size: 8px 8px;
+        opacity: 0.8;
       }
 
       &:nth-child(even) {
         &:hover, &:focus{
-          background: darken($blue, 14%);
+          background: darken(lighten($blue, 24%), 14%);
           border: 2px solid darken($white, 14%);
 
           .close {
@@ -63,8 +60,8 @@
         }
 
         .close {
-          background-color: $blue;
-          border: 2px solid $blue;
+          background-color: lighten($blue, 24%);
+          border: 2px solid lighten($blue, 24%);
         }
       }
   
@@ -111,13 +108,8 @@
         }
 
         &::before{
-          background:
-          radial-gradient($white 15%, transparent 16%) 0 0,
-          radial-gradient($white 15%, transparent 16%) 8px 8px,
-          radial-gradient(rgba(0,0,0,.25) 15%, transparent 20%) 0 1px,
-          radial-gradient(rgba(0,0,0,.25) 15%, transparent 20%) 8px 9px;
           background-color: $white;
-          background-size: 16px 16px;
+          background-image: linear-gradient(transparent 50%, rgb(200,200,200) 50%);
         }
 
         &:hover, &:focus {

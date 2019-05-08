@@ -1,16 +1,18 @@
 var close = document.getElementsByClassName("close");
 var list = document.getElementById("todoOutput");
 var myNodelist = document.getElementsByTagName("LI");
-  
-var time = 0;
+
+var cols = document.querySelectorAll('#todoOutput .todoItem');
 
 // Update the app
-function update() {
-  //nodeList();
+function update(cols) {
   removeItem();
-  checkItem();
-  time = time + 1;
-  console.log(time);
+
+  // Update columns for Drag & Drop
+  cols = document.querySelectorAll('#todoOutput .todoItem');
+  [].forEach.call(cols, addDnDHandlers);
+
+  // Loop the function
   window.setTimeout(update, 1000);
 }
 
@@ -45,28 +47,25 @@ function removeItem() {
     }, false);
   }
 }
+// Checked Item
+// Checked Item (CLICK)
+list.addEventListener('click', function(event) {
+  if (event.target.tagName === 'LI') {
+    event.target.classList.toggle('checked');
+  } else if (event.target.tagName === 'P') {
+    event.target.parentNode.classList.toggle('checked');
+  }
+}, false);
 
-// Add a "checked" symbol when clicking on a list item
-function checkItem() {
-  // Checked Item (CLICK)
-  list.addEventListener('click', function(event) {
-    if (event.target.tagName === 'LI') {
-      event.target.classList.toggle('checked');
-    } else if (event.target.tagName === 'P') {
-      event.target.parentNode.classList.toggle('checked');
-    }
-  }, false);
-  
-  // Checked Item (ENTER)
-  list.addEventListener("keyup", function(event) {
-    if (event.keyCode === 13) { // Enter
-      // Cancel the default action, if needed
-      event.preventDefault();
-      // Trigger the button element with a click
-      event.target.classList.toggle('checked');
-    }
-  }, false);
-}
+// Checked Item (ENTER)
+list.addEventListener("keyup", function(event) {
+  if (event.keyCode === 13) { // Enter
+    // Cancel the default action, if needed
+    event.preventDefault();
+    // Trigger the button element with a click
+    event.target.classList.toggle('checked');
+  }
+}, false);
 
 // Create a new list item when clicking on the "Add" button
 function newItem() {
@@ -166,9 +165,6 @@ function addDnDHandlers(elem) {
   elem.addEventListener('drop', handleDrop, false);
   elem.addEventListener('dragend', handleDragEnd, false);
 }
-
-var cols = document.querySelectorAll('#todoOutput .todoItem');
-[].forEach.call(cols, addDnDHandlers);
 
 nodeList();
 update();
