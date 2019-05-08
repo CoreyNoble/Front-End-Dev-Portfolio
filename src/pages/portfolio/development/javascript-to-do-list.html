@@ -9,7 +9,7 @@ canonical: https://corey-noble.com/portfolio/development/javascript-to-do-list.h
   <div class="row">
     <div class="large-12 columns">
       <h1 class="header-no-parallax">JavaScript To-do List</h1>
-      <p class="h5">Below is a to-do list created using JavaScript.</p>
+      <p class="h5">Below is a drag and drop to-do list created using JavaScript.</p>
     </div>
   </div>
 </div>
@@ -20,26 +20,26 @@ canonical: https://corey-noble.com/portfolio/development/javascript-to-do-list.h
     <div class="header">
       <div class="row">
         <div class="small-7 medium-9 column">
-          <input type="text" id="todoInput" placeholder="Title...">
+          <input type="text" id="todoInput" placeholder="Item description..." maxlength="600" aria-label="Add an item to the list">
         </div>
         <div class="small-5 medium-3 column">
-          <button onclick="newElement()" class="addToDoItem">Add Item</button>
+          <button onclick="newItem()" class="addToDoItem">Add Item</button>
         </div>
       </div>
       <hr />
     </div>
     
     <ul id="todoOutput">
-      <li tabindex="0">Design Approval</li>
-      <li tabindex="0">Copy Approval</li>
-      <li tabindex="0">Front-end Development</li>
-      <li tabindex="0">Client Feedback Round 1</li>
-      <li tabindex="0">CMS and Database Architecture</li>
-      <li tabindex="0">Back-end development</li>
-      <li tabindex="0">Client Feedback Round 2</li>
-      <li tabindex="0">Address Defects</li>
-      <li tabindex="0">Website Launch</li>
-      <li tabindex="0">Post-Launch Updates</li>
+      <li class="todoItem" tabindex="0" draggable="true"><p>Design Approval</p></li>
+      <li class="todoItem" tabindex="0" draggable="true"><p>Copy Approval</p></li>
+      <li class="todoItem" tabindex="0" draggable="true"><p>Front-end Development</p></li>
+      <li class="todoItem" tabindex="0" draggable="true"><p>Client Feedback Round 1</p></li>
+      <li class="todoItem" tabindex="0" draggable="true"><p>CMS and Database Architecture</p></li>
+      <li class="todoItem" tabindex="0" draggable="true"><p>Back-end development</p></li>
+      <li class="todoItem" tabindex="0" draggable="true"><p>Client Feedback Round 2</p></li>
+      <li class="todoItem" tabindex="0" draggable="true"><p>Address Defects</p></li>
+      <li class="todoItem" tabindex="0" draggable="true"><p>Website Launch</p></li>
+      <li class="todoItem" tabindex="0" draggable="true"><p>Post-Launch Updates</p></li>
     </ul> 
   </div>
 </div>
