@@ -2,13 +2,16 @@ var close = document.getElementsByClassName("close");
 var list = document.getElementById("todoOutput");
 var myNodelist = document.getElementsByTagName("LI");
   
+var time = 0;
+
 // Update the app
-function update(time = 0) {
-  nodeList();
+function update() {
+  //nodeList();
   removeItem();
   checkItem();
+  time = time + 1;
   console.log(time);
-  return;
+  window.setTimeout(update, 1000);
 }
 
 // Create a "close" button and append it to each list item
@@ -167,4 +170,5 @@ function addDnDHandlers(elem) {
 var cols = document.querySelectorAll('#todoOutput .todoItem');
 [].forEach.call(cols, addDnDHandlers);
 
+nodeList();
 update();
