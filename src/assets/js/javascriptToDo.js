@@ -1,7 +1,19 @@
-  // Create a "close" button and append it to each list item
-  var myNodelist = document.getElementsByTagName("LI");
-  var i;
-  for (i = 0; i < myNodelist.length; i++) {
+var close = document.getElementsByClassName("close");
+var list = document.getElementById("todoOutput");
+var myNodelist = document.getElementsByTagName("LI");
+  
+// Update the app
+function update(time = 0) {
+  nodeList();
+  removeItem();
+  checkItem();
+  console.log(time);
+  return;
+}
+
+// Create a "close" button and append it to each list item
+function nodeList() {
+  for (var i = 0; i < myNodelist.length; i++) {
     var span = document.createElement("SPAN");
     var txt = document.createTextNode("\u00D7");
     span.className = "close";
@@ -9,12 +21,11 @@
     span.appendChild(txt);
     myNodelist[i].appendChild(span);
   }
+}
 
-  // Click on a close button to hide the current list item
-  var list = document.getElementById("todoOutput");
-  var close = document.getElementsByClassName("close");
-  var i;
-  for (i = 0; i < close.length; i++) {
+// Click on a close button to hide the current list item
+function removeItem() {
+  for (var i = 0; i < close.length; i++) {
     // If Close is Clicked
     close[i].onclick = function() {
       var li = this.parentElement;
@@ -30,9 +41,10 @@
       }
     }, false);
   }
+}
 
-  // Add a "checked" symbol when clicking on a list item
-  var list = document.getElementById('todoOutput');
+// Add a "checked" symbol when clicking on a list item
+function checkItem() {
   // Checked Item (CLICK)
   list.addEventListener('click', function(event) {
     if (event.target.tagName === 'LI') {
@@ -41,6 +53,7 @@
       event.target.parentNode.classList.toggle('checked');
     }
   }, false);
+  
   // Checked Item (ENTER)
   list.addEventListener("keyup", function(event) {
     if (event.keyCode === 13) { // Enter
@@ -50,30 +63,32 @@
       event.target.classList.toggle('checked');
     }
   }, false);
+}
 
-  // Create a new list item when clicking on the "Add" button
-  function newElement() {
-    var li = document.createElement("li");
-    var inputValue = document.getElementById("todoInput").value;
-    var t = document.createTextNode(inputValue);
-    li.setAttribute("tabindex", "0");
-    li.setAttribute("class", "todoItem");
-    li.setAttribute("draggable", "true");
-    li.appendChild(t);
-    if (inputValue === '') {
-      alert("You must write something!");
-    } else {
-      document.getElementById("todoOutput").appendChild(li);
-    }
-    document.getElementById("todoInput").value = "";
-
-    var span = document.createElement("SPAN");
-    var txt = document.createTextNode("\u00D7");
-    span.className = "close";
-    span.appendChild(txt);
-    span.setAttribute("tabindex", "0");
-    li.appendChild(span);
+// Create a new list item when clicking on the "Add" button
+function newItem() {
+  var li = document.createElement("li");
+  var p = document.createElement('p');
+  var inputValue = document.getElementById("todoInput").value;
+  var t = document.createTextNode(inputValue);
+  li.setAttribute("tabindex", "0");
+  li.setAttribute("class", "todoItem");
+  li.setAttribute("draggable", "true");
+  li.appendChild(p).appendChild(t);
+  if (inputValue === '') {
+    alert("You must write something!");
+  } else {
+    document.getElementById("todoOutput").appendChild(li);
   }
+  document.getElementById("todoInput").value = "";
+
+  var span = document.createElement("SPAN");
+  var txt = document.createTextNode("\u00D7");
+  span.className = "close";
+  span.appendChild(txt);
+  span.setAttribute("tabindex", "0");
+  li.appendChild(span);
+}
 
  
 /* Drag & Drop */
@@ -147,9 +162,9 @@ function addDnDHandlers(elem) {
   elem.addEventListener('dragleave', handleDragLeave, false);
   elem.addEventListener('drop', handleDrop, false);
   elem.addEventListener('dragend', handleDragEnd, false);
-
 }
 
 var cols = document.querySelectorAll('#todoOutput .todoItem');
 [].forEach.call(cols, addDnDHandlers);
 
+update();
