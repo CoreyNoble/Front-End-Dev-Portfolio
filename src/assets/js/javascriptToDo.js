@@ -110,11 +110,6 @@ function addDnDHandlers(elem) {
   elem.addEventListener('dragleave', handleDragLeave, false);
   elem.addEventListener('drop', handleDrop, false);
   elem.addEventListener('dragend', handleDragEnd, false);
-  elem.addEventListener("touchstart", handleDragStart, false);
-  elem.addEventListener("touchend", handleDrop, false);
-  elem.addEventListener("touchcancel", handleDragLeave, false);
-  elem.addEventListener("touchleave", handleDragLeave, false);
-  elem.addEventListener("touchmove", handleDragOver, false);
 }
 
 function handleDragStart(e) {
