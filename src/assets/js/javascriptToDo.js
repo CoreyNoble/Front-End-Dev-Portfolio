@@ -103,6 +103,15 @@ function newItem() {
 /* Drag & Drop */
 var dragSrcEl = null;
 
+function addDnDHandlers(elem) {
+  elem.addEventListener('dragstart', handleDragStart, false);
+  elem.addEventListener('dragenter', handleDragEnter, false)
+  elem.addEventListener('dragover', handleDragOver, false);
+  elem.addEventListener('dragleave', handleDragLeave, false);
+  elem.addEventListener('drop', handleDrop, false);
+  elem.addEventListener('dragend', handleDragEnd, false);
+}
+
 function handleDragStart(e) {
   // Target (this) element is the source node.
   dragSrcEl = this;
@@ -162,15 +171,6 @@ function handleDragEnd(e) {
   /*[].forEach.call(cols, function (col) {
     col.classList.remove('over');
   });*/
-}
-
-function addDnDHandlers(elem) {
-  elem.addEventListener('dragstart', handleDragStart, false);
-  elem.addEventListener('dragenter', handleDragEnter, false)
-  elem.addEventListener('dragover', handleDragOver, false);
-  elem.addEventListener('dragleave', handleDragLeave, false);
-  elem.addEventListener('drop', handleDrop, false);
-  elem.addEventListener('dragend', handleDragEnd, false);
 }
 
 nodeList();
