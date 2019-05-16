@@ -30,6 +30,9 @@ PATHS:
   # Paths to JavaScript entry points for webpack to bundle modules
   entries:
     - "src/assets/js/app.js"
+  # Path to reuseable canvasParticles.js
+  canvasParticles:
+    - "src/assets/js/canvasParticles.js"
   # Path to reuseable dragDropTouch.js
   dragDropTouch:
     - "src/assets/js/dragDropTouch.js"
