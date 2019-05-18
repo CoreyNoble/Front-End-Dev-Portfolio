@@ -9,7 +9,7 @@ particlesJS("index-hero", {
         }
       },
       "color": {
-        "value": "#6dbfbf"
+        "value": "#477979"
       },
       "shape": {
         "type": "circle",
