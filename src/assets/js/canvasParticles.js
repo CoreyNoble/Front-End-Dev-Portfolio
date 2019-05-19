@@ -32681,6 +32681,6 @@ function draw() {
     background(24, 24, 24);
 
     drawParticles();
-    particleBreakDistance = min(particleBreakDistance + 1, width / 18);
+    particleBreakDistance = min(particleBreakDistance + 1, width / 12);
     
 }
