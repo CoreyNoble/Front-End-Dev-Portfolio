@@ -4,24 +4,18 @@ description: Hi, my name is Corey Noble, I am a Web Developer who works for Thri
 canonical: https://corey-noble.com
 ---
 
+
+
 <!-- INDEX TITLE -->
-<div id="parallax-hero-1" class="parallax" data-stellar-background-ratio="0.4">
-  <div id="index-hero-panel-1" data-aos="fade-down" data-aos-delay="100">
-    <div id="index-hero-panel-2" data-aos="fade-down" data-aos-delay="300">
-      <div id="index-hero-panel-3" data-aos="fade-down" data-aos-delay="500">
-        <div id="index-hero-panel-4" data-aos="fade-down" data-aos-delay="700">
-          <div id="index-hero-panel-5" data-aos="fade-down" data-aos-delay="900">
-            <div class="row">
-              <div id="index-title" class="small-12 column">
-                <h1 data-aos="fade-down" data-aos-delay="1400">Corey Noble</h1>
-                <h2 data-aos="fade-up" data-aos-delay="2200"><em>Web Developer</em></h2>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+<div id="mainCanvas">
+  <div id="index-title">
+    <div class="small-12 column">
+      <h1 data-aos="fade-down" data-aos-delay="1400">Corey Noble</h1>
+      <h2 data-aos="fade-up" data-aos-delay="2200"><em>Web Developer</em></h2>
     </div>
   </div>
+  <span id="index-background-overlay"></span>
+  <div id="canvas"></div>
 </div>
 
 <!-- INDEX INTRO -->
@@ -131,3 +125,6 @@ canonical: https://corey-noble.com
 
 <!-- RESUME SECTION -->
 {{> resume-section}}
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/104/three.min.js"></script>
+<script src="{{root}}assets/js/canvasParticles.js"></script>

@@ -29,7 +29,7 @@ function loadConfig() {
 
 // Build the "dist" folder by running all of the below tasks
 gulp.task('build',
-gulp.series(clean, gulp.parallel(pages, php_pages, sass, javascript, images, copy), styleGuide));
+gulp.series(clean, gulp.parallel(pages, php_pages, sass, javascript, images, copy, copy_canvasParticles, copy_javascriptTetris, copy_dragDropTouch, copy_javascriptToDo), styleGuide));
 
 // Build the site, run the server, and watch for file changes
 gulp.task('default',
@@ -46,6 +46,30 @@ function clean(done) {
 function copy() {
   return gulp.src(PATHS.assets)
     .pipe(gulp.dest(PATHS.dist + '/assets'));
+}
+
+// Copy copy_canvasParticles.js to dist
+function copy_canvasParticles() {
+  return gulp.src(PATHS.canvasParticles)
+      .pipe(gulp.dest(PATHS.dist + '/assets/js'));
+}
+
+// Copy dragDropTouch.js to dist
+function copy_dragDropTouch() {
+  return gulp.src(PATHS.dragDropTouch)
+      .pipe(gulp.dest(PATHS.dist + '/assets/js'));
+}
+
+// Copy javascriptToDo.js to dist
+function copy_javascriptToDo() {
+  return gulp.src(PATHS.javascriptToDo)
+      .pipe(gulp.dest(PATHS.dist + '/assets/js'));
+}
+
+// Copy javascriptTetris.js to dist
+function copy_javascriptTetris() {
+  return gulp.src(PATHS.javascriptTetris)
+      .pipe(gulp.dest(PATHS.dist + '/assets/js'));
 }
 
 // Copy page templates into finished HTML files
@@ -162,12 +186,12 @@ function reload(done) {
 
 // Watch for changes to static assets, pages, Sass, and JavaScript
 function watch() {
-  gulp.watch(PATHS.assets, gulp.series(copy));
+  gulp.watch(PATHS.assets, gulp.series(copy, copy_canvasParticles, copy_javascriptTetris, copy_dragDropTouch, copy_javascriptToDo));
   gulp.watch('src/pages/**/*.html').on('all', gulp.series(pages, browser.reload));
   gulp.watch('src/pages/**/*.php').on('all', gulp.series(php_pages, browser.reload));
   gulp.watch('src/{layouts,partials}/**/*.html').on('all', gulp.series(resetPages, pages, browser.reload));
   gulp.watch('src/assets/scss/**/*.scss').on('all', sass);
-  gulp.watch('src/assets/js/**/*.js').on('all', gulp.series(javascript, browser.reload));
+  gulp.watch('src/assets/js/**/*.js').on('all', gulp.series(javascript, copy_canvasParticles, copy_javascriptTetris, copy_dragDropTouch, copy_javascriptToDo, browser.reload));
   gulp.watch('src/assets/img/**/*').on('all', gulp.series(images, browser.reload));
   gulp.watch('src/styleguide/**').on('all', gulp.series(styleGuide, browser.reload));
   gulp.watch('src/assets/img/**/*.svg').on('all', gulp.series(pages, browser.reload));
