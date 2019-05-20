@@ -3,11 +3,20 @@ var xSpeed, ySpeed;
 xSpeed = 0.0005;
 ySpeed = 0.001;
 var winWidth, winHeight;
-winWidth = window.innerWidth;
-winHeight = 500;
+var parentContainer = document.getElementById('mainCanvas');
 
-init();
-animate();
+winWidth = parentContainer.clientWidth;
+winHeight = parentContainer.clientHeight;
+
+// Resize
+window.addEventListener( 'resize', onWindowResize, false );
+
+function onWindowResize(){
+    camera.aspect = parentContainer.clientWidth / parentContainer.clientHeight;
+    camera.updateProjectionMatrix();
+
+    renderer.setSize( parentContainer.clientWidth, parentContainer.clientHeight );
+}
 
 function init(){
   scene = new THREE.Scene();
@@ -71,3 +80,6 @@ function render(){
   camera.lookAt(scene.position);
   renderer.render(scene, camera);
 }
+
+init();
+animate();
