@@ -1,11 +1,4 @@
 /* Index Page */
-$bg-url: "/assets/img/pattern/graphy-dark-blue.png";
-$bg-width: 20px;
-$bg-height: 20px;
-
-///////////////////////
-///////////////////////
-
 #mainCanvas{
   line-height: 0;
   display: flex;
@@ -21,17 +14,22 @@ $bg-height: 20px;
     height: 24em;
   }
 
-  /* Main styles */  
-  background: url($bg-url) repeat 0 0;
-  
-  -webkit-animation: bg-scrolling-reverse 1s infinite; /* Safari 4+ */
-  -moz-animation:    bg-scrolling-reverse 1s infinite; /* Fx 5+ */
-  -o-animation:      bg-scrolling-reverse 1s infinite; /* Opera 12+ */
-  animation:         bg-scrolling-reverse 1s infinite; /* IE 10+ */
-  -webkit-animation-timing-function: linear;
-  -moz-animation-timing-function:    linear;
-  -o-animation-timing-function:      linear;
-  animation-timing-function:         linear;
+  #canvas{
+    position: absolute;
+    top: 0;
+
+    canvas{
+      height: 31em!important;
+
+      @media screen and (max-width: 40em) {
+        height: 15em!important;
+      }
+        
+      @media screen and (min-width: 40.063em) and (max-width: 64em) {
+        height: 24em!important;
+      }
+    }
+  }
 
   #index-title{
     position: absolute;
@@ -114,31 +112,4 @@ $bg-height: 20px;
       margin-bottom: 3em;
     }
   }
-}
-
-/* Animations */
-@-webkit-keyframes bg-scrolling-reverse {
-  100% { background-position: $bg-width $bg-height; }
-}
-@-moz-keyframes    bg-scrolling-reverse {
-  100% { background-position: $bg-width $bg-height; }
-}
-@-o-keyframes      bg-scrolling-reverse {
-  100% { background-position: $bg-width $bg-height; }
-}
-@keyframes         bg-scrolling-reverse {
-  100% { background-position: $bg-width $bg-height; }
-}
-
-@-webkit-keyframes bg-scrolling {
-  0% { background-position: $bg-width $bg-height; }
-}
-@-moz-keyframes    bg-scrolling {
-  0% { background-position: $bg-width $bg-height; }
-}
-@-o-keyframes      bg-scrolling {
-  0% { background-position: $bg-width $bg-height; }
-}
-@keyframes         bg-scrolling {
-  0% { background-position: $bg-width $bg-height; }
 }
