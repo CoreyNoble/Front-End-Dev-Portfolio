@@ -29,7 +29,7 @@ function loadConfig() {
 
 // Build the "dist" folder by running all of the below tasks
 gulp.task('build',
-gulp.series(clean, gulp.parallel(pages, php_pages, sass, javascript, images, copy, copy_canvasParticles, copy_javascriptTetris, copy_dragDropTouch, copy_javascriptToDo), styleGuide));
+gulp.series(clean, gulp.parallel(pages, php_pages, sass, javascript, images, copy, copy_canvasParticles, copy_javascriptTetris, copy_dragDropTouch, copy_javascriptToDo)));
 
 // Build the site, run the server, and watch for file changes
 gulp.task('default',
@@ -102,14 +102,6 @@ function php_pages() {
 function resetPages(done) {
   panini.refresh();
   done();
-}
-
-// Generate a style guide from the Markdown content and HTML template in styleguide/
-function styleGuide(done) {
-  sherpa('src/styleguide/index.md', {
-    output: PATHS.dist + '/styleguide.html',
-    template: 'src/styleguide/template.html'
-  }, done);
 }
 
 // Compile Sass into CSS
@@ -193,6 +185,5 @@ function watch() {
   gulp.watch('src/assets/scss/**/*.scss').on('all', sass);
   gulp.watch('src/assets/js/**/*.js').on('all', gulp.series(javascript, copy_canvasParticles, copy_javascriptTetris, copy_dragDropTouch, copy_javascriptToDo, browser.reload));
   gulp.watch('src/assets/img/**/*').on('all', gulp.series(images, browser.reload));
-  gulp.watch('src/styleguide/**').on('all', gulp.series(styleGuide, browser.reload));
   gulp.watch('src/assets/img/**/*.svg').on('all', gulp.series(pages, browser.reload));
 }
