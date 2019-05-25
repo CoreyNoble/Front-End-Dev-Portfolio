@@ -12,6 +12,7 @@
     -moz-border-radius: 0.33em;
     border-radius: 0.33em;
     display: none;
+    transition: bottom 0.3s ease;
 
     &:hover, &:focus {
         span{
@@ -31,5 +32,13 @@
         -ms-transition: top 0.3s ease;
         -o-transition: top 0.3s ease;
         transition: top 0.3s ease;
+    }
+
+    &.bottomed-out{
+        bottom: 1em;
+
+        @media screen and (max-width : 400px) {
+            bottom: 3.5em;
+        }
     }
 }
