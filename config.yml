@@ -30,15 +30,7 @@ PATHS:
   # Paths to JavaScript entry points for webpack to bundle modules
   entries:
     - "src/assets/js/app.js"
-  # Path to reuseable canvasParticles.js
-  canvasParticles:
     - "src/assets/js/canvasParticles.js"
-  # Path to reuseable dragDropTouch.js
-  dragDropTouch:
     - "src/assets/js/dragDropTouch.js"
-  # Path to reuseable javascriptToDo.js
-  javascriptToDo:
     - "src/assets/js/javascriptToDo.js"
-  # Path to reuseable javascriptTetris.js
-  javascriptTetris:
     - "src/assets/js/javascriptTetris.js"

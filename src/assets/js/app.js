@@ -19,6 +19,14 @@ $(window).scroll(function() {
         $('#return-to-top').fadeOut(800);   // Else fade out the arrow
     }
 });
+window.onscroll = function(ev) {
+    if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+        // you're at the bottom of the page
+        $('#return-to-top').addClass('bottomed-out');
+    } else{
+        $('#return-to-top').removeClass('bottomed-out');
+    }
+};
 $('#return-to-top').click(function() {      // When arrow is clicked
     $('body,html').animate({
         scrollTop : 0                       // Scroll to top of body
