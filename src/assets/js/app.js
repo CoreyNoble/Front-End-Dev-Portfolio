@@ -11,23 +11,30 @@ import Foundation from 'foundation-sites';
 
 $(document).foundation();
 
-// Back to Top
-$(window).scroll(function() {
-    if ($(this).scrollTop() >= 1200) {       // If page is scrolled more than 1200px
+$(window).scroll(function(){
+    if ($(this).scrollTop() >= 1000) {       // If page is scrolled more than 1000px
         $('#return-to-top').fadeIn(800);    // Fade in the arrow
     } else {
         $('#return-to-top').fadeOut(800);   // Else fade out the arrow
     }
+
+    checkOffset();
 });
-window.onscroll = function(ev) {
-    if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
-        // you're at the bottom of the page
+
+// Check if 'Back to Top' bottomed out
+function checkOffset() {
+    // Bottomed Out
+    if($('#return-to-top').offset().top + $('#return-to-top').height() >= $('#footer').offset().top - 10){
         $('#return-to-top').addClass('bottomed-out');
-    } else{
+    }
+    // No longer Bottomed Out
+    if($(document).scrollTop() + window.innerHeight < $('#footer').offset().top){
         $('#return-to-top').removeClass('bottomed-out');
     }
-};
-$('#return-to-top').click(function() {      // When arrow is clicked
+}
+
+// Back to Top Clicked
+$('#return-to-top').click(function() {
     $('body,html').animate({
         scrollTop : 0                       // Scroll to top of body
     }, 1000);
