@@ -11,7 +11,7 @@
     -moz-border-radius: 0.33em;
     border-radius: 0.33em;
     display: none;
-    transition: bottom 0.3s ease;
+    transition: bottom 0.5s ease, position 0.5s ease, display 0.5s ease, float 0.5s ease;
 
     &:hover, &:focus {
         span{
@@ -26,10 +26,6 @@
         left: 0.47em;
         top: 0.47em;
         font-size: 1.5em;
-        -webkit-transition: top 0.66s ease;
-        -moz-transition: top 0.66s ease;
-        -ms-transition: top 0.66s ease;
-        -o-transition: top 0.66s ease;
         transition: top 0.66s ease;
     }
 
