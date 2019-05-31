@@ -34,6 +34,9 @@ PATHS:
     - "src/assets/js/dragDropTouch.js"
     - "src/assets/js/javascriptToDo.js"
     - "src/assets/js/javascriptTetris.js"
+
+  # Paths to JavaScript entry points for webpack to bundle modules
+  javascript30:
     - "src/assets/js/javascript30/1-drum-kit.js"
     - "src/assets/js/javascript30/2-clock.js"
     - "src/assets/js/javascript30/3-update-css-variables.js"

@@ -125,7 +125,16 @@ function javascript() {
       .on('error', e => { console.log(e); })
     ))
     .pipe($.if(!PRODUCTION, $.sourcemaps.write()))
-    .pipe(gulp.dest(PATHS.dist + '/assets/js'));
+    .pipe(gulp.dest(PATHS.dist + '/assets/js')), 
+    gulp.src(PATHS.javascript30)
+    .pipe(named())
+    .pipe($.sourcemaps.init())
+    .pipe(webpackStream(webpackConfig, webpack2))
+    .pipe($.if(PRODUCTION, $.uglify()
+      .on('error', e => { console.log(e); })
+    ))
+    .pipe($.if(!PRODUCTION, $.sourcemaps.write()))
+    .pipe(gulp.dest(PATHS.dist + '/assets/js/javascript30'));
 }
 
 // Copy images to the "dist" folder
