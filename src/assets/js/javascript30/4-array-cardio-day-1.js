@@ -77,14 +77,19 @@ const inventors = [
         return aLast > bLast ? 1 : -1;
     });
 
+    console.log('Sort by Last Name, Alphabetically');
+    console.log(alpha);
+
     // 8. Reduce Exercise
     // Sum up the instances of each of these
     const data = ['car', 'car', 'truck', 'truck', 'bike', 'walk', 'car', 'van', 'bike', 'walk', 'car', 'van', 'car', 'truck' ];  
 
     const transportation = data.reduce(function(obj, item) {
+        // Sets the initial object to '0'
         if (!obj[item]){
             obj[item] = 0;
         }
+        // Increment
         obj[item]++;
         return obj;
     }, {});
