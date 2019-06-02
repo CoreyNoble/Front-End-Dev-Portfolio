@@ -76,7 +76,6 @@ const wes = {
     }
 };
 
-console.clear();
 console.log(wes);
 
 const dev = Object.assign({}, wes);
