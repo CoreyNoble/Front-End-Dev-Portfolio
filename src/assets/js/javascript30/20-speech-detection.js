@@ -1,1 +1,30 @@
 window.SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+
+const recognition = new SpeectRecognition();
+recognition.interimResults = true;
+
+let p = document.createElement('p');
+const words = document.querySelector('.words');
+words.appendChild(p);
+
+recognition.addEventListener('result', e => {
+    const transcript = Array.from(e.results)
+        .map(result => result[0])
+        .map(result => result.transcript)
+        .join('');
+
+        p.textContent = transcript;
+        if (e.results[0].isFinal){
+            p = document.createElement(p);
+            words.appendChild(p);
+        }
+
+        // check to see if the text includes key phrases
+        if (transcript.includes('unicorn')) {
+            console.log ('UNICORN!!')
+        }
+});
+
+recognition.addEventListener('end', recognition.start);
+
+recognition.start();
