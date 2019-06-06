@@ -1,6 +1,10 @@
 #javascript30-24{
+    box-sizing: border-box;
     background: #eeeeee;
-
+    font-family: 'helvetica neue';
+    font-size: 20px;
+    font-weight: 200;
+    
     .site-wrap {
         max-width: 700px;
         margin: 70px auto;
@@ -12,7 +16,11 @@
         transition: transform 0.5s;
     }
     
-    header {
+    body.fixed-nav .site-wrap {
+        transform: scale(1);
+    }
+    
+    #hero {
         text-align: center;
         height: 50vh;
         background: url(http://wes.io/iEgP/wow-so-deep.jpg) bottom center no-repeat;
@@ -28,23 +36,29 @@
         text-shadow: 3px 4px 0 rgba(0,0,0,0.2);
     }
     
-    nav {
+    #main {
         background: black;
         top: 0;
         width: 100%;
-        transition: all 0.5s;
+        transition:all 0.5s;
         position: relative;
         z-index: 1;
     }
     
-    nav ul {
+    body.fixed-nav #main {
+        position: fixed;
+        box-shadow: 0 5px 0 rgba(0,0,0,0.1);
+        z-index: 99999;
+    }
+    
+    #main ul {
         margin: 0;
-        padding:0;
+        padding: 0;
         list-style: none;
         display: flex;
     }
     
-    nav li {
+    #main li {
         flex: 1;
         text-align: center;
         display: flex;
@@ -56,7 +70,7 @@
         max-width: 0;
         overflow: hidden;
         background: white;
-        transition: all .5s;
+        transition: all 0.5s;
         font-weight: 600;
         font-size: 30px;
     }
@@ -65,7 +79,11 @@
         color: black;
     }
     
-    nav a {
+    .fixed-nav li.logo {
+        max-width: 500px;
+    }
+    
+    #main a {
         text-decoration: none;
         padding: 20px;
         display: inline-block;
