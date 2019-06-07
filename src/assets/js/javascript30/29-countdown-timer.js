@@ -28,7 +28,7 @@ function displayTimeLeft(seconds) {
     const minutes = Math.floor(seconds / 60);
     const remainderSeconds = seconds % 60;
     const display = `${minutes}:${remainderSeconds < 10 ? '0' : ''}${remainderSeconds}`;
-    document.title = display;
+    document.title = display + ' | Countdown Timer | JavaScript30 | Corey Noble';
     timerDisplay.textContent = display;
 }
 
