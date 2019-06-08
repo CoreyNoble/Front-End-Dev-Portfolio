@@ -1,10 +1,11 @@
 #javascript30-3{
-    // RAW CSS way of creating variables
+    // CSS way of creating variables
     --base: #6dbfbf;
     --spacing: 10px;
     --blur: 10px;
 
     img{
+        // CSS Variable usage
         padding: var(--spacing);
         background: var(--base);
         filter: blur(var(--blur));
