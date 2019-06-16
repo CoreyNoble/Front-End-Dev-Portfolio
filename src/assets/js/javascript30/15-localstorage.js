@@ -1,42 +1,77 @@
-const addItems = document.querySelector('.add-items');
-const itemsList = document.querySelector('.plates');
+const addItems = document.querySelector('.add-items'); // <form>
+const itemsList = document.querySelector('.plates'); // <ul>
+// 'items' will try to grab an Array of JSON data parsed from an object in localStorage with a key of 'items'. If it does not find the data, fall back to an empty array.
 const items = JSON.parse(localStorage.getItem('items')) || [];
 
-function addItem(e) {
-    e.preventDefault(); // stops the page from reloading
+// Adds an item to the list.
+function addItem(e) { // passes in the event that fired on 'submit'.
+    // stops the page from reloading, because we are doing everything client-site. By default, form submit will either re-load the page or submit to an external source.
+    e.preventDefault();
+
+    // Text inside of the input
     const text = (this.querySelector('[name=item]')).value;
+    // Create the item object
     const item = {
-        text,
-        done: false
+        text, // es6 short hand of 'text: text,'
+        done: false // not checked
     };
 
+    // Push the item object into the items array.
     items.push(item);
+
+    // Populate the list.
     populateList(items, itemsList);
+
+    // Set the localStorage 'items' key as JSON data using 'items' variable.
+    // JSON.stringify: when you pass in your items, it's going to convert your objects and arrays into a JSON string equivelant.
     localStorage.setItem('items', JSON.stringify(items));
+
+    // localStorage API can also use these methods:
+    // localStorage.getItem, localStorage.setItem, localStorage.removeItem (? deleteItem)
+
+    // Clear the input
     this.reset();
 }
 
+// Populates the HTML list.
+// plates[] starts of as an empty object to ensure it can use .map() even if you forget to pass in something.
+// platesList, place to put the HTML.
+// These names are unique so any object or list can be passed into this function, which makes it re-usable.
 function populateList(plates = [], platesList) {
+    // .map() will take in an array of raw data (plates), and return an array of some other data (platesList). 
+    // plate: object 
+    // i: index of the array item
     platesList.innerHTML = plates.map((plate, i) => {
+        // Adds an <li> for each item in the array as it loops through
+        // plate.done: if plate.done (checked), if not ('')
         return `
         <li>
             <input type="checkbox" data-index=${i} id="item${i}" ${plate.done ? 'checked' : ''} />
             <label for="item${i}">${plate.text}</label>
         </li>
         `;
-    }).join('');
+    }).join(''); // .join('') takes the array that .map() makes, and turns it into one string.
 }
 
-function toggleDone(e) {
-    if (!e.target.matches('input')) return; // skip this unless it's an input
+function toggleDone(e) { // passes in the event that fired when <ul> clicked.
+    // exit if it's not an input
+    if (!e.target.matches('input')) return;
+    // Get the element
     const el = e.target;
+    // Get the index of the element
     const index = el.dataset.index;
-    items[index].done = !items[index].done; // flip flopping between true and false
+    // Toggle the done state (Opposite of what it was)
+    items[index].done = !items[index].done;
+    // Save a JSON string from the 'items' array in into localStorage under the key 'items'.
     localStorage.setItem('items', JSON.stringify(items));
+    // Populate the list
     populateList(items, itemsList);
 }
 
+// Form Submit, addItem().
 addItems.addEventListener('submit', addItem);
+// Item Click on <ul>, toggleDone().
 itemsList.addEventListener('click', toggleDone);
 
+// Inital population of list when loaded.
 populateList(items, itemsList);
