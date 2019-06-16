@@ -34,5 +34,5 @@ function handleCheck(e) {
   lastChecked = this;
 }
 
-// On click handleCheck()
+// On click handleCheck(e)
 checkboxes.forEach(checkbox => checkbox.addEventListener('click', handleCheck));

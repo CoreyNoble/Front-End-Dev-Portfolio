@@ -69,7 +69,7 @@ canvas.addEventListener('mousedown', (e) => {
     [lastX, lastY] = [e.offsetX, e.offsetY];
 });
 
-// Is the user moving the mouse? draw()
+// Is the user moving the mouse? draw(e)
 canvas.addEventListener('mousemove', draw);
 // Has the user stopped holding the click? !isDrawing
 canvas.addEventListener('mouseup', () => isDrawing = false);

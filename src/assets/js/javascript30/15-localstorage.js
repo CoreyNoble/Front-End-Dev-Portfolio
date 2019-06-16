@@ -68,9 +68,9 @@ function toggleDone(e) { // passes in the event that fired when <ul> clicked.
     populateList(items, itemsList);
 }
 
-// Form Submit, addItem().
+// Form Submit, addItem(e).
 addItems.addEventListener('submit', addItem);
-// Item Click on <ul>, toggleDone().
+// Item Click on <ul>, toggleDone(e).
 itemsList.addEventListener('click', toggleDone);
 
 // Inital population of list when loaded.

@@ -38,5 +38,5 @@ function checkSlide(e) {
     });
 }
 
-// Every time the window is scrolled, debounce(checkslide())
+// Every time the window is scrolled, debounce(checkslide(e))
 window.addEventListener('scroll', debounce(checkSlide));

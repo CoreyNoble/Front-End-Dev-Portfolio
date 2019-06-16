@@ -81,7 +81,7 @@ ranges.forEach(range => range.addEventListener('mousemove', handleRangeUpdate));
 let mousedown = false;
 // When clicked, begin to scrub().
 progress.addEventListener('click', scrub);
-// When mouse is moving, pass the event into a function. If the mouse is also down, scrub() with the event data.
+// When mouse is moving, pass the event into a function. If the mouse is also down, scrub(e).
 progress.addEventListener('mousemove', (e) => mousedown && scrub(e));
 // When the mouse is down, set 'mousedown' to true.
 progress.addEventListener('mousedown', () => mousedown = true);
