@@ -27,7 +27,7 @@ function shadow(e) {
     const yWalk = Math.round((y / height * walk) - (walk / 2));
 
     console.log('xWalk: ', xWalk);
-    console.log('yWalk: '), yWalk);
+    console.log('yWalk: ', yWalk);
 
     // Dynamically setting the text-shadow position, based on xWalk (x), yWalk (y).
     // Each line here is a new shadow.
