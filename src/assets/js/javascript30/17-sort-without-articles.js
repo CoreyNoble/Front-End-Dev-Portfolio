@@ -14,5 +14,5 @@ const sortedBands = bands.sort((a, b) => strip(a) > strip(b) ? 1 : -1);
 document.querySelector('#bands').innerHTML = 
     sortedBands
         // Map over the array to create each <li> entry.
-        .map(band => `<li>${band}</li>`),
+        .map(band => `<li>${band}</li>`)
         .join(''); // Convert to one string
