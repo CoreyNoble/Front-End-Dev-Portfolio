@@ -1,3 +1,14 @@
 #javascript30{
+    background-color: #262626;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 1000'%3E%3Cg %3E%3Ccircle fill='%23262626' cx='50' cy='0' r='50'/%3E%3Cg fill='%23282a2a' %3E%3Ccircle cx='0' cy='50' r='50'/%3E%3Ccircle cx='100' cy='50' r='50'/%3E%3C/g%3E%3Ccircle fill='%232a2e2e' cx='50' cy='100' r='50'/%3E%3Cg fill='%232c3131' %3E%3Ccircle cx='0' cy='150' r='50'/%3E%3Ccircle cx='100' cy='150' r='50'/%3E%3C/g%3E%3Ccircle fill='%232e3535' cx='50' cy='200' r='50'/%3E%3Cg fill='%232f3939' %3E%3Ccircle cx='0' cy='250' r='50'/%3E%3Ccircle cx='100' cy='250' r='50'/%3E%3C/g%3E%3Ccircle fill='%23313d3d' cx='50' cy='300' r='50'/%3E%3Cg fill='%23334141' %3E%3Ccircle cx='0' cy='350' r='50'/%3E%3Ccircle cx='100' cy='350' r='50'/%3E%3C/g%3E%3Ccircle fill='%23354545' cx='50' cy='400' r='50'/%3E%3Cg fill='%23364a49' %3E%3Ccircle cx='0' cy='450' r='50'/%3E%3Ccircle cx='100' cy='450' r='50'/%3E%3C/g%3E%3Ccircle fill='%23384e4e' cx='50' cy='500' r='50'/%3E%3Cg fill='%233a5252' %3E%3Ccircle cx='0' cy='550' r='50'/%3E%3Ccircle cx='100' cy='550' r='50'/%3E%3C/g%3E%3Ccircle fill='%233b5656' cx='50' cy='600' r='50'/%3E%3Cg fill='%233d5a5a' %3E%3Ccircle cx='0' cy='650' r='50'/%3E%3Ccircle cx='100' cy='650' r='50'/%3E%3C/g%3E%3Ccircle fill='%233e5f5f' cx='50' cy='700' r='50'/%3E%3Cg fill='%23406363' %3E%3Ccircle cx='0' cy='750' r='50'/%3E%3Ccircle cx='100' cy='750' r='50'/%3E%3C/g%3E%3Ccircle fill='%23416767' cx='50' cy='800' r='50'/%3E%3Cg fill='%23436c6c' %3E%3Ccircle cx='0' cy='850' r='50'/%3E%3Ccircle cx='100' cy='850' r='50'/%3E%3C/g%3E%3Ccircle fill='%23447070' cx='50' cy='900' r='50'/%3E%3Cg fill='%23467575' %3E%3Ccircle cx='0' cy='950' r='50'/%3E%3Ccircle cx='100' cy='950' r='50'/%3E%3C/g%3E%3Ccircle fill='%23477979' cx='50' cy='1000' r='50'/%3E%3C/g%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: contain;
 
+    .showcase-2{
+        .showcase-example{
+            h3{
+                color: $black;
+            }
+        }
+    }
 }
