@@ -1,7 +1,7 @@
 #javascript30-1{
     .keys {
         display: flex;
-        flex: 1;
+        flex-wrap: wrap;
         min-height: 30vh;
         align-items: center;
         justify-content: center;
@@ -14,7 +14,7 @@
         font-size: 1.5rem;
         padding: 1rem .5rem;
         transition: all .07s ease;
-        width: 10rem;
+        min-width: 8rem;
         text-align: center;
         color: $white;
         background: rgba(0,0,0,0.4);
