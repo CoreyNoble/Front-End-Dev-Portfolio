@@ -1,6 +1,4 @@
-#javascript30-6{
-    background: #ffc600;
-    
+#javascript30-6{    
     input {
         width: 100%;
         padding: 20px;
@@ -12,17 +10,16 @@
     }
     
     input.search {
-        margin: 0;
+        display: block;
+        margin: 0 auto;
         text-align: center;
         outline: 0;
         border: 10px solid #F7F7F7;
-        width: 120%;
+        width: 100%;
         left: -10%;
-        position: relative;
-        top: 10px;
         z-index: 2;
         border-radius: 5px;
-        font-size: 40px;
+        font-size: 1.5em;
         box-shadow: 0 0 5px rgba(0, 0, 0, 0.12), inset 0 0 2px rgba(0, 0, 0, 0.19);
     }
     
@@ -55,9 +52,14 @@
         transform: perspective(100px) rotateX(-3deg) translateY(3px);
         background: linear-gradient(to top,  #ffffff 0%,#EFEFEF 100%);
     }
+
+    span.name {
+        padding-right: 0.25em;
+    }
     
     span.population {
         font-size: 15px;
+        padding-left: 0.25em;
     }
     
     .hl {
