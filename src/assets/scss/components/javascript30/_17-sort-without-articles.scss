@@ -8,23 +8,25 @@
 
     #bands {
         list-style: inside square;
-        font-size: 20px;
+        font-size: 1.25em;
         background: white;
-        width: 500px;
+        width: 100%;
+        max-width: 30em;
         margin: auto;
         padding: 0;
-        box-shadow: 0 0 0 20px rgba(0, 0, 0, 0.05);
-    }
-    
-    #bands li {
-        border-bottom: 1px solid #efefef;
-        padding: 20px;
-    }
-    
-    #bands li:last-child {
-        border-bottom: 0;
-    }
+        box-shadow: 0 0 0 2em rgba(0, 0, 0, 0.05);
 
+        li {
+            border-bottom: 1px solid #efefef;
+            padding: 1em;
+            margin-bottom: 0;
+
+            &:last-child {
+                border-bottom: 0;
+            }
+        }
+    }
+    
     a {
         color: #ffc600;
         text-decoration: none;

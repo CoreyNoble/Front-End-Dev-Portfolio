@@ -1,3 +1,5 @@
+const total = document.querySelector('.total-time');
+
 // Select all nodes with a data-time attribute. Returns a 'Node List' so we're converting it into an array so we can use .map().
 const timeNodes = Array.from(document.querySelectorAll('[data-time]'));
 const seconds = timeNodes
@@ -28,3 +30,5 @@ secondsLeft = secondsLeft % 60;
 
 // Output: Hours, Minutes, Seconds
 console.log(hours, mins, secondsLeft);
+
+total.innerHTML = hours + ":" + mins + ":" + secondsLeft;
