@@ -11,6 +11,7 @@ page.appendChild(highlight);
 
 // Moves the <span> to the position of the hovered <a> inside of 'page.
 function highlightLink() {
+    this.classList.add('active');
     // The bounding client rectangle of the <a> (this).
     const linkCoords = this.getBoundingClientRect();
     console.log(linkCoords);
@@ -31,5 +32,10 @@ function highlightLink() {
     highlight.style.transform = `translate(${coords.left}px, ${coords.top}px)`;
 }
 
+function mouseLeave() {
+    this.classList.remove('active');
+}
+
 // On each <a>, when mouse enters the element, highlightLink().
 triggers.forEach(a => a.addEventListener('mouseenter', highlightLink));
+triggers.forEach(a => a.addEventListener('mouseleave', mouseLeave));
