@@ -17,27 +17,27 @@
         perspective: 600px;
     }
 
-    .cool > li > a {
-        color: yellow;
-        text-decoration: none;
-        font-size: 20px;
-        background: rgba(0,0,0,0.2);
-        padding: 10px 20px;
-        display: inline-block;
-        margin: 20px;
-        border-radius: 5px;
+    .cool > li {
+        position: relative;
+        display: flex;
+        justify-content: center;
+
+        > a {
+            color: yellow;
+            text-decoration: none;
+            font-size: 20px;
+            background: rgba(0,0,0,0.2);
+            padding: 10px 20px;
+            display: inline-block;
+            margin: 20px;
+            border-radius: 5px;
+        }
     }
 
     .top ul {
         list-style: none;
         margin: 0;
         padding: 0;
-        display: flex;
-        justify-content: center;
-    }
-
-    .cool > li {
-        position: relative;
         display: flex;
         justify-content: center;
     }
@@ -53,6 +53,19 @@
         transform: translateY(100px);
         will-change: opacity;
         display: none;
+
+        .social-media{
+            margin-top: 1.3em;
+            display: block;
+            
+            @media screen and (max-width: 40em) {
+                margin-top: 3em;
+            }
+            
+            img{
+                max-width: 35px;
+            }
+        }
     }
 
     .trigger-enter .dropdown {
@@ -125,9 +138,4 @@
         color: white;
         margin-bottom: 10px;
     }
-
-    /* Matches Twitter, TWITTER, twitter, tWitter, TWiTTeR... */
-    .button[href*=twitter] { background: #019FE9; }
-    .button[href*=facebook] { background: #3B5998; }
-    .button[href*=courses] { background: #ffc600; }
 }
