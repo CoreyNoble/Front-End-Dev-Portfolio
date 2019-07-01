@@ -1,0 +1,48 @@
+---
+title: Speech Synthesis | JavaScript30 | Corey Noble
+description: JavaScript30, Module 23.
+canonical: https://corey-noble.com/portfolio/development/javascript30/23-speech-synthesis.html
+---
+
+<!-- Introduction -->
+<div class="section white">
+    <div class="row">
+        <div class="small-12 column">
+            <h1>Speech Synthesis</h1>
+            <p class="h4">JavaScript30 | Module 23</p>
+        </div>
+    </div>
+</div>
+            
+<!-- JavaScript30 | 23 | Speech Synthesis -->
+<div id="javascript30-23" class="section">
+    <div class="row">
+        <div class="small-12 column">
+            <div class="voiceinator">
+                <h2>The Voiceinator 5000</h2>
+            
+                <select name="voice" id="voices">
+                    <option value="">Select A Voice</option>
+                </select>
+
+                <div class="row">
+                    <div class="small-6 columns">
+                        <label for="rate">Rate:</label>
+                        <input name="rate" type="range" min="0" max="3" value="1" step="0.1">
+                    </div>
+                
+                    <div class="small-6 columns">
+                        <label for="pitch">Pitch:</label>
+                        <input name="pitch" type="range" min="0" max="2" step="0.1">
+                    </div>
+                </div>
+
+                <textarea name="text">Hello! I love JavaScript 👍</textarea>
+                <button id="stop">Stop!</button>
+                <button id="speak">Speak</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="{{root}}assets/js/javascript30/23-speech-synthesis.js"></script>
