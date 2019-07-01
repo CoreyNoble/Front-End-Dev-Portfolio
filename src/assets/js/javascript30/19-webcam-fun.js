@@ -1,5 +1,5 @@
-const video = document.querySelector('.player'); // <video>
-const canvas = document.querySelector('.photo'); // <canvas>
+const video = document.querySelector('#player'); // <video>
+const canvas = document.querySelector('#photo'); // <canvas>
 const ctx = canvas.getContext('2d'); // canvas context
 const strip = document.querySelector('.strip'); // photo strip
 const snap = document.querySelector('.snap'); // <audio>
