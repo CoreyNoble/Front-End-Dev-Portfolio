@@ -1,0 +1,9 @@
+#javascript30-8{
+    #draw{
+        background-color: $white;
+
+        &:hover{
+            cursor: crosshair;
+        }
+    }
+}

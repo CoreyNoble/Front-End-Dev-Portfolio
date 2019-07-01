@@ -1,0 +1,54 @@
+#javascript30-1{
+    /* background by SVGBackgrounds.com */
+    background-color: #262626;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg stroke='%23181818' stroke-width='66.7' stroke-opacity='0.05' %3E%3Ccircle fill='%23262626' cx='0' cy='0' r='1800'/%3E%3Ccircle fill='%23282a2a' cx='0' cy='0' r='1700'/%3E%3Ccircle fill='%232a2f2f' cx='0' cy='0' r='1600'/%3E%3Ccircle fill='%232d3433' cx='0' cy='0' r='1500'/%3E%3Ccircle fill='%232f3838' cx='0' cy='0' r='1400'/%3E%3Ccircle fill='%23313d3d' cx='0' cy='0' r='1300'/%3E%3Ccircle fill='%23334241' cx='0' cy='0' r='1200'/%3E%3Ccircle fill='%23354646' cx='0' cy='0' r='1100'/%3E%3Ccircle fill='%23374b4b' cx='0' cy='0' r='1000'/%3E%3Ccircle fill='%23395050' cx='0' cy='0' r='900'/%3E%3Ccircle fill='%233b5555' cx='0' cy='0' r='800'/%3E%3Ccircle fill='%233d5a5a' cx='0' cy='0' r='700'/%3E%3Ccircle fill='%233e5f5f' cx='0' cy='0' r='600'/%3E%3Ccircle fill='%23406464' cx='0' cy='0' r='500'/%3E%3Ccircle fill='%23426969' cx='0' cy='0' r='400'/%3E%3Ccircle fill='%23446f6e' cx='0' cy='0' r='300'/%3E%3Ccircle fill='%23457474' cx='0' cy='0' r='200'/%3E%3Ccircle fill='%23477979' cx='0' cy='0' r='100'/%3E%3C/g%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: cover;
+
+    .keys {
+        display: flex;
+        flex-wrap: wrap;
+        min-height: 30vh;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .key {
+        border: .4rem solid black;
+        border-radius: .5rem;
+        margin: 1rem;
+        font-size: 1.5rem;
+        padding: 1rem .5rem;
+        transition: all .07s ease;
+        min-width: 8rem;
+        text-align: center;
+        color: $white;
+        background: $white;
+    }
+    
+    .playing {
+        transform: scale(1.1);
+        border-color: $blue;
+        box-shadow: 0 0 1rem $black;
+
+        kbd, .sound {
+            color: $blue;
+        }
+    }
+    
+    kbd {
+        display: block;
+        font-size: 3rem;
+        color: $black;
+        background-color: unset;
+        transition: all .07s ease;
+    }
+    
+    .sound {
+        font-size: 1.2rem;
+        text-transform: uppercase;
+        letter-spacing: .1rem;
+        color: $black;
+        transition: all .07s ease;
+    }
+}
