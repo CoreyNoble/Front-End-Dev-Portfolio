@@ -7,7 +7,6 @@
     // Parent <div>
     #photobooth {
         position: relative;
-        max-width: 150rem;
         margin: 0 auto;
         border-radius: 2px;
 
@@ -35,7 +34,7 @@
             position: fixed;
             top: 3em;
             right: 0.75em;
-            width: 9em;
+            width: 9.25em;
             border: 0.25em solid $black;
 
             @include breakpoint(medium){
@@ -44,24 +43,104 @@
         }
 
         .controls {
-            .rgb{
-                padding: 1em;
-                margin-top: 1.5em;
-                background: $blue;
-                border: 0.25em solid $white;
-                -moz-box-shadow: 0  0.75em 0.75em -0.75em #000000, 0 -0.75em 0.75em -0.75em #000000;
-                -webkit-box-shadow:  0  0.75em 0.75em -0.75em #000000, 0 -0.75em 0.75em -0.75em #000000;
-                box-shadow: 0  0.75em 0.75em -0.75em #000000, 0 -0.75em 0.75em -0.75em #000000;
+            margin-top: 1.5em;
+            padding: 1em;
+            background: $blue;
+            border: 0.25em solid $white;
+            -moz-box-shadow: 0  0.75em 0.75em -0.75em #000000, 0 -0.75em 0.75em -0.75em #000000;
+            -webkit-box-shadow:  0  0.75em 0.75em -0.75em #000000, 0 -0.75em 0.75em -0.75em #000000;
+            box-shadow: 0  0.75em 0.75em -0.75em #000000, 0 -0.75em 0.75em -0.75em #000000;
 
-                @include breakpoint(large){
-                    margin-top: 0;
+            @include breakpoint(large){
+                margin-top: 0;
+            }
+
+            h2{
+                margin-bottom: 0.25em;
+            }
+
+            label{
+                font-weight: bold;
+                text-decoration: underline;
+            }
+
+            input{
+                background: none;
+                padding-bottom: 1.25em;
+            }
+
+            // <ul>
+            .accordion{
+                background: none;
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+
+                // <li>
+                .accordion-item{
+                    margin: 0;
+                    border: 0.25em solid $black;
+                    border-bottom: none;
+
+                    &:last-child{
+                        border-bottom: 0.25em solid $black;
+                    }
+
+                    // Active
+                    &.is-active{
+                        background: none;
+
+                        // <a>
+                        .accordion-title{
+                            background: rgba(0,0,0,0.8);
+                            color: $white;
+
+                            &:hover{
+                                background: rgba(0,0,0,0.8);
+                            }
+
+                            &::before{
+                                margin-top: -0.8rem;
+                            }
+                        }
+                    }
+
+                    // <a>
+                    .accordion-title{
+                        text-decoration: none;
+                        display: block;
+                        padding: 1em;
+                        background: none;
+                        border: none;
+                        transition: all 0.2s ease;
+
+
+                        &:hover{
+                            background: rgba(0,0,0,0.2);
+                        }
+
+                        &::before{
+                            margin-top: -0.6rem;
+                            font-size: 1.75em;
+                            font-weight: bold;
+                        }
+                    }
+
+                    .accordion-content{
+                        border: none;
+                        background: none;
+                    }
                 }
             }
 
+            .row{
+                padding: 0 1em;
+            }
+
             #photoCTA{
-                display: block;
-                float: right;
-                margin-top: 1em;
+                position: fixed;
+                top: 10em;
+                right: 0.75em;
                 color: #000000;
                 padding: 1em 2em;
                 -moz-border-radius: 4px;
@@ -75,6 +154,10 @@
                 background: -moz-linear-gradient(to top,  #5FA6A6,  #7FC7C7);
                 text-decoration: none;
                 transition: all 0.15s ease;
+
+                @include breakpoint(medium){
+                    top: 11em;
+                }
 
                 &:hover, &:active, &:focus {
                     color: $white;

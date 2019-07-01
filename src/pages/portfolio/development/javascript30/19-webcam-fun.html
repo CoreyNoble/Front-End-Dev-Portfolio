@@ -26,29 +26,55 @@ canonical: https://corey-noble.com/portfolio/development/javascript30/19-webcam-
                     </div>
 
                     <div class="controls small-12 large-6 columns">
-                        <div class="rgb row">
-                            <div class="small-12 medium-4 columns">
-                                <label for="rmin">Red Min:</label>
-                                <input type="range" min=0 max=255 name="rmin">
-                                <label for="rmax">Red Max:</label>
-                                <input type="range" min=0 max=255 name="rmax">
-                            </div>
+                        <h2 class="h4">Controls:</h2>
+                        <ul class="accordion" data-accordion data-allow-all-closed="true">
+                            <li class="accordion-item" data-accordion-item="">
+                                <!-- Title -->
+                                <a href="#" class="accordion-title" aria-controls="green-screen" role="tab" id="green-screen" aria-expanded="false" aria-selected="false"><h3 class="h5">Green Screen Colour Knockout</h3></a>
 
-                            <div class="small-12 medium-4 columns">
-                                <label for="gmin">Green Min:</label>
-                                <input type="range" min=0 max=255 name="gmin">
-                                <label for="gmax">Green Max:</label>
-                                <input type="range" min=0 max=255 name="gmax">
-                            </div>
+                                <div class="accordion-content" data-tab-content="" role="tabpanel" aria-labelledby="green-screen" aria-hidden="true" id="green-screen" style="display: none;">
+                                    <!-- Content -->
+                                    <div class="row">
+                                        <div class="small-6 medium-4 columns">
+                                            <label for="rmin">Red Min:</label>
+                                            <input type="range" min=0 max=255 name="rmin">
+                                            <label for="rmax">Red Max:</label>
+                                            <input type="range" min=0 max=255 name="rmax">
+                                        </div>
 
-                            <div class="small-12 medium-4 columns">         
-                                <label for="bmin">Blue Min:</label>
-                                <input type="range" min=0 max=255 name="bmin">
-                                <label for="bmax">Blue Max:</label>
-                                <input type="range" min=0 max=255 name="bmax">
-                            </div>
-                        </div>
+                                        <div class="small-6 medium-4 columns">
+                                            <label for="gmin">Green Min:</label>
+                                            <input type="range" min=0 max=255 name="gmin">
+                                            <label for="gmax">Green Max:</label>
+                                            <input type="range" min=0 max=255 name="gmax">
+                                        </div>
 
+                                        <div class="small-6 medium-4 columns end">         
+                                            <label for="bmin">Blue Min:</label>
+                                            <input type="range" min=0 max=255 name="bmin">
+                                            <label for="bmax">Blue Max:</label>
+                                            <input type="range" min=0 max=255 name="bmax">
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="accordion-item" data-accordion-item="">
+                                <!-- Title -->
+                                <a href="#" class="accordion-title" aria-controls="filters" role="tab" id="filters" aria-expanded="false" aria-selected="false"><h3 class="h5">Filters</h3></a>
+
+                                <div class="accordion-content" data-tab-content="" role="tabpanel" aria-labelledby="filters" aria-hidden="true" id="filters" style="display: none;">
+                                    <!-- Content -->
+                                    <div class="rgb">
+                                        <div class="row">
+                                            <div class="small-12 columns">
+                                                <h4 class="h6">TEST</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        
                         <button id="photoCTA">Take Photo</button>
                     </div>
                 </div>
