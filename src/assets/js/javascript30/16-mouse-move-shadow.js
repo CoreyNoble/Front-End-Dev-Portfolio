@@ -1,7 +1,7 @@
 const hero = document.querySelector('.hero'); // parent <div>
-const text = hero.querySelector('h1');
+const text = hero.querySelector('h2');
 // How many pixels at its' most should it be stretched?
-const walk = 100; // px
+const walk = 50; // px
 
 function shadow(e) {
     // Get the height and width of the hero element:
@@ -32,10 +32,7 @@ function shadow(e) {
     // Dynamically setting the text-shadow position, based on xWalk (x), yWalk (y).
     // Each line here is a new shadow.
     text.style.textShadow = `
-        ${xWalk}px ${yWalk}px 0 rgba(255,0,0,0.7),
-        ${xWalk * -1}px ${yWalk}px 0 rgba(0,255,0,0.7),
-        ${yWalk }px ${xWalk * -1}px 0 rgba(0,0,255,0.7),
-        ${yWalk * -1}px ${xWalk}px 0 rgba(255,255,0,0.7)
+        ${xWalk}px ${yWalk}px 0 rgba(0,0,0,0.6)
     `;
 }
 
