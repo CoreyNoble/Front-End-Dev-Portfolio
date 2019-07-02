@@ -1,3 +1,18 @@
+.back-cta{
+    margin-top: 0.5em;
+    padding-bottom: 0;
+
+    a{
+        text-decoration: none;
+        padding-bottom: 0.1em;
+        border-bottom: 1px solid $black;
+
+        &:hover{
+            border-bottom: 0;
+        }
+    }
+}
+
 #javascript30{
     /* background by SVGBackgrounds.com */
     background-color: #262626;
