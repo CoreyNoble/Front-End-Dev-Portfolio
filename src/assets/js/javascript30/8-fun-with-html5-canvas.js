@@ -1,10 +1,11 @@
+const parent = document.querySelector('#parent');
 // Canvas element
 const canvas = document.querySelector('#draw');
 // The context of the canvas is what we draw onto. This can either be 2d or 3d space.
 const ctx = canvas.getContext('2d');
 // Size the canvas to fix the window.
-canvas.width = window.innerWidth;
-canvas.height = window.innerHeight;
+canvas.width = parent.offsetWidth;
+canvas.height = parent.offsetHeight;
 
 // Context properties
 ctx.strokeStyle = '#BADA55'
