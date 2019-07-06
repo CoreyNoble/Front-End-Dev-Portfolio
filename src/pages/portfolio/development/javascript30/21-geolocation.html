@@ -23,7 +23,10 @@ canonical: https://corey-noble.com/portfolio/development/javascript30/21-geoloca
                     </a>
                     <!-- Content -->
                     <div class="accordion-content" data-tab-content="" role="tabpanel" aria-labelledby="Project Synopsis" aria-hidden="true" id="project-synopsis" style="display: none;">
-                        <p>In this lesson I </p>
+                        <p>In this lesson I am accessing the users' geolocation and displaying their current speed and direction.</p>
+                        <p>First I grab the elements I will be manipulating 'arrow' and 'speed'.</p>
+                        <p>Next I request the geolocation data (navigator.geolocation.watchPosition((data) => {}). If the user accepts the request, for 'speed' I change the .textContent to match the speed value provided by the response (speed.textContent = data.coords.speed). For 'arrow' I rotate the image using the 'heading' in the response (arrow.style.transform = `rotate(${data.coords.heading}deg)`).</p>
+                        <p>If the user denies the request, I log an error to the console and alert the user that the application requires geolocation access to function.</p>
 
                         <!-- CodePen -->
                         <p class="codepen" data-height="330" data-theme-id="dark" data-default-tab="js" data-user="CoreyNoble" data-slug-hash="dBKaVe" style="height: 330px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="JavaScript30 - 21 - Geolocation">
