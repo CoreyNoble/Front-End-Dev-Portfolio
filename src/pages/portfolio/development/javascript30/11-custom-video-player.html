@@ -18,7 +18,87 @@ canonical: https://corey-noble.com/portfolio/development/javascript30/11-custom-
                     </a>
                     <!-- Content -->
                     <div class="accordion-content" data-tab-content="" role="tabpanel" aria-labelledby="Project Synopsis" aria-hidden="true" id="project-synopsis" style="display: none;">
-                        <p>In this lesson I </p>
+                        <p>In this lesson I create a custom video player.</p>
+                        <p>First I grab all of the required elements and put them into variables. I then listen for various events, including:</p>
+                        <ul>
+                            <li>
+                                <p><strong>&lt;video&gt;</strong></p>
+                                <ul>
+                                    <li>'click', togglePlay()</li>
+                                    <li>'play', updateButton()</li>
+                                    <li>'pause', updateButton()</li>
+                                    <li>'timeupdate', handleProgress()</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <p><strong>.toggle</strong></p>
+                                <ul>
+                                    <li>'click', togglePlay()</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <p><strong>[data-skip]</strong></p>
+                                <ul>
+                                    <li>'click', skip()</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <p><strong>.player__slider</strong></p>
+                                <ul>
+                                    <li>'change', handleRangeUpdate()</li>
+                                    <li>'mousemove', handleRangeUpdate()</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <p><strong>.progress</strong></p>
+                                <ul>
+                                    <li>'click', scrub(e). Here we scrub the video to the clicked event location.</li>
+                                    <li>'mousemove', (e) => mousedown && scrub(e). Here we're making sure to only scrub the video while the mouse is down and moving.</li>
+                                    <li>'mousedown', () => mousedown = true</li>
+                                    <li>'mouseup', () => mousedown = false</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <br />
+                        <p><strong>Functions</strong></p>
+                        <ul>
+                            <li>
+                                <p><strong>togglePlay()</strong></p>
+                                <ul>
+                                    <li>If the video is paused, set the video to playing, if the video is playing, set the video to paused.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <p><strong>updateButton()</strong></p>
+                                <ul>
+                                    <li>If the video is paused, set the text to '►', if the video is playing, set the text to '❚❚'.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <p><strong>skip()</strong></p>
+                                <ul>
+                                    <li>Calculate a new 'currentTime' on the video using the value from the [data-skip] attribute.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <p><strong>handleRangeUpdate()</strong></p>
+                                <ul>
+                                    <li>Handle updated slider input values. Set the video[this.name] value to this.value. For example, set the volume to the new value on the volume slider.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <p><strong>handleProgress()</strong></p>
+                                <ul>
+                                    <li>Calculate the 'percent' remaining ((video.currentTime / video.duration) *100). Then update the width of the 'progressBar' to match the 'percent' by injecting 'percent' into the style attribute (progressBar.style.flexBasis = `${percent}%`).</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <p><strong>scrub(e)</strong></p>
+                                <ul>
+                                    <li>figure out the 'scrubTime' ((e.offsetX / progress.offsetWidth) * video.duration). Then set the video time to the 'scrubTime'.</li>
+                                </ul>
+                            </li>
+                        </ul>
 
                         <!-- CodePen -->
                         <p class="codepen" data-height="330" data-theme-id="dark" data-default-tab="js" data-user="CoreyNoble" data-slug-hash="ewKxgz" style="height: 330px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="JavaScript30 - 11 - Custom Video Player">
