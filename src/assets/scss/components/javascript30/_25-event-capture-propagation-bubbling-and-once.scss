@@ -7,7 +7,11 @@
     color: $white;
 
     .one, .two, .three {
-        padding: 3em;
+        padding: 1.5em;
+
+        @include breakpoint(medium){
+            padding: 3em;
+        }
     }
 
     .one {

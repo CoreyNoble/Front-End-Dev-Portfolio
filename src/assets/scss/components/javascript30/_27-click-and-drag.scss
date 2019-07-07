@@ -9,7 +9,7 @@
     align-items: center;
 
     .items {
-        height: 550px;
+        height: 350px;
         padding: 60px;
         width: 100%;
         overflow-x: scroll;
@@ -24,6 +24,10 @@
         perspective: 500px;
         overflow: hidden;
         transform: scale(1);
+
+        @include breakpoint(medium){
+            height: 500px;
+        }
     }
     
     .items.active {
