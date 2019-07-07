@@ -57,7 +57,7 @@ function displayTimeLeft(seconds) {
 
 // Display the ending timestamp. Takes in a timestamp.
 function displayEndTime(timestamp) {
-    // Create a new date object 'end from the timestamp.
+    // Create a new date object 'end' from the timestamp.
     const end = new Date(timestamp);
     // Get the hours.
     const hour = end.getHours();

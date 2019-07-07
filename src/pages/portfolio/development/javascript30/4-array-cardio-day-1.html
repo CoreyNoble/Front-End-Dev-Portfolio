@@ -5,12 +5,43 @@ canonical: https://corey-noble.com/portfolio/development/javascript30/4-array-ca
 ---
 
 <!-- Introduction -->
-<div class="section white">
+<div class="js30-intro section white">
     <div class="row">
         <div class="small-12 column">
-            <h1>Array Cardio Day 1</h1>
             <!-- Back CTA -->
             <p class="back-cta"><small><strong><a href="{{root}}portfolio/development/javascript30.html" title="Return to the blog landing page">&lt;&nbsp;Back to JavaScript&nbsp;30</a></strong></small></p>
+
+            <!-- Title -->
+            <h1>Array Cardio Day 1</h1>
+            <!-- Accordion -->
+            <ul class="accordion" data-accordion data-allow-all-closed="true">
+                <li class="accordion-item" data-accordion-item="">
+                    <!-- Title -->
+                    <a href="#" class="accordion-title" aria-controls="" role="tab" id="project-synopsis" aria-expanded="false" aria-selected="false">
+                        <h2 class="h5">Project Synopsis</h2>
+                    </a>
+                    <!-- Content -->
+                    <div class="accordion-content" data-tab-content="" role="tabpanel" aria-labelledby="Project Synopsis" aria-hidden="true" id="project-synopsis" style="display: none;">
+                        <p>In this lesson I learned about various methods that can alter an array.</p>
+                        <p><strong>.filter()</strong> - I filter the list of inventors to get those whore were born in the 1500's.</p>
+                        <p><strong>.map()</strong> - .Takes in an array, does something with that array and returns a new array of the same length. Like a factory machine that takes in a material, modifies it and outputs the modified material. In this example we are mapping an array of full names from the list of inventors.</p>
+                        <p><strong>.sort()</strong> - Takes in an array, compares two items, and pushes the item either up or down, depending on the comparison. In this example I sort the inventors by birthdate, from oldest to youngest.</p>
+                        <p><strong>.reduce()</strong> - Takes in an array and returns only what is specified. In this example I reduce the inventors array to return how many years all of the inventors lived for.</p>
+                        <p>The lesson then followed up with an excercise for each method.</p>
+                        <p>Using <strong>.map() and .filter()</strong> I take in a list of &lt;a&gt; elements from a wikipedia page. I create a .map() for all of the &lt;a&gt; 'textContent' and .filter() out any items that .includes('de').</p>
+                        <p>Using <strong>.sort()</strong> I take in an array of 'people' and .sort() them alphabetically after splitting the string .split(', ') into First and Last name variables.</p>
+                        <p>Using <strong>.reduce()</strong> I create a variable object that takes in a data object[] of vehicle types, and an item (obj, item). I initialize the constant as an empty object, then for each item in the data, if it does not exist, I initialize that item and its counter into the variable object. I then increment the count and return the object. This means I can count the amount of times a unique item is used in a data object. It is also future proofed because the item is initialized as it is passed into the variable, so it doesn't matter what type of data will be coming through the data object, all unique instances will be tracked.</p>
+
+                        <!-- CodePen -->
+                        <p class="codepen" data-height="330" data-theme-id="dark" data-default-tab="js" data-user="CoreyNoble" data-slug-hash="mZKvVj" style="height: 330px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="JavaScript30 - 4 - Array Cardio Day 1">
+                        <span>See the Pen <a href="https://codepen.io/CoreyNoble/pen/mZKvVj/">
+                        JavaScript30 - 4 - Array Cardio Day 1</a> by Corey Noble (<a href="https://codepen.io/CoreyNoble">@CoreyNoble</a>)
+                        on <a href="https://codepen.io">CodePen</a>.</span>
+                        </p>
+                        <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+                    </div>
+                </li>
+            </ul>
         </div>
     </div>
 </div>

@@ -137,6 +137,34 @@ body{
       color: darken($thrillworks, 21%);
     }
   }
+
+  .accordion{
+    // <li>
+    .accordion-item{
+      border: 0.25em solid $black;
+
+      &:last-child{
+          border-bottom: 0.25em solid $black;
+      }
+
+      // Active
+      &.is-active{
+        // <a>
+        .accordion-title{
+          background: rgba(0,0,0,0.8);
+          color: $white;
+
+          &:hover{
+              background: rgba(0,0,0,0.8);
+          }
+
+          h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p{
+            color: $white;
+          }
+        }
+      }
+    }
+  }
 }
 
 .black{
@@ -151,6 +179,34 @@ body{
 
   a:hover, a:focus{
     color: darken($white, 33%);
+  }
+
+  .accordion{
+    // <li>
+    .accordion-item{
+      border: 0.25em solid $white;
+
+      &:last-child{
+          border-bottom: 0.25em solid $white;
+      }
+
+      // Active
+      &.is-active{
+        // <a>
+        .accordion-title{
+          background: rgba(255,255,255,0.8);
+          color: $black;
+
+          &:hover{
+              background: rgba(255,255,255,0.8);
+          }
+
+          h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p{
+            color: $black;
+          }
+        }
+      }
+    }
   }
 }
 
@@ -251,9 +307,38 @@ a.thrillworks-text{
     }
 }
 
-// .button{
-//   margin-top: 2em;
-// }
+button{
+  display: block;
+  margin: 0 auto;
+  color: #000000;
+  padding: 1em 2em;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  border: 2px solid #000000;
+  background: #468CCF;
+  background: linear-gradient(to top,  #5FA6A6,  #7FC7C7);
+  background: -ms-linear-gradient(to top,  #5FA6A6,  #7FC7C7);
+  background: -webkit-gradient(linear, to left top, to left bottom, from(#5FA6A6), to(#7FC7C7));
+  background: -moz-linear-gradient(to top,  #5FA6A6,  #7FC7C7);
+  text-decoration: none;
+  transition: all 0.15s ease;
+
+  @include breakpoint(medium){
+      top: 11em;
+  }
+
+  &:hover, &:active, &:focus {
+      color: $white;
+      border-color: $white;
+      background: #63B8EE;
+      background: linear-gradient(to top,  #7FC7C7,  #5FA6A6);
+      background: -ms-linear-gradient(to top,  #7FC7C7,  #5FA6A6);
+      background: -webkit-gradient(linear, to left top, tp left bottom, from(#7FC7C7), to(#5FA6A6));
+      background: -moz-linear-gradient(to top,  #7FC7C7,  #5FA6A6);
+      text-decoration: underline;
+  }
+}
 
 .header-no-parallax{
   padding-top: 0.75em;
@@ -282,6 +367,76 @@ a.thrillworks-text{
     
   li{
     display: inline;
+  }
+}
+
+/* Accordion */
+// <ul>
+.accordion{
+  background: none;
+  list-style-type: none;
+  margin: 0;
+  margin-top: 1em;
+  padding: 0;
+
+  // <li>
+  .accordion-item{
+      margin: 0;
+      border: 0.25em solid $black;
+      border-bottom: none;
+
+      &:last-child{
+          border-bottom: 0.25em solid $black;
+      }
+
+      // Active
+      &.is-active{
+          background: none;
+
+          // <a>
+          .accordion-title{
+              background: rgba(0,0,0,0.8);
+              color: $white;
+
+              &:hover{
+                  background: rgba(0,0,0,0.8);
+              }
+
+              &::before{
+                  margin-top: -0.8rem;
+              }
+
+              h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p{
+                color: $white;
+              }
+          }
+      }
+
+      // <a>
+      .accordion-title{
+          text-decoration: none;
+          display: block;
+          padding: 1em;
+          background: none;
+          border: none;
+          transition: all 0.2s ease;
+
+
+          &:hover{
+              background: rgba(0,0,0,0.2);
+          }
+
+          &::before{
+              margin-top: -0.6rem;
+              font-size: 1.75em;
+              font-weight: bold;
+          }
+      }
+
+      .accordion-content{
+          border: none;
+          background: none;
+      }
   }
 }
 

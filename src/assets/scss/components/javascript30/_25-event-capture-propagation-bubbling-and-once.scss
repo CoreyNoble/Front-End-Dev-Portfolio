@@ -23,36 +23,6 @@
     }
 
     button{
-        display: block;
-        margin: 0 auto;
         margin-top: 1em;
-        color: #000000;
-        padding: 1em 2em;
-        -moz-border-radius: 4px;
-        -webkit-border-radius: 4px;
-        border-radius: 4px;
-        border: 2px solid #000000;
-        background: #468CCF;
-        background: linear-gradient(to top,  #5FA6A6,  #7FC7C7);
-        background: -ms-linear-gradient(to top,  #5FA6A6,  #7FC7C7);
-        background: -webkit-gradient(linear, to left top, to left bottom, from(#5FA6A6), to(#7FC7C7));
-        background: -moz-linear-gradient(to top,  #5FA6A6,  #7FC7C7);
-        text-decoration: none;
-        transition: all 0.15s ease;
-
-        @include breakpoint(medium){
-            top: 11em;
-        }
-
-        &:hover, &:active, &:focus {
-            color: $white;
-            border-color: $white;
-            background: #63B8EE;
-            background: linear-gradient(to top,  #7FC7C7,  #5FA6A6);
-            background: -ms-linear-gradient(to top,  #7FC7C7,  #5FA6A6);
-            background: -webkit-gradient(linear, to left top, tp left bottom, from(#7FC7C7), to(#5FA6A6));
-            background: -moz-linear-gradient(to top,  #7FC7C7,  #5FA6A6);
-            text-decoration: underline;
-        }
     }
 }
