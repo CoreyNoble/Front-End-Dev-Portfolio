@@ -23,7 +23,7 @@ canonical: https://corey-noble.com/portfolio/development/javascript30/8-fun-with
                     </a>
                     <!-- Content -->
                     <div class="accordion-content" data-tab-content="" role="tabpanel" aria-labelledby="Project Synopsis" aria-hidden="true" id="project-synopsis" style="display: none;">
-                        <p>In this lesson I am drawing a canvas onto the page using a 2d context. The size of the canvas is determined by the size of the parent container.</p>
+                        <p>In this lesson I am drawing a canvas onto the page using a 2d context. User input draws brush strokes on to the context of the canvas.</p>
                         <p>Inside of the context of the canvas I assign initial values for: 'strokeStyle', 'lineJoin', 'lineCap', 'lineWidth' and 'globalCompositeOperation'. These help define the look of the brush stroke. I then initialize variables that will determine if the user is drawing, their last X and Y positions, the current hue, and the direction that determines if we're increasing or decreasing the brush stroke size.</p>
                         <p>I'm listening on the &lt;canvas&gt; element for 'mousedown', mousemove', 'mouseup' and 'mouseout' events.</p>
                         <p><strong>'mousedown'</strong> - Pass the event into a function (e), set 'isDrawing' to true and set the 'lastX' and 'lastY' values to match the current values from the event 'e.offsetX' and 'e.offsetY'.</p>

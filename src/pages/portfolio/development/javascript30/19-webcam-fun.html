@@ -23,7 +23,8 @@ canonical: https://corey-noble.com/portfolio/development/javascript30/19-webcam-
                     </a>
                     <!-- Content -->
                     <div class="accordion-content" data-tab-content="" role="tabpanel" aria-labelledby="Project Synopsis" aria-hidden="true" id="project-synopsis" style="display: none;">
-                        <p>In this lesson I stream a users webcam and output that video feed to the browser, I then copy the pixel data from the video feed into a &lt;canvas&gt; element. From there I can run various filter functions that manipulate the pixel data to create various video effects. I also allow the user to take a photo of the &lt;canvas&gt; which adds a photograph &lt;li&gt; to a &lt;div&gt; on the page, with the option to download the image &lt;a&gt;.</p>
+                        <p>In this lesson I stream a users webcam and output that video feed to the browser, I then copy the pixel data from the video feed into a &lt;canvas&gt; element. From there I can run various filter functions that manipulate the pixel data to create various video effects.</p>
+                        <p>I also allow the user to take a photo of the &lt;canvas&gt; which adds a photograph &lt;li&gt; to a &lt;div&gt; on the page, with the option to download the image &lt;a&gt;.</p>
                         <p>First I grab all of the elements I will need, including: &lt;video&gt;, &lt;canvas&gt;, Canvas context 'ctx', '.strip', &lt;audio&gt;, the photo &lt;button&gt;.</p>
                         <p>I listen for the following events: 'canplay' on &lt;video&gt; paintToCanvas(). 'click' on &lt;button&gt; takePhoto(). I also initialize a function getVideo().</p>
                         <p>In <strong>getVideo()</strong> first I get a users' webcam feed (navigator.mediaDevices.getUserMedia({ video: true, audio: false }) When I recieve the promise .then() I set the video.srcObject to the feed, and .play() the &lt;video&gt;.</p>

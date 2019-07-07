@@ -23,7 +23,8 @@ canonical: https://corey-noble.com/portfolio/development/javascript30/1-drum-kit
                     </a>
                     <!-- Content -->
                     <div class="accordion-content" data-tab-content="" role="tabpanel" aria-labelledby="Project Synopsis" aria-hidden="true" id="project-synopsis" style="display: none;">
-                        <p>In this lesson I am passing the event information (e) from 'keydown' on the 'window' object into a playSound(e) function.</p>
+                        <p>In this lesson I create a 'Drum Kit' by I am listening for the user to click a certain key, and am playing a sound based on the keypress.</p>
+                        <p>First I pass the event information (e) from 'keydown' on the 'window' object into a playSound(e) function.</p>
                         <p>I then query the 'document' for two types of elements. The &lt;audio&gt; element, and elements that have a class of '.key'. I check if the event 'keyCode' (e.keyCode) matches the data attribute 'data-key' of the element. If the &lt;audio&gt; element does not exist I exit the function.</p>
                         <p>Next I reset the audio time to 0 (audio.currentTime = 0). I then play the &lt;audio&gt; (audio.play();). I also add a class of '.playing' to the '.key' element to animate the UI.</p>
                         <p>I also am listening for when the animation is finished playing on the element 'transitionend', and then fire a function to remove the class of '.playing' from the '.key'.</p>

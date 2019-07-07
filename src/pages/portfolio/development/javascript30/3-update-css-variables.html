@@ -23,8 +23,8 @@ canonical: https://corey-noble.com/portfolio/development/javascript30/3-update-c
                     </a>
                     <!-- Content -->
                     <div class="accordion-content" data-tab-content="" role="tabpanel" aria-labelledby="Project Synopsis" aria-hidden="true" id="project-synopsis" style="display: none;">
-                        <p>In this lesson I learned how to update an elements style attribute by injecting variable values into the attribute using es6 template strings (`${this.name}`).</p>
-                        <p>I get all of the inputs on the page with a class of '.controls' (document.querySelectorAll('.controls input')).</p>
+                        <p>In this lesson I learned how to update an elements style attribute by injecting variable values using es6 template strings (`${this.name}`).</p>
+                        <p>First I get all of the inputs on the page with a class of '.controls' (document.querySelectorAll('.controls input')).</p>
                         <p>I listen for either a 'change' or 'mousemove' event on each input (inputs.forEach(input => input.addEventListener('change', handleUpdate))).</p>
                         <p>When the event triggers, the function that fires (handleUpdate()) modifies the style that matches the element name that triggered the event (.style.setProperty(`--${this.name}`, this.value + suffix).</p>
                         <p>The suffix checks for a data attribute on the element (this.dataset.sizing) and appends it to the style modification.</p>

@@ -23,7 +23,7 @@ canonical: https://corey-noble.com/portfolio/development/javascript30/16-mouse-m
                     </a>
                     <!-- Content -->
                     <div class="accordion-content" data-tab-content="" role="tabpanel" aria-labelledby="Project Synopsis" aria-hidden="true" id="project-synopsis" style="display: none;">
-                        <p>In this lesson I manipulate the text-shadow style depending on where the mouse is positioned.</p>
+                        <p>In this lesson I manipulate the text-shadow style of an elemen depending on where the mouse is positioned.</p>
                         <p>First I grab the 'hero' &lt;div&gt; and 'text' element. I initialize the 'walk', which sets the bounds on the shadow size. I then listen for 'mousemove' on 'hero' and run shadow(e).</p>
                         <p>In <strong>shadow(e)</strong> I set the width and height to match the hero 'offsetWidth' and 'offsetHeight' using es6 destructuring. (const { offsetWidth: width, offsetHeight: height } = hero). I also get the position of the cursor based on the event offset (let { offsetX: x, offsetY: y } = e).</p>
                         <p>Next I detect if the element is no longer equal to the original target (this !== e.target), this checks if the user moved onto the overlapping text element. If so, the X,Y values would then point to that elements origin and would no longer be the same values as if we were hovering over the 'hero'. Because of this I calculate and set the X,Y values to match the new targets offset plus the current X,Y (x = x + e.target.offsetLeft). This ensures the X,Y values are still the same as they would be if there was no overlapping element.</p>
