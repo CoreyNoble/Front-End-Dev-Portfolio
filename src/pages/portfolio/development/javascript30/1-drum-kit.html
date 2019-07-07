@@ -27,7 +27,7 @@ canonical: https://corey-noble.com/portfolio/development/javascript30/1-drum-kit
                         <p>First I pass the event information (e) from 'keydown' on the 'window' object into a playSound(e) function.</p>
                         <p>I then query the 'document' for two types of elements. The &lt;audio&gt; element, and elements that have a class of '.key'. I check if the event 'keyCode' (e.keyCode) matches the data attribute 'data-key' of the element. If the &lt;audio&gt; element does not exist I exit the function.</p>
                         <p>Next I reset the audio time to 0 (audio.currentTime = 0). I then play the &lt;audio&gt; (audio.play();). I also add a class of '.playing' to the '.key' element to animate the UI.</p>
-                        <p>I also am listening for when the animation is finished playing on the element 'transitionend', and then fire a function to remove the class of '.playing' from the '.key'.</p>
+                        <p>I also am listening for when the animation is finished playing on the element 'transitionend', and then run a function to remove the class of '.playing' from the '.key'.</p>
 
                         <!-- CodePen -->
                         <p class="codepen" data-height="330" data-theme-id="dark" data-default-tab="js" data-user="CoreyNoble" data-slug-hash="jjKXXR" style="height: 330px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="JavaScript30 - 1 - Drum Kit">

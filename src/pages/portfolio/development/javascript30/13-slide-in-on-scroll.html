@@ -25,7 +25,7 @@ canonical: https://corey-noble.com/portfolio/development/javascript30/13-slide-i
                     <div class="accordion-content" data-tab-content="" role="tabpanel" aria-labelledby="Project Synopsis" aria-hidden="true" id="project-synopsis" style="display: none;">
                         <p>In this lesson I learn how to create a slide in on scroll effect on elements.</p>
                         <p>I create a variable that finds all '.slide-in' elements.</p>
-                        <p>I listen on the 'window' object for a 'scroll' event and fire a function. This event ends up firing way too often so I use a debounce() function to delay the function from firing as often ('scroll', debounce(checkSlide(e))).</p>
+                        <p>I listen on the 'window' object for a 'scroll' event and run a function. This event ends up firing way too often so I use a debounce() function to delay the function from firing as often ('scroll', debounce(checkSlide(e))).</p>
                         <p>When running checkSlide(e), for each '.slide-in' element, I detect the scroll depth when the image should slide in ((window.scrollY + window.innerHeight) - sliderImage.height / 2).</p>
                         <p>I also detect the bottom of the image, if the image is half shown, and if the image has not been scrolled past.</p>
                         <p>Finally if the image is half shown, and is not scrolled past, I add an '.active' class to the element. Otherwise I remove the '.active' class. This transitions in the asset and.</p>
