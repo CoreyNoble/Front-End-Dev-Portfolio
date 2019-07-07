@@ -23,7 +23,30 @@ canonical: https://corey-noble.com/portfolio/development/javascript30/26-stripe-
                     </a>
                     <!-- Content -->
                     <div class="accordion-content" data-tab-content="" role="tabpanel" aria-labelledby="Project Synopsis" aria-hidden="true" id="project-synopsis" style="display: none;">
-                        <p>In this lesson I </p>
+                        <p>In this lesson I improve upon the puppy &lt;div&gt; functionality from the 'Follow Along Link Highlighter' lesson by creating a flexible dropdown navigation in-which the size of any dropdown item can be dynamic. As the user hovers on each dropdown item, the puppy &lt;div&gt; follows along in both size and position to transition into the background for that newly shown dropdown item.</p>
+                        <p>First I get the 'nav' and the 'triggers' (&lt;li&gt;) as well as the puppy &lt;div&gt; 'background'.</p>
+                        <p>Then I listen for:</p>
+                        <ul>
+                            <li>
+                                <p><strong>triggers.forEach(trigger => trigger.addEventListener)</strong></p>
+                                <ul>
+                                    <li>'mouseenter', handleEnter()</li>
+                                    <li>'mouseleave', handleLeave()</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <p>We use an arrow function to keep &lt;li&gt; as 'this'.</p>
+                        <p>In <strong>handleEnter()</strong> - First we add a class of '.trigger-enter' to the trigger. This class changes 'display:none' to 'display:block'. This class is added on a delay, so we use an arrow function to check if the class is there. If so, we add a second class of '.trigger-enter-active'. This is known as stepping in an animation. First we display it, then we transition it.<br />
+                        (setTimeout(() => this.classList.contains('trigger-enter' && this.classList.add('trigger-enter-active', 150);).</p>
+                        <p>Next we add a class of '.open' to 'background'. We get the 'dropdown' and its' bounding rectangle, We also get the bounding rectangle of the 'nav'. Using the 'dropdown' bounding rectangle, we calculate 'width' and 'height values that 'background' will need. Using 'nav' and 'dropdown' bounding rectangles we calculate the position that 'background' will need. We use 'nav' as an anchor for positioning and adjusting the 'top' and 'left' accordingly using the 'dropdown' coordinates.</p>
+                        <p>const coords = {<br />
+                        &nbsp;&nbsp;width: dropdownCoords.width,<br />
+                        &nbsp;&nbsp;height: dropdownCoords.height,<br />
+                        &nbsp;&nbsp;top: dropdownCoords.top - navCoords.top,<br />
+                        &nbsp;&nbsp;left: dropdownCoords.left - navCoords.left<br />
+                        }</p>
+                        <p>Finally we set the 'background' styles by injecting the 'coords' into the style attributes of 'background' using es6 template strings. (background.style.setProperty('width', `${coords.width}px`)).</p>
+                        <p>In <strong>handleLeave()</strong> - Hide the elements. Remove the classes '.trigger-enter' and '.trigger-enter-active' from the trigger. Remove the class of '.open' from 'background'.</p>
 
                         <!-- CodePen -->
                         <p class="codepen" data-height="330" data-theme-id="dark" data-default-tab="js" data-user="CoreyNoble" data-slug-hash="ydEZKJ" style="height: 330px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="JavaScript30 - 26 - Stripe Follow Along Nav">
