@@ -5,12 +5,39 @@ canonical: https://corey-noble.com/portfolio/development/javascript30/21-geoloca
 ---
 
 <!-- Introduction -->
-<div class="section white">
+<div class="js30-intro section white">
     <div class="row">
         <div class="small-12 column">
-            <h1>Geolocation</h1>
             <!-- Back CTA -->
             <p class="back-cta"><small><strong><a href="{{root}}portfolio/development/javascript30.html" title="Return to the blog landing page">&lt;&nbsp;Back to JavaScript&nbsp;30</a></strong></small></p>
+
+            <!-- Title -->
+            <h1>Geolocation</h1>
+
+            <!-- Accordion -->
+            <ul class="accordion" data-accordion data-allow-all-closed="true">
+                <li class="accordion-item" data-accordion-item="">
+                    <!-- Title -->
+                    <a href="#" class="accordion-title" aria-controls="" role="tab" id="project-synopsis" aria-expanded="false" aria-selected="false">
+                        <h2 class="h5">Project Synopsis</h2>
+                    </a>
+                    <!-- Content -->
+                    <div class="accordion-content" data-tab-content="" role="tabpanel" aria-labelledby="Project Synopsis" aria-hidden="true" id="project-synopsis" style="display: none;">
+                        <p>In this lesson I am accessing the users' geolocation and displaying their current speed and direction.</p>
+                        <p>First I grab the elements I will be manipulating 'arrow' and 'speed'.</p>
+                        <p>Next I request the geolocation data (navigator.geolocation.watchPosition((data) => {}). If the user accepts the request, for 'speed' I change the .textContent to match the speed value provided by the response (speed.textContent = data.coords.speed). For 'arrow' I rotate the image using the 'heading' in the response (arrow.style.transform = `rotate(${data.coords.heading}deg)`).</p>
+                        <p>If the user denies the request, I log an error to the console and alert the user that the application requires geolocation access to function.</p>
+
+                        <!-- CodePen -->
+                        <p class="codepen" data-height="330" data-theme-id="dark" data-default-tab="js" data-user="CoreyNoble" data-slug-hash="dBKaVe" style="height: 330px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="JavaScript30 - 21 - Geolocation">
+                        <span>See the Pen <a href="https://codepen.io/CoreyNoble/pen/dBKaVe/">
+                        JavaScript30 - 21 - Geolocation</a> by Corey Noble (<a href="https://codepen.io/CoreyNoble">@CoreyNoble</a>)
+                        on <a href="https://codepen.io">CodePen</a>.</span>
+                        </p>
+                        <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+                    </div>
+                </li>
+            </ul>
         </div>
     </div>
 </div>

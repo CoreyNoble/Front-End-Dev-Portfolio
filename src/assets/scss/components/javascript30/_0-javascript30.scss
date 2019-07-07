@@ -1,6 +1,8 @@
-.back-cta{
-    padding-bottom: 0;
+.results-type {
+    display: none !important;
+}
 
+.back-cta{
     a{
         text-decoration: none;
         padding-bottom: 0.1em;
@@ -9,6 +11,16 @@
         &:hover{
             border-bottom: 0;
         }
+    }
+}
+
+.js30-intro{
+    .back-cta{
+        margin-top: 1.66em;
+    }
+
+    h1{
+        margin-top: 0.33em;
     }
 }
 

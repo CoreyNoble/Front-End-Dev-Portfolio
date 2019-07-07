@@ -58,7 +58,7 @@ function setOption() {
     toggle();
 }
 
-// When the 'voiceschanged' event fires, populateVoices(). This is needed before populating the voice in-order to give the browser enough time to have this event ready.
+// When the 'voiceschanged' event fires, populateVoices(). This is needed before populating the voices in-order to give the browser enough time to have this event ready.
 speechSynthesis.addEventListener('voiceschanged', populateVoices);
 // When the <select> changes, setVoice().
 voicesDropdown.addEventListener('change', setVoice);

@@ -1,6 +1,7 @@
 var close = document.getElementsByClassName("close");
 var list = document.getElementById("todoOutput");
 var myNodelist = document.getElementsByClassName("todoItem");
+var addToDo = document.querySelector(".addToDoItem");
 
 var cols = document.querySelectorAll('#todoOutput .todoItem');
 
@@ -175,3 +176,5 @@ function handleDragEnd(e) {
 
 nodeList();
 update();
+
+addToDo.addEventListener("click", newItem);

@@ -5,12 +5,48 @@ canonical: https://corey-noble.com/portfolio/development/javascript30/9-dev-tool
 ---
 
 <!-- Introduction -->
-<div class="section white">
+<div class="js30-intro section white">
     <div class="row">
         <div class="small-12 column">
-            <h1>Dev Tools Domination</h1>
             <!-- Back CTA -->
             <p class="back-cta"><small><strong><a href="{{root}}portfolio/development/javascript30.html" title="Return to the blog landing page">&lt;&nbsp;Back to JavaScript&nbsp;30</a></strong></small></p>
+
+            <!-- Title -->
+            <h1>Dev Tools Domination</h1>
+
+            <!-- Accordion -->
+            <ul class="accordion" data-accordion data-allow-all-closed="true">
+                <li class="accordion-item" data-accordion-item="">
+                    <!-- Title -->
+                    <a href="#" class="accordion-title" aria-controls="" role="tab" id="project-synopsis" aria-expanded="false" aria-selected="false">
+                        <h2 class="h5">Project Synopsis</h2>
+                    </a>
+                    <!-- Content -->
+                    <div class="accordion-content" data-tab-content="" role="tabpanel" aria-labelledby="Project Synopsis" aria-hidden="true" id="project-synopsis" style="display: none;">
+                        <p>In this lesson I learned about the tools and methods that are available inside of the console.</p>
+                        <p><strong>Regular console.log()</strong> - Outputs whatever you pass into it, String, variable, array, etc.</p>
+                        <p><strong>Interpolated console.log(`${value}`)</strong> - Injecting values into a string using es6 template strings.</p>
+                        <p><strong>Styled console.log('%c Styled console.log', 'font-size: 3em;')</strong> - A way to style the console log with CSS.</p>
+                        <p><strong>console.warn(), console.error(), console.info()</strong> - Various types of alerts you can display in the console.</p>
+                        <p><strong>console.assert(p.classList.contains('ouch'), 'Error Message')</strong> - log an error when a test fails.</p>
+                        <p><strong>console.clear()</strong> - Wipe the console clean.</p>
+                        <p><strong>console.log(p)</strong> - Display the &lt;element&gt;</p>
+                        <p><strong>console.dir(p)</strong> - display the available methods and properties for an &lt;element&gt;.</p>
+                        <p><strong>console.group(`${dog.name}`) / console.groupEnd(`${dog.name}`)</strong> - Creating a collapsable group of logs in the console.</p>)
+                        <p><strong>console.count()</strong> - Each time the same item appears, it will log the item, and will also increment the counter of occurances from that logged item.</p>
+                        <p><strong>console.time('fetching data') / console.timeEnd('fetching data')</strong> - Times how long something takes to happen between the starting and ending methods.</p>
+                        <p><strong>console.table()</strong> - Takes in an array of objects, assuming they all have the same properties, displays the data in a table format inside of the console.</p>
+
+                        <!-- CodePen -->
+                        <p class="codepen" data-height="330" data-theme-id="dark" data-default-tab="js" data-user="CoreyNoble" data-slug-hash="QXxYGL" style="height: 330px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="JavaScript30 - 9 - Dev Tools Domination">
+                        <span>See the Pen <a href="https://codepen.io/CoreyNoble/pen/QXxYGL/">
+                        JavaScript30 - 9 - Dev Tools Domination</a> by Corey Noble (<a href="https://codepen.io/CoreyNoble">@CoreyNoble</a>)
+                        on <a href="https://codepen.io">CodePen</a>.</span>
+                        </p>
+                        <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+                    </div>
+                </li>
+            </ul>
         </div>
     </div>
 </div>

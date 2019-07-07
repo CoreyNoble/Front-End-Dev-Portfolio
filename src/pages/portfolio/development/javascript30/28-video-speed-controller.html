@@ -5,12 +5,47 @@ canonical: https://corey-noble.com/portfolio/development/javascript30/28-video-s
 ---
 
 <!-- Introduction -->
-<div class="section white">
+<div class="js30-intro section white">
     <div class="row">
         <div class="small-12 column">
-            <h1>Video Speed Controller</h1>
             <!-- Back CTA -->
             <p class="back-cta"><small><strong><a href="{{root}}portfolio/development/javascript30.html" title="Return to the blog landing page">&lt;&nbsp;Back to JavaScript&nbsp;30</a></strong></small></p>
+
+            <!-- Title -->
+            <h1>Video Speed Controller</h1>
+
+            <!-- Accordion -->
+            <ul class="accordion" data-accordion data-allow-all-closed="true">
+                <li class="accordion-item" data-accordion-item="">
+                    <!-- Title -->
+                    <a href="#" class="accordion-title" aria-controls="" role="tab" id="project-synopsis" aria-expanded="false" aria-selected="false">
+                        <h2 class="h5">Project Synopsis</h2>
+                    </a>
+                    <!-- Content -->
+                    <div class="accordion-content" data-tab-content="" role="tabpanel" aria-labelledby="Project Synopsis" aria-hidden="true" id="project-synopsis" style="display: none;">
+                        <p>In this lesson I create a slider interface that manipulates the &lt;video&gt; speed.</p>
+                        <p>First I get the parent &lt;div&gt; 'speed', child &lt;div&gt; 'bar' and &lt;video&gt; element 'video'.</p>
+                        <p>Then I listen for the 'mousemove' event and run handleMove(e).</p>
+                        <p>In <strong>handleMove(e)</strong> - 'this' being 'speed', first I set:</p>
+                        <ul>
+                            <li>'y' to (e.pageY - this.offsetTop).</li>
+                            <li>'percent' to (y / this.offsetHeight)</li>
+                            <li>'min' and 'max' values which serve as the range for the controller</li>
+                            <li>'height' equal to (percent * 100)</li>
+                            <li>'playbackRate' to (percent  * (max - min) + min) which ensures the value isn't between 0 and 1, instead it is a value range between the 'min' and 'max', multiplied by the percentage</li>
+                        </ul>
+                        <p>Finally I set the 'bar.style.height' to 'height', I set the 'bar.textContet' to 'playbackRate' and I set the 'video.playbackRate' to 'playbackRate'.</p>
+
+                        <!-- CodePen -->
+                        <p class="codepen" data-height="330" data-theme-id="dark" data-default-tab="js" data-user="CoreyNoble" data-slug-hash="GbGzxz" style="height: 330px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="JavaScript30 - 28 - Video Speed Controller">
+                        <span>See the Pen <a href="https://codepen.io/CoreyNoble/pen/GbGzxz/">
+                        JavaScript30 - 28 - Video Speed Controller</a> by Corey Noble (<a href="https://codepen.io/CoreyNoble">@CoreyNoble</a>)
+                        on <a href="https://codepen.io">CodePen</a>.</span>
+                        </p>
+                        <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+                    </div>
+                </li>
+            </ul>
         </div>
     </div>
 </div>
