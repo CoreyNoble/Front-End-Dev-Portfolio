@@ -33,7 +33,7 @@ divs.forEach(div => div.addEventListener('click', logText, {
 //// Only fire this event once.
 button.addEventListener('click', () => {
     // Event
-    console.log('Click!!!');
+    alert('Clicked Once');
     }, {
         // Only fire the event once.
         // Unbinds itself. Same thing as 'removeEventListener'.

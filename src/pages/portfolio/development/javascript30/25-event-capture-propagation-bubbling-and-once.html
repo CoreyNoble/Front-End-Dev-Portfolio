@@ -23,7 +23,13 @@ canonical: https://corey-noble.com/portfolio/development/javascript30/25-event-c
                     </a>
                     <!-- Content -->
                     <div class="accordion-content" data-tab-content="" role="tabpanel" aria-labelledby="Project Synopsis" aria-hidden="true" id="project-synopsis" style="display: none;">
-                        <p>In this lesson I </p>
+                        <p>In this lesson I learned about Event capture, Propogation, Bubbling, and Once.</p>
+                        <p><strong>Event Capture</strong> - When we make a click, the event ripples top to bottom from the document (root), and CAPTURES each element as it makes its' way to the element that fired the event.</p>
+                        <p><strong>Bubbling</strong> - When the Event Capture is complete, it then starts to bubble up (bottom to top). Starting at the current dom &lt;element&gt;, then proceeding on to its' the parent &lt;element&gt;, one at a time, until it gets back up to the document level (root).</p>
+                        <p>In this example I listen on each &lt;div&gt; for 'click' and fire a function that logs the class of that &lt;div&gt;. The output shows that when clicking on '.three', 'this' bubbles 'three', 'two', 'one' which shows that the event is moving up the chain of &lt;div&gt; nodes.</p>
+                        <p><strong>Propagation</strong> - What continues the chain for Bubbling (bottom to top). To stop Propagation on the event use (e.stopPropagation();).</p>
+                        <p><strong>Once</strong> - Only fire this event once. (once: true)</p>
+                        <p>In this example I listen for a 'click' event on the &lt;button&gt;, and fire a function. I use (once: true) to ensure the event can only fire once.</p>
 
                         <!-- CodePen -->
                         <p class="codepen" data-height="330" data-theme-id="dark" data-default-tab="js" data-user="CoreyNoble" data-slug-hash="wLXNpV" style="height: 330px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="JavaScript30 - 25 - Event Capture, Propagation, Bubbling and Once">
