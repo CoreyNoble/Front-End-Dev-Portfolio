@@ -38,7 +38,7 @@ canonical: https://corey-noble.com/portfolio/development/javascript30/1-drum-kit
                                 </ul>
                             </li>
                         </ul>
-                        <p>In <strong>playSound(e)</strong> I query the 'document' for two types of elements. The &lt;audio&gt; element, and elements that have a class of '.key'. I check if the event 'keyCode' (e.keyCode) matches the data attribute 'data-key' of the element. If the &lt;audio&gt; element does not exist I exit the function.</p>
+                        <p>In <strong>playSound(e)</strong> I query the 'document' for two types of elements. The &lt;audio&gt; element, and elements that have a class of '.key'. I check if the event 'keyCode' (e.keyCode) matches the data attribute 'data-key' of the element. If the &lt;audio&gt; element does not exist, I exit the function.</p>
                         <p>Next I reset the audio time to 0 (audio.currentTime = 0). Then I play the &lt;audio&gt; (audio.play();). I also add a class of '.playing' to the '.key' element to animate the UI.</p>
                         <p>In <strong>removeTransition(e)</strong> First I check if the event .propertyname is not 'transform' If so, I exit the function. Otherwise, I add a class of '.playing' the the '.key'.</p>
 
