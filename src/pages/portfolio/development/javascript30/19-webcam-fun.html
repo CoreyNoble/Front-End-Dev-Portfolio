@@ -19,14 +19,14 @@ canonical: https://corey-noble.com/portfolio/development/javascript30/19-webcam-
                 <li class="accordion-item" data-accordion-item="">
                     <!-- Title -->
                     <a href="#" class="accordion-title" aria-controls="" role="tab" id="project-synopsis" aria-expanded="false" aria-selected="false">
-                        <h2 class="h5">Project Synopsis</h2>
+                        <h2 class="h5">Project Synopsis and Code</h2>
                     </a>
                     <!-- Content -->
-                    <div class="accordion-content" data-tab-content="" role="tabpanel" aria-labelledby="Project Synopsis" aria-hidden="true" id="project-synopsis" style="display: none;">
+                    <div class="accordion-content" data-tab-content="" role="tabpanel" aria-labelledby="Project Synopsis and Code" aria-hidden="true" id="project-synopsis" style="display: none;">
                         <p>In this lesson I stream a users webcam and output that video feed to the browser, I then copy the pixel data from the video feed into a &lt;canvas&gt; element. From there I can run various filter functions that manipulate the pixel data to create various video effects.</p>
                         <p>I also allow the user to take a photo of the &lt;canvas&gt; which adds a photograph &lt;li&gt; to a &lt;div&gt; on the page, with the option to download the image &lt;a&gt;.</p>
                         <p>First I grab all of the elements I will need, including: &lt;video&gt;, &lt;canvas&gt;, Canvas context 'ctx', '.strip', &lt;audio&gt;, the photo &lt;button&gt;.</p>
-                        <p>I listen for the following events: 'canplay' on &lt;video&gt; paintToCanvas(). 'click' on &lt;button&gt; takePhoto(). I also initialize a function getVideo().</p>
+                        <p>I <strong>listen</strong> for the following events: 'canplay' on &lt;video&gt; paintToCanvas(). 'click' on &lt;button&gt; takePhoto(). I also initialize a function getVideo().</p>
                         <p>In <strong>getVideo()</strong> first I get a users' webcam feed (navigator.mediaDevices.getUserMedia({ video: true, audio: false }) When I recieve the promise .then() I set the video.srcObject to the feed, and .play() the &lt;video&gt;.</p>
                         <p>In <strong>paintToCanvas()</strong> I set the 'width' and 'height' of the &lt;canvas&gt; element equal to the resolution of the video stream (width = video.videoWidth).</p>
                         <p>Next, at a setInterval(() => {}, 16) I draw an image to the 'ctx' using the video as the data, painting to the 'width' and 'height' (ctx.drawImage(video, 0, 0, width, height)). I then get an array of 'pixels' data from the 'ctx' (ctx.getImageData(0, 0, width, height)).</p>

@@ -19,13 +19,13 @@ canonical: https://corey-noble.com/portfolio/development/javascript30/12-key-seq
                 <li class="accordion-item" data-accordion-item="">
                     <!-- Title -->
                     <a href="#" class="accordion-title" aria-controls="" role="tab" id="project-synopsis" aria-expanded="false" aria-selected="false">
-                        <h2 class="h5">Project Synopsis</h2>
+                        <h2 class="h5">Project Synopsis and Code</h2>
                     </a>
                     <!-- Content -->
-                    <div class="accordion-content" data-tab-content="" role="tabpanel" aria-labelledby="Project Synopsis" aria-hidden="true" id="project-synopsis" style="display: none;">
+                    <div class="accordion-content" data-tab-content="" role="tabpanel" aria-labelledby="Project Synopsis and Code" aria-hidden="true" id="project-synopsis" style="display: none;">
                         <p>In this lesson I learned how to listen for a specific combination of inputs before firing a function.</p>
                         <p>First I initialize an empty array 'pressed', as well as a 'secretCode' variable.</p>
-                        <p>I then listen for a 'keyup' event on the 'window' object. I pass the event into a function ((e) => {}).</p>
+                        <p>I <strong>listen</strong> for a 'keyup' event on the 'window' object. I pass the event into a function ((e) => {}).</p>
                         <p>Inside of the function I push the 'key' event into the 'pressed' array. I then trim the array to ensure it is never longer than the maximum number of characters that 'secretCode' contains.</p>
                         <p>Next I join the 'pressed' array together into one string (.join('')) and check if it includes 'secretCode' (.includes(secretCode)), if so, the 'secretCode' is detected and the function can proceed.</p>
 
