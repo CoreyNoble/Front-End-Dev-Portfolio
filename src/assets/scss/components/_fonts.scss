@@ -79,6 +79,18 @@ p,ul,ol,li{
 
 ol, ul {
     margin-left: 2rem;
+
+    li{
+      margin-bottom: 1em;
+
+      &:before{
+        font-weight: bold;
+      }
+
+      &:last-child{
+        margin-bottom: 0;
+      }
+    }
 }
 
 p, ul, ol{
