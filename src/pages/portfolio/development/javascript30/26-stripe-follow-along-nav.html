@@ -35,17 +35,17 @@ canonical: https://corey-noble.com/portfolio/development/javascript30/26-stripe-
                                 </ul>
                             </li>
                         </ul>
-                        <p>We use an arrow function to keep &lt;li&gt; as 'this'.</p>
-                        <p>In <strong>handleEnter()</strong> - First we add a class of '.trigger-enter' to the trigger. This class changes 'display:none' to 'display:block'. This class is added on a delay, so we use an arrow function to check if the class is there. If so, we add a second class of '.trigger-enter-active'. This is known as stepping in an animation. First we display it, then we transition it.<br />
+                        <p>I use an arrow function to keep &lt;li&gt; as 'this'.</p>
+                        <p>In <strong>handleEnter()</strong> - First add a class of '.trigger-enter' to the trigger. This class changes 'display:none' to 'display:block'. The class is added on a delay, so I use an arrow function to check if the class is there. If so, I add a second class of '.trigger-enter-active'. This is known as stepping in an animation. First display it, then transition it.<br />
                         (setTimeout(() => this.classList.contains('trigger-enter' && this.classList.add('trigger-enter-active', 150);).</p>
-                        <p>Next we add a class of '.open' to 'background'. We get the 'dropdown' and its' bounding rectangle, We also get the bounding rectangle of the 'nav'. Using the 'dropdown' bounding rectangle, we calculate 'width' and 'height values that 'background' will need. Using 'nav' and 'dropdown' bounding rectangles we calculate the position that 'background' will need. We use 'nav' as an anchor for positioning and adjusting the 'top' and 'left' accordingly using the 'dropdown' coordinates.</p>
+                        <p>Next I add a class of '.open' to 'background'. I get the 'dropdown' and its' bounding rectangle, I also get the bounding rectangle of the 'nav'. Using the 'dropdown' bounding rectangle, I calculate the 'width' and 'height values that 'background' will need. Using 'nav' and 'dropdown' bounding rectangles I calculate the position that 'background' will need. I also use 'nav' as an anchor for positioning and adjusting the 'top' and 'left' accordingly using the 'dropdown' coordinates.</p>
                         <p>const coords = {<br />
                         &nbsp;&nbsp;width: dropdownCoords.width,<br />
                         &nbsp;&nbsp;height: dropdownCoords.height,<br />
                         &nbsp;&nbsp;top: dropdownCoords.top - navCoords.top,<br />
                         &nbsp;&nbsp;left: dropdownCoords.left - navCoords.left<br />
                         }</p>
-                        <p>Finally we set the 'background' styles by injecting the 'coords' into the style attributes of 'background' using es6 template strings. (background.style.setProperty('width', `${coords.width}px`)).</p>
+                        <p>Finally I set the 'background' styles by injecting the 'coords' into the style attributes of 'background' using es6 template strings. (background.style.setProperty('width', `${coords.width}px`)).</p>
                         <p>In <strong>handleLeave()</strong> - Hide the elements. Remove the classes '.trigger-enter' and '.trigger-enter-active' from the trigger. Remove the class of '.open' from 'background'.</p>
 
                         <!-- CodePen -->

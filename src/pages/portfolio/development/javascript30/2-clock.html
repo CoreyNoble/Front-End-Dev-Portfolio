@@ -25,8 +25,8 @@ canonical: https://corey-noble.com/portfolio/development/javascript30/2-clock.ht
                     <div class="accordion-content" data-tab-content="" role="tabpanel" aria-labelledby="Project Synopsis" aria-hidden="true" id="project-synopsis" style="display: none;">
                         <p>In this lesson I create an analog clock displays the users' time.</p>
                         <p>To start the clock I run a function every second (setInterval(setDate, 1000)).</p>
-                        <p>In <strong>setDate()</strong> First I get the current time. Using the current time I also get the time in seconds, minutes and hours. Then I calculate the degree of rotation for each hand, offset by +90 to ensure the rotation of the element starts north .</p>
-                        <p>Finally I query the document for each hand element, and rotate each hand to the matching degree value by using es6 template strings to inject the variable into the elements' 'style' attribute (secondHand.style.transform = `rotate(${secondsDegrees}deg)`).</p>
+                        <p>In <strong>setDate()</strong> First I get the current time. Using the current time I also get the time in seconds, minutes and hours. Then I calculate the degree of rotation for each hand, offset by +90 to ensure the rotation of the element starts north.</p>
+                        <p>Finally I query the 'document' for each hand element, and rotate each hand using the matching degree value. I do this by using es6 template strings to inject the variable into the elements' 'style' attribute (secondHand.style.transform = `rotate(${secondsDegrees}deg)`).</p>
 
                         <!-- CodePen -->
                         <p class="codepen" data-height="330" data-theme-id="dark" data-default-tab="js" data-user="CoreyNoble" data-slug-hash="ewKxmJ" style="height: 330px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="JavaScript30 - 2 - Clock">

@@ -61,10 +61,10 @@ canonical: https://corey-noble.com/portfolio/development/javascript30/23-speech-
                                 </ul>
                             </li>
                         </ul>
-                        <p>In <strong>populateVoices()</strong> - First to get the 'voices' we .getVoices() from 'this' (speechSynthesis). We set the .innerHTML of &lt;select&gt; to the list of 'voices'. Then we .filter() over each voice to only include voices with a language of 'en'. Next we .map() over each voice to add &lt;option&gt; HTML to each entry. Lastly we .join('') to convert the array into one string.</p>
-                        <p>In <strong>setVoice()</strong> - First we set 'msg.voice' to the 'voice' that macthes the &lt;select&gt; item (msg.voice = voices.fint(voice => voice.name === this.value)). Then we run toggle().</p>
-                        <p>in <strong>toggle(true/false)</strong> - First we stop any currently playing speech (speechSynthesis.cancel();). Next we check if either true or false was passed into the function. If false, do nothing more. If true (default), restart the speech synthesis (speechSynthesis.speak(msg);).</p>
-                        <p>In <strong>setOption()</strong> - This sets the 'msg' voice to the &lt;option&gt; that was selected. Then we run toggle().</p>
+                        <p>In <strong>populateVoices()</strong> - First to get the 'voices' I .getVoices() from 'this' (speechSynthesis). Then I set the .innerHTML of &lt;select&gt; to the list of 'voices'. Next I .filter() over each voice to only include voices with a language of 'en'. Then I .map() over each voice to add &lt;option&gt; HTML to each entry. Lastly I .join('') to convert the array into one string.</p>
+                        <p>In <strong>setVoice()</strong> - First set 'msg.voice' to the 'voice' that macthes the &lt;select&gt; item (msg.voice = voices.fint(voice => voice.name === this.value)). Then run toggle().</p>
+                        <p>in <strong>toggle(true/false)</strong> - First I stop any currently playing speech (speechSynthesis.cancel();). Then I check if either true or false was passed into the function. If false, do nothing more. If true (default), restart the speech synthesis (speechSynthesis.speak(msg);).</p>
+                        <p>In <strong>setOption()</strong> - This sets the 'msg' voice to the &lt;option&gt; that was selected. Then run toggle().</p>
 
                         <!-- CodePen -->
                         <p class="codepen" data-height="330" data-theme-id="dark" data-default-tab="js" data-user="CoreyNoble" data-slug-hash="PraVOL" style="height: 330px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="JavaScript30 - 23 - Speech Synthesis">

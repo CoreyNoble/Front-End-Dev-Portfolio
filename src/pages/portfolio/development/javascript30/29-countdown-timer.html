@@ -42,10 +42,10 @@ canonical: https://corey-noble.com/portfolio/development/javascript30/29-countdo
                         </ul>
                         <p><strong>Functions</strong></p>
                         <p>In <strong>startTimer()</strong> - I set 'seconds' to the [data-time] value (parseInt(this.dataset.time)). Then I run timer(seconds).</p>
-                        <p>In <strong>timer(seconds)</strong> - First we clearInterval(countdown). Next we set 'now' and 'then', both are in milliseconds. Then we run <strong>displayTimeLeft(seconds)</strong> and <strong>displayEndTime(then)</strong>. Finally we set the <strong>'countdown'</strong>.</p>
+                        <p>In <strong>timer(seconds)</strong> - First I clearInterval(countdown). Next I set 'now' and 'then', both are in milliseconds. Then run <strong>displayTimeLeft(seconds)</strong> and <strong>displayEndTime(then)</strong>. Finally I set the <strong>'countdown'</strong>.</p>
                         <ul>
-                            <li>In <strong>displayTimeLeft(seconds)</strong> - We get the 'minutes' (seconds / 60), 'remainderSeconds' (seconds % 60), then we 'display' the 'minutes' and 'remainderSeconds' in a string. We also prepend a '0' if 'remainderSeconds &lt; 10. Finally we output 'display' to the 'document.title' and to 'timerDisplay'.</li>
-                            <li>In <strong>displayEndTime(timestamp)</strong> - We create a new date object 'end' from the passed in 'timestamp'. From that we get 'hours' (end.getHours()). Then we calculate 'adjustedHour' to adjust it to a 12hr clock. Next we get 'minutes' (end.getMinutes()). Finally we output the end time to 'endtTime.textContent'.</li>
+                            <li>In <strong>displayTimeLeft(seconds)</strong> - get the 'minutes' (seconds / 60), 'remainderSeconds' (seconds % 60), then 'display' the 'minutes' and 'remainderSeconds' in a string. I prepend a '0' if 'remainderSeconds &lt; 10. Finally, output 'display' to the 'document.title' and to 'timerDisplay'.</li>
+                            <li>In <strong>displayEndTime(timestamp)</strong> - create a new date object 'end' from the passed in 'timestamp'. From that I get 'hours' (end.getHours()). Then calculate 'adjustedHour' to adjust it to a 12hr clock. Next I get 'minutes' (end.getMinutes()). Finally I output the end time to 'endtTime.textContent'.</li>
                             <li>In <strong>'countdown'</strong> - Every second, set 'secondsLeft' (Math.round((then - Date.now()) / 1000). Check if there are any 'secondsLeft', If so, clearInterval(countdown). Either way, displayTimeLeft(secondsLeft).</li>
                         </ul>
                         

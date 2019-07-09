@@ -26,12 +26,12 @@ canonical: https://corey-noble.com/portfolio/development/javascript30/14-javascr
                         <p>In this lesson I learned about the differences between a Reference and a Copy in JavaScript.</p>
                         <p>Strings, numbers and booleans all update as they are set.</p>
                         <p>With <strong>arrays[]</strong>, if you create a reference to an array (team[] = family[]) as you update the reference 'team', it will also update the original array 'family'.</p>
-                        <p>Instead of referencing the array, we can copy it. One way to do this is by passing an empty .slice() (team = family.slice()).</p>
-                        <p>Or we can create a new array and concatinate in the old one (team = [].concat(family)).</p>
-                        <p>Or we can use the new es6 ... spread (team = [...family]).</p>
-                        <p>Or we can use the Array.from() method (team = Array.from(family)).</p>
+                        <p>Instead of referencing the array, it can be copied. One way to do this is by passing an empty .slice() (team = family.slice()).</p>
+                        <p>Or you can create a new array and concatinate in the old one (team = [].concat(family)).</p>
+                        <p>Or you can use the new es6 ... spread (team = [...family]).</p>
+                        <p>Or you can use the Array.from() method (team = Array.from(family)).</p>
                         <p>With <strong>objects{}</strong> its' the same as an array. You make a reference to the object by doing this (captain{} = person{}).</p>
-                        <p>In-order to make a copy, we can assign a new object to the variable (Object.assign({}, person, { number: 99, age: 12 })).</p>
+                        <p>In-order to make a copy, you can assign a new object to the variable (Object.assign({}, person, { number: 99, age: 12 })).</p>
                         <p><em>Note: This only goes one level deep both for arrays[] and objects{}.</em></p>
 
                         <!-- CodePen -->
