@@ -29,7 +29,7 @@ canonical: https://corey-noble.com/portfolio/development/javascript30/8-fun-with
                         <p>On <strong>'mousedown'</strong> - Pass the event into a function(e), set 'isDrawing' to true and set the 'lastX' and 'lastY' values to match the current values from the event 'e.offsetX' and 'e.offsetY'.</p>
                         <p>On <strong>'mousemove'</strong> - Pass the event into a function Draw(e). If 'IsDrawing' is not true, exit the function. Otherwise, inject the 'hue' into the context 'strokeStyle' using template strings.</p>
                         <p>Then begin a path in the context (.beginPath()). Start the path at 'lastX' and 'lastY' (.moveTo()). Draw a line to the current 'e.offsetX' and 'e.offsetY' (.lineTo()). Then fill out the line stroke (.stroke()).</p>
-                        <p>Next increment the 'hue' value, if it's >= 360, reset it to 0 to loop back around on the colour wheel. Increase or decrease the 'lineWidth' in a range between two set values, If the 'lineWidth' hits the bounds, flip the polarity of 'direction' and increment 'lineWidth' in the opppsite direction.</p>
+                        <p>Next increment the 'hue' value, if it's >= 360, reset it to 0 to loop back around on the colour wheel. Increase or decrease the 'lineWidth' in a range between two set values, If the 'lineWidth' hits the bounds, flip the polarity of 'direction' and increment 'lineWidth' in the opposite direction.</p>
                         <p><strong>'mouseup' or 'mouseout'</strong> - Set 'isDrawing' to false.</p>
 
                         <!-- CodePen -->

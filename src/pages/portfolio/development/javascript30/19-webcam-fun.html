@@ -23,7 +23,7 @@ canonical: https://corey-noble.com/portfolio/development/javascript30/19-webcam-
                     </a>
                     <!-- Content -->
                     <div class="accordion-content" data-tab-content="" role="tabpanel" aria-labelledby="Project Synopsis and Code" aria-hidden="true" id="project-synopsis" style="display: none;">
-                        <p>In this lesson I stream a users webcam and output that video feed to the browser, I then copy the pixel data from the video feed into a &lt;canvas&gt; element. From there I can run various filter functions that manipulate the pixel data to create video effects. I also allow the user to take a photo of the &lt;canvas&gt; which adds a photograph to the page, with the option to download it.</p>
+                        <p>In this lesson I stream a users' webcam and output that video feed to the browser, I then copy the pixel data from the video feed into a &lt;canvas&gt; element. From there I can run various filter functions that manipulate the pixel data to create video effects. I also allow the user to take a photo of the &lt;canvas&gt; which adds a photograph to the page, with the option to download it.</p>
                         <p>First I grab all of the elements I will need, including: &lt;video&gt;, &lt;canvas&gt;, Canvas context 'ctx', '.strip', &lt;audio&gt;, the photo &lt;button&gt;.</p>
                         <p>I <strong>listen</strong> for the following events:</p> 
                         <ul>
@@ -41,10 +41,10 @@ canonical: https://corey-noble.com/portfolio/development/javascript30/19-webcam-
                             </li>
                         </ul>
                         <p>I also initialize a function getVideo().</p>
-                        <p>In <strong>getVideo()</strong> - Get the users' webcam feed (navigator.mediaDevices.getUserMedia({ video: true, audio: false }) When it recieves the promise .then() set the 'video.srcObject' to the feed, and .play() the &lt;video&gt;.</p>
+                        <p>In <strong>getVideo()</strong> - Get the users' webcam feed (navigator.mediaDevices.getUserMedia({ video: true, audio: false }) When it receives the promise .then() set the 'video.srcObject' to the feed, and .play() the &lt;video&gt;.</p>
                         <p>In <strong>paintToCanvas()</strong> - Set the 'width' and 'height' of the &lt;canvas&gt; element equal to the resolution of the video stream (width = video.videoWidth).</p>
                         <p>Next at a setInterval(() => {}, 16), draw an image to the 'ctx' using the video as the data, painting to the 'width' and 'height' (ctx.drawImage(video, 0, 0, width, height)). Then get an array of 'pixels' data from the 'ctx' (ctx.getImageData(0, 0, width, height)).</p>
-                        <p>With the 'pixles' data, It can be run through any type of filter that will manipulate that data, and put the data back into the array. For example, redEffect(pixels) shifts the values in 'pixels' so red becomes more prominent. When it is returned, paintToCanvas() will put 'pixels' back into the 'ctx' (ctx.putImageData(pixels, 0, 0).</p>
+                        <p>With the 'pixels' data, It can be run through any type of filter that will manipulate that data, and put the data back into the array. For example, redEffect(pixels) shifts the values in 'pixels' so red becomes more prominent. When it is returned, paintToCanvas() will put 'pixels' back into the 'ctx' (ctx.putImageData(pixels, 0, 0).</p>
                         <p>In <strong>takePhoto()</strong> - Set the &lt;audio&gt; 'currentTime' to 0 to reset the &lt;audio&gt; if it is currently playing. Then .play() the &lt;audio&gt;. Next create a variable 'data' that uses 'toDataURL('image/jpeg')' and a variable 'link' that creates an &lt;a&gt; element. Set the 'link' to equal the 'data'</p>
                         <p>On the link also 'setAttribute' to ensure the link downloads the image, with a specific name. Then set the .innerHTML to an &lt;img&gt; with a 'src="${data}". This creates both the image thumbnail, and the download link for that image.</p>
                         <p>Finally, insert the image at the beginning of the 'strip' buy using .insertBefore (strip.insertBefore(link, strip.firstChild)).</p>

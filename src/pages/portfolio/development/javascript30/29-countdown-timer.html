@@ -45,7 +45,7 @@ canonical: https://corey-noble.com/portfolio/development/javascript30/29-countdo
                         <p>Then run <strong>displayTimeLeft(seconds)</strong> and <strong>displayEndTime(then)</strong>. Finally set the <strong>'countdown'</strong>.</p>
                         <ul>
                             <li>In <strong>displayTimeLeft(seconds)</strong> - Get the 'minutes' (seconds / 60), 'remainderSeconds' (seconds % 60), then 'display' the 'minutes' and 'remainderSeconds' in a string. Prepend a '0' if 'remainderSeconds &lt; 10. Finally, output 'display' to the 'document.title' and to 'timerDisplay'.</li>
-                            <li>In <strong>displayEndTime(timestamp)</strong> - Create a new date object 'end' from the passed in 'timestamp'. From that get 'hours' (end.getHours()). Then calculate 'adjustedHour' to adjust to a 12hr clock. Next get 'minutes' (end.getMinutes()). Finally output the end time to 'endtTime.textContent'.</li>
+                            <li>In <strong>displayEndTime(timestamp)</strong> - Create a new date object 'end' from the passed in 'timestamp'. From that get 'hours' (end.getHours()). Then calculate 'adjustedHour' to adjust to a 12hr clock. Next get 'minutes' (end.getMinutes()). Finally output the end time to 'endTime.textContent'.</li>
                             <li>In <strong>'countdown'</strong> - Every second, set 'secondsLeft' (Math.round((then - Date.now()) / 1000). Check if there are any 'secondsLeft', If so, clearInterval(countdown). Either way, displayTimeLeft(secondsLeft).</li>
                         </ul>
                         
