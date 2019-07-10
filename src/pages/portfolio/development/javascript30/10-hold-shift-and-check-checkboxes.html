@@ -26,7 +26,7 @@ canonical: https://corey-noble.com/portfolio/development/javascript30/10-hold-sh
                         <p>In this lesson I add functionality that allows the user to hold 'shift' and 'click' to select multiple list items at once.</p>
                         <p>First I grab all of the checkboxes on the page (document.querySelectorAll('.inbox input[type="checkbox"]')). I also initialize a 'lastchecked' variable.</p>
                         <p>For each checkbox I <strong>listen</strong> for a 'click' and run handleCheck(e).</p>
-                        <p>In <strong>handleCheck(e)</strong> - Initialize an 'inBetween' variable as false. Then check if the user is holding the shift key and that they are checking the input (e.shiftKey && this.checked). If that is the case, then for each checkbox, check if the checkbox is either the current input, or the 'lastChecked' item. If either are true, flip 'inBetween' polatity (inBetween = !inBetween). Check if 'inBetween' is true, and if so, check that checkbox.</p>
+                        <p>In <strong>handleCheck(e)</strong> - Initialize an 'inBetween' variable as false. Then check if the user is holding the shift key and that they are checking the input (e.shiftKey && this.checked). If that is the case, then for each checkbox, check if the checkbox is either the current input, or the 'lastChecked' item. If either are true, flip 'inBetween' polarity (inBetween = !inBetween). Check if 'inBetween' is true, and if so, check that checkbox.</p>
                         <p>Finally set 'lastChecked' to the current checkbox 'this'.</p>
 
                         <!-- CodePen -->

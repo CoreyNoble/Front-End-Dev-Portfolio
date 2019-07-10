@@ -62,7 +62,7 @@ canonical: https://corey-noble.com/portfolio/development/javascript30/23-speech-
                             </li>
                         </ul>
                         <p>In <strong>populateVoices()</strong> - First to get the 'voices' use .getVoices() from 'this' (speechSynthesis). Then set the 'innerHTML' of &lt;select&gt; to the list of 'voices'. Next .filter() over each voice to only include voices with a language of 'en'. Then .map() over each voice to add &lt;option&gt; HTML to each entry. Lastly .join('') to convert the array into one string.</p>
-                        <p>In <strong>setVoice()</strong> - First set 'msg.voice' to the 'voice' that macthes the &lt;select&gt; item (msg.voice = voices.fint(voice => voice.name === this.value)). Then run toggle().</p>
+                        <p>In <strong>setVoice()</strong> - First set 'msg.voice' to the 'voice' that matches the &lt;select&gt; item (msg.voice = voices.fint(voice => voice.name === this.value)). Then run toggle().</p>
                         <p>In <strong>toggle(true/false)</strong> - First stop any currently playing speech (speechSynthesis.cancel();). Then check if either true or false was passed into the function. If false, do nothing more. If true (default), restart the speech synthesis (speechSynthesis.speak(msg);).</p>
                         <p>In <strong>setOption()</strong> - This sets the 'msg' voice to the &lt;option&gt; that was selected. Then runs toggle().</p>
 
