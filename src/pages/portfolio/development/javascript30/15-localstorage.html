@@ -41,7 +41,7 @@ canonical: https://corey-noble.com/portfolio/development/javascript30/15-localst
                             </li>
                         </ul>
                         <p>After the JS is loaded, I run populateList(items, itemsList).</p>
-                        <p><strong>populateList(plates = [], platesList)</strong> - Takes in / initializes a new array 'plates[]', as well as take in another list 'platesList'. These paramater names are different than the ones I passed in, to ensure it is a re-usable function. Set the 'innerHTML' of 'platesList' to a new .map() from 'plates'. For each item, build up a new &lt;li&gt; element.</p>
+                        <p><strong>populateList(plates = [], platesList)</strong> - Takes in / initializes a new array 'plates[]', as well as take in another list 'platesList'. These parameter names are different than the ones I passed in, to ensure it is a re-usable function. Set the 'innerHTML' of 'platesList' to a new .map() from 'plates'. For each item, build up a new &lt;li&gt; element.</p>
                         <p>In <strong>addItem(e)</strong> - Prevent the event default to ensure the page doesn't refresh (e.preventDefault()).</p>
                         <p>Get the [name=item] 'text' value from 'this' element. Create a new 'item' element, pass in 'text' and a default state of 'done: false'. Push the 'item' into the 'items' array.</p>
                         <p>Next run populateList(), then save the 'items' into 'localStorage' (localStorage.setItem('items', JSON.stringify(items))) and reset the input (this.reset()).</p>
