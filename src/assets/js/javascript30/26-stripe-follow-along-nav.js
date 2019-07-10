@@ -1,4 +1,4 @@
-// All of the <li> that are direct decendands > of '.cool'.
+// All of the <li> that are direct descendants > of '.cool'.
 const triggers = document.querySelectorAll('.cool > li');
 // Puppy div. Absolutely positioned background <div>.
 // Using .querySelecor, not .querySelecorAll because we just want that one element.

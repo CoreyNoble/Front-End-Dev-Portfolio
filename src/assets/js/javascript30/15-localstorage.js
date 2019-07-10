@@ -23,7 +23,7 @@ function addItem(e) { // passes in the event that fired on 'submit'.
     populateList(items, itemsList);
 
     // Set the localStorage 'items' key as JSON data using 'items' variable.
-    // JSON.stringify: when you pass in your items, it's going to convert your objects and arrays into a JSON string equivelant.
+    // JSON.stringify: when you pass in your items, it's going to convert your objects and arrays into a JSON string equivalent.
     localStorage.setItem('items', JSON.stringify(items));
 
     // localStorage API can also use these methods:
@@ -73,5 +73,5 @@ addItems.addEventListener('submit', addItem);
 // Item Click on <ul>, toggleDone(e).
 itemsList.addEventListener('click', toggleDone);
 
-// Inital population of list when loaded.
+// Initial population of list when loaded.
 populateList(items, itemsList);

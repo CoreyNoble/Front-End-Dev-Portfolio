@@ -7,7 +7,7 @@ const seconds = timeNodes
     .map(node => node.dataset.time)
     
     .map(timeCode => {
-        // An array with mins, secs for each entry. Split string at ':' to separate mins and secs. .map(parseFloat) to map the strings to an array of numbers. this runs the .map(parseFloat) function against every result in the array.
+        // An array with mins, secs for each entry. Split string at ':' to separate mins and secs. .map(parseFloat) to map the strings to an array of numbers.
         const [mins, secs] = timeCode.split(':').map(parseFloat);
         // Return the timecode.
         return (mins * 60) + secs;

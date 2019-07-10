@@ -2,7 +2,7 @@
 const holes = document.querySelectorAll('.hole');
 // Score <span>.
 const scoreBoard = document.querySelector('.score');
-// A Node List of each '.mole' <element. child <div> of '.hole.'
+// A Node List of each '.mole' <element>. Child <div> of '.hole.'
 const moles = document.querySelectorAll('.mole');
 // Start <button>.
 const startCTA = document.getElementById('start-cta');
@@ -53,7 +53,7 @@ function peep() {
     }, time); // Duration, random 'time'.
 }
 
-// Start the gamr.
+// Start the game.
 function startGame() {
     // Reset the board and game variables.
     scoreBoard.textContent = 0;

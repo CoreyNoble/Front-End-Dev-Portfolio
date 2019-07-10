@@ -6,10 +6,10 @@ const cities = [];
 
 // fetch: browser API. Returns a promise. Something will eventually come back from this fetch.
 fetch(endpoint)
-    // .then is what you use when you're returning a promise.
-    // we are taking the blob data we recieve through fetch, and convert it to JSON using the json() method. json() also returns a promise which we also call .then on.
+    // .then() is what you use when you're returning a promise.
+    // we are taking the blob data we receive through fetch, and convert it to JSON using the json() method. json() also returns a promise which we also call .then() on.
     .then(blob => blob.json().then())
-    // We then push the data into the array, We spread ... into the array to ensure it doesn't push an array into the array as an item, instead each item is put into the array individually (individual arguements).
+    // .then() push the data into the array, We spread (...data) into the array to ensure it doesn't push an array into the array as an item, instead each item is put into the array individually (individual arguments).
     .then(data => cities.push(...data));
 
 // Takes in the word to match, and the cities array.

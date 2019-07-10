@@ -1,7 +1,7 @@
 // Data we're sorting
 const bands = ['The Plot in You', 'The Devil Wears Prada', 'Pierce the Veil', 'Norma Jean', 'The Bled', 'Say Anything', 'The Midway State', 'We Came as Romans', 'Counterparts', 'Oh, Sleeper', 'A Skylit Drive', 'Anywhere But Here', 'An Old Dog'];
 
-// Takes in an a string, strips characters, and returns the string.
+// Takes in a string, strips characters, and returns the string.
 function strip(bandName) {
     // Regular Expression (Regex) that replaces the 'a ', 'the ', 'an ' with an empty character ''. This is insensitive (case) '/i'. .trim() removes spaces at the end.
     return bandName.replace(/^(a |the |an)/i, '').trim();

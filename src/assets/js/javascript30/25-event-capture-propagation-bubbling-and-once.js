@@ -6,7 +6,7 @@ const button = document.querySelector('button');
 // Event Capture: 
 //// When we make a click, the event ripples top->bottom from the document (root), and CAPTURES each element as it makes its' way to the element that fired the event. 
 // + Bubbling:
-//// When the Event Capture is complete, it then starts to bubble up (bottom->top). Starting at the current dom <element>, then proceeding on to its' the parent <element>, one at a time, until it gets back up to the document level (root).
+//// When the Event Capture is complete, it then starts to bubble up (bottom->top). Starting at the current DOM <element>, then proceeding on to its' the parent <element>, one at a time, until it gets back up to the document level (root).
 function logText(e) {
     // For example:
     // Clicking on <div class="three"> returns 'three', 'two', 'one' when we're looking for the classList on the <div>.
@@ -14,8 +14,8 @@ function logText(e) {
      // Log the <element>.
      // console.log(this);
 
-     // Propogation:
-     //// Stop Bubbling (bottom->top).
+     // Propagation:
+     //// Stop bubbling (bottom->top).
      // e.stopPropagation();
 }
 

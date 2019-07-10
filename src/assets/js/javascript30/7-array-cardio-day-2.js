@@ -1,4 +1,6 @@
 // ## Array Cardio Day 2
+
+// Some data we can work with
 const people = [
     { name: 'Wes', year: 1988 },
     { name: 'Kait', year: 1986 },
