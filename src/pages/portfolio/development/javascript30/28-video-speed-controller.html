@@ -26,7 +26,7 @@ canonical: https://corey-noble.com/portfolio/development/javascript30/28-video-s
                         <p>In this lesson I create a slider interface that manipulates the &lt;video&gt; speed.</p>
                         <p>First I get the parent &lt;div&gt; 'speed', child &lt;div&gt; 'bar' and &lt;video&gt; element 'video'.</p>
                         <p>Then I <strong>listen</strong> for the 'mousemove' event and run handleMove(e).</p>
-                        <p>In <strong>handleMove(e)</strong> - 'this' being 'speed', first I set:</p>
+                        <p>In <strong>handleMove(e)</strong> - 'this' being 'speed', first set:</p>
                         <ul>
                             <li>'y' to (e.pageY - this.offsetTop).</li>
                             <li>'percent' to (y / this.offsetHeight)</li>
@@ -34,7 +34,7 @@ canonical: https://corey-noble.com/portfolio/development/javascript30/28-video-s
                             <li>'height' equal to (percent * 100)</li>
                             <li>'playbackRate' to (percent  * (max - min) + min) which ensures the value isn't between 0 and 1, instead it is a value range between the 'min' and 'max', multiplied by the percentage</li>
                         </ul>
-                        <p>Finally I set the 'bar.style.height' to 'height', I set the 'bar.textContet' to 'playbackRate' and I set the 'video.playbackRate' to 'playbackRate'.</p>
+                        <p>Finally set the 'bar.style.height' to 'height'. Then set the 'bar.textContet' to 'playbackRate' and the 'video.playbackRate' to 'playbackRate'.</p>
 
                         <!-- CodePen -->
                         <p class="codepen" data-height="330" data-theme-id="dark" data-default-tab="js" data-user="CoreyNoble" data-slug-hash="GbGzxz" style="height: 330px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="JavaScript30 - 28 - Video Speed Controller">
