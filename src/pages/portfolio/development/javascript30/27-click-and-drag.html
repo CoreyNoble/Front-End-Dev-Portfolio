@@ -24,7 +24,7 @@ canonical: https://corey-noble.com/portfolio/development/javascript30/27-click-a
                     <!-- Content -->
                     <div class="accordion-content" data-tab-content="" role="tabpanel" aria-labelledby="Project Synopsis and Code" aria-hidden="true" id="project-synopsis" style="display: none;">
                         <p>In this lesson I create click and drag functionality.</p>
-                        <p>First I select the parent &lt;div&gt; 'slider' and initialize some variables: isDown = false, startX, scrollLeft.</p>
+                        <p>First I get 'slider' and initialize some variables: isDown = false, startX, scrollLeft.</p>
                         <p>I <strong>listen</strong> for the following events which I immediately invoke functions to:</p>
                         <ul>
                             <li>
@@ -33,8 +33,8 @@ canonical: https://corey-noble.com/portfolio/development/javascript30/27-click-a
                                     <li>
                                         <p><strong>'mousedown', (e) => {}</strong></p>
                                         <p>First set 'isDown = true'. Then add an '.active' class to 'slider'.</p>
-                                        <p>Next set 'startX' to match the events 'pageX' coordinates - the 'slider.offsetLeft' to anchor the value to the sliders position.</p>
-                                        <p>Set 'scrollLeft' to 'slider.scrollLeft'</p>
+                                        <p>Next set 'startX' to match the events 'e.pageX' coordinates. Subtracting the 'slider.offsetLeft' to anchor the value to the sliders position.</p>
+                                        <p>Set 'scrollLeft = slider.scrollLeft'</p>
                                     </li>
                                     <li>
                                         <p><strong>'mouseleave', () => {}</strong></p>
@@ -46,7 +46,7 @@ canonical: https://corey-noble.com/portfolio/development/javascript30/27-click-a
                                     </li>
                                     <li>
                                         <p><strong>'mousemove', (e) => {}</strong></p>
-                                        <p>Check if 'isDown' is false, if so, exit the function. Prevent the event from creating any default behabour (e.preventDefault();).</p>
+                                        <p>Check if 'isDown' is false, if so, exit the function. Prevent the event from creating any default behaviour (e.preventDefault();).</p>
                                         <p>Get where the cursor is. Set 'x' to 'e.pageX - slider.offsetLeft;'.</p>
                                         <p>Calculate the 'walk' (x - startX) * 3. The multiplier determines how many pixels to scroll for each pixel the user scrolls. Then set the 'slider.scrollLeft' (scrollLeft - walk).</p>
                                     </li>
