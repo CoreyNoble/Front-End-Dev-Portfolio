@@ -23,7 +23,7 @@ canonical: https://corey-noble.com/portfolio/development/javascript30/26-stripe-
                     </a>
                     <!-- Content -->
                     <div class="accordion-content" data-tab-content="" role="tabpanel" aria-labelledby="Project Synopsis and Code" aria-hidden="true" id="project-synopsis" style="display: none;">
-                        <p>In this lesson I improve upon the puppy &lt;div&gt; functionality from the 'Follow Along Link Highlighter' lesson by creating a flexible dropdown navigation in-which the size of any dropdown item can be dynamic. As the user hovers on each dropdown item, the puppy &lt;div&gt; follows along in both size and position to transition into the background for that newly shown dropdown item.</p>
+                        <p>In continuation of <a href="{{root}}portfolio/development/javascript30/4-array-cardio-day-1.html">Follow Along Link Highlighter</a>, I create a flexible dropdown navigation in-which the size of any dropdown item can be dynamic. As the user hovers on each dropdown item, a puppy &lt;div&gt; follows along in both size and position to transition into the background for that newly shown dropdown item.</p>
                         <p>First I get the 'nav' and the 'triggers' (&lt;li&gt;) as well as the puppy &lt;div&gt; 'background'.</p>
                         <p>I <strong>listen</strong> for:</p>
                         <ul>
@@ -35,17 +35,16 @@ canonical: https://corey-noble.com/portfolio/development/javascript30/26-stripe-
                                 </ul>
                             </li>
                         </ul>
-                        <p>I use an arrow function to keep &lt;li&gt; as 'this'.</p>
-                        <p>In <strong>handleEnter()</strong> - First add a class of '.trigger-enter' to the trigger. This class changes 'display:none' to 'display:block'. The class is added on a delay, so I use an arrow function to check if the class is there. If so, I add a second class of '.trigger-enter-active'. This is known as stepping in an animation. First display it, then transition it.<br />
-                        (setTimeout(() => this.classList.contains('trigger-enter' && this.classList.add('trigger-enter-active', 150);).</p>
-                        <p>Next I add a class of '.open' to 'background'. I get the 'dropdown' and its' bounding rectangle, I also get the bounding rectangle of the 'nav'. Using the 'dropdown' bounding rectangle, I calculate the 'width' and 'height values that 'background' will need. Using 'nav' and 'dropdown' bounding rectangles I calculate the position that 'background' will need. I also use 'nav' as an anchor for positioning and adjusting the 'top' and 'left' accordingly using the 'dropdown' coordinates.</p>
+                        <p>In <strong>handleEnter()</strong> - First add a class of '.trigger-enter' to the trigger. This class changes 'display:none' to 'display:block'. The class is added on a delay, so use an arrow function to check if the class is there. If so, add a second class of '.trigger-enter-active'. This is known as stepping in an animation. First display it, then transition it. (setTimeout(() => this.classList.contains('trigger-enter' && this.classList.add('trigger-enter-active', 150);). Then add a class of '.open' to 'background'.</p>
+                        <p>Next get the 'dropdown' and its' bounding rectangle, also get the bounding rectangle of the 'nav'. Using the 'dropdown' bounding rectangle, calculate the 'width' and 'height values that 'background' will need.</p>
+                        <p>Using 'nav' and 'dropdown' bounding rectangles, calculate the height, width, and position that 'background' will need. Use 'nav' as an anchor for positioning.</p>
                         <p>const coords = {<br />
                         &nbsp;&nbsp;width: dropdownCoords.width,<br />
                         &nbsp;&nbsp;height: dropdownCoords.height,<br />
                         &nbsp;&nbsp;top: dropdownCoords.top - navCoords.top,<br />
                         &nbsp;&nbsp;left: dropdownCoords.left - navCoords.left<br />
                         }</p>
-                        <p>Finally I set the 'background' styles by injecting the 'coords' into the style attributes of 'background' using es6 template strings. (background.style.setProperty('width', `${coords.width}px`)).</p>
+                        <p>Finally set the 'background' styles by injecting the 'coords' into the style attributes of 'background' using es6 template strings. (background.style.setProperty('width', `${coords.width}px`)).</p>
                         <p>In <strong>handleLeave()</strong> - Hide the elements. Remove the classes '.trigger-enter' and '.trigger-enter-active' from the trigger. Remove the class of '.open' from 'background'.</p>
 
                         <!-- CodePen -->
