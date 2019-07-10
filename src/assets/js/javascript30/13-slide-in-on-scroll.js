@@ -29,7 +29,7 @@ function checkSlide(e) {
         // Have not scrolled past the image.
         const isNotScrolledPast = window.scrollY < imageBottom;
 
-        // When we toggle the visibilty classes
+        // When we toggle the visibility classes
         if (isHalfShown && isNotScrolledPast) {
             sliderImage.classList.add('active'); // Show
         } else {

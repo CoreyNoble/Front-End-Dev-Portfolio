@@ -9,7 +9,7 @@ navigator.geolocation.watchPosition((data) => {
     speed.textContent = data.coords.speed;
     // Rotate the Compass using the value from 'data.coords.heading' as the set degree of rotation (# of degrees relative to north).
     arrow.style.transform = `rotate(${data.coords.heading}deg)`;
-}, (err) => { // User denys the webcam request.
+}, (err) => { // User denies the webcam request.
     console.error(err);
     alert('This application requires access to your geo-location in-order to function');
 });

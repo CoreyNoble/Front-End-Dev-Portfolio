@@ -1,11 +1,5 @@
-// Log Intro
-console.log('Learning about the difference between a Reference and a Copy.');
-console.log('---------');
-
 // Strings, numbers and booleans
-console.log('');
-console.log('Strings, Numbers and Booleans: All update as they are set.');
-console.log('---');
+// Strings, Numbers and Booleans: All update as they are set.
 
 let age = 100;
 let age2 = age;
@@ -36,10 +30,6 @@ console.log('---');
 //////////////////////////////////////////////////
 
 // Arrays
-console.log('');
-console.log('Arrays: Changes to REFERENCES also change the original reference.')
-console.log('---');
-
 // We have an array
 const family = ['Corey', 'Kaitlin', 'Dante', 'Nimbus'];
 
@@ -67,10 +57,6 @@ console.log(team); // Corey, Kaitlin, Kyle, Nimbus
 
 // So, how do we fix this? 
 // One way is to take a copy instead! An empty .slice() makes a copy.
-console.log('');
-console.log('---');
-console.log('Arrays: Ways to COPY an array.')
-console.log('---');
 const team2 = family.slice();
 team2[3] = 'Harry';
 
@@ -78,7 +64,7 @@ console.log('array.slice()');
 console.log('Team 2:');
 console.log(team2);
 
-// Or you can create a new array and concat the old one in
+// Or you can create a new array and .concat the old one in
 const team3 = [].concat(family);
 team3[3] = 'Hermione';
 
@@ -106,22 +92,15 @@ console.log('Team 5:');
 console.log(team5);
 
 // Now when we update it, the original one isn't changed
-// The same thing goes for objects, let's say we have a person object
-
 //////////////////////////////////////////////////
 
 // Objects
-console.log('');
-console.log('---');
-console.log('Objects: REFERENCE')
-console.log('---');
-
+// The same thing goes for objects, let's say we have a person object
 const person = {
     name: 'Corey Noble',
     age: 26
 };
 
-console.log('We have an object.')
 console.log('Person:');
 console.log(person);
 
@@ -138,11 +117,6 @@ console.log('Captain:');
 console.log(captain);
 
 // How do we take a copy instead?
-console.log('');
-console.log('---');
-console.log('Objects: COPY')
-console.log('---');
-
 const cap2 = Object.assign({}, person, { number: 99, age: 12 });
 
 console.log('Captain2 = Object.assign({}, person, { number: 99, age: 12 })');
@@ -172,14 +146,7 @@ const corey2 = Object.assign({}, corey);
 corey2.age = 100
 corey2.social.linkedIn = 'https://ca.linkedin.com/in/corey-noble';
 
-console.log('');
-console.log('---');
-console.log('OBJECTS: COPY: Need to Know');
-console.log('---');
-console.log('Object.assign only goes 1 level deep')
-console.log('corey2 = Object.assign({}, corey):');
-console.log('corey2.age = 100.')
-console.log('corey2.social.linkedIn = https://ca.linkedin.com/in/corey-noble');
+console.log('-');
 console.log('Corey:');
 console.log(corey);
 console.log('Corey 2:');
@@ -190,13 +157,7 @@ corey3.age = 200
 corey3.social.facebook = 'https://www.facebook.com/CoreyNoble51';
 
 console.log('-');
-console.log('Can find a \'Clone Deep\' function online if you need to clone the entire object.');
-console.log('Poor man\'s Deep Clone:');
-console.log('corey3 = JSON.parse(JSON.stringify(corey))')
-console.log('corey3.age = 200.')
-console.log('corey3.social.facebook = https://www.facebook.com/CoreyNoble51');
 console.log('Corey:');
 console.log(corey);
 console.log('Corey 3:')
 console.log(corey3);
-console.log('---');

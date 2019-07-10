@@ -47,7 +47,7 @@ function displayTimeLeft(seconds) {
     const remainderSeconds = seconds % 60;
     // The time we display. minutes:remainderSeconds.
     // If remainderSeconds is less than 10, prefix a '0'. Otherwise, no prefix ''. (${remainderSeconds < 10 ? '0' : ''})
-    // This is called a short-hand turnary operator.
+    // This is called a short-hand turnery operator.
     const display = `${minutes}:${remainderSeconds < 10 ? '0' : ''}${remainderSeconds}`;
     // Add 'display' to the Page Title.
     document.title = display + ' | Countdown Timer | JavaScript30 | Corey Noble';
@@ -65,7 +65,7 @@ function displayEndTime(timestamp) {
     const adjustedHour = hour > 12 ? hour - 12 : hour;
     // Get the minutes.
     const minutes = end.getMinutes();
-    // The end time element's textContent. <p>. using the 'adjustedHour', and the same short-hand turnaray operator that pre-fixes '0' if 'minutes' is < 10. Also displaying 'minutes'.
+    // The end time element's textContent. <p>. Using the 'adjustedHour', and the same short-hand turnery operator that pre-fixes '0' if 'minutes' is < 10. Also displaying 'minutes'.
     endTime.textContent = `Be Back At ${adjustedHour}:${minutes < 10 ? '0' : ''}${minutes}`;
 }
 

@@ -5,7 +5,7 @@ const progress = player.querySelector('.progress'); // progress container
 const progressBar = player.querySelector('.progress__filled'); // progress bar
 const toggle = player.querySelector('.toggle'); // <button> ►/❚❚
 const skipButtons = player.querySelectorAll('[data-skip]'); // anything with a 'data-skip' attribute
-const ranges = player.querySelectorAll('.player__slider'); // all sliders (eg. volume, playback rate)
+const ranges = player.querySelectorAll('.player__slider'); // all sliders (volume, playback rate)
 
 /* Functions */
 // Pause/Play the <video>
@@ -38,7 +38,7 @@ function skip() {
 
 // Updating slider values
 function handleRangeUpdate() {
-    // this.name (eg. volume, playback rate) = this.value (current value of the slider).
+    // this.name (volume, playback rate) = this.value (current value of the slider).
     video[this.name] = this.value;
 }
 
@@ -52,7 +52,7 @@ function handleProgress() {
 
 // mousedown event on the progress container
 function scrub(e) {
-    // Based on the event recieved, Figures out the time we need to scrub to by: grabbing the click position 'e.offsetX' divided by the width of the progress container, times the duration of the video.
+    // Based on the event received, Figures out the time we need to scrub to by: grabbing the click position 'e.offsetX' divided by the width of the progress container, times the duration of the video.
     const scrubTime = (e.offsetX / progress.offsetWidth) * video.duration;
     // Set the video time to the scrubTime.
     video.currentTime = scrubTime;
