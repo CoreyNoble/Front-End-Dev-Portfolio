@@ -67,5 +67,5 @@ options.forEach(option => option.addEventListener('change', setOption));
 // On 'Speak' <button> click, toggle() the speech.
 speakButton.addEventListener('click', toggle);
 // On 'Stop' <button> click, toggle() the speech, but don't restart the speech (false).
-// Passing an attribute into toggle() should happen every time the button is clicked, not just on page load. That's why we're using an arrow function. to pass 'false' every time the event is fired.
+// Passing an attribute into toggle() should happen every time the button is clicked, not just on page load. That's why we're using an arrow function, to pass 'false' every time the event is fired.
 stopButton.addEventListener('click', () => toggle(false));

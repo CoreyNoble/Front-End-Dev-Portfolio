@@ -75,4 +75,4 @@ canvas.addEventListener('mousemove', draw);
 // Has the user stopped holding the click? !isDrawing
 canvas.addEventListener('mouseup', () => isDrawing = false);
 // Has the mouse left the canvas? !isDrawing
-canvas.addEventListener('mouseout', () => isDrawing = false)
+canvas.addEventListener('mouseout', () => isDrawing = false);

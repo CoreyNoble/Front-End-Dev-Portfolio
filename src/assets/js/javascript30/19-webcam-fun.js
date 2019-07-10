@@ -11,20 +11,13 @@ function getVideo() {
   navigator.mediaDevices.getUserMedia({ video: true, audio: false })
     .then(localMediaStream => {
       console.log(localMediaStream);
-    
-//  DEPRECIATION : 
-//       The following has been depreceated by major browsers as of Chrome and Firefox.
-//       video.src = window.URL.createObjectURL(localMediaStream);
-//       Please refer to these:
-//       Depreceated  - https://developer.mozilla.org/en-US/docs/Web/API/URL/createObjectURL
-//       Newer Syntax - https://developer.mozilla.org/en-US/docs/Web/API/HTMLMediaElement/srcObject
       
       // Set the <video> source to be the local media stream.
       video.srcObject = localMediaStream;
       // Play the <video>.
       video.play();
     })
-    // User denys the webcam request.
+    // User denies the webcam request.
     .catch(err => {
       // Error
       console.error(`OH NO!!!`, err);
@@ -43,7 +36,7 @@ function paintToCanvas() {
   return setInterval(() => {
     // Draw the image onto the canvas context using the video source, starting from origin (0,0) ending at the end of the canvas (width,height).
     ctx.drawImage(video, 0, 0, width, height);
-    // Take the pixels out of the context. Each pixel has 4 values associated with it: red, green, blue, and alpha. 'pixels' represents an array of 'ImageData' which contains a number value for each channel(r,g,b,a) on each pixel (eg. 0(r), 1(g), 2(b), 3(a), 4(r), 5(g)...)
+    // Take the pixels out of the context. Each pixel has 4 values associated with it: red, green, blue, and alpha. 'pixels' represents an array of 'ImageData' which contains a number value for each channel(r,g,b,a) on each pixel (0(r), 1(g), 2(b), 3(a), 4(r), 5(g)...)
     let pixels = ctx.getImageData(0, 0, width, height);
 
     // SET FILTER

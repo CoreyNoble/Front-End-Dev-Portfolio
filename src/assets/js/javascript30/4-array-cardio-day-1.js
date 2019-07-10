@@ -27,7 +27,7 @@ console.table(fifteen);
 
 // Array.prototype.map()
 // 2. Give us an array of the inventors' first and last names
-// Map: takes in an array, does something with that array and then returns a NEW array with the SAME LENGTH. Like a factory machine, taking in a material, modifying it and outputing the modified material.
+// Map: takes in an array, does something with that array and then returns a NEW array with the SAME LENGTH. Like a machine that takes in a material, modifies it and outputs the modified material.
 // `${variable}` is an example of a template string.
 const fullNames = inventors.map(inventor => `${inventor.first} ${inventor.last}`);
 
@@ -37,7 +37,7 @@ console.log(fullNames);
 // Array.prototype.sort()
 // 3. Sort the inventors by birthdate, oldest to youngest
 // Sort: Get two items, asked to sort those two items, if a > b, a++, b--. Bubbling the items up and down inside of the array.
-// turnerary operator ? 1 : -1 (short-hand if(),else())
+// Turnery operator ? 1 : -1 (short-hand if(),else())
 const ordered = inventors.sort((firstPerson, secondPerson) => firstPerson.year > secondPerson.year ? 1 : -1);
 
 console.log("Oldest to Youngest:");
@@ -45,7 +45,7 @@ console.table(ordered);
 
 // Array.prototype.reduce()
 // 4. How many years did all the inventors live?
-// reduce: Easier way to do a for loop
+// Reduce: Easier way to do a for loop
 // Gives you a running total of what you've returned from this function last time.
 const totalYears = inventors.reduce((total, inventor) => {
     return total + (inventor.passed - inventor.year);

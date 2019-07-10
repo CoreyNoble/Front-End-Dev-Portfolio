@@ -49,15 +49,15 @@ dogs.forEach(dog => {
 });
 
 // Counting
-console.log('Counting # of occurances:');
-// Wes: 1
-console.count('Wes');
+console.log('Counting # of occurrences:');
+// Corey: 1
+console.count('Corey');
 // Steve: 1
 console.count('Steve');
-// Wes: 2
-console.count('Wes');
-// Wes: 3
-console.count('Wes');
+// Corey: 2
+console.count('Corey');
+// Corey: 3
+console.count('Corey');
 // Steve: 2
 console.count('Steve');
 

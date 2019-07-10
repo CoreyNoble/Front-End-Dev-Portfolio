@@ -1,5 +1,5 @@
 // 'SpeechRecognition' is a global variable that lives in the browser. It lives on top of 'window'. 
-// 'webkitSpeechRecognition' is the global variable for Chrome. below we're normalizing both names to use the same naming convention.
+// 'webkitSpeechRecognition' is the global variable for Chrome. Below we're normalizing both names to use the same naming convention.
 window.SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
 
 // Create a new instance of SpeechRecognition().
@@ -16,7 +16,7 @@ words.appendChild(p);
 
 // Look for the 'result' event on 'SpeechRecognition'. Pass in the event data (e).
 recognition.addEventListener('result', e => {
-    // e.results returns a Node List of data that is recieved from the 'SpeechRecognition' event. We're converting it to an Array (Array.from()) so we can .map() over it.
+    // e.results returns a Node List of data that is received from the 'SpeechRecognition' event. We're converting it to an Array (Array.from()) so we can .map() over it.
     const transcript = Array.from(e.results)
         // We're looking for the 'transcript' but it is nested inside of [0: SpeechRecognitionResult] So we're mapping over that nested array.
         .map(result => result[0])
@@ -42,7 +42,7 @@ recognition.addEventListener('result', e => {
         }
 });
 
-// When the SpeechRecognition ends. Start listening agian.
+// When the SpeechRecognition ends. Start listening again.
 recognition.addEventListener('end', recognition.start);
 
 // Start SpeechRecognition.

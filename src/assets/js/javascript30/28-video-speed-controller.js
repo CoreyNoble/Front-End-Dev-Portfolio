@@ -16,7 +16,7 @@ function handleMove(e) {
     const min = 0.4;
     const max = 4;
     // Getting a height value for the 'bar'.
-    // Math.round() to get a rounded percentage. percent * 100 to make it a whole number (eg. 2, not 0.02).
+    // Math.round() to get a rounded percentage. (percent * 100) to make it a whole number (2, not 0.02).
     const height = Math.round(percent * 100) + '%';
     // Calculate the playbackRate.
     // (max - min) + min: Getting the lower and upper bounds.

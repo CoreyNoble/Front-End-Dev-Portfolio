@@ -1,5 +1,5 @@
 // Get all of the inputs
-// .querySelectorAll gives us a Node List, which is different than an Array and changes what operations we can use on it. For example, Array allows us to use Map, Filter, Reduce; whereas a Node List allows forEach.
+// .querySelectorAll gives us a Node List, which is different than an Array and changes what operations we can use on it. For example, Array allows us to use Map, Filter and Reduce; whereas a Node List allows forEach.
 const inputs = document.querySelectorAll('.controls input');
 
 function handleUpdate() {

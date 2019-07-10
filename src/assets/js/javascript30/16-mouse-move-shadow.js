@@ -5,7 +5,7 @@ const walk = 50; // px
 
 function shadow(e) {
     // Get the height and width of the hero element:
-    // const {} = hero <- es6 desctructuring
+    // const {} = hero <- es6 destructuring
     // Same as:
     // const width = hero.offsetWidth
     // const height = hero.offsetHeight
