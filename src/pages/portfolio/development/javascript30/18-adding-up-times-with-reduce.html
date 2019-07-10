@@ -23,16 +23,16 @@ canonical: https://corey-noble.com/portfolio/development/javascript30/18-adding-
                     </a>
                     <!-- Content -->
                     <div class="accordion-content" data-tab-content="" role="tabpanel" aria-labelledby="Project Synopsis and Code" aria-hidden="true" id="project-synopsis" style="display: none;">
-                        <p>In this lesson I am taking an array of elements with a data attribute of [data-time]. With that array I create the total number of 'seconds'.</p>
-                        <p>First I .map() over each node to get the 'dataset.time'. I then .map() over each 'timeCode' I split the string into a sub array of 'mins' and 'secs' (const [mins, secs] = timeCode.split(':').map(parseFloat)). I then return the 'total' amount of 'seconds' for that item by counting all minutes and seconds as 'seconds' ((mins * 60) + secs).</p>
-                        <p>Next I .reduce() the array to get the final 'total' number of seconds by adding up each items' 'total' (.reduce((total, vidSeconds) => total + vidSeconds).</p>
-                        <p>Once I have the total number of 'seconds' I calculate 'hours', 'mins' and 'secondsLeft'.</p>
+                        <p>In this lesson I am taking an array of elements with a data attribute of [data-time]. With that array I calculate the 'total' amount of time in 'hours', 'minutes' and 'secondsLeft'.</p>
+                        <p>First to get the total 'seconds', .map() over each node to get the 'dataset.time'. Then .map() over each 'timeCode'.</p>
+                        <p>.split(':') the string into a sub array of 'mins' and 'secs' (const [mins, secs] = timeCode.split(':').map(parseFloat)). Then return the total amount of 'seconds' for that item by counting all minutes and seconds as 'seconds' ((mins * 60) + secs).</p>
+                        <p>Next .reduce() the array to get the total number of 'seconds' by adding up each items' 'seconds' (.reduce((total, vidSeconds) => total + vidSeconds). Then calculate 'hours', 'mins' and 'secondsLeft'.</p>
                         <p>let secondsLeft = seconds;<br />
                         const hours = Math.floor(seconds / 3600);<br />
                         secondsLeft = secondsLeft % 3600;<br />
                         const mins = Math.floor(secondsLeft / 60);<br />
                         secondsLeft = secondsLeft % 60;</p>
-                        <p>Finally I output the values to the .innerHTML of 'total'.</p>
+                        <p>Finally output the values to the 'innerHTML' of 'total'.</p>
 
                         <!-- CodePen -->
                         <p class="codepen" data-height="330" data-theme-id="dark" data-default-tab="js" data-user="CoreyNoble" data-slug-hash="qzKgjV" style="height: 330px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="JavaScript30 - 18 - Adding Up Times With Reduce">
