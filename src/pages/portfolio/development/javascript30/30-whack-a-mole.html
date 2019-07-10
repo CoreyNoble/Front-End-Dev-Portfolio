@@ -41,7 +41,7 @@ canonical: https://corey-noble.com/portfolio/development/javascript30/30-whack-a
                             </li>
                         </ul>
                         <p><strong>Functions</strong></p>
-                        <p>In <strong>startGame()</strong> - First I Initialize the game values: 'scoreBoard.textContent = 0', 'timeUp = false', 'score = 0'. Then I fire peep(). I also set the duration of the game (setTimeout(() => timeUp = true, 10000)).</p>
+                        <p>In <strong>startGame()</strong> - First I Initialize the game values: 'scoreBoard.textContent = 0', 'timeUp = false', 'score = 0'. Then I run peep(). I also set the duration of the game (setTimeout(() => timeUp = true, 10000)).</p>
                         <p>In <strong>peep()</strong> - First I set a random 'time' that each mole will pop up for. Then I choose a random 'hole' inside of 'holes'. I add a class of '.up' to that hole which pops up the mole. Check if 'time' is up, if not, run peep() again. After 'time' is up (setTimeout(() {}, time) remove the class of '.up'.</p>
                         <p>In <strong>randomTime(min, max)</strong> - A function that takes in a 'min' and 'max' paramater, and returns a random value between the 'min' and 'max' bounds.</p>
                         <p>In <strong>randomHole(holes)</strong> - Gets a random DOM element using a node list 'holes'.</p>
