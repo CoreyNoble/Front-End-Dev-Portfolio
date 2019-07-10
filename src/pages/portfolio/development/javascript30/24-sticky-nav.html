@@ -19,13 +19,13 @@ canonical: https://corey-noble.com/portfolio/development/javascript30/24-sticky-
                 <li class="accordion-item" data-accordion-item="">
                     <!-- Title -->
                     <a href="#" class="accordion-title" aria-controls="" role="tab" id="project-synopsis" aria-expanded="false" aria-selected="false">
-                        <h2 class="h5">Project Synopsis</h2>
+                        <h2 class="h5">Project Synopsis and Code</h2>
                     </a>
                     <!-- Content -->
-                    <div class="accordion-content" data-tab-content="" role="tabpanel" aria-labelledby="Project Synopsis" aria-hidden="true" id="project-synopsis" style="display: none;">
-                        <p>In this lesson I create a sticky navigation that starts partway down the page but sticks to the top when the &lt;div&gt; hits the top of the page.</p>
-                        <p>First I grab the &lt;div&gt; 'nav' and get the top of the &lt;div&gt; (topOfNav = nav.offsetTop). Then I listen on the 'window' for a 'scroll' event and run fixNav().</p>
-                        <p>In <strong>fixNav()</strong> I look for if (window.scrollY >= topOfNav), <strong>If true</strong>, I add a class of '.fixed-nav' to the element to give it fixed positioning on the top of the page. I also offset the page by giving it padding on top, equivelant to the offset height of the &lt;div&gt; (page.style.paddingTop = nav.offsetHeight + 'px'. <strong>If false</strong>, I remove the '.fixed-nav' class and remove the padding that was added to the top of the page.</p>
+                    <div class="accordion-content" data-tab-content="" role="tabpanel" aria-labelledby="Project Synopsis and Code" aria-hidden="true" id="project-synopsis" style="display: none;">
+                        <p>In this lesson I create a sticky navigation that starts partway down the page but sticks to the top when the page is scrolled and the &lt;div&gt; hits the top of the viewport.</p>
+                        <p>First I grab the 'nav' and get the top of the it (topOfNav = nav.offsetTop). I <strong>listen</strong> on the 'window' for a 'scroll' event and run fixNav().</p>
+                        <p>In <strong>fixNav()</strong> - Look for if (window.scrollY >= topOfNav), <strong>If true</strong>, add a class of '.fixed-nav' to the element to give it fixed positioning on the top of the page. Also offset the page by giving it padding on top, equivelant to the offset height of the &lt;div&gt; (page.style.paddingTop = nav.offsetHeight + 'px'). <strong>If false</strong>, remove the '.fixed-nav' class and remove the padding that was added to the top of the page.</p>
 
                         <!-- CodePen -->
                         <p class="codepen" data-height="330" data-theme-id="dark" data-default-tab="js" data-user="CoreyNoble" data-slug-hash="JQZxMM" style="height: 330px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="JavaScript30 - 24 - Sticky Nav">

@@ -18,19 +18,18 @@ canonical: https://corey-noble.com/portfolio/development/javascript30/4-array-ca
                 <li class="accordion-item" data-accordion-item="">
                     <!-- Title -->
                     <a href="#" class="accordion-title" aria-controls="" role="tab" id="project-synopsis" aria-expanded="false" aria-selected="false">
-                        <h2 class="h5">Project Synopsis</h2>
+                        <h2 class="h5">Project Synopsis and Code</h2>
                     </a>
                     <!-- Content -->
-                    <div class="accordion-content" data-tab-content="" role="tabpanel" aria-labelledby="Project Synopsis" aria-hidden="true" id="project-synopsis" style="display: none;">
-                        <p>In this lesson I learned about various methods that can alter an array.</p>
-                        <p><strong>.filter()</strong> - I filter the list of inventors to get those whore were born in the 1500's.</p>
-                        <p><strong>.map()</strong> - .Takes in an array, does something with that array and returns a new array of the same length. Like a factory machine that takes in a material, modifies it and outputs the modified material. In this example we are mapping an array of full names from the list of inventors.</p>
-                        <p><strong>.sort()</strong> - Takes in an array, compares two items, and pushes the item either up or down, depending on the comparison. In this example I sort the inventors by birthdate, from oldest to youngest.</p>
-                        <p><strong>.reduce()</strong> - Takes in an array and returns only what is specified. In this example I reduce the inventors array to return how many years all of the inventors lived for.</p>
-                        <p>The lesson then followed up with an excercise for each method.</p>
-                        <p>Using <strong>.map() and .filter()</strong> I take in a list of &lt;a&gt; elements from a wikipedia page. I create a .map() for all of the &lt;a&gt; 'textContent' and .filter() out any items that .includes('de').</p>
-                        <p>Using <strong>.sort()</strong> I take in an array of 'people' and .sort() them alphabetically after splitting the string .split(', ') into First and Last name variables.</p>
-                        <p>Using <strong>.reduce()</strong> I create a variable object that takes in a data object[] of vehicle types, and an item (obj, item). I initialize the constant as an empty object, then for each item in the data, if it does not exist, I initialize that item and its counter into the variable object. I then increment the count and return the object. This means I can count the amount of times a unique item is used in a data object. It is also future proofed because the item is initialized as it is passed into the variable, so it doesn't matter what type of data will be coming through the data object, all unique instances will be tracked.</p>
+                    <div class="accordion-content" data-tab-content="" role="tabpanel" aria-labelledby="Project Synopsis and Code" aria-hidden="true" id="project-synopsis" style="display: none;">
+                        <p>In this lesson I am presented with some arrays[] of data. I use array methods to manipulate the data.</p>
+                        <p>Using <strong>.filter()</strong> - Pair down the array of inventors to return a new array, which only contains the inventors who were born in the 1500's.</p>
+                        <p><strong>.map()</strong> - Takes in an array, does something with that array and returns a new array of the same length. Like a machine that takes in a material, modifies it and outputs the modified material. In this project I .map() an array of full names from the list of inventors.</p>
+                        <p><strong>.sort()</strong> - Takes in an array, compares two items, and pushes one item up and the other item down. In this project I .sort() the inventors by birthdate, from oldest to youngest.</p>
+                        <p><strong>.reduce()</strong> - Takes in an array and returns only what is specified. In this project I .reduce() the inventors array to return how many years all of the inventors lived for.</p>
+                        <p>Using <strong>.map() and .filter()</strong> - Take in a list of &lt;a&gt; elements. .map() all of the 'link.textContent' and .filter() out any items that .includes('de').</p>
+                        <p>Using <strong>.sort()</strong> - Take in an array of people and .sort() them alphabetically after splitting the string .split(', ') into 'First' and 'Last' name variables.</p>
+                        <p>Using <strong>.reduce()</strong> - Initialize a 'transportation[]' array that takes in an array of 'data[]'. Use .reduce() to return an array containing only the unique vehicle types with a count for each type that is passed in. For each item that's returned from the data, if it does not exist, initialize that item. Increment the count and return the object.</p>
 
                         <!-- CodePen -->
                         <p class="codepen" data-height="330" data-theme-id="dark" data-default-tab="js" data-user="CoreyNoble" data-slug-hash="mZKvVj" style="height: 330px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="JavaScript30 - 4 - Array Cardio Day 1">

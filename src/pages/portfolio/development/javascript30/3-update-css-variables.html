@@ -19,15 +19,14 @@ canonical: https://corey-noble.com/portfolio/development/javascript30/3-update-c
                 <li class="accordion-item" data-accordion-item="">
                     <!-- Title -->
                     <a href="#" class="accordion-title" aria-controls="" role="tab" id="project-synopsis" aria-expanded="false" aria-selected="false">
-                        <h2 class="h5">Project Synopsis</h2>
+                        <h2 class="h5">Project Synopsis and Code</h2>
                     </a>
                     <!-- Content -->
-                    <div class="accordion-content" data-tab-content="" role="tabpanel" aria-labelledby="Project Synopsis" aria-hidden="true" id="project-synopsis" style="display: none;">
-                        <p>In this lesson I learned how to update an elements style attribute by injecting variable values using es6 template strings (`${this.name}`).</p>
-                        <p>First I get all of the inputs on the page with a class of '.controls' (document.querySelectorAll('.controls input')).</p>
-                        <p>I listen for either a 'change' or 'mousemove' event on each input (inputs.forEach(input => input.addEventListener('change', handleUpdate))).</p>
-                        <p>When the event triggers, the function that runs (handleUpdate()) modifies the style that matches the element name that triggered the event (.style.setProperty(`--${this.name}`, this.value + suffix).</p>
-                        <p>The suffix checks for a data attribute on the element (this.dataset.sizing) and appends it to the style modification.</p>
+                    <div class="accordion-content" data-tab-content="" role="tabpanel" aria-labelledby="Project Synopsis and Code" aria-hidden="true" id="project-synopsis" style="display: none;">
+                        <p>In this lesson I update CSS variables using JavaScript.</p>
+                        <p>First I get all of the &lt;input&gt; elements on the page with a class of '.controls' (document.querySelectorAll('.controls input')).</p>
+                        <p>I <strong>listen</strong> for both 'change' and 'mousemove' each &lt;input&gt; (inputs.forEach(input => input.addEventListener('change', handleUpdate))).</p>
+                        <p>In <strong>handleUpdate()</strong> - First get the 'suffix' from the [data-sizing] attribute on the &lt;input&gt; element. I use it to set the correct unit (px) when modifying the 'style'. Then modify the 'style' that matches the &lt;input&gt; 'name' (.style.setProperty(`--${this.name}`, this.value + suffix).</p>
 
                         <!-- CodePen -->
                         <p class="codepen" data-height="330" data-theme-id="dark" data-default-tab="js" data-user="CoreyNoble" data-slug-hash="XLYOmK" style="height: 330px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="JavaScript30 - 3 - Update CSS Variables">

@@ -19,14 +19,16 @@ canonical: https://corey-noble.com/portfolio/development/javascript30/6-type-ahe
                 <li class="accordion-item" data-accordion-item="">
                     <!-- Title -->
                     <a href="#" class="accordion-title" aria-controls="" role="tab" id="project-synopsis" aria-expanded="false" aria-selected="false">
-                        <h2 class="h5">Project Synopsis</h2>
+                        <h2 class="h5">Project Synopsis and Code</h2>
                     </a>
                     <!-- Content -->
-                    <div class="accordion-content" data-tab-content="" role="tabpanel" aria-labelledby="Project Synopsis" aria-hidden="true" id="project-synopsis" style="display: none;">
-                        <p>In this lesson I am taking cities data from a .JSON file and am filtering through the search input to pair down the list.</p>
-                        <p>First I create a variable that holds the url for the JSON data, and I initialize an empty 'cities[]' object.</p>
-                        <p>I then fetch the JSON data (fetch(endpoint)) and use .then() so when the promise is validated it takes the blob data we recieve through the fetch, and converts it to JSON using the .json() method. .json() itself is also a promise which we return another .then() on. The second .then() will spread the data into the cities array (cities.push(...data)).</p>
-                        <p>I listen for a 'change' or 'keyup' event on the search input, and run a function. That function takes the value of the search input, and finds matches with 'cities' (findMatches(this.value, cities)). I then .map() over the new map and using a regular expresion I search for the cities globally and insensitively ('gi'). I then .replace() the text by nesting it in a &lt;span&gt; element to create the hightlight effect on the search term. I also return the list, only including the matches. The returned listed is output to the .innerHTML of the 'suggestions' element.</p>
+                    <div class="accordion-content" data-tab-content="" role="tabpanel" aria-labelledby="Project Synopsis and Code" aria-hidden="true" id="project-synopsis" style="display: none;">
+                        <p>In this lesson I am taking in JSON data and am using .filter() on the search &lt;input&gt; to display and pair down the list.</p>
+                        <p>First I create a variable 'endpoint' that holds the url for the JSON data. I also initialize an empty 'cities[]' object.</p>
+                        <p>I <strong>fetch()</strong> the JSON data (fetch(endpoint)). fetch() is a promise, which I return .then() on. .then() takes the blob data I recieve through the fetch, and converts it to JSON using the .json() method. .json() itself is also a promise which I return another .then() on. The second .then() spreads the data into the cities array (cities.push(...data)).</p>
+                        <p>I <strong>listen</strong> for a 'change' or 'keyup' event on the search input, and run displayMatches().</p>
+                        <p>In <strong>displayMatches()</strong> - Take the value of the search input, and find matches in 'cities[]' (findMatches(this.value, cities)). Then .map() over the array, using a regular expresion on the 'city' and 'state' to find matches from the search. Then .replace() the search text, nesting it in a &lt;span&gt; to create the hightlight effect on the search term.</p>
+                        <p>Finally, return a &lt;li&gt; for each match into the array. Inject each &lt;li&gt; with values from the JSON using es6 template strings. Finally .join('') the array into one string and pass the string into the .innerHTML of the 'suggestions' element.</p>
 
                         <!-- CodePen -->
                         <p class="codepen" data-height="330" data-theme-id="dark" data-default-tab="js" data-user="CoreyNoble" data-slug-hash="LKrqZz" style="height: 330px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="JavaScript30 - 6 - Type Ahead">
