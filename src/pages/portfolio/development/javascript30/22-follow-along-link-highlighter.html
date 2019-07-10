@@ -35,17 +35,17 @@ canonical: https://corey-noble.com/portfolio/development/javascript30/22-follow-
                                 </ul>
                             </li>
                         </ul>
-                        <p>In <strong>hightlightLink()</strong> First I add a class of '.active' to 'this' (&lt;a&gt;). I then get the bounding client rectangle for 'this' and map the coordinates to a 'coords' variable.</p>
+                        <p>In <strong>hightlightLink()</strong> - Add a class of '.active' to 'this' (&lt;a&gt;). Then get the bounding client rectangle for 'this' and set the coordinates to a 'coords' variable.</p>
                         <p>const linkCoords = this.getBoundingClientRect();</p>
                         <p>width: linkCoords.width,<br />
                         height: linkCoords.height,<br />
                         top: linkCoords.top + window.scrollY,<br />
                         left: linkCoords.left + window.scrollX
                         </p>
-                        <p>Then I inject the puppy div with the coordinates:<br />highlight.style.width = `${coords.width}px`;<br />
+                        <p>Next inject the puppy div with the coordinates:<br />highlight.style.width = `${coords.width}px`;<br />
                         highlight.style.height = `${coords.height}px`;<br />
                         highlight.style.transform = `translate(${coords.left}px, ${coords.top}px)`;</p>
-                        <p>In <strong>mouseLeave()</strong> I remove the '.active' class from the &lt;a&gt;.</p>
+                        <p>In <strong>mouseLeave()</strong> - Remove the '.active' class from the &lt;a&gt;.</p>
 
                         <!-- CodePen -->
                         <p class="codepen" data-height="330" data-theme-id="dark" data-default-tab="js" data-user="CoreyNoble" data-slug-hash="ydEZPO" style="height: 330px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="JavaScript30 - 22 - Follow Along Link Highlighter">
