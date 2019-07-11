@@ -19,13 +19,13 @@ canonical: https://corey-noble.com/portfolio/development/javascript30/26-stripe-
                 <li class="accordion-item" data-accordion-item="">
                     <!-- Title -->
                     <a href="#" class="accordion-title" aria-controls="" role="tab" id="project-synopsis" aria-expanded="false" aria-selected="false">
-                        <h2 class="h5">Project Synopsis and Code</h2>
+                        <h2 class="h5">Project Synopsis and&nbsp;Code</h2>
                     </a>
                     <!-- Content -->
                     <div class="accordion-content" data-tab-content="" role="tabpanel" aria-labelledby="Project Synopsis and Code" aria-hidden="true" id="project-synopsis" style="display: none;">
-                        <p>In continuation of <a href="{{root}}portfolio/development/javascript30/4-array-cardio-day-1.html">Follow Along Link Highlighter</a>, I create a flexible dropdown navigation in-which the size of any dropdown item can be dynamic. As the user hovers on each dropdown item, a puppy &lt;div&gt; follows along in both size and position to transition into the background for that newly shown dropdown item.</p>
-                        <p>First I get the 'nav' and the 'triggers' (&lt;li&gt;) as well as the puppy &lt;div&gt; 'background'.</p>
-                        <p>I <strong>listen</strong> for:</p>
+                        <p>In continuation of <a href="{{root}}portfolio/development/javascript30/4-array-cardio-day-1.html">Follow Along Link Highlighter</a>, I create a flexible dropdown navigation in-which the size of any dropdown item can be dynamic. As the user hovers on each dropdown item, a puppy &lt;div&gt; follows along in both size and position to transition into the background for that newly shown dropdown&nbsp;item.</p>
+                        <p>First I get the 'nav' and the 'triggers' (&lt;li&gt;) as well as the puppy &lt;div&gt;&nbsp;'background'.</p>
+                        <p>I <strong>listen</strong>&nbsp;for:</p>
                         <ul>
                             <li>
                                 <strong>triggers.forEach(trigger => trigger.addEventListener)</strong>
@@ -35,17 +35,17 @@ canonical: https://corey-noble.com/portfolio/development/javascript30/26-stripe-
                                 </ul>
                             </li>
                         </ul>
-                        <p>In <strong>handleEnter()</strong> - First add a class of '.trigger-enter' to the trigger. This class changes 'display:none' to 'display:block'. The class is added on a delay, so use an arrow function to check if the class is there. If so, add a second class of '.trigger-enter-active'. This is known as stepping in an animation. First display it, then transition it. (setTimeout(() => this.classList.contains('trigger-enter' && this.classList.add('trigger-enter-active', 150);). Then add a class of '.open' to 'background'.</p>
-                        <p>Next get the 'dropdown' and its' bounding rectangle, also get the bounding rectangle of the 'nav'. Using the 'dropdown' bounding rectangle, calculate the 'width' and 'height values that 'background' will need.</p>
-                        <p>Using 'nav' and 'dropdown' bounding rectangles, calculate the height, width, and position that 'background' will need. Use 'nav' as an anchor for positioning.</p>
-                        <p>const coords = {<br />
+                        <p>In <strong>handleEnter()</strong>&nbsp;- First add a class of '.trigger-enter' to the trigger. This class changes 'display:none' to 'display:block'. The class is added on a delay, so use an arrow function to check if the class is there. If so, add a second class of '.trigger-enter-active'. This is known as stepping in an animation. First display it, then transition it. (setTimeout(()&nbsp;=> this.classList.contains('trigger-enter' && this.classList.add('trigger-enter-active', 150);). Then add a class of '.open' to&nbsp;'background'.</p>
+                        <p>Next get the 'dropdown' and its' bounding rectangle, also get the bounding rectangle of the 'nav'. Using the 'dropdown' bounding rectangle, calculate the 'width' and 'height values that 'background' will&nbsp;need.</p>
+                        <p>Using 'nav' and 'dropdown' bounding rectangles, calculate the height, width, and position that 'background' will need. Use 'nav' as an anchor for&nbsp;positioning.</p>
+                        <p>const coords&nbsp;=&nbsp;{<br />
                         &nbsp;&nbsp;width: dropdownCoords.width,<br />
                         &nbsp;&nbsp;height: dropdownCoords.height,<br />
-                        &nbsp;&nbsp;top: dropdownCoords.top - navCoords.top,<br />
-                        &nbsp;&nbsp;left: dropdownCoords.left - navCoords.left<br />
+                        &nbsp;&nbsp;top: dropdownCoords.top&nbsp;- navCoords.top,<br />
+                        &nbsp;&nbsp;left: dropdownCoords.left&nbsp;- navCoords.left<br />
                         }</p>
                         <p>Finally set the 'background' styles by injecting the 'coords' into the style attributes of 'background' using es6 template strings. (background.style.setProperty('width', `${coords.width}px`)).</p>
-                        <p>In <strong>handleLeave()</strong> - Hide the elements. Remove the classes '.trigger-enter' and '.trigger-enter-active' from the trigger. Remove the class of '.open' from 'background'.</p>
+                        <p>In <strong>handleLeave()</strong>&nbsp;- Hide the elements. Remove the classes '.trigger-enter' and '.trigger-enter-active' from the trigger. Remove the class of '.open' from&nbsp;'background'.</p>
 
                         <!-- CodePen -->
                         <p class="codepen" data-height="330" data-theme-id="dark" data-default-tab="js" data-user="CoreyNoble" data-slug-hash="ydEZKJ" style="height: 330px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="JavaScript30 - 26 - Stripe Follow Along Nav">

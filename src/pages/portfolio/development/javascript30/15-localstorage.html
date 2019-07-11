@@ -19,13 +19,13 @@ canonical: https://corey-noble.com/portfolio/development/javascript30/15-localst
                 <li class="accordion-item" data-accordion-item="">
                     <!-- Title -->
                     <a href="#" class="accordion-title" aria-controls="" role="tab" id="project-synopsis" aria-expanded="false" aria-selected="false">
-                        <h2 class="h5">Project Synopsis and Code</h2>
+                        <h2 class="h5">Project Synopsis and&nbsp;Code</h2>
                     </a>
                     <!-- Content -->
                     <div class="accordion-content" data-tab-content="" role="tabpanel" aria-labelledby="Project Synopsis and Code" aria-hidden="true" id="project-synopsis" style="display: none;">
-                        <p>In this lesson I am saving the state of all of the user inputs into LocalStorage.</p>
-                        <p>First I grab the &lt;form&gt; and &lt;ul&gt; on the page, as well as the 'items' in localStorage formatted as JSON if it exists. Otherwise I initialize an empty array (JSON.parse(loalStorage.getItem('items')) || []).</p>
-                        <p>I <strong>listen</strong> for the following events:</p>
+                        <p>In this lesson I am saving the state of all of the user inputs into&nbsp;LocalStorage.</p>
+                        <p>First I grab the &lt;form&gt; and &lt;ul&gt; on the page, as well as the 'items' in localStorage formatted as JSON if it exists. Otherwise I initialize an empty array (JSON.parse(loalStorage.getItem('items')) ||&nbsp;[]).</p>
+                        <p>I <strong>listen</strong> for the following&nbsp;events:</p>
                         <ul>
                             <li>
                                 <strong>&lt;form&gt;</strong>
@@ -40,13 +40,13 @@ canonical: https://corey-noble.com/portfolio/development/javascript30/15-localst
                                 </ul>
                             </li>
                         </ul>
-                        <p>After the JS is loaded, I run populateList(items, itemsList).</p>
-                        <p><strong>populateList(plates = [], platesList)</strong> - Takes in / initializes a new array 'plates[]', as well as take in another list 'platesList'. These parameter names are different than the ones I passed in, to ensure it is a re-usable function. Set the 'innerHTML' of 'platesList' to a new .map() from 'plates'. For each item, build up a new &lt;li&gt; element.</p>
-                        <p>In <strong>addItem(e)</strong> - Prevent the event default to ensure the page doesn't refresh (e.preventDefault()).</p>
-                        <p>Get the [name=item] 'text' value from 'this' element. Create a new 'item' element, pass in 'text' and a default state of 'done: false'. Push the 'item' into the 'items' array.</p>
+                        <p>After the JS is loaded, I run populateList(items,&nbsp;itemsList).</p>
+                        <p><strong>populateList(plates&nbsp;=&nbsp;[],&nbsp;platesList)</strong>&nbsp;- Takes in /&nbsp;initializes a new array 'plates[]', as well as take in another list 'platesList'. These parameter names are different than the ones I passed in, to ensure it is a re-usable function. Set the 'innerHTML' of 'platesList' to a new .map() from 'plates'. For each item, build up a new &lt;li&gt;&nbsp;element.</p>
+                        <p>In <strong>addItem(e)</strong>&nbsp;- Prevent the event default to ensure the page doesn't refresh (e.preventDefault()).</p>
+                        <p>Get the [name=item] 'text' value from 'this' element. Create a new 'item' element, pass in 'text' and a default state of 'done: false'. Push the 'item' into the 'items'&nbsp;array.</p>
                         <p>Next run populateList(), then save the 'items' into 'localStorage' (localStorage.setItem('items', JSON.stringify(items))) and reset the input (this.reset()).</p>
-                        <p>In <strong>toggleDone(e)</strong> - Check if the target of the event is not an &lt;input&gt; (!e.target.matches('input')), If so, exit the function. Otherwise, get the element and the index of that element (e.target, e.target.dataset.index).</p>
-                        <p>Flip the '.done' polarity for that index in 'items' (items[index].done = !items[index].done). Finally save the items into localStorage as JSON (localStorage.setItem('items', JSON.stringify(items))) and re-populate the list (populateList(items, itemsList).</p>
+                        <p>In <strong>toggleDone(e)</strong>&nbsp;- Check if the target of the event is not an &lt;input&gt; (!e.target.matches('input')), If so, exit the function. Otherwise, get the element and the index of that element (e.target,&nbsp;e.target.dataset.index).</p>
+                        <p>Flip the '.done' polarity for that index in 'items' (items[index].done&nbsp;= !items[index].done). Finally save the items into localStorage as JSON (localStorage.setItem('items', JSON.stringify(items))) and re-populate the list (populateList(items,&nbsp;itemsList).</p>
 
                         <!-- CodePen -->
                         <p class="codepen" data-height="330" data-theme-id="dark" data-default-tab="js" data-user="CoreyNoble" data-slug-hash="xozMdL" style="height: 330px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="JavaScript30 - 15 - LocalStorage">

@@ -19,12 +19,12 @@ canonical: https://corey-noble.com/portfolio/development/javascript30/11-custom-
                 <li class="accordion-item" data-accordion-item="">
                     <!-- Title -->
                     <a href="#" class="accordion-title" aria-controls="" role="tab" id="project-synopsis" aria-expanded="false" aria-selected="false">
-                        <h2 class="h5">Project Synopsis and Code</h2>
+                        <h2 class="h5">Project Synopsis and&nbsp;Code</h2>
                     </a>
                     <!-- Content -->
                     <div class="accordion-content" data-tab-content="" role="tabpanel" aria-labelledby="Project Synopsis and Code" aria-hidden="true" id="project-synopsis" style="display: none;">
-                        <p>In this lesson I create a custom video player.</p>
-                        <p>First I grab all of the required elements and put them into variables. I <strong>listen</strong> for the following events:</p>
+                        <p>In this lesson I create a custom video&nbsp;player.</p>
+                        <p>First I grab all of the required elements and put them into variables. I <strong>listen</strong> for the following&nbsp;events:</p>
                         <ul>
                             <li>
                                 <strong>&lt;video&gt;</strong>
@@ -57,10 +57,10 @@ canonical: https://corey-noble.com/portfolio/development/javascript30/11-custom-
                             <li>
                                 <strong>.progress</strong>
                                 <ul>
-                                    <li>'click', scrub(e). Here I scrub the video to the clicked event location.</li>
-                                    <li>'mousemove', (e) => mousedown && scrub(e). Here I'm making sure to only scrub the video while the mouse is down and moving.</li>
-                                    <li>'mousedown', () => mousedown = true</li>
-                                    <li>'mouseup', () => mousedown = false</li>
+                                    <li>'click', scrub(e). Here I scrub the video to the clicked event&nbsp;location.</li>
+                                    <li>'mousemove', (e)&nbsp;=> mousedown&nbsp;&&&nbsp;scrub(e). Here I'm making sure to only scrub the video while the mouse is down and&nbsp;moving.</li>
+                                    <li>'mousedown', ()&nbsp;=> mousedown&nbsp;=&nbsp;true</li>
+                                    <li>'mouseup', ()&nbsp;=> mousedown&nbsp;=&nbsp;false</li>
                                 </ul>
                             </li>
                         </ul>
@@ -70,37 +70,37 @@ canonical: https://corey-noble.com/portfolio/development/javascript30/11-custom-
                             <li>
                                 <strong>togglePlay()</strong>
                                 <ul>
-                                    <li>If the video is paused, set the video to playing, if the video is playing, set the video to paused.</li>
+                                    <li>If the video is paused, set the video to playing, if the video is playing, set the video to&nbsp;paused.</li>
                                 </ul>
                             </li>
                             <li>
                                 <strong>updateButton()</strong>
                                 <ul>
-                                    <li>If the video is paused, set the text to '►', if the video is playing, set the text to '❚❚'.</li>
+                                    <li>If the video is paused, set the text to '►', if the video is playing, set the text to&nbsp;'❚❚'.</li>
                                 </ul>
                             </li>
                             <li>
                                 <strong>skip()</strong>
                                 <ul>
-                                    <li>Calculate a new 'currentTime' on the video using the value from the [data-skip] attribute.</li>
+                                    <li>Calculate a new 'currentTime' on the video using the value from the [data-skip]&nbsp;attribute.</li>
                                 </ul>
                             </li>
                             <li>
                                 <strong>handleRangeUpdate()</strong>
                                 <ul>
-                                    <li>Handle updated slider input values. Set the video[this.name] value to this.value. For example, set the volume to the new value on the volume slider.</li>
+                                    <li>Handle updated slider input values. Set the video[this.name] value to this.value. For example, set the volume to the new value on the volume&nbsp;slider.</li>
                                 </ul>
                             </li>
                             <li>
                                 <strong>handleProgress()</strong>
                                 <ul>
-                                    <li>Calculate the 'percent' remaining ((video.currentTime / video.duration) *100). Then update the width of the 'progressBar' to match the 'percent' by injecting 'percent' into the style attribute (progressBar.style.flexBasis = `${percent}%`).</li>
+                                    <li>Calculate the 'percent' remaining ((video.currentTime&nbsp;/ video.duration)&nbsp;*100). Then update the width of the 'progressBar' to match the 'percent' by injecting 'percent' into the style attribute (progressBar.style.flexBasis =&nbsp;`${percent}%`).</li>
                                 </ul>
                             </li>
                             <li>
                                 <strong>scrub(e)</strong>
                                 <ul>
-                                    <li>figure out the 'scrubTime' ((e.offsetX / progress.offsetWidth) * video.duration). Then set the video time to the 'scrubTime'.</li>
+                                    <li>figure out the 'scrubTime' ((e.offsetX&nbsp;/ progress.offsetWidth) *&nbsp;video.duration). Then set the video time to the 'scrubTime'.</li>
                                 </ul>
                             </li>
                         </ul>

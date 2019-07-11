@@ -19,36 +19,36 @@ canonical: https://corey-noble.com/portfolio/development/javascript30/27-click-a
                 <li class="accordion-item" data-accordion-item="">
                     <!-- Title -->
                     <a href="#" class="accordion-title" aria-controls="" role="tab" id="project-synopsis" aria-expanded="false" aria-selected="false">
-                        <h2 class="h5">Project Synopsis and Code</h2>
+                        <h2 class="h5">Project Synopsis and&nbsp;Code</h2>
                     </a>
                     <!-- Content -->
                     <div class="accordion-content" data-tab-content="" role="tabpanel" aria-labelledby="Project Synopsis and Code" aria-hidden="true" id="project-synopsis" style="display: none;">
-                        <p>In this lesson I create click and drag functionality.</p>
-                        <p>First I get 'slider' and initialize some variables: isDown = false, startX, scrollLeft.</p>
-                        <p>I <strong>listen</strong> for the following events which I immediately invoke functions to:</p>
+                        <p>In this lesson I create click and drag&nbsp;functionality.</p>
+                        <p>First I get 'slider' and initialize some variables: isDown&nbsp;=&nbsp;false, startX,&nbsp;scrollLeft.</p>
+                        <p>I <strong>listen</strong> for the following events which I immediately invoke functions&nbsp;to:</p>
                         <ul>
                             <li>
                                 <strong>slider</strong>
                                 <ul>
                                     <li>
-                                        <p><strong>'mousedown', (e) => {}</strong></p>
-                                        <p>First set 'isDown = true'. Then add an '.active' class to 'slider'.</p>
-                                        <p>Next set 'startX' to match the events 'e.pageX' coordinates. Subtracting the 'slider.offsetLeft' to anchor the value to the sliders position.</p>
-                                        <p>Set 'scrollLeft = slider.scrollLeft'</p>
+                                        <p><strong>'mousedown', (e)&nbsp;=>&nbsp;{}</strong></p>
+                                        <p>First set 'isDown = true'. Then add an '.active' class to&nbsp;'slider'.</p>
+                                        <p>Next set 'startX' to match the events 'e.pageX' coordinates. Subtracting the 'slider.offsetLeft' to anchor the value to the sliders&nbsp;position.</p>
+                                        <p>Set 'scrollLeft&nbsp;= slider.scrollLeft'</p>
                                     </li>
                                     <li>
-                                        <p><strong>'mouseleave', () => {}</strong></p>
-                                        <p>Set 'isDown = false'. Remove the class of '.active' from 'slider'.</p>
+                                        <p><strong>'mouseleave', ()&nbsp;=>&nbsp;{}</strong></p>
+                                        <p>Set 'isDown = false'. Remove the class of '.active' from&nbsp;'slider'.</p>
                                     </li>
                                     <li>
-                                        <p><strong>'mouseup', () => {}</strong></p>
-                                        <p>Set 'isDown = false'.</p>
+                                        <p><strong>'mouseup', ()&nbsp;=>&nbsp;{}</strong></p>
+                                        <p>Set 'isDown&nbsp;=&nbsp;false'.</p>
                                     </li>
                                     <li>
-                                        <p><strong>'mousemove', (e) => {}</strong></p>
+                                        <p><strong>'mousemove', (e)&nbsp;=>&nbsp;{}</strong></p>
                                         <p>Check if 'isDown' is false, if so, exit the function. Prevent the event from creating any default behaviour (e.preventDefault();).</p>
-                                        <p>Get where the cursor is. Set 'x' to 'e.pageX - slider.offsetLeft;'.</p>
-                                        <p>Calculate the 'walk' (x - startX) * 3. The multiplier determines how many pixels to scroll for each pixel the user scrolls. Then set the 'slider.scrollLeft' (scrollLeft - walk).</p>
+                                        <p>Get where the cursor is. Set 'x' to 'e.pageX&nbsp;- slider.offsetLeft;'.</p>
+                                        <p>Calculate the 'walk' ((x&nbsp;-&nbsp;startX) *&nbsp;3). The multiplier determines how many pixels to scroll for each pixel the user scrolls. Then set the 'slider.scrollLeft' (scrollLeft&nbsp;-&nbsp;walk).</p>
                                     </li>
                                 </ul>
                             </li>
