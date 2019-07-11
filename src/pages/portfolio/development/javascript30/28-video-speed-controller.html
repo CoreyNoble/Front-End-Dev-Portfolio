@@ -19,22 +19,22 @@ canonical: https://corey-noble.com/portfolio/development/javascript30/28-video-s
                 <li class="accordion-item" data-accordion-item="">
                     <!-- Title -->
                     <a href="#" class="accordion-title" aria-controls="" role="tab" id="project-synopsis" aria-expanded="false" aria-selected="false">
-                        <h2 class="h5">Project Synopsis and Code</h2>
+                        <h2 class="h5">Project Synopsis and&nbsp;Code</h2>
                     </a>
                     <!-- Content -->
                     <div class="accordion-content" data-tab-content="" role="tabpanel" aria-labelledby="Project Synopsis and Code" aria-hidden="true" id="project-synopsis" style="display: none;">
-                        <p>In this lesson I create a slider interface that manipulates the &lt;video&gt; speed.</p>
-                        <p>First I get the parent &lt;div&gt; 'speed', child &lt;div&gt; 'bar' and &lt;video&gt; element 'video'.</p>
-                        <p>Then I <strong>listen</strong> for the 'mousemove' event and run handleMove(e).</p>
-                        <p>In <strong>handleMove(e)</strong> - 'this' being 'speed', first set:</p>
+                        <p>In this lesson I create a slider interface that manipulates the &lt;video&gt;&nbsp;speed.</p>
+                        <p>First I get the parent &lt;div&gt; 'speed', child &lt;div&gt; 'bar' and &lt;video&gt; element&nbsp;'video'.</p>
+                        <p>Then I <strong>listen</strong> for the 'mousemove' event and run&nbsp;handleMove(e).</p>
+                        <p>In <strong>handleMove(e)</strong> - 'this' being 'speed', first&nbsp;set:</p>
                         <ul>
-                            <li>'y' to (e.pageY - this.offsetTop).</li>
-                            <li>'percent' to (y / this.offsetHeight)</li>
-                            <li>'min' and 'max' values which serve as the range for the controller</li>
-                            <li>'height' equal to (percent * 100)</li>
-                            <li>'playbackRate' to (percent  * (max - min) + min) which ensures the value isn't between 0 and 1, instead it is a value range between the 'min' and 'max', multiplied by the percentage</li>
+                            <li>'y' to (e.pageY&nbsp;- this.offsetTop).</li>
+                            <li>'percent' to (y&nbsp;/ this.offsetHeight)</li>
+                            <li>'min' and 'max' values which serve as the range for the&nbsp;controller</li>
+                            <li>'height' equal to (percent&nbsp;*&nbsp;100)</li>
+                            <li>'playbackRate' to (percent&nbsp;* (max&nbsp;-&nbsp;min) +&nbsp;min) which ensures the value isn't between 0 and 1, instead it is a value range between the 'min' and 'max', multiplied by the&nbsp;percentage</li>
                         </ul>
-                        <p>Finally set the 'bar.style.height' to 'height'. Then set the 'bar.textContet' to 'playbackRate' and the 'video.playbackRate' to 'playbackRate'.</p>
+                        <p>Finally set the 'bar.style.height' to 'height'. Then set the 'bar.textContet' to 'playbackRate' and the 'video.playbackRate' to&nbsp;'playbackRate'.</p>
 
                         <!-- CodePen -->
                         <p class="codepen" data-height="330" data-theme-id="dark" data-default-tab="js" data-user="CoreyNoble" data-slug-hash="GbGzxz" style="height: 330px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="JavaScript30 - 28 - Video Speed Controller">

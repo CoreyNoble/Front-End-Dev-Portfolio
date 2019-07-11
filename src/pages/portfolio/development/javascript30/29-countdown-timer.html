@@ -19,12 +19,12 @@ canonical: https://corey-noble.com/portfolio/development/javascript30/29-countdo
                 <li class="accordion-item" data-accordion-item="">
                     <!-- Title -->
                     <a href="#" class="accordion-title" aria-controls="" role="tab" id="project-synopsis" aria-expanded="false" aria-selected="false">
-                        <h2 class="h5">Project Synopsis and Code</h2>
+                        <h2 class="h5">Project Synopsis and&nbsp;Code</h2>
                     </a>
                     <!-- Content -->
                     <div class="accordion-content" data-tab-content="" role="tabpanel" aria-labelledby="Project Synopsis and Code" aria-hidden="true" id="project-synopsis" style="display: none;">
-                        <p>In this lesson I create a countdown timer application.</p>
-                        <p>First I initialize a 'countdown' variable. Then I get the following elements: 'timerDisplay', 'endTime', [data-time]. Then I <strong>listen</strong> for the following events:</p>
+                        <p>In this lesson I create a countdown timer&nbsp;application.</p>
+                        <p>First I initialize a 'countdown' variable. Then I get the following elements: 'timerDisplay', 'endTime', [data-time]. Then I <strong>listen</strong> for the following&nbsp;events:</p>
                         <ul>
                             <li>
                                 <strong>[data-time]</strong>
@@ -35,18 +35,18 @@ canonical: https://corey-noble.com/portfolio/development/javascript30/29-countdo
                             <li>
                                 <strong>document.customForm</strong>
                                 <ul>
-                                    <li>'submit', function(e) {}</li>
-                                    <li>First prevent the event default to ensure the page doesn't refresh (e.prefentDefault();). Then set 'mins' to 'this.minutes.value' and run timer(mins * 60) to send the minutes as seconds into the timer() function.</li>
+                                    <li>'submit', function(e)&nbsp;{}</li>
+                                    <li>First prevent the event default to ensure the page doesn't refresh (e.prefentDefault();). Then set 'mins' to 'this.minutes.value' and run timer(mins *&nbsp;60) to send the minutes as seconds into the timer()&nbsp;function.</li>
                                 </ul>
                             </li>
                         </ul>
-                        <p>In <strong>startTimer()</strong> - Set 'seconds' to the [data-time] value (parseInt(this.dataset.time)). Then run timer(seconds).</p>
-                        <p>In <strong>timer(seconds)</strong> - First clearInterval(countdown). Next set 'now' and 'then', both are in milliseconds.</p>
-                        <p>Then run <strong>displayTimeLeft(seconds)</strong> and <strong>displayEndTime(then)</strong>. Finally set the <strong>'countdown'</strong>.</p>
+                        <p>In <strong>startTimer()</strong>&nbsp;- Set 'seconds' to the [data-time] value (parseInt(this.dataset.time)). Then run&nbsp;timer(seconds).</p>
+                        <p>In <strong>timer(seconds)</strong>&nbsp;- First clearInterval(countdown). Next set 'now' and 'then', both are in&nbsp;milliseconds.</p>
+                        <p>Then run <strong>displayTimeLeft(seconds)</strong> and <strong>displayEndTime(then)</strong>. Finally set the&nbsp;<strong>'countdown'</strong>.</p>
                         <ul>
-                            <li>In <strong>displayTimeLeft(seconds)</strong> - Get the 'minutes' (seconds / 60), 'remainderSeconds' (seconds % 60), then 'display' the 'minutes' and 'remainderSeconds' in a string. Prepend a '0' if 'remainderSeconds &lt; 10. Finally, output 'display' to the 'document.title' and to 'timerDisplay'.</li>
-                            <li>In <strong>displayEndTime(timestamp)</strong> - Create a new date object 'end' from the passed in 'timestamp'. From that get 'hours' (end.getHours()). Then calculate 'adjustedHour' to adjust to a 12hr clock. Next get 'minutes' (end.getMinutes()). Finally output the end time to 'endTime.textContent'.</li>
-                            <li>In <strong>'countdown'</strong> - Every second, set 'secondsLeft' (Math.round((then - Date.now()) / 1000). Check if there are any 'secondsLeft', If so, clearInterval(countdown). Either way, displayTimeLeft(secondsLeft).</li>
+                            <li>In <strong>displayTimeLeft(seconds)</strong>&nbsp;- Get the 'minutes' (seconds&nbsp;/&nbsp;60), 'remainderSeconds' (seconds&nbsp;%&nbsp;60), then 'display' the 'minutes' and 'remainderSeconds' in a string. Prepend a '0' if 'remainderSeconds &lt; 10. Finally, output 'display' to the 'document.title' and to&nbsp;'timerDisplay'.</li>
+                            <li>In <strong>displayEndTime(timestamp)</strong>&nbsp;- Create a new date object 'end' from the passed in 'timestamp'. From that get 'hours' (end.getHours()). Then calculate 'adjustedHour' to adjust to a 12hr clock. Next get 'minutes' (end.getMinutes()). Finally output the end time to&nbsp;'endTime.textContent'.</li>
+                            <li>In <strong>'countdown'</strong>&nbsp;- Every second, set 'secondsLeft' (Math.round((then -&nbsp;Date.now()) /&nbsp;1000). Check if there are any 'secondsLeft', If so, clearInterval(countdown). Either way, displayTimeLeft(secondsLeft).</li>
                         </ul>
                         
                         <!-- CodePen -->
