@@ -80,7 +80,15 @@ p,ul,ol,li{
 }
 
 ol, ul {
-    margin-left: 2rem;
+  margin-left: 2rem;
+
+  li{
+    margin-top: 0.5em;
+
+    &.h1, &.h2, &.h3, &.h4, &.h4, &.h6{
+      margin-top: 0.5em;
+    }
+  }
 }
 
 p, ul, ol{
