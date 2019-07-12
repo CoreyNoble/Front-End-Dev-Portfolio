@@ -7,67 +7,93 @@
     
     .display__time-left {
         font-weight: 100;
-        font-size: 20rem;
+        font-size: 6em;
         margin: 0;
         color: white;
         text-shadow: 4px 4px 0 rgba(0,0,0,0.05);
+
+        @include breakpoint(medium){
+            font-size: 12em;
+        }
+
+        @include breakpoint(large){
+            font-size: 14em;
+        }
     }
     
     .timer {
         display: flex;
-        min-height: 100vh;
         flex-direction: column;
     }
-    
-    .timer__controls {
+        
+    .timer__control{
         display: flex;
+        align-content: center;
+        background: rgba(0,0,0,0.4);
+        border: 0.2em solid $black; 
+
+        &:hover{
+            background: rgba(0,0,0,0.8);
+            transition: all 0.2s ease;
+        }
     }
-    
-    .timer__controls > * {
-        flex: 1;
-    }
-    
-    .timer__controls form {
-        flex: 1;
-        display: flex;
-    }
-    
-    .timer__controls input {
-        flex: 1;
-        border: 0;
-        padding: 2rem;
-    }
-    
+
     .timer__button {
+        display: block;
+        width: 100%;
         background: none;
         border: 0;
         cursor: pointer;
         color: white;
-        font-size: 2rem;
+        font-size: 1.5em;
         text-transform: uppercase;
-        background: rgba(0,0,0,0.4);
-        border-bottom: 3px solid rgba(0,0,0,0.8);
-        border-right: 1px solid rgba(0,0,0,0.8);
-        padding: 1rem;
+        padding: 0.25em;
         font-family: 'Inconsolata', monospace;
-    }
-    
-    .timer__button:hover,
-    .timer__button:focus {
-        background: rgba(0,0,0,0.8);
-        outline: 0;
+
+        @include breakpoint(medium){
+            font-size: 2em;
+        }
     }
     
     .display {
         flex: 1;
         display: flex;
+        margin-top: 2.5em;
         flex-direction: column;
         align-items: center;
         justify-content: center;
     }
     
     .display__end-time {
-        font-size: 4rem;
+        font-size: 1.75em;
         color: white;
+
+        @include breakpoint(medium){
+            font-size: 2.5em;
+        }
+
+        @include breakpoint(large){
+            font-size: 3em;
+        }
     }      
+
+    .contact-form{
+        background: none;
+        box-shadow: none;
+        padding: 0;
+
+        form{
+            display: block;
+            width: 100%;
+            padding: 0;
+
+            input{
+                margin: 1em auto;
+
+                @include breakpoint(large){
+                    margin: 1.6em auto;
+                }
+            }
+        }
+    }
 }

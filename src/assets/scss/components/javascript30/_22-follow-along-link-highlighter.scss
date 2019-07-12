@@ -8,11 +8,19 @@
 
     .nav{
         z-index: 1;
+        border-bottom: 0.2em solid rgba(0,0,0,0.2);
+
+        a{
+            margin-bottom: 1em;
+            display: block;
+            text-align: center;
+        }
     }
     
     .wrapper {
         margin: 0 auto;
-        max-width: 500px;
+        width: 100%;
+        max-width: 920px;
         font-size: 20px;
         line-height: 2;
         position: relative;
@@ -26,6 +34,12 @@
 
         &.active{
             font-weight: bold;
+        }
+    }
+
+    p{
+        &:last-child{
+            padding-bottom: 0;
         }
     }
     
