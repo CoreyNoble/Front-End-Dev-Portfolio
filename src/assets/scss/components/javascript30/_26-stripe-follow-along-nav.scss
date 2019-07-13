@@ -1,6 +1,6 @@
 #javascript30-26{    
     margin: 0;
-    min-height: 100vh;
+    min-height: 44em;
     background:
         linear-gradient(45deg, hsla(340, 100%, 55%, 1) 0%, hsla(340, 100%, 55%, 0) 70%),
         linear-gradient(135deg, hsla(225, 95%, 50%, 1) 10%, hsla(225, 95%, 50%, 0) 80%),
@@ -23,13 +23,13 @@
         justify-content: center;
 
         > a {
+            flex: 1 0;
             color: yellow;
             text-decoration: none;
             font-size: 20px;
             background: rgba(0,0,0,0.2);
             padding: 10px 20px;
             display: inline-block;
-            margin: 20px;
             border-radius: 5px;
         }
     }
@@ -46,26 +46,13 @@
         opacity: 0;
         position: absolute;
         overflow: hidden;
-        padding: 20px;
+        padding: 0.33em;
         top: -20px;
         border-radius: 2px;
         transition: all 0.5s;
         transform: translateY(100px);
         will-change: opacity;
         display: none;
-
-        .social-media{
-            margin-top: 1.3em;
-            display: block;
-            
-            @media screen and (max-width: 40em) {
-                margin-top: 3em;
-            }
-            
-            img{
-                max-width: 35px;
-            }
-        }
     }
 
     .trigger-enter .dropdown {
@@ -77,8 +64,6 @@
     }
     
     .dropdownBackground {
-        width: 100px;
-        height: 100px;
         position: absolute;
         background: #fff;
         border-radius: 4px;
@@ -103,39 +88,18 @@
         transform: translateY(-50%) rotate(45deg);
     }
 
-    .bio {
-        min-width: 500px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        line-height: 1.7;
-    }
-
-    .bio img {
-        float: left;
-        margin-right: 20px;
-    }
-
-    .courses {
-        min-width: 300px;
-    }
-
-    .courses li {
-        padding: 10px 0;
-        display: block;
-        border-bottom: 1px solid rgba(0,0,0,0.2);
-    }
-
     .dropdown a {
-        text-decoration: none;
-        color: #ffc600;
+        display: block;
+        background-color: rgba(0,0,0,0.2);
+        padding: 0.5em 1em;
+        margin-bottom: 0.25em;
+        text-decoration: underline;
+        color: $black;
+
+        &:hover{
+            background-color: rgba(0,0,0,0.8);
+            color: $white;
+        }
     }
 
-    a.button {
-        background: black;
-        display: block;
-        padding: 10px;
-        color: white;
-        margin-bottom: 10px;
-    }
 }
