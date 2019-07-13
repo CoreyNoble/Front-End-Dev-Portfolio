@@ -83,7 +83,12 @@ canonical: https://corey-noble.com/portfolio/development/javascript30/19-webcam-
 
                                 <div class="accordion-content" data-tab-content="" role="tabpanel" aria-labelledby="green-screen" aria-hidden="true" id="green-screen" style="display: none;">
                                     <!-- Content -->
-                                    <div class="row">
+                                    <div class="row rgb">
+                                        <div class="small-12 columns">
+                                            <label for="greenScreen">Knockout Colour</label>
+                                            <input type="radio" name="filterInput" value="greenScreen">
+                                        </div>
+
                                         <div class="small-6 medium-4 columns">
                                             <label for="rmin">Red Min:</label>
                                             <input type="range" min=0 max=255 name="rmin">
@@ -113,12 +118,19 @@ canonical: https://corey-noble.com/portfolio/development/javascript30/19-webcam-
 
                                 <div class="accordion-content" data-tab-content="" role="tabpanel" aria-labelledby="filters" aria-hidden="true" id="filters" style="display: none;">
                                     <!-- Content -->
-                                    <div class="rgb">
-                                        <div class="row">
-                                            <div class="small-12 columns">
-                                                <h4 class="h6">TEST</h4>
-                                            </div>
+                                    <div class="row">
+                                        <div class="small-12 medium-6 columns">
+                                            <label for="redShift">Red Shift</label>
+                                            <input type="radio" name="filterInput" value="redShift">
                                         </div>
+                                        <div class="small-12 medium-6 columns">
+                                            <label for="rgbShift">RGB Split</label>
+                                            <input type="radio" name="filterInput" value="rgbShift">
+                                        </div>
+                                        <!-- <div class="small-12 medium-4 columns">
+                                            <label for="ghosting">Ghosting</label>
+                                            <input type="checkbox" name="ghosting">
+                                        </div> -->
                                     </div>
                                 </div>
                             </li>
