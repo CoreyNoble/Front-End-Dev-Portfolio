@@ -10,34 +10,30 @@
     align-items: center;
     
     .wrapper {
-        width: 850px;
-        display: flex;
     }
     
     video {
         box-shadow: 0 0 1px 3px rgba(0,0,0,0.1);
+        width: 100%;
     }
     
     .speed {
         background: #efefef;
-        flex: 1;
-        display: flex;
-        align-items: flex-start;
-        margin: 10px;
-        border-radius: 50px;
+        border-radius: 1.5em;
+        margin-top: 0.5em;
         box-shadow: 0 0 1px 3px rgba(0,0,0,0.1);
         overflow: hidden;
+        width: 100%;
     }
     
     .speed-bar {
-        width: 100%;
+        width: 16.3%;
         background: linear-gradient(-170deg, #2376ae 0%, #c16ecf 100%);
         text-shadow: 1px 1px 0 rgba(0,0,0,0.2);
         display: flex;
         align-items: center;
         justify-content: center;
-        padding: 2px;
+        padding: 0.5em;
         color: white;
-        height: 16.3%;
     }      
 }

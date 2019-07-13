@@ -4,6 +4,10 @@ const ctx = canvas.getContext('2d'); // canvas context
 const strip = document.querySelector('.strip'); // photo strip
 const snap = document.querySelector('.snap'); // <audio>
 const photoCTA = document.querySelector('#photoCTA'); // Photo <button>
+const greenScreen = document.querySelector('input[value="greenScreen"]');
+const redShift = document.querySelector('input[value="redShift"]');
+const rgbShift = document.querySelector('input[value="rgbShift"]');
+// const ghosting = document.querySelector('input[name="ghosting"]');
 
 // Getting the video stream
 function getVideo() {
@@ -32,6 +36,23 @@ function paintToCanvas() {
   canvas.width = width;
   canvas.height = height;
 
+  // Uncheck other filters
+  // Green Screen
+  if (greenScreen.checked == true){
+    rgbShift.checked = false;
+    redShift.checked = false;
+  }
+  // Red Effect
+  else if (redShift.checked == true){
+    greenScreen.checked = false;
+    rgbShift.checked = false;
+  }
+  // RGB Split
+  else if (rgbShift.checked == true){
+    greenScreen.checked = false;
+    redShift.checked = false;
+  }
+
   // Paint less often than the video feed.
   return setInterval(() => {
     // Draw the image onto the canvas context using the video source, starting from origin (0,0) ending at the end of the canvas (width,height).
@@ -39,24 +60,35 @@ function paintToCanvas() {
     // Take the pixels out of the context. Each pixel has 4 values associated with it: red, green, blue, and alpha. 'pixels' represents an array of 'ImageData' which contains a number value for each channel(r,g,b,a) on each pixel (0(r), 1(g), 2(b), 3(a), 4(r), 5(g)...)
     let pixels = ctx.getImageData(0, 0, width, height);
 
-    // SET FILTER
-    // Red Effect
-    // pixels = redEffect(pixels);
-
-    // RGB Split
-    // pixels = rgbSplit(pixels);
-    // Ghosting Effect
-    // Sets the Alpha globally, will persist every frame (fade out effect) until the alpha is equal to 0.
-    // ctx.globalAlpha = 0.8;
-
-    // Green Screen
-    pixels = greenScreen(pixels);
-    // /SET FILTER
+// Uncheck other filters
+  // Green Screen
+  if (greenScreen.checked == true){
+    pixels = pixelKnockout(pixels);
+  }
+  // Red Effect
+  else if (redShift.checked == true){
+    pixels = redEffect(pixels);
+  }
+  // RGB Split
+  else if (rgbShift.checked == true){
+    pixels = rgbSplit(pixels);
+  }
+  // Ghosting Effect
+  // Sets the Alpha globally, will persist every frame (fade out effect) until the alpha is equal to 0.
+  // if (ghosting.checked == true){
+  //   ctx.globalAlpha = 0.8;
+  // }
 
     // Put the pixels back into the context
     ctx.putImageData(pixels, 0, 0);
   }, 16); // interval delay.
 }
+
+// SET FILTERS
+function filter(pixels){
+  console.log('fired');
+      
+  }
 
 // Take a photo
 function takePhoto() {
@@ -116,7 +148,7 @@ function rgbSplit(pixels) {
 }
 
 // Make pixels transparent within a specified range.
-function greenScreen(pixels) {
+function pixelKnockout(pixels) {
   // Object that holds the min/max range
   const levels = {};
 
@@ -160,3 +192,9 @@ video.addEventListener('canplay', paintToCanvas);
 
 // When <button> is clicked, takePhoto().
 photoCTA.addEventListener('click', takePhoto);
+
+// Filter Events
+greenScreen.addEventListener('click', paintToCanvas);
+redShift.addEventListener('click', paintToCanvas);
+rgbShift.addEventListener('click', paintToCanvas);
+// ghosting.addEventListener('click', paintToCanvas);
