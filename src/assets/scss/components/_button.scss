@@ -45,3 +45,22 @@ a#resume{
         float: left;
     }
 }
+
+a.cta{
+    border: 0.15em solid $background;
+    border-radius: 5px;
+    color: $black;
+    text-decoration: none;
+    padding: 0.5em 0.75em;
+    display: inline-block;
+
+    &:hover{
+      border-color: $white;
+      color: #000;
+      text-decoration: underline;
+    }
+
+    &.project-cta{
+        margin-right: 0.25em;
+    }
+  }
