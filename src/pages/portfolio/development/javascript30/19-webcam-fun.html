@@ -1,0 +1,155 @@
+---
+title: Webcam Fun | JavaScript30 | Corey Noble
+description: Lesson 19. Create a photo booth. Copy the users' webcam feed onto a canvas. Create filters for the canvas by manipulating the copied pixel data.
+canonical: https://corey-noble.com/portfolio/development/javascript30/19-webcam-fun.html
+---
+
+<!-- Introduction -->
+<div class="js30-intro section white">
+    <div class="row">
+        <div class="small-12 column">
+            <!-- Back CTA -->
+            <p class="back-cta"><small><strong><a href="{{root}}portfolio/development/javascript30.html" title="Return to the blog landing page">&lt;&nbsp;Back to JavaScript&nbsp;30</a></strong></small></p>
+
+            <!-- Title -->
+            <h1>Webcam Fun</h1>
+
+            <!-- Accordion -->
+            <ul class="accordion" data-accordion data-allow-all-closed="true">
+                <li class="accordion-item" data-accordion-item="">
+                    <!-- Title -->
+                    <a href="#" class="accordion-title" aria-controls="" role="tab" id="project-synopsis" aria-expanded="false" aria-selected="false">
+                        <h2 class="h5">Project Synopsis and&nbsp;Code</h2>
+                    </a>
+                    <!-- Content -->
+                    <div class="accordion-content" data-tab-content="" role="tabpanel" aria-labelledby="Project Synopsis and Code" aria-hidden="true" id="project-synopsis" style="display: none;">
+                        <p>In this lesson I stream a users' webcam and output that video feed to the browser, I then copy the pixel data from the video feed into a &lt;canvas&gt; element. From there I can run various filter functions that manipulate the pixel data to create video effects. I also allow the user to take a photo of the &lt;canvas&gt; which adds a photograph to the page, with the option to download&nbsp;it.</p>
+                        <p>First I grab all of the elements I will need, including: &lt;video&gt;, &lt;canvas&gt;, Canvas context 'ctx', '.strip', &lt;audio&gt;, the photo&nbsp;&lt;button&gt;.</p>
+                        <p>I <strong>listen</strong> for the following&nbsp;events:</p> 
+                        <ul>
+                            <li>
+                                <strong>&lt;video&gt;</strong>
+                                <ul>
+                                    <li>'canplay', paintToCanvas()</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <strong>&lt;button&gt;</strong>
+                                <ul>
+                                    <li>'click', takePhoto()</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <p>I also initialize a function&nbsp;getVideo().</p>
+                        <p>In <strong>getVideo()</strong>&nbsp;- Get the users' webcam feed (navigator.mediaDevices.getUserMedia({&nbsp;video:&nbsp;true, audio:&nbsp;false&nbsp;}) When it receives the promise .then() set the 'video.srcObject' to the feed, and .play() the&nbsp;&lt;video&gt;.</p>
+                        <p>In <strong>paintToCanvas()</strong>&nbsp;- Set the 'width' and 'height' of the &lt;canvas&gt; element equal to the resolution of the video stream (width&nbsp;=&nbsp;video.videoWidth).</p>
+                        <p>Next at a setInterval(()&nbsp;=> {},&nbsp;16), draw an image to the 'ctx' using the video as the data, painting to the 'width' and 'height' (ctx.drawImage(video, 0,&nbsp;0,&nbsp;width,&nbsp;height)). Then get an array of 'pixels' data from the 'ctx' (ctx.getImageData(0, 0,&nbsp;width,&nbsp;height)).</p>
+                        <p>With the 'pixels' data, It can be run through any type of filter that will manipulate that data, and put the data back into the array. For example, redEffect(pixels) shifts the values in 'pixels' so red becomes more prominent. When it is returned, paintToCanvas() will put 'pixels' back into the 'ctx' (ctx.putImageData(pixels, 0,&nbsp;0).</p>
+                        <p>In <strong>takePhoto()</strong>&nbsp;- Set the &lt;audio&gt; 'currentTime' to 0 to reset the &lt;audio&gt; if it is currently playing. Then .play() the &lt;audio&gt;. Next create a variable 'data' that uses 'toDataURL('image/jpeg')' and a variable 'link' that creates an &lt;a&gt; element. Set the 'link' to equal the&nbsp;'data'</p>
+                        <p>On the link also 'setAttribute' to ensure the link downloads the image, with a specific name. Then set the .innerHTML to an &lt;img&gt; with a 'src="${data}". This creates both the image thumbnail, and the download link for that&nbsp;image.</p>
+                        <p>Finally, insert the image at the beginning of the 'strip' buy using .insertBefore (strip.insertBefore(link, strip.firstChild)).</p>
+
+                        <!-- CodePen -->
+                        <p class="codepen" data-height="330" data-theme-id="dark" data-default-tab="js" data-user="CoreyNoble" data-slug-hash="pXKGrj" style="height: 330px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="JavaScript30 - 19 - Webcam Fun">
+                        <span>See the Pen <a href="https://codepen.io/CoreyNoble/pen/pXKGrj/">
+                        JavaScript30 - 19 - Webcam Fun</a> by Corey Noble (<a href="https://codepen.io/CoreyNoble">@CoreyNoble</a>)
+                        on <a href="https://codepen.io">CodePen</a>.</span>
+                        </p>
+                        <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+        
+<!-- JavaScript30 | 19 | Webcam Fun -->
+<div id="javascript30-19" class="section">
+    <div class="row">
+        <div class="small-12 column">
+            <div id="photobooth">
+                <div class="row">
+                    <div class="small-12 large-6 columns">
+                        <canvas id="photo"></canvas>
+                        <video id="player"></video>
+                    </div>
+
+                    <div class="controls small-12 large-6 columns">
+                        <h2 class="h4">Controls:</h2>
+                        <ul class="accordion" data-accordion data-allow-all-closed="true">
+                            <li class="accordion-item" data-accordion-item="">
+                                <!-- Title -->
+                                <a href="#" class="accordion-title" aria-controls="green-screen" role="tab" id="green-screen" aria-expanded="false" aria-selected="false"><h3 class="h5">Green Screen Colour Knockout</h3></a>
+
+                                <div class="accordion-content" data-tab-content="" role="tabpanel" aria-labelledby="green-screen" aria-hidden="true" id="green-screen" style="display: none;">
+                                    <!-- Content -->
+                                    <div class="row rgb">
+                                        <div class="small-12 columns">
+                                            <label for="greenScreen">Knockout Colour</label>
+                                            <input type="radio" name="filterInput" value="greenScreen">
+                                        </div>
+
+                                        <div class="small-6 medium-4 columns">
+                                            <label for="rmin">Red Min:</label>
+                                            <input type="range" min=0 max=255 name="rmin">
+                                            <label for="rmax">Red Max:</label>
+                                            <input type="range" min=0 max=255 name="rmax">
+                                        </div>
+
+                                        <div class="small-6 medium-4 columns">
+                                            <label for="gmin">Green Min:</label>
+                                            <input type="range" min=0 max=255 name="gmin">
+                                            <label for="gmax">Green Max:</label>
+                                            <input type="range" min=0 max=255 name="gmax">
+                                        </div>
+
+                                        <div class="small-6 medium-4 columns end">         
+                                            <label for="bmin">Blue Min:</label>
+                                            <input type="range" min=0 max=255 name="bmin">
+                                            <label for="bmax">Blue Max:</label>
+                                            <input type="range" min=0 max=255 name="bmax">
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="accordion-item" data-accordion-item="">
+                                <!-- Title -->
+                                <a href="#" class="accordion-title" aria-controls="filters" role="tab" id="filters" aria-expanded="false" aria-selected="false"><h3 class="h5">Filters</h3></a>
+
+                                <div class="accordion-content" data-tab-content="" role="tabpanel" aria-labelledby="filters" aria-hidden="true" id="filters" style="display: none;">
+                                    <!-- Content -->
+                                    <div class="row">
+                                        <div class="small-12 medium-6 columns">
+                                            <label for="redShift">Red Shift</label>
+                                            <input type="radio" name="filterInput" value="redShift">
+                                        </div>
+                                        <div class="small-12 medium-6 columns">
+                                            <label for="rgbShift">RGB Split</label>
+                                            <input type="radio" name="filterInput" value="rgbShift">
+                                        </div>
+                                        <!-- <div class="small-12 medium-4 columns">
+                                            <label for="ghosting">Ghosting</label>
+                                            <input type="checkbox" name="ghosting">
+                                        </div> -->
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        
+                        <button id="photoCTA">Take Photo</button>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="small-12 columns">
+                        <div class="strip"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<audio class="snap" src="{{root}}assets/sounds/javascript30/19-webcam-fun/snap.mp3" hidden></audio>
+
+<script src="{{root}}assets/js/javascript30/19-webcam-fun.js"></script>

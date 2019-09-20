@@ -1,0 +1,144 @@
+---
+title: Custom Video Player | JavaScript30 | Corey Noble
+description: Lesson 11. Build a custom HTML5 video player.
+canonical: https://corey-noble.com/portfolio/development/javascript30/11-custom-video-player.html
+---
+
+<!-- Introduction -->
+<div class="js30-intro section white">
+    <div class="row">
+        <div class="small-12 column">
+            <!-- Back CTA -->
+            <p class="back-cta"><small><strong><a href="{{root}}portfolio/development/javascript30.html" title="Return to the blog landing page">&lt;&nbsp;Back to JavaScript&nbsp;30</a></strong></small></p>
+
+            <!-- Title -->
+            <h1>Custom Video Player</h1>
+
+            <!-- Accordion -->
+            <ul class="accordion" data-accordion data-allow-all-closed="true">
+                <li class="accordion-item" data-accordion-item="">
+                    <!-- Title -->
+                    <a href="#" class="accordion-title" aria-controls="" role="tab" id="project-synopsis" aria-expanded="false" aria-selected="false">
+                        <h2 class="h5">Project Synopsis and&nbsp;Code</h2>
+                    </a>
+                    <!-- Content -->
+                    <div class="accordion-content" data-tab-content="" role="tabpanel" aria-labelledby="Project Synopsis and Code" aria-hidden="true" id="project-synopsis" style="display: none;">
+                        <p>In this lesson I create a custom video&nbsp;player.</p>
+                        <p>First I grab all of the required elements and put them into variables. I <strong>listen</strong> for the following&nbsp;events:</p>
+                        <ul>
+                            <li>
+                                <strong>&lt;video&gt;</strong>
+                                <ul>
+                                    <li>'click', togglePlay()</li>
+                                    <li>'play', updateButton()</li>
+                                    <li>'pause', updateButton()</li>
+                                    <li>'timeupdate', handleProgress()</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <strong>.toggle</strong>
+                                <ul>
+                                    <li>'click', togglePlay()</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <strong>[data-skip]</strong>
+                                <ul>
+                                    <li>'click', skip()</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <strong>.player__slider</strong>
+                                <ul>
+                                    <li>'change', handleRangeUpdate()</li>
+                                    <li>'mousemove', handleRangeUpdate()</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <strong>.progress</strong>
+                                <ul>
+                                    <li>'click', scrub(e). Here I scrub the video to the clicked event&nbsp;location.</li>
+                                    <li>'mousemove', (e)&nbsp;=> mousedown&nbsp;&&&nbsp;scrub(e). Here I'm making sure to only scrub the video while the mouse is down and&nbsp;moving.</li>
+                                    <li>'mousedown', ()&nbsp;=> mousedown&nbsp;=&nbsp;true</li>
+                                    <li>'mouseup', ()&nbsp;=> mousedown&nbsp;=&nbsp;false</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <br />
+                        <p><strong>Functions</strong></p>
+                        <ul>
+                            <li>
+                                <strong>togglePlay()</strong>
+                                <ul>
+                                    <li>If the video is paused, set the video to playing, if the video is playing, set the video to&nbsp;paused.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <strong>updateButton()</strong>
+                                <ul>
+                                    <li>If the video is paused, set the text to '►', if the video is playing, set the text to&nbsp;'❚❚'.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <strong>skip()</strong>
+                                <ul>
+                                    <li>Calculate a new 'currentTime' on the video using the value from the [data-skip]&nbsp;attribute.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <strong>handleRangeUpdate()</strong>
+                                <ul>
+                                    <li>Handle updated slider input values. Set the video[this.name] value to this.value. For example, set the volume to the new value on the volume&nbsp;slider.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <strong>handleProgress()</strong>
+                                <ul>
+                                    <li>Calculate the 'percent' remaining ((video.currentTime&nbsp;/ video.duration)&nbsp;*100). Then update the width of the 'progressBar' to match the 'percent' by injecting 'percent' into the style attribute (progressBar.style.flexBasis =&nbsp;`${percent}%`).</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <strong>scrub(e)</strong>
+                                <ul>
+                                    <li>figure out the 'scrubTime' ((e.offsetX&nbsp;/ progress.offsetWidth) *&nbsp;video.duration). Then set the video time to the 'scrubTime'.</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                        <!-- CodePen -->
+                        <p class="codepen" data-height="330" data-theme-id="dark" data-default-tab="js" data-user="CoreyNoble" data-slug-hash="ewKxgz" style="height: 330px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="JavaScript30 - 11 - Custom Video Player">
+                        <span>See the Pen <a href="https://codepen.io/CoreyNoble/pen/ewKxgz/">
+                        JavaScript30 - 11 - Custom Video Player</a> by Corey Noble (<a href="https://codepen.io/CoreyNoble">@CoreyNoble</a>)
+                        on <a href="https://codepen.io">CodePen</a>.</span>
+                        </p>
+                        <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+            
+<!-- JavaScript30 | 11 | Custom Video Player -->
+<div id="javascript30-11" class="section">
+    <div class="row">
+        <div class="small-12 column">
+            <div class="player">
+                <video class="player__video viewer" src="{{root}}assets/video/javascript30/11-custom-video-player/11-custom-video-player-example.mp4"></video>
+            
+                <div class="player__controls">
+                    <div class="progress">
+                    <div class="progress__filled"></div>
+                    </div>
+                    <button class="player__button toggle" title="Toggle Play">►</button>
+                    <input type="range" name="volume" class="player__slider" min="0" max="1" step="0.05" value="1">
+                    <input type="range" name="playbackRate" class="player__slider" min="0.5" max="2" step="0.1" value="1">
+                    <button data-skip="-10" class="player__button">« 10s</button>
+                    <button data-skip="25" class="player__button">25s »</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="{{root}}assets/js/javascript30/11-custom-video-player.js"></script>

@@ -17,6 +17,7 @@ h1,.h1,h2,.h2,h3,.h3,h4,.h4,h5,.h5,h6,.h6{
   font-weight: normal;
   padding: 0;
   margin: 0;
+  word-break: break-word;
 }
 
 h1,.h1{
@@ -75,10 +76,19 @@ p,ul,ol,li{
   font-weight: lighter;
   margin: 0;
   padding: 0;
+  word-break: break-word;
 }
 
 ol, ul {
-    margin-left: 2rem;
+  margin-left: 2rem;
+
+  li{
+    margin-top: 0.5em;
+
+    &.h1, &.h2, &.h3, &.h4, &.h4, &.h6{
+      margin-top: 0.5em;
+    }
+  }
 }
 
 p, ul, ol{
@@ -106,6 +116,5 @@ ul{
 
   li{
     margin-left: 1em;
-    margin-bottom: 1em;
   }
 }

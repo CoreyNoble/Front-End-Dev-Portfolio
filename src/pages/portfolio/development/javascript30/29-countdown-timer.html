@@ -1,0 +1,106 @@
+---
+title: Countdown Timer | JavaScript30 | Corey Noble
+description: Lesson 29. Build a countdown timer.
+canonical: https://corey-noble.com/portfolio/development/javascript30/29-countdown-timer.html
+---
+
+<!-- Introduction -->
+<div class="js30-intro section white">
+    <div class="row">
+        <div class="small-12 column">
+            <!-- Back CTA -->
+            <p class="back-cta"><small><strong><a href="{{root}}portfolio/development/javascript30.html" title="Return to the blog landing page">&lt;&nbsp;Back to JavaScript&nbsp;30</a></strong></small></p>
+
+            <!-- Title -->
+            <h1>Countdown Timer</h1>
+
+            <!-- Accordion -->
+            <ul class="accordion" data-accordion data-allow-all-closed="true">
+                <li class="accordion-item" data-accordion-item="">
+                    <!-- Title -->
+                    <a href="#" class="accordion-title" aria-controls="" role="tab" id="project-synopsis" aria-expanded="false" aria-selected="false">
+                        <h2 class="h5">Project Synopsis and&nbsp;Code</h2>
+                    </a>
+                    <!-- Content -->
+                    <div class="accordion-content" data-tab-content="" role="tabpanel" aria-labelledby="Project Synopsis and Code" aria-hidden="true" id="project-synopsis" style="display: none;">
+                        <p>In this lesson I create a countdown timer&nbsp;application.</p>
+                        <p>First I initialize a 'countdown' variable. Then I get the following elements: 'timerDisplay', 'endTime', [data-time]. Then I <strong>listen</strong> for the following&nbsp;events:</p>
+                        <ul>
+                            <li>
+                                <strong>[data-time]</strong>
+                                <ul>
+                                    <li>'click', startTimer()</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <strong>document.customForm</strong>
+                                <ul>
+                                    <li>'submit', function(e)&nbsp;{}</li>
+                                    <li>First prevent the event default to ensure the page doesn't refresh (e.prefentDefault();). Then set 'mins' to 'this.minutes.value' and run timer(mins *&nbsp;60) to send the minutes as seconds into the timer()&nbsp;function.</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <p>In <strong>startTimer()</strong>&nbsp;- Set 'seconds' to the [data-time] value (parseInt(this.dataset.time)). Then run&nbsp;timer(seconds).</p>
+                        <p>In <strong>timer(seconds)</strong>&nbsp;- First clearInterval(countdown). Next set 'now' and 'then', both are in&nbsp;milliseconds.</p>
+                        <p>Then run <strong>displayTimeLeft(seconds)</strong> and <strong>displayEndTime(then)</strong>. Finally set the&nbsp;<strong>'countdown'</strong>.</p>
+                        <ul>
+                            <li>In <strong>displayTimeLeft(seconds)</strong>&nbsp;- Get the 'minutes' (seconds&nbsp;/&nbsp;60), 'remainderSeconds' (seconds&nbsp;%&nbsp;60), then 'display' the 'minutes' and 'remainderSeconds' in a string. Prepend a '0' if 'remainderSeconds &lt; 10. Finally, output 'display' to the 'document.title' and to&nbsp;'timerDisplay'.</li>
+                            <li>In <strong>displayEndTime(timestamp)</strong>&nbsp;- Create a new date object 'end' from the passed in 'timestamp'. From that get 'hours' (end.getHours()). Then calculate 'adjustedHour' to adjust to a 12hr clock. Next get 'minutes' (end.getMinutes()). Finally output the end time to&nbsp;'endTime.textContent'.</li>
+                            <li>In <strong>'countdown'</strong>&nbsp;- Every second, set 'secondsLeft' (Math.round((then -&nbsp;Date.now()) /&nbsp;1000). Check if there are any 'secondsLeft', If so, clearInterval(countdown). Either way, displayTimeLeft(secondsLeft).</li>
+                        </ul>
+                        
+                        <!-- CodePen -->
+                        <p class="codepen" data-height="330" data-theme-id="dark" data-default-tab="js" data-user="CoreyNoble" data-slug-hash="WqyPJb" style="height: 330px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="JavaScript30 - 29 - Countdown Timer">
+                        <span>See the Pen <a href="https://codepen.io/CoreyNoble/pen/WqyPJb/">
+                        JavaScript30 - 29 - Countdown Timer</a> by Corey Noble (<a href="https://codepen.io/CoreyNoble">@CoreyNoble</a>)
+                        on <a href="https://codepen.io">CodePen</a>.</span>
+                        </p>
+                        <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+            
+<!-- JavaScript30 | 29 | Countdown Timer -->
+<div id="javascript30-29" class="section">
+    <div class="row">
+        <div class="small-12 column">
+            <div class="timer">
+                <div class="timer__controls">
+                    <div class="row" data-equalizer>
+                        <div class="timer__control small-6 large-2 columns" data-equalizer-watch>
+                            <button data-time="20" class="timer__button">20 Secs</button>
+                        </div>
+                        <div class="timer__control small-6 large-2 columns" data-equalizer-watch>
+                            <button data-time="300" class="timer__button">Work 5</button>
+                        </div>
+                        <div class="timer__control small-6 large-2 columns" data-equalizer-watch>
+                            <button data-time="900" class="timer__button">Quick 15</button>
+                        </div>
+                        <div class="timer__control small-6 large-2 columns" data-equalizer-watch>
+                            <button data-time="1200" class="timer__button">Snack 20</button>
+                        </div>
+                        <div class="timer__control small-6 large-2 columns" data-equalizer-watch>
+                            <button data-time="3600" class="timer__button">Lunch Break</button>
+                        </div>
+                        <div class="timer__control small-6 large-2 columns end" data-equalizer-watch>
+                            <div class="contact-form">
+                                <form name="customForm" id="custom">
+                                    <input type="text" name="minutes" placeholder="Enter Minutes">
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="display">
+                    <h1 class="display__time-left"></h1>
+                    <p class="display__end-time"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="{{root}}assets/js/javascript30/29-countdown-timer.js"></script>

@@ -1,0 +1,58 @@
+---
+title: Speech Detection | JavaScript30 | Corey Noble
+description: Lesson 20. Detect speech and output that speech to text in the browser.
+canonical: https://corey-noble.com/portfolio/development/javascript30/20-speech-detection.html
+---
+
+<!-- Introduction -->
+<div class="js30-intro section white">
+    <div class="row">
+        <div class="small-12 column">
+            <!-- Back CTA -->
+            <p class="back-cta"><small><strong><a href="{{root}}portfolio/development/javascript30.html" title="Return to the blog landing page">&lt;&nbsp;Back to JavaScript&nbsp;30</a></strong></small></p>
+
+            <!-- Title -->
+            <h1>Speech Detection</h1>
+
+            <!-- Accordion -->
+            <ul class="accordion" data-accordion data-allow-all-closed="true">
+                <li class="accordion-item" data-accordion-item="">
+                    <!-- Title -->
+                    <a href="#" class="accordion-title" aria-controls="" role="tab" id="project-synopsis" aria-expanded="false" aria-selected="false">
+                        <h2 class="h5">Project Synopsis and&nbsp;Code</h2>
+                    </a>
+                    <!-- Content -->
+                    <div class="accordion-content" data-tab-content="" role="tabpanel" aria-labelledby="Project Synopsis and Code" aria-hidden="true" id="project-synopsis" style="display: none;">
+                        <p>In this lesson I detect speech in the browser and output the resulting string to the&nbsp;DOM.</p>
+                        <p>First I initialize the speech recognition in the browser(window.SpeechRecognition&nbsp;= window.SpeechRecognition || window.webkitspeechRecognition). Then create a new instance of speech recognition (new SpeechRecognition()) and start it (recognition.start()).</p>
+                        <p>I then create a &lt;p&gt; element and .appendChild(p) to '.words'. This outputs the text spoken to DOM element the&nbsp;browser.</p>
+                        <p>I <strong>listen</strong> for a 'result(e)' on 'recognition' which is where I transcribe the result into text and output that string to the&nbsp;browser.</p>
+                        <p>In <strong>result(e)</strong>&nbsp;- Create a 'transcript' array from 'e.results'. Then .map() over that array to get inside of the first node that is returned (result => (.map()result[0])). Next .map() over the 'result.transcript' key and .join('') the array into one string. Then set 'p.textContent&nbsp;=&nbsp;transcript'.</p>
+                        <p>Next check if the result is finished (e.results[0].isFinal). If so, create a new &lt;p&gt; element and append it to&nbsp;'.words'.</p>
+                        <p>It's also possible to check if the 'transcript' contains key phrases using .includes() (transcript.includes('unicorn')).</p>
+                        <p>I <strong>listen</strong> to the 'end' event on 'recognition' in-order to re-start it every time the line ends ('end',&nbsp;recognition.start).</p>
+
+                        <!-- CodePen -->
+                        <p class="codepen" data-height="330" data-theme-id="dark" data-default-tab="js" data-user="CoreyNoble" data-slug-hash="YovBxj" style="height: 330px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="JavaScript30 - 20 - Speech Detection">
+                        <span>See the Pen <a href="https://codepen.io/CoreyNoble/pen/YovBxj/">
+                        JavaScript30 - 20 - Speech Detection</a> by Corey Noble (<a href="https://codepen.io/CoreyNoble">@CoreyNoble</a>)
+                        on <a href="https://codepen.io">CodePen</a>.</span>
+                        </p>
+                        <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+            
+<!-- JavaScript30 | 20 | Speech Detection -->
+<div id="javascript30-20" class="section">
+    <div class="row">
+        <div class="small-12 column">
+            <div class="words" contenteditable></div>
+        </div>
+    </div>
+</div>
+
+<script src="{{root}}assets/js/javascript30/20-speech-detection.js"></script>
