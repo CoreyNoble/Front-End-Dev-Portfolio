@@ -129,12 +129,33 @@ body{
     color: darken($black, 33%);  
   }
 
-  
   a.thrillworks-text{
     color: darken($thrillworks, 18%);
 
     &:hover{
       color: darken($thrillworks, 21%);
+    }
+  }
+
+  a.cta{
+    &.project-cta{
+      background: $blue;
+      border-color: $grey;
+
+      &:hover{
+        background: darken($blue, 10%);
+        border-color: $black;
+      }
+    }
+
+    &.code-cta{
+      background: $white;
+      border-color: $grey;
+  
+      &:hover{
+        background: darken($white, 10%);
+        border-color: $black;
+      }
     }
   }
 
@@ -184,6 +205,24 @@ body{
 
   a:hover, a:focus{
     color: darken($white, 33%);
+  }
+
+  a.cta{
+    &.project-cta{
+      background: $blue;
+
+      &:hover{
+        background: darken($blue, 10%);
+      }
+    }
+
+    &.code-cta{
+      background: $white;
+  
+      &:hover{
+        background: darken($white, 10%);
+      }
+    }
   }
 
   .accordion{
@@ -263,6 +302,29 @@ body{
 
   a:hover, a:focus{
     color: darken($black, 33%);
+  }
+
+  a.cta{
+    &.project-cta{
+      background: $black;
+      color: $white;
+      border-color: $dark-blue;
+
+      &:hover{
+        background: $background;
+        border-color: $white;
+      }
+    }
+
+    &.code-cta{
+      background: $white;
+      border-color: $dark-blue;
+  
+      &:hover{
+        background: darken($white, 10%);
+        border-color: $white;
+      }
+    }
   }
 }
 
