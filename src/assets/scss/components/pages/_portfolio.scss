@@ -1,4 +1,8 @@
 /* Portfolio */
+.showcase-head{
+  margin-bottom: 3em;
+}
+
 .showcase-1, .showcase-2{
   margin-top: 1em;
   .showcase-example{
@@ -59,6 +63,14 @@
     p{
       margin-bottom: 3em;
     }
+
+    &.margin-top-0-mobile-margin-top-2{
+      margin-top: 2em;
+    
+      @include breakpoint(large){
+        margin-top: 0;
+      }
+    }
   }
 }
 
@@ -77,7 +89,6 @@
     }
   }
 }
-
 
 /* CMS Skills */
 .cms-skillset{
