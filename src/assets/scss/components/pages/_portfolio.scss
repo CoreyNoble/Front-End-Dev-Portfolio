@@ -1,6 +1,10 @@
 /* Portfolio */
 .showcase-head{
-  margin-bottom: 3em;
+  margin-bottom: 2em;
+
+  @include breakpoint(large){
+    margin-bottom: 3em;
+  }
 }
 
 .showcase-1, .showcase-2{
