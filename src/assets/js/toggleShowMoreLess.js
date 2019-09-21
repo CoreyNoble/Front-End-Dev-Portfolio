@@ -16,12 +16,12 @@ const Utils = {
         event.preventDefault();
         
         console.log(this);
-        if (linkText == "show more") {
-            element.textContent = "Show less";
+        if (linkText == "show more +") {
+            element.textContent = "Show less -";
             this.removeClass(excerpt, "excerpt-hidden");
             this.addClass(excerpt, "excerpt-visible");
         } else {
-            element.textContent = "Show more";
+            element.textContent = "Show more +";
             this.removeClass(excerpt, "excerpt-visible");
             this.addClass(excerpt, "excerpt-hidden");
         }

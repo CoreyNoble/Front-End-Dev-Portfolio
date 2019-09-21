@@ -1,5 +1,5 @@
 .excerpt-hidden {
-  height: 10rem;
+  height: 5rem;
   overflow: hidden;
   position: relative;
 
@@ -12,9 +12,22 @@
     height: 64px;
     background: linear-gradient(to bottom, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 1) 100% );
   }
+
+  &.large-excerpt{
+    height: 10rem;
+  }
 }
 
 .excerpt-visible {
   height: auto;
   overflow: auto;
-}  
+
+  &.large-excerpt{
+    height: auto;
+  }
+}
+
+.js-show-more{
+  display: block;
+  margin-top: 1em;
+}
