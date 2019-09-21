@@ -9,40 +9,29 @@ canonical: https://corey-noble.com/portfolio/development/javascript-tetris.html
     <div class="row">
         <div class="small-12 column">
             <h1 class="header-no-parallax">JavaScript Tetris</h1>
-            <p class="h5">A web version of the popular game Tetris. Developed with JavaScript. Initial creation based off of a detailed <a href="https://www.youtube.com/watch?v=H2aW5V46khA" target="_blank" title="Follow the lesson by Meth Meth Method that helped me create Tetris using JavaScript">lesson by Meth&nbsp;Meth&nbsp;Method</a>.</p>
+            <p class="h5">A web version of the popular game Tetris. Developed with JavaScript. Built and improved upon after following a detailed <a href="https://www.youtube.com/watch?v=H2aW5V46khA" target="_blank" title="Follow the lesson by Meth Meth Method that helped me create Tetris using JavaScript">lesson by Meth&nbsp;Meth&nbsp;Method</a>.</p>
         
             <!-- Accordion -->
             <ul class="accordion" data-accordion data-allow-all-closed="true">
                 <li class="accordion-item" data-accordion-item="">
                     <!-- Title -->
                     <a href="#" class="accordion-title" aria-controls="" role="tab" id="project-synopsis" aria-expanded="false" aria-selected="false">
-                        <h2 class="h5">Project Synopsis and&nbsp;Code</h2>
+                        <h2 class="h5">Project Code</h2>
                     </a>
                     <!-- Content -->
-                    <div class="accordion-content" data-tab-content="" role="tabpanel" aria-labelledby="Project Synopsis and Code" aria-hidden="true" id="project-synopsis" style="display: none;">
-                        <p>In this lesson I create a Drum Kit application. First I <strong>listen</strong> for the following&nbsp;events:</p>
-                        <ul>
-                            <li>
-                                <strong>'window'</strong>
-                                <ul>
-                                    <li>'keydown', playSound(e)</li>
-                                </ul>
-                            </li>
-                            <li>
-                                <strong>'.key'</strong>
-                                <ul>
-                                    <li>'transitionend', removeTransition(e)</li>
-                                </ul>
-                            </li>
-                        </ul>
-                        <p>In <strong>playSound(e)</strong>&nbsp;- Query the 'document' for two types of elements. The &lt;audio&gt; element, and elements that have a class of '.key'. Check if the event 'keyCode' (e.keyCode) matches the data attribute 'data-key' of the element. If the &lt;audio&gt; element does not exist, exit the&nbsp;function.</p>
-                        <p>Next reset the audio time to 0 (audio.currentTime =&nbsp;0). Then play the &lt;audio&gt; (audio.play();). Also add a class of '.playing' to the '.key' element to animate the&nbsp;UI.</p>
-                        <p>In <strong>removeTransition(e)</strong> - First check if the event .propertyname is not 'transform' If so, exit the function. Otherwise, add a class of '.playing' to the&nbsp;'.key'.</p>
+                    <div class="accordion-content" data-tab-content="" role="tabpanel" aria-labelledby="Project Code" aria-hidden="true" id="project-synopsis" style="display: none;">
+                        <style>
+                            .cp_embed_wrapper{
+                                margin-top: 0;
+                                padding-top: 0;
+                                border-top: none;
+                            }
+                        </style>
 
                         <!-- CodePen -->
-                        <p class="codepen" data-height="330" data-theme-id="dark" data-default-tab="js" data-user="CoreyNoble" data-slug-hash="jjKXXR" style="height: 330px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="JavaScript30 - 1 - Drum Kit">
-                        <span>See the Pen <a href="https://codepen.io/CoreyNoble/pen/jjKXXR/">
-                        JavaScript30 - 1 - Drum Kit</a> by Corey Noble (<a href="https://codepen.io/CoreyNoble">@CoreyNoble</a>)
+                        <p class="codepen" data-height="500" data-theme-id="0" data-default-tab="js" data-user="CoreyNoble" data-slug-hash="YzKdPYv" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="JavaScript Tetris">
+                        <span>See the Pen <a href="https://codepen.io/CoreyNoble/pen/YzKdPYv">
+                        JavaScript Tetris</a> by Corey Noble (<a href="https://codepen.io/CoreyNoble">@CoreyNoble</a>)
                         on <a href="https://codepen.io">CodePen</a>.</span>
                         </p>
                         <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
@@ -70,10 +59,6 @@ canonical: https://corey-noble.com/portfolio/development/javascript-tetris.html
             <div class="tetris-ui small-12 columns" data-equalizer-watch>
                 <h2 id="score-label" class="h4">Score: <strong><span id="score" aria-labelledby="Score Count"></span></strong></h2>
             </div>
-            <!-- Next Piece -->
-            <!-- <div class="tetris-ui small-12 large-6 columns" data-equalizer-watch>
-                <h2 id="score-label" class="h4">Next: <strong><span id="next-piece" aria-labelledby="Next Piece"></span></strong></h2>
-            </div> -->
         </div>
 
         <!-- Game board -->
@@ -96,17 +81,14 @@ canonical: https://corey-noble.com/portfolio/development/javascript-tetris.html
             <div class="small-4 columns">
                 <h4 class="h5">Left:</h4>
                 <div class="k65 key"><div class="keycap">A</div></div>
-                <!-- <div class="k37 key"><div class="keycap">&#8592;</div></div> -->
             </div>
             <div class="small-4 columns">
                 <h4 class="h5">Right:</h4>
                 <div class="k68 key"><div class="keycap">D</div></div>
-                <!-- <div class="k39 key"><div class="keycap">&#8594;</div></div> -->
             </div>
             <div class="small-4 columns">
                 <h4 class="h5">Down:</h4>
                 <div class="k83 key"><div class="keycap">S</div></div>
-                <!-- <div class="k32 key"><div class="keycap">Space</div></div> -->
             </div>
         </div>
         <div class="row rotate">
@@ -118,12 +100,10 @@ canonical: https://corey-noble.com/portfolio/development/javascript-tetris.html
             <div class="small-4 columns">
                 <h4 class="h5">Left:</h4>
                 <div class="k79 key"><div class="keycap">O</div></div>
-                <!-- <div class="k38 key"><div class="keycap">&#8593;</div></div> -->
             </div>
             <div class="small-4 columns end">
                 <h4 class="h5">Right:</h4>
                 <div class="k80 key"><div class="keycap">P</div></div>
-                <!-- <div class="k40 key"><div class="keycap">&#8595;</div></div> -->
             </div> 
         </div>
     </div>
