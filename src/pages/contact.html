@@ -13,17 +13,17 @@ canonical: https://corey-noble.com/contact.html
 <div id="no-captcha" class="section black">
   <div class="row">
     <div id="contact-intro" class="small-12 column">
-      <h2 data-aos="fade" data-aos-delay="100">I look forward to hearing from&nbsp;you!</h2>
-      <p class="h5" data-aos="fade" data-aos-delay="100">Thank you for showing interest in me as a developer. I am excited to start working with you! Please fill out the form
+      <h2>I look forward to hearing from&nbsp;you!</h2>
+      <p class="h5">Thank you for showing interest in me as a developer. I am excited to start working with you! Please fill out the form
         below so we can begin a&nbsp;conversation.</p>
       <p id="captcha-none" class="captcha-error h5 hide" aria-hidden="true"><em>Please validate your submission with Google ReCaptcha.</em></p>
       <p id="captcha-failed" class="captcha-error h5 hide" aria-hidden="true"><em>You have failed Google ReCaptcha validation. Please try&nbsp;again.</em></p>
     </div>
 
     <!-- CONTACT FORM -->
-    <div class="contact-form small-12 column">
+    <div class="contact-form small-12 column" data-aos="fade-up" data-aos-delay="100">
       <form method="post" action="{{root}}mailsend.php" method="post">
-        <div class="row" data-aos="fade" data-aos-delay="100">
+        <div class="row">
           <label for="firstName">
             <h3 class="h5">First Name</h3>
             <input type="text" name="firstName" maxlength="50" required />
