@@ -83,9 +83,7 @@ nav{
         }
       }
 
-      &:nth-child(2){
-        margin-left: -160px;
-        
+      &:nth-child(2){        
         @media screen and (max-width : 940px) {
           margin-left: 0; 
         }
@@ -147,6 +145,68 @@ nav{
         }
       }
     }
+
+    #nav-socials{
+      display: inline;
+      float: right;
+      margin-top: -3px;
+      border-bottom: none;
+
+      @media screen and (max-width : 940px) {
+        border-bottom: 1px solid $white;
+      }
+
+      a{
+        min-width: unset;
+        width: unset;
+        border-bottom: none;
+        display: inline-block;
+        float: left;
+        margin-right: 0.75em;
+
+        &:last-child{
+          margin-right: 1em;
+        }
+
+        &:hover, &:visited, &:focus{
+          background-color: inherit;
+        }
+
+        @media screen and (max-width : 940px) {
+          min-width: unset;
+        }
+
+        &#nav-github-link{
+          margin-right: 0.75em;
+
+          @media screen and (max-width : 940px) {
+            margin-right: 0;
+          }
+        }
+
+        img{
+          margin: 0;
+          padding: 0;
+          max-width: 2em;
+
+          -webkit-filter: grayscale(100%);
+          -webkit-transition: .25s ease-in-out;
+          -moz-filter: grayscale(100%);
+          -moz-transition: .25s ease-in-out;
+          -o-filter: grayscale(100%);
+          -o-transition: .25s ease-in-out;
+
+          &:hover, &:focus{
+            -webkit-filter: grayscale(0%);
+            -webkit-transition: .25s ease-in-out;
+            -moz-filter: grayscale(0%);
+            -moz-transition: .25s ease-in-out;
+            -o-filter: grayscale(0%);
+            -o-transition: .25s ease-in-out;
+          }
+        }
+      }
+    }
   }
   
   a{
@@ -194,7 +254,6 @@ nav{
 
     &:focus{
       background-color: darken($background, 7%);
-      border-bottom: none;
       text-decoration: none;
     }
 
