@@ -2,6 +2,7 @@
   height: 5rem;
   overflow: hidden;
   position: relative;
+  transition:height 0.5s ease-out;
 
   &:after {
     content: "";
@@ -19,8 +20,9 @@
 }
 
 .excerpt-visible {
+  overflow: hidden;
   height: auto;
-  overflow: auto;
+  transition:height 0.5s ease-out;
 
   &.large-excerpt{
     height: auto;
