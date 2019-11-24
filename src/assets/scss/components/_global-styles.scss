@@ -129,6 +129,18 @@ body{
     color: darken($black, 33%);  
   }
 
+  a.evertz-text, a.evertz-text:visited{
+    background-color: $background;
+    padding: 0 0.2rem;
+    transition: all 0.4s ease;
+
+    &:hover, &:focus{
+      background-color: $white;
+      color: $background;
+      text-decoration: underline;
+    }
+  }
+
   a.thrillworks-text{
     color: darken($thrillworks, 18%);
 
@@ -371,6 +383,14 @@ body{
 	color: $dark-blue;
 }
 
+a.evertz-text{
+  color: $evertz;
+
+  &:hover{
+    color: darken($evertz, 10%);
+  }
+}
+
 a.thrillworks-text{
     color: $thrillworks;
 
@@ -582,5 +602,52 @@ button{
     -o-animation-delay: 0.5s;
     -ms-animation-delay: 0.5s;
     animation-delay: 0.5s;
+  }
+}
+
+#socials{
+  display: inline;
+  float: left;
+  margin-top: 0.5rem;
+  margin-bottom: 2em;
+  border-bottom: none;
+
+  a{
+    min-width: unset;
+    width: unset;
+    border-bottom: none;
+    display: inline-block;
+    float: left;
+    margin-right: 1.25em;
+
+    &:hover, &:visited, &:focus{
+      background-color: inherit;
+    }
+
+    @media screen and (max-width : 940px) {
+      min-width: unset;
+    }
+
+    img{
+      margin: 0;
+      padding: 0;
+      max-width: 2.75em;
+
+      -webkit-filter: grayscale(100%);
+      -webkit-transition: .25s ease-in-out;
+      -moz-filter: grayscale(100%);
+      -moz-transition: .25s ease-in-out;
+      -o-filter: grayscale(100%);
+      -o-transition: .25s ease-in-out;
+
+      &:hover, &:focus{
+        -webkit-filter: grayscale(0%);
+        -webkit-transition: .25s ease-in-out;
+        -moz-filter: grayscale(0%);
+        -moz-transition: .25s ease-in-out;
+        -o-filter: grayscale(0%);
+        -o-transition: .25s ease-in-out;
+      }
+    }
   }
 }
