@@ -1,61 +1,65 @@
 // PARALLAX CONTAINERS
-.parallax, .parallax-large{
+.parallax,
+.parallax-large {
   display: table;
   width: 100%;
   z-index: 1;
-  -moz-box-shadow: inset  0 -1.5em 1.5em -1.5em #000000;
-  -webkit-box-shadow: inset  0 -1.5em 1.5em -1.5em #000000;
-  box-shadow: inset  0 -1.5em 1.5em -1.5em #000000;
+  -moz-box-shadow: inset 0 -1.5em 1.5em -1.5em #000000;
+  -webkit-box-shadow: inset 0 -1.5em 1.5em -1.5em #000000;
+  box-shadow: inset 0 -1.5em 1.5em -1.5em #000000;
 
-  h1,.h1{
+  h1,
+  .h1 {
     display: table-cell;
     vertical-align: middle;
-    text-align:center;
+    text-align: center;
     color: #ffffff;
     margin: 0;
     padding: 0;
     font-size: 4em;
     text-shadow: 0.1em 0.1em 0.1em rgba(0, 0, 0, 0.66);
 
-    small{
+    small {
       color: #ffffff;
-      font-size: .5em;
+      font-size: 0.5em;
     }
 
-    hr{
-     border: 0;
-     height: 4px;
-     background: #ffffff;
-     box-shadow: 3px 3px 3px rgba(0,0,0,0.6);
-     width: 15em;
+    hr {
+      border: 0;
+      height: 4px;
+      background: #ffffff;
+      box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.6);
+      width: 15em;
     }
   }
 }
 
 .parallax {
   height: 31em;
-    
+
   @media screen and (max-width: 40em) {
     height: 15em;
   }
-    
+
   @media screen and (min-width: 40.063em) and (max-width: 64em) {
     height: 24em;
   }
-    
-  h1,.h1{
+
+  h1,
+  .h1 {
     padding-top: 0.5em;
-      
+
     @media screen and (max-width: 40em) {
       font-size: 2em;
     }
-      
+
     @media screen and (min-width: 40.063em) and (max-width: 64em) {
       padding-top: 0.25em;
     }
   }
-    
-  h2,.h2{ 
+
+  h2,
+  .h2 {
     @media screen and (max-width: 40em) {
       font-size: 1em;
     }
@@ -64,28 +68,30 @@
 
 .parallax-large {
   height: 40em;
-    
+
   @media screen and (max-width: 40em) {
     height: 18em;
   }
-    
+
   @media screen and (min-width: 40.063em) and (max-width: 64em) {
     height: 28em;
   }
-    
-  h1,.h1{
+
+  h1,
+  .h1 {
     padding-top: 1.5em;
-      
+
     @media screen and (max-width: 40em) {
       font-size: 2.5em;
     }
-      
+
     @media screen and (min-width: 40.063em) and (max-width: 64em) {
       padding-top: 1.75em;
     }
   }
-    
-  h2,.h2{ 
+
+  h2,
+  .h2 {
     @media screen and (max-width: 40em) {
       font-size: 1em;
     }
@@ -94,20 +100,22 @@
 
 // GEOMETRIC HERO
 #parallax-hero-1 {
-  background: linear-gradient(rgba(0,0,0,0.15), rgba(0,0,0,0.15)), url(../img/aesthetic-geometry.jpg) no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)),
+    url(../img/aesthetic-geometry.jpg) no-repeat;
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   height: 31em;
   width: 100%;
-    
+
   @media screen and (max-width: 40em) {
     height: 15.5em;
   }
-    
+
   @media screen and (min-width: 40.063em) and (max-width: 64em) {
-    background: linear-gradient(rgba(0,0,0,0.15), rgba(0,0,0,0.15)), url(../img/aesthetic-geometry-tablet.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)),
+      url(../img/aesthetic-geometry-tablet.jpg);
     height: 22.5em;
   }
 }
@@ -129,7 +137,7 @@
     background-position: 0 -2em;
     background-position-x: center;
   }
-    
+
   @media screen and (min-width: 40.063em) and (max-width: 64em) {
     background: url(/assets/img/toronto-city-scape-tablet.jpg);
     height: 22.5em;
@@ -141,8 +149,9 @@
     background-position: 0 -9.5em;
     background-position-x: center;
   }
-    
-  h1,.h1{
+
+  h1,
+  .h1 {
     background-color: rgba(0, 0, 0, 0.5);
   }
 }
@@ -152,17 +161,30 @@
   background: url(../img/leather-tile.jpg) repeat;
   background-attachment: fixed;
   height: 31em;
-      
+
   @media screen and (max-width: 40em) {
     height: 15.5em;
   }
-    
+
   @media screen and (min-width: 40.063em) and (max-width: 64em) {
     height: 22.5em;
   }
 }
 
-#parallax-index, #parallax-portfolio, #parallax-frameworks-portfolio, #parallax-framework-example-1, #parallax-framework-example-2, #parallax-cms-portfolio, #parallax-cms-skillset, #parallax-wordpress-example-1, #parallax-wordpress-example-2, #parallax-about, #parallax-services, #parallax-contact, #parallax-site-index, #parallax-404 {
-    background-attachment: fixed;
-    background-size: 100%;
+#parallax-index,
+#parallax-portfolio,
+#parallax-frameworks-portfolio,
+#parallax-framework-example-1,
+#parallax-framework-example-2,
+#parallax-cms-portfolio,
+#parallax-cms-skillset,
+#parallax-wordpress-example-1,
+#parallax-wordpress-example-2,
+#parallax-about,
+#parallax-services,
+#parallax-contact,
+#parallax-site-index,
+#parallax-404 {
+  background-attachment: fixed;
+  background-size: 100%;
 }

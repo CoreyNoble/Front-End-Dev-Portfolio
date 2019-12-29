@@ -1,181 +1,194 @@
-#javascript-tetris{
-    background: #468CCF;
-    background: linear-gradient(to top,  #5FA6A6,  #7FC7C7);
-    background: -ms-linear-gradient(to top,  #5FA6A6,  #7FC7C7);
-    background: -webkit-gradient(linear, to left top, to left bottom, from(#5FA6A6), to(#7FC7C7));
-    background: -moz-linear-gradient(to top,  #5FA6A6,  #7FC7C7);
-    border: 3px solid $background;
+#javascript-tetris {
+  background: #468ccf;
+  background: linear-gradient(to top, #5fa6a6, #7fc7c7);
+  background: -ms-linear-gradient(to top, #5fa6a6, #7fc7c7);
+  background: -webkit-gradient(
+    linear,
+    to left top,
+    to left bottom,
+    from(#5fa6a6),
+    to(#7fc7c7)
+  );
+  background: -moz-linear-gradient(to top, #5fa6a6, #7fc7c7);
+  border: 3px solid $background;
 
-    .tetris-title{
-        background-color: $background;
-        
-        h2{
-            color: $white;
-            text-align: center;
-            margin-top: 0.5rem;
-            margin-bottom: 0.5rem;
-        }
+  .tetris-title {
+    background-color: $background;
+
+    h2 {
+      color: $white;
+      text-align: center;
+      margin-top: 0.5rem;
+      margin-bottom: 0.5rem;
     }
+  }
 
-    .tetris-ui{
-        background-color: $black;
-        border-top: 2px solid $white;
-        border-bottom: 2px solid $white;
+  .tetris-ui {
+    background-color: $black;
+    border-top: 2px solid $white;
+    border-bottom: 2px solid $white;
 
-        // &:last-child{
-        //     border-left: none;
-        //     border-top: none;
+    // &:last-child{
+    //     border-left: none;
+    //     border-top: none;
 
-        //     @include breakpoint (large){
-        //         border-left: 2px solid $white;
-        //         border-top: 2px solid $white;
-        //     }
-        // }
+    //     @include breakpoint (large){
+    //         border-left: 2px solid $white;
+    //         border-top: 2px solid $white;
+    //     }
+    // }
 
-        h2{
-            color: $white;
-            margin: 0.25rem 0;
-        }
+    h2 {
+      color: $white;
+      margin: 0.25rem 0;
     }
+  }
 
-    // Game board
-    #tetris{
-        display: block;
-        margin: 1.5rem auto;
-        height: 25rem;
-        border: 0.33rem solid $white;
-        -webkit-box-shadow: 0px 2px 12px 0px rgba(0,0,0,0.5);
-        -moz-box-shadow: 0px 2px 12px 0px rgba(0,0,0,0.5);
-        box-shadow: 0px 2px 12px 0px rgba(0,0,0,0.5);
-    }
+  // Game board
+  #tetris {
+    display: block;
+    margin: 1.5rem auto;
+    height: 25rem;
+    border: 0.33rem solid $white;
+    -webkit-box-shadow: 0px 2px 12px 0px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0px 2px 12px 0px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 2px 12px 0px rgba(0, 0, 0, 0.5);
+  }
 }
 
 // Instructions
-#instructions{
+#instructions {
+  margin-top: 2.5rem;
+  padding-left: 0;
+
+  @include breakpoint(large) {
+    margin-top: 0;
+    padding-left: 2.5rem;
+  }
+
+  // General
+  .rotate {
     margin-top: 2.5rem;
-    padding-left: 0;
+  }
 
-    @include breakpoint(large){
-        margin-top: 0;
-        padding-left: 2.5rem;
-    }
+  // Icons
+  .fas {
+    margin-right: 0.5rem;
+  }
 
-    // General
-    .rotate{
-        margin-top: 2.5rem;
-    }
+  .fas.fa-expand-arrows-alt {
+    transform: rotate(45deg);
+  }
 
-    // Icons
-    .fas{
-        margin-right: 0.5rem;
-    }
+  // Text
+  h2 {
+    margin-bottom: 1.5rem;
+  }
 
-    .fas.fa-expand-arrows-alt{
-        transform: rotate(45deg);
-    }
+  h3 {
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid $black;
+  }
 
-    // Text
-    h2{
-        margin-bottom: 1.5rem;
-    }
+  // Keys
+  .key,
+  .f_key {
+    width: 40px;
+    height: 45px;
+    margin: 2px;
+    margin-top: 0.5rem;
+    border-width: 3px 7px 10px;
+    border-style: solid;
+    border-radius: 4px;
+    float: left;
+    transition: all ease 0.02s;
+  }
+  .key.pressed,
+  .f_key.pressed {
+    -webkit-transform: scale(0.95, 0.95);
+    -moz-transform: scale(0.95, 0.95);
+    -ms-transform: scale(0.95, 0.95);
+    -o-transform: scale(0.95, 0.95);
+    transform: scale(0.95, 0.95);
+    color: $black;
+    background: $blue;
+    border-color: $blue lighten($blue, 20%) $blue;
 
-    h3{
-        padding-bottom: 1rem;
-        margin-bottom: 1rem;
-        border-bottom: 1px solid $black;
+    .keycap {
+      background: darken(#d3cfcc, 45%);
+      background: -webkit-linear-gradient(
+        left,
+        $blue,
+        lighten($blue, 20%),
+        $blue
+      );
+      background: -moz-linear-gradient(left, $blue, lighten($blue, 20%), $blue);
+      background: -ms-linear-gradient(left, $blue, lighten($blue, 20%), $blue);
+      background: -o-linear-gradient(left, $blue, lighten($blue, 20%), $blue);
+      background: linear-gradient(to right, $blue, lighten($blue, 20%), $blue);
     }
+  }
 
-    // Keys
-    .key, .f_key {
-        width: 40px;
-        height: 45px;
-        margin: 2px;
-        margin-top: 0.5rem;
-        border-width: 3px 7px 10px;
-        border-style: solid;
-        border-radius: 4px;
-        float: left;
-        transition: all ease 0.02s;
-    }
-    .key.pressed, .f_key.pressed {
-        -webkit-transform: scale(0.95, 0.95);
-        -moz-transform: scale(0.95, 0.95);
-        -ms-transform: scale(0.95, 0.95);
-        -o-transform: scale(0.95, 0.95);
-        transform: scale(0.95, 0.95);
-        color: $black;
-        background: $blue;
-        border-color: $blue lighten($blue, 20%) $blue;
+  .key {
+    background: #d3cfcc;
+    border-color: #ece8e4 #dedad6 #c9c4c4;
+  }
 
-        .keycap{
-            background: darken(#d3cfcc, 45%);
-            background: -webkit-linear-gradient(left, $blue, lighten($blue, 20%), $blue);
-            background: -moz-linear-gradient(left, $blue, lighten($blue, 20%), $blue);
-            background: -ms-linear-gradient(left, $blue, lighten($blue, 20%), $blue);
-            background: -o-linear-gradient(left, $blue, lighten($blue, 20%), $blue);
-            background: linear-gradient(to right, $blue, lighten($blue, 20%), $blue);
-        }
-    }
+  .f_key {
+    background: #a8aeb8;
+    border-color: #c4c7cc #adb9cc #96a6bd;
+  }
 
-    .key {
-        background: #d3cfcc;
-        border-color: #ece8e4 #dedad6 #c9c4c4;
-    }
+  .key .keycap {
+    width: 33px;
+    height: 40px;
+    padding: 5px 0 0 7px;
+    font-size: 18px;
+    line-height: 1;
+    background: #f5f3f1;
+    background: -webkit-linear-gradient(left, #e5e2e1, #f5f3f1, #e5e2e1);
+    background: -moz-linear-gradient(left, #e5e2e1, #f5f3f1, #e5e2e1);
+    background: -ms-linear-gradient(left, #e5e2e1, #f5f3f1, #e5e2e1);
+    background: -o-linear-gradient(left, #e5e2e1, #f5f3f1, #e5e2e1);
+    background: linear-gradient(to right, #e5e2e1, #f5f3f1, #e5e2e1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    position: relative;
+  }
 
-    .f_key {
-        background: #a8aeb8;
-        border-color: #c4c7cc #adb9cc #96a6bd;
-    }
+  .f_key .keycap {
+    width: inherit;
+    height: inherit;
+    font-size: 15px;
+    line-height: 45px;
+    text-indent: 7px;
+    background: #cdd3de;
+    background: -webkit-linear-gradient(left, #bbc3d2, #cdd3de, #bbc3d2);
+    background: -moz-linear-gradient(left, #bbc3d2, #cdd3de, #bbc3d2);
+    background: -ms-linear-gradient(left, #bbc3d2, #cdd3de, #bbc3d2);
+    background: -o-linear-gradient(left, #bbc3d2, #cdd3de, #bbc3d2);
+    background: linear-gradient(to right, #bbc3d2, #cdd3de, #bbc3d2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    position: relative;
+  }
 
-    .key .keycap {
-        width: 33px;
-        height: 40px;
-        padding: 5px 0 0 7px;
-        font-size: 18px;
-        line-height: 1;
-        background: #f5f3f1;
-        background: -webkit-linear-gradient(left, #e5e2e1, #f5f3f1, #e5e2e1);
-        background: -moz-linear-gradient(left, #e5e2e1, #f5f3f1, #e5e2e1);
-        background: -ms-linear-gradient(left, #e5e2e1, #f5f3f1, #e5e2e1);
-        background: -o-linear-gradient(left, #e5e2e1, #f5f3f1, #e5e2e1);
-        background: linear-gradient(to right, #e5e2e1, #f5f3f1, #e5e2e1);
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
-        border-radius: 4px;
-        position: relative;
-    }
-
-    .f_key .keycap {
-        width: inherit;
-        height: inherit;
-        font-size: 15px;
-        line-height: 45px;
-        text-indent: 7px;
-        background: #cdd3de;
-        background: -webkit-linear-gradient(left, #bbc3d2, #cdd3de, #bbc3d2);
-        background: -moz-linear-gradient(left, #bbc3d2, #cdd3de, #bbc3d2);
-        background: -ms-linear-gradient(left, #bbc3d2, #cdd3de, #bbc3d2);
-        background: -o-linear-gradient(left, #bbc3d2, #cdd3de, #bbc3d2);
-        background: linear-gradient(to right, #bbc3d2, #cdd3de, #bbc3d2);
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-        border-radius: 4px;
-        position: relative;
-    }
-
-    // Space
-    .k32 {
-        width: 100%;
-        max-width: 6rem;
-        border-width: 3px 8px 10px;
-    }
-    .k32 .keycap {
-        width: 100%;
-        max-width: 6rem;
-    }
-    .k32.pressed {
-        -webkit-transform: scale(0.98, 0.95);
-        -moz-transform: scale(0.98, 0.95);
-        -ms-transform: scale(0.98, 0.95);
-        -o-transform: scale(0.98, 0.95);
-        transform: scale(0.98, 0.95);
-    }
+  // Space
+  .k32 {
+    width: 100%;
+    max-width: 6rem;
+    border-width: 3px 8px 10px;
+  }
+  .k32 .keycap {
+    width: 100%;
+    max-width: 6rem;
+  }
+  .k32.pressed {
+    -webkit-transform: scale(0.98, 0.95);
+    -moz-transform: scale(0.98, 0.95);
+    -ms-transform: scale(0.98, 0.95);
+    -o-transform: scale(0.98, 0.95);
+    transform: scale(0.98, 0.95);
+  }
 }

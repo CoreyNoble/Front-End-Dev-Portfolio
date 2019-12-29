@@ -53,7 +53,7 @@ $foundation-palette: (
   secondary: #777,
   success: #3adb76,
   warning: #ffae00,
-  alert: #ec5840,
+  alert: #ec5840
 );
 $light-gray: #e6e6e6;
 $medium-gray: #cacaca;
@@ -83,7 +83,7 @@ $breakpoints: (
   medium: 640px,
   large: 1024px,
   xlarge: 1200px,
-  xxlarge: 1440px,
+  xxlarge: 1440px
 );
 $breakpoint-classes: (small medium large);
 
@@ -94,7 +94,7 @@ $grid-row-width: $global-width;
 $grid-column-count: 12;
 $grid-column-gutter: (
   small: 20px,
-  medium: 30px,
+  medium: 30px
 );
 $grid-column-align-edge: true;
 $block-grid-max: 8;
@@ -113,7 +113,7 @@ $header-sizes: (
     'h3': 19,
     'h4': 18,
     'h5': 17,
-    'h6': 16,
+    'h6': 16
   ),
   medium: (
     'h1': 48,
@@ -121,8 +121,8 @@ $header-sizes: (
     'h3': 31,
     'h4': 25,
     'h5': 20,
-    'h6': 16,
-  ),
+    'h6': 16
+  )
 );
 $header-color: inherit;
 $header-lineheight: 1.4;
@@ -245,7 +245,7 @@ $button-sizes: (
   tiny: 0.6rem,
   small: 0.75rem,
   default: 0.9rem,
-  large: 1.25rem,
+  large: 1.25rem
 );
 $button-opacity-disabled: 0.25;
 
@@ -300,7 +300,7 @@ $dropdown-radius: $global-radius;
 $dropdown-sizes: (
   tiny: 100px,
   small: 200px,
-  large: 400px,
+  large: 400px
 );
 
 // 17. Dropdown Menu
@@ -498,7 +498,10 @@ $table-border: 1px solid smart-scale($table-background, $table-color-scale);
 $table-padding: rem-calc(8 10 10);
 $table-hover-scale: 2%;
 $table-row-hover: darken($table-background, $table-hover-scale);
-$table-row-stripe-hover: darken($table-background, $table-color-scale + $table-hover-scale);
+$table-row-stripe-hover: darken(
+  $table-background,
+  $table-color-scale + $table-hover-scale
+);
 $table-striped-background: smart-scale($table-background, $table-color-scale);
 $table-stripe: even;
 $table-head-background: smart-scale($table-background, $table-color-scale / 2);

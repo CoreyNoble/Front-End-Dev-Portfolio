@@ -1,138 +1,171 @@
-#javascript30-19{
-    /* background by SVGBackgrounds.com */
-    background-color: #262626;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='https://www.w3.org/2000/svg' xmlns:xlink='https://www.w3.org/1999/xlink' width='50' height='25' viewBox='0 0 50 25'%3E%3Cdefs%3E%3Crect stroke='%23262626' stroke-width='0.1' width='1' height='1' id='s'/%3E%3Cpattern id='a' width='2' height='2' patternUnits='userSpaceOnUse'%3E%3Cg stroke='%23262626' stroke-width='0.1'%3E%3Crect fill='%232a2a2a' width='1' height='1'/%3E%3Crect fill='%23262626' width='1' height='1' x='1' y='1'/%3E%3Crect fill='%232f2f2f' width='1' height='1' y='1'/%3E%3Crect fill='%23333333' width='1' height='1' x='1'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='b' width='5' height='11' patternUnits='userSpaceOnUse'%3E%3Cg fill='%23373737'%3E%3Cuse xlink:href='%23s' x='2' y='0'/%3E%3Cuse xlink:href='%23s' x='4' y='1'/%3E%3Cuse xlink:href='%23s' x='1' y='2'/%3E%3Cuse xlink:href='%23s' x='2' y='4'/%3E%3Cuse xlink:href='%23s' x='4' y='6'/%3E%3Cuse xlink:href='%23s' x='0' y='8'/%3E%3Cuse xlink:href='%23s' x='3' y='9'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='c' width='7' height='7' patternUnits='userSpaceOnUse'%3E%3Cg fill='%233c3c3c'%3E%3Cuse xlink:href='%23s' x='1' y='1'/%3E%3Cuse xlink:href='%23s' x='3' y='4'/%3E%3Cuse xlink:href='%23s' x='5' y='6'/%3E%3Cuse xlink:href='%23s' x='0' y='3'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='d' width='11' height='5' patternUnits='userSpaceOnUse'%3E%3Cg fill='%23262626'%3E%3Cuse xlink:href='%23s' x='1' y='1'/%3E%3Cuse xlink:href='%23s' x='6' y='3'/%3E%3Cuse xlink:href='%23s' x='8' y='2'/%3E%3Cuse xlink:href='%23s' x='3' y='0'/%3E%3Cuse xlink:href='%23s' x='0' y='3'/%3E%3C/g%3E%3Cg fill='%23404040'%3E%3Cuse xlink:href='%23s' x='8' y='3'/%3E%3Cuse xlink:href='%23s' x='4' y='2'/%3E%3Cuse xlink:href='%23s' x='5' y='4'/%3E%3Cuse xlink:href='%23s' x='10' y='0'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='e' width='47' height='23' patternUnits='userSpaceOnUse'%3E%3Cg fill='%236dbfbf'%3E%3Cuse xlink:href='%23s' x='2' y='5'/%3E%3Cuse xlink:href='%23s' x='23' y='13'/%3E%3Cuse xlink:href='%23s' x='4' y='18'/%3E%3Cuse xlink:href='%23s' x='35' y='9'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='f' width='61' height='31' patternUnits='userSpaceOnUse'%3E%3Cg fill='%236dbfbf'%3E%3Cuse xlink:href='%23s' x='16' y='0'/%3E%3Cuse xlink:href='%23s' x='13' y='22'/%3E%3Cuse xlink:href='%23s' x='44' y='15'/%3E%3Cuse xlink:href='%23s' x='12' y='11'/%3E%3C/g%3E%3C/pattern%3E%3C/defs%3E%3Crect fill='url(%23a)' width='50' height='25'/%3E%3Crect fill='url(%23b)' width='50' height='25'/%3E%3Crect fill='url(%23c)' width='50' height='25'/%3E%3Crect fill='url(%23d)' width='50' height='25'/%3E%3Crect fill='url(%23e)' width='50' height='25'/%3E%3Crect fill='url(%23f)' width='50' height='25'/%3E%3C/svg%3E");
-    background-attachment: fixed;
-    background-size: cover;
+#javascript30-19 {
+  /* background by SVGBackgrounds.com */
+  background-color: #262626;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='https://www.w3.org/2000/svg' xmlns:xlink='https://www.w3.org/1999/xlink' width='50' height='25' viewBox='0 0 50 25'%3E%3Cdefs%3E%3Crect stroke='%23262626' stroke-width='0.1' width='1' height='1' id='s'/%3E%3Cpattern id='a' width='2' height='2' patternUnits='userSpaceOnUse'%3E%3Cg stroke='%23262626' stroke-width='0.1'%3E%3Crect fill='%232a2a2a' width='1' height='1'/%3E%3Crect fill='%23262626' width='1' height='1' x='1' y='1'/%3E%3Crect fill='%232f2f2f' width='1' height='1' y='1'/%3E%3Crect fill='%23333333' width='1' height='1' x='1'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='b' width='5' height='11' patternUnits='userSpaceOnUse'%3E%3Cg fill='%23373737'%3E%3Cuse xlink:href='%23s' x='2' y='0'/%3E%3Cuse xlink:href='%23s' x='4' y='1'/%3E%3Cuse xlink:href='%23s' x='1' y='2'/%3E%3Cuse xlink:href='%23s' x='2' y='4'/%3E%3Cuse xlink:href='%23s' x='4' y='6'/%3E%3Cuse xlink:href='%23s' x='0' y='8'/%3E%3Cuse xlink:href='%23s' x='3' y='9'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='c' width='7' height='7' patternUnits='userSpaceOnUse'%3E%3Cg fill='%233c3c3c'%3E%3Cuse xlink:href='%23s' x='1' y='1'/%3E%3Cuse xlink:href='%23s' x='3' y='4'/%3E%3Cuse xlink:href='%23s' x='5' y='6'/%3E%3Cuse xlink:href='%23s' x='0' y='3'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='d' width='11' height='5' patternUnits='userSpaceOnUse'%3E%3Cg fill='%23262626'%3E%3Cuse xlink:href='%23s' x='1' y='1'/%3E%3Cuse xlink:href='%23s' x='6' y='3'/%3E%3Cuse xlink:href='%23s' x='8' y='2'/%3E%3Cuse xlink:href='%23s' x='3' y='0'/%3E%3Cuse xlink:href='%23s' x='0' y='3'/%3E%3C/g%3E%3Cg fill='%23404040'%3E%3Cuse xlink:href='%23s' x='8' y='3'/%3E%3Cuse xlink:href='%23s' x='4' y='2'/%3E%3Cuse xlink:href='%23s' x='5' y='4'/%3E%3Cuse xlink:href='%23s' x='10' y='0'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='e' width='47' height='23' patternUnits='userSpaceOnUse'%3E%3Cg fill='%236dbfbf'%3E%3Cuse xlink:href='%23s' x='2' y='5'/%3E%3Cuse xlink:href='%23s' x='23' y='13'/%3E%3Cuse xlink:href='%23s' x='4' y='18'/%3E%3Cuse xlink:href='%23s' x='35' y='9'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='f' width='61' height='31' patternUnits='userSpaceOnUse'%3E%3Cg fill='%236dbfbf'%3E%3Cuse xlink:href='%23s' x='16' y='0'/%3E%3Cuse xlink:href='%23s' x='13' y='22'/%3E%3Cuse xlink:href='%23s' x='44' y='15'/%3E%3Cuse xlink:href='%23s' x='12' y='11'/%3E%3C/g%3E%3C/pattern%3E%3C/defs%3E%3Crect fill='url(%23a)' width='50' height='25'/%3E%3Crect fill='url(%23b)' width='50' height='25'/%3E%3Crect fill='url(%23c)' width='50' height='25'/%3E%3Crect fill='url(%23d)' width='50' height='25'/%3E%3Crect fill='url(%23e)' width='50' height='25'/%3E%3Crect fill='url(%23f)' width='50' height='25'/%3E%3C/svg%3E");
+  background-attachment: fixed;
+  background-size: cover;
 
-    // Parent <div>
-    #photobooth {
-        position: relative;
-        margin: 0 auto;
-        border-radius: 2px;
+  // Parent <div>
+  #photobooth {
+    position: relative;
+    margin: 0 auto;
+    border-radius: 2px;
 
-        &::after {
-            content: '';
-            display: block;
-            clear: both;
-        }
-        
-        // <canvas>
-        #photo {
-            display: block;
-            width: 100%;
-            max-width: 45em;
-            margin: 0 auto;
-            background: $white;
-            border: 0.33em solid $white;
-            -moz-box-shadow: 0  0.75em 0.75em -0.75em #000000, 0 -0.75em 0.75em -0.75em #000000;
-            -webkit-box-shadow:  0  0.75em 0.75em -0.75em #000000, 0 -0.75em 0.75em -0.75em #000000;
-            box-shadow: 0  0.75em 0.75em -0.75em #000000, 0 -0.75em 0.75em -0.75em #000000;
-        }
-        
-        // <video>
-        #player {
-            position: fixed;
-            top: 3em;
-            right: 0.75em;
-            width: 9.25em;
-            border: 0.25em solid $black;
-
-            @include breakpoint(medium){
-                top: 4em;
-            }
-        }
-
-        .controls {
-            margin-top: 1.5em;
-            padding: 1em;
-            background: $blue;
-            border: 0.25em solid $white;
-            -moz-box-shadow: 0  0.75em 0.75em -0.75em #000000, 0 -0.75em 0.75em -0.75em #000000;
-            -webkit-box-shadow:  0  0.75em 0.75em -0.75em #000000, 0 -0.75em 0.75em -0.75em #000000;
-            box-shadow: 0  0.75em 0.75em -0.75em #000000, 0 -0.75em 0.75em -0.75em #000000;
-
-            @include breakpoint(large){
-                margin-top: 0;
-            }
-
-            h2{
-                margin-bottom: 0.25em;
-            }
-
-            label{
-                font-weight: bold;
-                text-decoration: underline;
-            }
-
-            input{
-                background: none;
-                padding-bottom: 1.25em;
-            }
-
-            .row{
-                padding: 0 1em;
-            }
-
-            #photoCTA{
-                position: fixed;
-                top: 10em;
-                right: 0.75em;
-                color: #000000;
-                padding: 1em 2em;
-                -moz-border-radius: 4px;
-                -webkit-border-radius: 4px;
-                border-radius: 4px;
-                border: 2px solid #000000;
-                background: #468CCF;
-                background: linear-gradient(to top,  #5FA6A6,  #7FC7C7);
-                background: -ms-linear-gradient(to top,  #5FA6A6,  #7FC7C7);
-                background: -webkit-gradient(linear, to left top, to left bottom, from(#5FA6A6), to(#7FC7C7));
-                background: -moz-linear-gradient(to top,  #5FA6A6,  #7FC7C7);
-                text-decoration: none;
-                transition: all 0.15s ease;
-
-                @include breakpoint(medium){
-                    top: 11em;
-                }
-
-                &:hover, &:active, &:focus {
-                    color: $white;
-                    border-color: $white;
-                    background: #63B8EE;
-                    background: linear-gradient(to top,  #7FC7C7,  #5FA6A6);
-                    background: -ms-linear-gradient(to top,  #7FC7C7,  #5FA6A6);
-                    background: -webkit-gradient(linear, to left top, tp left bottom, from(#7FC7C7), to(#5FA6A6));
-                    background: -moz-linear-gradient(to top,  #7FC7C7,  #5FA6A6);
-                    text-decoration: underline;
-                }
-            }
-        }
+    &::after {
+      content: '';
+      display: block;
+      clear: both;
     }
-    
-    /* Strip! */
-    .strip {
-        margin-top: 1em;
-        min-height: 12em;
-        background-color: #6dbfbf;
-        background-image: url("data:image/svg+xml,%3Csvg xmlns='https://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 100 100'%3E%3Crect x='0' y='0' width='21' height='21' fill-opacity='0.6' fill='%23477979'/%3E%3C/svg%3E");
-        border: 0.33em solid $white;
-        -moz-box-shadow: 0  0.75em 0.75em -0.75em #000000, 0 -0.75em 0.75em -0.75em #000000;
-        -webkit-box-shadow:  0  0.75em 0.75em -0.75em #000000, 0 -0.75em 0.75em -0.75em #000000;
-        box-shadow: 0  0.75em 0.75em -0.75em #000000, 0 -0.75em 0.75em -0.75em #000000;
+
+    // <canvas>
+    #photo {
+      display: block;
+      width: 100%;
+      max-width: 45em;
+      margin: 0 auto;
+      background: $white;
+      border: 0.33em solid $white;
+      -moz-box-shadow: 0 0.75em 0.75em -0.75em #000000,
+        0 -0.75em 0.75em -0.75em #000000;
+      -webkit-box-shadow: 0 0.75em 0.75em -0.75em #000000,
+        0 -0.75em 0.75em -0.75em #000000;
+      box-shadow: 0 0.75em 0.75em -0.75em #000000,
+        0 -0.75em 0.75em -0.75em #000000;
     }
-    
-    .strip img {
-        width: 100px;
-        overflow-x: scroll;
-        padding: 0.8rem 0.8rem 2.5rem 0.8rem;
-        box-shadow: 0 0 3px rgba(0,0,0,0.2);
-        background: white;
+
+    // <video>
+    #player {
+      position: fixed;
+      top: 3em;
+      right: 0.75em;
+      width: 9.25em;
+      border: 0.25em solid $black;
+
+      @include breakpoint(medium) {
+        top: 4em;
+      }
     }
-    
-    .strip a:nth-child(5n+1) img { transform: rotate(10deg); }
-    .strip a:nth-child(5n+2) img { transform: rotate(-2deg); }
-    .strip a:nth-child(5n+3) img { transform: rotate(8deg); }
-    .strip a:nth-child(5n+4) img { transform: rotate(-11deg); }
-    .strip a:nth-child(5n+5) img { transform: rotate(12deg); }      
+
+    .controls {
+      margin-top: 1.5em;
+      padding: 1em;
+      background: $blue;
+      border: 0.25em solid $white;
+      -moz-box-shadow: 0 0.75em 0.75em -0.75em #000000,
+        0 -0.75em 0.75em -0.75em #000000;
+      -webkit-box-shadow: 0 0.75em 0.75em -0.75em #000000,
+        0 -0.75em 0.75em -0.75em #000000;
+      box-shadow: 0 0.75em 0.75em -0.75em #000000,
+        0 -0.75em 0.75em -0.75em #000000;
+
+      @include breakpoint(large) {
+        margin-top: 0;
+      }
+
+      h2 {
+        margin-bottom: 0.25em;
+      }
+
+      label {
+        font-weight: bold;
+        text-decoration: underline;
+      }
+
+      input {
+        background: none;
+        padding-bottom: 1.25em;
+      }
+
+      .row {
+        padding: 0 1em;
+      }
+
+      #photoCTA {
+        position: fixed;
+        top: 10em;
+        right: 0.75em;
+        color: #000000;
+        padding: 1em 2em;
+        -moz-border-radius: 4px;
+        -webkit-border-radius: 4px;
+        border-radius: 4px;
+        border: 2px solid #000000;
+        background: #468ccf;
+        background: linear-gradient(to top, #5fa6a6, #7fc7c7);
+        background: -ms-linear-gradient(to top, #5fa6a6, #7fc7c7);
+        background: -webkit-gradient(
+          linear,
+          to left top,
+          to left bottom,
+          from(#5fa6a6),
+          to(#7fc7c7)
+        );
+        background: -moz-linear-gradient(to top, #5fa6a6, #7fc7c7);
+        text-decoration: none;
+        transition: all 0.15s ease;
+
+        @include breakpoint(medium) {
+          top: 11em;
+        }
+
+        &:hover,
+        &:active,
+        &:focus {
+          color: $white;
+          border-color: $white;
+          background: #63b8ee;
+          background: linear-gradient(to top, #7fc7c7, #5fa6a6);
+          background: -ms-linear-gradient(to top, #7fc7c7, #5fa6a6);
+          background: -webkit-gradient(
+            linear,
+            to left top,
+            tp left bottom,
+            from(#7fc7c7),
+            to(#5fa6a6)
+          );
+          background: -moz-linear-gradient(to top, #7fc7c7, #5fa6a6);
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+  /* Strip! */
+  .strip {
+    margin-top: 1em;
+    min-height: 12em;
+    background-color: #6dbfbf;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='https://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 100 100'%3E%3Crect x='0' y='0' width='21' height='21' fill-opacity='0.6' fill='%23477979'/%3E%3C/svg%3E");
+    border: 0.33em solid $white;
+    -moz-box-shadow: 0 0.75em 0.75em -0.75em #000000,
+      0 -0.75em 0.75em -0.75em #000000;
+    -webkit-box-shadow: 0 0.75em 0.75em -0.75em #000000,
+      0 -0.75em 0.75em -0.75em #000000;
+    box-shadow: 0 0.75em 0.75em -0.75em #000000,
+      0 -0.75em 0.75em -0.75em #000000;
+  }
+
+  .strip img {
+    width: 100px;
+    overflow-x: scroll;
+    padding: 0.8rem 0.8rem 2.5rem 0.8rem;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+    background: white;
+  }
+
+  .strip a:nth-child(5n + 1) img {
+    transform: rotate(10deg);
+  }
+  .strip a:nth-child(5n + 2) img {
+    transform: rotate(-2deg);
+  }
+  .strip a:nth-child(5n + 3) img {
+    transform: rotate(8deg);
+  }
+  .strip a:nth-child(5n + 4) img {
+    transform: rotate(-11deg);
+  }
+  .strip a:nth-child(5n + 5) img {
+    transform: rotate(12deg);
+  }
 }

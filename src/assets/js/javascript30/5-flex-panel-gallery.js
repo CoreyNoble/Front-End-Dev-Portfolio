@@ -2,18 +2,18 @@
 const panels = document.querySelectorAll('.panel');
 
 // Toggle Open/Close.
-function toggleOpen(){
-    // Toggle (On/Off) a class of 'open' on this 'panel'.
-    this.classList.toggle('open');
+function toggleOpen() {
+  // Toggle (On/Off) a class of 'open' on this 'panel'.
+  this.classList.toggle('open');
 }
 
 // When 'open' transition is done.
-function toggleActive(e){
-    // Specifically the transition property of: flex.
-    if(e.propertyName.includes('flex')) {
-        // Toggle (On/Off) a class of '.open-active' on this panel.
-        this.classList.toggle('open-active');
-    }
+function toggleActive(e) {
+  // Specifically the transition property of: flex.
+  if (e.propertyName.includes('flex')) {
+    // Toggle (On/Off) a class of '.open-active' on this panel.
+    this.classList.toggle('open-active');
+  }
 }
 
 // Listen for a click on each panel, toggleOpen();

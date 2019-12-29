@@ -13,7 +13,8 @@ function fixNav() {
     page.style.paddingTop = nav.offsetHeight + 'px';
     // Add the class that sets 'nav' to position: fixed;.
     page.classList.add('fixed-nav');
-  } else { // If the window is not scrolled far enough.
+  } else {
+    // If the window is not scrolled far enough.
     // Remove the class that sets 'nav' to position: fixed;.
     page.classList.remove('fixed-nav');
     // Remove the padding at the top of 'page'.

@@ -4,52 +4,54 @@
   padding: 0;
 }
 
-.clearfix:before, .clearfix:after {
-    content: " ";
-    display: table;
+.clearfix:before,
+.clearfix:after {
+  content: ' ';
+  display: table;
 }
 
 .clearfix:after {
-    clear: both;
+  clear: both;
 }
 
 .clearfix {
-    *zoom: 1;
+  *zoom: 1;
 }
 
-.section{
-	width: 100%;
+.section {
+  width: 100%;
   padding: 4em 1em;
-  
+
   @media screen and (max-width: 40em) {
     padding: 2.5em 1em;
   }
 }
 
-div{
+div {
   padding: 0;
 }
 
-h1,.h1{
-    margin-top: .75em;
+h1,
+.h1 {
+  margin-top: 0.75em;
 }
 
-p{
+p {
   padding: 1em 0;
 }
 
-hr{
+hr {
   height: 2px;
   color: $grey;
 }
 
-.frame{
+.frame {
   width: 100%;
   padding: 0.5em;
   height: 66vh;
   overflow: hidden;
-  
-  iframe{
+
+  iframe {
     display: block;
     float: left;
     border: none;
@@ -60,15 +62,15 @@ hr{
   }
 }
 
-.no-padding.columns{
+.no-padding.columns {
   padding: 0;
 }
 
-.no-bottom-space{
-    margin-bottom: 0;
+.no-bottom-space {
+  margin-bottom: 0;
 }
 
-.no-bottom-space-desktop{
+.no-bottom-space-desktop {
   margin-bottom: 0;
 
   @media screen and (max-width: 64em) {
@@ -76,122 +78,150 @@ hr{
   }
 }
 
-.bottom-space-1{
+.bottom-space-1 {
   padding-bottom: 1em;
 }
 
-.hide-mobile{
+.hide-mobile {
   display: block;
-    
+
   @media screen and (max-width: 40em) {
     display: none;
   }
 }
 
-.hide-tablet{
+.hide-tablet {
   display: block;
-    
+
   @media screen and (min-width: 40.063em) and (max-width: 63.9375em) {
     display: none;
   }
 }
 
-.inline-accent{
+.inline-accent {
   display: block;
   margin: 0 auto;
   padding: 0 1em;
-    
+
   @media screen and (max-width: 40em) {
     padding: 1em;
   }
 }
 
-textarea{
+textarea {
   height: 10em;
 }
 
-body{
+body {
   background: $background;
 }
 
 // COLOURS
-.white{
-	background-color: $white;
-  h1,.h1,h2,.h2,h3,.h3,h4,.h4,h5,.h5,h6,.h6,p,a{
-		color: $black;
+.white {
+  background-color: $white;
+  h1,
+  .h1,
+  h2,
+  .h2,
+  h3,
+  .h3,
+  h4,
+  .h4,
+  h5,
+  .h5,
+  h6,
+  .h6,
+  p,
+  a {
+    color: $black;
   }
 
-  a{
+  a {
     transition: color 0.25s ease;
   }
-  
-  a:hover, a:focus{
-    color: darken($black, 33%);  
+
+  a:hover,
+  a:focus {
+    color: darken($black, 33%);
   }
 
-  a.evertz-text, a.evertz-text:visited{
+  a.evertz-text,
+  a.evertz-text:visited {
     background-color: $background;
     padding: 0 0.2rem;
     transition: all 0.4s ease;
 
-    &:hover, &:focus{
+    &:hover,
+    &:focus {
       background-color: $white;
       color: $background;
       text-decoration: underline;
     }
   }
 
-  a.thrillworks-text{
+  a.thrillworks-text {
     color: darken($thrillworks, 18%);
 
-    &:hover{
+    &:hover {
       color: darken($thrillworks, 21%);
     }
   }
 
-  a.cta{
-    &.project-cta{
+  a.cta {
+    &.project-cta {
       background: $blue;
       border-color: $grey;
 
-      &:hover{
+      &:hover {
         background: darken($blue, 10%);
         border-color: $black;
       }
     }
 
-    &.code-cta{
+    &.code-cta {
       background: $white;
       border-color: $grey;
-  
-      &:hover{
+
+      &:hover {
         background: darken($white, 10%);
         border-color: $black;
       }
     }
   }
 
-  .accordion{
+  .accordion {
     // <li>
-    .accordion-item{
+    .accordion-item {
       border: 0.25em solid $black;
 
-      &:last-child{
-          border-bottom: 0.25em solid $black;
+      &:last-child {
+        border-bottom: 0.25em solid $black;
       }
 
       // Active
-      &.is-active{
+      &.is-active {
         // <a>
-        .accordion-title{
-          background: rgba(0,0,0,0.8);
+        .accordion-title {
+          background: rgba(0, 0, 0, 0.8);
           color: $white;
 
-          &:hover{
-              background: rgba(0,0,0,0.8);
+          &:hover {
+            background: rgba(0, 0, 0, 0.8);
           }
 
-          h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p{
+          h1,
+          .h1,
+          h2,
+          .h2,
+          h3,
+          .h3,
+          h4,
+          .h4,
+          h5,
+          .h5,
+          h6,
+          .h6,
+          p {
             color: $white;
           }
         }
@@ -200,64 +230,90 @@ body{
   }
 
   /* CodePen */
-  .cp_embed_wrapper{
+  .cp_embed_wrapper {
     border-color: $black;
   }
 }
 
-.black{
-	background-color: $black;
-	h1,.h1,h2,.h2,h3,.h3,h4,.h4,h5,.h5,h6,.h6,p,a{
-		color: $white;
+.black {
+  background-color: $black;
+  h1,
+  .h1,
+  h2,
+  .h2,
+  h3,
+  .h3,
+  h4,
+  .h4,
+  h5,
+  .h5,
+  h6,
+  .h6,
+  p,
+  a {
+    color: $white;
   }
-  
-  a{
+
+  a {
     transition: color 0.25s ease;
   }
 
-  a:hover, a:focus{
+  a:hover,
+  a:focus {
     color: darken($white, 33%);
   }
 
-  a.cta{
-    &.project-cta{
+  a.cta {
+    &.project-cta {
       background: $blue;
 
-      &:hover{
+      &:hover {
         background: darken($blue, 10%);
       }
     }
 
-    &.code-cta{
+    &.code-cta {
       background: $white;
-  
-      &:hover{
+
+      &:hover {
         background: darken($white, 10%);
       }
     }
   }
 
-  .accordion{
+  .accordion {
     // <li>
-    .accordion-item{
+    .accordion-item {
       border: 0.25em solid $white;
 
-      &:last-child{
-          border-bottom: 0.25em solid $white;
+      &:last-child {
+        border-bottom: 0.25em solid $white;
       }
 
       // Active
-      &.is-active{
+      &.is-active {
         // <a>
-        .accordion-title{
-          background: rgba(255,255,255,0.8);
+        .accordion-title {
+          background: rgba(255, 255, 255, 0.8);
           color: $black;
 
-          &:hover{
-              background: rgba(255,255,255,0.8);
+          &:hover {
+            background: rgba(255, 255, 255, 0.8);
           }
 
-          h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p{
+          h1,
+          .h1,
+          h2,
+          .h2,
+          h3,
+          .h3,
+          h4,
+          .h4,
+          h5,
+          .h5,
+          h6,
+          .h6,
+          p {
             color: $black;
           }
         }
@@ -266,73 +322,90 @@ body{
   }
 
   /* CodePen */
-  .cp_embed_wrapper{
+  .cp_embed_wrapper {
     border-color: $white;
   }
 }
 
-.white.black{
-	background-color: $black;
-	h1,h2,h3,h4,h5,h6,p,a{
-		color: $white;
+.white.black {
+  background-color: $black;
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  a {
+    color: $white;
   }
 
-  a{
+  a {
     transition: color 0.25s ease;
   }
-  
-  a:hover, a:focus{
+
+  a:hover,
+  a:focus {
     color: darken($black, 33%);
   }
 }
 
-.black.white{
-	background-color: $white;
-  h1,h2,h3,h4,h5,h6,p,a{
-		color: #000000;
+.black.white {
+  background-color: $white;
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  a {
+    color: #000000;
   }
-  
-  a{
+
+  a {
     transition: color 0.25s ease;
   }
 
-  a:hover, a:focus{
+  a:hover,
+  a:focus {
     color: darken($white, 33%);
   }
 }
 
-.grey{
-	background-color: $grey;
+.grey {
+  background-color: $grey;
 }
 
-.blue{
+.blue {
   background-color: $blue;
-  
-  a{
+
+  a {
     transition: color 0.25s ease;
   }
 
-  a:hover, a:focus{
+  a:hover,
+  a:focus {
     color: darken($black, 33%);
   }
 
-  a.cta{
-    &.project-cta{
+  a.cta {
+    &.project-cta {
       background: $black;
       color: $white;
       border-color: $dark-blue;
 
-      &:hover{
+      &:hover {
         background: $background;
         border-color: $white;
       }
     }
 
-    &.code-cta{
+    &.code-cta {
       background: $white;
       border-color: $dark-blue;
-  
-      &:hover{
+
+      &:hover {
         background: darken($white, 10%);
         border-color: $white;
       }
@@ -340,66 +413,91 @@ body{
   }
 }
 
-.blue-gradient{
-  background: rgba(109,170,170,1);
-  background: -moz-linear-gradient(45deg, rgba(109,170,170,1) 0%, rgba(150,233,233,1) 100%);
-  background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(109,170,170,1)), color-stop(100%, rgba(150,233,233,1)));
-  background: -webkit-linear-gradient(45deg, rgba(109,170,170,1) 0%, rgba(150,233,233,1) 100%);
-  background: -o-linear-gradient(45deg, rgba(109,170,170,1) 0%, rgba(150,233,233,1) 100%);
-  background: -ms-linear-gradient(45deg, rgba(109,170,170,1) 0%, rgba(150,233,233,1) 100%);
-  background: linear-gradient(45deg, rgba(109,170,170,1) 0%, rgba(150,233,233,1) 100%);
+.blue-gradient {
+  background: rgba(109, 170, 170, 1);
+  background: -moz-linear-gradient(
+    45deg,
+    rgba(109, 170, 170, 1) 0%,
+    rgba(150, 233, 233, 1) 100%
+  );
+  background: -webkit-gradient(
+    left bottom,
+    right top,
+    color-stop(0%, rgba(109, 170, 170, 1)),
+    color-stop(100%, rgba(150, 233, 233, 1))
+  );
+  background: -webkit-linear-gradient(
+    45deg,
+    rgba(109, 170, 170, 1) 0%,
+    rgba(150, 233, 233, 1) 100%
+  );
+  background: -o-linear-gradient(
+    45deg,
+    rgba(109, 170, 170, 1) 0%,
+    rgba(150, 233, 233, 1) 100%
+  );
+  background: -ms-linear-gradient(
+    45deg,
+    rgba(109, 170, 170, 1) 0%,
+    rgba(150, 233, 233, 1) 100%
+  );
+  background: linear-gradient(
+    45deg,
+    rgba(109, 170, 170, 1) 0%,
+    rgba(150, 233, 233, 1) 100%
+  );
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6daaaa', endColorstr='#96e9e9', GradientType=1 );
 }
 
-.light-blue{
-	background-color: $light-blue;
+.light-blue {
+  background-color: $light-blue;
 }
 
-.dark-blue{
-	background-color: $dark-blue;
+.dark-blue {
+  background-color: $dark-blue;
 }
 
-.white-text{
-	color: $white;
+.white-text {
+  color: $white;
 }
 
-.black-text{
-	color: $black;
+.black-text {
+  color: $black;
 }
 
-.grey-text{
-	color: $grey;
+.grey-text {
+  color: $grey;
 }
 
-.blue-text{
-	color: $blue;
+.blue-text {
+  color: $blue;
 }
 
-.light-blue-text{
-	color: $light-blue;
+.light-blue-text {
+  color: $light-blue;
 }
 
-.dark-blue-text{
-	color: $dark-blue;
+.dark-blue-text {
+  color: $dark-blue;
 }
 
-a.evertz-text{
+a.evertz-text {
   color: $evertz;
 
-  &:hover{
+  &:hover {
     color: darken($evertz, 10%);
   }
 }
 
-a.thrillworks-text{
-    color: $thrillworks;
+a.thrillworks-text {
+  color: $thrillworks;
 
-    &:hover{
-      color: darken($thrillworks, 10%);
-    }
+  &:hover {
+    color: darken($thrillworks, 10%);
+  }
 }
 
-button{
+button {
   display: block;
   margin: 0 auto;
   color: #000000;
@@ -408,34 +506,48 @@ button{
   -webkit-border-radius: 4px;
   border-radius: 4px;
   border: 2px solid #000000;
-  background: #468CCF;
-  background: linear-gradient(to top,  #5FA6A6,  #7FC7C7);
-  background: -ms-linear-gradient(to top,  #5FA6A6,  #7FC7C7);
-  background: -webkit-gradient(linear, to left top, to left bottom, from(#5FA6A6), to(#7FC7C7));
-  background: -moz-linear-gradient(to top,  #5FA6A6,  #7FC7C7);
+  background: #468ccf;
+  background: linear-gradient(to top, #5fa6a6, #7fc7c7);
+  background: -ms-linear-gradient(to top, #5fa6a6, #7fc7c7);
+  background: -webkit-gradient(
+    linear,
+    to left top,
+    to left bottom,
+    from(#5fa6a6),
+    to(#7fc7c7)
+  );
+  background: -moz-linear-gradient(to top, #5fa6a6, #7fc7c7);
   text-decoration: none;
   transition: all 0.15s ease;
 
-  @include breakpoint(medium){
-      top: 11em;
+  @include breakpoint(medium) {
+    top: 11em;
   }
 
-  &:hover, &:active, &:focus {
-      color: $white;
-      border-color: $white;
-      background: #63B8EE;
-      background: linear-gradient(to top,  #7FC7C7,  #5FA6A6);
-      background: -ms-linear-gradient(to top,  #7FC7C7,  #5FA6A6);
-      background: -webkit-gradient(linear, to left top, tp left bottom, from(#7FC7C7), to(#5FA6A6));
-      background: -moz-linear-gradient(to top,  #7FC7C7,  #5FA6A6);
-      text-decoration: underline;
+  &:hover,
+  &:active,
+  &:focus {
+    color: $white;
+    border-color: $white;
+    background: #63b8ee;
+    background: linear-gradient(to top, #7fc7c7, #5fa6a6);
+    background: -ms-linear-gradient(to top, #7fc7c7, #5fa6a6);
+    background: -webkit-gradient(
+      linear,
+      to left top,
+      tp left bottom,
+      from(#7fc7c7),
+      to(#5fa6a6)
+    );
+    background: -moz-linear-gradient(to top, #7fc7c7, #5fa6a6);
+    text-decoration: underline;
   }
 }
 
-.header-no-parallax{
+.header-no-parallax {
   padding-top: 0.75em;
 
-  @media screen and (max-width : 940px) {
+  @media screen and (max-width: 940px) {
     padding-top: 0;
   }
 
@@ -445,34 +557,34 @@ button{
 }
 
 /* Spacing */
-.margin-top{
+.margin-top {
   margin-top: 2.5em;
 }
 
-.margin-top-0{
+.margin-top-0 {
   margin-top: 0;
 }
 
-.margin-top-1{
+.margin-top-1 {
   margin-top: 1em;
 }
 
-.margin-bottom-0{
+.margin-bottom-0 {
   margin-bottom: 0;
 }
 
-.margin-bottom-6{
+.margin-bottom-6 {
   margin-bottom: 3.5em;
 
-  @include breakpoint(large){
+  @include breakpoint(large) {
     margin-bottom: 6em;
   }
 }
 
-.margin-top-0-mobile-margin-top-2{
+.margin-top-0-mobile-margin-top-2 {
   margin-top: 2em;
 
-  @include breakpoint(large){
+  @include breakpoint(large) {
     margin-top: 0;
   }
 }
@@ -480,15 +592,15 @@ button{
 /* Breadcrumbs */
 .crumbs {
   list-style: none;
-    
-  li{
+
+  li {
     display: inline;
   }
 }
 
 /* Accordion */
 // <ul>
-.accordion{
+.accordion {
   background: none;
   list-style-type: none;
   margin: 0;
@@ -496,76 +608,89 @@ button{
   padding: 0;
 
   // <li>
-  .accordion-item{
-      margin: 0;
-      border: 0.25em solid $black;
-      border-bottom: none;
+  .accordion-item {
+    margin: 0;
+    border: 0.25em solid $black;
+    border-bottom: none;
 
-      &:last-child{
-          border-bottom: 0.25em solid $black;
-      }
+    &:last-child {
+      border-bottom: 0.25em solid $black;
+    }
 
-      // Active
-      &.is-active{
-          background: none;
-
-          // <a>
-          .accordion-title{
-              background: rgba(0,0,0,0.8);
-              color: $white;
-
-              &:hover{
-                  background: rgba(0,0,0,0.8);
-              }
-
-              &::before{
-                  margin-top: -0.8rem;
-              }
-
-              h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p{
-                color: $white;
-              }
-          }
-      }
+    // Active
+    &.is-active {
+      background: none;
 
       // <a>
-      .accordion-title{
-          text-decoration: none;
-          display: block;
-          padding: 1em 3em 1em 1em;
-          background: none;
-          border: none;
-          transition: all 0.2s ease;
+      .accordion-title {
+        background: rgba(0, 0, 0, 0.8);
+        color: $white;
 
+        &:hover {
+          background: rgba(0, 0, 0, 0.8);
+        }
 
-          &:hover{
-              background: rgba(0,0,0,0.2);
-          }
+        &::before {
+          margin-top: -0.8rem;
+        }
 
-          &::before{
-              margin-top: -0.6rem;
-              font-size: 1.75em;
-              font-weight: bold;
-          }
+        h1,
+        .h1,
+        h2,
+        .h2,
+        h3,
+        .h3,
+        h4,
+        .h4,
+        h5,
+        .h5,
+        h6,
+        .h6,
+        p {
+          color: $white;
+        }
+      }
+    }
+
+    // <a>
+    .accordion-title {
+      text-decoration: none;
+      display: block;
+      padding: 1em 3em 1em 1em;
+      background: none;
+      border: none;
+      transition: all 0.2s ease;
+
+      &:hover {
+        background: rgba(0, 0, 0, 0.2);
       }
 
-      .accordion-content{
-          border: none;
-          background: none;
+      &::before {
+        margin-top: -0.6rem;
+        font-size: 1.75em;
+        font-weight: bold;
       }
+    }
+
+    .accordion-content {
+      border: none;
+      background: none;
+    }
   }
 }
 
 /* CodePen */
-.cp_embed_wrapper{
+.cp_embed_wrapper {
   margin-top: 1em;
   padding-top: 1em;
   border-top: 2px solid;
 }
 
 /* Animations */
-#showcase1, #showcase2, #showcase3{
-  img{
+#showcase1,
+#showcase2,
+#showcase3 {
+  img {
     display: block;
     margin: 0 auto;
   }
@@ -596,7 +721,9 @@ button{
 }
 
 @media screen and (max-width: 40em) {
-  #showcase1.bounceIn, #showcase2.bounceIn, #showcase3.bounceIn {
+  #showcase1.bounceIn,
+  #showcase2.bounceIn,
+  #showcase3.bounceIn {
     -webkit-animation-delay: 0.5s;
     -moz-animation-delay: 0.5s;
     -o-animation-delay: 0.5s;
@@ -605,14 +732,14 @@ button{
   }
 }
 
-#socials{
+#socials {
   display: inline;
   float: left;
   margin-top: 0.5rem;
   margin-bottom: 2em;
   border-bottom: none;
 
-  a{
+  a {
     min-width: unset;
     width: unset;
     border-bottom: none;
@@ -620,33 +747,36 @@ button{
     float: left;
     margin-right: 1.25em;
 
-    &:hover, &:visited, &:focus{
+    &:hover,
+    &:visited,
+    &:focus {
       background-color: inherit;
     }
 
-    @media screen and (max-width : 940px) {
+    @media screen and (max-width: 940px) {
       min-width: unset;
     }
 
-    img{
+    img {
       margin: 0;
       padding: 0;
       max-width: 2.75em;
 
       -webkit-filter: grayscale(100%);
-      -webkit-transition: .25s ease-in-out;
+      -webkit-transition: 0.25s ease-in-out;
       -moz-filter: grayscale(100%);
-      -moz-transition: .25s ease-in-out;
+      -moz-transition: 0.25s ease-in-out;
       -o-filter: grayscale(100%);
-      -o-transition: .25s ease-in-out;
+      -o-transition: 0.25s ease-in-out;
 
-      &:hover, &:focus{
+      &:hover,
+      &:focus {
         -webkit-filter: grayscale(0%);
-        -webkit-transition: .25s ease-in-out;
+        -webkit-transition: 0.25s ease-in-out;
         -moz-filter: grayscale(0%);
-        -moz-transition: .25s ease-in-out;
+        -moz-transition: 0.25s ease-in-out;
         -o-filter: grayscale(0%);
-        -o-transition: .25s ease-in-out;
+        -o-transition: 0.25s ease-in-out;
       }
     }
   }

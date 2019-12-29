@@ -1,14 +1,15 @@
 /* Skip Navigation */
 a.skip-main {
-  left:-999px;
-  position:absolute;
-  top:auto;
-  width:1px;
-  height:1px;
-  overflow:hidden;
-  z-index:-999;
+  left: -999px;
+  position: absolute;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  z-index: -999;
 }
-a.skip-main:focus, a.skip-main:active {
+a.skip-main:focus,
+a.skip-main:active {
   color: $white;
   background-color: $black;
   position: absolute;
@@ -28,7 +29,7 @@ a.skip-main:focus, a.skip-main:active {
 }
 
 /* Navigation */
-nav{
+nav {
   top: 0;
   z-index: 100;
   position: fixed;
@@ -37,108 +38,110 @@ nav{
   font-size: rem-calc(18);
   font-family: 'Open Sans', sans-serif;
   text-align: center;
-  -webkit-box-shadow: 0px 2px 20px 0px rgba(0,0,0,0.66);
-  -moz-box-shadow: 0px 2px 20px 0px rgba(0,0,0,0.66);
-  box-shadow: 0px 2px 20px 0px rgba(0,0,0,0.66);
+  -webkit-box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.66);
+  -moz-box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.66);
+  box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.66);
   border-bottom: 1px solid white;
-  
-  @media screen and (max-width : 940px) {
+
+  @media screen and (max-width: 940px) {
     border-bottom: 0;
     height: auto;
     width: 100%;
     display: block;
     background: $black;
   }
-  
-  ul{
+
+  ul {
     margin-left: 0;
     list-style: none;
     padding: 0;
-      
-    @media screen and (max-width : 940px) {
+
+    @media screen and (max-width: 940px) {
       display: none;
       height: auto;
     }
-      
-    li{
+
+    li {
       display: inline;
       margin: 0;
-      
-      @media screen and (max-width : 940px) {
+
+      @media screen and (max-width: 940px) {
         display: block;
         float: none;
         width: 100%;
       }
-        
-      &:first-child{
+
+      &:first-child {
         float: left;
         margin-left: 1em;
         font-weight: bold;
         font-size: rem-calc(22);
-        
-        @media screen and (max-width : 940px) {
+
+        @media screen and (max-width: 940px) {
           margin-left: 0;
           font-size: rem-calc(22);
           font-weight: bold;
         }
       }
 
-      &:nth-child(2){        
-        @media screen and (max-width : 940px) {
-          margin-left: 0; 
+      &:nth-child(2) {
+        @media screen and (max-width: 940px) {
+          margin-left: 0;
         }
       }
-        
-      a{
-        box-sizing:border-box;
-        -moz-box-sizing:border-box;
-        -webkit-box-sizing:border-box;
+
+      a {
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
         transition: all 0.25s ease;
-        
-        @media screen and (max-width : 940px) {
+
+        @media screen and (max-width: 940px) {
           font-weight: 500;
         }
-        
-        &:hover, &:focus{
+
+        &:hover,
+        &:focus {
           color: $black;
-          
-          @media screen and (max-width : 940px) {
+
+          @media screen and (max-width: 940px) {
             color: $black;
             background: $white;
           }
         }
       }
-        
-      &:last-child{
-        a{
-          border-right: 0;  
+
+      &:last-child {
+        a {
+          border-right: 0;
         }
       }
     }
-      
-    #nav-index{
-      @media screen and (max-width : 940px) {
+
+    #nav-index {
+      @media screen and (max-width: 940px) {
         background: $background;
       }
-      
-      a{
-        @media screen and (max-width : 940px) {
+
+      a {
+        @media screen and (max-width: 940px) {
           text-align: center;
           text-indent: 0px;
         }
-        
-        &:hover, &:focus{
+
+        &:hover,
+        &:focus {
           background: $black;
           color: $white;
-          
-          @media screen and (max-width : 940px) {
+
+          @media screen and (max-width: 940px) {
             color: $black;
-            background: $white; 
+            background: $white;
           }
         }
 
-        &#nav-home-link{
-          &:focus{
+        &#nav-home-link {
+          &:focus {
             background-color: darken($background, 7%);
             color: $white;
           }
@@ -146,17 +149,17 @@ nav{
       }
     }
 
-    #nav-socials{
+    #nav-socials {
       display: inline;
       float: right;
       margin-top: -3px;
       border-bottom: none;
 
-      @media screen and (max-width : 940px) {
+      @media screen and (max-width: 940px) {
         border-bottom: 1px solid $white;
       }
 
-      a{
+      a {
         min-width: unset;
         width: unset;
         border-bottom: none;
@@ -164,102 +167,110 @@ nav{
         float: left;
         margin-right: 0.75em;
 
-        &:last-child{
+        &:last-child {
           margin-right: 1em;
         }
 
-        &:hover, &:visited, &:focus{
+        &:hover,
+        &:visited,
+        &:focus {
           background-color: inherit;
         }
 
-        @media screen and (max-width : 940px) {
+        @media screen and (max-width: 940px) {
           min-width: unset;
         }
 
-        &#nav-github-link{
+        &#nav-github-link {
           margin-right: 0.75em;
 
-          @media screen and (max-width : 940px) {
+          @media screen and (max-width: 940px) {
             margin-right: 0;
           }
         }
 
-        img{
+        img {
           margin: 0;
           padding: 0;
           max-width: 2em;
 
           -webkit-filter: grayscale(100%);
-          -webkit-transition: .25s ease-in-out;
+          -webkit-transition: 0.25s ease-in-out;
           -moz-filter: grayscale(100%);
-          -moz-transition: .25s ease-in-out;
+          -moz-transition: 0.25s ease-in-out;
           -o-filter: grayscale(100%);
-          -o-transition: .25s ease-in-out;
+          -o-transition: 0.25s ease-in-out;
 
-          &:hover, &:focus{
+          &:hover,
+          &:focus {
             -webkit-filter: grayscale(0%);
-            -webkit-transition: .25s ease-in-out;
+            -webkit-transition: 0.25s ease-in-out;
             -moz-filter: grayscale(0%);
-            -moz-transition: .25s ease-in-out;
+            -moz-transition: 0.25s ease-in-out;
             -o-filter: grayscale(0%);
-            -o-transition: .25s ease-in-out;
+            -o-transition: 0.25s ease-in-out;
           }
         }
       }
     }
   }
-  
-  a{
+
+  a {
     color: $white;
     display: inline-block;
     min-width: 100px;
     text-align: center;
     text-decoration: underline;
     line-height: 50px;
-    
-    @media screen and (max-width : 940px) {
+
+    @media screen and (max-width: 940px) {
       text-align: left;
       width: 100%;
-      text-indent: 25px; 
-      border-bottom: 1px solid $white; 
+      text-indent: 25px;
+      border-bottom: 1px solid $white;
     }
-      
-    &:hover, &:active, &:focus{
+
+    &:hover,
+    &:active,
+    &:focus {
       background-color: $white;
       color: $black;
       font-weight: 500;
       text-decoration: none;
     }
   }
-  
-  a#pull{
+
+  a#pull {
     display: none;
     text-decoration: none;
-    
-    @media screen and (max-width : 940px) {
+
+    @media screen and (max-width: 940px) {
       display: block;
       background-color: $background;
       width: 100%;
       position: relative;
       line-height: 36px;
-      padding: 0; margin: 0;
+      padding: 0;
+      margin: 0;
       font-weight: bold;
     }
-    
-    &:hover, &:visited, &:focus{
-      @media screen and (max-width : 940px) {
+
+    &:hover,
+    &:visited,
+    &:focus {
+      @media screen and (max-width: 940px) {
         color: $white;
       }
     }
 
-    &:focus{
+    &:focus {
       background-color: darken($background, 7%);
       text-decoration: none;
     }
 
-    &:after{
-      @media screen and (max-width : 940px) {
-        content:"";
+    &:after {
+      @media screen and (max-width: 940px) {
+        content: '';
         background: url('../img/nav-icon.png') no-repeat;
         width: 20px;
         height: 20px;

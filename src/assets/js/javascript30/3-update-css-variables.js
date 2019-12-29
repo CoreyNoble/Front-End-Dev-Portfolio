@@ -3,10 +3,12 @@
 const inputs = document.querySelectorAll('.controls input');
 
 function handleUpdate() {
-    // Store the suffix value if a [data-sizing] attribute is on the element, otherwise store ''.
-    const suffix = this.dataset.sizing || '';
-    // Set the style of each variable name using the new value and suffix
-    document.getElementById('javascript30-3').style.setProperty(`--${this.name}`, this.value + suffix);
+  // Store the suffix value if a [data-sizing] attribute is on the element, otherwise store ''.
+  const suffix = this.dataset.sizing || '';
+  // Set the style of each variable name using the new value and suffix
+  document
+    .getElementById('javascript30-3')
+    .style.setProperty(`--${this.name}`, this.value + suffix);
 }
 
 // Listen for change and mouse move on each input. Node List forEach operation

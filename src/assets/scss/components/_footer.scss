@@ -1,104 +1,114 @@
 /* Footer */
-footer{
-    background: $background;
+footer {
+  background: $background;
+  border-top: 1px solid $white;
+  -webkit-box-shadow: 0px -10px 17px -8px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px -10px 17px -8px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px -10px 17px -8px rgba(0, 0, 0, 0.75);
+  padding: 1em 0;
+
+  @media screen and (max-width: 40em) {
     border-top: 1px solid $white;
-    -webkit-box-shadow: 0px -10px 17px -8px rgba(0,0,0,0.75);
-    -moz-box-shadow: 0px -10px 17px -8px rgba(0,0,0,0.75);
-    box-shadow: 0px -10px 17px -8px rgba(0,0,0,0.75);
-    padding: 1em 0;
-    
-    @media screen and (max-width: 40em) {
-      border-top: 1px solid $white;
+  }
+
+  .footnote {
+    display: table;
+
+    .footnote-profile {
+      display: table-cell;
+      vertical-align: middle;
+      text-align: center;
     }
-    
-    .footnote{
-        display: table;
-        
-        .footnote-profile{
-            display: table-cell;
-            vertical-align: middle;
-            text-align: center;
-        }
-    }
-    
-  .section{
+  }
+
+  .section {
     padding: 1.5em 1em;
   }
 
-  h4,.h4, span{
+  h4,
+  .h4,
+  span {
     font-size: 1em;
     color: $grey;
     float: left;
     display: block;
     padding: 0;
 
-    a:hover, a:focus{
+    a:hover,
+    a:focus {
       text-decoration: underline;
     }
   }
 
-  p{
+  p {
     padding: 0;
   }
 
-  .profession{
+  .profession {
     border-right: 3px solid $grey;
   }
 
-  .footnote-position{
-    margin-top: .5em;
-      
+  .footnote-position {
+    margin-top: 0.5em;
+
     @media screen and (max-width: 40em) {
       margin-top: 0;
     }
 
-    .name, .title, .footnote-contact{
+    .name,
+    .title,
+    .footnote-contact {
       display: block;
       width: 100%;
       float: left;
     }
 
-    .name{
+    .name {
       padding: 0;
       margin: 0;
-        
+
       @media screen and (max-width: 40em) {
-        margin-top: .25em;
+        margin-top: 0.25em;
       }
     }
   }
 
-  .footnote-ctas-desktop{
+  .footnote-ctas-desktop {
     display: block;
-      
+
     @media screen and (max-width: 40em) {
       display: none;
     }
   }
 
-  .footnote-ctas-tablet{
+  .footnote-ctas-tablet {
     display: none;
-      
+
     @media screen and (max-width: 40em) {
       display: block;
     }
   }
 
-  .footnote-contact{
+  .footnote-contact {
     margin-top: 1em;
-      
+
     @media screen and (max-width: 40em) {
-      margin-top: .75em;
+      margin-top: 0.75em;
     }
   }
 
-  .footnote-contact, .social-media, .footnote-ctas{
-    h4,.h4, p{
-      a{
+  .footnote-contact,
+  .social-media,
+  .footnote-ctas {
+    h4,
+    .h4,
+    p {
+      a {
         color: $white;
         transition: color 0.25s ease;
 
-        &:hover, &:focus{
+        &:hover,
+        &:focus {
           color: $blue;
           text-decoration: none;
         }
@@ -106,84 +116,86 @@ footer{
     }
   }
 
-  .social-media{
+  .social-media {
     margin-top: 1.3em;
     display: block;
-      
+
     @media screen and (max-width: 40em) {
       margin-top: 3em;
     }
-      
-    img{
+
+    img {
       max-width: 35px;
     }
 
-    .linkedin{
+    .linkedin {
       display: block;
       width: 100%;
       float: right;
       margin-top: -10px;
     }
 
-    .github{
+    .github {
       display: block;
       width: 100%;
       float: right;
       margin-top: 1.5em;
-        
+
       @media screen and (max-width: 40em) {
         display: block;
         margin-top: 2em;
       }
     }
 
-    .social-icon{
-      a{
-        img{
+    .social-icon {
+      a {
+        img {
           -webkit-filter: grayscale(100%);
-          -webkit-transition: .25s ease-in-out;
+          -webkit-transition: 0.25s ease-in-out;
           -moz-filter: grayscale(100%);
-          -moz-transition: .25s ease-in-out;
+          -moz-transition: 0.25s ease-in-out;
           -o-filter: grayscale(100%);
-          -o-transition: .25s ease-in-out;
+          -o-transition: 0.25s ease-in-out;
 
-          &:hover, &:focus{
+          &:hover,
+          &:focus {
             -webkit-filter: grayscale(0%);
-            -webkit-transition: .25s ease-in-out;
+            -webkit-transition: 0.25s ease-in-out;
             -moz-filter: grayscale(0%);
-            -moz-transition: .25s ease-in-out;
+            -moz-transition: 0.25s ease-in-out;
             -o-filter: grayscale(0%);
-            -o-transition: .25s ease-in-out;
+            -o-transition: 0.25s ease-in-out;
           }
         }
       }
     }
 
-    .social-text{
-      h4,.h4{
+    .social-text {
+      h4,
+      .h4 {
         padding-top: 0.55em;
         font-size: 1em;
         font-weight: bold;
         line-height: 1;
         float: right;
 
-        a{
-          font-size: .9em;
+        a {
+          font-size: 0.9em;
           font-weight: bold;
         }
       }
 
-      p{
-        font-size: .75em;
+      p {
+        font-size: 0.75em;
         font-weight: bold;
       }
     }
   }
 
-  .footnote-ctas{
+  .footnote-ctas {
     float: right;
     margin-right: 7vw;
-      
+
     @media screen and (max-width: 40em) {
       float: left;
       margin-right: 0em;
@@ -191,13 +203,14 @@ footer{
       padding-bottom: 0;
     }
 
-    h4,.h4{
-      a{
+    h4,
+    .h4 {
+      a {
         color: $white;
         float: right;
       }
-        
-      @media screen and (max-width: 40em) {    
+
+      @media screen and (max-width: 40em) {
         padding: 0em 0.5em;
       }
     }

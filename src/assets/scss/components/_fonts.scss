@@ -1,18 +1,56 @@
 // FONTS
 // ARVO
-@import url(https://fonts.googleapis.com/css?family=Arvo:400,400italic,700,700italic);
+@import url(
+  https://fonts.googleapis.com/css?family=Arvo:400,
+  400italic,
+  700,
+  700italic
+);
 // font-family: 'Arvo', serif;
 
 // LATO
-@import url(https://fonts.googleapis.com/css?family=Lato:400,100,300,100italic,300italic,400italic,700,700italic,900,900italic);
+@import url(
+  https://fonts.googleapis.com/css?family=Lato:400,
+  100,
+  300,
+  100italic,
+  300italic,
+  400italic,
+  700,
+  700italic,
+  900,
+  900italic
+);
 // font-family: 'Lato', sans-serif;
 
 // OPEN SANS
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic);
+@import url(
+  https://fonts.googleapis.com/css?family=Open+Sans:400,
+  300,
+  300italic,
+  400italic,
+  600,
+  600italic,
+  700,
+  700italic,
+  800,
+  800italic
+);
 // font-family: 'Open Sans', sans-serif;
 
 // FONT + TEXT STYLES
-h1,.h1,h2,.h2,h3,.h3,h4,.h4,h5,.h5,h6,.h6{
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
   font-family: 'Lato', sans-serif;
   font-weight: normal;
   padding: 0;
@@ -20,7 +58,8 @@ h1,.h1,h2,.h2,h3,.h3,h4,.h4,h5,.h5,h6,.h6{
   word-break: break-word;
 }
 
-h1,.h1{
+h1,
+.h1 {
   font-size: rem-calc(32);
   line-height: 1.2;
 
@@ -29,7 +68,8 @@ h1,.h1{
   }
 }
 
-h2,.h2{
+h2,
+.h2 {
   font-size: rem-calc(28);
   line-height: 1.2;
 
@@ -38,7 +78,8 @@ h2,.h2{
   }
 }
 
-h3,.h3{
+h3,
+.h3 {
   font-size: rem-calc(24);
   line-height: 1.2;
 
@@ -47,7 +88,8 @@ h3,.h3{
   }
 }
 
-h4,.h4{
+h4,
+.h4 {
   font-size: rem-calc(20);
 
   @include breakpoint(medium) {
@@ -55,7 +97,8 @@ h4,.h4{
   }
 }
 
-h5,.h5{
+h5,
+.h5 {
   font-size: rem-calc(18);
 
   @include breakpoint(medium) {
@@ -63,7 +106,8 @@ h5,.h5{
   }
 }
 
-h6,.h6{
+h6,
+.h6 {
   font-size: rem-calc(16);
 
   @include breakpoint(medium) {
@@ -71,7 +115,10 @@ h6,.h6{
   }
 }
 
-p,ul,ol,li{
+p,
+ul,
+ol,
+li {
   font-family: 'Open Sans', sans-serif;
   font-weight: lighter;
   margin: 0;
@@ -79,42 +126,51 @@ p,ul,ol,li{
   word-break: break-word;
 }
 
-ol, ul {
+ol,
+ul {
   margin-left: 2rem;
 
-  li{
+  li {
     margin-top: 0.5em;
 
-    &.h1, &.h2, &.h3, &.h4, &.h4, &.h6{
+    &.h1,
+    &.h2,
+    &.h3,
+    &.h4,
+    &.h4,
+    &.h6 {
       margin-top: 0.5em;
     }
   }
 }
 
-p, ul, ol{
+p,
+ul,
+ol {
   padding: 0 0 0.33rem 0;
 }
 
 a {
   color: inherit;
   text-decoration: underline;
-  
-  &:hover, &:focus{
-      color: inherit;  
-      text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: inherit;
+    text-decoration: none;
   }
 }
 
-.black{
-    ul{
-        color: $white;
-    }
+.black {
+  ul {
+    color: $white;
+  }
 }
 
-ul{
+ul {
   list-style-type: square;
 
-  li{
+  li {
     margin-left: 1em;
   }
 }

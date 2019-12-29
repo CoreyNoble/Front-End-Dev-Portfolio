@@ -1,5 +1,5 @@
 // Page. Parent <div>.
-const page = document.querySelector("#javascript30-22");
+const page = document.querySelector('#javascript30-22');
 // Grab every <a> on 'page'.
 const triggers = page.querySelectorAll('a');
 // <span> element that follows along.
@@ -11,29 +11,29 @@ page.appendChild(highlight);
 
 // Moves the <span> to the position of the hovered <a> inside of 'page.
 function highlightLink() {
-    this.classList.add('active');
-    // The bounding client rectangle of the <a> (this).
-    const linkCoords = this.getBoundingClientRect();
-    console.log(linkCoords);
-    // Coordinates object (Width, Height, Left, Top) populated from the 'linkCoords' bounding rectangle.
-    const coords = {
-        // Width / Height of the rectangle.
-        width: linkCoords.width,
-        height: linkCoords.height,
-        // Position of the <a> from the (top/left) of the window, PLUS the scroll value (scrollY/scrollX).
-        top: linkCoords.top + window.scrollY,
-        left: linkCoords.left + window.scrollX
-    };
+  this.classList.add('active');
+  // The bounding client rectangle of the <a> (this).
+  const linkCoords = this.getBoundingClientRect();
+  console.log(linkCoords);
+  // Coordinates object (Width, Height, Left, Top) populated from the 'linkCoords' bounding rectangle.
+  const coords = {
+    // Width / Height of the rectangle.
+    width: linkCoords.width,
+    height: linkCoords.height,
+    // Position of the <a> from the (top/left) of the window, PLUS the scroll value (scrollY/scrollX).
+    top: linkCoords.top + window.scrollY,
+    left: linkCoords.left + window.scrollX
+  };
 
-    // Set the Width / Height of the <span> to match the Width / Height of the <a> rectangle.
-    highlight.style.width = `${coords.width}px`;
-    highlight.style.height = `${coords.height}px`;
-    // Set the Position (scrollX, scrollY) of the <span> to match the position of the <a> rectangle.
-    highlight.style.transform = `translate(${coords.left}px, ${coords.top}px)`;
+  // Set the Width / Height of the <span> to match the Width / Height of the <a> rectangle.
+  highlight.style.width = `${coords.width}px`;
+  highlight.style.height = `${coords.height}px`;
+  // Set the Position (scrollX, scrollY) of the <span> to match the position of the <a> rectangle.
+  highlight.style.transform = `translate(${coords.left}px, ${coords.top}px)`;
 }
 
 function mouseLeave() {
-    this.classList.remove('active');
+  this.classList.remove('active');
 }
 
 // On each <a>, when mouse enters the element, highlightLink().

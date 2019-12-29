@@ -12,10 +12,11 @@ const rgbShift = document.querySelector('input[value="rgbShift"]');
 // Getting the video stream
 function getVideo() {
   // The way you get a user's video. Only getting video, not audio.
-  navigator.mediaDevices.getUserMedia({ video: true, audio: false })
+  navigator.mediaDevices
+    .getUserMedia({ video: true, audio: false })
     .then(localMediaStream => {
       console.log(localMediaStream);
-      
+
       // Set the <video> source to be the local media stream.
       video.srcObject = localMediaStream;
       // Play the <video>.
@@ -38,17 +39,17 @@ function paintToCanvas() {
 
   // Uncheck other filters
   // Green Screen
-  if (greenScreen.checked == true){
+  if (greenScreen.checked == true) {
     rgbShift.checked = false;
     redShift.checked = false;
   }
   // Red Effect
-  else if (redShift.checked == true){
+  else if (redShift.checked == true) {
     greenScreen.checked = false;
     rgbShift.checked = false;
   }
   // RGB Split
-  else if (rgbShift.checked == true){
+  else if (rgbShift.checked == true) {
     greenScreen.checked = false;
     redShift.checked = false;
   }
@@ -60,24 +61,24 @@ function paintToCanvas() {
     // Take the pixels out of the context. Each pixel has 4 values associated with it: red, green, blue, and alpha. 'pixels' represents an array of 'ImageData' which contains a number value for each channel(r,g,b,a) on each pixel (0(r), 1(g), 2(b), 3(a), 4(r), 5(g)...)
     let pixels = ctx.getImageData(0, 0, width, height);
 
-// Uncheck other filters
-  // Green Screen
-  if (greenScreen.checked == true){
-    pixels = pixelKnockout(pixels);
-  }
-  // Red Effect
-  else if (redShift.checked == true){
-    pixels = redEffect(pixels);
-  }
-  // RGB Split
-  else if (rgbShift.checked == true){
-    pixels = rgbSplit(pixels);
-  }
-  // Ghosting Effect
-  // Sets the Alpha globally, will persist every frame (fade out effect) until the alpha is equal to 0.
-  // if (ghosting.checked == true){
-  //   ctx.globalAlpha = 0.8;
-  // }
+    // Uncheck other filters
+    // Green Screen
+    if (greenScreen.checked == true) {
+      pixels = pixelKnockout(pixels);
+    }
+    // Red Effect
+    else if (redShift.checked == true) {
+      pixels = redEffect(pixels);
+    }
+    // RGB Split
+    else if (rgbShift.checked == true) {
+      pixels = rgbSplit(pixels);
+    }
+    // Ghosting Effect
+    // Sets the Alpha globally, will persist every frame (fade out effect) until the alpha is equal to 0.
+    // if (ghosting.checked == true){
+    //   ctx.globalAlpha = 0.8;
+    // }
 
     // Put the pixels back into the context
     ctx.putImageData(pixels, 0, 0);
@@ -85,10 +86,9 @@ function paintToCanvas() {
 }
 
 // SET FILTERS
-function filter(pixels){
+function filter(pixels) {
   console.log('fired');
-      
-  }
+}
 
 // Take a photo
 function takePhoto() {
@@ -115,7 +115,7 @@ function takePhoto() {
 // Create a red effect
 function redEffect(pixels) {
   // Loop over every single pixel. (+=4 to skip to the next pixel)
-  for (let i = 0; i < pixels.data.length; i+=4) {
+  for (let i = 0; i < pixels.data.length; i += 4) {
     // Manipulate the values for each channel
     // i+0 = Red (r)
     // Increase the value for Red.
@@ -134,7 +134,7 @@ function redEffect(pixels) {
 // Shift the RGB values
 function rgbSplit(pixels) {
   // Loop over every single pixel.
-  for (let i = 0; i < pixels.data.length; i+=4) {
+  for (let i = 0; i < pixels.data.length; i += 4) {
     // i+/- = move the pixel right(+) or left(-)
     // = i+0 = Red (r)
     pixels.data[i - 150] = pixels.data[i + 0];
@@ -153,13 +153,13 @@ function pixelKnockout(pixels) {
   const levels = {};
 
   // For each slider.
-  document.querySelectorAll('.rgb input').forEach((input) => {
+  document.querySelectorAll('.rgb input').forEach(input => {
     // Sets the attributes and their values as key:value in the object.
     // Eg. <input min=0, max=255 name="rmin">
     levels[input.name] = input.value;
   });
 
-  // For each 
+  // For each
   for (let i = 0; i < pixels.data.length; i = i + 4) {
     // Figure out what the (r,g,b,a) items are.
     const red = pixels.data[i + 0];
@@ -168,12 +168,14 @@ function pixelKnockout(pixels) {
     const alpha = pixels.data[i + 3];
 
     // If the pixel data for each channel is in-between the min and max values.
-    if (red >= levels.rmin
-      && green >= levels.gmin
-      && blue >= levels.bmin
-      && red <= levels.rmax
-      && green <= levels.gmax
-      && blue <= levels.bmax) {
+    if (
+      red >= levels.rmin &&
+      green >= levels.gmin &&
+      blue >= levels.bmin &&
+      red <= levels.rmax &&
+      green <= levels.gmax &&
+      blue <= levels.bmax
+    ) {
       // turn the alpha for that pixel (i+3) to 0.
       pixels.data[i + 3] = 0;
     }

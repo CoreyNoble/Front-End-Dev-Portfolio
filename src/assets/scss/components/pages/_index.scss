@@ -1,5 +1,5 @@
 /* Index Page */
-#mainCanvas{
+#mainCanvas {
   line-height: 0;
   display: flex;
   align-items: center;
@@ -9,33 +9,34 @@
   @media screen and (max-width: 40em) {
     height: 15em;
   }
-    
+
   @media screen and (min-width: 40.063em) and (max-width: 64em) {
     height: 24em;
   }
 
-  #canvas{
+  #canvas {
     position: absolute;
     top: 0;
 
-    canvas{
-      height: 31em!important;
+    canvas {
+      height: 31em !important;
 
       @media screen and (max-width: 40em) {
-        height: 15em!important;
+        height: 15em !important;
       }
-        
+
       @media screen and (min-width: 40.063em) and (max-width: 64em) {
-        height: 24em!important;
+        height: 24em !important;
       }
     }
   }
 
-  #index-title{
+  #index-title {
     position: absolute;
     z-index: 3;
 
-    h1,.h1{
+    h1,
+    .h1 {
       display: block;
       text-align: center;
       margin-bottom: 0.33em;
@@ -47,17 +48,18 @@
 
       -webkit-animation-delay: 1.33s; /* Chrome, Safari, Opera */
       animation-delay: 1.33s;
-        
+
       @media screen and (min-width: 40.063em) and (max-width: 64em) {
         padding-top: 0.25em;
       }
-        
+
       @media screen and (max-width: 40em) {
         font-size: 2.5em;
       }
     }
 
-    h2,.h2{
+    h2,
+    .h2 {
       display: block;
       text-align: center;
       font-size: 2.5em;
@@ -67,7 +69,7 @@
 
       -webkit-animation-delay: 2.15s; /* Chrome, Safari, Opera */
       animation-delay: 2.15s;
-        
+
       @media screen and (max-width: 40em) {
         font-size: 1.5em;
       }
@@ -75,39 +77,40 @@
   }
 }
 
-.index-header{
+.index-header {
   margin-bottom: 2em;
 }
 
-.services-promotion{
+.services-promotion {
   margin-bottom: 3em;
 
-  h4,.h4{
+  h4,
+  .h4 {
     text-align: center;
   }
 
-  p{
+  p {
     text-align: center;
     padding: 0.5em;
   }
 
-  img{
+  img {
     display: block;
     margin: 0 auto;
     margin-bottom: 0.5em;
   }
-    
-  &.no-padding.columns{
+
+  &.no-padding.columns {
     padding: 0;
   }
-    
-  &.no-bottom-space{
+
+  &.no-bottom-space {
     margin-bottom: 0;
   }
-    
-  &.no-bottom-space-desktop{
+
+  &.no-bottom-space-desktop {
     margin-bottom: 0;
-      
+
     @media screen and (max-width: 64em) {
       margin-bottom: 3em;
     }

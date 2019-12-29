@@ -15,47 +15,50 @@ msg.text = document.querySelector('[name="text"]').value;
 
 // Creates the list of voice <options>.
 function populateVoices() {
-    // Get all of the voices that are available on speechSynthesis (this).
-    voices = this.getVoices();
-    // Populate a list of <options> for each voice.
-    // Set the innerHTML of voicesDropdown <select>.
-    voicesDropdown.innerHTML = voices
-        // Only show the english 'en' voices.
-        .filter(voice => voice.lang.includes('en'))
-        // Map to create an array item for each voice <option>.
-        .map(voice => `<option value="${voice.name}">${voice.name} (${voice.lang})</option>`)
-        // Convert to one string.
-        .join('');
+  // Get all of the voices that are available on speechSynthesis (this).
+  voices = this.getVoices();
+  // Populate a list of <options> for each voice.
+  // Set the innerHTML of voicesDropdown <select>.
+  voicesDropdown.innerHTML = voices
+    // Only show the english 'en' voices.
+    .filter(voice => voice.lang.includes('en'))
+    // Map to create an array item for each voice <option>.
+    .map(
+      voice =>
+        `<option value="${voice.name}">${voice.name} (${voice.lang})</option>`
+    )
+    // Convert to one string.
+    .join('');
 }
 
 // Change the voice to the newly selected voice <option>.
 function setVoice() {
-    // Set the new voice by looping over every voice in the voices array. .find() the voice where the voice.name is the same as the <option> value.
-    msg.voice = voices.find(voice => voice.name === this.value);
-    // Toggle the speech.
-    toggle();
+  // Set the new voice by looping over every voice in the voices array. .find() the voice where the voice.name is the same as the <option> value.
+  msg.voice = voices.find(voice => voice.name === this.value);
+  // Toggle the speech.
+  toggle();
 }
 
-// Toggle the speech. 
+// Toggle the speech.
 // startOver = true: By default we start the speech over again, but can choose to just stop the speech if we pass startOver = false.
 function toggle(startOver = true) {
-    // Cancel any current speech.
-    speechSynthesis.cancel();
-    // If we want to startOver.
-    if (startOver) {
-        // Restart the speech.
-        speechSynthesis.speak(msg);
-    }
+  // Cancel any current speech.
+  speechSynthesis.cancel();
+  // If we want to startOver.
+  if (startOver) {
+    // Restart the speech.
+    speechSynthesis.speak(msg);
+  }
 }
 
 // Set the Options
 function setOption() {
-    // The name and value of the <option>
-    console.log(this.name, this.value);
-    // For the message attribute that matches the <option> name, set its' value to match the value that was set inside of that <option>.
-    msg[this.name] = this.value;
-    // Toggle the speech.
-    toggle();
+  // The name and value of the <option>
+  console.log(this.name, this.value);
+  // For the message attribute that matches the <option> name, set its' value to match the value that was set inside of that <option>.
+  msg[this.name] = this.value;
+  // Toggle the speech.
+  toggle();
 }
 
 // When the 'voiceschanged' event fires, populateVoices(). This is needed before populating the voices in-order to give the browser enough time to have this event ready.

@@ -4,7 +4,7 @@ const pressed = [];
 const secretCode = '3838404037393739666513';
 
 // When key up, pass the event.
-window.addEventListener('keyup', (e) => {
+window.addEventListener('keyup', e => {
   console.log(e.key);
   // Push the key press into the array.
   pressed.push(e.key);

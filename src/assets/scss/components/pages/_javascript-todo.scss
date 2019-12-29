@@ -1,21 +1,21 @@
-#javaScriptToDo{ 
-  #todoInput{
+#javaScriptToDo {
+  #todoInput {
     margin-bottom: 0;
     margin-top: 0.15em;
-    background: rgba(0,0,0,0.22);
+    background: rgba(0, 0, 0, 0.22);
     color: $white;
-        
-    &:focus{
-        background: rgba(0,0,0,0.22);
+
+    &:focus {
+      background: rgba(0, 0, 0, 0.22);
     }
   }
 
-  button{
-      width: 100%;
-      padding: 0.75em 1em;
+  button {
+    width: 100%;
+    padding: 0.75em 1em;
   }
 
-  #todoOutput{
+  #todoOutput {
     margin-left: 0;
 
     .todoItem {
@@ -30,42 +30,44 @@
       border: 2px solid lighten($blue, 20%);
       transition: all ease 0.2s;
 
-      &::before{
+      &::before {
         cursor: move;
         width: 1.25em;
         height: 90%;
-        content: "";
+        content: '';
         display: block;
         position: absolute;
         top: 5%;
         left: 0.15em;
         background-color: $black;
-        background-image: linear-gradient(transparent 50%, rgb(0,0,0) 50%);
+        background-image: linear-gradient(transparent 50%, rgb(0, 0, 0) 50%);
         background-size: 8px 8px;
         opacity: 0.8;
       }
 
-      p{
+      p {
         width: 87%;
 
-        @include breakpoint(medium){
+        @include breakpoint(medium) {
           width: 94%;
         }
 
-        @include breakpoint(large){
+        @include breakpoint(large) {
           width: 97%;
         }
       }
 
       &:nth-child(even) {
-        &:hover, &:focus{
+        &:hover,
+        &:focus {
           background: darken(lighten($blue, 20%), 14%);
           border: 2px solid $grey;
 
           .close {
             border: 2px solid $grey;
 
-            &:hover, &:focus{
+            &:hover,
+            &:focus {
               border: 2px solid darken($grey, 14%);
             }
           }
@@ -76,22 +78,24 @@
           border: 2px solid lighten($blue, 20%);
         }
       }
-  
+
       &:nth-child(odd) {
         background: $white;
         border: 2px solid $white;
-  
-        &:hover, &:focus{
-            background: darken($white, 14%);
+
+        &:hover,
+        &:focus {
+          background: darken($white, 14%);
+          border: 2px solid darken($grey, 14%);
+
+          .close {
             border: 2px solid darken($grey, 14%);
 
-            .close {
+            &:hover,
+            &:focus {
               border: 2px solid darken($grey, 14%);
-
-              &:hover, &:focus{
-                border: 2px solid darken($grey, 14%);
-              }
             }
+          }
         }
 
         .close {
@@ -99,7 +103,7 @@
           border: 2px solid $white;
         }
       }
-      
+
       &.checked {
         background: $background;
         color: $white;
@@ -119,12 +123,16 @@
           transform: rotate(45deg);
         }
 
-        &::before{
+        &::before {
           background-color: $white;
-          background-image: linear-gradient(transparent 50%, rgb(200,200,200) 50%);
+          background-image: linear-gradient(
+            transparent 50%,
+            rgb(200, 200, 200) 50%
+          );
         }
 
-        &:hover, &:focus {
+        &:hover,
+        &:focus {
           background-color: lighten($background, 15%);
           border: 2px solid $white;
 
@@ -132,7 +140,8 @@
             background-color: $background;
             border: 2px solid $white;
 
-            &:hover, &:focus{ 
+            &:hover,
+            &:focus {
               background-color: $error;
             }
           }
@@ -143,19 +152,18 @@
           color: $white;
         }
 
-        p{
+        p {
           color: $white;
           width: 72%;
-  
-          @include breakpoint(medium){
+
+          @include breakpoint(medium) {
             width: 86%;
           }
-  
-          @include breakpoint(large){
+
+          @include breakpoint(large) {
             width: 92.5%;
           }
         }
-  
       }
 
       .close {
@@ -168,17 +176,18 @@
         padding: 1em;
         color: $black;
         font-weight: bold;
-  
-        &:hover, &:focus{
+
+        &:hover,
+        &:focus {
           background-color: $error;
         }
       }
 
-      &.over{
+      &.over {
         margin-left: -1.5em;
       }
 
-      p{
+      p {
         color: $black;
         font-weight: bold;
         font-size: 1em;

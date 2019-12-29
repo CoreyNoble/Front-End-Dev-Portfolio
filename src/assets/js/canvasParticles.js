@@ -1,4 +1,12 @@
-var camera, scene, renderer, particles, particle, material, particleCount, points, texture;
+var camera,
+  scene,
+  renderer,
+  particles,
+  particle,
+  material,
+  particleCount,
+  points,
+  texture;
 var xSpeed, ySpeed;
 xSpeed = 0.0005;
 ySpeed = 0.0005;
@@ -9,20 +17,20 @@ winWidth = parentContainer.clientWidth;
 winHeight = parentContainer.clientHeight;
 
 // Resize
-window.addEventListener( 'resize', onWindowResize, false );
+window.addEventListener('resize', onWindowResize, false);
 
-function onWindowResize(){
-    camera.aspect = parentContainer.clientWidth / parentContainer.clientHeight;
-    camera.updateProjectionMatrix();
+function onWindowResize() {
+  camera.aspect = parentContainer.clientWidth / parentContainer.clientHeight;
+  camera.updateProjectionMatrix();
 
-    renderer.setSize( parentContainer.clientWidth, parentContainer.clientHeight );
+  renderer.setSize(parentContainer.clientWidth, parentContainer.clientHeight);
 }
 
-function init(){
+function init() {
   scene = new THREE.Scene();
   scene.fog = new THREE.FogExp2('#222', 0.001);
 
-  camera = new THREE.PerspectiveCamera(75, winWidth/winHeight, 1, 1000);
+  camera = new THREE.PerspectiveCamera(75, winWidth / winHeight, 1, 1000);
   camera.position.z = 1000;
 
   material = new THREE.PointsMaterial({
@@ -54,16 +62,16 @@ function init(){
   document.getElementById('canvas').appendChild(renderer.domElement);
 }
 
-function animate(){
+function animate() {
   requestAnimationFrame(animate);
-  
+
   scene.rotation.y += xSpeed;
 
   var i = particleCount;
-  while(i--){
+  while (i--) {
     var particle = particles.vertices[i];
 
-    if(particle.y > 1000){
+    if (particle.y > 1000) {
       particle.y = -1000;
       particle.velocity.y = Math.random();
     }
@@ -76,7 +84,7 @@ function animate(){
   render();
 }
 
-function render(){
+function render() {
   camera.lookAt(scene.position);
   renderer.render(scene, camera);
 }

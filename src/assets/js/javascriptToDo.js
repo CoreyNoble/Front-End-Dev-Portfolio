@@ -1,7 +1,7 @@
-var close = document.getElementsByClassName("close");
-var list = document.getElementById("todoOutput");
-var myNodelist = document.getElementsByClassName("todoItem");
-var addToDo = document.querySelector(".addToDoItem");
+var close = document.getElementsByClassName('close');
+var list = document.getElementById('todoOutput');
+var myNodelist = document.getElementsByClassName('todoItem');
+var addToDo = document.querySelector('.addToDoItem');
 
 var cols = document.querySelectorAll('#todoOutput .todoItem');
 
@@ -20,10 +20,10 @@ function update(cols) {
 // Create a "close" button and append it to each list item
 function nodeList() {
   for (var i = 0; i < myNodelist.length; i++) {
-    var span = document.createElement("SPAN");
-    var txt = document.createTextNode("\u00D7");
-    span.className = "close";
-    span.setAttribute("tabindex", "0");
+    var span = document.createElement('SPAN');
+    var txt = document.createTextNode('\u00D7');
+    span.className = 'close';
+    span.setAttribute('tabindex', '0');
     span.appendChild(txt);
     myNodelist[i].appendChild(span);
   }
@@ -36,77 +36,91 @@ function removeItem() {
     close[i].onclick = function() {
       var li = this.parentElement;
       li.remove();
-    }
+    };
     // If 'Enter' on Close Focus
-    close[i].addEventListener("keyup", function(event) {
-      if (event.keyCode === 13) { // Enter
-        // Cancel the default action, if needed
-        event.preventDefault();
-        var li = this.parentElement;
-        li.remove();
-      }
-    }, false);
+    close[i].addEventListener(
+      'keyup',
+      function(event) {
+        if (event.keyCode === 13) {
+          // Enter
+          // Cancel the default action, if needed
+          event.preventDefault();
+          var li = this.parentElement;
+          li.remove();
+        }
+      },
+      false
+    );
   }
 }
 // Checked Item
 // Checked Item (CLICK)
-list.addEventListener('click', function(event) {
-  if (event.target.tagName === 'LI') {
-    event.target.classList.toggle('checked');
-  } else if (event.target.tagName === 'P') {
-    event.target.parentNode.classList.toggle('checked');
-  }
-}, false);
+list.addEventListener(
+  'click',
+  function(event) {
+    if (event.target.tagName === 'LI') {
+      event.target.classList.toggle('checked');
+    } else if (event.target.tagName === 'P') {
+      event.target.parentNode.classList.toggle('checked');
+    }
+  },
+  false
+);
 
 // Checked Item (ENTER)
-list.addEventListener("keyup", function(event) {
-  if (event.keyCode === 13) { // Enter
-    // Cancel the default action, if needed
-    event.preventDefault();
-    // Trigger the button element with a click
-    event.target.classList.toggle('checked');
-  }
-}, false);
+list.addEventListener(
+  'keyup',
+  function(event) {
+    if (event.keyCode === 13) {
+      // Enter
+      // Cancel the default action, if needed
+      event.preventDefault();
+      // Trigger the button element with a click
+      event.target.classList.toggle('checked');
+    }
+  },
+  false
+);
 
 // Create a new list item when clicking on the "Add" button
 function newItem() {
-  var li = document.createElement("li");
+  var li = document.createElement('li');
   var p = document.createElement('p');
-  var inputValue = document.getElementById("todoInput").value;
+  var inputValue = document.getElementById('todoInput').value;
   var t = document.createTextNode(inputValue);
 
   // LI attributes
-  li.setAttribute("tabindex", "0");
-  li.setAttribute("class", "todoItem");
-  li.setAttribute("draggable", "true");
+  li.setAttribute('tabindex', '0');
+  li.setAttribute('class', 'todoItem');
+  li.setAttribute('draggable', 'true');
   li.appendChild(p).appendChild(t);
-  
+
   // If input is empty
   if (inputValue === '') {
     // Error, Need to add text
-    alert("You must write something!");
-  } else { // Otherwise
+    alert('You must write something!');
+  } else {
+    // Otherwise
     // Add Entry
-    document.getElementById("todoOutput").appendChild(li);
+    document.getElementById('todoOutput').appendChild(li);
   }
   // Empty Input
-  document.getElementById("todoInput").value = "";
+  document.getElementById('todoInput').value = '';
 
-  var span = document.createElement("SPAN");
-  var txt = document.createTextNode("\u00D7");
-  span.className = "close";
+  var span = document.createElement('SPAN');
+  var txt = document.createTextNode('\u00D7');
+  span.className = 'close';
   span.appendChild(txt);
-  span.setAttribute("tabindex", "0");
+  span.setAttribute('tabindex', '0');
   li.appendChild(span);
 }
 
- 
 /* Drag & Drop */
 var dragSrcEl = null;
 
 function addDnDHandlers(elem) {
   elem.addEventListener('dragstart', handleDragStart, false);
-  elem.addEventListener('dragenter', handleDragEnter, false)
+  elem.addEventListener('dragenter', handleDragEnter, false);
   elem.addEventListener('dragover', handleDragOver, false);
   elem.addEventListener('dragleave', handleDragLeave, false);
   elem.addEventListener('drop', handleDrop, false);
@@ -128,7 +142,7 @@ function handleDragOver(e) {
   }
   this.classList.add('over');
 
-  e.dataTransfer.dropEffect = 'move';  // See the section on the DataTransfer object.
+  e.dataTransfer.dropEffect = 'move'; // See the section on the DataTransfer object.
 
   return false;
 }
@@ -138,7 +152,7 @@ function handleDragEnter(e) {
 }
 
 function handleDragLeave(e) {
-  this.classList.remove('over');  // this / e.target is previous target element.
+  this.classList.remove('over'); // this / e.target is previous target element.
 }
 
 function handleDrop(e) {
@@ -156,10 +170,9 @@ function handleDrop(e) {
     //this.innerHTML = e.dataTransfer.getData('text/html');
     this.parentNode.removeChild(dragSrcEl);
     var dropHTML = e.dataTransfer.getData('text/html');
-    this.insertAdjacentHTML('beforebegin',dropHTML);
+    this.insertAdjacentHTML('beforebegin', dropHTML);
     var dropElem = this.previousSibling;
     addDnDHandlers(dropElem);
-    
   }
   this.classList.remove('over');
   return false;
@@ -177,4 +190,4 @@ function handleDragEnd(e) {
 nodeList();
 update();
 
-addToDo.addEventListener("click", newItem);
+addToDo.addEventListener('click', newItem);

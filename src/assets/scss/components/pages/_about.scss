@@ -1,57 +1,85 @@
-#about-me .row{
+#about-me .row {
   border-bottom: solid 3px $white;
 }
 
 /* About Page */
-#about-me{
-    .introduction{
-        h1,.h1{
-            margin-top: 0;
-        }
-        
-        h2,.h2{
-            margin-bottom: 1em;
-            line-height: 1;
-
-            em{
-              font-size: 80%;
-            }
-        }
-    }
-    
-    h5,.h5{
-        margin-bottom: 1em;
+#about-me {
+  .introduction {
+    h1,
+    .h1 {
+      margin-top: 0;
     }
 
-    @media screen and (max-width: 40em) {
-      padding-bottom: 1em;
+    h2,
+    .h2 {
+      margin-bottom: 1em;
+      line-height: 1;
+
+      em {
+        font-size: 80%;
+      }
     }
+  }
+
+  h5,
+  .h5 {
+    margin-bottom: 1em;
+  }
+
+  @media screen and (max-width: 40em) {
+    padding-bottom: 1em;
+  }
 }
 
-.icon-container{
+.icon-container {
   display: block;
   margin: 0 auto;
   max-height: 31em;
   overflow: auto;
   border: 3px solid #000000;
-  background: rgba(92,162,162,1);
-  background: -moz-linear-gradient(top, rgba(92,162,162,1) 0%, rgba(64,112,112,1) 100%);
-  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(92,162,162,1)), color-stop(100%, rgba(64,112,112,1)));
-  background: -webkit-linear-gradient(top, rgba(92,162,162,1) 0%, rgba(64,112,112,1) 100%);
-  background: -o-linear-gradient(top, rgba(92,162,162,1) 0%, rgba(64,112,112,1) 100%);
-  background: -ms-linear-gradient(top, rgba(92,162,162,1) 0%, rgba(64,112,112,1) 100%);
-  background: linear-gradient(to bottom, rgba(92,162,162,1) 0%, rgba(64,112,112,1) 100%);
+  background: rgba(92, 162, 162, 1);
+  background: -moz-linear-gradient(
+    top,
+    rgba(92, 162, 162, 1) 0%,
+    rgba(64, 112, 112, 1) 100%
+  );
+  background: -webkit-gradient(
+    left top,
+    left bottom,
+    color-stop(0%, rgba(92, 162, 162, 1)),
+    color-stop(100%, rgba(64, 112, 112, 1))
+  );
+  background: -webkit-linear-gradient(
+    top,
+    rgba(92, 162, 162, 1) 0%,
+    rgba(64, 112, 112, 1) 100%
+  );
+  background: -o-linear-gradient(
+    top,
+    rgba(92, 162, 162, 1) 0%,
+    rgba(64, 112, 112, 1) 100%
+  );
+  background: -ms-linear-gradient(
+    top,
+    rgba(92, 162, 162, 1) 0%,
+    rgba(64, 112, 112, 1) 100%
+  );
+  background: linear-gradient(
+    to bottom,
+    rgba(92, 162, 162, 1) 0%,
+    rgba(64, 112, 112, 1) 100%
+  );
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5ca2a2', endColorstr='#1b2f2f', GradientType=0 );
   padding: 1em;
-  -webkit-box-shadow: 0.15em 0.15em 0.15em 0 rgba(0,0,0,0.4);
-  -moz-box-shadow: 0.15em 0.15em 0.15em 0 rgba(0,0,0,0.4);
-  box-shadow: 0.15em 0.15em 0.15em 0 rgba(0,0,0,0.4);
+  -webkit-box-shadow: 0.15em 0.15em 0.15em 0 rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 0.15em 0.15em 0.15em 0 rgba(0, 0, 0, 0.4);
+  box-shadow: 0.15em 0.15em 0.15em 0 rgba(0, 0, 0, 0.4);
 
   @media screen and (max-width: 40em) {
     max-height: 18.5em;
   }
 
-  h3{
+  h3 {
     padding: 0.5em;
   }
 }
@@ -60,18 +88,18 @@
   display: block;
   margin: 1em auto;
 
-  img{
+  img {
     display: block;
     margin: 0 auto;
     padding: 1em;
     border: 1px solid $black;
-    background: rgba(24,24,24,0.25);
-    -webkit-box-shadow: 0.33em 0.33em 0.33em 0 rgba(0,0,0,0.4);
-    -moz-box-shadow: 0.33em 0.33em 0.33em 0 rgba(0,0,0,0.4);
-    box-shadow: 0.33em 0.33em 0.33em 0 rgba(0,0,0,0.4);
+    background: rgba(24, 24, 24, 0.25);
+    -webkit-box-shadow: 0.33em 0.33em 0.33em 0 rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 0.33em 0.33em 0.33em 0 rgba(0, 0, 0, 0.4);
+    box-shadow: 0.33em 0.33em 0.33em 0 rgba(0, 0, 0, 0.4);
   }
 
-  p{
+  p {
     background-color: $black;
     color: $white;
     padding: 0.25em;
@@ -80,47 +108,50 @@
     max-width: 119px;
     margin: 0 auto;
     text-align: center;
-    -webkit-box-shadow: 0.33em 0.33em 0.33em 0 rgba(0,0,0,0.4);
-    -moz-box-shadow: 0.33em 0.33em 0.33em 0 rgba(0,0,0,0.4);
-    box-shadow: 0.33em 0.33em 0.33em 0 rgba(0,0,0,0.4);
+    -webkit-box-shadow: 0.33em 0.33em 0.33em 0 rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 0.33em 0.33em 0.33em 0 rgba(0, 0, 0, 0.4);
+    box-shadow: 0.33em 0.33em 0.33em 0 rgba(0, 0, 0, 0.4);
   }
 }
 
-#portrait-suit{
+#portrait-suit {
   position: relative;
   top: 0em;
 
-  img{
+  img {
     display: block;
     margin: 0 auto;
   }
 }
 
-#about-intro{
+#about-intro {
   display: block;
 
-  h2,.h2{
+  h2,
+  .h2 {
     margin-bottom: 1em;
     text-align: center;
   }
 }
 
-#education, #experience{
+#education,
+#experience {
   margin-bottom: 1em;
-    
-  h2,.h2{
+
+  h2,
+  .h2 {
     padding: 0;
     margin: 0;
     margin-top: 2em;
   }
 
-  hr{
+  hr {
     padding: 0;
     margin: 0;
     height: 0.1em;
   }
 
-  img{
+  img {
     display: block;
     margin: 3em auto;
     max-width: 424px;
@@ -128,7 +159,7 @@
   }
 }
 
-.about-experience{
+.about-experience {
   margin-bottom: 2em;
   margin-top: 2em;
 
@@ -137,29 +168,29 @@
     margin-top: 1em;
   }
 
-  .job-title{
+  .job-title {
     margin-bottom: 0.5em;
   }
 
-  .job-timeframe{
+  .job-timeframe {
   }
 
-  .company-name{
+  .company-name {
     margin-top: 0.5em;
     margin-bottom: 2em;
   }
-    
-  p{
+
+  p {
     margin: 0;
     padding: 0 0 1em 0;
   }
 
-  img{
+  img {
     display: block;
     margin: 0 auto;
     margin-top: 1em;
 
-    &.company-logo{
+    &.company-logo {
       margin-top: 0.66em;
       padding-right: 1em;
       max-width: 11em;
@@ -171,19 +202,21 @@
       }
     }
   }
-    
-  &.no-bottom-space{
+
+  &.no-bottom-space {
     margin-bottom: 0;
   }
 }
 
-#about-more-info{
-  h2,.h2{
+#about-more-info {
+  h2,
+  .h2 {
     display: block;
     text-align: center;
   }
 
-  h3,.h3{
+  h3,
+  .h3 {
     display: block;
     text-align: center;
   }

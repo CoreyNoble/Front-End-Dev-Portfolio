@@ -1,49 +1,56 @@
 /* Portfolio */
-.showcase-head{
+.showcase-head {
   margin-bottom: 2em;
 
-  @include breakpoint(large){
+  @include breakpoint(large) {
     margin-bottom: 3em;
   }
 }
 
-.showcase-1, .showcase-2{
+.showcase-1,
+.showcase-2 {
   margin-top: 1em;
-  .showcase-example{
+  .showcase-example {
     display: inline-block;
     width: 100%;
     margin: 0 auto;
     margin-bottom: 3em;
-    -moz-box-shadow: 0  0.75em 0.75em -0.75em #000000, 0 -0.75em 0.75em -0.75em #000000;
-    -webkit-box-shadow:  0  0.75em 0.75em -0.75em #000000, 0 -0.75em 0.75em -0.75em #000000;
-    box-shadow: 0  0.75em 0.75em -0.75em #000000, 0 -0.75em 0.75em -0.75em #000000;
-      
+    -moz-box-shadow: 0 0.75em 0.75em -0.75em #000000,
+      0 -0.75em 0.75em -0.75em #000000;
+    -webkit-box-shadow: 0 0.75em 0.75em -0.75em #000000,
+      0 -0.75em 0.75em -0.75em #000000;
+    box-shadow: 0 0.75em 0.75em -0.75em #000000,
+      0 -0.75em 0.75em -0.75em #000000;
+
     -moz-transition: all 0.15s linear;
     -webkit-transition: all 0.15s linear;
     -o-transition: all 0.15s linear;
     transition: all 0.15s linear;
-      
-    &.no-padding.columns{
+
+    &.no-padding.columns {
       padding: 0;
     }
 
-    &.no-bottom-space{
+    &.no-bottom-space {
       margin-bottom: 0;
     }
 
-    &.no-bottom-space-desktop{
+    &.no-bottom-space-desktop {
       margin-bottom: 0;
 
       @media screen and (max-width: 64em) {
         margin-bottom: 3em;
       }
     }
-      
-    &:hover{
-      -moz-box-shadow: 0  1.0em 1.0em -0.5em rgba(0,0,0,0.6), 0 -0.5em 1.0em -0.5em rgba(0,0,0,0.6);
-      -webkit-box-shadow:  0  1.0em 1.0em -0.5em rgba(0,0,0,0.6), 0 -0.5em 1.0em -0.5em rgba(0,0,0,0.6);
-      box-shadow: 0  1.0em 1em -0.5em rgba(0,0,0,0.6), 0 -0.5em 1.0em -0.5em rgba(0,0,0,0.6);
-      
+
+    &:hover {
+      -moz-box-shadow: 0 1em 1em -0.5em rgba(0, 0, 0, 0.6),
+        0 -0.5em 1em -0.5em rgba(0, 0, 0, 0.6);
+      -webkit-box-shadow: 0 1em 1em -0.5em rgba(0, 0, 0, 0.6),
+        0 -0.5em 1em -0.5em rgba(0, 0, 0, 0.6);
+      box-shadow: 0 1em 1em -0.5em rgba(0, 0, 0, 0.6),
+        0 -0.5em 1em -0.5em rgba(0, 0, 0, 0.6);
+
       transform: scale(1.025);
 
       -moz-transition: all 0.15s linear;
@@ -51,77 +58,81 @@
       -o-transition: all 0.15s linear;
       transition: all 0.15s linear;
     }
-      
-    img{
-        display: block;
-        margin: 0 auto;
-        width: 100%;
+
+    img {
+      display: block;
+      margin: 0 auto;
+      width: 100%;
     }
 
-    h3,.h3{
+    h3,
+    .h3 {
       vertical-align: bottom;
       text-align: center;
       padding: 0.15em;
     }
 
-    p{
+    p {
       margin-bottom: 3em;
     }
 
-    &.margin-top-0-mobile-margin-top-2{
+    &.margin-top-0-mobile-margin-top-2 {
       margin-top: 2em;
-    
-      @include breakpoint(large){
+
+      @include breakpoint(large) {
         margin-top: 0;
       }
     }
   }
 }
 
-.showcase-1{
-  .showcase-example{
-    h3,.h3{
+.showcase-1 {
+  .showcase-example {
+    h3,
+    .h3 {
       color: $black;
     }
   }
 }
 
-.showcase-2{
-  .showcase-example{
-    h3,.h3{
+.showcase-2 {
+  .showcase-example {
+    h3,
+    .h3 {
       color: $white;
     }
   }
 }
 
 /* CMS Skills */
-.cms-skillset{
-  h5,.h5{
+.cms-skillset {
+  h5,
+  .h5 {
     margin-bottom: 3em;
   }
 
-  .cms-skill{
+  .cms-skill {
     display: block;
     margin-bottom: 3em;
 
-    img{
+    img {
       display: block;
       margin: 0 auto;
       margin-bottom: 1em;
     }
 
-    &.no-bottom-space{
+    &.no-bottom-space {
       margin-bottom: 0;
     }
 
-    ul{
+    ul {
       margin-top: 1em;
       margin-left: 0;
 
-      li{
+      li {
         line-height: 1.2;
 
-        &:last-child{
+        &:last-child {
           margin-bottom: 0;
         }
       }
