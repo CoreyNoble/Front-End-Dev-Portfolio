@@ -1,0 +1,58 @@
+﻿.hero-jdp-evp-campaign {
+    background-color: #fff;
+    color: #383942;
+    padding: 2.168rem 0 0 0;
+}
+
+/* Medium up */
+@media (min-width: 961px) {
+    .hero-jdp-evp-campaign {
+        padding: 4.16rem 0 2.168rem 0;
+    }
+}
+
+.hero-jdp-evp-campaign h1 {
+    font-size: 1.89rem;
+    line-height: 1.235;
+    margin-bottom: 0.945rem;
+}
+
+/* Medium up */
+@media (min-width: 961px) {
+    .hero-jdp-evp-campaign h1 {
+        font-size: 3.368rem;
+        line-height: 1.09375;
+        margin-bottom: 1.633rem;
+    }
+}
+
+.hero-jdp-evp-campaign p {
+    font-size: 0.89rem;
+    line-height: 1.5625;
+    font-weight: bold;
+}
+
+/* Medium up */
+@media (min-width: 961px) {
+    .hero-jdp-evp-campaign p {
+        font-size: 1.16rem;
+        line-height: 1.727;
+        font-weight: normal;
+    }
+}
+
+.hero-jdp-evp-campaign img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    margin-top: 3.39rem;
+    max-width: 414px;
+}
+
+/* Medium up */
+@media (min-width: 961px) {
+    .hero-jdp-evp-campaign img {
+        margin-top: 1rem;
+        max-width: 640px;
+    }
+}

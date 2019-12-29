@@ -1,0 +1,40 @@
+https://www.pcfinancial.ca/assets/fonts/averta-extrabold-webfont.woff2
+
+@font-face {
+  font-family: "avertabold";
+  src: 
+url("/assets/fonts/averta-extrabold-webfont.eot?#iefix") format("embedded-opentype"), 
+url("/assets/fonts/averta-extrabold-webfont.woff2") format("woff2"), 
+url("/assets/fonts/averta-extrabold-webfont.woff") format("woff"), 
+url("/assets/fonts/averta-extrabold-webfont.ttf") format("truetype"), 
+url("/assets/fonts/averta-extrabold-webfont.svg#avertaextrabold") format("svg");
+  font-style: normal;
+  font-weight: 800;
+}
+
+https://www.pcfinancial.ca/assets/fonts/averta-regular-webfont.woff2
+
+@font-face {
+  font-family: "avertaregular";
+  src: 
+url("/assets/fonts/averta-regular-webfont.eot?#iefix") format("embedded-opentype"), 
+url("/assets/fonts/averta-regular-webfont.woff2") format("woff2"), 
+url("/assets/fonts/averta-regular-webfont.woff") format("woff"), 
+url("/assets/fonts/averta-regular-webfont.ttf") format("truetype"), 
+url("/assets/fonts/averta-regular-webfont.svg#avertaregular") format("svg");
+  font-weight: 400;
+}
+
+https://www.pcfinancial.ca/assets/fonts/averta-semibold-webfont.woff2
+
+@font-face {
+  font-family: "avertasemibold";
+  src: 
+url("/assets/fonts/averta-semibold-webfont.eot?#iefix") format("embedded-opentype"), 
+url("/assets/fonts/averta-semibold-webfont.woff2") format("woff2"), 
+url("/assets/fonts/averta-semibold-webfont.woff") format("woff"), 
+url("/assets/fonts/averta-semibold-webfont.ttf") format("truetype"), 
+url("/assets/fonts/averta-semibold-webfont.svg#avertasemibold") format("svg");
+  font-style: normal;
+  font-weight: 600;
+}

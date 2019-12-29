@@ -1,0 +1,140 @@
+/*****************/
+#Header{
+    background-color: #ee2e24;
+    height: 70px;
+}
+@media (min-width: 768px) {
+    #Header {
+        height: 144px;
+    }
+} 
+@media (min-width: 960px) {
+    #Header {
+        height: 144px;
+    }
+}
+.sfPageEditorWrp .header{
+    position:absolute !important;
+}
+
+/**** clearfix /
+    inline block ****/
+/*****************/
+
+/* inline block */
+.header .ib {
+    display: inline-block;
+    vertical-align: baseline;
+}
+
+.header .ib-m {
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+/*****************/
+/**** search ****/
+/*****************/
+
+.header .search {
+    text-align: right;
+    position: absolute;
+    top: 19px;
+    right: 75%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    min-width: 20em;
+    display: inline-block;
+    height: 46px;
+    width: 325px;
+}
+@media (min-width: 960px) and (max-width: 1090px) {
+    .header .search {
+        right: 70%;
+    }
+}
+
+.header .search .search-btn {
+    padding-bottom: 7px;
+    padding-right: 10px;
+    cursor: pointer;
+}
+
+
+.header  svg:not(:root) {
+    vertical-align: middle;
+}
+
+.header .search input[type=text]::placeholder {
+    color: #ffffff;
+    opacity: 0.21;
+    font-size: 1rem;
+    font-size: 14px;
+}
+
+.header .search .form-group {
+    width: 100%;
+}
+
+.header .search input[type=text] {
+    width: 100%;
+    height: 2.5em;
+    padding: 0 25px 0 .375em;
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid #ffffff;
+    color: #ffffff;
+    margin-left: .1875em;
+    background: transparent;
+    -webkit-transition: border-color 100ms ease-in-out;
+    transition: border-color 100ms ease-in-out;
+    margin-top: 8px;
+}
+
+.header .search input[type=text].form-control {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.header .search input[type=text]:focus {
+    border-bottom-color: inherit;
+    outline: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+/*This clears out the x close on input elements in IE 11*/
+.header .search input[type=text]::-ms-clear {  display: none; width : 0; height: 0; }
+.header .search input[type=text]::-ms-reveal {  display: none; width : 0; height: 0; }
+
+.header .search-slide {
+    width: 0;
+    height: 2.5em;
+    overflow: hidden;
+    position: relative;
+}
+
+.header .search-close {
+    bottom: 1px;
+    right: 0px;
+    position: absolute;
+    cursor: pointer;
+    -webkit-transition: opacity 100ms ease-in-out;
+    transition: opacity 100ms ease-in-out;
+    display: inline-block;
+    margin: 0;
+    opacity: 0;
+    background: #ee2e24;
+}
+
+.header .search-close:hover {
+    opacity: .5;
+}
+
+.ui-menu.ui-widget.ui-widget-content.ui-autocomplete.ui-front.sf-autocomplete {
+    z-index: 1000;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+    font-family: avertabold, sans-serif;
+    font-size: 16px;
+}

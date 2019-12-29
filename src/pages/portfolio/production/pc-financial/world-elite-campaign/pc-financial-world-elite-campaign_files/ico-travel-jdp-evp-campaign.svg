@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="95px" height="95px" viewBox="0 0 95 95" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <title>1E8D421A-19B1-4BD6-BC24-0E9395D7CBD7</title>
+  <desc>Created with sketchtool.</desc>
+  <defs>
+    <polygon id="path-1" points="0 0 51.4368 0 51.4368 51.4368 0 51.4368"></polygon>
+  </defs>
+  <g id="PCF-Public-Site:-JDP-EVP" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+    <g id="9386-JDP-PCMC-Benefits_WorldElite-R2-(1)" transform="translate(-149.000000, -3321.000000)">
+      <g id="Points" transform="translate(0.000000, 2695.000000)">
+        <g id="3" transform="translate(149.000000, 603.000000)">
+          <g id="Plane-Icon" transform="translate(0.000000, 23.000000)">
+            <circle id="Oval-Copy-5" fill="#EE2E24" cx="47.2285714" cy="47.2285714" r="47.2285714"></circle>
+            <g id="plane-copy" transform="translate(21.171429, 21.171429)">
+              <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+              </mask>
+              <g id="Clip-2"></g>
+              <path d="M50.4052459,1.03084735 C49.031764,-0.344577451 46.8022605,-0.34265378 45.4307023,1.03084735 L35.5643318,10.8973562 L4.83411758,6.55370695 L1.9986662,12.9941576 L23.8589575,22.6009709 L13.7502079,32.711786 L1.62740289,30.4976406 L0,35.7396442 L10.9070619,40.5295851 L11.0590298,40.2410345 L11.1956086,40.3776151 L10.9070619,40.5295851 L15.6969357,51.4368 L20.9388658,49.8074506 L18.7247515,37.6863993 L28.8354248,27.5775079 L38.4421033,49.4361821 L44.8824637,46.6045383 L40.540799,15.8719695 L48.9836729,7.42897728 L50.4052459,6.0054607 C51.7806514,4.63388324 51.7806514,2.40627216 50.4052459,1.03084735" id="Fill-1" fill="#FFFFFF" mask="url(#mask-2)"></path>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

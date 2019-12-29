@@ -1,0 +1,157 @@
+﻿.loads-of-benefits-jdp-evp-campaign {
+    background-color: #F0F0F0;
+    padding: 3.2233rem 0;
+    padding-bottom: 3.06rem;
+}
+
+/* Medium up */
+@media (min-width: 961px) {
+    .loads-of-benefits-jdp-evp-campaign {
+        padding: 0.5rem 0;
+        padding-bottom: 3.475rem;
+    }
+}
+
+.loads-of-benefits-jdp-evp-campaign .special-perks .special-perk {
+    background-color: #fff;
+    box-shadow: 0 2px 3px 0 rgba(186,191,200,0.35);
+    padding: 2.3066rem;
+    margin-bottom: 2rem;
+}
+
+/* Medium up */
+@media (min-width: 961px) {
+    .loads-of-benefits-jdp-evp-campaign .special-perks .special-perk {
+        padding: 1.605rem;
+        min-height: 23.5rem;
+    }
+}
+
+.loads-of-benefits-jdp-evp-campaign .special-perks .end-mobile .special-perk {
+    margin-bottom: 0;
+}
+
+/* Medium up */
+@media (min-width: 961px) {
+    .loads-of-benefits-jdp-evp-campaign .special-perks .end-desktop .special-perk, .loads-of-benefits-jdp-evp-campaign .special-perks .end-mobile .special-perk {
+        margin-bottom: 0;
+    }
+}
+
+.loads-of-benefits-jdp-evp-campaign .special-perks .special-perk img {
+    width: 100%;
+    max-width: 2.633rem;
+    max-height: 2.633rem;
+    margin-bottom: 1.0575rem;
+}
+
+/* Medium up */
+@media (min-width: 961px) {
+    .loads-of-benefits-jdp-evp-campaign .special-perks .special-perk img {
+        margin-bottom: 1.533rem;
+    }
+}
+
+.loads-of-benefits-jdp-evp-campaign .special-perks .special-perk h3 {
+    font-size: 1.224rem;
+    line-height: 1.363;
+    margin-bottom: 1.055rem;
+}
+
+/* Medium up */
+@media (min-width: 961px) {
+    .loads-of-benefits-jdp-evp-campaign .special-perks .special-perk h3 {
+        font-size: 1.266rem;
+        line-height: 1.25;
+        margin-bottom: 1.125rem;
+    }
+}
+
+.loads-of-benefits-jdp-evp-campaign .special-perks .special-perk p {
+    font-size: 0.89rem;
+    line-height: 1.75;
+}
+
+/* Medium up */
+@media (min-width: 961px) {
+    .loads-of-benefits-jdp-evp-campaign .special-perks .special-perk p {
+        font-size: inherit;
+        line-height: inherit;
+    }
+}
+
+.loads-of-benefits-jdp-evp-campaign .special-perks .special-perk.special-perk-intro {
+    background-color: unset;
+    box-shadow: unset;
+    padding: inherit;
+    min-height: unset;
+}
+
+/* Medium up */
+@media (min-width: 961px) {
+    .loads-of-benefits-jdp-evp-campaign .special-perks .special-perk.special-perk-intro {
+        padding: 1.1rem;
+    }
+}
+
+
+.loads-of-benefits-jdp-evp-campaign .special-perks .special-perk.special-perk-intro h2 {
+    font-size: 2rem;
+    line-height: 1.33;
+    margin-bottom: 1.055rem;
+    margin-top: 0.5rem;
+}
+
+/* Medium up */
+@media (min-width: 961px) {
+    .loads-of-benefits-jdp-evp-campaign .special-perks .special-perk.special-perk-intro h2 {
+        font-size: 2.635rem;
+        line-height: 1.3;
+        margin-top: 3.5rem;
+    }
+}
+
+.loads-of-benefits-jdp-evp-campaign .special-perks .special-perk.special-perk-intro p {
+    font-size: 1.0575rem;
+    line-height: 1.68;
+    font-weight: bold;
+}
+
+/* Medium up */
+@media (min-width: 961px) {
+    .loads-of-benefits-jdp-evp-campaign .special-perks .special-perk.special-perk-intro p {
+        font-size: 1rem;
+    }
+}
+
+.loads-of-benefits-jdp-evp-campaign .special-perks .special-perk.special-perk-cake {
+    background-color: unset;
+    padding: unset;
+    box-shadow: unset;
+    margin-bottom: 1.5rem;
+    margin-left: 0;
+}
+
+.loads-of-benefits-jdp-evp-campaign .special-perks .special-perk.special-perk-cake img {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 0;
+    max-width: 371px;
+    max-height: unset;
+}
+
+/* Medium up */
+@media (min-width: 961px) {
+    .loads-of-benefits-jdp-evp-campaign .special-perks .special-perk.special-perk-cake {
+        position: relative;
+        margin-bottom: inherit;
+        margin-left: 2rem;
+    }
+
+    .loads-of-benefits-jdp-evp-campaign .special-perks .special-perk.special-perk-cake img {
+        position: absolute;
+        bottom: 0;
+        margin-bottom: 0.5rem;
+    }
+}

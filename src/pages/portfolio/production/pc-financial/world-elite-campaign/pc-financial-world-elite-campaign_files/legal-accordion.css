@@ -1,0 +1,63 @@
+﻿.legal-accordion .container {
+    margin-top: 120px;
+    margin-bottom: 120px;
+}
+
+.legal-accordion a, .legal-accordion a span {
+    color: #2b2c32;
+    font-weight: bold;
+}
+
+.legal-accordion a:hover, .legal-accordion a:hover span {
+    color: #db1b11;
+}
+
+.legal-accordion ul {
+    list-style: disc;
+    list-style-type: disc;
+    margin-left: 15px;
+}
+
+/* Legal */
+.legal-accordion .container {
+    margin: 1rem auto !important;
+    margin-bottom: 3rem !important;
+}
+
+@media (max-width: 1199px) {
+    .legal-accordion .container {
+        margin-bottom: 2rem !important;
+    }
+}
+
+.legal-accordion a {
+    text-decoration: underline !important;
+    color: #ee2e24 !important;
+    font-weight: normal !important;
+}
+
+    .legal-accordion a:hover {
+        text-decoration: none !important;
+        color: #CA1F16 !important;
+    }
+
+.legal-accordion .accordion-item {
+    color: #000 !important;
+    font-weight: bold !important;
+    text-decoration: none !important;
+    border-bottom: 1px solid #000 !important;
+}
+
+    .legal-accordion .accordion-item:hover {
+        border-bottom: none !important;
+    }
+
+    .legal-accordion .accordion-item:before {
+        content: "+";
+        color: #000 !important;
+    }
+
+    .legal-accordion .accordion-item[aria-expanded="true"]:before {
+        content: "-";
+    }
+/* /Legal */

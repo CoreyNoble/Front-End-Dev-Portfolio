@@ -1,0 +1,113 @@
+﻿/* Headline */
+.great-benefits-jdp-evp-campaign .headline {
+    margin-top: 0.058rem;
+    margin-bottom: 0;
+}
+
+/* Medium up */
+@media (min-width: 961px) {
+    .great-benefits-jdp-evp-campaign .headline {
+        margin-top: 2.875rem;
+        margin-bottom: 4.25rem;
+    }
+}
+
+.great-benefits-jdp-evp-campaign .headline h2 {
+    font-size: 2rem;
+    line-height: 1.22;
+}
+
+/* Medium up */
+@media (min-width: 961px) {
+    .great-benefits-jdp-evp-campaign .headline h2 {
+        font-size: 2.6325rem;
+        line-height: 1.3;
+    }
+}
+
+.great-benefits-jdp-evp-campaign .headline p {
+    font-size: 0.89rem;
+    line-height: 1.625;
+    margin-top: 1.25rem;
+}
+
+/* Medium up */
+@media (min-width: 961px) {
+    .great-benefits-jdp-evp-campaign .headline p {
+        font-size: 1rem;
+        line-height: 1.684;
+        margin-top: 0.85rem;
+    }
+}
+
+/* Benefits */
+.great-benefits-jdp-evp-campaign .benefits {
+    display: block;
+    margin-top: 3.5rem;
+    margin-bottom: 2.8rem;
+}
+
+/* Medium up */
+@media (min-width: 961px) {
+    .great-benefits-jdp-evp-campaign .benefits {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 0.6rem;
+        margin-bottom: 5rem;
+    }
+}
+
+.great-benefits-jdp-evp-campaign .benefits .benefit {
+    width: 100%;
+    padding: 0 0.8rem;
+    border-right: none;
+    border-bottom: 1px solid #DFDFDF;
+    padding-bottom: 2.115rem;
+    margin-bottom: 2.475rem;
+}
+
+/* Medium up */
+@media (min-width: 961px) {
+    .great-benefits-jdp-evp-campaign .benefits .benefit {
+        width: 32%;
+        border-right: 1px solid #DFDFDF;
+        border-bottom: none;
+        padding-bottom: unset;
+        margin-bottom: unset;
+    }
+}
+
+.great-benefits-jdp-evp-campaign .benefits .benefit:last-child {
+    border-right: none;
+    border-bottom: none;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.great-benefits-jdp-evp-campaign .benefits .benefit img {
+    width: 100%;
+    max-width: 3.425rem;
+    max-height: 3.425rem;
+    margin-bottom: 1rem;
+}
+
+.great-benefits-jdp-evp-campaign .benefits .benefit h3 {
+    font-size: 1.6rem;
+    line-height: 1.16;
+    min-height: unset;
+    margin-bottom: 1.057rem;
+}
+
+/* Medium up */
+@media (min-width: 961px) {
+    .great-benefits-jdp-evp-campaign .benefits .benefit h3 {
+        margin-bottom: 0.75rem;
+    }
+}
+
+/* Medium up */
+@media (min-width: 961px) {
+    .great-benefits-jdp-evp-campaign .benefits .benefit h3 {
+        min-height: 4rem;
+    }
+}

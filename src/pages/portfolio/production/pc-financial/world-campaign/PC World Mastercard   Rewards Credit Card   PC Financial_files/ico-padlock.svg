@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="51px" height="50px" viewBox="0 0 51 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <title>C5ACE1E2-660B-45AC-B254-555982CC37A4</title>
+  <desc>Created with sketchtool.</desc>
+  <defs>
+    <path d="M19.1310342,0 C26.3379305,0 32.1034476,5.75773647 32.1034476,12.9549071 L32.1016314,18.6482911 C32.7169096,18.7883174 33.6584906,18.8813385 33.937931,18.9743596 C35.9034483,19.2360749 38,22.1149432 38,24.4703809 L38,24.4703809 L38,45.0150321 C38,47.6321851 36.1655172,49.3333346 33.937931,49.3333346 L33.937931,49.3333346 L4.06206897,49.3333346 C1.83448276,49.3333346 0,47.6321851 0,45.0150321 L0,45.0150321 L0,24.4703809 C0,22.1149432 2.22758621,19.2360749 4.19310345,18.9743596 C4.51429517,18.9743596 5.62279205,18.799639 6.16055684,18.5929562 L6.15862083,12.9549071 C6.15862083,5.75773647 11.9241379,0 19.1310342,0 Z M19.1310342,4.31830235 C14.2827585,4.31830235 10.4827586,8.24403176 10.4827586,12.9549071 L10.482,18.45 L27.779,18.45 L27.7793098,12.9549071 C27.7793098,8.11317411 23.8482754,4.31830235 19.1310342,4.31830235 Z" id="path-1"></path>
+  </defs>
+  <g id="Asset-Artboard-Page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+    <g id="Icon/Airplane2-Icon/-Padlock" transform="translate(0.593493, 0.000000)">
+      <g id="Color/Green00A0D" transform="translate(6.000000, 0.333333)">
+        <mask id="mask-2" fill="white">
+          <use xlink:href="#path-1"></use>
+        </mask>
+        <use id="Mask" fill="#FFFFFF" fill-rule="nonzero" xlink:href="#path-1"></use>
+        <g id="Color/Green00A0D-Color/Red-EE2E4" mask="url(#mask-2)" fill="#EE2E24">
+          <g transform="translate(-6.000000, -0.333333)" id="EE2E24">
+            <rect x="0" y="0" width="50" height="50"></rect>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

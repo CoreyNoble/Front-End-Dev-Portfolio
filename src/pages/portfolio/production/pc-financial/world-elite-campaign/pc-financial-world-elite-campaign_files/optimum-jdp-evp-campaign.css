@@ -1,0 +1,277 @@
+﻿.optimum-jdp-evp-campaign {
+    margin-top: 3.5rem;
+    margin-bottom: 3.835rem;
+}
+
+/* Medium up */
+@media (min-width: 961px) {
+    .optimum-jdp-evp-campaign {
+        margin-top: 4.266rem;
+        margin-bottom: 4.845rem;
+    }
+}
+
+/* Headline */
+/* Medium up */
+@media (min-width: 961px) {
+    .optimum-jdp-evp-campaign .headline {
+        margin-bottom: 1.5rem;
+    }
+}
+
+.optimum-jdp-evp-campaign .headline h2 {
+    font-size: 2rem;
+    line-height: 1.222;
+}
+
+/* Medium up */
+@media (min-width: 961px) {
+    .optimum-jdp-evp-campaign .headline h2 {
+        font-size: 2.6325rem;
+        line-height: 1.3;
+    }
+}
+
+.optimum-jdp-evp-campaign .headline p {
+    font-size: 0.89rem;
+    line-height: 1.625;
+    margin-top: 2rem;
+}
+
+/* Medium up */
+@media (min-width: 961px) {
+    .optimum-jdp-evp-campaign .headline p {
+        font-size: 1rem;
+        line-height: 1.68;
+        margin-top: 3.5rem;
+    }
+}
+
+/* Optimum */
+.optimum-jdp-evp-campaign .points-section {
+    margin: 0 auto;
+    margin-top: 4.6rem;
+    width: 100%;
+    max-width: 21.175rem;
+    min-height: 7rem;
+}
+
+/* Medium up */
+@media (min-width: 961px) {
+    .optimum-jdp-evp-campaign .points-section {
+        margin-top: 4.215rem;
+        min-height: 7.25rem;
+    }
+}
+
+.optimum-jdp-evp-campaign .points-section img.logo {
+    font-size: 1.053rem;
+    line-height: 1.11;
+    max-height: 1.85rem;
+    max-width: 8.4rem;
+}
+
+.optimum-jdp-evp-campaign .points-section h4.logo {
+    font-size: 0.85rem;
+    font-weight: bold;
+    line-height: 1.11;
+}
+
+/* Medium up */
+@media (min-width: 961px) {
+    .optimum-jdp-evp-campaign .points-section h4.logo {
+        font-size: 0.95rem;
+    }
+}
+
+.optimum-jdp-evp-campaign .points-section .separator {
+    position: relative;
+    display: block;
+    height: 3.6px;
+    background-color: #D8D8D8;
+    margin: 0.9225rem auto;
+    width: 90%;
+}
+
+/* Medium up */
+@media (min-width: 961px) {
+    .optimum-jdp-evp-campaign .points-section .separator {
+        margin: 1.0366rem auto;
+    }
+}
+
+.optimum-jdp-evp-campaign .points-section .separator img {
+    position: absolute;
+    z-index: 1;
+    margin-top: -2.225rem;
+    width: 100%;
+    max-width: 4.45rem;
+}
+
+/* Medium up */
+@media (min-width: 961px) {
+    .optimum-jdp-evp-campaign .points-section .separator img {
+        margin-top: -2.5rem;
+        max-width: 5rem;
+    }
+}
+
+.optimum-jdp-evp-campaign .points-section.points-section-2 img.logo, .optimum-jdp-evp-campaign .points-section.points-section-4 img.logo, .optimum-jdp-evp-campaign .points-section.points-section-2 h4.logo, .optimum-jdp-evp-campaign .points-section.points-section-4 h4.logo {
+    margin-left: 1.25rem;
+}
+
+.optimum-jdp-evp-campaign .points-section.points-section-1 img.logo, .optimum-jdp-evp-campaign .points-section.points-section-3 img.logo, .optimum-jdp-evp-campaign .points-section.points-section-5 h4.logo, .optimum-jdp-evp-campaign .points-section.points-section-1 h4.logo, .optimum-jdp-evp-campaign .points-section.points-section-3 h4.logo, .optimum-jdp-evp-campaign .points-section.points-section-5 h4.logo {
+    margin-left: 6.25rem;
+}
+
+.optimum-jdp-evp-campaign .points-section.points-section-2 .separator img, .optimum-jdp-evp-campaign .points-section.points-section-4 .separator img {
+    right: 0;
+    left: unset;
+}
+
+.optimum-jdp-evp-campaign .points-section.points-section-1 .separator img, .optimum-jdp-evp-campaign .points-section.points-section-3 .separator img, .optimum-jdp-evp-campaign .points-section.points-section-5 .separator img {
+    right: unset;
+    left: 0;
+}
+
+/* iPhone 6/7/8+ and up */
+@media (min-width: 414px) {
+    .optimum-jdp-evp-campaign .points-section.points-section-2 img.logo, .optimum-jdp-evp-campaign .points-section.points-section-4 img.logo, .optimum-jdp-evp-campaign .points-section.points-section-2 h4.logo, .optimum-jdp-evp-campaign .points-section.points-section-4 h4.logo {
+        margin-left: 3rem;
+    }
+
+    .optimum-jdp-evp-campaign .points-section.points-section-1 img.logo, .optimum-jdp-evp-campaign .points-section.points-section-3 img.logo, .optimum-jdp-evp-campaign .points-section.points-section-5 h4.logo, .optimum-jdp-evp-campaign .points-section.points-section-1 h4.logo, .optimum-jdp-evp-campaign .points-section.points-section-3 h4.logo, .optimum-jdp-evp-campaign .points-section.points-section-5 h4.logo {
+        margin-left: 10rem;
+    }
+}
+
+/* Medium up */
+@media (min-width: 961px) {
+    .optimum-jdp-evp-campaign .points-section.points-section-1 img.logo, .optimum-jdp-evp-campaign .points-section.points-section-4 img.logo, .optimum-jdp-evp-campaign .points-section.points-section-5 img.logo, .optimum-jdp-evp-campaign .points-section.points-section-1 h4.logo, .optimum-jdp-evp-campaign .points-section.points-section-4 h4.logo, .optimum-jdp-evp-campaign .points-section.points-section-5 h4.logo {
+        margin-left: 10rem;
+    }
+
+    .optimum-jdp-evp-campaign .points-section.points-section-2 img.logo, .optimum-jdp-evp-campaign .points-section.points-section-3 img.logo, .optimum-jdp-evp-campaign .points-section.points-section-2 h4.logo, .optimum-jdp-evp-campaign .points-section.points-section-3 h4.logo {
+        margin-left: 3rem;
+    }
+}
+
+/* Medium up */
+@media (min-width: 961px) {
+    .optimum-jdp-evp-campaign .points-section.points-section-1 {
+        margin-top: 1.66rem;
+    }
+
+    .optimum-jdp-evp-campaign .points-section.points-section-2 .separator img, .optimum-jdp-evp-campaign .points-section.points-section-3 .separator img {
+        right: 0;
+        left: unset;
+    }
+
+    .optimum-jdp-evp-campaign .points-section.points-section-1 .separator img, .optimum-jdp-evp-campaign .points-section.points-section-4 .separator img, .optimum-jdp-evp-campaign .points-section.points-section-5 .separator img {
+        right: unset;
+        left: 0;
+    }
+}
+
+.optimum-jdp-evp-campaign .points-section .points-offer {
+    display: block;
+    margin-top: -0.25rem;
+}
+
+.optimum-jdp-evp-campaign .points-section.points-section-2 .points-offer, .optimum-jdp-evp-campaign .points-section.points-section-4 .points-offer {
+    margin-left: 1.25rem;
+}
+
+.optimum-jdp-evp-campaign .points-section.points-section-1 .points-offer, .optimum-jdp-evp-campaign .points-section.points-section-3 .points-offer, .optimum-jdp-evp-campaign .points-section.points-section-5 .points-offer {
+    margin-left: 6.25rem;
+}
+
+/* iPhone 6/7/8+ and up */
+@media (min-width: 414px) {
+    .optimum-jdp-evp-campaign .points-section.points-section-2 .points-offer, .optimum-jdp-evp-campaign .points-section.points-section-4 .points-offer {
+        margin-left: 3rem;
+    }
+
+    .optimum-jdp-evp-campaign .points-section.points-section-1 .points-offer, .optimum-jdp-evp-campaign .points-section.points-section-3 .points-offer, .optimum-jdp-evp-campaign .points-section.points-section-5 .points-offer {
+        margin-left: 10rem;
+    }
+}
+
+/* Medium up */
+@media (min-width: 961px) {
+    .optimum-jdp-evp-campaign .points-section.points-section-1 .points-offer, .optimum-jdp-evp-campaign .points-section.points-section-4 .points-offer, .optimum-jdp-evp-campaign .points-section.points-section-5 .points-offer {
+        margin-left: 10rem;
+    }
+
+    .optimum-jdp-evp-campaign .points-section.points-section-2 .points-offer, .optimum-jdp-evp-campaign .points-section.points-section-3 .points-offer {
+        margin-left: 3rem;
+    }
+}
+
+.optimum-jdp-evp-campaign .points-section .points-offer .points-left, .optimum-jdp-evp-campaign .points-section .points-offer .points-right {
+    display: inline-block;
+    float: left;
+}
+
+.optimum-jdp-evp-campaign .points-section .points-offer .points-right {
+    padding-left: 0.2rem;
+}
+
+.optimum-jdp-evp-campaign .points-section .points-offer .points-left h2 {
+    font-size: 3.03rem;
+    line-height: 1;
+}
+
+/* Medium up */
+@media (min-width: 961px) {
+    .optimum-jdp-evp-campaign .points-section .points-offer .points-left h2 {
+        font-size: 3.37rem;
+    }
+}
+
+.optimum-jdp-evp-campaign .points-section .points-offer .points-left .denomination {
+    font-size: 0.85rem;
+    line-height: 0.25;
+}
+
+.optimum-jdp-evp-campaign .points-section.points-section-3 .points-offer {
+    margin-top: 0.5rem;
+}
+
+/* Medium up */
+@media (min-width: 961px) {
+    .optimum-jdp-evp-campaign .points-section.points-section-3 .points-offer {
+        margin-top: -0.5rem;
+    }
+}
+
+.optimum-jdp-evp-campaign .points-section .points-offer .points-right .points-icon {
+    font-size: 0.7105rem;
+    line-height: 1;
+    width: 100%;
+    max-width: 1.53rem;
+}
+
+/* Medium up */
+@media (min-width: 961px) {
+    .optimum-jdp-evp-campaign .points-section .points-offer .points-right .points-icon {
+        max-width: 1.685rem;
+    }
+}
+
+.optimum-jdp-evp-campaign .points-section .points-offer .points-right .denomination {
+    font-size: 0.85rem;
+    line-height: 1.1;
+}
+
+.optimum-jdp-evp-campaign .headline .points-section .points-offer .points-right .denomination {
+    margin-top: 0;
+}
+
+/* Medium up */
+@media (min-width: 961px) {
+    .optimum-jdp-evp-campaign .points-section .points-offer .points-right .denomination {
+        font-size: 1rem;
+        line-height: 1.4;
+    }
+}

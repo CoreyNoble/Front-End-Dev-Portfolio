@@ -1,0 +1,177 @@
+﻿.online-account-management-jdp-evp-campaign {
+    background-color: #F1F1F1;
+    margin-bottom: 1rem;
+}
+
+/* Medium up */
+@media (min-width: 961px) {
+    .online-account-management-jdp-evp-campaign {
+        margin-bottom: 2.15rem;
+    }
+}
+
+/* Intro */
+.online-account-management-jdp-evp-campaign .online-account-headline-title {
+    background-color: #EE2E24;
+    color: #fff;
+    padding-top: 3rem;
+    padding-bottom: 7.33rem;
+}
+
+/* Medium up */
+@media (min-width: 961px) {
+    .online-account-management-jdp-evp-campaign .online-account-headline-title {
+        padding-top: 7.5rem;
+        padding-bottom: 2.425rem;
+    }
+}
+
+/* Custom */
+@media (min-width: 1159px) {
+    .online-account-management-jdp-evp-campaign .online-account-headline-title {
+        padding-top: 11.075rem;
+        padding-bottom: 2.425rem;
+    }
+}
+
+.online-account-management-jdp-evp-campaign .online-account-headline-title h2 {
+    font-size: 2rem;
+    line-height: 1.222;
+}
+
+/* Medium up */
+@media (min-width: 961px) {
+    .online-account-management-jdp-evp-campaign .online-account-headline-title h2 {
+        font-size: 2.5rem;
+        line-height: 1.3;
+    }
+}
+
+.online-account-management-jdp-evp-campaign .online-account-headline-paragraph {
+    margin-top: 8.95rem;
+    margin-bottom: 2rem;
+}
+
+/* Medium up */
+@media (min-width: 961px) {
+    .online-account-management-jdp-evp-campaign .online-account-headline-paragraph {
+        margin-top: 2.425rem;
+    }
+}
+
+.online-account-management-jdp-evp-campaign .online-account-headline-paragraph p {
+    font-size: 0.89rem;
+    line-height: 1.625;
+}
+
+/* Medium up */
+@media (min-width: 961px) {
+    .online-account-management-jdp-evp-campaign .online-account-headline-paragraph p {
+        font-size: 1rem;
+        line-height: 1.684;
+    }
+}
+
+.online-account-management-jdp-evp-campaign .online-account-headline-image-relative {
+    position: relative;
+}
+
+.online-account-management-jdp-evp-campaign .online-account-headline-image-relative .online-account-headline-image-absolute {
+    position: absolute;
+    display: block;
+    width: 100%;
+    top: -5.33rem;
+}
+
+/* Medium up */
+@media (min-width: 961px) {
+    .online-account-management-jdp-evp-campaign .online-account-headline-image-relative .online-account-headline-image-absolute {
+        top: -9rem;
+    }
+}
+
+/* Custom */
+@media (min-width: 1159px) {
+    .online-account-management-jdp-evp-campaign .online-account-headline-image-relative .online-account-headline-image-absolute {
+        top: -12rem;
+    }
+}
+
+.online-account-management-jdp-evp-campaign .online-account-headline-image-relative .online-account-headline-image-absolute img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 335px;
+}
+
+/* Medium up */
+@media (min-width: 961px) {
+    .online-account-management-jdp-evp-campaign .online-account-headline-image-relative .online-account-headline-image-absolute img {
+        max-width: 641px;
+    }
+}
+
+/* Items */
+.online-account-management-jdp-evp-campaign .online-account-items {
+    margin-top: 3.5rem;
+    margin-bottom: 1.722rem;
+}
+
+/* Medium up */
+@media (min-width: 961px) {
+    .online-account-management-jdp-evp-campaign .online-account-items {
+        margin-top: 8rem;
+        margin-bottom: 0;
+    }
+}
+
+.online-account-management-jdp-evp-campaign .online-account-items .online-account-item {
+    min-height: unset;
+    margin-bottom: 2.945rem;
+}
+
+/* Medium up */
+@media (min-width: 961px) {
+    .online-account-management-jdp-evp-campaign .online-account-items .online-account-item {
+        min-height: 15.6rem;
+        margin-bottom: 4.55rem;
+        padding: 0 2.3066rem;
+    }
+}
+
+.online-account-management-jdp-evp-campaign .online-account-items .online-account-item img {
+    margin-bottom: 1.0333rem;
+    width: 100%;
+    max-width: 42px;
+    max-height: 42px;
+}
+
+/* Medium up */
+@media (min-width: 961px) {
+    .online-account-management-jdp-evp-campaign .online-account-items .online-account-item img {
+        margin-bottom: 1.079rem;
+        max-width: 50px;
+        max-height: 50px;
+    }
+}
+
+.online-account-management-jdp-evp-campaign .online-account-items .online-account-item h3 {
+    font-size: 1.225rem;
+    line-height: 1.36;
+    margin-bottom: 0.725rem;
+    min-height: unset;
+}
+
+/* Medium up */
+@media (min-width: 961px) {
+    .online-account-management-jdp-evp-campaign .online-account-items .online-account-item h3 {
+        font-size: 1.266rem;
+        line-height: 1.25;
+        margin-bottom: 1.948rem;
+        min-height: 3.25rem;
+    }
+}
+
+.online-account-management-jdp-evp-campaign .online-account-items .online-account-item p {
+    font-size: 0.948rem;
+}
