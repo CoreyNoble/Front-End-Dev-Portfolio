@@ -6,106 +6,126 @@ canonical: https://corey-noble.com/portfolio/development/javascript-tetris.html
 
 <!-- JavaScript Tetris Header -->
 <div class="section blue">
-    <div class="row">
-        <div class="small-12 column">
-            <h1 class="header-no-parallax">JavaScript Tetris</h1>
-            <p class="h5">A web version of the popular game Tetris. Developed with JavaScript. Built and improved upon after following a detailed <a href="https://www.youtube.com/watch?v=H2aW5V46khA" target="_blank" rel="noopener noreferrer" title="Follow the lesson by Meth Meth Method that helped me create Tetris using JavaScript">lesson by Meth&nbsp;Meth&nbsp;Method</a>.</p>
-        
-            <!-- Accordion -->
-            <ul class="accordion" data-accordion data-allow-all-closed="true">
-                <li class="accordion-item" data-accordion-item="">
-                    <!-- Title -->
-                    <a href="#" class="accordion-title" aria-controls="" role="tab" id="project-synopsis" aria-expanded="false" aria-selected="false">
-                        <h2 class="h5">Project Code</h2>
-                    </a>
-                    <!-- Content -->
-                    <div class="accordion-content" data-tab-content="" role="tabpanel" aria-labelledby="Project Code" aria-hidden="true" id="project-synopsis" style="display: none;">
-                        <style>
-                            .cp_embed_wrapper{
-                                margin-top: 0;
-                                padding-top: 0;
-                                border-top: none;
-                            }
-                        </style>
+  <div class="row">
+    <div class="small-12 column">
+      <h1 class="header-no-parallax">JavaScript Tetris</h1>
+      <p class="h5">A web version of the popular game Tetris. Developed with JavaScript. Built and improved upon after
+        following a detailed <a href="https://www.youtube.com/watch?v=H2aW5V46khA" target="_blank"
+          rel="noopener noreferrer"
+          title="Follow the lesson by Meth Meth Method that helped me create Tetris using JavaScript">lesson by
+          Meth&nbsp;Meth&nbsp;Method</a>.</p>
 
-                        <!-- CodePen -->
-                        <p class="codepen" data-height="500" data-theme-id="0" data-default-tab="js" data-user="CoreyNoble" data-slug-hash="YzKdPYv" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="JavaScript Tetris">
-                        <span>See the Pen <a href="https://codepen.io/CoreyNoble/pen/YzKdPYv">
-                        JavaScript Tetris</a> by Corey Noble (<a href="https://codepen.io/CoreyNoble">@CoreyNoble</a>)
-                        on <a href="https://codepen.io">CodePen</a>.</span>
-                        </p>
-                        <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
-                    </div>
-                </li>
-            </ul>
-        </div>
+      <!-- Accordion -->
+      <ul class="accordion" data-accordion data-allow-all-closed="true">
+        <li class="accordion-item" data-accordion-item="">
+          <!-- Title -->
+          <a href="#" class="accordion-title" aria-controls="" role="tab" id="project-synopsis" aria-expanded="false"
+            aria-selected="false">
+            <h2 class="h5">Project Code</h2>
+          </a>
+          <!-- Content -->
+          <div class="accordion-content" data-tab-content="" role="tabpanel" aria-labelledby="Project Code"
+            aria-hidden="true" id="project-synopsis" style="display: none;">
+            <style>
+              .cp_embed_wrapper {
+                margin-top: 0;
+                padding-top: 0;
+                border-top: none;
+              }
+            </style>
+
+            <!-- CodePen -->
+            <p class="codepen" data-height="500" data-theme-id="0" data-default-tab="js" data-user="CoreyNoble"
+              data-slug-hash="YzKdPYv"
+              style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;"
+              data-pen-title="JavaScript Tetris">
+              <span>See the Pen <a href="https://codepen.io/CoreyNoble/pen/YzKdPYv">
+                  JavaScript Tetris</a> by Corey Noble (<a href="https://codepen.io/CoreyNoble">@CoreyNoble</a>)
+                on <a href="https://codepen.io">CodePen</a>.</span>
+            </p>
+            <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+          </div>
+        </li>
+      </ul>
     </div>
+  </div>
 </div>
 
 <div class="section white">
   <div class="row">
     <!-- Tetris Game -->
     <div id="javascript-tetris" class="small-12 large-6 columns">
-        <!-- UI -->
+      <!-- UI -->
 
-        <div class="row">
-            <div class="tetris-title small-12 columns">
-                <h2 class="h3"><em>JavaScipt Tetris</em></h2>
-            </div>
+      <div class="row">
+        <div class="tetris-title small-12 columns">
+          <h2 class="h3"><em>JavaScipt Tetris</em></h2>
         </div>
+      </div>
 
-        <div class="row" data-equalizer>
-            <!-- Score -->
-            <div class="tetris-ui small-12 columns" data-equalizer-watch>
-                <h2 id="score-label" class="h4">Score: <strong><span id="score" aria-labelledby="Score Count"></span></strong></h2>
-            </div>
+      <div class="row" data-equalizer>
+        <!-- Score -->
+        <div class="tetris-ui small-12 columns" data-equalizer-watch>
+          <h2 id="score-label" class="h4">Score: <strong><span id="score" aria-labelledby="Score Count"></span></strong>
+          </h2>
         </div>
+      </div>
 
-        <!-- Game board -->
-        <div class="row">
-            <div class="small-12 column">
-                <canvas id="tetris" width="240" height="400"></canvas>
-            </div>
+      <!-- Game board -->
+      <div class="row">
+        <div class="small-12 column">
+          <canvas id="tetris" width="240" height="400"></canvas>
         </div>
+      </div>
     </div>
 
     <!-- Instructions -->
     <div id="instructions" class="small-12 large-6 columns">
-        <div class="row">
-            <div class="small-12 column">
-                <h2 class="h3">How to Play:</h2>
-                <h3 class="h4"><span class="fas fa-expand-arrows-alt" role="presentation"></span> Move</h3>
-            </div>
+      <div class="row">
+        <div class="small-12 column">
+          <h2 class="h3">How to Play:</h2>
+          <h3 class="h4"><span class="fas fa-expand-arrows-alt" role="presentation"></span> Move</h3>
         </div>
-        <div class="row">
-            <div class="small-4 columns">
-                <h4 class="h5">Left:</h4>
-                <div class="k65 key"><div class="keycap">A</div></div>
-            </div>
-            <div class="small-4 columns">
-                <h4 class="h5">Right:</h4>
-                <div class="k68 key"><div class="keycap">D</div></div>
-            </div>
-            <div class="small-4 columns">
-                <h4 class="h5">Down:</h4>
-                <div class="k83 key"><div class="keycap">S</div></div>
-            </div>
+      </div>
+      <div class="row">
+        <div class="small-4 columns">
+          <h4 class="h5">Left:</h4>
+          <div class="k65 key">
+            <div class="keycap">A</div>
+          </div>
         </div>
-        <div class="row rotate">
-            <div class="small-12 column">
-                <h3 class="h4"><span class="fas fa-sync-alt" role="presentation"></span> Rotate</h3>
-            </div>
+        <div class="small-4 columns">
+          <h4 class="h5">Right:</h4>
+          <div class="k68 key">
+            <div class="keycap">D</div>
+          </div>
         </div>
-        <div class="row">
-            <div class="small-4 columns">
-                <h4 class="h5">Left:</h4>
-                <div class="k79 key"><div class="keycap">O</div></div>
-            </div>
-            <div class="small-4 columns end">
-                <h4 class="h5">Right:</h4>
-                <div class="k80 key"><div class="keycap">P</div></div>
-            </div> 
+        <div class="small-4 columns">
+          <h4 class="h5">Down:</h4>
+          <div class="k83 key">
+            <div class="keycap">S</div>
+          </div>
         </div>
+      </div>
+      <div class="row rotate">
+        <div class="small-12 column">
+          <h3 class="h4"><span class="fas fa-sync-alt" role="presentation"></span> Rotate</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="small-4 columns">
+          <h4 class="h5">Left:</h4>
+          <div class="k79 key">
+            <div class="keycap">O</div>
+          </div>
+        </div>
+        <div class="small-4 columns end">
+          <h4 class="h5">Right:</h4>
+          <div class="k80 key">
+            <div class="keycap">P</div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </div>

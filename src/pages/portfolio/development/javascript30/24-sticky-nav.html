@@ -6,60 +6,106 @@ canonical: https://corey-noble.com/portfolio/development/javascript30/24-sticky-
 
 <!-- Introduction -->
 <div class="js30-intro section white">
-    <div class="row">
-        <div class="small-12 column">
-            <!-- Back CTA -->
-            <p class="back-cta"><small><strong><a href="{{root}}portfolio/development/javascript30.html" title="Return to the JavaScript30 landing page.">&lt;&nbsp;Back to JavaScript&nbsp;30</a></strong></small></p>
+  <div class="row">
+    <div class="small-12 column">
+      <!-- Back CTA -->
+      <p class="back-cta"><small><strong><a href="{{root}}portfolio/development/javascript30.html"
+              title="Return to the JavaScript30 landing page.">&lt;&nbsp;Back to JavaScript&nbsp;30</a></strong></small>
+      </p>
 
-            <!-- Title -->
-            <h1>Sticky Nav</h1>
+      <!-- Title -->
+      <h1>Sticky Nav</h1>
 
-            <!-- Accordion -->
-            <ul class="accordion" data-accordion data-allow-all-closed="true">
-                <li class="accordion-item" data-accordion-item="">
-                    <!-- Title -->
-                    <a href="#" class="accordion-title" aria-controls="" role="tab" id="project-synopsis" aria-expanded="false" aria-selected="false">
-                        <h2 class="h5">Project Synopsis and&nbsp;Code</h2>
-                    </a>
-                    <!-- Content -->
-                    <div class="accordion-content" data-tab-content="" role="tabpanel" aria-labelledby="Project Synopsis and Code" aria-hidden="true" id="project-synopsis" style="display: none;">
-                        <p>In this lesson I create a sticky navigation that starts partway down the page but sticks to the top when the page is scrolled and the &lt;div&gt; hits the top of the&nbsp;viewport.</p>
-                        <p>First I grab the 'nav' and get the top of the it (topOfNav&nbsp;= nav.offsetTop). I <strong>listen</strong> on the 'window' for a 'scroll' event and run&nbsp;fixNav().</p>
-                        <p>In <strong>fixNav()</strong>&nbsp;- Look for if (window.scrollY&nbsp;>= topOfNav), <strong>If true</strong>, add a class of '.fixed-nav' to the element to give it fixed positioning on the top of the page. Also offset the page by giving it padding on top, equivalent to the offset height of the &lt;div&gt; (page.style.paddingTop&nbsp;= nav.offsetHeight&nbsp;+&nbsp;'px'). <strong>If false</strong>, remove the '.fixed-nav' class and remove the padding that was added to the top of the&nbsp;page.</p>
+      <!-- Accordion -->
+      <ul class="accordion" data-accordion data-allow-all-closed="true">
+        <li class="accordion-item" data-accordion-item="">
+          <!-- Title -->
+          <a href="#" class="accordion-title" aria-controls="" role="tab" id="project-synopsis" aria-expanded="false"
+            aria-selected="false">
+            <h2 class="h5">Project Synopsis and&nbsp;Code</h2>
+          </a>
+          <!-- Content -->
+          <div class="accordion-content" data-tab-content="" role="tabpanel" aria-labelledby="Project Synopsis and Code"
+            aria-hidden="true" id="project-synopsis" style="display: none;">
+            <p>In this lesson I create a sticky navigation that starts partway down the page but sticks to the top when
+              the page is scrolled and the &lt;div&gt; hits the top of the&nbsp;viewport.</p>
+            <p>First I grab the 'nav' and get the top of the it (topOfNav&nbsp;= nav.offsetTop). I
+              <strong>listen</strong> on the 'window' for a 'scroll' event and run&nbsp;fixNav().</p>
+            <p>In <strong>fixNav()</strong>&nbsp;- Look for if (window.scrollY&nbsp;>= topOfNav), <strong>If
+                true</strong>, add a class of '.fixed-nav' to the element to give it fixed positioning on the top of the
+              page. Also offset the page by giving it padding on top, equivalent to the offset height of the &lt;div&gt;
+              (page.style.paddingTop&nbsp;= nav.offsetHeight&nbsp;+&nbsp;'px'). <strong>If false</strong>, remove the
+              '.fixed-nav' class and remove the padding that was added to the top of the&nbsp;page.</p>
 
-                        <!-- CodePen -->
-                        <p class="codepen" data-height="330" data-theme-id="dark" data-default-tab="js" data-user="CoreyNoble" data-slug-hash="JQZxMM" style="height: 330px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="JavaScript30 - 24 - Sticky Nav">
-                        <span>See the Pen <a href="https://codepen.io/CoreyNoble/pen/JQZxMM/">
-                        JavaScript30 - 24 - Sticky Nav</a> by Corey Noble (<a href="https://codepen.io/CoreyNoble">@CoreyNoble</a>)
-                        on <a href="https://codepen.io">CodePen</a>.</span>
-                        </p>
-                        <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
-                    </div>
-                </li>
-            </ul>
-        </div>
+            <!-- CodePen -->
+            <p class="codepen" data-height="330" data-theme-id="dark" data-default-tab="js" data-user="CoreyNoble"
+              data-slug-hash="JQZxMM"
+              style="height: 330px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;"
+              data-pen-title="JavaScript30 - 24 - Sticky Nav">
+              <span>See the Pen <a href="https://codepen.io/CoreyNoble/pen/JQZxMM/">
+                  JavaScript30 - 24 - Sticky Nav</a> by Corey Noble (<a
+                  href="https://codepen.io/CoreyNoble">@CoreyNoble</a>)
+                on <a href="https://codepen.io">CodePen</a>.</span>
+            </p>
+            <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+          </div>
+        </li>
+      </ul>
     </div>
+  </div>
 </div>
 
 <div id="javascript30-24">
-    <div id="sticky-nav">
-        <ul>
-            <li class="logo"><a href="#">LOGO</a></li>
-            <li class="show-for-medium"><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Locations</a></li>
-        </ul>
-    </div>
+  <div id="sticky-nav">
+    <ul>
+      <li class="logo"><a href="#">LOGO</a></li>
+      <li class="show-for-medium"><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Locations</a></li>
+    </ul>
+  </div>
 
-    <div class="site-wrap">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore tempora rerum, est autem cupiditate, corporis a qui libero ipsum delectus quidem dolor at nulla, adipisci veniam in reiciendis aut asperiores omnis blanditiis quod quas laborum nam! Fuga ad tempora in aspernatur pariatur fugit quibusdam dolores sunt esse magni, ut,&nbsp;dignissimos.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore tempora rerum, est autem cupiditate, corporis a qui libero ipsum delectus quidem dolor at nulla, adipisci veniam in reiciendis aut asperiores omnis blanditiis quod quas laborum nam! Fuga ad tempora in aspernatur pariatur fugit quibusdam dolores sunt esse magni, ut,&nbsp;dignissimos.</p>    
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, deserunt facilis et iste corrupti omnis tenetur est. Iste ut est dicta dolor itaque adipisci, dolorum minima, veritatis earum provident error molestias. Ratione magni illo sint vel velit ut excepturi consectetur suscipit, earum modi accusamus voluptatem nostrum, praesentium numquam, reiciendis voluptas sit id quisquam. Consequatur in quis reprehenderit modi perspiciatis necessitatibus saepe, quidem, suscipit iure natus dignissimos ipsam, eligendi deleniti accusantium, rerum quibusdam fugit perferendis et optio recusandae sed ratione. Culpa, dolorum reprehenderit harum ab voluptas fuga, nisi eligendi natus maiores illum quas quos et aperiam aut doloremque optio maxime fugiat doloribus. Eum dolorum expedita quam,&nbsp;nesciunt</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore tempora rerum, est autem cupiditate, corporis a qui libero ipsum delectus quidem dolor at nulla, adipisci veniam in reiciendis aut asperiores omnis blanditiis quod quas laborum nam! Fuga ad tempora in aspernatur pariatur fugit quibusdam dolores sunt esse magni, ut,&nbsp;dignissimos.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore tempora rerum, est autem cupiditate, corporis a qui libero ipsum delectus quidem dolor at nulla, adipisci veniam in reiciendis aut asperiores omnis blanditiis quod quas laborum nam! Fuga ad tempora in aspernatur pariatur fugit quibusdam dolores sunt esse magni, ut,&nbsp;dignissimos.</p>
-        <p>at provident praesentium atque quas rerum optio dignissimos repudiandae ullam illum quibusdam. Vel ad error quibusdam, illo ex totam placeat. Quos excepturi fuga, molestiae ea quisquam minus, ratione dicta consectetur officia omnis, doloribus voluptatibus? Veniam ipsum veritatis architecto, provident quas consequatur doloremque quam quidem earum expedita, ad delectus voluptatum, omnis praesentium nostrum qui aspernatur ea eaque adipisci et cumque ab? Ea voluptatum dolore itaque odio. Eius minima distinctio harum, officia ab nihil exercitationem. Tempora rem nemo nam temporibus molestias facilis minus ipsam quam doloribus consequatur debitis nesciunt tempore officiis aperiam quisquam, molestiae voluptates cum, fuga culpa. Distinctio accusamus quibusdam, tempore perspiciatis dolorum optio facere consequatur quidem ullam beatae architecto, ipsam sequi officiis dignissimos amet impedit natus necessitatibus tenetur repellendus dolor rem! Dicta dolorem, iure, facilis illo ex nihil ipsa amet officia, optio temporibus eum nemo neque odio reprehenderit soluta sint eaque. Aperiam, qui ut tenetur, voluptate doloremque officiis dicta quaerat voluptatem rerum natus magni. Eum amet autem dolor&nbsp;ullam.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore tempora rerum, est autem cupiditate, corporis a qui libero ipsum delectus quidem dolor at nulla, adipisci veniam in reiciendis aut asperiores omnis blanditiis quod quas laborum nam! Fuga ad tempora in aspernatur pariatur fugit quibusdam dolores sunt esse magni, ut,&nbsp;dignissimos.</p>
-    </div>
+  <div class="site-wrap">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore tempora rerum, est autem cupiditate, corporis a
+      qui libero ipsum delectus quidem dolor at nulla, adipisci veniam in reiciendis aut asperiores omnis blanditiis
+      quod quas laborum nam! Fuga ad tempora in aspernatur pariatur fugit quibusdam dolores sunt esse magni,
+      ut,&nbsp;dignissimos.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore tempora rerum, est autem cupiditate, corporis a
+      qui libero ipsum delectus quidem dolor at nulla, adipisci veniam in reiciendis aut asperiores omnis blanditiis
+      quod quas laborum nam! Fuga ad tempora in aspernatur pariatur fugit quibusdam dolores sunt esse magni,
+      ut,&nbsp;dignissimos.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, deserunt facilis et iste corrupti omnis
+      tenetur est. Iste ut est dicta dolor itaque adipisci, dolorum minima, veritatis earum provident error molestias.
+      Ratione magni illo sint vel velit ut excepturi consectetur suscipit, earum modi accusamus voluptatem nostrum,
+      praesentium numquam, reiciendis voluptas sit id quisquam. Consequatur in quis reprehenderit modi perspiciatis
+      necessitatibus saepe, quidem, suscipit iure natus dignissimos ipsam, eligendi deleniti accusantium, rerum
+      quibusdam fugit perferendis et optio recusandae sed ratione. Culpa, dolorum reprehenderit harum ab voluptas fuga,
+      nisi eligendi natus maiores illum quas quos et aperiam aut doloremque optio maxime fugiat doloribus. Eum dolorum
+      expedita quam,&nbsp;nesciunt</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore tempora rerum, est autem cupiditate, corporis a
+      qui libero ipsum delectus quidem dolor at nulla, adipisci veniam in reiciendis aut asperiores omnis blanditiis
+      quod quas laborum nam! Fuga ad tempora in aspernatur pariatur fugit quibusdam dolores sunt esse magni,
+      ut,&nbsp;dignissimos.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore tempora rerum, est autem cupiditate, corporis a
+      qui libero ipsum delectus quidem dolor at nulla, adipisci veniam in reiciendis aut asperiores omnis blanditiis
+      quod quas laborum nam! Fuga ad tempora in aspernatur pariatur fugit quibusdam dolores sunt esse magni,
+      ut,&nbsp;dignissimos.</p>
+    <p>at provident praesentium atque quas rerum optio dignissimos repudiandae ullam illum quibusdam. Vel ad error
+      quibusdam, illo ex totam placeat. Quos excepturi fuga, molestiae ea quisquam minus, ratione dicta consectetur
+      officia omnis, doloribus voluptatibus? Veniam ipsum veritatis architecto, provident quas consequatur doloremque
+      quam quidem earum expedita, ad delectus voluptatum, omnis praesentium nostrum qui aspernatur ea eaque adipisci et
+      cumque ab? Ea voluptatum dolore itaque odio. Eius minima distinctio harum, officia ab nihil exercitationem.
+      Tempora rem nemo nam temporibus molestias facilis minus ipsam quam doloribus consequatur debitis nesciunt tempore
+      officiis aperiam quisquam, molestiae voluptates cum, fuga culpa. Distinctio accusamus quibusdam, tempore
+      perspiciatis dolorum optio facere consequatur quidem ullam beatae architecto, ipsam sequi officiis dignissimos
+      amet impedit natus necessitatibus tenetur repellendus dolor rem! Dicta dolorem, iure, facilis illo ex nihil ipsa
+      amet officia, optio temporibus eum nemo neque odio reprehenderit soluta sint eaque. Aperiam, qui ut tenetur,
+      voluptate doloremque officiis dicta quaerat voluptatem rerum natus magni. Eum amet autem dolor&nbsp;ullam.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore tempora rerum, est autem cupiditate, corporis a
+      qui libero ipsum delectus quidem dolor at nulla, adipisci veniam in reiciendis aut asperiores omnis blanditiis
+      quod quas laborum nam! Fuga ad tempora in aspernatur pariatur fugit quibusdam dolores sunt esse magni,
+      ut,&nbsp;dignissimos.</p>
+  </div>
 </div>
 
 <script src="{{root}}assets/js/javascript30/24-sticky-nav.js"></script>
