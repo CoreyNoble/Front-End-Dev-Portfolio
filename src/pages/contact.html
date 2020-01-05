@@ -23,32 +23,22 @@ canonical: https://corey-noble.com/contact.html
 
     <!-- CONTACT FORM -->
     <div class="contact-form small-12 column" data-aos="fade-up" data-aos-delay="100">
-      <form method="post" action="{{root}}mailsend.php" method="post">
+      <form action="{{root}}mailsend.php" method="post">
         <div class="row">
-          <label for="firstName">
-            <h3 class="h5">First Name</h3>
-            <input type="text" name="firstName" maxlength="50" required />
-          </label>
+          <label for="firstName" class="h5">First Name</label>
+          <input id="firstName" type="text" maxlength="50" required />
 
-          <label for="lastName">
-            <h3 class="h5">Last Name</h3>
-            <input type="text" name="lastName" maxlength="50" required />
-          </label>
+          <label for="lastName" class="h5">Last Name</label>
+          <input id="lastName" type="text" maxlength="50" required />
 
-          <label for="email">
-            <h3 class="h5">Email Address</h3>
-            <input type="text" name="email" maxlength="80" required />
-          </label>
+          <label for="email" class="h5">Email Address</label>
+          <input id="email" type="text" maxlength="80" required />
 
-          <label for="company">
-            <h3 class="h5">Company</h3>
-            <input type="text" name="company" maxlength="80" required />
-          </label>
+          <label for="company" class="h5">Company</label>
+          <input id="company" type="text" maxlength="80" required />
 
-          <label for="inquiry">
-            <h3 class="h5">Inquiry</h3>
-            <textarea class="last" name="inquiry" rows="5" cols="35" maxlength="3000" required></textarea>
-          </label>
+          <label for="inquiry" class="h5">Inquiry</label>
+          <textarea class="last" id="inquiry" rows="5" cols="35" maxlength="3000" required></textarea>
 
           <div class="contact-ctas no-padding small-12 medium-8 columns">
             <div class="g-recaptcha" data-sitekey="6Lcj8wYUAAAAAG9fl2DtDnsqTjfyNFwhL38TwGao"></div>
