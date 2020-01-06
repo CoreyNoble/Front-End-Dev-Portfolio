@@ -12,23 +12,23 @@
     font-weight: bold;
     margin-top: 1.5em;
     border: 2px solid $error;
-    padding: 0.5em 1em;
+    padding: .5em 1em;
   }
 }
 
 .contact-form {
-  background: linear-gradient(rgba(0, 0, 0, 0.33), rgba(0, 0, 0, 0.33)),
+  background: linear-gradient(rgba(0, 0, 0, .33), rgba(0, 0, 0, .33)),
     url(../img/aesthetic-geometry.svg) no-repeat;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   width: 100%;
   padding: 1em 2em;
-  -moz-box-shadow: 0 0.75em 0.75em -0.75em #000000,
-    0 -0.75em 0.75em -0.75em #000000;
-  -webkit-box-shadow: 0 0.75em 0.75em -0.75em #000000,
-    0 -0.75em 0.75em -0.75em #000000;
-  box-shadow: 0 0.75em 0.75em -0.75em #000000, 0 -0.75em 0.75em -0.75em #000000;
+  -moz-box-shadow: 0 .75em .75em -.75em #000000,
+    0 -.75em .75em -.75em #000000;
+  -webkit-box-shadow: 0 .75em .75em -.75em #000000,
+    0 -.75em .75em -.75em #000000;
+  box-shadow: 0 .75em .75em -.75em #000000, 0 -.75em .75em -.75em #000000;
 
   @media screen and (max-width: 40em) {
     padding: 1em;
@@ -44,11 +44,11 @@
 
     input,
     textarea {
-      background: rgba(0, 0, 0, 0.22);
+      background: rgba(0, 0, 0, .22);
       color: $white;
 
       &:focus {
-        background: rgba(0, 0, 0, 0.22);
+        background: rgba(0, 0, 0, .22);
       }
     }
 
@@ -76,7 +76,7 @@
       );
       background: -moz-linear-gradient(to top, #5fa6a6, #7fc7c7);
       margin: 1.5em 0 0 0;
-      transition: all 0.33s ease;
+      transition: all .33s ease;
 
       &:hover,
       &:active,
@@ -107,7 +107,7 @@
       margin-top: 1.5em;
 
       @media screen and (max-width: 40em) {
-        margin-top: 0em;
+        margin-top: 0;
       }
     }
 
@@ -120,7 +120,7 @@
       @media screen and (max-width: 40em) {
         margin: 0 auto;
         float: none;
-        transform: scale(0.77);
+        transform: scale(.77);
         transform-origin: 0 0;
       }
     }
@@ -140,11 +140,11 @@
     h2,
     .h2 {
       padding-bottom: 1em;
-      padding-top: 0.2em;
+      padding-top: .2em;
     }
 
     @media screen and (max-width: 40em) {
-      padding-bottom: 0.5em;
+      padding-bottom: .5em;
       margin-bottom: 1em;
     }
   }

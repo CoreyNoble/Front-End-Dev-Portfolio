@@ -33,7 +33,7 @@ div {
 
 h1,
 .h1 {
-  margin-top: 0.75em;
+  margin-top: .75em;
 }
 
 p {
@@ -47,7 +47,7 @@ hr {
 
 .frame {
   width: 100%;
-  padding: 0.5em;
+  padding: .5em;
   height: 66vh;
   overflow: hidden;
 
@@ -137,7 +137,7 @@ body {
   }
 
   a {
-    transition: color 0.25s ease;
+    transition: color .25s ease;
   }
 
   a:hover,
@@ -148,8 +148,8 @@ body {
   a.evertz-text,
   a.evertz-text:visited {
     background-color: $background;
-    padding: 0 0.2rem;
-    transition: all 0.4s ease;
+    padding: 0 .2rem;
+    transition: all .4s ease;
 
     &:hover,
     &:focus {
@@ -192,21 +192,21 @@ body {
   .accordion {
     // <li>
     .accordion-item {
-      border: 0.25em solid $black;
+      border: .25em solid $black;
 
       &:last-child {
-        border-bottom: 0.25em solid $black;
+        border-bottom: .25em solid $black;
       }
 
       // Active
       &.is-active {
         // <a>
         .accordion-title {
-          background: rgba(0, 0, 0, 0.8);
+          background: rgba(0, 0, 0, .8);
           color: $white;
 
           &:hover {
-            background: rgba(0, 0, 0, 0.8);
+            background: rgba(0, 0, 0, .8);
           }
 
           h1,
@@ -255,7 +255,7 @@ body {
   }
 
   a {
-    transition: color 0.25s ease;
+    transition: color .25s ease;
   }
 
   a:hover,
@@ -284,21 +284,21 @@ body {
   .accordion {
     // <li>
     .accordion-item {
-      border: 0.25em solid $white;
+      border: .25em solid $white;
 
       &:last-child {
-        border-bottom: 0.25em solid $white;
+        border-bottom: .25em solid $white;
       }
 
       // Active
       &.is-active {
         // <a>
         .accordion-title {
-          background: rgba(255, 255, 255, 0.8);
+          background: rgba(255, 255, 255, .8);
           color: $black;
 
           &:hover {
-            background: rgba(255, 255, 255, 0.8);
+            background: rgba(255, 255, 255, .8);
           }
 
           h1,
@@ -341,7 +341,7 @@ body {
   }
 
   a {
-    transition: color 0.25s ease;
+    transition: color .25s ease;
   }
 
   a:hover,
@@ -364,7 +364,7 @@ body {
   }
 
   a {
-    transition: color 0.25s ease;
+    transition: color .25s ease;
   }
 
   a:hover,
@@ -381,7 +381,7 @@ body {
   background-color: $blue;
 
   a {
-    transition: color 0.25s ease;
+    transition: color .25s ease;
   }
 
   a:hover,
@@ -518,7 +518,7 @@ button {
   );
   background: -moz-linear-gradient(to top, #5fa6a6, #7fc7c7);
   text-decoration: none;
-  transition: all 0.15s ease;
+  transition: all .15s ease;
 
   @include breakpoint(medium) {
     top: 11em;
@@ -545,14 +545,14 @@ button {
 }
 
 .header-no-parallax {
-  padding-top: 0.75em;
+  padding-top: .75em;
 
   @media screen and (max-width: 940px) {
     padding-top: 0;
   }
 
   @media screen and (max-width: 40em) {
-    padding-top: 0.75em;
+    padding-top: .75em;
   }
 }
 
@@ -610,11 +610,11 @@ button {
   // <li>
   .accordion-item {
     margin: 0;
-    border: 0.25em solid $black;
+    border: .25em solid $black;
     border-bottom: none;
 
     &:last-child {
-      border-bottom: 0.25em solid $black;
+      border-bottom: .25em solid $black;
     }
 
     // Active
@@ -623,15 +623,15 @@ button {
 
       // <a>
       .accordion-title {
-        background: rgba(0, 0, 0, 0.8);
+        background: rgba(0, 0, 0, .8);
         color: $white;
 
         &:hover {
-          background: rgba(0, 0, 0, 0.8);
+          background: rgba(0, 0, 0, .8);
         }
 
         &::before {
-          margin-top: -0.8rem;
+          margin-top: -.8rem;
         }
 
         h1,
@@ -659,14 +659,14 @@ button {
       padding: 1em 3em 1em 1em;
       background: none;
       border: none;
-      transition: all 0.2s ease;
+      transition: all .2s ease;
 
       &:hover {
-        background: rgba(0, 0, 0, 0.2);
+        background: rgba(0, 0, 0, .2);
       }
 
       &::before {
-        margin-top: -0.6rem;
+        margin-top: -.6rem;
         font-size: 1.75em;
         font-weight: bold;
       }
@@ -697,11 +697,11 @@ button {
 }
 
 #showcase1.bounceIn {
-  -webkit-animation-delay: 0.25s;
-  -moz-animation-delay: 0.25s;
-  -o-animation-delay: 0.25s;
-  -ms-animation-delay: 0.25s;
-  animation-delay: 0.25s;
+  -webkit-animation-delay: .25s;
+  -moz-animation-delay: .25s;
+  -o-animation-delay: .25s;
+  -ms-animation-delay: .25s;
+  animation-delay: .25s;
 }
 
 #showcase2.bounceIn {
@@ -724,18 +724,18 @@ button {
   #showcase1.bounceIn,
   #showcase2.bounceIn,
   #showcase3.bounceIn {
-    -webkit-animation-delay: 0.5s;
-    -moz-animation-delay: 0.5s;
-    -o-animation-delay: 0.5s;
-    -ms-animation-delay: 0.5s;
-    animation-delay: 0.5s;
+    -webkit-animation-delay: .5s;
+    -moz-animation-delay: .5s;
+    -o-animation-delay: .5s;
+    -ms-animation-delay: .5s;
+    animation-delay: .5s;
   }
 }
 
 #socials {
   display: inline;
   float: left;
-  margin-top: 0.5rem;
+  margin-top: .5rem;
   margin-bottom: 2em;
   border-bottom: none;
 
@@ -763,20 +763,20 @@ button {
       max-width: 2.75em;
 
       -webkit-filter: grayscale(100%);
-      -webkit-transition: 0.25s ease-in-out;
+      -webkit-transition: .25s ease-in-out;
       -moz-filter: grayscale(100%);
-      -moz-transition: 0.25s ease-in-out;
+      -moz-transition: .25s ease-in-out;
       -o-filter: grayscale(100%);
-      -o-transition: 0.25s ease-in-out;
+      -o-transition: .25s ease-in-out;
 
       &:hover,
       &:focus {
         -webkit-filter: grayscale(0%);
-        -webkit-transition: 0.25s ease-in-out;
+        -webkit-transition: .25s ease-in-out;
         -moz-filter: grayscale(0%);
-        -moz-transition: 0.25s ease-in-out;
+        -moz-transition: .25s ease-in-out;
         -o-filter: grayscale(0%);
-        -o-transition: 0.25s ease-in-out;
+        -o-transition: .25s ease-in-out;
       }
     }
   }

@@ -24,7 +24,7 @@
 
   h2 {
     margin-top: 0;
-    padding-top: 0.8em;
+    padding-top: .8em;
   }
 
   .top {
@@ -42,7 +42,7 @@
       color: yellow;
       text-decoration: none;
       font-size: 20px;
-      background: rgba(0, 0, 0, 0.2);
+      background: rgba(0, 0, 0, .2);
       padding: 10px 20px;
       display: inline-block;
       border-radius: 5px;
@@ -61,10 +61,10 @@
     opacity: 0;
     position: absolute;
     overflow: hidden;
-    padding: 0.33em;
+    padding: .33em;
     top: -20px;
     border-radius: 2px;
-    transition: all 0.5s;
+    transition: all .5s;
     transform: translateY(100px);
     will-change: opacity;
     display: none;
@@ -82,9 +82,9 @@
     position: absolute;
     background: #fff;
     border-radius: 4px;
-    box-shadow: 0 50px 100px rgba(50, 50, 93, 0.1),
-      0 15px 35px rgba(50, 50, 93, 0.15), 0 5px 15px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s, opacity 0.1s, transform 0.2s;
+    box-shadow: 0 50px 100px rgba(50, 50, 93, .1),
+      0 15px 35px rgba(50, 50, 93, .15), 0 5px 15px rgba(0, 0, 0, .1);
+    transition: all .3s, opacity .1s, transform .2s;
     transform-origin: 50% 0;
     display: flex;
     justify-content: center;
@@ -106,14 +106,14 @@
 
   .dropdown a {
     display: block;
-    background-color: rgba(0, 0, 0, 0.2);
-    padding: 0.5em 1em;
-    margin-bottom: 0.25em;
+    background-color: rgba(0, 0, 0, .2);
+    padding: .5em 1em;
+    margin-bottom: .25em;
     text-decoration: underline;
     color: $black;
 
     &:hover {
-      background-color: rgba(0, 0, 0, 0.8);
+      background-color: rgba(0, 0, 0, .8);
       color: $white;
     }
   }

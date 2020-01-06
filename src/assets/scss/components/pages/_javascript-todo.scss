@@ -1,18 +1,18 @@
 #javaScriptToDo {
   #todoInput {
     margin-bottom: 0;
-    margin-top: 0.15em;
-    background: rgba(0, 0, 0, 0.22);
+    margin-top: .15em;
+    background: rgba(0, 0, 0, .22);
     color: $white;
 
     &:focus {
-      background: rgba(0, 0, 0, 0.22);
+      background: rgba(0, 0, 0, .22);
     }
   }
 
   button {
     width: 100%;
-    padding: 0.75em 1em;
+    padding: .75em 1em;
   }
 
   #todoOutput {
@@ -28,7 +28,7 @@
       list-style-type: none;
       background: lighten($blue, 20%);
       border: 2px solid lighten($blue, 20%);
-      transition: all ease 0.2s;
+      transition: all ease .2s;
 
       &::before {
         cursor: move;
@@ -38,11 +38,11 @@
         display: block;
         position: absolute;
         top: 5%;
-        left: 0.15em;
+        left: .15em;
         background-color: $black;
         background-image: linear-gradient(transparent 50%, rgb(0, 0, 0) 50%);
         background-size: 8px 8px;
-        opacity: 0.8;
+        opacity: .8;
       }
 
       p {
@@ -118,7 +118,7 @@
           border-width: 0 2px 2px 0;
           top: 1.2em;
           right: 4em;
-          width: 0.5em;
+          width: .5em;
           height: 1em;
           transform: rotate(45deg);
         }

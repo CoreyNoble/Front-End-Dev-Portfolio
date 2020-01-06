@@ -15,17 +15,17 @@
     width: 100%;
     margin: 0 auto;
     margin-bottom: 3em;
-    -moz-box-shadow: 0 0.75em 0.75em -0.75em #000000,
-      0 -0.75em 0.75em -0.75em #000000;
-    -webkit-box-shadow: 0 0.75em 0.75em -0.75em #000000,
-      0 -0.75em 0.75em -0.75em #000000;
-    box-shadow: 0 0.75em 0.75em -0.75em #000000,
-      0 -0.75em 0.75em -0.75em #000000;
+    -moz-box-shadow: 0 .75em .75em -.75em #000000,
+      0 -.75em .75em -.75em #000000;
+    -webkit-box-shadow: 0 .75em .75em -.75em #000000,
+      0 -.75em .75em -.75em #000000;
+    box-shadow: 0 .75em .75em -.75em #000000,
+      0 -.75em .75em -.75em #000000;
 
-    -moz-transition: all 0.15s linear;
-    -webkit-transition: all 0.15s linear;
-    -o-transition: all 0.15s linear;
-    transition: all 0.15s linear;
+    -moz-transition: all .15s linear;
+    -webkit-transition: all .15s linear;
+    -o-transition: all .15s linear;
+    transition: all .15s linear;
 
     &.no-padding.columns {
       padding: 0;
@@ -44,19 +44,19 @@
     }
 
     &:hover {
-      -moz-box-shadow: 0 1em 1em -0.5em rgba(0, 0, 0, 0.6),
-        0 -0.5em 1em -0.5em rgba(0, 0, 0, 0.6);
-      -webkit-box-shadow: 0 1em 1em -0.5em rgba(0, 0, 0, 0.6),
-        0 -0.5em 1em -0.5em rgba(0, 0, 0, 0.6);
-      box-shadow: 0 1em 1em -0.5em rgba(0, 0, 0, 0.6),
-        0 -0.5em 1em -0.5em rgba(0, 0, 0, 0.6);
+      -moz-box-shadow: 0 1em 1em -.5em rgba(0, 0, 0, .6),
+        0 -.5em 1em -.5em rgba(0, 0, 0, .6);
+      -webkit-box-shadow: 0 1em 1em -.5em rgba(0, 0, 0, .6),
+        0 -.5em 1em -.5em rgba(0, 0, 0, .6);
+      box-shadow: 0 1em 1em -.5em rgba(0, 0, 0, .6),
+        0 -.5em 1em -.5em rgba(0, 0, 0, .6);
 
       transform: scale(1.025);
 
-      -moz-transition: all 0.15s linear;
-      -webkit-transition: all 0.15s linear;
-      -o-transition: all 0.15s linear;
-      transition: all 0.15s linear;
+      -moz-transition: all .15s linear;
+      -webkit-transition: all .15s linear;
+      -o-transition: all .15s linear;
+      transition: all .15s linear;
     }
 
     img {
@@ -69,7 +69,7 @@
     .h3 {
       vertical-align: bottom;
       text-align: center;
-      padding: 0.15em;
+      padding: .15em;
     }
 
     p {

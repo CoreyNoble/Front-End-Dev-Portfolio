@@ -10,7 +10,7 @@
     font-size: 6em;
     margin: 0;
     color: white;
-    text-shadow: 4px 4px 0 rgba(0, 0, 0, 0.05);
+    text-shadow: 4px 4px 0 rgba(0, 0, 0, .05);
 
     @include breakpoint(medium) {
       font-size: 12em;
@@ -29,12 +29,12 @@
   .timer__control {
     display: flex;
     align-content: center;
-    background: rgba(0, 0, 0, 0.4);
-    border: 0.2em solid $black;
+    background: rgba(0, 0, 0, .4);
+    border: .2em solid $black;
 
     &:hover {
-      background: rgba(0, 0, 0, 0.8);
-      transition: all 0.2s ease;
+      background: rgba(0, 0, 0, .8);
+      transition: all .2s ease;
     }
   }
 
@@ -47,7 +47,7 @@
     color: white;
     font-size: 1.5em;
     text-transform: uppercase;
-    padding: 0.25em;
+    padding: .25em;
     font-family: 'Inconsolata', monospace;
 
     @include breakpoint(medium) {

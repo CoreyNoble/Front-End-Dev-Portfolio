@@ -9,9 +9,9 @@
     font-weight: bold;
     color: $blue;
     text-align: center;
-    margin-bottom: 0.25em;
-    padding: 0.25em;
-    background-color: rgba(0, 0, 0, 0.95);
+    margin-bottom: .25em;
+    padding: .25em;
+    background-color: rgba(0, 0, 0, .95);
 
     .total-time {
       color: $white;
@@ -26,7 +26,7 @@
     max-width: 30em;
     margin: auto;
     padding: 0;
-    box-shadow: 0 0 0 2em rgba(0, 0, 0, 0.05);
+    box-shadow: 0 0 0 2em rgba(0, 0, 0, .05);
 
     li {
       border-bottom: 1px solid #efefef;

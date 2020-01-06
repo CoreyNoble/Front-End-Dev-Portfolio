@@ -6,7 +6,7 @@
   .clock {
     width: 16em;
     height: 16em;
-    border: 0.5em solid $black;
+    border: .5em solid $black;
     border-radius: 50%;
     margin: 1em auto;
     position: relative;
@@ -19,7 +19,7 @@
     @include breakpoint(medium) {
       width: 22em;
       height: 22em;
-      border: 0.75em solid $black;
+      border: .75em solid $black;
     }
 
     @include breakpoint(large) {
@@ -38,56 +38,56 @@
 
   .hand {
     width: 48%;
-    height: 0.2em;
+    height: .2em;
     left: 2%;
     background: black;
     position: absolute;
     top: 49.75%;
     transform-origin: 100%; // transform origin of rotation
     transform: rotate(90deg);
-    transition: all 0.05s;
+    transition: all .05s;
     transition-timing-function: cubic-bezier(
-      0.1,
+      .1,
       2.7,
-      0.58,
+      .58,
       1
     ); // custom timing to create realistic tick effect
 
     @include breakpoint(medium) {
-      height: 0.275em;
+      height: .275em;
     }
 
     @include breakpoint(large) {
-      height: 0.33em;
+      height: .33em;
     }
 
     &.hour-hand {
-      height: 0.4em;
+      height: .4em;
       width: 35%;
       top: 49.33%;
       left: 14.66%;
 
       @include breakpoint(medium) {
-        height: 0.5em;
+        height: .5em;
       }
 
       @include breakpoint(large) {
-        height: 0.6em;
+        height: .6em;
       }
     }
 
     &.minute-hand {
-      height: 0.3em;
+      height: .3em;
       width: 42%;
       top: 49.5%;
       left: 7.5%;
 
       @include breakpoint(medium) {
-        height: 0.4em;
+        height: .4em;
       }
 
       @include breakpoint(large) {
-        height: 0.6em;
+        height: .6em;
       }
     }
   }

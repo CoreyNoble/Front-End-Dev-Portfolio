@@ -31,7 +31,7 @@
     );
     background: -moz-linear-gradient(to top, #5fa6a6, #7fc7c7);
     text-decoration: none;
-    transition: all 0.15s ease;
+    transition: all .15s ease;
 
     @include breakpoint(medium) {
       top: 11em;
@@ -58,7 +58,7 @@
   }
 
   .score {
-    background: rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, .2);
     padding: 0 3rem;
     line-height: 1;
     border-radius: 1rem;
@@ -119,7 +119,7 @@
     top: 100%;
     width: 100%;
     height: 100%;
-    transition: all 0.4s;
+    transition: all .4s;
 
     @include breakpoint(medium) {
       background-size: 50%;

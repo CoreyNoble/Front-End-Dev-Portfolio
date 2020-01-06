@@ -7,12 +7,12 @@
   width: 3em;
   height: 3em;
   text-decoration: none;
-  -webkit-border-radius: 0.33em;
-  -moz-border-radius: 0.33em;
-  border-radius: 0.33em;
+  -webkit-border-radius: .33em;
+  -moz-border-radius: .33em;
+  border-radius: .33em;
   display: none;
-  transition: bottom 0.5s ease, position 0.5s ease, display 0.5s ease,
-    float 0.5s ease;
+  transition: bottom .5s ease, position .5s ease, display .5s ease,
+    float .5s ease;
 
   &:hover,
   &:focus {
@@ -25,10 +25,10 @@
     color: $white;
     margin: 0;
     position: relative;
-    left: 0.47em;
-    top: 0.47em;
+    left: .47em;
+    top: .47em;
     font-size: 1.5em;
-    transition: top 0.66s ease;
+    transition: top .66s ease;
   }
 
   &.bottomed-out {

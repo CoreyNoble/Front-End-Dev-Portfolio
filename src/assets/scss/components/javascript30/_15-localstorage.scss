@@ -9,7 +9,7 @@
     display: block;
     margin: 0 auto;
     fill: $black;
-    background: rgba(0, 0, 0, 0.1);
+    background: rgba(0, 0, 0, .1);
     padding: 1em;
     border-radius: 50%;
     width: 100%;
@@ -23,8 +23,8 @@
     padding: 1.5em;
     width: 100%;
     max-width: 350px;
-    background: rgba(255, 255, 255, 0.95);
-    box-shadow: 0 0 0 10px rgba(0, 0, 0, 0.1);
+    background: rgba(255, 255, 255, .95);
+    box-shadow: 0 0 0 10px rgba(0, 0, 0, .1);
   }
 
   h2 {
@@ -40,7 +40,7 @@
   }
 
   .plates li {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    border-bottom: 1px solid rgba(0, 0, 0, .2);
     padding: 1em 0;
     margin-left: 0;
   }
@@ -70,6 +70,6 @@
   .add-items input {
     padding: 10px;
     outline: 0;
-    border: 1px solid rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(0, 0, 0, .1);
   }
 }

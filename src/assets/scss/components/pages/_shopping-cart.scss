@@ -5,9 +5,9 @@
     border-radius: 15px;
     margin-top: 3em;
     border: 3px solid $black;
-    -webkit-box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.5);
-    -moz-box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.5);
-    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0 0 10px 1px rgba(0, 0, 0, .5);
+    -moz-box-shadow: 0 0 10px 1px rgba(0, 0, 0, .5);
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, .5);
 
     .shopping-app {
       width: 100%;
@@ -43,7 +43,7 @@
 
     .store-item {
       margin: 1em 0;
-      padding: 1em 0.5em;
+      padding: 1em .5em;
       border: 1px solid $black;
       border-bottom: none;
 
@@ -65,8 +65,8 @@
           margin: 0 auto;
           max-width: 150px;
           width: 100%;
-          -webkit-filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.25));
-          filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.25));
+          -webkit-filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, .25));
+          filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, .25));
         }
 
         h5,
@@ -80,7 +80,7 @@
     .cart-total {
       text-align: left;
       border: 1px solid $black;
-      padding: 0.5em;
+      padding: .5em;
       background-color: $blue;
 
       &:first-child {
@@ -99,7 +99,7 @@
       margin-top: 2em;
 
       p {
-        padding-bottom: 0.5em;
+        padding-bottom: .5em;
       }
 
       .search {
@@ -118,7 +118,7 @@
           float: left;
           width: 79%;
           border: 1px solid $black;
-          padding: 0.25em;
+          padding: .25em;
 
           background: rgba(245, 245, 245, 1);
           background: -moz-linear-gradient(
@@ -294,14 +294,14 @@
           filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a8ebfa', endColorstr='#3e808f', GradientType=1 );
 
           img {
-            -webkit-filter: drop-shadow(0 2px 2px rgba(0, 0, 0, 0.75));
-            filter: drop-shadow(0 2px 2px rgba(0, 0, 0, 0.75));
+            -webkit-filter: drop-shadow(0 2px 2px rgba(0, 0, 0, .75));
+            filter: drop-shadow(0 2px 2px rgba(0, 0, 0, .75));
           }
 
           h2,
           .h2 {
             color: $white;
-            text-shadow: 0 2px 2px rgba(0, 0, 0, 0.75);
+            text-shadow: 0 2px 2px rgba(0, 0, 0, .75);
           }
         }
 
@@ -318,13 +318,13 @@
           .h2 {
             display: block;
             margin: 0;
-            margin-top: 0.1em;
+            margin-top: .1em;
             padding: 0;
             text-align: left;
             font-weight: bold;
 
             @media screen and (max-width: 40em) {
-              margin-top: 0.5em;
+              margin-top: .5em;
               text-align: center;
             }
           }
@@ -393,30 +393,30 @@
       .cart-button {
         text-align: center;
         background-color: $blue;
-        padding: 0.5em 0.25em;
+        padding: .5em .25em;
         border: 1px solid $black;
         border-radius: 10px;
         color: $black;
-        margin: 0.25em 0;
+        margin: .25em 0;
         width: 100%;
         font-size: rem-calc(16);
         font-weight: bold;
         text-decoration: none;
         line-height: 1;
-        -webkit-box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.33);
-        -moz-box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.33);
-        box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.33);
+        -webkit-box-shadow: 0 0 3px 0 rgba(0, 0, 0, .33);
+        -moz-box-shadow: 0 0 3px 0 rgba(0, 0, 0, .33);
+        box-shadow: 0 0 3px 0 rgba(0, 0, 0, .33);
         margin-top: 1em;
-        margin: 0.5em;
+        margin: .5em;
 
         img {
           margin: 0 auto;
-          margin-left: -0.75em;
+          margin-left: -.75em;
           display: inline-block;
         }
 
         span {
-          margin-left: 0.75em;
+          margin-left: .75em;
         }
 
         &:hover,
@@ -901,8 +901,8 @@
         img {
           display: block;
           margin: 0 auto;
-          -webkit-filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.25));
-          filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.25));
+          -webkit-filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, .25));
+          filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, .25));
         }
       }
 
@@ -959,7 +959,7 @@
           float: right;
           display: inline-block;
           margin-left: 1em;
-          margin-top: 0.4em;
+          margin-top: .4em;
         }
 
         h4,
@@ -1010,11 +1010,11 @@
 
         .cart-button {
           margin: 0;
-          padding: 0.25em;
+          padding: .25em;
           display: inline-block;
           float: left;
           width: 47.5%;
-          margin-top: 0.4em;
+          margin-top: .4em;
 
           &.add-to-cart {
             margin-right: 5%;

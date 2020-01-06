@@ -2,9 +2,9 @@
 footer {
   background: $background;
   border-top: 1px solid $white;
-  -webkit-box-shadow: 0 -10px 17px -8px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 0 -10px 17px -8px rgba(0, 0, 0, 0.75);
-  box-shadow: 0 -10px 17px -8px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0 -10px 17px -8px rgba(0, 0, 0, .75);
+  -moz-box-shadow: 0 -10px 17px -8px rgba(0, 0, 0, .75);
+  box-shadow: 0 -10px 17px -8px rgba(0, 0, 0, .75);
   padding: 1em 0;
 
   @media screen and (max-width: 40em) {
@@ -49,7 +49,7 @@ footer {
   }
 
   .footnote-position {
-    margin-top: 0.5em;
+    margin-top: .5em;
 
     @media screen and (max-width: 40em) {
       margin-top: 0;
@@ -68,7 +68,7 @@ footer {
       margin: 0;
 
       @media screen and (max-width: 40em) {
-        margin-top: 0.25em;
+        margin-top: .25em;
       }
     }
   }
@@ -93,7 +93,7 @@ footer {
     margin-top: 1em;
 
     @media screen and (max-width: 40em) {
-      margin-top: 0.75em;
+      margin-top: .75em;
     }
   }
 
@@ -105,7 +105,7 @@ footer {
     p {
       a {
         color: $white;
-        transition: color 0.25s ease;
+        transition: color .25s ease;
 
         &:hover,
         &:focus {
@@ -151,20 +151,20 @@ footer {
       a {
         img {
           -webkit-filter: grayscale(100%);
-          -webkit-transition: 0.25s ease-in-out;
+          -webkit-transition: .25s ease-in-out;
           -moz-filter: grayscale(100%);
-          -moz-transition: 0.25s ease-in-out;
+          -moz-transition: .25s ease-in-out;
           -o-filter: grayscale(100%);
-          -o-transition: 0.25s ease-in-out;
+          -o-transition: .25s ease-in-out;
 
           &:hover,
           &:focus {
             -webkit-filter: grayscale(0%);
-            -webkit-transition: 0.25s ease-in-out;
+            -webkit-transition: .25s ease-in-out;
             -moz-filter: grayscale(0%);
-            -moz-transition: 0.25s ease-in-out;
+            -moz-transition: .25s ease-in-out;
             -o-filter: grayscale(0%);
-            -o-transition: 0.25s ease-in-out;
+            -o-transition: .25s ease-in-out;
           }
         }
       }
@@ -173,20 +173,20 @@ footer {
     .social-text {
       h4,
       .h4 {
-        padding-top: 0.55em;
+        padding-top: .55em;
         font-size: 1em;
         font-weight: bold;
         line-height: 1;
         float: right;
 
         a {
-          font-size: 0.9em;
+          font-size: .9em;
           font-weight: bold;
         }
       }
 
       p {
-        font-size: 0.75em;
+        font-size: .75em;
         font-weight: bold;
       }
     }
@@ -198,7 +198,7 @@ footer {
 
     @media screen and (max-width: 40em) {
       float: left;
-      margin-right: 0em;
+      margin-right: 0;
       margin-bottom: 0;
       padding-bottom: 0;
     }
@@ -211,7 +211,7 @@ footer {
       }
 
       @media screen and (max-width: 40em) {
-        padding: 0em 0.5em;
+        padding: 0 .5em;
       }
     }
   }

@@ -19,7 +19,7 @@ a.skip-main:active {
   width: 100%;
   max-width: 28em;
   display: block;
-  margin: 0.2em auto;
+  margin: .2em auto;
   padding: 5px;
   border-radius: 5px;
   border: 2px solid $white;
@@ -38,9 +38,9 @@ nav {
   font-size: rem-calc(18);
   font-family: 'Open Sans', sans-serif;
   text-align: center;
-  -webkit-box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.66);
-  -moz-box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.66);
-  box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.66);
+  -webkit-box-shadow: 0 2px 20px 0 rgba(0, 0, 0, .66);
+  -moz-box-shadow: 0 2px 20px 0 rgba(0, 0, 0, .66);
+  box-shadow: 0 2px 20px 0 rgba(0, 0, 0, .66);
   border-bottom: 1px solid white;
 
   @media screen and (max-width: 940px) {
@@ -94,7 +94,7 @@ nav {
         box-sizing: border-box;
         -moz-box-sizing: border-box;
         -webkit-box-sizing: border-box;
-        transition: all 0.25s ease;
+        transition: all .25s ease;
 
         @media screen and (max-width: 940px) {
           font-weight: 500;
@@ -165,7 +165,7 @@ nav {
         border-bottom: none;
         display: inline-block;
         float: left;
-        margin-right: 0.75em;
+        margin-right: .75em;
 
         &:last-child {
           margin-right: 1em;
@@ -182,7 +182,7 @@ nav {
         }
 
         &#nav-github-link {
-          margin-right: 0.75em;
+          margin-right: .75em;
 
           @media screen and (max-width: 940px) {
             margin-right: 0;
@@ -195,20 +195,20 @@ nav {
           max-width: 2em;
 
           -webkit-filter: grayscale(100%);
-          -webkit-transition: 0.25s ease-in-out;
+          -webkit-transition: .25s ease-in-out;
           -moz-filter: grayscale(100%);
-          -moz-transition: 0.25s ease-in-out;
+          -moz-transition: .25s ease-in-out;
           -o-filter: grayscale(100%);
-          -o-transition: 0.25s ease-in-out;
+          -o-transition: .25s ease-in-out;
 
           &:hover,
           &:focus {
             -webkit-filter: grayscale(0%);
-            -webkit-transition: 0.25s ease-in-out;
+            -webkit-transition: .25s ease-in-out;
             -moz-filter: grayscale(0%);
-            -moz-transition: 0.25s ease-in-out;
+            -moz-transition: .25s ease-in-out;
             -o-filter: grayscale(0%);
-            -o-transition: 0.25s ease-in-out;
+            -o-transition: .25s ease-in-out;
           }
         }
       }

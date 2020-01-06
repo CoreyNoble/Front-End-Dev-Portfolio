@@ -20,7 +20,7 @@ a#resume {
   );
   background: -moz-linear-gradient(to top, #5fa6a6, #7fc7c7);
   text-decoration: none;
-  transition: all 0.15s ease;
+  transition: all .15s ease;
 
   &:hover,
   &:active,
@@ -61,11 +61,11 @@ a#resume {
 }
 
 a.cta {
-  border: 0.15em solid $background;
+  border: .15em solid $background;
   border-radius: 5px;
   color: $black;
   text-decoration: none;
-  padding: 0.5em 0.75em;
+  padding: .5em .75em;
   display: inline-block;
 
   &:hover {
@@ -75,6 +75,6 @@ a.cta {
   }
 
   &.project-cta {
-    margin-right: 0.25em;
+    margin-right: .25em;
   }
 }

@@ -2,7 +2,7 @@
   height: 5rem;
   overflow: hidden;
   position: relative;
-  transition: height 0.5s ease-out;
+  transition: height .5s ease-out;
 
   &:after {
     content: '';
@@ -13,7 +13,7 @@
     height: 64px;
     background: linear-gradient(
       to bottom,
-      rgba(255, 255, 255, 0.4) 0%,
+      rgba(255, 255, 255, .4) 0%,
       rgba(255, 255, 255, 1) 100%
     );
   }
@@ -26,7 +26,7 @@
 .excerpt-visible {
   overflow: hidden;
   height: auto;
-  transition: height 0.5s ease-out;
+  transition: height .5s ease-out;
 
   &.large-excerpt {
     height: auto;

@@ -12,8 +12,8 @@
       min-height: 24em;
       /* Safari transitionend event.propertyName === flex */
       /* Chrome + FF transitionend event.propertyName === flex-grow */
-      transition: font-size 0.7s cubic-bezier(0.61, -0.19, 0.7, -0.11),
-        flex 0.7s cubic-bezier(0.61, -0.19, 0.7, -0.11), background 0.2s;
+      transition: font-size .7s cubic-bezier(.61, -.19, .7, -.11),
+        flex .7s cubic-bezier(.61, -.19, .7, -.11), background .2s;
       font-size: 20px;
       background-size: cover;
       background-position: center;
@@ -26,7 +26,7 @@
       > * {
         margin: 0;
         width: 100%;
-        transition: transform 0.5s;
+        transition: transform .5s;
         flex: 1 0 auto;
         display: flex;
         justify-content: center;
@@ -46,13 +46,13 @@
         text-transform: uppercase;
         font-family: 'Amatic SC', cursive;
         font-weight: bold;
-        -webkit-text-stroke-width: 0.05em;
+        -webkit-text-stroke-width: .05em;
         -webkit-text-stroke-color: $black;
         font-size: 1.25em;
         color: $white;
         opacity: 0;
-        transition: all 0.6s cubic-bezier(0.61, -0.19, 0.7, -0.11);
-        padding: 0.5em;
+        transition: all .6s cubic-bezier(.61, -.19, .7, -.11);
+        padding: .5em;
         word-break: unset;
 
         &:nth-child(2) {

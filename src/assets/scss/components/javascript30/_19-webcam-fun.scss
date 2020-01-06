@@ -24,22 +24,22 @@
       max-width: 45em;
       margin: 0 auto;
       background: $white;
-      border: 0.33em solid $white;
-      -moz-box-shadow: 0 0.75em 0.75em -0.75em #000000,
-        0 -0.75em 0.75em -0.75em #000000;
-      -webkit-box-shadow: 0 0.75em 0.75em -0.75em #000000,
-        0 -0.75em 0.75em -0.75em #000000;
-      box-shadow: 0 0.75em 0.75em -0.75em #000000,
-        0 -0.75em 0.75em -0.75em #000000;
+      border: .33em solid $white;
+      -moz-box-shadow: 0 .75em .75em -.75em #000000,
+        0 -.75em .75em -.75em #000000;
+      -webkit-box-shadow: 0 .75em .75em -.75em #000000,
+        0 -.75em .75em -.75em #000000;
+      box-shadow: 0 .75em .75em -.75em #000000,
+        0 -.75em .75em -.75em #000000;
     }
 
     // <video>
     #player {
       position: fixed;
       top: 3em;
-      right: 0.75em;
+      right: .75em;
       width: 9.25em;
-      border: 0.25em solid $black;
+      border: .25em solid $black;
 
       @include breakpoint(medium) {
         top: 4em;
@@ -50,20 +50,20 @@
       margin-top: 1.5em;
       padding: 1em;
       background: $blue;
-      border: 0.25em solid $white;
-      -moz-box-shadow: 0 0.75em 0.75em -0.75em #000000,
-        0 -0.75em 0.75em -0.75em #000000;
-      -webkit-box-shadow: 0 0.75em 0.75em -0.75em #000000,
-        0 -0.75em 0.75em -0.75em #000000;
-      box-shadow: 0 0.75em 0.75em -0.75em #000000,
-        0 -0.75em 0.75em -0.75em #000000;
+      border: .25em solid $white;
+      -moz-box-shadow: 0 .75em .75em -.75em #000000,
+        0 -.75em .75em -.75em #000000;
+      -webkit-box-shadow: 0 .75em .75em -.75em #000000,
+        0 -.75em .75em -.75em #000000;
+      box-shadow: 0 .75em .75em -.75em #000000,
+        0 -.75em .75em -.75em #000000;
 
       @include breakpoint(large) {
         margin-top: 0;
       }
 
       h2 {
-        margin-bottom: 0.25em;
+        margin-bottom: .25em;
       }
 
       label {
@@ -83,7 +83,7 @@
       #photoCTA {
         position: fixed;
         top: 10em;
-        right: 0.75em;
+        right: .75em;
         color: #000000;
         padding: 1em 2em;
         -moz-border-radius: 4px;
@@ -102,7 +102,7 @@
         );
         background: -moz-linear-gradient(to top, #5fa6a6, #7fc7c7);
         text-decoration: none;
-        transition: all 0.15s ease;
+        transition: all .15s ease;
 
         @include breakpoint(medium) {
           top: 11em;
@@ -136,20 +136,20 @@
     min-height: 12em;
     background-color: #6dbfbf;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 100 100'%3E%3Crect x='0' y='0' width='21' height='21' fill-opacity='0.6' fill='%23477979'/%3E%3C/svg%3E");
-    border: 0.33em solid $white;
-    -moz-box-shadow: 0 0.75em 0.75em -0.75em #000000,
-      0 -0.75em 0.75em -0.75em #000000;
-    -webkit-box-shadow: 0 0.75em 0.75em -0.75em #000000,
-      0 -0.75em 0.75em -0.75em #000000;
-    box-shadow: 0 0.75em 0.75em -0.75em #000000,
-      0 -0.75em 0.75em -0.75em #000000;
+    border: 33em solid $white;
+    -moz-box-shadow: 0 .75em .75em -.75em #000000,
+      0 -.75em .75em -.75em #000000;
+    -webkit-box-shadow: 0 .75em .75em -.75em #000000,
+      0 -.75em .75em -.75em #000000;
+    box-shadow: 0 .75em .75em -.75em #000000,
+      0 -.75em .75em -.75em #000000;
   }
 
   .strip img {
     width: 100px;
     overflow-x: scroll;
-    padding: 0.8rem 0.8rem 2.5rem 0.8rem;
-    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+    padding: .8rem .8rem 2.5rem .8rem;
+    box-shadow: 0 0 3px rgba(0, 0, 0, .2);
     background: white;
   }
 
