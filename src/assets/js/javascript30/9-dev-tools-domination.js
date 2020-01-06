@@ -14,7 +14,7 @@ console.log(`ES6 console.log with a ${value} in its\' string`);
 // Styled Console Log
 console.log(
   '%c Styled console.log',
-  'font-size: 3em; background: #6dbfbf; text-shadow: 2px 2px 0 #888888'
+  'font-size: 3em; background: #6dbfbf; text-shadow: 2px 2px 0 #888'
 );
 
 // Warning! Console Log
