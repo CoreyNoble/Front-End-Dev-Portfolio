@@ -38,9 +38,9 @@ nav {
   font-size: rem-calc(18);
   font-family: 'Open Sans', sans-serif;
   text-align: center;
-  -webkit-box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.66);
-  -moz-box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.66);
-  box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.66);
+  -webkit-box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.66);
+  -moz-box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.66);
+  box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.66);
   border-bottom: 1px solid white;
 
   @media screen and (max-width: 940px) {
@@ -126,7 +126,7 @@ nav {
       a {
         @media screen and (max-width: 940px) {
           text-align: center;
-          text-indent: 0px;
+          text-indent: 0;
         }
 
         &:hover,

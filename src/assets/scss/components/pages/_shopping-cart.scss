@@ -5,9 +5,9 @@
     border-radius: 15px;
     margin-top: 3em;
     border: 3px solid $black;
-    -webkit-box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.5);
-    -moz-box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.5);
-    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.5);
 
     .shopping-app {
       width: 100%;
@@ -294,14 +294,14 @@
           filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a8ebfa', endColorstr='#3e808f', GradientType=1 );
 
           img {
-            -webkit-filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.75));
-            filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.75));
+            -webkit-filter: drop-shadow(0 2px 2px rgba(0, 0, 0, 0.75));
+            filter: drop-shadow(0 2px 2px rgba(0, 0, 0, 0.75));
           }
 
           h2,
           .h2 {
             color: $white;
-            text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.75);
+            text-shadow: 0 2px 2px rgba(0, 0, 0, 0.75);
           }
         }
 
@@ -403,9 +403,9 @@
         font-weight: bold;
         text-decoration: none;
         line-height: 1;
-        -webkit-box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.33);
-        -moz-box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.33);
-        box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.33);
+        -webkit-box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.33);
+        -moz-box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.33);
+        box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.33);
         margin-top: 1em;
         margin: 0.5em;
 
@@ -421,9 +421,9 @@
 
         &:hover,
         &:focus {
-          -webkit-box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 1);
-          -moz-box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 1);
-          box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 1);
+          -webkit-box-shadow: 0 0 3px 0 rgba(0, 0, 0, 1);
+          -moz-box-shadow: 0 0 3px 0 rgba(0, 0, 0, 1);
+          box-shadow: 0 0 3px 0 rgba(0, 0, 0, 1);
         }
 
         &:first-child {
