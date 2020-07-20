@@ -1,24 +1,18 @@
 a#resume {
+  background: -moz-linear-gradient(to top, #5fa6a6, #7fc7c7);
+  background: -ms-linear-gradient(to top, #5fa6a6, #7fc7c7);
+  background: -webkit-gradient(linear, to left top, to left bottom, from(#5fa6a6), to(#7fc7c7));
+  background: #468ccf;
+  background: linear-gradient(to top, #5fa6a6, #7fc7c7);
+  border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+  border: 2px solid #000;
+  color: #000;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  color: #000;
   padding: 1em 2em;
-  -moz-border-radius: 4px;
-  -webkit-border-radius: 4px;
-  border-radius: 4px;
-  border: 2px solid #000;
-  background: #468ccf;
-  background: linear-gradient(to top, #5fa6a6, #7fc7c7);
-  background: -ms-linear-gradient(to top, #5fa6a6, #7fc7c7);
-  background: -webkit-gradient(
-    linear,
-    to left top,
-    to left bottom,
-    from(#5fa6a6),
-    to(#7fc7c7)
-  );
-  background: -moz-linear-gradient(to top, #5fa6a6, #7fc7c7);
   text-decoration: none;
   transition: all .15s ease;
 
@@ -30,13 +24,7 @@ a#resume {
     background: #63b8ee;
     background: linear-gradient(to top, #7fc7c7, #5fa6a6);
     background: -ms-linear-gradient(to top, #7fc7c7, #5fa6a6);
-    background: -webkit-gradient(
-      linear,
-      to left top,
-      tp left bottom,
-      from(#7fc7c7),
-      to(#5fa6a6)
-    );
+    background: -webkit-gradient(linear, to left top, tp left bottom, from(#7fc7c7), to(#5fa6a6));
     background: -moz-linear-gradient(to top, #7fc7c7, #5fa6a6);
     text-decoration: underline;
   }
@@ -55,18 +43,18 @@ a#resume {
   }
 
   &.resume-cta-left {
-    margin-top: 1.75em;
     float: left;
+    margin-top: 1.75em;
   }
 }
 
 a.cta {
-  border: .15em solid $background;
   border-radius: 5px;
+  border: .15em solid $background;
   color: $black;
-  text-decoration: none;
-  padding: .5em .75em;
   display: inline-block;
+  padding: .5em .75em;
+  text-decoration: none;
 
   &:hover {
     border-color: $white;

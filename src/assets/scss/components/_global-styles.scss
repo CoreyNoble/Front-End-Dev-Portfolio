@@ -19,8 +19,8 @@
 }
 
 .section {
-  width: 100%;
   padding: 4em 1em;
+  width: 100%;
 
   @media screen and (max-width: 40em) {
     padding: 2.5em 1em;
@@ -41,24 +41,24 @@ p {
 }
 
 hr {
-  height: 2px;
   color: $grey;
+  height: 2px;
 }
 
 .frame {
-  width: 100%;
-  padding: .5em;
   height: 66vh;
   overflow: hidden;
+  padding: .5em;
+  width: 100%;
 
   iframe {
+    border: none;
     display: block;
     float: left;
-    border: none;
-    width: 100%;
-    margin: 0 auto;
     height: 64vh;
+    margin: 0 auto;
     overflow: auto;
+    width: 100%;
   }
 }
 
@@ -78,36 +78,6 @@ hr {
   }
 }
 
-.bottom-space-1 {
-  padding-bottom: 1em;
-}
-
-.hide-mobile {
-  display: block;
-
-  @media screen and (max-width: 40em) {
-    display: none;
-  }
-}
-
-.hide-tablet {
-  display: block;
-
-  @media screen and (min-width: 40.063em) and (max-width: 63.9375em) {
-    display: none;
-  }
-}
-
-.inline-accent {
-  display: block;
-  margin: 0 auto;
-  padding: 0 1em;
-
-  @media screen and (max-width: 40em) {
-    padding: 1em;
-  }
-}
-
 textarea {
   height: 10em;
 }
@@ -119,6 +89,7 @@ body {
 // COLOURS
 .white {
   background-color: $white;
+
   h1,
   .h1,
   h2,
@@ -237,6 +208,7 @@ body {
 
 .black {
   background-color: $black;
+
   h1,
   .h1,
   h2,
@@ -329,6 +301,7 @@ body {
 
 .white.black {
   background-color: $black;
+
   h1,
   h2,
   h3,
@@ -352,6 +325,7 @@ body {
 
 .black.white {
   background-color: $white;
+
   h1,
   h2,
   h3,
@@ -392,8 +366,8 @@ body {
   a.cta {
     &.project-cta {
       background: $black;
-      color: $white;
       border-color: $dark-blue;
+      color: $white;
 
       &:hover {
         background: $background;
@@ -415,37 +389,12 @@ body {
 
 .blue-gradient {
   background: rgba(109, 170, 170, 1);
-  background: -moz-linear-gradient(
-    45deg,
-    rgba(109, 170, 170, 1) 0%,
-    rgba(150, 233, 233, 1) 100%
-  );
-  background: -webkit-gradient(
-    left bottom,
-    right top,
-    color-stop(0%, rgba(109, 170, 170, 1)),
-    color-stop(100%, rgba(150, 233, 233, 1))
-  );
-  background: -webkit-linear-gradient(
-    45deg,
-    rgba(109, 170, 170, 1) 0%,
-    rgba(150, 233, 233, 1) 100%
-  );
-  background: -o-linear-gradient(
-    45deg,
-    rgba(109, 170, 170, 1) 0%,
-    rgba(150, 233, 233, 1) 100%
-  );
-  background: -ms-linear-gradient(
-    45deg,
-    rgba(109, 170, 170, 1) 0%,
-    rgba(150, 233, 233, 1) 100%
-  );
-  background: linear-gradient(
-    45deg,
-    rgba(109, 170, 170, 1) 0%,
-    rgba(150, 233, 233, 1) 100%
-  );
+  background: linear-gradient(45deg, rgba(109, 170, 170, 1) 0%, rgba(150, 233, 233, 1) 100%);
+    background: -moz-linear-gradient(45deg, rgba(109, 170, 170, 1) 0%, rgba(150, 233, 233, 1) 100%);
+    background: -ms-linear-gradient(45deg, rgba(109, 170, 170, 1) 0%, rgba(150, 233, 233, 1) 100%);
+    background: -o-linear-gradient(45deg, rgba(109, 170, 170, 1) 0%, rgba(150, 233, 233, 1) 100%);
+    background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(109, 170, 170, 1)), color-stop(100%, rgba(150, 233, 233, 1)));
+    background: -webkit-linear-gradient(45deg, rgba(109, 170, 170, 1) 0%, rgba(150, 233, 233, 1) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6daaaa', endColorstr='#96e9e9', GradientType=1 );
 }
 
@@ -498,25 +447,19 @@ a.thrillworks-text {
 }
 
 button {
-  display: block;
-  margin: 0 auto;
-  color: #000;
-  padding: 1em 2em;
-  -moz-border-radius: 4px;
-  -webkit-border-radius: 4px;
-  border-radius: 4px;
-  border: 2px solid #000;
+  background: -moz-linear-gradient(to top, #5fa6a6, #7fc7c7);
+  background: -ms-linear-gradient(to top, #5fa6a6, #7fc7c7);
+  background: -webkit-gradient(linear, to left top, to left bottom, from(#5fa6a6), to(#7fc7c7));
   background: #468ccf;
   background: linear-gradient(to top, #5fa6a6, #7fc7c7);
-  background: -ms-linear-gradient(to top, #5fa6a6, #7fc7c7);
-  background: -webkit-gradient(
-    linear,
-    to left top,
-    to left bottom,
-    from(#5fa6a6),
-    to(#7fc7c7)
-  );
-  background: -moz-linear-gradient(to top, #5fa6a6, #7fc7c7);
+  border: 2px solid #000;
+  border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+  color: #000;
+  display: block;
+  margin: 0 auto;
+  padding: 1em 2em;
   text-decoration: none;
   transition: all .15s ease;
 
@@ -586,15 +529,6 @@ button {
 
   @include breakpoint(large) {
     margin-top: 0;
-  }
-}
-
-/* Breadcrumbs */
-.crumbs {
-  list-style: none;
-
-  li {
-    display: inline;
   }
 }
 
@@ -684,52 +618,6 @@ button {
   margin-top: 1em;
   padding-top: 1em;
   border-top: 2px solid;
-}
-
-/* Animations */
-#showcase1,
-#showcase2,
-#showcase3 {
-  img {
-    display: block;
-    margin: 0 auto;
-  }
-}
-
-#showcase1.bounceIn {
-  -webkit-animation-delay: .25s;
-  -moz-animation-delay: .25s;
-  -o-animation-delay: .25s;
-  -ms-animation-delay: .25s;
-  animation-delay: .25s;
-}
-
-#showcase2.bounceIn {
-  -webkit-animation-delay: 1.25s;
-  -moz-animation-delay: 1.25s;
-  -o-animation-delay: 1.25s;
-  -ms-animation-delay: 1.25s;
-  animation-delay: 1.25s;
-}
-
-#showcase3.bounceIn {
-  -webkit-animation-delay: 2.25s;
-  -moz-animation-delay: 2.25s;
-  -o-animation-delay: 2.25s;
-  -ms-animation-delay: 2.25s;
-  animation-delay: 2.25s;
-}
-
-@media screen and (max-width: 40em) {
-  #showcase1.bounceIn,
-  #showcase2.bounceIn,
-  #showcase3.bounceIn {
-    -webkit-animation-delay: .5s;
-    -moz-animation-delay: .5s;
-    -o-animation-delay: .5s;
-    -ms-animation-delay: .5s;
-    animation-delay: .5s;
-  }
 }
 
 #socials {

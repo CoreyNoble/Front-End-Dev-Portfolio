@@ -2,9 +2,9 @@
 footer {
   background: $background;
   border-top: 1px solid $white;
-  -webkit-box-shadow: 0 -10px 17px -8px rgba(0, 0, 0, .75);
-  -moz-box-shadow: 0 -10px 17px -8px rgba(0, 0, 0, .75);
   box-shadow: 0 -10px 17px -8px rgba(0, 0, 0, .75);
+    -moz-box-shadow: 0 -10px 17px -8px rgba(0, 0, 0, .75);
+    -webkit-box-shadow: 0 -10px 17px -8px rgba(0, 0, 0, .75);
   padding: 1em 0;
 
   @media screen and (max-width: 40em) {
@@ -16,8 +16,8 @@ footer {
 
     .footnote-profile {
       display: table-cell;
-      vertical-align: middle;
       text-align: center;
+      vertical-align: middle;
     }
   }
 
@@ -28,10 +28,10 @@ footer {
   h4,
   .h4,
   span {
-    font-size: 1em;
     color: $grey;
-    float: left;
     display: block;
+    float: left;
+    font-size: 1em;
     padding: 0;
 
     a:hover,
@@ -59,13 +59,13 @@ footer {
     .title,
     .footnote-contact {
       display: block;
-      width: 100%;
       float: left;
+      width: 100%;
     }
 
     .name {
-      padding: 0;
       margin: 0;
+      padding: 0;
 
       @media screen and (max-width: 40em) {
         margin-top: .25em;
@@ -117,8 +117,8 @@ footer {
   }
 
   .social-media {
-    margin-top: 1.3em;
     display: block;
+    margin-top: 1.3em;
 
     @media screen and (max-width: 40em) {
       margin-top: 3em;
@@ -130,16 +130,16 @@ footer {
 
     .linkedin {
       display: block;
-      width: 100%;
       float: right;
       margin-top: -10px;
+      width: 100%;
     }
 
     .github {
       display: block;
-      width: 100%;
       float: right;
       margin-top: 1.5em;
+      width: 100%;
 
       @media screen and (max-width: 40em) {
         display: block;
@@ -150,21 +150,21 @@ footer {
     .social-icon {
       a {
         img {
-          -webkit-filter: grayscale(100%);
-          -webkit-transition: .25s ease-in-out;
           -moz-filter: grayscale(100%);
           -moz-transition: .25s ease-in-out;
           -o-filter: grayscale(100%);
           -o-transition: .25s ease-in-out;
+          -webkit-filter: grayscale(100%);
+          -webkit-transition: .25s ease-in-out;
 
           &:hover,
           &:focus {
-            -webkit-filter: grayscale(0%);
-            -webkit-transition: .25s ease-in-out;
             -moz-filter: grayscale(0%);
             -moz-transition: .25s ease-in-out;
             -o-filter: grayscale(0%);
             -o-transition: .25s ease-in-out;
+            -webkit-filter: grayscale(0%);
+            -webkit-transition: .25s ease-in-out;
           }
         }
       }
@@ -173,11 +173,11 @@ footer {
     .social-text {
       h4,
       .h4 {
-        padding-top: .55em;
+        float: right;
         font-size: 1em;
         font-weight: bold;
         line-height: 1;
-        float: right;
+        padding-top: .55em;
 
         a {
           font-size: .9em;
@@ -198,8 +198,8 @@ footer {
 
     @media screen and (max-width: 40em) {
       float: left;
-      margin-right: 0;
       margin-bottom: 0;
+      margin-right: 0;
       padding-bottom: 0;
     }
 

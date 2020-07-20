@@ -1,18 +1,17 @@
 #return-to-top {
-  position: fixed;
-  bottom: 1em;
-  right: 1em;
   background: $background;
-  border: 2px solid $white;
-  width: 3em;
-  height: 3em;
-  text-decoration: none;
-  -webkit-border-radius: .33em;
-  -moz-border-radius: .33em;
   border-radius: .33em;
+    -moz-border-radius: .33em;
+    -webkit-border-radius: .33em;
+  border: 2px solid $white;
+  bottom: 1em;
   display: none;
-  transition: bottom .5s ease, position .5s ease, display .5s ease,
-    float .5s ease;
+  height: 3em;
+  position: fixed;
+  right: 1em;
+  text-decoration: none;
+  transition: bottom .5s ease, position .5s ease, display .5s ease, float .5s ease;
+  width: 3em;
 
   &:hover,
   &:focus {
@@ -23,20 +22,20 @@
 
   span {
     color: $white;
+    font-size: 1.5em;
+    left: .47em;
     margin: 0;
     position: relative;
-    left: .47em;
     top: .47em;
-    font-size: 1.5em;
     transition: top .66s ease;
   }
 
   &.bottomed-out {
-    position: relative;
+    bottom: -3.66em;
     display: block;
     float: right;
-    bottom: -3.66em;
     margin-top: -2em;
+    position: relative;
 
     @include breakpoint(large) {
       bottom: 2em;

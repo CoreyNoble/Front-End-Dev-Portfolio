@@ -1,9 +1,9 @@
 [data-aos='rotate-in-ltr'] {
-  transform: rotate(-75deg);
   opacity: 0;
+  transform: rotate(-75deg);
   transition-property: transform, opacity;
   &.aos-animate {
-    transform: rotate(0);
     opacity: 1;
+    transform: rotate(0);
   }
 }

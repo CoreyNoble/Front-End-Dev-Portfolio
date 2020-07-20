@@ -1,6 +1,4 @@
 <?php
-  $email;
-  $comment;
   $captcha;
   
   if (isset($_POST['firstName'])) {
