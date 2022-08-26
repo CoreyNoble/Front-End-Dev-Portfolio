@@ -383,6 +383,14 @@ body{
 	color: $dark-blue;
 }
 
+a.amazon-text{
+  color: $amazon;
+
+  &:hover{
+    color: darken($amazon, 10%);
+  }
+}
+
 a.evertz-text{
   color: $evertz;
 
