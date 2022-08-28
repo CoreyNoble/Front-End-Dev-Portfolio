@@ -141,14 +141,6 @@ body{
     }
   }
 
-  a.thrillworks-text{
-    color: darken($thrillworks, 18%);
-
-    &:hover{
-      color: darken($thrillworks, 21%);
-    }
-  }
-
   a.cta{
     &.project-cta{
       background: $blue;
@@ -383,6 +375,14 @@ body{
 	color: $dark-blue;
 }
 
+a.amazon-text{
+  color: $amazon;
+
+  &:hover{
+    color: darken($amazon, 10%);
+  }
+}
+
 a.evertz-text{
   color: $evertz;
 
@@ -397,6 +397,14 @@ a.thrillworks-text{
     &:hover{
       color: darken($thrillworks, 10%);
     }
+}
+
+a.slightly-social-text{
+  color: $slightly-social;
+
+  &:hover{
+    color: darken($slightly-social, 10%);
+  }
 }
 
 button{
@@ -433,14 +441,14 @@ button{
 }
 
 .header-no-parallax{
-  padding-top: 0.75em;
+  margin-top: 1em;
 
   @media screen and (max-width : 940px) {
-    padding-top: 0;
+    margin-top: 0.5em;
   }
 
   @media screen and (max-width: 40em) {
-    padding-top: 0.75em;
+    margin-top: 1em;
   }
 }
 
