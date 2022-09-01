@@ -23,7 +23,7 @@ canonical: https://corey-noble.com/portfolio/development/javascript30/2-clock.ht
                     </a>
                     <!-- Content -->
                     <div class="accordion-content" data-tab-content="" role="tabpanel" aria-labelledby="Project Synopsis and Code" aria-hidden="true" id="project-synopsis" style="display: none;">
-                        <p>In this lesson I create an analog clock displays the users'&nbsp;time.</p>
+                        <p>In this lesson I create an analog clock that displays the users' current&nbsp;time.</p>
                         <p>To start the clock I run a function setDate() every second (setInterval(setDate, 1000)).</p>
                         <p>In <strong>setDate()</strong>&nbsp;- First get the current time. Using the current time also get the time in seconds, minutes and hours. Then calculate the degree of rotation for each hand, offset by +90 to ensure the rotation of the element starts&nbsp;north.</p>
                         <p>Finally, query the 'document' for each hand element and rotate each hand using the matching degree value. I do this by using es6 template strings to inject the variable into the elements' 'style' attribute (secondHand.style.transform = `rotate(${secondsDegrees}deg)`).</p>

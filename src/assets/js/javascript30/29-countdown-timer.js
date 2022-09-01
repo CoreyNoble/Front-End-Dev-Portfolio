@@ -1,4 +1,4 @@
-// Initialize the countdown.
+// Initialise the countdown.
 let countdown;
 // The timer element. <h1>. 
 const timerDisplay = document.querySelector('.display__time-left');

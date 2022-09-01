@@ -1,4 +1,4 @@
-// debounce: for performance. Pass a function through debounce to minimize how often the function can be run (wait = 20(milliseconds)).
+// debounce: for performance. Pass a function through debounce to minimise how often the function can be run (wait = 20(milliseconds)).
 function debounce(func, wait = 20, immediate = true) {
     var timeout;
     return function() {

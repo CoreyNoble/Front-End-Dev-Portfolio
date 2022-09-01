@@ -23,7 +23,7 @@ canonical: https://corey-noble.com/portfolio/development/javascript30/17-sort-wi
                     </a>
                     <!-- Content -->
                     <div class="accordion-content" data-tab-content="" role="tabpanel" aria-labelledby="Project Synopsis and Code" aria-hidden="true" id="project-synopsis" style="display: none;">
-                        <p>In this lesson I learned how sort an array while stripping out specific phrases to ignore those phrases in the&nbsp;sort.</p>
+                        <p>In this lesson I learned how to sort an array while stripping out specific phrases to ignore those phrases in the&nbsp;sort.</p>
                         <p>First I grab the array of 'bands'. I then sort the bands alphabetically using a ternary operator (bands.sort((a, b)&nbsp;=> a&nbsp;>&nbsp;b&nbsp;?&nbsp;1&nbsp;:&nbsp;-1)). In-order to strip out the phrases I run a function strip() on both 'a' and 'b'. ((a,b)&nbsp;=>&nbsp;sort(a)&nbsp;>&nbsp;sort(b) ?&nbsp;1&nbsp;:&nbsp;-1).</p>
                         <p>In <strong>strip(bandName)</strong>&nbsp;- Return a .replace().trim() string that removes all of the set phrases using a regex and trims off extra spaces (.replace(/^(a |the |an)/i, '').trim()).</p>
                         <p>Finally set the .innerHTML of the &lt;ul&gt; to 'sortedBands' and output an &lt;li&gt; element for each item in the array with .map(). join() to convert it all into one&nbsp;string.</p>

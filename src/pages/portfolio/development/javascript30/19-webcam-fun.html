@@ -40,7 +40,7 @@ canonical: https://corey-noble.com/portfolio/development/javascript30/19-webcam-
                                 </ul>
                             </li>
                         </ul>
-                        <p>I also initialize a function&nbsp;getVideo().</p>
+                        <p>I also initialise a function&nbsp;getVideo().</p>
                         <p>In <strong>getVideo()</strong>&nbsp;- Get the users' webcam feed (navigator.mediaDevices.getUserMedia({&nbsp;video:&nbsp;true, audio:&nbsp;false&nbsp;}) When it receives the promise .then() set the 'video.srcObject' to the feed, and .play() the&nbsp;&lt;video&gt;.</p>
                         <p>In <strong>paintToCanvas()</strong>&nbsp;- Set the 'width' and 'height' of the &lt;canvas&gt; element equal to the resolution of the video stream (width&nbsp;=&nbsp;video.videoWidth).</p>
                         <p>Next at a setInterval(()&nbsp;=> {},&nbsp;16), draw an image to the 'ctx' using the video as the data, painting to the 'width' and 'height' (ctx.drawImage(video, 0,&nbsp;0,&nbsp;width,&nbsp;height)). Then get an array of 'pixels' data from the 'ctx' (ctx.getImageData(0, 0,&nbsp;width,&nbsp;height)).</p>

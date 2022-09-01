@@ -36,7 +36,7 @@ function addItem(e) { // passes in the event that fired on 'submit'.
 // Populates the HTML list.
 // plates[] starts of as an empty object to ensure it can use .map() even if you forget to pass in something.
 // platesList, place to put the HTML.
-// These names are unique so any object or list can be passed into this function, which makes it re-usable.
+// These names are unique so any object or list can be passed into this function, which makes it reusable.
 function populateList(plates = [], platesList) {
     // .map() will take in an array of raw data (plates), and return an array of some other data (platesList). 
     // plate: object 

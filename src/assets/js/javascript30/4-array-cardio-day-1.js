@@ -98,7 +98,7 @@ const data = ['car', 'car', 'truck', 'truck', 'bike', 'walk', 'car', 'van', 'bik
 
 // Reduce data into an array of vehicle types 'obj[]' with a counter 'item'.
 const transportation = data.reduce(function(obj, item) {
-    // Chekcs if the obj[item] exists, if not, initializes the obj[item] to 0.
+    // Chekcs if the obj[item] exists, if not, initialises the obj[item] to 0.
     if (!obj[item]){
         obj[item] = 0;
     }

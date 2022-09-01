@@ -184,7 +184,7 @@ function pixelKnockout(pixels) {
 }
 // /FILTER FUNCTIONS
 
-// Initialize the video.
+// Initialise the video.
 getVideo();
 
 // If the video is allowed to play, paintToCanvas()

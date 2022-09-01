@@ -7,7 +7,7 @@ context.scale(20, 20);
 
 // Runs through the arena
 function arenaSweep() {
-    // Initialize rowCount
+    // Initialise rowCount
     let rowCount = 1;
     // Iterate from the bottom row, up
     outer: for (let y = arena.length -1; y > 0; --y) {
@@ -63,7 +63,7 @@ function collide(arena, player) {
 
 // Creates the matrix, takes width and height from 'arena'
 function createMatrix(w, h) {
-    // Initialize array for matrix
+    // Initialise array for matrix
     const matrix = [];
     // While we have height (h != 0)
     while (h--) {
@@ -270,7 +270,7 @@ function playerRotate(dir) {
 let dropCounter = 0; // Counter to determine when to drop
 let dropInterval = 1000; // Threshold for when to drop
 
-// Initialize 'lastTime' to calculate the difference in time
+// Initialise 'lastTime' to calculate the difference in time
 let lastTime = 0;
 
 // Update the game, get the time from requestAnimationFrame

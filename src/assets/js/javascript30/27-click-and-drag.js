@@ -1,6 +1,6 @@
 // The parent <div>.
 const slider = document.querySelector('.items');
-// Initialize variables
+// Initialise variables
 // Flag variable, Are you clicking?
 let isDown = false;
 // Starting X position.
