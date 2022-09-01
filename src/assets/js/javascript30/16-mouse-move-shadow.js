@@ -1,6 +1,6 @@
 const hero = document.querySelector('.hero'); // parent <div>
 const text = hero.querySelector('h2');
-// How many pixels at its' most should it be stretched?
+// How many pixels at its most should it be stretched?
 const walk = 50; // px
 
 function shadow(e) {
@@ -16,7 +16,7 @@ function shadow(e) {
 
     // If we are no longer hovering on hero, say we're hovering over the <h1>, the offset would change to use the <h1> origin offset values, rather than the hero's values. This checks for that scenario.
     if (this !== e.target) {
-        // Normalize: Calculate X,Y for hero by adding the previous x,y values and <h1> offset values together.
+        // Normalise: Calculate X,Y for hero by adding the previous x,y values and <h1> offset values together.
         x = x + e.target.offsetLeft;
         y = y + e.target.offsetTop;
     }

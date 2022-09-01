@@ -70,7 +70,7 @@ $(function () {
     });
 });
 
-// Initialize AOS
+// Initialise AOS
 AOS.init({
     duration: 1000
 });

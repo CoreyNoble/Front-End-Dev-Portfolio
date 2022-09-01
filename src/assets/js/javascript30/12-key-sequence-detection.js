@@ -1,4 +1,4 @@
-// Initialize empty array.
+// Initialise empty array.
 const pressed = [];
 // Code we're looking to detect.
 const secretCode = '3838404037393739666513';

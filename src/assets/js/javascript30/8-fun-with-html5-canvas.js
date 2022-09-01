@@ -14,7 +14,7 @@ ctx.lineCap = 'round';
 ctx.lineWidth = 80;
 ctx.globalCompositeOperation = 'multiply';
 
-// Initialize variables
+// Initialise variables
 // currently drawing?
 let isDrawing = false;
 // where do you start the line from

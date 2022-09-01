@@ -24,7 +24,7 @@ canonical: https://corey-noble.com/portfolio/development/javascript30/6-type-ahe
                     <!-- Content -->
                     <div class="accordion-content" data-tab-content="" role="tabpanel" aria-labelledby="Project Synopsis and Code" aria-hidden="true" id="project-synopsis" style="display: none;">
                         <p>In this lesson I am taking in JSON data and am using .filter() on the search &lt;input&gt; to display and pair down the&nbsp;list.</p>
-                        <p>First I create a variable 'endpoint' that holds the URL for the JSON data. I also initialize an empty 'cities[]'&nbsp;array.</p>
+                        <p>First I create a variable 'endpoint' that holds the URL for the JSON data. I also initialise an empty 'cities[]'&nbsp;array.</p>
                         <p>I <strong>fetch()</strong> the JSON data (fetch(endpoint)). fetch() is a promise, which I return .then() on. .then() takes the blob data I receive through the fetch, and converts it to JSON using the .json() method. .json() itself is also a promise which I return another .then() on. The second .then() spreads the data into 'cities[]'' (cities.push(...data)).</p>
                         <p>I <strong>listen</strong> for a 'change' or 'keyup' event on the search input, and run&nbsp;displayMatches().</p>
                         <p>In <strong>displayMatches()</strong>&nbsp;- Take the value of the search input, and find matches in 'cities[]' (findMatches(this.value, cities)). Then .map() over the array, using a regular expression on the 'city' and 'state' to find matches from the search. Then .replace() the search text, nesting it in a &lt;span&gt; to create the highlight effect on the search&nbsp;term.</p>

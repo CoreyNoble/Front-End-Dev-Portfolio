@@ -1,6 +1,6 @@
 // Create a new SpeechSynthesisUtterance().
 const msg = new SpeechSynthesisUtterance();
-// Initialize an array of available voices.
+// Initialise an array of available voices.
 let voices = [];
 // <select> of all of the voices.
 const voicesDropdown = document.querySelector('[name="voice"]');
@@ -52,7 +52,7 @@ function toggle(startOver = true) {
 function setOption() {
     // The name and value of the <option>
     console.log(this.name, this.value);
-    // For the message attribute that matches the <option> name, set its' value to match the value that was set inside of that <option>.
+    // For the message attribute that matches the <option> name, set its value to match the value that was set inside of that <option>.
     msg[this.name] = this.value;
     // Toggle the speech.
     toggle();

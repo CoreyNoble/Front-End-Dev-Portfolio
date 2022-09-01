@@ -6,7 +6,7 @@ const scoreBoard = document.querySelector('.score');
 const moles = document.querySelectorAll('.mole');
 // Start <button>.
 const startCTA = document.getElementById('start-cta');
-// Initialize variables.
+// Initialise variables.
 let lastHole;
 let timeUp = false;
 let score = 0;
